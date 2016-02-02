@@ -125,7 +125,7 @@ class forms {
                         <a href="#">Forgot Password?</a>
                     </div>
                     <div class="pure-controls">
-                        <input type="submit" name="form[login]" value="Log In">
+                        <input type="submit" name="form[login][do_login]" value="Log In">
                     </div>
                 </form>
             </div>
@@ -249,6 +249,26 @@ class forms {
                     }
                 }
             }
+        }
+        /*
+         * Login is processed here
+         * RS 20160202
+         */
+        
+        public function LoginProcess(array $form_values){
+            $this->_formInputs = $form_values;
+            $input_values = array();
+            
+            if(isset($this->_formInputs['form']['login']['do_login'])){
+                $input_values['email'] = $this->_formInputs['form']['login']['email'];
+                $input_values['password'] =  $this->_formInputs['form']['login']['password'];
+                
+                if(empty($input_values['email']) && empty($input_values['password'])){
+                    $this->_flag =1;
+                    
+                }
+            }
+            
         }
 
     }

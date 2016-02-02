@@ -35,7 +35,8 @@ class loader {
         $meta = array(
             "meta1" => '<meta charset="utf-8">',
             "meta2" => '<meta name="description" content="HTML framework description">',
-            "meta3" => '<meta name="viewport" content="width=device-width, initial-scale=1">'
+            "meta3" => '<meta name="viewport" content="width=device-width, initial-scale=1">',
+            
         );
         /* PAGE TITLE IS HERE */
         //$get_title = (!isset($_GET['page_name']) ? "Team Up - Home" : $_POST['page_name']);
@@ -101,6 +102,7 @@ class loader {
             "img2" => ABSOLUTH_PATH_IMAGES . 'slider/hockey.jpg',
             "img3" => ABSOLUTH_PATH_IMAGES . 'slider/basketball.jpg',
             "img4" => ABSOLUTH_PATH_IMAGES . 'slider/football.png',
+            
         );
         /* ADD NAVIGATION LINKS TO THIS ARRAY */
         /* USE ABSOLUTH_PATH_PAGES for page paths */
