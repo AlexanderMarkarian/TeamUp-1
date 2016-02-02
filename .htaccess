@@ -1,0 +1,23 @@
+Options +Indexes
+IndexOptions -FancyIndexing
+RewriteEngine On
+
+
+#Options +FollowSymLinks
+
+
+rewriterule ^$ /public_html [R,L]
+#rewriteCond %{REQUEST_FILENAME} !-d
+#rewriteCond %{REQUEST_FILENAME} !-f
+#rewriteCond %{REQUEST_FILENAME} !-l
+##RewriteRule ^apple/(.*) public_html/$1
+#rewriterule ^(.*)$ work_station.php?url=$1 [QSA,L]
+
+#RewriteRule ^snowman/(.*) public_html/$1
+#RewriteCond %{THE_REQUEST} ^GET\ /public_html/
+#RewriteRule ^public_html/(.*) /snowman/$1 [L,R=301]
+#FOR PASSWORD PROTECTION 
+AuthType Basic
+AuthName "dev"
+AuthUserFile "/home/dynamoelectric/.htpasswds/public_html/dev.teamup/passwd"
+require valid-user
