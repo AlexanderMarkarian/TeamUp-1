@@ -1,14 +1,12 @@
 <?php
 
-
 /**
  * Description of forms [see post class declaration]
  *
  * @author rostom
  */
 class forms {
-    
-    /* 
+    /*
      * RS 20160131
      * !!@@@STRICT RULE@@@!!!
      * Create all forms here
@@ -47,10 +45,10 @@ class forms {
             <div class="left-half">
 
 
-              
+
                 <div class="title">Register</div>
                 <form method="post" action="loader.php" class="content pure-form pure-form-aligned">
-                      <input type="hidden" name="form[signup][page_name]" value="Profile"/>
+                    <input type="hidden" name="form[signup][page_name]" value="Profile"/>
                     <div class="pure-control-group">
                         <label>First Name</label>
                         <input class="pure-input-1-2 pure-input-rounded" type="text" name="form[signup][firstname]" value="<?php
@@ -114,11 +112,19 @@ class forms {
                 <form method="post" class="content pure-form pure-form-aligned">
                     <div class="pure-control-group">
                         <label>Email Address</label>
-                        <input class="pure-input-1-2 pure-input-rounded" type="text" name="form[login][email]">
+                        <input class="pure-input-1-2 pure-input-rounded" type="text" name="form[login][email]" value="<?php
+                        foreach ($_POST as $k => $val) {
+                            echo $val['login']['email'];
+                        }
+                        ?>">
                     </div>
                     <div class="pure-control-group">
                         <label>Password</label>
-                        <input class="pure-input-1-2 pure-input-rounded" type="password" name="form[login][password]">
+                        <input class="pure-input-1-2 pure-input-rounded" type="password" name="form[login][password]" value="<?php
+                        foreach ($_POST as $k => $val) {
+                            echo $val['login']['password'];
+                        }
+                        ?>">
                     </div>
                     <div class="pure-control-group">
                         <label></label>
@@ -128,6 +134,11 @@ class forms {
                         <input type="submit" name="form[login][do_login]" value="Log In">
                     </div>
                 </form>
+                <?php
+                foreach ($this->_message as $erros) {
+                    echo "<div style='text-align:center; padding:5px;'><p style='color:red;'>" . $erros . "</p></div>";
+                }
+                ?>
             </div>
             <?php
         }
@@ -250,25 +261,58 @@ class forms {
                 }
             }
         }
+
         /*
          * Login is processed here
          * RS 20160202
          */
-        
-        public function LoginProcess(array $form_values){
+
+        public function LoginProcess(array $form_values) {
+            $insertion = new functions();
             $this->_formInputs = $form_values;
             $input_values = array();
-            
-            if(isset($this->_formInputs['form']['login']['do_login'])){
+
+            if (isset($this->_formInputs['form']['login']['do_login'])) {
                 $input_values['email'] = $this->_formInputs['form']['login']['email'];
-                $input_values['password'] =  $this->_formInputs['form']['login']['password'];
-                
-                if(empty($input_values['email']) && empty($input_values['password'])){
-                    $this->_flag =1;
-                    
+                $input_values['password'] = $this->_formInputs['form']['login']['password'];
+
+                if (empty($input_values['email']) && empty($input_values['password'])) {
+                    $this->_flag = 1;
+                    if ($this->_flag == 1) {
+                        $error = array();
+                        array_push($error, "All fields are required");
+                        $this->_message = $error;
+                    } else {
+                        $this->_flag = 0;
+                        unset($this->_message);
+                    }
+                } else if (empty($input_values['email']) || empty($input_values['password'])) {
+                    $this->_flag = 1;
+                    if ($this->_flag == 1) {
+                        $error = array();
+                        array_push($error, "All fields are required");
+                        $this->_message = $error;
+                    } else {
+                        $this->_flag = 0;
+                        unset($this->_message);
+                    }
+                } else {
+                    unset($this->_flag);
+                    $query = $insertion->LogUserIn("users", $input_values);
+                    if (!$query) {
+                        $this->_flag = 1;
+                        if ($this->_flag == 1) {
+                            $error = array();
+                            array_push($error, "There was an error loging you in!");
+                            $this->_message = $error;
+                        }
+                    } else {
+                        $input_values['ssid'] = $insertion->UIDGEN("User_");
+                        $insertion->UpdateLoginSSID("users", $input_values['ssid'], $input_values['email']);
+                        header("location: loader.php?cmd=profile&ssid=" . $input_values['ssid']);
+                    }
                 }
             }
-            
         }
 
     }

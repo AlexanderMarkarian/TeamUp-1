@@ -37,8 +37,9 @@ class body {
                 case "0":
                     $signup = new forms();
                     echo '<section id="' . $pg["div_name"] . '">';
-                    $signup->SignUpProcess($pg['values']);
+                    $signup->SignUpProcess($pg['values']);              
                     echo $signup->SignUpForm();
+                    $signup->LoginProcess($pg['values']);
                     echo $signup->LoginForm();
                     echo '</div>';
                     echo '</section>';
