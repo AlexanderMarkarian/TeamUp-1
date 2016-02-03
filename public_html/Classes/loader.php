@@ -65,19 +65,16 @@ class loader {
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "profile") {
 
             $css = array(
-                "css1" => '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'profile.css">',
-                "css2" => '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'profile-animation.css">',
-                "css3" => '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'jquery.datetimepicker.css">',
-                "css4" => ' <link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'general.css">'
+                "css1" => '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css">',
+                "css2" => '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'jquery.datetimepicker.css">',
+                "css3" => ' <link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'style.css">',
+                "css4" => '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css">'
             );
         }
 
         /* JAVASCRIPT LINKS CAN BE ADDED TO THIS ARRAY */
         /* USE ABSOLUTH_PATH_JS for Paths on js */
         $js = array(
-            "js1" => '<script src="http://code.jquery.com/jquery-1.10.2.js"></script>',
-            "js2" => '<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>',
-            "js3" => '<script type="text/javascript" src="' . ABSOLUTH_PATH_JS . 'libs/modernizr-2.5.3.min.js"></script>',
         );
         /* LOADS -> [meta, title, css, js] */
         $head->GetMetaForHeader($meta);

@@ -100,48 +100,31 @@ class header {
                     <?php
                 } else if(isset($_GET['cmd']) || $_GET['cmd'] != "") {
                     ?>
-                    <header>
-                        <div class="top">
-                            <div class="container">
-                                <div class="col-12">
-                                    <div class="col-2">
-                                        <div class="logo"><img src="<?= ABSOLUTH_PATH_IMAGES ?>logo.png" alt=""/></div>
-                                    </div>
-                                    <nav id="top-menu">
-                                        <ul class="clearfix">
-                                            <?php
-                                            ?>
-                                            <?php
-                                            foreach ($this->SetNavLinks() as $key => $nav_links) {
+                    <nav class="navbar navbar-default navbar-fixed-top">
+                        <div class="container">
+                            <div class="navbar-header page-scroll">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#page-top">TeamUp</a>
+                            </div>
 
-                                                    ?>
-                                                <li><a href="<?= $nav_links ?>"><?= $key; ?></a></li>
-                                                <?php
-                                            }
-                                            ?>
-
-
-                                        </ul>
-                                        <a href="#" id="pull">Menu</a>
-                                    </nav>
-                                    <nav class="mobilemenu">
-                                        <select>
-                                            <option value="home.php">Home</option>
-                                            <option value="roster.php">Roster</option>
-                                            <option value="available.php">Add/Drop</option>
-                                            <option value="trades.php">Trades</option>
-                                            <option value="matchup.php">Club</option>
-                                            <option value="draft.php">Draft</option>
-                                        </select>
-                                    </nav>
-                                    <div class="login">
-                                        <a href="profile.php"><span id="icon-user"><i class="fa fa-user"></i>Profile</span></a><a href="logout.php"><span>Log Out</span></a>
-                                    </div>
-                                </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <?php
+                                    foreach ($this->SetNavLinks() as $key => $nav_links) {
+                                    ?>
+                                        <li><a href="<?= $nav_links ?>"><?= $key; ?></a></li>
+                                        <?php
+                                    }
+                                    ?>
+                                </ul>
                             </div>
                         </div>
-                    </header>
-
+                    </nav>
                     <?php
                 }
             }
