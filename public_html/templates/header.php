@@ -60,24 +60,43 @@ class header {
                  */
                 if (!isset($_GET['cmd']) || $_GET['cmd'] == "") {
                     ?>
-                    <div id="load_screen"><div id="loading"><img id="image" src="<?= ABSOLUTH_PATH_IMAGES ?>other/loading2.gif"></div></div>
-                    <div class="slider">
-                        <div class="flexslider">
-                            <ul class="slides">
+                    <header id="myCarousel" class="carousel slide">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <?php
+                            foreach( $this->SetHomeSlider() as $slider_image){
+                                if($slider_image == '../assets/images/slider/baseball.jpg'){
+                                ?>
+                                    <div class="item active">
+                                        <div class="fill" style="background-image:url('<?= $slider_image ?>');"></div>
+                                    </div>
                                 <?php
-                                foreach ($this->SetHomeSlider() as $slider_image) {
-                                    ?>
-                                    <li>
+                                }
+                                else{
+                                ?>
+                                    <div class="item">
+                                        <div class="fill" style="background-image:url('<?= $slider_image ?>');"></div>
+                                    </div>
+                                <?php
+                                }
+                            ?>
 
-                                        <img src="<?= $slider_image ?>" alt=""/>
-
-                                        <div class="caption"><div class="container">
-                                            </div></div>
-                                    </li>
-                                <?php } ?>
-                            </ul>
+                            <?php } ?>
                         </div>
-                    </div>
+
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+                    </header>
                     <?php
                 } else if(isset($_GET['cmd']) || $_GET['cmd'] != "") {
                     ?>

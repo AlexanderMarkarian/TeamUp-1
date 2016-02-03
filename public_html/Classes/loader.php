@@ -58,14 +58,9 @@ class loader {
         if (!isset($_GET['cmd']) || $_GET['cmd'] == "") {
 
             $css = array(
-                "css1" => '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'pure.min.css">',
-                "css2" => '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'general.css">',
-                "css3" => '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'submit.css">',
-                "css4" => '<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">',
-                "css5" => '<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic%7COswald:400,300,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">',
-                "css6" => '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css">',
-                "css7" => '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'pageLoader.css">',
-                "css8" => '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>',
+                "css1" => '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>',
+                "css2" => '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css">',
+                "css3" => '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'intro.css">',
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "profile") {
 
@@ -83,7 +78,6 @@ class loader {
             "js1" => '<script src="http://code.jquery.com/jquery-1.10.2.js"></script>',
             "js2" => '<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>',
             "js3" => '<script type="text/javascript" src="' . ABSOLUTH_PATH_JS . 'libs/modernizr-2.5.3.min.js"></script>',
-            "js10" => "<script type='text/javascript' src='js/libs/modernizr-2.5.3.min.js'></script>",
         );
         /* LOADS -> [meta, title, css, js] */
         $head->GetMetaForHeader($meta);
@@ -197,12 +191,10 @@ class loader {
         if (!isset($_GET['cmd']) || $_GET['cmd'] == "") {
             $footer_script = array(
                 "js4" => '<script src="' . ABSOLUTH_PATH_JS . 'libs/jquery-1.10.2.min.js"></script>',
-                "js5" => ' <script src="' . ABSOLUTH_PATH_JS . 'libs/jquery.flexslider-min.js"></script>',
-                "js6" => ' <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>',
-                "js7" => ' <script src="' . ABSOLUTH_PATH_JS . 'libs/jquery.bxslider.min.js"></script>',
-                "js8" => ' <script src="' . ABSOLUTH_PATH_JS . 'pageLoader.js"></script>',
-                "js9" => ' <script src="' . ABSOLUTH_PATH_JS . 'scripts.js"></script>',
-                "js10" => '<script src="' . ABSOLUTH_PATH_JS . 'bootstrap.min.js" type="text/javascript"></script>'
+                "js5" => ' <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>',
+                "js6" => ' <script src="' . ABSOLUTH_PATH_JS . 'libs/jquery.bxslider.min.js"></script>',
+                "js7" => '<script src="' . ABSOLUTH_PATH_JS . 'bootstrap.min.js"></script>',
+                "js8" => '<script src="' . ABSOLUTH_PATH_JS . 'slider.js"></script>',
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "profile") {
 
