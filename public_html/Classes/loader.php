@@ -73,7 +73,8 @@ class loader {
             $css = array(
                 "css1" => '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'profile.css">',
                 "css2" => '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'profile-animation.css">',
-                "css3" => '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'jquery.datetimepicker.css">'
+                "css3" => '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'jquery.datetimepicker.css">',
+                "css4" => ' <link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'general.css">'
             );
         }
 
@@ -83,7 +84,7 @@ class loader {
             "js1" => '<script src="http://code.jquery.com/jquery-1.10.2.js"></script>',
             "js2" => '<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>',
             "js3" => '<script type="text/javascript" src="' . ABSOLUTH_PATH_JS . 'libs/modernizr-2.5.3.min.js"></script>',
-            "js10" => '',
+            "js10" => "<script type='text/javascript' src='js/libs/modernizr-2.5.3.min.js'></script>",
         );
         /* LOADS -> [meta, title, css, js] */
         $head->GetMetaForHeader($meta);
@@ -107,10 +108,12 @@ class loader {
         /* ADD NAVIGATION LINKS TO THIS ARRAY */
         /* USE ABSOLUTH_PATH_PAGES for page paths */
         $navigation = array(
-            "link1" => "",
-            "link2" => "",
-            "link3" => "",
-            "link4" => "",
+            "Home" => "loader.php?cmd=home&ssid={$_GET['ssid']}",
+            "Roster" => "loader.php?cmd=roster&ssid={$_GET['ssid']}",
+            "Add/Drop" => "loader.php?cmd=add-drop&ssid={$_GET['ssid']}",
+            "Trades" => "loader.php?cmd=trades&ssid={$_GET['ssid']}",
+            "Match Up" => "loader.php?cmd=matchup&ssid={$_GET['ssid']}",
+            "Draft" => "loader.php?cmd=draft&ssid={$_GET['ssid']}",
         );
         $head->GetHomeSlider($home_slider_images);
         $head->SetHomeSlider();
@@ -161,14 +164,23 @@ class loader {
                 "page_name" => "Profile",
                 "div_name" => "m-a-n",
             );
+            if($_GET['cmd'] == "home"){
+                echo "home";
+            }
             /*
              * other pages [example: matchup, etc...]
              * use $page_content_array[]
              * RS 20160201
              */
-        } else if (isset($_GET['cmd']) && $_GET['cmd'] == "matchup" && $function->CheckSSID("users", $_GET['ssid']) == true) {
-            
+        } else if (isset($_GET['cmd']) && $_GET['cmd'] == "home" && $function->CheckSSID("users", $_GET['ssid']) == true) {
+            header("Location: loader.php");
+            $page_content_array[] = array(
+                "id" => "2",
+                "page_name" => "Home",
+                "div_name" => "m-a-n",
+            );
         }
+        var_dump($page_content_array);
 
         $body = new body();
         echo $body->BuildPages($page_content_array);

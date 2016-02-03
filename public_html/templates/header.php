@@ -45,7 +45,7 @@ class header {
                 }
                 ?>
             </head>
-            <?php $class = (isset($_GET['cmd'])? "dm-demo3" : "") ?>
+            <?php $class = (isset($_GET['cmd']) ? "dm-demo3" : "") ?>
             <body class="<?= $class; ?>">
                 <!---------NAVIGATION OR SLIDER GOES BELOW----------->
 
@@ -57,7 +57,7 @@ class header {
                  * if true load slider images
                  * 
                  */
-                if ( !isset($_GET['cmd'])|| $_GET['cmd'] == "") {
+                if (!isset($_GET['cmd']) || $_GET['cmd'] == "") {
                     ?>
                     <div id="load_screen"><div id="loading"><img id="image" src="<?= ABSOLUTH_PATH_IMAGES ?>other/loading2.gif"></div></div>
                     <div class="slider">
@@ -78,8 +78,51 @@ class header {
                         </div>
                     </div>
                     <?php
-                }else{
-                    
+                } else {
+                    ?>
+                    <header>
+                        <div class="top">
+                            <div class="container">
+                                <div class="col-12">
+                                    <div class="col-2">
+                                        <div class="logo"><img src="<?= ABSOLUTH_PATH_IMAGES ?>logo.png" alt=""/></div>
+                                    </div>
+                                    <nav id="top-menu">
+                                        <ul class="clearfix">
+                                            <?php
+                                            ?>
+                                            <?php
+                                            foreach ($this->SetNavLinks() as $key => $nav_links) {
+
+                                                    ?>
+                                                <li class=""><a href="<?= $nav_links ?>"><?= $key; ?></a></li>
+                                                <?php
+                                            }
+                                            ?>
+
+
+                                        </ul>
+                                        <a href="#" id="pull">Menu</a>
+                                    </nav>
+                                    <nav class="mobilemenu">
+                                        <select>
+                                            <option value="home.php">Home</option>
+                                            <option value="roster.php">Roster</option>
+                                            <option value="available.php">Add/Drop</option>
+                                            <option value="trades.php">Trades</option>
+                                            <option value="matchup.php">Club</option>
+                                            <option value="draft.php">Draft</option>
+                                        </select>
+                                    </nav>
+                                    <div class="login">
+                                        <a href="profile.php"><span id="icon-user"><i class="fa fa-user"></i>Profile</span></a><a href="logout.php"><span>Log Out</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
+                    <?php
                 }
             }
 

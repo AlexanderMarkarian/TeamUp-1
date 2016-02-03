@@ -47,6 +47,9 @@ class body {
                 case "1":
                     include ABSOLUTH_PATH_PAGE."profile.php";
                     break;
+                case "2":
+                    include ABSOLUTH_PATH_PAGE."home.php";
+                    break;
                 default:
                     $forms = new forms();
                     echo '<section id="' . $pg["div_name"] . '">';
