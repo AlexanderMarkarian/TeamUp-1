@@ -15,6 +15,7 @@ class loader {
 
     //put your code here
     private $_header_content = array();
+    public $_post_values = array();
 
     public function __construct() {
         SESSION_STARTED;
@@ -22,12 +23,13 @@ class loader {
         echo $this->LoadPageBody();
         echo $this->LoadPageFooter();
     }
-    
+
     /*
      * page header gets its data here
      * Alter this section with instructions
      * RS 20160201
      */
+
     public function PageHeader() {
         $head = new header();
 
@@ -36,19 +38,18 @@ class loader {
             "meta1" => '<meta charset="utf-8">',
             "meta2" => '<meta name="description" content="HTML framework description">',
             "meta3" => '<meta name="viewport" content="width=device-width, initial-scale=1">',
-            
         );
         /* PAGE TITLE IS HERE */
         //$get_title = (!isset($_GET['page_name']) ? "Team Up - Home" : $_POST['page_name']);
         $get_title = ((!isset($_GET['page_name']) || $_SERVER['REQUEST_METHOD']) == "GET") ? "Team Up - Home" : $_POST['page_name'];
-   
+
         $page_title = array(
             'title' => '<title>' . $get_title . '</title>'
         );
 
         /* CSS LINKS CAN BE ADDED TO THIS ARRAY */
         /* USE ABSOLUTH_PATH_CSS CONSTANT for Paths */
-        
+
         /*
          * RS 20160201 Based on user input loads css
          * By default it will load the home page css 
@@ -102,7 +103,6 @@ class loader {
             "img2" => ABSOLUTH_PATH_IMAGES . 'slider/hockey.jpg',
             "img3" => ABSOLUTH_PATH_IMAGES . 'slider/basketball.jpg',
             "img4" => ABSOLUTH_PATH_IMAGES . 'slider/football.png',
-            
         );
         /* ADD NAVIGATION LINKS TO THIS ARRAY */
         /* USE ABSOLUTH_PATH_PAGES for page paths */
@@ -128,12 +128,12 @@ class loader {
      * RS 20160131
      * LOADS THE BODY
      */
+
     public function LoadPageBody() {
         $function = new functions();
         $commands = new commands();
-
-
-        /* 
+        $this->_post_values = $_POST;
+        /*
          * Pages 
          * Default set for Home page
          * follow the procedure from below
@@ -145,7 +145,8 @@ class loader {
                 "id" => "0",
                 "page_name" => "Home",
                 "div_name" => "m-a-n",
-                "values" => $_POST
+                "signup" => $this->_post_values,
+                "login" => $this->_post_values
             );
             /*
              * Profile
@@ -159,7 +160,6 @@ class loader {
                 "id" => "1",
                 "page_name" => "Profile",
                 "div_name" => "m-a-n",
-                "values" => $_POST
             );
             /*
              * other pages [example: matchup, etc...]
@@ -217,6 +217,7 @@ class loader {
     }
 
 }
+
 /*
  * loader instantiated
  */

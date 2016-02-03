@@ -35,12 +35,12 @@ class body {
             switch ($pg['id']) {
 
                 case "0":
-                    $signup = new forms();
+                    $forms = new forms();
                     echo '<section id="' . $pg["div_name"] . '">';
-                    $signup->SignUpProcess($pg['values']);              
-                    echo $signup->SignUpForm();
-                    $signup->LoginProcess($pg['values']);
-                    echo $signup->LoginForm();
+                    $forms->SignUpProcess($pg['signup']);              
+                    echo $forms->SignUpForm();
+                    $forms->LoginProcess($pg['login']);
+                    echo $forms->LoginForm();
                     echo '</div>';
                     echo '</section>';
                     break;
@@ -48,10 +48,10 @@ class body {
                     include ABSOLUTH_PATH_PAGE."profile.php";
                     break;
                 default:
-                    $signup = new forms();
+                    $forms = new forms();
                     echo '<section id="' . $pg["div_name"] . '">';
-                    echo $signup->SignUpForm();
-                    echo $signup->LoginForm();
+                    echo $forms->SignUpForm();
+                    echo $forms->LoginForm();
                     echo '</div>';
                     echo '</section>';
 

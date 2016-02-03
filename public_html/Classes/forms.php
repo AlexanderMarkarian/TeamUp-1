@@ -20,6 +20,7 @@ class forms {
     private $_formInputs = array();
     private $_flag = 0;
     public $_message = array();
+    public $_login_message = array();
 
     public function __construct() {
         $this->_db = db_connect::getInstance();
@@ -52,33 +53,25 @@ class forms {
                     <div class="pure-control-group">
                         <label>First Name</label>
                         <input class="pure-input-1-2 pure-input-rounded" type="text" name="form[signup][firstname]" value="<?php
-                        foreach ($_POST as $k => $val) {
-                            echo $val['signup']['firstname'];
-                        }
+                        echo $_POST['form']['signup']['firstname'];
                         ?>">
                     </div>
                     <div class="pure-control-group">
                         <label>Last Name</label>
                         <input class="pure-input-1-2 pure-input-rounded" type="text" name="form[signup][lastname]" value="<?php
-                        foreach ($_POST as $k => $val) {
-                            echo $val['signup']['lastname'];
-                        }
+                        echo $_POST['form']['signup']['lastname'];
                         ?>">
                     </div>
                     <div class="pure-control-group">
                         <label>Email Address</label>
                         <input class="pure-input-1-2 pure-input-rounded" type="text" name="form[signup][email]" value="<?php
-                        foreach ($_POST as $k => $val) {
-                            echo $val['signup']['email'];
-                        }
+                        echo $_POST['form']['signup']['email'];
                         ?>">
                     </div>
                     <div class="pure-control-group">
                         <label>Password</label>
                         <input class="pure-input-1-2 pure-input-rounded" type="password" name="form[signup][password]" value="<?php
-                        foreach ($_POST as $k => $val) {
-                            echo $val['signup']['password'];
-                        }
+                        echo $_POST['form']['signup']['password'];
                         ?>">
                     </div>
                     <div class="pure-controls">
@@ -86,8 +79,8 @@ class forms {
 
                     </div>
                     <?php
-                    foreach ($this->_message as $erros) {
-                        echo $erros;
+                    foreach ($this->_message as $errors) {
+                        echo $errors;
                     }
                     ?>
                 </form>
@@ -109,21 +102,17 @@ class forms {
             ?>
             <div class="right-half">
                 <div class="title">Log In</div>
-                <form method="post" class="content pure-form pure-form-aligned">
+                <form method="post" name="form[login]" class="content pure-form pure-form-aligned">
                     <div class="pure-control-group">
                         <label>Email Address</label>
                         <input class="pure-input-1-2 pure-input-rounded" type="text" name="form[login][email]" value="<?php
-                        foreach ($_POST as $k => $val) {
-                            echo $val['login']['email'];
-                        }
+                        echo $_POST['form']['login']['email'];
                         ?>">
                     </div>
                     <div class="pure-control-group">
                         <label>Password</label>
                         <input class="pure-input-1-2 pure-input-rounded" type="password" name="form[login][password]" value="<?php
-                        foreach ($_POST as $k => $val) {
-                            echo $val['login']['password'];
-                        }
+                        echo $_POST['form']['login']['password'];
                         ?>">
                     </div>
                     <div class="pure-control-group">
@@ -135,8 +124,8 @@ class forms {
                     </div>
                 </form>
                 <?php
-                foreach ($this->_message as $erros) {
-                    echo "<div style='text-align:center; padding:5px;'><p style='color:red;'>" . $erros . "</p></div>";
+                foreach ($this->_login_message as $errors) {
+                    echo "<div style='text-align:center; padding:5px;'><p style='color:red;'>" . $errors . "</p></div>";
                 }
                 ?>
             </div>
@@ -152,6 +141,7 @@ class forms {
          */
 
         public function SignUpProcess(array $form_values) {
+            
             $this->_formInputs = $form_values;
             $input_values = array();
             $helper_functions = new functions();
@@ -244,6 +234,7 @@ class forms {
                      * If all is flags are zero InsertNewUser and reedirect to profile page
                      */
                     unset($this->_flag);
+                    unset($this->_message);
                     $input_values["ssid"] = $helper_functions->UIDGEN($input_values['fname'] . "_");
                     $fields = array();
                     $fields['user_id'] = "user_id";
@@ -268,6 +259,8 @@ class forms {
          */
 
         public function LoginProcess(array $form_values) {
+        
+            unset($this->_login_message);
             $insertion = new functions();
             $this->_formInputs = $form_values;
             $input_values = array();
@@ -281,20 +274,20 @@ class forms {
                     if ($this->_flag == 1) {
                         $error = array();
                         array_push($error, "All fields are required");
-                        $this->_message = $error;
+                        $this->_login_message = $error;
                     } else {
                         $this->_flag = 0;
-                        unset($this->_message);
+                        unset($this->_login_message);
                     }
                 } else if (empty($input_values['email']) || empty($input_values['password'])) {
                     $this->_flag = 1;
                     if ($this->_flag == 1) {
                         $error = array();
                         array_push($error, "All fields are required");
-                        $this->_message = $error;
+                        $this->_login_message = $error;
                     } else {
                         $this->_flag = 0;
-                        unset($this->_message);
+                        unset($this->_login_message);
                     }
                 } else {
                     unset($this->_flag);
@@ -304,7 +297,7 @@ class forms {
                         if ($this->_flag == 1) {
                             $error = array();
                             array_push($error, "There was an error loging you in!");
-                            $this->_message = $error;
+                            $this->_login_message = $error;
                         }
                     } else {
                         $input_values['ssid'] = $insertion->UIDGEN("User_");

@@ -84,7 +84,6 @@ class functions {
         $sql = "SELECT * FROM `$table` WHERE email = '" . $values['email'] . "' AND password ='" . md5($values['password']) . "'";       
         $result = $this->_mysqli->query($sql);
         $num_rows = $result->num_rows;
-        var_dump($num_rows);
         if ($num_rows == 1) {
             return $this->_results = true;
         } else {
