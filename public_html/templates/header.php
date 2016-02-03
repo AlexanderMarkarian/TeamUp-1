@@ -6,6 +6,7 @@
  * @author rostom
  * Header will be loaded from this template
  */
+
 class header {
 
     //Header files will go here 
@@ -78,7 +79,7 @@ class header {
                         </div>
                     </div>
                     <?php
-                } else {
+                } else if(isset($_GET['cmd']) || $_GET['cmd'] != "") {
                     ?>
                     <header>
                         <div class="top">
@@ -95,7 +96,7 @@ class header {
                                             foreach ($this->SetNavLinks() as $key => $nav_links) {
 
                                                     ?>
-                                                <li class=""><a href="<?= $nav_links ?>"><?= $key; ?></a></li>
+                                                <li><a href="<?= $nav_links ?>"><?= $key; ?></a></li>
                                                 <?php
                                             }
                                             ?>

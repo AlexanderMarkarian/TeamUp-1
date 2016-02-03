@@ -10,7 +10,6 @@
  */
 ob_start();
 require_once 'autoLoader.php';
-
 class loader {
 
     //put your code here
@@ -18,7 +17,7 @@ class loader {
     public $_post_values = array();
 
     public function __construct() {
-        SESSION_STARTED;
+        //SESSION_STARTED;
         echo $this->PageHeader();
         echo $this->LoadPageBody();
         echo $this->LoadPageFooter();
@@ -108,7 +107,8 @@ class loader {
         /* ADD NAVIGATION LINKS TO THIS ARRAY */
         /* USE ABSOLUTH_PATH_PAGES for page paths */
         $navigation = array(
-            "Home" => "loader.php?cmd=home&ssid={$_GET['ssid']}",
+            "Profile" => "../Classes/loader.php?cmd=profile&ssid={$_GET['ssid']}",
+            "Home" => "../Classes/loader.php?cmd=home&ssid={$_GET['ssid']}",
             "Roster" => "loader.php?cmd=roster&ssid={$_GET['ssid']}",
             "Add/Drop" => "loader.php?cmd=add-drop&ssid={$_GET['ssid']}",
             "Trades" => "loader.php?cmd=trades&ssid={$_GET['ssid']}",
@@ -135,6 +135,7 @@ class loader {
     public function LoadPageBody() {
         $function = new functions();
         $commands = new commands();
+        $body = new body();
         $this->_post_values = $_POST;
         /*
          * Pages 
@@ -158,32 +159,32 @@ class loader {
              * RS 20160201
              * 
              */
-        } else if (isset($_GET['cmd']) && $_GET['cmd'] == "profile" && $function->CheckSSID("users", $_GET['ssid']) == true) {
+        }else if ($_GET['cmd'] == "profile" && $function->CheckSSID("users", $_GET['ssid']) == true) {
+            unset($page_content_array);
             $page_content_array[] = array(
                 "id" => "1",
                 "page_name" => "Profile",
                 "div_name" => "m-a-n",
             );
-            if($_GET['cmd'] == "home"){
-                echo "home";
-            }
+
             /*
              * other pages [example: matchup, etc...]
              * use $page_content_array[]
              * RS 20160201
              */
-        } else if (isset($_GET['cmd']) && $_GET['cmd'] == "home" && $function->CheckSSID("users", $_GET['ssid']) == true) {
-            header("Location: loader.php");
+        }else if ($_GET['cmd'] == "home" && $function->CheckSSID("users", $_GET['ssid']) == true) {
+           unset($page_content_array);
             $page_content_array[] = array(
                 "id" => "2",
                 "page_name" => "Home",
                 "div_name" => "m-a-n",
             );
+                
         }
-        var_dump($page_content_array);
+        
 
-        $body = new body();
         echo $body->BuildPages($page_content_array);
+ 
     }
 
     /*

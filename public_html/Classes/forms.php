@@ -5,6 +5,7 @@
  *
  * @author rostom
  */
+
 class forms {
     /*
      * RS 20160131
@@ -245,9 +246,9 @@ class forms {
                     $fields['ssid'] = "ssid";
                     $query = $helper_functions->InsertNewUser("users", $fields, $input_values);
                     if ($query) {
-                        $_POST['page_name'] = $input_values['page_name'];
-                        $_GET['cmd'] = "profile";
-                        header("location: loader.php?cmd=profile&ssid=" . $input_values['ssid']);
+                       // $_POST['page_name'] = $input_values['page_name'];
+                        //$_GET['cmd'] = "profile";
+                        header("location: loader.php?cmd=profile&ssid=". $input_values['ssid']);
                     }
                 }
             }
