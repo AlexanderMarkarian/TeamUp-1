@@ -60,7 +60,7 @@ class forms {
                                 echo "<div class='alert alert-danger' role='alert'>" . $errors . "</div>";
                             }
                             ?>
-                            <form class="form-horizontal" role="form">
+                            <form class="form-horizontal" role="form" method="post">
                                 <div class="form-group">
                                     <label class="control-label col-sm-2" >First Name:</label>
                                     <div class="col-sm-10">
