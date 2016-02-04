@@ -46,6 +46,7 @@ class body {
                     echo '</section>';
                     break;
                 case "1":
+                    $pg;
                     include ABSOLUTH_PATH_PAGE."profile.php";
                     break;
                 case "2":

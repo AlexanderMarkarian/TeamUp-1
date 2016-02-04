@@ -17,6 +17,7 @@ class functions {
     private $_db;
     private $_mysqli;
     private $_results;
+    public $_data = array();
 
     public function __construct() {
         $this->_db = db_connect::getInstance();
@@ -80,8 +81,8 @@ class functions {
         }
     }
 
-    public function LogUserIn($table, array $values) {        
-        $sql = "SELECT * FROM `$table` WHERE email = '" . $values['email'] . "' AND password ='" . md5($values['password']) . "'";       
+    public function LogUserIn($table, array $values) {
+        $sql = "SELECT * FROM `$table` WHERE email = '" . $values['email'] . "' AND password ='" . md5($values['password']) . "'";
         $result = $this->_mysqli->query($sql);
         $num_rows = $result->num_rows;
         if ($num_rows == 1) {
@@ -90,18 +91,29 @@ class functions {
             return $this->_results = false;
         }
     }
-    public function UpdateLoginSSID($table, $value,$value2){
-        $sql ="UPDATE `$table` SET ssid='$value' WHERE email='$value2'";
-        var_dump($sql);
+
+    public function UpdateLoginSSID($table, $value, $value2) {
+        $sql = "UPDATE `$table` SET ssid='$value' WHERE email='$value2'";
+
         $result = $this->_mysqli->query($sql);
-        var_dump($result);
-        if($result){
+
+        if ($result) {
             return $this->_results = true;
-        }else{
+        } else {
             return $this->_results = false;
         }
-        
-        
+    }
+
+    public function getDataQuery($table, $value) {
+        $sql = "SELECT * FROM `$table` WHERE ssid = '$value'";
+        $result = $this->_mysqli->query($sql);
+        while($rows = $result->fetch_array(MYSQLI_ASSOC)){
+            $this->_data = $rows;
+        }
+    }
+
+    public function SetDataQuery() {
+        return $this->_data;
     }
 
 }

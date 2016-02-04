@@ -9,6 +9,7 @@
  * RS 20160131
  */
 ob_start();
+SESSION_STARTED;
 require_once 'autoLoader.php';
 class loader {
 
@@ -17,7 +18,7 @@ class loader {
     public $_post_values = array();
 
     public function __construct() {
-        //SESSION_STARTED;
+        
         echo $this->PageHeader();
         echo $this->LoadPageBody();
         echo $this->LoadPageFooter();
@@ -152,10 +153,15 @@ class loader {
              */
         }else if ($_GET['cmd'] == "profile" && $function->CheckSSID("users", $_GET['ssid']) == true) {
             unset($page_content_array);
+            $function->getDataQuery("users", $_GET['ssid']);
+           $data = $function->SetDataQuery();
+           
             $page_content_array[] = array(
                 "id" => "1",
                 "page_name" => "Profile",
                 "div_name" => "m-a-n",
+                "data" => $data 
+                
             );
 
             /*
@@ -165,10 +171,14 @@ class loader {
              */
         }else if ($_GET['cmd'] == "home" && $function->CheckSSID("users", $_GET['ssid']) == true) {
            unset($page_content_array);
+           
+           
+           
             $page_content_array[] = array(
                 "id" => "2",
                 "page_name" => "Home",
                 "div_name" => "m-a-n",
+                
             );
                 
         }

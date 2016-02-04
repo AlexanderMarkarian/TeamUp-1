@@ -322,6 +322,9 @@ class forms {
                 } else {
                     unset($this->_flag);
                     $query = $insertion->LogUserIn("users", $input_values);
+                    $getdata = $insertion->getDataQuery("users", $input_values);
+                    $data = $insertion->SetDataQuery();
+                    
                     if (!$query) {
                         $this->_flag = 1;
                         if ($this->_flag == 1) {
@@ -331,7 +334,12 @@ class forms {
                         }
                     } else {
                         $input_values['ssid'] = $insertion->UIDGEN("User_");
+                        
                         $insertion->UpdateLoginSSID("users", $input_values['ssid'], $input_values['email']);
+                        
+                      
+                    
+                      
                         header("location: loader.php?cmd=profile&ssid=" . $input_values['ssid']);
                     }
                 }

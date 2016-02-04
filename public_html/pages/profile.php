@@ -1,12 +1,11 @@
 
-<!--    <body class="dm-demo3">-->
         
         <section id="services">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 class="section-heading">Profile</h2>
-                        <h3 class="section-subheading text-muted">Alexander Markarian</h3>
+                        <h3 class="section-subheading text-muted"><?= $pg['data']['first_name']." ". $pg['data']['last_name']; ?></h3>
                     </div>
                 </div>
                 <div class="row text-center">
