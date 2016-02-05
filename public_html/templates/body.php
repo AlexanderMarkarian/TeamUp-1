@@ -11,7 +11,6 @@
  *
  * @author rostom
  */
-
 class body {
     /*
      * *******PAGE TYPE*********
@@ -23,6 +22,9 @@ class body {
      * 3. Drafts
      * 4. Roster
      * 5. Trades
+     * 6. MatchUp
+     * 7. Add-Drop
+     * 8. 404
      */
 
     public function __construct() {
@@ -38,7 +40,7 @@ class body {
                 case "0":
                     $forms = new forms();
                     echo '<section id="' . $pg["div_name"] . '">';
-                    $forms->SignUpProcess($pg['signup']);              
+                    $forms->SignUpProcess($pg['signup']);
                     echo $forms->SignUpForm();
                     $forms->LoginProcess($pg['login']);
                     echo $forms->LoginForm();
@@ -46,13 +48,34 @@ class body {
                     echo '</section>';
                     break;
                 case "1":
-                    $pg;
-                    include ABSOLUTH_PATH_PAGE."profile.php";
+                    $_GET['page_name'] = $pg['page_name'];
+                    var_dump($_POST);
+                    include ABSOLUTH_PATH_PAGE . "profile.php";
                     break;
                 case "2":
-                    include ABSOLUTH_PATH_PAGE."home.php";
+                    include ABSOLUTH_PATH_PAGE . "home.php";
+                    break;
+                case "3":
+                    include ABSOLUTH_PATH_PAGE . "roster.php";
+                    break;
+                case "4":
+                    include ABSOLUTH_PATH_PAGE . "add-drop.php";
+                    break;
+                case "5":
+                    include ABSOLUTH_PATH_PAGE . "tades.php";
+                    break;
+                case "6":
+                    include ABSOLUTH_PATH_PAGE . "matchup.php";
+                    break;
+                case "7":
+                    include ABSOLUTH_PATH_PAGE . "draft.php";
+                    break;
+
+                case "404":
+                    include ABSOLUTH_PATH_PAGE . "404.php";
                     break;
                 default:
+
                     $forms = new forms();
                     echo '<section id="' . $pg["div_name"] . '">';
                     echo $forms->SignUpForm();

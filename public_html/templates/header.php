@@ -6,7 +6,6 @@
  * @author rostom
  * Header will be loaded from this template
  */
-
 class header {
 
     //Header files will go here 
@@ -25,8 +24,8 @@ class header {
     }
 
     public function HeaderBasicHtml() {
-        $command = new commands();
-        $command->FindAllCommands($_GET['cmd']);
+        //$command = new commands();
+        //$command->FindAllCommands($_GET['cmd']);
         ?>
         <!--        <!DOCTYPE html>-->
         <html>
@@ -70,22 +69,21 @@ class header {
 
                         <div class="carousel-inner">
                             <?php
-                            foreach( $this->SetHomeSlider() as $slider_image){
-                                if($slider_image == '../assets/images/slider/baseball.jpg'){
-                                ?>
+                            foreach ($this->SetHomeSlider() as $slider_image) {
+                                if ($slider_image == '../assets/images/slider/baseball.jpg') {
+                                    ?>
                                     <div class="item active">
                                         <div class="fill" style="background-image:url('<?= $slider_image ?>');"></div>
                                     </div>
-                                <?php
-                                }
-                                else{
-                                ?>
+                                    <?php
+                                } else {
+                                    ?>
                                     <div class="item">
                                         <div class="fill" style="background-image:url('<?= $slider_image ?>');"></div>
                                     </div>
-                                <?php
+                                    <?php
                                 }
-                            ?>
+                                ?>
 
                             <?php } ?>
                         </div>
@@ -98,7 +96,7 @@ class header {
                         </a>
                     </header>
                     <?php
-                } else if(isset($_GET['cmd']) || $_GET['cmd'] != "") {
+                } else if (isset($_GET['cmd']) && $_GET['cmd'] != "") {
                     ?>
                     <nav class="navbar navbar-default navbar-fixed-top">
                         <div class="container">
@@ -115,12 +113,47 @@ class header {
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav navbar-right">
                                     <?php
+                                    /*
+                                     * Navigation menu
+                                     * if you want to have drop down menu add it to the array
+                                     */
                                     foreach ($this->SetNavLinks() as $key => $nav_links) {
-                                    ?>
-                                        <li><a href="<?= $nav_links ?>"><?= $key; ?></a></li>
-                                        <?php
-                                    }
-                                    ?>
+                                        if (is_array($nav_links)) {
+                                            ?>
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?= $key ?><span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <?php
+                                                    foreach ($nav_links as $k => $nav) {
+
+                                                        if ($k != "Log Out") {
+                                                            ?>
+                                                    <li class="fa fa-user"><a href="<?= $nav ?>"><?= $k; ?></a></li>
+
+                                                            <?php
+                                                        } else {
+                                                            ?>
+                                                            <li role="separator" class="divider"></li>
+                                                            <li><a href="<?= $nav ?>"><?= $k ?></a></li>
+                                                            <?php
+                                                        }
+                                                    }
+                                                    ?>
+
+                                                </ul>
+                                            </li>
+
+
+
+
+                                            <?php
+                                        } else {
+                                            ?>
+                                            <li class="dropdown"><a href="<?= $nav_links ?>"><?= $key; ?></a></li>
+                                                <?php
+                                            }
+                                        }
+                                        ?>
                                 </ul>
                             </div>
                         </div>
@@ -204,6 +237,20 @@ class header {
 
             public function SetHomeSlider() {
                 return $this->_sliders;
+            }
+
+            public function BuildNavigation(array $navlinks) {
+                // $this->_nav = $navlinks;
+                foreach ($navlinks as $key => $nav_item) {
+
+                    if (is_array($nav_item)) {
+
+                        foreach ($nav_item as $k => $sub_menu) {
+                            
+                        }
+                        return $sub_menu;
+                    }
+                }
             }
 
         }

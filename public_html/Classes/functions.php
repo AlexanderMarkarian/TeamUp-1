@@ -18,6 +18,8 @@ class functions {
     private $_mysqli;
     private $_results;
     public $_data = array();
+    public $_pooldata = array();
+    public $_count;
 
     public function __construct() {
         $this->_db = db_connect::getInstance();
@@ -107,13 +109,37 @@ class functions {
     public function getDataQuery($table, $value) {
         $sql = "SELECT * FROM `$table` WHERE ssid = '$value'";
         $result = $this->_mysqli->query($sql);
-        while($rows = $result->fetch_array(MYSQLI_ASSOC)){
+        while ($rows = $result->fetch_array(MYSQLI_ASSOC)) {
             $this->_data = $rows;
         }
     }
 
     public function SetDataQuery() {
         return $this->_data;
+    }
+
+    public function GetDataFromPool() {
+        $sql = "SELECT * FROM pool";
+        $result = $this->_mysqli->query($sql);
+        while ($rows = $result->fetch_array(MYSQLI_ASSOC)) {
+            $this->_pooldata[] = $rows;
+        }
+    }
+
+    public function SetPoolDataQuery() {
+        return $this->_pooldata;
+    }
+
+    public function GetCountFromPool($value) {
+
+        $sql = "SELECT * FROM pool WHERE sport ='$value'";
+        $result = $this->_mysqli->query($sql);
+        $num_rows = $result->num_rows;
+        $this->_count = $num_rows;
+    }
+
+    public function SetCountFromPool() {
+        return $this->_count;
     }
 
 }
