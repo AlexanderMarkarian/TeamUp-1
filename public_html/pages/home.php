@@ -1,72 +1,95 @@
-<section id="bc-t">
-		<div class="container">
-			<h1 class="blog-title">League Name</h1>
-		</div>
-	</section>
-    <section id="blog-single">
-		<div class="container">
-			<article class="blog-post">
-				<div class="ftitle"><h2>Standings</h2></div>
-				<div class="col-12">
-					<!-- TABLE STRIPED -->
-					<br><br>
-					 <table class="table-striped-dflt">
-						<tr class="tr-head">
-							<td>Team Name</td>
-							<td>Wins</td>
-							<td>Ties</td>
-							<td>Losses</td>
-							<td>Percentage</td>
-						</tr>
-						<tr>
-							<td class="td-head">Title of the row</td>
-							<td>324</td>
-							<td>324</td>
-							<td>8 240</td>
-							<td>324</td>
-						</tr>
-						<tr>
-							<td class="td-head">Second row</td>
-							<td>324</td>
-							<td>324</td>
-							<td>8 240</td>
-							<td>324</td>
-						</tr>
-						<tr>
-							<td class="td-head">Third row</td>
-							<td>324</td>
-							<td>324</td>
-							<td>8 240</td>
-							<td>324</td>
-						</tr>
-						<tr>
-							<td class="td-head">Forth row</td>
-							<td>324</td>
-							<td>324</td>
-							<td>8 240</td>
-							<td>324</td>
-						</tr>
-					 </table>
-				</div>
-			</article>
-		</div>
-	</section>
-	<section>
-		<br><Br>
-		<div class="container">
-			<div class="col-12">
-				<div class="a-games">
-					<div class="ftitle"><h2>Matchups</h2></div>
-					<ul class="clearfix">
-						<li><span class="text-right">Team 1</span><span class="d-g">vs</span><span class="text-left">Team 2</span></li>
-						<li><span class="text-right">Team 3</span><span class="d-g">vs</span><span class="text-left">Team 4</span></li>
-						<li><span class="text-right">Team 5</span><span class="d-g">vs</span><span class="text-left">Team 6</span></li>
-						<li><span class="text-right">Team 7</span><span class="d-g">vs</span><span class="text-left">Team 8</span></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-	</section>
-	
-
+<section id="home">
+	<div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">League Name</h2>
+                <h3 class="section-subheading text-muted">some text</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+    	<div class="row">
+    		<div class=" col-sm-6 col-md-6">
+    			<h3 class="section-heading text-center">Standings</h3>
+    			<table class="table text-center">
+    				<tr class="">
+    					<th >Team Name</th>
+					    <th >Wins</th>
+					    <th >Loses</th>
+					    <th >Ties</th>
+					    <th >Total Points</th>
+    				</tr>
+    				<tr>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    				</tr>
+    				<tr>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    				</tr>
+    				<tr>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    				</tr>
+       				<tr>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    				</tr>
+    			</table>
+    		</div>
+    		<div class=" col-sm-6 col-md-6">
+    			<h3 class="section-heading text-center">Mathups</h3>
+				<table class="table text-center">
+    				<tr>
+    					<th >Team Name</th>
+					    <th >Wins</th>
+					    <th >Loses</th>
+					    <th >Ties</th>
+					    <th >Total Points</th>
+    				</tr>
+    				<tr>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    				</tr>
+    				<tr>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    				</tr>
+    				<tr>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    				</tr>
+       				<tr>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    					<td>text</td>
+    				</tr>
+    			</table>
+  
+    		</div>
+    	</div>
+    </div>
+</section>

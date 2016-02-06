@@ -65,10 +65,10 @@ class loader {
         <?php
 
         $css = array(
-            "css1" => '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>',
-            "css2" => '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css">',
+            "css1" => '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>',
             "css2" => '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'jquery.datetimepicker.css">',
             "css3" => ' <link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'style.css">',
+            "css4" => '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css">'
         );
 
         if (!isset($_GET['cmd']) || $_GET['cmd'] == "") {
@@ -81,7 +81,11 @@ class loader {
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "roster") {
 
-            array_push($css, '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'dragdrop.css">', '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'pageLoader.css">'
+            array_push($css, ""
+            );
+        } else if (isset($_GET['cmd']) && $_GET['cmd'] == "add/drop") {
+
+            array_push($css, ""
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] != "") {
 
@@ -92,7 +96,8 @@ class loader {
         /* JAVASCRIPT LINKS CAN BE ADDED TO THIS ARRAY */
         /* USE ABSOLUTH_PATH_JS for Paths on js */
         $js = array(
-            "js1" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "libs/modernizr-2.5.3.min.js'></script>"
+            "js1" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "jquery.js'></script>",
+            "js2" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "bootstrap.min.js'></script>"
         );
         /* LOADS -> [meta, title, css, js] */
         $head->GetMetaForHeader($meta);
@@ -196,7 +201,7 @@ class loader {
                     $page_content_array[] = array(
                         "id" => "2",
                         "page_name" => "Home",
-                        "div_name" => "m-a-n",
+                        "div_name" => "home",
                         "data" => $data
                     );
                     break;
@@ -206,7 +211,7 @@ class loader {
                     $page_content_array[] = array(
                         "id" => "3",
                         "page_name" => "Roster",
-                        "div_name" => "m-a-n",
+                        "div_name" => "team",
                         "data" => $data
                     );
                     break;
@@ -216,7 +221,7 @@ class loader {
                     $page_content_array[] = array(
                         "id" => "4",
                         "page_name" => "Add/Drop",
-                        "div_name" => "m-a-n",
+                        "div_name" => "add-drop",
                         "data" => $data
                     );
                     break;
@@ -318,20 +323,13 @@ class loader {
     public function LoadPageFooter() {
         if (!isset($_GET['cmd']) || $_GET['cmd'] == "") {
             $footer_script = array(
-                "js4" => '<script src="' . ABSOLUTH_PATH_JS . 'libs/jquery-1.10.2.min.js"></script>',
-                "js5" => ' <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>',
-                "js6" => ' <script src="' . ABSOLUTH_PATH_JS . 'libs/jquery.bxslider.min.js"></script>',
-                "js7" => '<script src="' . ABSOLUTH_PATH_JS . 'bootstrap.min.js"></script>',
-                "js8" => '<script src="' . ABSOLUTH_PATH_JS . 'slider.js"></script>',
+                "js3" => '<script src="' . ABSOLUTH_PATH_JS . 'slider.js"></script>',
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "profile") {
 
             $footer_script = array(
-                "js4" => '<script src="' . ABSOLUTH_PATH_JS . 'libs/jquery-1.10.2.min.js"></script>',
-                "js5" => '<script src="' . ABSOLUTH_PATH_JS . 'profile.js"></script>',
-                "js6" => '<script src="' . ABSOLUTH_PATH_JS . 'libs/jquery.datetimepicker.full.min.js"></script>',
-                "js8" => '<script src="' . ABSOLUTH_PATH_JS . 'bootstrap.min.js"></script>',
-                "js7" => "<script>
+                "js3" => '<script src="' . ABSOLUTH_PATH_JS . 'libs/jquery.datetimepicker.full.min.js"></script>',
+                "js4" => "<script>
           $(function() {
             $('.datetimepicker').datetimepicker({
                 dayOfWeekStart : 1,
@@ -345,87 +343,9 @@ class loader {
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "roster") {
 
             $footer_script = array(
-                "js4" => '<script src="' . ABSOLUTH_PATH_JS . 'libs/jquery-1.10.2.min.js"></script>',
-                "js5" => '<script src="' . ABSOLUTH_PATH_JS . 'libs/jquery.flexslider-min.js"></script>',
-                "js6" => '<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>',
-                "js7" => '<script src="' . ABSOLUTH_PATH_JS . 'libs/jquery.bxslider.min.js"></script>',
-                "js8" => '<script src="' . ABSOLUTH_PATH_JS . 'pageLoader.js"></script>',
-                "js9" => '<script src="' . ABSOLUTH_PATH_JS . 'scripts.js"></script>',
-                "js10" => '<script src="' . ABSOLUTH_PATH_JS . 'libs/draggability.pkgd.min.js"></script>',
-                "js11" => '<script src="' . ABSOLUTH_PATH_JS . 'libs/dragdrop.js"></script>',
-                "js13" => '<script src="' . ABSOLUTH_PATH_JS . 'bootstrap.min.js"></script>',
-                "js12" => "    <script>
-		(function() {
-			var body = document.body,
-				dropArea = document.getElementById( 'drop-area' ),
-				droppableArr = [], dropAreaTimeout;
-
-			// initialize droppables
-			[].slice.call( document.querySelectorAll( '#drop-area .drop-area__item' )).forEach( function( el ) {
-				droppableArr.push( new Droppable( el, {
-					onDrop : function( instance, draggableEl ) {
-						// show checkmark inside the droppabe element
-						console.log(this);
-						classie.add( instance.el, 'drop-feedback' );
-						clearTimeout( instance.checkmarkTimeout );
-						instance.checkmarkTimeout = setTimeout( function() { 
-							classie.remove( instance.el, 'drop-feedback' );
-						}, 800 );
-						// ...
-					}
-				} ) );
-			} );
-
-			// initialize draggable(s)
-			[].slice.call(document.querySelectorAll( '#grid .grid__item' )).forEach( function( el ) {
-				new Draggable( el, droppableArr, {
-					draggabilly : { containment: document.body },
-					onStart : function() {
-						// add class 'drag-active' to body
-						classie.add( body, 'drag-active' );
-						// clear timeout: dropAreaTimeout (toggle drop area)
-						clearTimeout( dropAreaTimeout );
-						// show dropArea
-						classie.add( dropArea, 'show' );
-					},
-					onEnd : function( wasDropped ) {
-						var afterDropFn = function() {
-							// hide dropArea
-							classie.remove( dropArea, 'show' );
-							// remove class 'drag-active' from body
-							classie.remove( body, 'drag-active' );
-						};
-
-						if( !wasDropped ) {
-							afterDropFn();
-						}
-						else {
-							// after some time hide drop area and remove class 'drag-active' from body
-							clearTimeout( dropAreaTimeout );
-							dropAreaTimeout = setTimeout( afterDropFn, 400 );
-						}
-					}
-				} );
-			} );
-		})();
-	</script>"
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] != "") {
             $footer_script = array(
-                "js4" => '<script src="' . ABSOLUTH_PATH_JS . 'libs/jquery-1.10.2.min.js"></script>',
-                "js5" => '<script src="' . ABSOLUTH_PATH_JS . 'profile.js"></script>',
-                "js6" => '<script src="' . ABSOLUTH_PATH_JS . 'libs/jquery.datetimepicker.full.min.js"></script>',
-                "js8" => '<script src="' . ABSOLUTH_PATH_JS . 'bootstrap.min.js"></script>',
-                "js7" => "<script>
-          $(function() {
-            $('.datetimepicker').datetimepicker({
-                dayOfWeekStart : 1,
-                lang:'en',
-                disabledDates:['1986/01/08','1986/01/09','1986/01/10'],
-                startDate:  '2016/01/01'
-            });
-          });
-          </script>"
             );
         }
         $footer = new footer();

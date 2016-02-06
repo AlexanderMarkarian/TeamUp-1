@@ -54,6 +54,13 @@ h6 {
   display: block;
 }
 
+.resize{
+  width: 60px;
+  height: 55px;
+  border-radius: 50%;
+  float: left;
+}
+
 .league_name:hover{
   color: #18bc9c;
 }
@@ -162,7 +169,6 @@ fieldset[disabled] .btn-xl.active {
 .btn-info{
   width: 100%;
 }
-
 
 .navbar {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;

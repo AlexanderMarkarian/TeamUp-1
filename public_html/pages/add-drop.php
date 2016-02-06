@@ -1,117 +1,112 @@
-<section id="services">
+ <section id="add/drop">
     <div class="container">
-        <section id="club">
-            <div class="container">
-                <!-- POST -->
-                <article class="club-post">
-                    <div class="club-content">
-                        <div id="tab" class="tabs">
-                            <ul class="clearfix">
-                                <li><a href="#section-1" >NBA</a></li>
-                                <li><a href="#section-2" >NFL</a></li>
-                                <li><a href="#section-3" >MLB</a></li>
-                                <li><a href="#section-4" >NHL</a></li>
-                            </ul>
-
-
-                            <div id="section-1" class="tab-content ">
-                                <?php
-                                foreach ($pg['data'] as $info) {
-
-
-                                    if ($info['sport'] == "NBA") {
-                                        ?>
-                                        <div class="col-4 margin-10">
-                                            <div class="col-3">
-                                                <img src="<?= ABSOLUTH_PATH_IMAGES . $info['logo'] ?>" alt="<?= $info['name'] ?>" class="resize"/>
-
-                                            </div>
-                                            <div class="col-9 dir-n">
-                                                <a href="#<?= $info['ID'] ?>"><?= $info['name'] ?></a>
-                                            </div>
-                                        </div>
-                                        <?php
-                                    }
-                                }
-                                ?>
-                            </div>
-                            <div id="section-2" class="tab-content ">
-                                <?php
-                                foreach ($pg['data'] as $info) {
-
-
-                                    if ($info['sport'] == "NFL") {
-                                        ?>
-                                        <div class="col-4 margin-10">
-                                            <div class="col-3">
-                                                <img src="<?= ABSOLUTH_PATH_IMAGES . $info['logo'] ?>" alt="<?= $info['name'] ?>" class="resize"/>
-                                            </div>
-
-                                            <div class="col-9 dir-n">
-                                                <a href="#<?= $info['ID'] ?>"><?= $info['name'] ?></a>
-                                            </div>
-                                        </div>
-                                        <?php
-                                    }
-                                }
-                                ?>
-                            </div>
-                            <div id="section-3" class="tab-content ">
-                                <?php
-                                foreach ($pg['data'] as $info) {
-
-
-                                    if ($info['sport'] == "MLB") {
-                                        ?>
-                                        <div class="col-4 margin-10">
-                                            <div class="col-3">
-                                                <img src="<?= ABSOLUTH_PATH_IMAGES . $info['logo'] ?>" alt="<?= $info['name'] ?>" class="resize"/>
-                                            </div>
-
-                                            <div class="col-9 dir-n">
-                                                <a href="#<?= $info['ID'] ?>"><?= $info['name'] ?></a>
-                                            </div>
-                                        </div>
-                                        <?php
-                                    }
-                                }
-                                ?>
-                            </div>
-                            <div id="section-4" class="tab-content ">
-                                <?php
-                                foreach ($pg['data'] as $info) {
-
-
-                                    if ($info['sport'] == "NHL") {
-                                        ?>
-                                        <div class="col-4 margin-10">
-                                            <div class="col-3">
-                                                <img src="<?= ABSOLUTH_PATH_IMAGES . $info['logo'] ?>"  alt="<?= $info['name'] ?>" class="resize"/>
-                                            </div>
-
-                                            <div class="col-9 dir-n">
-                                                <a href="#<?= $info['ID'] ?>"><?= $info['name'] ?></a>
-                                            </div>
-                                        </div>
-                                        <?php
-                                    }
-                                }
-                                ?>
-                            </div>
-
-
-
-                        </div>
-                </article>
-
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Add/Drop</h2>
+                <h3 class="section-subheading text-muted">some text</h3>
             </div>
-        </section>
-         <!-- Libs -->
-    <script src="js/libs/jquery-1.10.2.min.js"></script>
-    <script src='js/libs/jquery.flexslider-min.js'></script>
-	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-	<script src="js/libs/jquery.bxslider.min.js"></script>
-	<script src="js/pageLoader.js"></script>
-    <script src="js/scripts.js"></script>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <ul id="myTab" class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#service-one" data-toggle="tab"> NBA</a>
+                    </li>
+                    <li class=""><a href="#service-two" data-toggle="tab"> NFL</a>
+                    </li>
+                    <li class=""><a href="#service-three" data-toggle="tab"> MLB</a>
+                    </li>
+                    <li class=""><a href="#service-four" data-toggle="tab"> NHL</a>
+                    </li>
+                </ul>
+
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="service-one">
+                         <?php
+                            foreach ($pg['data'] as $info) {
+                                if ($info['sport'] == "NBA") {
+                                    ?>
+                                    <div class="col-md-4" style="margin-top:15px;">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img src="<?= ABSOLUTH_PATH_IMAGES . $info['logo'] ?>" alt="<?= $info['name'] ?>" class="resize"/>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading" id="<?= $info['ID'] ?>"><?= $info['name'] ?></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php
+                                }
+                            }
+                        ?>
+                    </div>
+                    <div class="tab-pane fade" id="service-two">
+                        <?php
+                            foreach ($pg['data'] as $info) {
+                                if ($info['sport'] == "NFL") {
+                                    ?>
+                                    <div class="col-md-4" style="margin-top:15px;">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img src="<?= ABSOLUTH_PATH_IMAGES . $info['logo'] ?>" alt="<?= $info['name'] ?>" class="resize"/>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading" id="<?= $info['ID'] ?>"><?= $info['name'] ?></h4>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php
+                                }
+                            }
+                        ?>
+
+                    </div>
+                    <div class="tab-pane fade" id="service-three">
+                        <?php
+                            foreach ($pg['data'] as $info) {
+                                if ($info['sport'] == "MLB") {
+                                    ?>
+                                    <div class="col-md-4" style="margin-top:15px;">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img src="<?= ABSOLUTH_PATH_IMAGES . $info['logo'] ?>" alt="<?= $info['name'] ?>" class="resize"/>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading" id="<?= $info['ID'] ?>"><?= $info['name'] ?></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php
+                                }
+                            }
+                        ?>
+ 
+                    </div>
+                    <div class="tab-pane fade" id="service-four">
+                        <?php
+                            foreach ($pg['data'] as $info) {
+                                if ($info['sport'] == "NHL") {
+                                    ?>
+                                    <div class="col-md-4" style="margin-top:15px;">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img src="<?= ABSOLUTH_PATH_IMAGES . $info['logo'] ?>" alt="<?= $info['name'] ?>" class="resize"/>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading" id="<?= $info['ID'] ?>"><?= $info['name'] ?></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php
+                                }
+                            }
+                        ?>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
