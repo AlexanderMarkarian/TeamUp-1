@@ -244,26 +244,22 @@ class loader {
                 case "draft":
                     $nba = $function->GetCountFromPool("NBA");
                     $nba = $function->SetCountFromPool();
-       
+
                     $nfl = $function->GetCountFromPool("NFL");
                     $nfl = $function->SetCountFromPool();
-                    
+
                     $mlb = $function->GetCountFromPool("MLB");
                     $mlb = $function->SetCountFromPool();
-                    
+
                     $nhl = $function->GetCountFromPool("NHL");
                     $nhl = $function->SetCountFromPool();
-                    
+
                     $counts = array(
                         "nba" => $nba,
                         "nfl" => $nfl,
                         "mlb" => $mlb,
                         "nhl" => $nhl
-                        
                     );
-                   
-                 
-                    //var_dump($nba);
 
                     $function->GetDataFromPool();
                     $data = $function->SetPoolDataQuery();
@@ -275,8 +271,32 @@ class loader {
                         "data" => $data,
                         "count" => $counts
                     );
-                 
-                   
+                    break;
+                case "settings":
+                    $page_content_array[] = array(
+                        "id" => "8",
+                        "page_name" => "Setting",
+                        "div_name" => "m-a-n",
+                        "data" => $data
+                    );
+                    break;
+                case "edit-profile":
+                    $function->getDataQuery("users", $_GET['ssid']);
+                    $data = $function->SetDataQuery();
+                    $page_content_array[] = array(
+                        "id" => "9",
+                        "page_name" => "Edit Profile",
+                        "div_name" => "m-a-n",
+                        "data" => $data
+                    );
+                    break;
+                case "log-out":
+                    $page_content_array[] = array(
+                        "id" => "10",
+                        "page_name" => "Logout",
+                        "div_name" => "m-a-n",
+                        "data" => $data
+                    );
                     break;
             }
         } else {

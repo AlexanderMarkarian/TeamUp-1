@@ -70,7 +70,16 @@ class body {
                 case "7":
                     include ABSOLUTH_PATH_PAGE . "draft.php";
                     break;
-
+                case "8":
+                    echo "Settings";
+                    break;
+                case "9":
+                    $forms = new forms();
+                    echo $forms->EditProfileForm($pg);
+                    break;
+                case "10":
+                    echo "logout";
+                    break;
                 case "404":
                     include ABSOLUTH_PATH_PAGE . "404.php";
                     break;

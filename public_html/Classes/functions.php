@@ -110,7 +110,7 @@ class functions {
         $sql = "SELECT * FROM `$table` WHERE ssid = '$value'";
         $result = $this->_mysqli->query($sql);
         while ($rows = $result->fetch_array(MYSQLI_ASSOC)) {
-            $this->_data = $rows;
+            $this->_data[] = $rows;
         }
     }
 

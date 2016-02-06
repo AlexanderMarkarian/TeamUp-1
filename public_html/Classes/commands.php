@@ -38,7 +38,10 @@ class commands {
             "add-drop",
             "trades",
             "matchup",
-            "draft"
+            "draft",
+            "settings",
+            "edit-profile",
+            "log-out"
         );
         
         if (in_array($needle, $commands)) {
