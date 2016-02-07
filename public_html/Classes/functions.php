@@ -94,8 +94,9 @@ class functions {
         }
     }
 
-    public function UpdateLoginSSID($table, $value, $value2) {
-        $sql = "UPDATE `$table` SET ssid='$value' WHERE email='$value2'";
+    public function UpdateLoginSSID($table, $value, $field, $value2) {
+        $sql = "UPDATE `$table` SET ssid='$value' WHERE `$field`='$value2'";
+        var_dump($sql);
 
         $result = $this->_mysqli->query($sql);
 
@@ -141,5 +142,7 @@ class functions {
     public function SetCountFromPool() {
         return $this->_count;
     }
+    
+ 
 
 }

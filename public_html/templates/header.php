@@ -128,13 +128,13 @@ class header {
 
                                                         if ($k != "Log Out") {
                                                             ?>
-                                                    <li class="fa fa-user"><a href="<?= $nav ?>"><?= $k; ?></a></li>
+                                                    <li ><a href="<?= $nav['link'] ?>"><i class="<?=$nav['class'] ?>"></i>  <?= $k; ?></a></li>
 
                                                             <?php
                                                         } else {
                                                             ?>
                                                             <li role="separator" class="divider"></li>
-                                                            <li><a href="<?= $nav ?>"><?= $k ?></a></li>
+                                                            <li ><a href="<?= $nav['link'] ?>"><i class="<?=$nav['class'] ?>"></i>  <?= $k ?></a></li>
                                                             <?php
                                                         }
                                                     }

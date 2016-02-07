@@ -49,7 +49,7 @@ class body {
                     break;
                 case "1":
                     $_GET['page_name'] = $pg['page_name'];
-                    var_dump($_POST);
+                    var_dump($_SESSION['isLoggedin']);
                     include ABSOLUTH_PATH_PAGE . "profile.php";
                     break;
                 case "2":
@@ -78,7 +78,7 @@ class body {
                     echo $forms->EditProfileForm($pg);
                     break;
                 case "10":
-                    echo "logout";
+                    header("Location:loader.php?cmd=");
                     break;
                 case "404":
                     include ABSOLUTH_PATH_PAGE . "404.php";

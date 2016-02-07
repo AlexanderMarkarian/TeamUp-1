@@ -423,10 +423,11 @@ class forms {
                         } else {
                             $input_values['ssid'] = $insertion->UIDGEN("User_");
 
-                            $insertion->UpdateLoginSSID("users", $input_values['ssid'], $input_values['email']);
-
-
-
+                            $insertion->UpdateLoginSSID("users", $input_values['ssid'], "email", $input_values['email']);
+                        
+                           $_SESSION['isLoggedin'] = $insertion->UIDGEN(date("Ymd"));
+                           
+                         
 
                             header("location: loader.php?cmd=profile&ssid=" . $input_values['ssid']);
                         }

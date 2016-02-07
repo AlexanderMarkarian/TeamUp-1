@@ -122,10 +122,18 @@ class loader {
         /* USE ABSOLUTH_PATH_PAGES for page paths */
         $navigation = array(
             "Profile" => array(
-                "Profile" => "loader.php?cmd=profile&ssid={$_GET['ssid']}",
-                "Settings" => "loader.php?cmd=settings&ssid={$_GET['ssid']}",
-                "Edit Profile" => "loader.php?cmd=edit-profile&ssid={$_GET['ssid']}",
-                "Log Out" => "loader.php?cmd=log-out&ssid={$_GET['ssid']}"
+                "Profile" => array(
+                    "link" => "loader.php?cmd=profile&ssid={$_GET['ssid']}",
+                    "class" => "glyphicon glyphicon-user"),
+                "Settings" => array(
+                    "link" => "loader.php?cmd=settings&ssid={$_GET['ssid']}",
+                    "class" => "glyphicon glyphicon-cog"),
+                "Edit Profile" => array(
+                    "link" => "loader.php?cmd=edit-profile&ssid={$_GET['ssid']}",
+                    "class" => "glyphicon glyphicon-pencil"),
+                "Log Out" => array(
+                    "link" => "loader.php?cmd=log-out&ssid={$_GET['ssid']}",
+                    "class" => "glyphicon glyphicon-off")
             ),
             "Home" => "loader.php?cmd=home&ssid={$_GET['ssid']}",
             "Roster" => "loader.php?cmd=roster&ssid={$_GET['ssid']}",
@@ -296,11 +304,13 @@ class loader {
                     );
                     break;
                 case "log-out":
+                    $function->UpdateLoginSSID("users", $_SESSION['isLoggedin'], "ssid", $_GET['ssid']);
                     $page_content_array[] = array(
                         "id" => "10",
-                        "page_name" => "Logout",
-                        "div_name" => "m-a-n",
-                        "data" => $data
+                        "page_name" => "Logout"
+                        
+                        
+                        
                     );
                     break;
             }
