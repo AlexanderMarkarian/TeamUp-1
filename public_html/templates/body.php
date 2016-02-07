@@ -78,6 +78,7 @@ class body {
                     echo $forms->EditProfileForm($pg);
                     break;
                 case "10":
+                    unset($_SESSION['isLoggedin']);
                     header("Location:loader.php?cmd=");
                     break;
                 case "404":

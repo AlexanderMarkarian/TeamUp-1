@@ -93,10 +93,18 @@ class functions {
             return $this->_results = false;
         }
     }
-
+    /*
+     * @Author: Rostom
+     * Date: 02-04-2016
+     * @param $table
+     * @param $value
+     * @param $field
+     * @param $value2
+     * 
+     * Use this to update ssid
+     */
     public function UpdateLoginSSID($table, $value, $field, $value2) {
         $sql = "UPDATE `$table` SET ssid='$value' WHERE `$field`='$value2'";
-        var_dump($sql);
 
         $result = $this->_mysqli->query($sql);
 
