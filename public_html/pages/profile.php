@@ -10,6 +10,8 @@
                     foreach ($pg['data'] as $user_info) {
                         echo $user_info['first_name'] . " " . $user_info['last_name'];
                     }
+                     $pg['functions']->DateAndTime();
+                     echo "<br/>". $pg['functions']->ReturnDate();
                     ?>
                 </h3>
             </div>

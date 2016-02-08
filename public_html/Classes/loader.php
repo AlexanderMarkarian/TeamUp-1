@@ -170,6 +170,7 @@ class loader {
     public function LoadPageBody() {
         $function = new functions();
         $command = new commands();
+        $forms = new forms();
         $command->FindAllCommands($_GET['cmd']);
 
         $this->_post_values = $_POST;
@@ -203,13 +204,13 @@ class loader {
                 case "profile":
                     $function->getDataQuery("users", $_GET['ssid']);
                     $data = $function->SetDataQuery();
-                    $forms = new forms();
                     $page_content_array[] = array(
                         "id" => "1",
                         "page_name" => "Profile",
                         "div_name" => "m-a-n",
                         "data" => $data,
-                        "forms" =>$forms
+                        "forms" => $forms,
+                        "functions" => $function
                     );
 
                     break;
