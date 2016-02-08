@@ -41,7 +41,9 @@ class commands {
             "draft",
             "settings",
             "edit-profile",
-            "log-out"
+            "log-out",
+            "faq",
+            "help"
         );
         
         if (in_array($needle, $commands)) {

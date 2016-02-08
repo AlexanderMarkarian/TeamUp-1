@@ -7,8 +7,8 @@
                 <h2 class="section-heading">Profile</h2>
                 <h3 class="section-subheading text-muted">
                     <?php
-                    foreach($pg['data'] as $user_info){
-                        echo $user_info['first_name']. " ".$user_info['last_name'];
+                    foreach ($pg['data'] as $user_info) {
+                        echo $user_info['first_name'] . " " . $user_info['last_name'];
                     }
                     ?>
                 </h3>
@@ -21,20 +21,11 @@
                     <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="service-heading">Create League</h4>
-
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="League Name">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Team Name" >
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Draft Date" >
-                </div>
-                <div class="form-group">
-                    <input type="button" style="float:left" class="btn btn-info" value="Submit">
-                </div>
-
+                <!------------------CREATE LEAGUE FORM GOES HERE ---------------------->
+                <?php
+                echo $pg['forms']->CreateLeague();
+                ?>
+                <!----------END FORM---------------------------------------->
             </div>
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
@@ -42,15 +33,11 @@
                     <i class="fa fa-exchange fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="service-heading">Join League</h4>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="League ID">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Team Name" >
-                </div>
-                <div class="form-group">
-                    <input type="button" style="float:left" class="btn btn-info" value="Submit">
-                </div>
+                <!----------JOIN LEAGUE FORM GOES HERE----------------->
+                <?php
+                echo $pg['forms']->JoinLeague();
+                ?>
+                <!--------------------END FORM------------------------->
             </div>
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">

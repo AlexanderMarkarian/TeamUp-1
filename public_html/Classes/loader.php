@@ -131,6 +131,14 @@ class loader {
                 "Edit Profile" => array(
                     "link" => "loader.php?cmd=edit-profile&ssid={$_GET['ssid']}",
                     "class" => "glyphicon glyphicon-pencil"),
+                "Help" => array(
+                    "link" => "loader.php?cmd=help&ssid={$_GET['ssid']}",
+                    "class" => "glyphicon glyphicon-info-sign"
+                ),
+                "FAQ" => array(
+                    "link" => "loader.php?cmd=faq&ssid={$_GET['ssid']}",
+                    "class" => "glyphicon glyphicon-question-sign"
+                ),
                 "Log Out" => array(
                     "link" => "loader.php?cmd=log-out&ssid={$_GET['ssid']}",
                     "class" => "glyphicon glyphicon-off")
@@ -195,11 +203,13 @@ class loader {
                 case "profile":
                     $function->getDataQuery("users", $_GET['ssid']);
                     $data = $function->SetDataQuery();
+                    $forms = new forms();
                     $page_content_array[] = array(
                         "id" => "1",
                         "page_name" => "Profile",
                         "div_name" => "m-a-n",
-                        "data" => $data
+                        "data" => $data,
+                        "forms" =>$forms
                     );
 
                     break;

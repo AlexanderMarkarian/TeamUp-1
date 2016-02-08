@@ -375,8 +375,7 @@ class forms {
              * RS 20160202
              */
 
-            public
-                    function LoginProcess(array $form_values) {
+            public function LoginProcess(array $form_values) {
 
                 unset($this->_login_message);
                 $insertion = new functions();
@@ -424,15 +423,66 @@ class forms {
                             $input_values['ssid'] = $insertion->UIDGEN("User_");
 
                             $insertion->UpdateLoginSSID("users", $input_values['ssid'], "email", $input_values['email']);
-                        
-                           $_SESSION['isLoggedin'] = $insertion->UIDGEN(date("Ymd"));
-                           
-                         
+
+                            $_SESSION['isLoggedin'] = $insertion->UIDGEN(date("Ymd"));
+
+
 
                             header("location: loader.php?cmd=profile&ssid=" . $input_values['ssid']);
                         }
                     }
                 }
+            }
+
+            /*
+             * @author: Alex
+             * Create league form is below which is used in profile.php
+             * Mod as needed
+             * RS 02072016
+             */
+
+            public function CreateLeague() {
+                ?>
+                <form method="post" name="form[c_league]">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="League Name" name="form[c_league][league_name]" value="<?= $_POST['form']['c_league']['league_name'] ?>">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Team Name" name="form[c_league][team_name]" value="<?= $_POST['form']['c_league']['team_name'] ?>">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="datepicker" class="form-control datetimepicker" placeholder="Draft Date" name="form[c_league][d_date]" value="<?= $_POST['form']['c_league']['d_date'] ?>" >
+                    </div>
+                    <div class="form-group">
+                        <input type="button" style="float:left" class="btn btn-info" value="Submit">
+                    </div>
+                </form>
+
+                <?php
+            }
+            
+            /*
+             * @auth: ALex
+             * Join league form goes here
+             * Mod as needed
+             * RS 02072016
+             */
+
+            public function JoinLeague() {
+                ?>
+                <form method="post" name="form[j_league]">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="League ID" name="form[j_league][league_id]" value="<?= $_POST['form']['j_league']['league_id'] ?>">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Team Name" name="form[j_league][team_name]" value="<?= $_POST['form']['j_league']['team_name'] ?>">
+                    </div>
+                    <div class="form-group">
+                        <input type="button" style="float:left" class="btn btn-info" value="Submit">
+                    </div>
+                </form>
+
+                <?php
             }
 
         }
