@@ -51,27 +51,39 @@
             <div class="col-lg-12">
                 <h2 class="page-header">Other Matchups</h2>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6" style>
-
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
+            <div class="col-md-2 col-sm-4 col-xs-6 other-matchup">
+            	<div class="top-team">Team 3 <span class="matchup-score"> 45</span></div>
+            	<div class="bottom-team">Team 4<span class="matchup-score"> 56</span></div>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
+            <div class="col-md-2 col-sm-4 col-xs-6 other-matchup">
+            	<div class="top-team">Team 3 <span class="matchup-score"> 45</span></div>
+            	<div class="bottom-team">Team 4<span class="matchup-score"> 56</span></div>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
+            <div class="col-md-2 col-sm-4 col-xs-6 other-matchup">
+            	<div class="top-team">Team 3 <span class="matchup-score"> 45</span></div>
+            	<div class="bottom-team">Team 4<span class="matchup-score"> 56</span></div>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
+            <div class="col-md-2 col-sm-4 col-xs-6 other-matchup">
+            	<div class="top-team">Team 3 <span class="matchup-score"> 45</span></div>
+            	<div class="bottom-team">Team 4<span class="matchup-score"> 56</span></div>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
+            <div class="col-md-2 col-sm-4 col-xs-6 other-matchup">
+            	<div class="top-team">Team 3 <span class="matchup-score"> 56</span></div>
+            	<div class="bottom-team">Team 4<span class="matchup-score"> 56</span></div>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
+            <div class="col-md-2 col-sm-4 col-xs-6 other-matchup">
+            	<div class="top-team">Team 3 <span class="matchup-score"> 56</span></div>
+            	<div class="bottom-team">Team 4<span class="matchup-score"> 56</span></div>
             </div>
         </div>
-
+        <div class="row text-center" style="margin-top:60px">
+	       	<ul class="pagination">
+			  <li><a href="#">1</a></li>
+			  <li><a href="#">2</a></li>
+			  <li><a href="#">3</a></li>
+			  <li><a href="#">4</a></li>
+			  <li><a href="#">5</a></li>
+			</ul>
+        </div>
     </div>
-
 </section>

@@ -7,27 +7,35 @@
             </div>
         </div>
 
-        <div class="row" id="add-drop" style="display:none">
-            <div class="col-md-5" id="add-side">
+        <div class="row" id="add-drop" style="display:none;">
+            <div class="col-md-3" id="add-side" style="margin-left:17%">
                 <h4>Team To Add</h4>
                 <img class="img-responsive img-hover" id="add-image" src="" alt="">
                 <h5 id="add-name"></h5>
             </div>
             <div class="col-md-2">
                 <span id="trade-image"><i class="fa fa-exchange"></i></span>
+                <span id="complete-button">
+                    <button class="btn btn-success btn-lg" style="margin-top:30px;"> Complete</button>
+                </span>
             </div>
 
-            <div class="col-md-5" id="drop-side">
-                <h4>Team To Drop</h4>
-                <img class="img-responsive img-hover" id="drop-image" src="http://placehold.it/200x150" alt="">
-                <select class="form-control" id="roster-select" style="width: 200px">
-                  <option>Los Angeles Lakers</option>
-                  <option>Milwaukee Bucks</option>
-                  <option>Philadelphia Eagles</option>
-                  <option>Washington Redskins</option>
-                  <option>Seattle Seahawks</option>
-                </select>
-                <h5 id="drop-name"></h5>
+            <div class="col-md-3" id="drop-side">
+                <div id="drop-team">
+                    <h4>Team To Drop</h4>
+                    <img class="img-responsive img-hover" id="drop-image" alt="">
+                    <h5 id="drop-name"></h5>
+                </div>
+                <div id="select-drop">
+                    <h5 id="drop-prompt">Select a team from your roster to drop</h5>
+                    <select class="form-control" id="roster-select" style="width: 200px">
+                      <option>Los Angeles Lakers</option>
+                      <option>Milwaukee Bucks</option>
+                      <option>Philadelphia Eagles</option>
+                      <option>Washington Redskins</option>
+                      <option>Seattle Seahawks</option>
+                    </select>
+                </div>
             </div>
         </div>
 

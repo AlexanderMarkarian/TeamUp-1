@@ -25,12 +25,40 @@ p.large {
   font-size: 16px;
 }
 
+.success-section {
+  margin-top: 30px;
+  background: #18bc9c;
+  color: white;
+  text-align: center;
+}
+
+#team-select{
+  display:inline; 
+  width: 200px; 
+  margin-top: 5px;
+}
+
 #trade-image{
   font-size:50px;
   display: block;
   margin: auto;
   text-align: center;
   padding-top: 25%;
+}
+
+.other-matchup{
+  border: 1px solid black;
+  text-align: center;
+}
+
+.other-matchup:hover{
+  cursor: pointer;
+  border: 3px solid red;
+  font-weight: bold;
+}
+
+.matchup-score{
+  float: right;
 }
 
 .small-pic{
@@ -44,6 +72,53 @@ p.large {
 .points{
   float: right;
   padding-right: 20px;
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  background: #DDD;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 10px;
+}
+#standingsTable td>img {
+    max-height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#standingsTable {
+    background-color: #FFF;
+}
+
+#standingsTable td, #standingsTable th {
+    padding: 15px;
+}
+
+#standingsTable thead>tr#head>th {
+    font-size: 1.2em;
+    border: none !important;
+    background-color: #00A6FC;
+    color: #006092;
+}
+
+#standingsTable thead>tr#subhead>th {
+    text-transform: uppercase;
+    font-size: .8em;
+    padding: 10px 15px;
+    border: 2px solid #E7E7E7;
+    background-color: #E8ECEF;
+    color: #949394;
+}
+
+#standingsTable tr td {
+    border: 2px solid #E7E7E7;
+}
+
+td{
+  text-align: center;
 }
 
 a,
@@ -292,6 +367,9 @@ header .intro-text .intro-heading {
 section {
   padding: 100px 0;
 }
+#team{
+  padding-bottom: 0px
+}
 #index{
   padding: 30px;
 }
@@ -311,6 +389,9 @@ section h3.section-subheading {
 @media (min-width: 768px) {
   section {
     padding: 150px 0;
+  }
+  #team{
+    padding-bottom: 0px;
   }
   #index{
     padding-top: 30px;
