@@ -1,8 +1,15 @@
-<?php
+<section id="trades">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Trades</h2>
+                <h3 class="section-subheading text-muted">some text</h3>
+            </div>
+        </div>
+        <div class="row" id="my-team">
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+        </div>
 
+        <div class="row" id="other-team"></div>
+    </div>
+</section>

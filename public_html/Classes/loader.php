@@ -250,7 +250,7 @@ class loader {
                     $page_content_array[] = array(
                         "id" => "5",
                         "page_name" => "Trades",
-                        "div_name" => "m-a-n",
+                        "div_name" => "trades",
                         "data" => $data
                     );
                     break;
@@ -260,7 +260,7 @@ class loader {
                     $page_content_array[] = array(
                         "id" => "6",
                         "page_name" => "Match Up",
-                        "div_name" => "m-a-n",
+                        "div_name" => "matchup",
                         "data" => $data
                     );
                     break;
@@ -364,6 +364,12 @@ class loader {
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "roster") {
 
             $footer_script = array(
+            );
+        }
+        else if (isset($_GET['cmd']) && $_GET['cmd'] == "add-drop") {
+
+            $footer_script = array(
+                "js3" => '<script src="' . ABSOLUTH_PATH_JS . 'add-drop.js"></script>',
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] != "") {
             $footer_script = array(

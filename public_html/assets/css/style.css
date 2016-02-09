@@ -24,6 +24,28 @@ p {
 p.large {
   font-size: 16px;
 }
+
+#trade-image{
+  font-size:50px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding-top: 25%;
+}
+
+.small-pic{
+  width: 30px;
+  height: 25px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.points{
+  float: right;
+  padding-right: 20px;
+}
+
 a,
 a:hover,
 a:focus,
@@ -62,6 +84,9 @@ h6 {
   height: 55px;
   border-radius: 50%;
   float: left;
+}
+.resize:hover{
+  cursor: pointer;
 }
 
 .league_name:hover{

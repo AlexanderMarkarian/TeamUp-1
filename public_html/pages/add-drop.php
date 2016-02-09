@@ -3,7 +3,31 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Add/Drop</h2>
-                <h3 class="section-subheading text-muted">some text</h3>
+                <h3 class="section-subheading text-muted">Click on a team logo to add</h3>
+            </div>
+        </div>
+
+        <div class="row" id="add-drop" style="display:none">
+            <div class="col-md-5" id="add-side">
+                <h4>Team To Add</h4>
+                <img class="img-responsive img-hover" id="add-image" src="" alt="">
+                <h5 id="add-name"></h5>
+            </div>
+            <div class="col-md-2">
+                <span id="trade-image"><i class="fa fa-exchange"></i></span>
+            </div>
+
+            <div class="col-md-5" id="drop-side">
+                <h4>Team To Drop</h4>
+                <img class="img-responsive img-hover" id="drop-image" src="http://placehold.it/200x150" alt="">
+                <select class="form-control" id="roster-select" style="width: 200px">
+                  <option>Los Angeles Lakers</option>
+                  <option>Milwaukee Bucks</option>
+                  <option>Philadelphia Eagles</option>
+                  <option>Washington Redskins</option>
+                  <option>Seattle Seahawks</option>
+                </select>
+                <h5 id="drop-name"></h5>
             </div>
         </div>
 
