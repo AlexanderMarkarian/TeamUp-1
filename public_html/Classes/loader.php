@@ -185,7 +185,7 @@ class loader {
             $page_content_array[] = array(
                 "id" => "0",
                 "page_name" => "Home",
-                "div_name" => "m-a-n",
+                "div_name" => "index",
                 "signup" => $this->_post_values,
                 "login" => $this->_post_values
             );

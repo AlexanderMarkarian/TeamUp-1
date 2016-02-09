@@ -7,11 +7,11 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
     	<div class="row">
     		<div class=" col-sm-6 col-md-6">
     			<h3 class="section-heading text-center">Standings</h3>
-    			<table class="table text-center">
+    			<table class="table">
     				<tr class="">
     					<th >Team Name</th>
 					    <th >Wins</th>
@@ -50,8 +50,8 @@
     			</table>
     		</div>
     		<div class=" col-sm-6 col-md-6">
-    			<h3 class="section-heading text-center">Mathups</h3>
-				<table class="table text-center">
+    			<h3 class="section-heading text-center">This Weeks Matchups</h3>
+				<table class="table">
     				<tr>
     					<th >Team Name</th>
 					    <th >Wins</th>

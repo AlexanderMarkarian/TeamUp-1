@@ -292,6 +292,9 @@ header .intro-text .intro-heading {
 section {
   padding: 100px 0;
 }
+#index{
+  padding: 30px;
+}
 section h2.section-heading {
   font-size: 40px;
   margin-top: 20;
@@ -308,6 +311,9 @@ section h3.section-subheading {
 @media (min-width: 768px) {
   section {
     padding: 150px 0;
+  }
+  #index{
+    padding-top: 30px;
   }
 }
 .service-heading {
