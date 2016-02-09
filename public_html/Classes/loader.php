@@ -322,7 +322,7 @@ class loader {
                     );
                     break;
             }
-        } else if (isset($_GET['cmd']) && $function->CheckSSID("users", $_GET['ssid']) == false && $command->ReturnAllCommands() && !isset($_SESSION['isLoggedin'])) {
+        } else if (isset($_GET['cmd']) && $function->CheckSSID("users", $_GET['ssid']) == false && !isset($_SESSION['isLoggedin'])) {
 
             header("Location: loader.php?cmd=");
         } else {
