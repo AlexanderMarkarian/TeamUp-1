@@ -362,8 +362,8 @@ class forms {
                         $fields['ssid'] = "ssid";
                         $query = $helper_functions->InsertNewUser("users", $fields, $input_values);
                         if ($query) {
-                            // $_POST['page_name'] = $input_values['page_name'];
-                            //$_GET['cmd'] = "profile";
+
+                            $_SESSION['isLoggedin'] = $helper_functions->UIDGEN(date("Ymd"));
                             header("location: loader.php?cmd=profile&ssid=" . $input_values['ssid']);
                         }
                     }
@@ -460,7 +460,7 @@ class forms {
 
                 <?php
             }
-            
+
             /*
              * @auth: ALex
              * Join league form goes here
