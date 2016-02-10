@@ -25,11 +25,15 @@ p.large {
   font-size: 16px;
 }
 
-.success-section {
+.roster-bottom {
   margin-top: 30px;
-  background: #18bc9c;
+  background: #2c3e50;
   color: white;
   text-align: center;
+}
+
+#home-middle{
+    background: #2c3e50;
 }
 
 #team-select{

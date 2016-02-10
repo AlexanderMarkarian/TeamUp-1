@@ -89,27 +89,29 @@
     		</div>
     	</div>
     </div>
-    <div class="container" style="margin-top:60px">
-        <div class="row">
-            <div class="col-md-3 img-portfolio">
-                <a href="#">
-                    <img style="width:200px; height:100px" src="http://jeremybeynon.com/wp-content/uploads/2014/12/NBA-logo.png" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="#">
-                    <img style="width:200px; height:100px" src="http://americanfootballfilms.com/wp-content/uploads/2012/11/nfl-logo.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="#">
-                    <img style="width:200px; height:100px" src="http://www.chrissagert.com/wp-content/uploads/2012/06/mlb-logo-1-300x154.gif" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="#">
-                    <img style="width:200px; height:100px" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/05_NHL_Shield.svg/899px-05_NHL_Shield.svg.png" alt="">
-                </a>
+    <div id="home-middle">
+        <div class="container" style="margin-top:60px; text-align:center">
+            <div class="row">
+                <div class="col-md-3 img-portfolio">
+                    <a href="#">
+                       <h1 class="text-success">NBA</h1>
+                    </a>
+                </div>
+                <div class="col-md-3 img-portfolio">
+                    <a href="#">
+                        <h1 class="text-success">NFL</h1>
+                    </a>
+                </div>
+                <div class="col-md-3 img-portfolio">
+                    <a href="#">
+                        <h1 class="text-success">MLB</h1>
+                    </a>
+                </div>
+                <div class="col-md-3 img-portfolio">
+                    <a href="#">
+                       <h1 class="text-success">NHL</h1>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

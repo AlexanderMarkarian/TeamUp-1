@@ -349,17 +349,8 @@ class loader {
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "profile") {
 
             $footer_script = array(
-                "js3" => '<script src="' . ABSOLUTH_PATH_JS . 'libs/jquery.datetimepicker.full.min.js"></script>',
-                "js4" => "<script>
-          $(function() {
-            $('.datetimepicker').datetimepicker({
-                dayOfWeekStart : 1,
-                lang:'en',
-                disabledDates:['1986/01/08','1986/01/09','1986/01/10'],
-                startDate:  '2016/01/01'
-            });
-          });
-          </script>"
+                "js3" => '<script src="' . ABSOLUTH_PATH_JS . 'jquery.datetimepicker.full.min.js"></script>',
+                "js4" => '<script src="' . ABSOLUTH_PATH_JS . 'profile.js"></script>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "roster") {
 
