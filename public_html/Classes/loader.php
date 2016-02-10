@@ -321,6 +321,22 @@ class loader {
                         "page_name" => "Logout"
                     );
                     break;
+                case "help":
+                    $page_content_array[] = array(
+                        "id" => "11",
+                        "page_name" => "Help",
+                        "div_name" => "help",
+                        "data" => $data
+                    );
+                    break;
+                case "faq":
+                    $page_content_array[] = array(
+                        "id" => "12",
+                        "page_name" => "FAQ",
+                        "div_name" => "faq",
+                        "data" => $data
+                    );
+                    break;
             }
         } else if (isset($_GET['cmd']) && $function->CheckSSID("users", $_GET['ssid']) == false && !isset($_SESSION['isLoggedin'])) {
 

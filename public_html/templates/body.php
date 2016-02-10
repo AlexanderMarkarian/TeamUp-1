@@ -81,6 +81,12 @@ class body {
                     unset($_SESSION['isLoggedin']);
                     header("Location:loader.php?cmd=");
                     break;
+                case "11":
+                    include ABSOLUTH_PATH_PAGE . "help.php";
+                    break;
+                case "12":
+                    include ABSOLUTH_PATH_PAGE . "faq.php";
+                    break;
                 case "404":
                     include ABSOLUTH_PATH_PAGE . "404.php";
                     break;
