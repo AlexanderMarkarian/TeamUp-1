@@ -62,7 +62,7 @@ class body {
                     include ABSOLUTH_PATH_PAGE . "add-drop.php";
                     break;
                 case "5":
-                    include ABSOLUTH_PATH_PAGE . "tades.php";
+                    include ABSOLUTH_PATH_PAGE . "trades.php";
                     break;
                 case "6":
                     include ABSOLUTH_PATH_PAGE . "matchup.php";
