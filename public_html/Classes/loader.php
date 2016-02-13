@@ -198,7 +198,7 @@ class loader {
              * RS 20160201
              * 
              */
-        } else if (isset($_GET['cmd']) && $function->CheckSSID("users", $_GET['ssid']) == true && $command->ReturnAllCommands()) {
+        } else if (isset($_GET['cmd']) && $function->CheckSSID("users", $_GET['ssid']) == true && $command->ReturnAllCommands()&& isset($_SESSION['isLoggedin'])) {
 
             switch ($_GET['cmd']) {
                 case "profile":
