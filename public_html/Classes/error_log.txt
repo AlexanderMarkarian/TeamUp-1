@@ -1,0 +1,3 @@
+ERROR #2 From functions.php
+Function: InsertAll
+Message: cammnd is null.

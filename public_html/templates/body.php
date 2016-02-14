@@ -49,7 +49,6 @@ class body {
                     break;
                 case "1":
                     $_GET['page_name'] = $pg['page_name'];
-                    var_dump($_SESSION['isLoggedin']);
                     include ABSOLUTH_PATH_PAGE . "profile.php";
                     break;
                 case "2":

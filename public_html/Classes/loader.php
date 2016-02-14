@@ -18,12 +18,15 @@ class loader {
     //put your code here
     private $_header_content = array();
     public $_post_values = array();
+    
+    public $_functions;
 
     public function __construct() {
 
         echo $this->PageHeader();
         echo $this->LoadPageBody();
         echo $this->LoadPageFooter();
+        $this->_functions = new functions();
     }
 
     /*
@@ -44,7 +47,6 @@ class loader {
         /* PAGE TITLE IS HERE */
         //$get_title = (!isset($_GET['page_name']) ? "Team Up - Home" : $_POST['page_name']);
         $get_title = (isset($_GET['page_name'])) ? $_POST['page_name'] : "Team Up - Home";
-        //var_dump($_SERVER);
         $page_title = array(
             'title' => '<title>' . $get_title . '</title>'
         );
@@ -198,24 +200,30 @@ class loader {
              * RS 20160201
              * 
              */
-        } else if (isset($_GET['cmd']) && $function->CheckSSID("users", $_GET['ssid']) == true && $command->ReturnAllCommands()&& isset($_SESSION['isLoggedin'])) {
+        } else if (isset($_GET['cmd']) && $function->CheckSSID("users", $_GET['ssid']) == true && $command->ReturnAllCommands() && isset($_SESSION['isLoggedin'])) {
 
             switch ($_GET['cmd']) {
                 case "profile":
-                    $function->getDataQuery("users", $_GET['ssid']);
+                    $date = $function->getDataQuery("users", "ssid", $_GET['ssid']);
+
                     $data = $function->SetDataQuery();
+
                     $page_content_array[] = array(
                         "id" => "1",
                         "page_name" => "Profile",
                         "div_name" => "m-a-n",
                         "data" => $data,
                         "forms" => $forms,
-                        "functions" => $function
+                        "functions" => $function,
+                        "create_league" => $this->_post_values
+                       
+                            
+                       
                     );
 
                     break;
                 case "home":
-                    $function->getDataQuery("users", $_GET['ssid']);
+                    $function->getDataQuery("users", "ssid", $_GET['ssid']);
                     $data = $function->SetDataQuery();
                     $page_content_array[] = array(
                         "id" => "2",
@@ -225,7 +233,7 @@ class loader {
                     );
                     break;
                 case "roster":
-                    $function->getDataQuery("users", $_GET['ssid']);
+                    $function->getDataQuery("users", "ssid", $_GET['ssid']);
                     $data = $function->SetDataQuery();
                     $page_content_array[] = array(
                         "id" => "3",
@@ -245,7 +253,7 @@ class loader {
                     );
                     break;
                 case "trades":
-                    $function->getDataQuery("users", $_GET['ssid']);
+                    $function->getDataQuery("users", "ssid", $_GET['ssid']);
                     $data = $function->SetDataQuery();
                     $page_content_array[] = array(
                         "id" => "5",
@@ -255,7 +263,7 @@ class loader {
                     );
                     break;
                 case "matchup":
-                    $function->getDataQuery("users", $_GET['ssid']);
+                    $function->getDataQuery("users", "ssid", $_GET['ssid']);
                     $data = $function->SetDataQuery();
                     $page_content_array[] = array(
                         "id" => "6",
@@ -305,7 +313,7 @@ class loader {
                     );
                     break;
                 case "edit-profile":
-                    $function->getDataQuery("users", $_GET['ssid']);
+                    $function->getDataQuery("users", "ssid", $_GET['ssid']);
                     $data = $function->SetDataQuery();
                     $page_content_array[] = array(
                         "id" => "9",
@@ -372,8 +380,7 @@ class loader {
 
             $footer_script = array(
             );
-        }
-        else if (isset($_GET['cmd']) && $_GET['cmd'] == "add-drop") {
+        } else if (isset($_GET['cmd']) && $_GET['cmd'] == "add-drop") {
 
             $footer_script = array(
                 "js3" => '<script src="' . ABSOLUTH_PATH_JS . 'add-drop.js"></script>',

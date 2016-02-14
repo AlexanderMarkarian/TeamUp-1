@@ -14,6 +14,7 @@ class functions {
 
     //put your code here
     public $_message;
+    public $_messages = array();
     private $_db;
     private $_mysqli;
     private $_results;
@@ -21,6 +22,8 @@ class functions {
     public $_pooldata = array();
     public $_count;
     public $_date;
+    public $_id;
+    public $_flag = 0;
 
     /*
      * @ auth: Rostom
@@ -184,8 +187,8 @@ class functions {
      * RS 02042016
      */
 
-    public function getDataQuery($table, $value) {
-        $sql = "SELECT * FROM `$table` WHERE ssid = '$value'";
+    public function getDataQuery($table, $field, $value) {
+        $sql = "SELECT * FROM `$table` WHERE $field = '$value'";
         $result = $this->_mysqli->query($sql);
         while ($rows = $result->fetch_array(MYSQLI_ASSOC)) {
             $this->_data[] = $rows;
@@ -285,6 +288,119 @@ class functions {
 
     public function ReturnDate() {
         return $this->_date;
+    }
+
+    /*
+     * @Auth Rostom
+     * @parm $table, $field, $search_value
+     * Universal checking if a certain value is in a table or not
+     * RS 02132016
+     */
+
+    public function UniversalCheckValues($table, $field, $search_value) {
+
+        $sql = "SELECT * FROM `$table` WHERE `$field` = '$search_value'";
+        $result = $this->_mysqli->query($sql);
+        $num_rows = $result->num_rows;
+        $this->_count = $num_rows;
+        if ($this->_count > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /*
+     * @Auth: Rostom
+     * Desc: Check if the selected date is not in the past
+     * First parse the given value then compare date then time
+     * @param: $date_time 
+     */
+
+    public function CheckDateTime($date_time) {
+        $draft_time = strtotime($date_time); //Turns date and time to seconds
+        if (time() > $draft_time) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /*
+     * @Auth: Rostom
+     * Desc: universal Insertion of values depending on given param
+     * @param: $value[], $cmd
+     */
+
+    public function InsertAll(array $values, $cmd = NULL) {
+
+        if ($cmd != NULL) {
+            foreach ($values as $v) {
+                $table = $v['table0'];
+                $sql = "INSERT INTO `$table`";
+            }
+            $sql .= "("
+                    . implode(",", $values["fields"])
+                    . ") ";
+            $sql .= "VALUES ";
+            $sql .="(" . implode(",", $values['values']) . ")";
+
+            $result = $this->_mysqli->query($sql);
+            if ($result) {
+                array_push($this->_messages, $values['tables']['table0'] . " were updated");
+            } else {
+                $this->_flag =1;
+                array_push($this->_messages, $values['tables']['table0'] . " was not updated");
+
+                return false;
+            }
+        } else {
+
+            $filename = ABSOLUTH_PATH_ERRORS . "error_log_" . date('Ymd') . ".text";
+            $linecount = 0;
+            if (file_exists($filename)) {
+
+                $filename = ABSOLUTH_PATH_ERRORS . "error_log_" . date('Ymd') . ".text";
+                $error_log = $filename;
+                $log = fopen($error_log, 'w') or die("Cannot open file:" . $error_log);
+
+                $data .= "ERROR #2 From functions.php\n";
+                $timestamp = $this->DateAndTime();
+                $timestamp = $this->ReturnDate();
+                $data .= "Date and time:" . $timestamp . "\n";
+                $data .="Function: InsertAll\n";
+                $data .="Message: command is null.\n" . PHP_EOL;
+                fwrite($log, $data);
+                fclose($log);
+            }
+
+            return false;
+        }
+    }
+    
+    public function ReturnFlag(){
+        return $this->_flag;
+    }
+
+    public function GetIDFromTables($table, $field, $key) {
+
+        $sql = "SELECT * FROM `$table` WHERE $field = '$key'";
+        $result = $this->_mysqli->query($sql);
+        if ($result) {
+            $row = $result->fetch_array(MYSQLI_ASSOC);
+            $this->_id = $row;
+        } else {
+            $this->_id = false;
+        }
+    }
+
+    public function SetIDFromTables() {
+        return $this->_id;
+    }
+
+    public function RetMessages() {
+
+        return $this->_messages;
     }
 
 }

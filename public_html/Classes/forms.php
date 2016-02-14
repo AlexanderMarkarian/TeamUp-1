@@ -21,10 +21,13 @@ class forms {
     private $_flag = 0;
     public $_message = array();
     public $_login_message = array();
+    public $_league_message = array();
+    public $_fucntions;
 
     public function __construct() {
         $this->_db = db_connect::getInstance();
         $this->_mysqli = $this->_db->getConnection();
+        $this->_fucntions = new functions();
     }
 
     /*
@@ -409,8 +412,8 @@ class forms {
                     } else {
                         unset($this->_flag);
                         $query = $insertion->LogUserIn("users", $input_values);
-                        $getdata = $insertion->getDataQuery("users", $input_values);
-                        $data = $insertion->SetDataQuery();
+                        ///$getdata = $insertion->getDataQuery("users", $input_values);
+                        //$data = $insertion->SetDataQuery();
 
                         if (!$query) {
                             $this->_flag = 1;
@@ -443,6 +446,23 @@ class forms {
 
             public function CreateLeague() {
                 ?>
+                <?php
+                foreach ($this->_league_message as $errors) {
+                    echo "<div class='alert alert-danger' role='alert'>" . $errors . "</div>";
+                }
+                if ($this->_flag == 21) {
+                    ?>
+
+                    <div class='alert alert-success' role='alert'>
+                        <ul >
+                            <?php
+                            foreach ($this->_fucntions->RetMessages() as $ms) {
+                                echo "<li  class='list-group-item list-group-item-success'>" . $ms . "</li>";
+                            }
+                            ?>
+                        </ul>
+                    </div>
+                <?php } ?>
                 <form method="post" name="form[c_league]">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="League Name" name="form[c_league][league_name]" value="<?= $_POST['form']['c_league']['league_name'] ?>">
@@ -454,11 +474,175 @@ class forms {
                         <input type="text" id="datepicker" class="form-control datetimepicker" placeholder="Draft Date" name="form[c_league][d_date]" value="<?= $_POST['form']['c_league']['d_date'] ?>" >
                     </div>
                     <div class="form-group">
-                        <input type="button" style="float:left" class="btn btn-info" value="Submit">
+                        <input type="hidden" name="form[c_league][cmd]" value="create_league" />
+                        <input type="hidden" name="form[c_league][ssid]" value="<?= $_GET['ssid'] ?>"/>
+                        <input type="submit" style="float:left" name="form[c_league][create]" class="btn btn-info" value="Submit">
                     </div>
                 </form>
 
                 <?php
+            }
+
+            /*
+             * @auth: Rostom
+             * Desc: Creates leagues
+             * @param: $form_values[]
+             * RS 02/13/2016
+             */
+
+            public function CreateLeagueProcess(array $form_values) {
+
+                $this->_formInputs = $form_values;
+
+                $form_inputs = array();
+                $form_inputs['league_name'] = $this->_formInputs['form']['c_league']['league_name'];
+                $form_inputs['team_name'] = $this->_formInputs['form']['c_league']['team_name'];
+                $form_inputs['d_date'] = $this->_formInputs['form']['c_league']['d_date'];
+                $form_inputs['create'] = $this->_formInputs['form']['c_league']['create'];
+
+                if (isset($form_inputs['create'])) {
+                    /*
+                     * RS 02/13/2016
+                     * Check all the fields
+                     */
+                    if (empty($form_inputs['league_name']) && empty($form_inputs['team_name']) && empty($form_inputs['d_date'])) {
+                        $this->_flag = 1;
+                        if ($this->_flag == 1) {
+                            $errors = array();
+                            array_push($errors, "All fields are required.");
+                            $this->_league_message = $errors;
+                        } else {
+                            $this->_flag = 0;
+                            unset($this->_league_message);
+                        }
+                        /*
+                         * RS 02/13/2016
+                         * Check all the fields
+                         */
+                    } else if (empty($form_inputs['league_name']) || empty($form_inputs['team_name']) || empty($form_inputs['d_date'])) {
+                        $this->_flag = 1;
+                        if ($this->_flag == 1) {
+                            $errors = array();
+                            array_push($errors, "All fields are required.");
+                            $this->_league_message = $errors;
+                        } else {
+                            $this->_flag = 0;
+                            unset($this->_league_message);
+                        }
+                    } else if ($this->_fucntions->UniversalCheckValues("leagues", "league_name", $form_inputs['league_name'])) {
+                        $this->_flag = 1;
+                        if ($this->_flag == 1) {
+                            $errors = array();
+                            array_push($errors, "League name taken.");
+                            $this->_league_message = $errors;
+                        } else {
+                            $this->_flag = 0;
+                            unset($this->_league_message);
+                        }
+                    } else if ($this->_fucntions->CheckDateTime($form_inputs['d_date'])) {
+                        $this->_flag = 1;
+                        if ($this->_flag == 1) {
+                            $errors = array();
+                            array_push($errors, "Selected time is in the past");
+                            $this->_league_message = $errors;
+                        } else {
+                            $this->_flag = 0;
+                            unset($this->_league_message);
+                        }
+                    } else {
+
+                        /*
+                         * Insert into the following tables:
+                         * 1. leagues
+                         * 2. league_user
+                         * 3. teams
+                         * 
+                         */
+                        /*
+                         * Table 1
+                         */
+                        if ($this->_flag == 0) {
+                            $fields = array(
+                                "1" => "league_name",
+                                "2" => "created_on",
+                            );
+
+                            $tables = array(
+                                "table0" => "leagues",
+                            );
+                            $values = array();
+                            array_push($values, "'" . $form_inputs['league_name'] . "'");
+                            array_push($values, "'" . $form_inputs['d_date'] . "'");
+
+                            $insert_values = array(
+                                "values" => $values,
+                                "fields" => $fields,
+                                "tables" => $tables
+                            );
+                            $this->_fucntions->InsertAll($insert_values, $cmd = "insert league");
+
+                            if ($this->_fucntions->ReturnFlag() == 0) {
+                                /*
+                                 * Get league ids and user ids
+                                 */
+                                $league_id = $this->_fucntions->GetIDFromTables("leagues", "league_name", $form_inputs['league_name']);
+                                $league_id = $this->_fucntions->SetIDFromTables();
+                                $user_id = $this->_fucntions->GetIDFromTables("users", "ssid", $_GET['ssid']);
+                                $user_id = $this->_fucntions->SetIDFromTables();
+
+                                /*
+                                 * Table 2
+                                 */
+                                //Insert into league_users
+                                $fields = array(
+                                    "1" => "userid",
+                                    "2" => "league_id",
+                                );
+
+                                $tables = array(
+                                    "table0" => "league_user",
+                                );
+                                $values = array();
+                                array_push($values, "'" . $user_id['user_id'] . "'");
+                                array_push($values, "'" . $league_id['id'] . "'");
+
+                                $insert_values = array(
+                                    "values" => $values,
+                                    "fields" => $fields,
+                                    "tables" => $tables
+                                );
+                                $this->_fucntions->InsertAll($insert_values, $cmd = "insert inot league user");
+                                /*
+                                 * Table 3
+                                 */
+                                //INsert into teams
+                                $fields = array(
+                                    "1" => "team_name",
+                                    "2" => "parent",
+                                    "3" => "created_on",
+                                    "4" => "status"
+                                );
+
+                                $tables = array(
+                                    "table0" => "teams",
+                                );
+                                $values = array();
+                                array_push($values, "'" . $form_inputs['team_name'] . "'");
+                                array_push($values, "'" . $league_id['id'] . "'");
+                                array_push($values, "'" . $form_inputs['d_date'] . "'");
+                                array_push($values, 0);
+
+                                $insert_values = array(
+                                    "values" => $values,
+                                    "fields" => $fields,
+                                    "tables" => $tables
+                                );
+                                $this->_fucntions->InsertAll($insert_values, $cmd = "insert inot teams");
+                                $this->_flag = 21;
+                            }
+                        }
+                    }
+                }
             }
 
             /*

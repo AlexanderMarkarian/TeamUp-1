@@ -10,8 +10,8 @@
                     foreach ($pg['data'] as $user_info) {
                         echo $user_info['first_name'] . " " . $user_info['last_name'];
                     }
-                     $pg['functions']->DateAndTime();
-                     echo "<br/>". $pg['functions']->ReturnDate();
+                    $pg['functions']->DateAndTime();
+                    echo "<br/>" . $pg['functions']->ReturnDate();
                     ?>
                 </h3>
             </div>
@@ -25,6 +25,8 @@
                 <h4 class="service-heading">Create League</h4>
                 <!------------------CREATE LEAGUE FORM GOES HERE ---------------------->
                 <?php
+                $pg['forms']->CreateLeagueProcess($pg['create_league']);
+
                 echo $pg['forms']->CreateLeague();
                 ?>
                 <!----------END FORM---------------------------------------->
@@ -47,9 +49,30 @@
                     <i class="fa fa-list fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="service-heading">My Leagues</h4>
-                <a href="" class="league_name">League 1</a>
-                <a href="" class="league_name">League 2</a>
-                <a href="" class="league_name">League 3</a>
+                <?php
+                $league_id = $pg['functions']->getDataQuery("league_user", "userid", $user_info['user_id']);
+                $league_id['league_id'] = $pg['functions']->SetDataQuery();
+
+                foreach ($league_id['league_id'] as $id) {
+                    $leagues = $pg['functions']->getDataQuery("leagues", "id", $id['league_id']);
+                    $leagues = $pg['functions']->SetDataQuery();
+                }
+
+                foreach ($leagues as $league_name) {
+                    ?>
+                    <a href="#<?= $league_name['id'] ?>" class="league_name"><?= $league_name['league_name'] ?></a>
+                    <?php
+                }
+                    if ($league_name['league_name'] == NULL) {
+                        ?>
+                        <p class="h4">You do not have any leagues currently. </p>
+
+                        <?php
+                    }
+                
+                ?>
+
+
             </div>
         </div>
     </div>

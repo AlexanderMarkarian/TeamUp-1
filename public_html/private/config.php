@@ -12,6 +12,7 @@ define("ABSOLUTH_PATH_JS","../assets/js/"); //DONT CHANGE
 define("ABSOLUTH_PATH_CSS", "../assets/css/"); //DONT CHANGE
 define("ABSOLUTH_PATH_IMAGES", "../assets/images/"); //DONT CHANGE
 define("ABSOLUTH_PATH_PAGE", "../pages/"); //DONT CHANGE
+define("ABSOLUTH_PATH_ERRORS", "../errors/"); //DONT CHANGE
 /*******************************************/
 
 /*TIME RELATED*/
