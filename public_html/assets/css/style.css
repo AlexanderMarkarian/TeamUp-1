@@ -153,9 +153,10 @@ h6 {
 }
 
 .league_name{
-  font-size: 35px;
+  font-size: 18px;
   color: #18bc9c;
   display: block;
+  text-decoration: none !important;
 }
 
 .resize{
@@ -841,4 +842,7 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #fed136;
+}
+.delete_color{
+    color: #e74c3c;
 }

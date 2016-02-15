@@ -297,16 +297,38 @@ class functions {
      * RS 02132016
      */
 
-    public function UniversalCheckValues($table, $field, $search_value) {
-
-        $sql = "SELECT * FROM `$table` WHERE `$field` = '$search_value'";
+    public function UniversalCheckValues(array $table, array $field, array $search_value, $option3) {
+        $query_row = array();
+        $sql = "SELECT * FROM `" . $table['table0'] . "` WHERE `" . $field['0'] . "` = '" . $search_value['0'] . "'";
+        echo "<br/>";
         $result = $this->_mysqli->query($sql);
-        $num_rows = $result->num_rows;
-        $this->_count = $num_rows;
-        if ($this->_count > 0) {
-            return true;
-        } else {
-            return false;
+        while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+            $query_row[] = $row;
+        }
+        foreach ($query_row as $data) {
+            if ($data[$search_value['1']] != NULL) {
+                $sql = "SELECT * FROM `" . $table['table1'] . "` WHERE `" . $field['1'] . "` = '" . $data[$search_value['1']] . "'";
+                $result = $this->_mysqli->query($sql);
+                while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+                    $this->_data[] = $row;
+                }
+                foreach ($this->_data as $data) {
+                    if ($option3 == NULL) {
+                        if ($data[$search_value['2']] != NULL) {
+                            $sql = "SELECT * FROM `" . $table['table2'] . "` WHERE `" . $field['2'] . "` = '" . $data[$search_value['2']] . "'";
+                            $result = $this->_mysqli->query($sql);
+                            $row = $result->fetch_array(MYSQLI_ASSOC);
+                            $query_row[] = $row;
+                            if ($row[$search_value['3']] == $search_value['4']) {
+
+                                return true;
+                            } else {
+                                return false;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -349,7 +371,7 @@ class functions {
             if ($result) {
                 array_push($this->_messages, $values['tables']['table0'] . " were updated");
             } else {
-                $this->_flag =1;
+                $this->_flag = 1;
                 array_push($this->_messages, $values['tables']['table0'] . " was not updated");
 
                 return false;
@@ -377,10 +399,24 @@ class functions {
             return false;
         }
     }
-    
-    public function ReturnFlag(){
+
+    /*
+     * @Auth: Rostom
+     * Desc: Returns the flag status default at 0
+     * RS 02/13/2016
+     */
+
+    public function ReturnFlag() {
         return $this->_flag;
     }
+
+    /*
+     * @Auth: Rostom
+     * Desc: Gets the id number from a table
+     * Use this if you need to fetch only a single value
+     * @para:  $table, $field, $key(search quireria)
+     * RS 02/13/2016
+     */
 
     public function GetIDFromTables($table, $field, $key) {
 
@@ -394,13 +430,68 @@ class functions {
         }
     }
 
+    /*
+     * @Auth: Rostom
+     * Desc: Returns ftehced id
+     */
+
     public function SetIDFromTables() {
         return $this->_id;
     }
 
+    /*
+     * @Auth: Rostom
+     * Desc: Returns array message
+     */
+
     public function RetMessages() {
 
         return $this->_messages;
+    }
+
+    /*
+     * @Auth: Rostom
+     * Desc: Next process after creating league
+     * 
+     */
+
+
+
+    /*
+     * @Auth: Rostom
+     * Desc: Sends an email to recipients added by the league owner
+     * will utilize the mail template, key generator
+     * @parm: $email_values 
+     * 
+     */
+
+    public function EmailInvitation(array $email_values) {
+        
+    }
+    
+    /*
+     * @auth: Rostom
+     * Desc: Delete items
+     * @para: $tables[], $fields[], $keys[]
+     * RS 02/14/2016
+     */
+    
+    public function DeleteItems(array $tables, array $fields, array $keys){
+        for($i=0; $i<count($tables); $i++){
+        $sql = "DELETE FROM `".$tables[$i]."` WHERE `".$fields[$i]."` = '".$keys['0']."'";
+        
+        $result = $this->_mysqli->query($sql);
+        
+        if($result){
+            
+            array_push($this->_messages, "league was deleted from-->".$tables[$i]);
+            $this->_flag = 22;
+        
+        }
+        
+        
+        
+        }     
     }
 
 }

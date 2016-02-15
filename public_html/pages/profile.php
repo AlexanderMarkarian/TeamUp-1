@@ -36,10 +36,10 @@
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                     <i class="fa fa-exchange fa-stack-1x fa-inverse"></i>
                 </span>
-                <h4 class="service-heading">Join League</h4>
-                <!----------JOIN LEAGUE FORM GOES HERE----------------->
+                <h4 class="service-heading">Invite Team Members</h4>
+                <!----------INVITE PEOPLE TO JOIN LEAGUE FORM GOES HERE----------------->
                 <?php
-                echo $pg['forms']->JoinLeague();
+                echo $pg['forms']->InviteTeamMembers($pg['data']);
                 ?>
                 <!--------------------END FORM------------------------->
             </div>
@@ -50,26 +50,62 @@
                 </span>
                 <h4 class="service-heading">My Leagues</h4>
                 <?php
-                $league_id = $pg['functions']->getDataQuery("league_user", "userid", $user_info['user_id']);
-                $league_id['league_id'] = $pg['functions']->SetDataQuery();
-
-                foreach ($league_id['league_id'] as $id) {
-                    $leagues = $pg['functions']->getDataQuery("leagues", "id", $id['league_id']);
-                    $leagues = $pg['functions']->SetDataQuery();
-                }
-
-                foreach ($leagues as $league_name) {
+                //FOR Universal CHECK
+                $tables = array(
+                    "table0" => "league_user",
+                    "table1" => "leagues"
+                );
+                $fields = array(
+                    "0" => "userid",
+                    "1" => "id"
+                );
+                $required_fields = array(
+                    "0" => $user_info['user_id'],
+                    "1" => "league_id"
+                );
+                unset($pg['functions']->_data);
+                $leagues = $pg['functions']->UniversalCheckValues($tables, $fields, $required_fields, "NOT NULL");
+                $leagues = $pg['functions']->SetDataQuery();
+                if ($pg['functions']->_flag == 22) {
                     ?>
-                    <a href="#<?= $league_name['id'] ?>" class="league_name"><?= $league_name['league_name'] ?></a>
-                    <?php
+                    <div class='alert alert-success' role='alert'>
+                        <ul>
+                            <?php
+                            foreach ($pg['functions']->RetMessages() as $ms) {
+                                echo "<p class='h5'>" . $ms . "</p>";
+                            }
+                            ?>
+                        </ul>
+                    </div>
+                <?php
                 }
-                    if ($league_name['league_name'] == NULL) {
-                        ?>
-                        <p class="h4">You do not have any leagues currently. </p>
+                ?>
+                <table class="table table-bordered table-hover">
 
+                    <?php
+                    foreach ($leagues as $league_name) {
+                        ?>
+                        <tr class="">
+                            <td>
+                                <a href="#<?= $league_name['id'] ?>" class="league_name"><?= $league_name['league_name'] ?></a>
+                            </td>
+                            <td>
+                                <a href="loader.php?cmd=profile&ssid=<?= $_GET['ssid'] ?>&id=<?= $league_name['id'] ?>"><i class="fa fa-times-circle delete_color"></i></a>
+                            </td>
+                        </tr>
                         <?php
                     }
-                
+                    ?>
+
+                </table>
+
+                <?php
+                if ($league_name['league_name'] == NULL) {
+                    ?>
+                    <p class="h4">You do not have any leagues currently. </p>
+
+                    <?php
+                }
                 ?>
 
 

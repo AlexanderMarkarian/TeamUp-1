@@ -204,6 +204,32 @@ class loader {
 
             switch ($_GET['cmd']) {
                 case "profile":
+                    
+                    if(isset($_GET['id'])){
+                     /*
+                      * Delete tables with league information
+                      * 1. leagues
+                      * 2. league_user
+                      * 3. teams
+                      * 4. TBD
+                      */
+                        $tables = array(
+                            "0"=>"leagues",
+                            "1"=>"league_user",
+                            "2"=>"teams"
+                        );
+                        $fields = array(
+                            "0"=>"id",
+                            "1"=>"league_id",
+                            "2"=>"parent"
+                        );
+                        $values = array(
+                            "0" => $_GET['id']
+                        );
+                        
+                        $delete_leagues = $function->DeleteItems($tables, $fields, $values);
+                      
+                    }
                     $date = $function->getDataQuery("users", "ssid", $_GET['ssid']);
 
                     $data = $function->SetDataQuery();
@@ -216,6 +242,8 @@ class loader {
                         "forms" => $forms,
                         "functions" => $function,
                         "create_league" => $this->_post_values
+                        
+                            
                        
                             
                        

@@ -457,12 +457,13 @@ class forms {
                         <ul >
                             <?php
                             foreach ($this->_fucntions->RetMessages() as $ms) {
-                                echo "<li  class='list-group-item list-group-item-success'>" . $ms . "</li>";
+                                echo "<p class='h6'>" . $ms . "</p>";
                             }
                             ?>
                         </ul>
                     </div>
-                <?php } ?>
+                <?php }
+                ?>
                 <form method="post" name="form[c_league]">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="League Name" name="form[c_league][league_name]" value="<?= $_POST['form']['c_league']['league_name'] ?>">
@@ -476,7 +477,7 @@ class forms {
                     <div class="form-group">
                         <input type="hidden" name="form[c_league][cmd]" value="create_league" />
                         <input type="hidden" name="form[c_league][ssid]" value="<?= $_GET['ssid'] ?>"/>
-                        <input type="submit" style="float:left" name="form[c_league][create]" class="btn btn-info" value="Submit">
+                        <input type="submit"  name="form[c_league][create]" class="btn btn-info" value="Submit">
                     </div>
                 </form>
 
@@ -493,12 +494,30 @@ class forms {
             public function CreateLeagueProcess(array $form_values) {
 
                 $this->_formInputs = $form_values;
-
                 $form_inputs = array();
                 $form_inputs['league_name'] = $this->_formInputs['form']['c_league']['league_name'];
                 $form_inputs['team_name'] = $this->_formInputs['form']['c_league']['team_name'];
                 $form_inputs['d_date'] = $this->_formInputs['form']['c_league']['d_date'];
                 $form_inputs['create'] = $this->_formInputs['form']['c_league']['create'];
+
+                //FOR Universal CHECK
+                $tables = array(
+                    "table0" => "users",
+                    "table1" => "league_user",
+                    "table2" => "leagues"
+                );
+                $fields = array(
+                    "0" => "ssid",
+                    "1" => "userid",
+                    "2" => "id"
+                );
+                $required_fields = array(
+                    "0" => $_GET['ssid'],
+                    "1" => "user_id",
+                    "2" => "league_id",
+                    "3" => "league_name",
+                    "4" => $form_inputs['league_name']
+                );
 
                 if (isset($form_inputs['create'])) {
                     /*
@@ -529,7 +548,7 @@ class forms {
                             $this->_flag = 0;
                             unset($this->_league_message);
                         }
-                    } else if ($this->_fucntions->UniversalCheckValues("leagues", "league_name", $form_inputs['league_name'])) {
+                    } else if ($this->_fucntions->UniversalCheckValues($tables, $fields, $required_fields, NULL)) {
                         $this->_flag = 1;
                         if ($this->_flag == 1) {
                             $errors = array();
@@ -637,13 +656,17 @@ class forms {
                                     "fields" => $fields,
                                     "tables" => $tables
                                 );
-                                $this->_fucntions->InsertAll($insert_values, $cmd = "insert inot teams");
+                                $this->_fucntions->InsertAll($insert_values, $cmd = "insert in to teams");
                                 $this->_flag = 21;
                             }
                         }
                     }
                 }
             }
+
+            /*
+             * 
+             */
 
             /*
              * @auth: ALex
@@ -662,7 +685,67 @@ class forms {
                         <input type="text" class="form-control" placeholder="Team Name" name="form[j_league][team_name]" value="<?= $_POST['form']['j_league']['team_name'] ?>">
                     </div>
                     <div class="form-group">
-                        <input type="button" style="float:left" class="btn btn-info" value="Submit">
+                        <input type="button"  class="btn btn-info" value="Submit">
+                    </div>
+                </form>
+
+                <?php
+            }
+
+            /*
+             * @auth: ALex
+             * Join league form goes here
+             * Mod as needed
+             * RS 02072016
+             */
+
+            public function InviteTeamMembers(array $data) {
+
+                foreach ($data as $user_info) {
+                    
+                }
+
+                //FOR Universal CHECK
+                $tables = array(
+                    "table0" => "league_user",
+                    "table1" => "leagues"
+                );
+                $fields = array(
+                    "0" => "userid",
+                    "1" => "id"
+                );
+                $required_fields = array(
+                    "0" => $user_info['user_id'],
+                    "1" => "league_id"
+                );
+                unset($this->_fucntions->_data);
+                $leagues = $this->_fucntions->UniversalCheckValues($tables, $fields, $required_fields, "HELLO");
+
+                $leagues = $this->_fucntions->SetDataQuery();
+                ?>
+                <form method="post" name="form[invite]">
+                    <div class="form-group">
+        <?php foreach ($leagues as $league_name) {
+            
+        }$disabled = ($league_name['id'] == NULL) ? "disabled='disabled'" : " "; ?>
+                        <select name="form[invite][league_id]" class="form-control" <?= $disabled ?>>
+                            <?php
+                            foreach ($leagues as $league_name) {
+                                ?>
+                                <option  value="<?= $league_name['id'] ?>"><?= $league_name['league_name'] ?></option>
+                                <?php
+                            }
+                            ?>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Team Member Name" name="form[invite][tm_name]" value="<?= $_POST['form']['invite']['tm_name'] ?>" <?= $disabled ?>>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Team Member's Email" name="form[invite][tm_email]" value="<?= $_POST['form']['invite']['tm_email'] ?>" <?= $disabled ?>>
+                    </div>
+                    <div class="form-group">
+                        <input type="button"  class="btn btn-info" value="Send Invitation" <?= $disabled ?>>
                     </div>
                 </form>
 
