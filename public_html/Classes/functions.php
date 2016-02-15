@@ -473,7 +473,7 @@ class functions {
      * @auth: Rostom
      * Desc: Delete items
      * @para: $tables[], $fields[], $keys[]
-     * RS 02/14/2016
+     * RS 02/14/20106
      */
     
     public function DeleteItems(array $tables, array $fields, array $keys){
@@ -486,7 +486,6 @@ class functions {
             
             array_push($this->_messages, "league was deleted from-->".$tables[$i]);
             $this->_flag = 22;
-        
         }
         
         

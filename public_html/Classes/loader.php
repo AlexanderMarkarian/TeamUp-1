@@ -228,7 +228,7 @@ class loader {
                         );
                         
                         $delete_leagues = $function->DeleteItems($tables, $fields, $values);
-                      
+
                     }
                     $date = $function->getDataQuery("users", "ssid", $_GET['ssid']);
 
