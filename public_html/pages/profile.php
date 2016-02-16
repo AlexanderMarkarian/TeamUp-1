@@ -4,12 +4,15 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Profile</h2>
+                <h2 class="section-heading">
+                    <?php
+                        foreach ($pg['data'] as $user_info) {
+                            echo $user_info['first_name'] . " " . $user_info['last_name'];
+                        }  
+                    ?>
+                </h2>
                 <h3 class="section-subheading text-muted">
                     <?php
-                    foreach ($pg['data'] as $user_info) {
-                        echo $user_info['first_name'] . " " . $user_info['last_name'];
-                    }
                     $pg['functions']->DateAndTime();
                     echo "<br/>" . $pg['functions']->ReturnDate();
                     ?>
