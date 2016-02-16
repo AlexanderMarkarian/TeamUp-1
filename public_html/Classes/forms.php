@@ -44,67 +44,29 @@ class forms {
 
     public function SignUpForm() {
         ?>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">
-                        Welcome to TeamUP
-                    </h1>
-                </div>
-                <div class="col-md-7">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-compass"></i> Register</h4>
-                        </div>
-                        <div class="panel-body">
-                            <?php
-                            foreach ($this->_message as $errors) {
-                                echo "<div class='alert alert-danger' role='alert'>" . $errors . "</div>";
-                            }
-                            ?>
-                            <form class="form-horizontal" role="form" method="post">
-                                <div class="form-group">
-                                    <label class="control-label col-sm-2" >First Name:</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" name="form[signup][firstname]" value="<?php
-                                        echo $_POST['form']['signup']['firstname'];
-                                        ?>">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-sm-2">Last Name:</label>
-                                    <div class="col-sm-10">          
-                                        <input type="text" class="form-control" name="form[signup][lastname]" value="<?php
-                                        echo $_POST['form']['signup']['lastname'];
-                                        ?>">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-sm-2">Email:</label>
-                                    <div class="col-sm-10">          
-                                        <input type="text" class="form-control" name="form[signup][email]" value="<?php
-                                        echo $_POST['form']['signup']['email'];
-                                        ?>">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-sm-2">Password:</label>
-                                    <div class="col-sm-10">          
-                                        <input type="password" class="form-control" name="form[signup][password]" value="<?php
-                                        echo $_POST['form']['signup']['password'];
-                                        ?>">
-                                    </div>
-                                </div>
-                                <div class="form-group">        
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <input type="submit" class="btn btn-primary" name="form[signup][register]" value="Register">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+            <form class="signup" role="form" method="post">
+                <h3>Sign Up</h3>
                 <?php
+                foreach ($this->_message as $errors) {
+                    echo "<div class='alert alert-danger' role='alert'>" . $errors . "</div>";
+                }
+                ?>
+                <h4>Please Enter Your Details</h4>
+                <input type="text" placeholder="First Name" name="form[signup][firstname]" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}" value="<?php
+                    echo $_POST['form']['signup']['firstname'];
+                ?>">
+                <input type="text" name="form[signup][lastname]" placeholder="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Second Name';}" value="<?php
+                    echo $_POST['form']['signup']['lastname'];
+                ?>">
+                <input type="text" class="email" placeholder="Email" name="form[signup][email]" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" value="<?php
+                    echo $_POST['form']['signup']['email'];
+                ?>">
+                <input type="password" placeholder="Password" name="form[signup][password]" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" value="<?php
+                    echo $_POST['form']['signup']['password'];
+                ?>">
+                <input type="submit"  name="form[signup][register]" value="Sign Up"/>
+            </form>
+            <?php
             }
 
             /*
@@ -118,49 +80,21 @@ class forms {
 
             public function LoginForm() {
                 ?>
-                <div class="col-md-5">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-check"></i> LogIn</h4>
-                        </div>
-                        <div class="panel-body">
-                            <?php
-                            foreach ($this->_login_message as $errors) {
-                                echo "<div class='alert alert-danger' role='alert'>" . $errors . "</div>";
-                            }
-                            ?>
-                            <form class="form-horizontal" role="form" method="post">
-                                <div class="form-group">
-                                    <label class="control-label col-sm-2">Email:</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" name="form[login][email]" value="<?php
-                                        echo $_POST['form']['login']['email'];
-                                        ?>">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-sm-2">Password:</label>
-                                    <div class="col-sm-10">          
-                                        <input type="password" class="form-control" name="form[login][password]" value="<?php
-                                        echo $_POST['form']['login']['password'];
-                                        ?>">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-sm-2"></label>
-                                    <div class="col-sm-10">          
-                                        <a href="#">Forgot Password?</a>
-                                    </div>
-                                </div>
-                                <div class="form-group">        
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <input type="submit" name="form[login][do_login]" class="btn btn-primary" value="LogIn">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                <form class="LogIn" role="form" method="post">
+                    <h3>LogIn</h3>
+                    <?php
+                    foreach ($this->_login_message as $errors) {
+                        echo "<div class='alert alert-danger' role='alert'>" . $errors . "</div>";
+                    }
+                    ?>
+                    <input type="text" class="email" name="form[login][email]" placeholder="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" value="<?php
+                        echo $_POST['form']['login']['email'];
+                    ?>">
+                    <input type="password" name="form[login][password]" placeholder="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"  value="<?php
+                        echo $_POST['form']['login']['password'];
+                    ?>">
+                    <input type="submit"  name="form[login][do_login]" value="LogIn"/>
+                </form>
                 <?php
             }
 

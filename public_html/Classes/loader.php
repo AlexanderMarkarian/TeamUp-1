@@ -67,27 +67,36 @@ class loader {
         <?php
 
         $css = array(
-            "css1" => '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>',
-            "css2" => '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'jquery.datetimepicker.css">',
-            "css3" => ' <link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'style.css">',
-            "css4" => '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css">'
+            /*
+            "css1" => '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>',
+            "css2" => '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>',
+            "css3" => '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css">'
+             */
         );
 
         if (!isset($_GET['cmd']) || $_GET['cmd'] == "") {
 
-            array_push($css, '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'intro.css">'
+            array_push($css, 
+               '<link href="' . ABSOLUTH_PATH_CSS . 'landing.css" rel="stylesheet" type="text/css"/>',
+               '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>',
+               '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'animate.css">',
+               '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'popupo-box.css">'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "profile") {
 
-            array_push($css, ""
+            array_push($css, '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'jquery.datetimepicker.css">',
+            '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>',
+            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "roster") {
 
-            array_push($css, ""
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>',
+            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "add/drop") {
 
-            array_push($css, ""
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>',
+            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] != "") {
 
@@ -186,8 +195,8 @@ class loader {
 
             $page_content_array[] = array(
                 "id" => "0",
-                "page_name" => "Home",
-                "div_name" => "index",
+                "page_name" => "Landing",
+                "div_name" => "landing",
                 "signup" => $this->_post_values,
                 "login" => $this->_post_values
             );
@@ -396,7 +405,10 @@ class loader {
     public function LoadPageFooter() {
         if (!isset($_GET['cmd']) || $_GET['cmd'] == "") {
             $footer_script = array(
-                "js3" => '<script src="' . ABSOLUTH_PATH_JS . 'slider.js"></script>',
+                "js3" => '<script src="' . ABSOLUTH_PATH_JS . 'wow.min.js"></script>',
+                "js4" => '<script src="' . ABSOLUTH_PATH_JS . 'modernizr.custom.min.js"></script>',
+                "js5" => '<script src="' . ABSOLUTH_PATH_JS . 'jquery.magnific-popup.js"></script>',
+                "js6" => '<script src="' . ABSOLUTH_PATH_JS . 'landing.js"></script>',
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "profile") {
 

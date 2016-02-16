@@ -39,13 +39,7 @@ class body {
 
                 case "0":
                     $forms = new forms();
-                    echo '<section id="' . $pg["div_name"] . '">';
-                    $forms->SignUpProcess($pg['signup']);
-                    echo $forms->SignUpForm();
-                    $forms->LoginProcess($pg['login']);
-                    echo $forms->LoginForm();
-                    echo '</div>';
-                    echo '</section>';
+                    include ABSOLUTH_PATH_PAGE . "landing.php";
                     break;
                 case "1":
                     $_GET['page_name'] = $pg['page_name'];
