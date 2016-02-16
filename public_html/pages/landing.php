@@ -96,14 +96,14 @@
                 <div class="col-md-6 team-grid">
                     <div class="team-grid-text wow bounceIn" data-wow-delay="0.4s">
                             <h5>Jamey Dogom</h5>
-                            <p class="caption">Scrum Master</p>
+                            <p class="caption">Front-End Developer</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                     </div>
                 </div>
                 <div class="col-md-6 team-grid">
                     <div class="team-grid-text wow bounceIn" data-wow-delay="0.4s">
                             <h5>Ibrahim Hayek</h5>
-                            <p class="caption">Product Owner</p>
+                            <p class="caption">Back-End Developer</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                     </div>
                 </div>
