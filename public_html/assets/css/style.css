@@ -25,6 +25,24 @@ p.large {
   font-size: 16px;
 }
 
+body{
+    background-color:#EBEBEB;
+    color:white;
+}
+
+#services{
+  background: url(../images/other/football.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navbar-default{
+    background-color: black;
+}
+
+
 .roster-bottom {
   margin-top: 30px;
   background: #2c3e50;
