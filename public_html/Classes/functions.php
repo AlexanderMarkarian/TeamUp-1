@@ -485,7 +485,7 @@ class functions {
         if($result){
             
             array_push($this->_messages, "league was deleted from-->".$tables[$i]);
-            $this->_flag = 22;
+            //$this->_flag = 21;
         }
         
         
