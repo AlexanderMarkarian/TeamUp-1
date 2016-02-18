@@ -67,8 +67,9 @@ class loader {
         <?php
 
         $css = array(
+            
+            "css1" => '<link href="' . ABSOLUTH_PATH_CSS . 'pageLoader.css" rel="stylesheet" type="text/css"/>',
             /*
-            "css1" => '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>',
             "css2" => '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>',
             "css3" => '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css">'
              */
@@ -129,7 +130,8 @@ class loader {
         /* USE ABSOLUTH_PATH_JS for Paths on js */
         $js = array(
             "js1" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "jquery.js'></script>",
-            "js2" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "bootstrap.min.js'></script>"
+            "js2" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "bootstrap.min.js'></script>",
+            "js3" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "pageLoader.js'></script>",
         );
         /* LOADS -> [meta, title, css, js] */
         $head->GetMetaForHeader($meta);
@@ -426,16 +428,16 @@ class loader {
     public function LoadPageFooter() {
         if (!isset($_GET['cmd']) || $_GET['cmd'] == "") {
             $footer_script = array(
-                "js3" => '<script src="' . ABSOLUTH_PATH_JS . 'wow.min.js"></script>',
-                "js4" => '<script src="' . ABSOLUTH_PATH_JS . 'modernizr.custom.min.js"></script>',
-                "js5" => '<script src="' . ABSOLUTH_PATH_JS . 'jquery.magnific-popup.js"></script>',
-                "js6" => '<script src="' . ABSOLUTH_PATH_JS . 'landing.js"></script>',
+                "js4" => '<script src="' . ABSOLUTH_PATH_JS . 'wow.min.js"></script>',
+                "js5" => '<script src="' . ABSOLUTH_PATH_JS . 'modernizr.custom.min.js"></script>',
+                "js6" => '<script src="' . ABSOLUTH_PATH_JS . 'jquery.magnific-popup.js"></script>',
+                "js7" => '<script src="' . ABSOLUTH_PATH_JS . 'landing.js"></script>',
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "profile") {
 
             $footer_script = array(
-                "js3" => '<script src="' . ABSOLUTH_PATH_JS . 'jquery.datetimepicker.full.min.js"></script>',
-                "js4" => '<script src="' . ABSOLUTH_PATH_JS . 'profile.js"></script>'
+                "js4" => '<script src="' . ABSOLUTH_PATH_JS . 'jquery.datetimepicker.full.min.js"></script>',
+                "js5" => '<script src="' . ABSOLUTH_PATH_JS . 'profile.js"></script>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "roster") {
 
@@ -444,7 +446,7 @@ class loader {
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "add-drop") {
 
             $footer_script = array(
-                "js3" => '<script src="' . ABSOLUTH_PATH_JS . 'add-drop.js"></script>',
+                "js4" => '<script src="' . ABSOLUTH_PATH_JS . 'add-drop.js"></script>',
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] != "") {
             $footer_script = array(

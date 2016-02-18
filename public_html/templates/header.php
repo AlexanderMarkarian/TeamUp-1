@@ -63,6 +63,7 @@ class header {
                     <?php
                 } else if (isset($_GET['cmd']) && $_GET['cmd'] != "") {
                     ?>
+                    <div id="load_screen"><div id="loading"><img id="image" src="<?= ABSOLUTH_PATH_IMAGES ?>other/loading.gif"></div></div>
                     <nav class="navbar navbar-default navbar-fixed-top">
                         <div class="container">
                             <div class="navbar-header page-scroll">
