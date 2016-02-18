@@ -93,12 +93,14 @@ class loader {
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "roster") {
 
             array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>',
-            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>'
+            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>',
+                    '<link href="' . ABSOLUTH_PATH_CSS . 'roster.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "add-drop") {
 
             array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>',
-            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>'
+            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>',
+                    '<link href="' . ABSOLUTH_PATH_CSS . 'add-drop.css" rel="stylesheet" type="text/css"/>'
             );
         }
         else if (isset($_GET['cmd']) && $_GET['cmd'] == "trades") {
@@ -115,12 +117,14 @@ class loader {
         }
         else if (isset($_GET['cmd']) && $_GET['cmd'] == "matchup") {
             array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>',
-            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>'
+            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>',
+                    '<link href="' . ABSOLUTH_PATH_CSS . 'matchup.css" rel="stylesheet" type="text/css"/>'
             );
         }
         else if (isset($_GET['cmd']) && $_GET['cmd'] == "draft") {
             array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>',
-            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>'
+            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>',
+                    '<link href="' . ABSOLUTH_PATH_CSS . 'draft.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] != "") {
 
