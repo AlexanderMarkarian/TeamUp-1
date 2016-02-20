@@ -74,7 +74,10 @@ class loader {
             "css3" => '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css">'
              */
         );
+                    ?>
+                   
 
+                    <?php
         if (!isset($_GET['cmd']) || $_GET['cmd'] == "") {
 
             array_push($css, 
@@ -134,6 +137,7 @@ class loader {
             "js1" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "jquery.js'></script>",
             "js2" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "bootstrap.min.js'></script>",
             "js3" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "pageLoader.js'></script>",
+            
         );
         /* LOADS -> [meta, title, css, js] */
         $head->GetMetaForHeader($meta);
