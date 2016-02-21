@@ -3,19 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/rostom/Documents/NetBeansProjects/dev.teamup-comp491/public_html/private/config.php</file>
-            <file>file:/C:/Users/rostom/Documents/NetBeansProjects/dev.teamup-comp491/public_html/Classes/autoLoader.php</file>
-            <file>file:/C:/Users/rostom/Documents/NetBeansProjects/dev.teamup-comp491/public_html/pages/home.php</file>
-            <file>file:/C:/Users/rostom/Documents/NetBeansProjects/dev.teamup-comp491/public_html/Classes/loader.php</file>
-            <file>file:/C:/Users/rostom/Documents/NetBeansProjects/dev.teamup-comp491/public_html/Classes/commands.php</file>
-            <file>file:/C:/Users/rostom/Documents/NetBeansProjects/dev.teamup-comp491/public_html/home.php</file>
             <file>file:/C:/Users/rostom/Documents/NetBeansProjects/dev.teamup-comp491/public_html/Classes/forms.php</file>
             <file>file:/C:/Users/rostom/Documents/NetBeansProjects/dev.teamup-comp491/public_html/pages/profile.php</file>
             <file>file:/C:/Users/rostom/Documents/NetBeansProjects/dev.teamup-comp491/public_html/templates/body.php</file>
-            <file>file:/C:/Users/rostom/Documents/NetBeansProjects/dev.teamup-comp491/public_html/index.php</file>
+            <file>file:/C:/Users/rostom/Documents/NetBeansProjects/dev.teamup-comp491/public_html/pages/landing.php</file>
+            <file>file:/C:/Users/rostom/Documents/NetBeansProjects/dev.teamup-comp491/public_html/assets/js/ajax_proccess.js</file>
+            <file>file:/C:/Users/rostom/Documents/NetBeansProjects/dev.teamup-comp491/public_html/Classes/loader.php</file>
             <file>file:/C:/Users/rostom/Documents/NetBeansProjects/dev.teamup-comp491/public_html/templates/header.php</file>
-            <file>file:/C:/Users/rostom/Documents/NetBeansProjects/dev.teamup-comp491/public_html/init.php</file>
             <file>file:/C:/Users/rostom/Documents/NetBeansProjects/dev.teamup-comp491/public_html/Classes/functions.php</file>
+            <file>file:/C:/Users/rostom/Documents/NetBeansProjects/dev.teamup-comp491/public_html/assets/css/home.css</file>
         </group>
     </open-files>
 </project-private>

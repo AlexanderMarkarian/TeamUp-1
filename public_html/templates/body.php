@@ -39,6 +39,7 @@ class body {
 
                 case "0":
                     $forms = new forms();
+
                     include ABSOLUTH_PATH_PAGE . "landing.php";
                     break;
                 case "1":
@@ -79,6 +80,14 @@ class body {
                     break;
                 case "12":
                     include ABSOLUTH_PATH_PAGE . "faq.php";
+                    break;
+                case '304':
+                    $ajax = new forms();
+                    echo $ajax->LoginProcess($pg['login']);
+                    break;
+                case '305':
+                    $ajax = new forms();
+                    echo $ajax->SignUpProcess($pg['signup']);
                     break;
                 case "404":
                     include ABSOLUTH_PATH_PAGE . "404.php";

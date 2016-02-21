@@ -23,6 +23,7 @@ class forms {
     public $_login_message = array();
     public $_league_message = array();
     public $_fucntions;
+    public $_hidden_key;
 
     public function __construct() {
         $this->_db = db_connect::getInstance();
@@ -52,28 +53,29 @@ class forms {
             }
             ?>
             <h4>Please Enter Your Details</h4>
-            <input type="text" placeholder="First Name" name="form[signup][firstname]" onfocus="this.value = '';" onblur="if (this.value == '') {
+            <input type="text" placeholder="First Name" name="form[signup][firstname]" id="firstname" onfocus="this.value = '';" onblur="if (this.value == '') {
                                 this.value = 'First Name';
                             }" value="<?php
                    echo $_POST['form']['signup']['firstname'];
                    ?>">
-            <input type="text" name="form[signup][lastname]" placeholder="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {
+            <input type="text" name="form[signup][lastname]" id="lastname" placeholder="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {
                                 this.value = 'Second Name';
                             }" value="<?php
                    echo $_POST['form']['signup']['lastname'];
                    ?>">
-            <input type="text" class="email" placeholder="Email" name="form[signup][email]" onfocus="this.value = '';" onblur="if (this.value == '') {
+            <input type="text" class="email" placeholder="Email" name="form[signup][email]" id="email" onfocus="this.value = '';" onblur="if (this.value == '') {
                                 this.value = 'Email';
                             }" value="<?php
                    echo $_POST['form']['signup']['email'];
                    ?>">
-            <input type="password" placeholder="Password" name="form[signup][password]" onfocus="this.value = '';" onblur="if (this.value == '') {
+            <input type="password" placeholder="Password" name="form[signup][password]" id="password" onfocus="this.value = '';" onblur="if (this.value == '') {
                                 this.value = 'Password';
                             }" value="<?php
                    echo $_POST['form']['signup']['password'];
                    ?>">
-            <input type="submit"  name="form[signup][register]" value="Sign Up"/>
+            <input type="submit"  name="form[signup][register]" value="Sign Up" id="signup"/>
         </form>
+<div id="s_show"></div>
         <?php
     }
 
@@ -105,12 +107,14 @@ class forms {
                             }"  value="<?php
                    echo $_POST['form']['login']['password'];
                    ?>">
-            <input type="submit" id="login"  name="form[login][do_login]" value="LogIn"/>
+            <input type="hidden" name="form[login][sec_id]" value="<?= $this->ret_hidden_val(); ?>" id="sec_id"/>
+            <input type="hidden" name="form[login][cmd]" value="profile" id="cmd"/>
+            <input type="submit" id="login"  name="form[login][do_login]" value="Login"/>
         </form>
-      
-       
-        <script type='text/javascript' src='<?= ABSOLUTH_PATH_JS ?>"ajax_proccess.js'></script>
-          <?php
+<div id="show"></div>
+
+
+        <?php
     }
 
     public function EditProfileForm(array $data) {
@@ -214,12 +218,12 @@ class forms {
         $this->_formInputs = $form_values;
         $input_values = array();
         $helper_functions = new functions();
-        if (isset($this->_formInputs['form']['signup']['register'])) {
-            $input_values['fname'] = $this->_formInputs['form']['signup']['firstname'];
-            $input_values['lname'] = $this->_formInputs['form']['signup']['lastname'];
-            $input_values['email'] = $this->_formInputs['form']['signup']['email'];
-            $input_values['password'] = $this->_formInputs['form']['signup']['password'];
-            $input_values['page_name'] = $this->_formInputs['form']['signup']['page_name'];
+        if (isset($this->_formInputs['register'])) {
+            $input_values['fname'] = $this->_formInputs['firstname'];
+            $input_values['lname'] = $this->_formInputs['lastname'];
+            $input_values['email'] = $this->_formInputs['email'];
+            $input_values['password'] = $this->_formInputs['password'];
+            $input_values['page_name'] = $this->_formInputs['page_name'];
 
             /*
              * RS 20160131
@@ -261,6 +265,7 @@ class forms {
 
                     array_push($error, "Please enter a valid email");
                     $this->_message = $error;
+                    echo "error#12";
                 } else {
                     $this->_flag = 0;
                     unset($this->_message);
@@ -277,6 +282,7 @@ class forms {
 
                     array_push($error, "Email already registered.");
                     $this->_message = $error;
+                    echo 'error#11';
                 } else {
                     $this->_flag = 0;
                     unset($this->_message);
@@ -293,6 +299,7 @@ class forms {
 
                     array_push($error, "Password must be at least 5 charecters long and alpha-numeric.");
                     $this->_message = $error;
+                    echo "error#13";
                 } else {
                     $this->_flag = 0;
                     unset($this->_message);
@@ -314,12 +321,16 @@ class forms {
                 $fields['ssid'] = "ssid";
                 $query = $helper_functions->InsertNewUser("users", $fields, $input_values);
                 if ($query) {
-
+                    echo $input_values['ssid'];
                     $_SESSION['isLoggedin'] = $helper_functions->UIDGEN(date("Ymd"));
                     header("location: loader.php?cmd=profile&ssid=" . $input_values['ssid']);
                 }
             }
         }
+    }
+
+    public function ret_hidden_val() {
+        return $this->_hidden_key;
     }
 
     /*
@@ -328,15 +339,16 @@ class forms {
      */
 
     public function LoginProcess(array $form_values) {
+        
 
         unset($this->_login_message);
         $insertion = new functions();
         $this->_formInputs = $form_values;
         $input_values = array();
 
-        if (isset($this->_formInputs['form']['login']['do_login'])) {
-            $input_values['email'] = $this->_formInputs['form']['login']['email'];
-            $input_values['password'] = $this->_formInputs['form']['login']['password'];
+        if (isset($this->_formInputs['do_login'])) {
+            $input_values['email'] = $this->_formInputs['email'];
+            $input_values['password'] = $this->_formInputs['password'];
 
             if (empty($input_values['email']) && empty($input_values['password'])) {
                 $this->_flag = 1;
@@ -361,24 +373,28 @@ class forms {
             } else {
                 unset($this->_flag);
                 $query = $insertion->LogUserIn("users", $input_values);
-                ///$getdata = $insertion->getDataQuery("users", $input_values);
-                //$data = $insertion->SetDataQuery();
-
-                if (!$query) {
+                if ($query == false) {
+                    
                     $this->_flag = 1;
                     if ($this->_flag == 1) {
                         $error = array();
                         array_push($error, "There was an error loging you in!");
                         $this->_login_message = $error;
+                   
                     }
                 } else {
+                   
                     $input_values['ssid'] = $insertion->UIDGEN("User_");
 
                     $insertion->UpdateLoginSSID("users", $input_values['ssid'], "email", $input_values['email']);
 
                     $_SESSION['isLoggedin'] = $insertion->UIDGEN(date("Ymd"));
 
-                    header("location: loader.php?cmd=profile&ssid=" . $input_values['ssid']);
+                    $this->_hidden_key = $_SESSION['isLoggedin'];
+                    $_POST['form']['login']['sec_id'] = $this->_hidden_key;
+                    array_push($_POST, $_POST['form']['login']['sec_id']);
+                    echo $input_values['ssid'];
+                    header("location: loader.php?cmd=profile&ssid=" . $input_values['ssid']."&s=".$_SESSION['isLoggedin']);
                 }
             }
         }

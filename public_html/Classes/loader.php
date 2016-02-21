@@ -18,9 +18,8 @@ class loader {
     //put your code here
     private $_header_content = array();
     public $_post_values = array();
-    
     public $_functions;
-
+    public $_head;
     public function __construct() {
 
         echo $this->PageHeader();
@@ -36,7 +35,7 @@ class loader {
      */
 
     public function PageHeader() {
-        $head = new header();
+        $this->_head = new header();
 
         /* META TAGS CAN BE ADDED TO THIS ARRAY */
         $meta = array(
@@ -67,67 +66,44 @@ class loader {
         <?php
 
         $css = array(
-            
             "css1" => '<link href="' . ABSOLUTH_PATH_CSS . 'pageLoader.css" rel="stylesheet" type="text/css"/>',
-            /*
-            "css2" => '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>',
-            "css3" => '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css">'
-             */
+                /*
+                  "css2" => '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>',
+                  "css3" => '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css">'
+                 */
         );
-                    ?>
-                   
+        ?>
 
-                    <?php
+
+        <?php
+
         if (!isset($_GET['cmd']) || $_GET['cmd'] == "") {
 
-            array_push($css, 
-               '<link href="' . ABSOLUTH_PATH_CSS . 'landing.css" rel="stylesheet" type="text/css"/>',
-               '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>',
-               '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'animate.css">',
-               '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'popupo-box.css">'
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'landing.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'animate.css">', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'popupo-box.css">'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "profile") {
 
-            array_push($css, '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'jquery.datetimepicker.css">',
-            '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>',
-            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>',
-            '<link href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css" rel="stylesheet" type="text/css"/>'       
+            array_push($css, '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'jquery.datetimepicker.css">', '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "roster") {
 
-            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>',
-            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>',
-                    '<link href="' . ABSOLUTH_PATH_CSS . 'roster.css" rel="stylesheet" type="text/css"/>'
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'roster.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "add-drop") {
 
-            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>',
-            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>',
-                    '<link href="' . ABSOLUTH_PATH_CSS . 'add-drop.css" rel="stylesheet" type="text/css"/>'
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'add-drop.css" rel="stylesheet" type="text/css"/>'
             );
-        }
-        else if (isset($_GET['cmd']) && $_GET['cmd'] == "trades") {
-            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>',
-            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>',
-                    '<link href="' . ABSOLUTH_PATH_CSS . 'trades.css" rel="stylesheet" type="text/css"/>'
+        } else if (isset($_GET['cmd']) && $_GET['cmd'] == "trades") {
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'trades.css" rel="stylesheet" type="text/css"/>'
             );
-        }
-        else if (isset($_GET['cmd']) && $_GET['cmd'] == "home") {
-            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>',
-            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>',
-                    '<link href="' . ABSOLUTH_PATH_CSS . 'home.css" rel="stylesheet" type="text/css"/>'
+        } else if (isset($_GET['cmd']) && $_GET['cmd'] == "home") {
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'home.css" rel="stylesheet" type="text/css"/>'
             );
-        }
-        else if (isset($_GET['cmd']) && $_GET['cmd'] == "matchup") {
-            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>',
-            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>',
-                    '<link href="' . ABSOLUTH_PATH_CSS . 'matchup.css" rel="stylesheet" type="text/css"/>'
+        } else if (isset($_GET['cmd']) && $_GET['cmd'] == "matchup") {
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'matchup.css" rel="stylesheet" type="text/css"/>'
             );
-        }
-        else if (isset($_GET['cmd']) && $_GET['cmd'] == "draft") {
-            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>',
-            '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>',
-                    '<link href="' . ABSOLUTH_PATH_CSS . 'draft.css" rel="stylesheet" type="text/css"/>'
+        } else if (isset($_GET['cmd']) && $_GET['cmd'] == "draft") {
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'draft.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] != "") {
 
@@ -141,17 +117,17 @@ class loader {
             "js1" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "jquery.js'></script>",
             "js2" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "bootstrap.min.js'></script>",
             "js3" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "pageLoader.js'></script>",
-            
+            "jsShanke" => " <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "jquery.ui.shake.js'></script>"
         );
         /* LOADS -> [meta, title, css, js] */
-        $head->GetMetaForHeader($meta);
-        $head->SetMetaForHeader();
-        $head->GetTitleForHeader($page_title);
-        $head->SetTitleForHeader();
-        $head->GetCSSForHeader($css);
-        $head->SetCSSForHeader();
-        $head->GetJSForHeader($js);
-        $head->SetJSForHeader();
+        $this->_head->GetMetaForHeader($meta);
+        $this->_head->SetMetaForHeader();
+        $this->_head->GetTitleForHeader($page_title);
+        $this->_head->SetTitleForHeader();
+        $this->_head->GetCSSForHeader($css);
+        $this->_head->SetCSSForHeader();
+        $this->_head->GetJSForHeader($js);
+        $this->_head->SetJSForHeader();
         /* ----END LOAD--------- */
 
         /* ADD IMAGES TO HOME SLIDER FROM HERE */
@@ -194,15 +170,15 @@ class loader {
             "Match Up" => "loader.php?cmd=matchup&ssid={$_GET['ssid']}",
             "Draft" => "loader.php?cmd=draft&ssid={$_GET['ssid']}",
         );
-        $head->GetHomeSlider($home_slider_images);
-        $head->SetHomeSlider();
-        $head->GetNavLinks($navigation);
-        $head->SetNavLinks();
+        $this->_head->GetHomeSlider($home_slider_images);
+        $this->_head->SetHomeSlider();
+        $this->_head->GetNavLinks($navigation);
+        $this->_head->SetNavLinks();
 
 
         /* !Important */
         /* AFTER ALL NEEDED FILES ARE LOADED CALL THE LAST FUNCTION SO IT CLOSES THE HEAD AND OPENS BODY */
-        $head->HeaderBasicHtml();
+        $this->_head->HeaderBasicHtml();
     }
 
     /*
@@ -218,7 +194,11 @@ class loader {
         $command->FindAllCommands($_GET['cmd']);
 
         $this->_post_values = $_POST;
-        /*
+
+     
+
+
+           /*
          * Pages 
          * Default set for Home page
          * follow the procedure from below
@@ -231,7 +211,8 @@ class loader {
                 "page_name" => "Landing",
                 "div_name" => "landing",
                 "signup" => $this->_post_values,
-                "login" => $this->_post_values
+                "login" => $this->_post_values,
+           
             );
 
 
@@ -246,31 +227,30 @@ class loader {
 
             switch ($_GET['cmd']) {
                 case "profile":
-                    
-                    if(isset($_GET['id'])){
-                     /*
-                      * Delete tables with league information
-                      * 1. leagues
-                      * 2. league_user
-                      * 3. teams
-                      * 4. TBD
-                      */
+
+                    if (isset($_GET['id'])) {
+                        /*
+                         * Delete tables with league information
+                         * 1. leagues
+                         * 2. league_user
+                         * 3. teams
+                         * 4. TBD
+                         */
                         $tables = array(
-                            "0"=>"leagues",
-                            "1"=>"league_user",
-                            "2"=>"teams"
+                            "0" => "leagues",
+                            "1" => "league_user",
+                            "2" => "teams"
                         );
                         $fields = array(
-                            "0"=>"id",
-                            "1"=>"league_id",
-                            "2"=>"parent"
+                            "0" => "id",
+                            "1" => "league_id",
+                            "2" => "parent"
                         );
                         $values = array(
                             "0" => $_GET['id']
                         );
-                        
-                        $delete_leagues = $function->DeleteItems($tables, $fields, $values);
 
+                        $delete_leagues = $function->DeleteItems($tables, $fields, $values);
                     }
                     $date = $function->getDataQuery("users", "ssid", $_GET['ssid']);
 
@@ -284,11 +264,6 @@ class loader {
                         "forms" => $forms,
                         "functions" => $function,
                         "create_league" => $this->_post_values
-                        
-                            
-                       
-                            
-                       
                     );
 
                     break;

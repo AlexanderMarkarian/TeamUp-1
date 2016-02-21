@@ -34,17 +34,21 @@
 
                 <div id="small-dialog2" class="mfp-hide">
                     <?php
-                    $forms->SignUpProcess($pg['signup']);
-
                     echo $forms->SignUpForm();
+                    $forms->SignUpProcess($pg['signup']);
                     ?>
-
                 </div>	
                 <div id="small-dialog3" class="mfp-hide">
                     <?php
-                    $forms->LoginProcess($pg['login']);
                     echo $forms->LoginForm();
                     ?>
+                    <?php
+
+                    
+                    $forms->LoginProcess($pg['login']);
+                    ?>
+                    <script type='text/javascript' src='<?= ABSOLUTH_PATH_JS ?>ajax_proccess.js'></script>
+
 
                 </div>				
             </div>

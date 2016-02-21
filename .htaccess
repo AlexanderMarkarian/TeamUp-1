@@ -2,11 +2,11 @@ Options +Indexes
 IndexOptions -FancyIndexing
 RewriteEngine On
 
-
-#Options +FollowSymLinks
-
-
 rewriterule ^$ /public_html [R,L]
+
+
+#rewriterule ^$ /public_html [R,L]
+
 #rewriteCond %{REQUEST_FILENAME} !-d
 #rewriteCond %{REQUEST_FILENAME} !-f
 #rewriteCond %{REQUEST_FILENAME} !-l
