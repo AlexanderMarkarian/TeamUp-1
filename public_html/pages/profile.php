@@ -1,14 +1,17 @@
 
-
+<?php
+var_dump($pg['league_info']);
+?>
 <section id="services">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">
+
                     <?php
-                        foreach ($pg['data'] as $user_info) {
-                            echo $user_info['first_name'] . " " . $user_info['last_name'];
-                        }  
+                    foreach ($pg['data'] as $user_info) {
+                        echo $user_info['first_name'] . " " . $user_info['last_name'];
+                    }
                     ?>
                 </h2>
                 <h3 class="section-subheading text-muted">
@@ -28,10 +31,11 @@
                 <h4 class="service-heading">Create League</h4>
                 <!------------------CREATE LEAGUE FORM GOES HERE ---------------------->
                 <?php
-                $pg['forms']->CreateLeagueProcess($pg['create_league']);
-
+                //$pg['forms']->CreateLeagueProcess($pg['create_league']);
                 echo $pg['forms']->CreateLeague();
                 ?>
+                <script type='text/javascript' src='<?= ABSOLUTH_PATH_JS ?>ajax_proccess.js'></script>
+
                 <!----------END FORM---------------------------------------->
             </div>
             <div class="col-md-4">
@@ -53,21 +57,22 @@
                 </span>
                 <h4 class="service-heading">My Leagues</h4>
                 <?php
-                //FOR Universal CHECK
+//FOR Universal CHECK
                 $tables = array(
-                    "table0" => "league_user",
-                    "table1" => "leagues"
+                    "0" => "league_user",
+                    "1" => "leagues"
                 );
                 $fields = array(
                     "0" => "userid",
-                    "1" => "id"
+                    "1" => "userid"
                 );
                 $required_fields = array(
                     "0" => $user_info['user_id'],
-                    "1" => "league_id"
+                    "1" => "userid"
                 );
+// var_dump($user_info);
                 unset($pg['functions']->_data);
-                $leagues = $pg['functions']->UniversalCheckValues($tables, $fields, $required_fields, "NOT NULL");
+                $leagues = $pg['functions']->CheckIfExists($tables, $fields, $required_fields, $option = "3");
                 $leagues = $pg['functions']->SetDataQuery();
                 if ($pg['functions']->_flag == 22) {
                     ?>
@@ -80,7 +85,7 @@
                             ?>
                         </ul>
                     </div>
-                <?php
+                    <?php
                 }
                 ?>
                 <table class="table table-bordered table-hover">

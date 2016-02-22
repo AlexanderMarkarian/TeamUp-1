@@ -3,6 +3,9 @@
  * Ajax proccess for ajax_process.php
  * 02/20/2016
  */
+/*
+ * Login Ajax
+ */
 $(function () {
     $("#login").click(function () {
 
@@ -42,7 +45,9 @@ $(function () {
         return false;
     });
 });
-
+/*
+ * Sign up Ajax
+ */
 $(function () {
     $("#signup").click(function () { // if submit button is clicked
 
@@ -71,6 +76,7 @@ $(function () {
             data: 'firstname=' + firstname + '&lastname=' + lastname + '&email=' + email + '&password=' + password + '&signup=true' + '&register=Sign Up', // the data that will be sent to php processor
             dataType: "html", // type of returned data
             success: function (data) {
+                console.log(data);
 
                 if (data == "error#11") { // if Email already registered Error #11
                     //Shake animation effect.
@@ -86,8 +92,66 @@ $(function () {
                     $("#signup").val('Signup');
                     $("#s_show").html("<div class='alert alert-danger' role='alert' id='errors'><span style='color:#cc0000'>Error:</span> Password must be at least 5 charecters long and alpha-numeric.</div> ");
                 } else { // if the reurned data not Error#11,Error#12,Error#13 than data is ssid
-                    $('#show').html("<span style='color:#009938; font-size:15px;'><strong>Redirecting...</strong></span>");// print success message   
+                    $('#s_show').html("<span style='color:#009938; font-size:15px;'><strong>Redirecting...</strong></span>");// print success message   
                     document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
+                }
+            }
+        });
+        return false;
+    });
+});
+
+/*
+ * Create League Ajax
+ */
+
+$(function () {
+    $("#create").click(function () { // if submit button is clicked
+
+        var league_name = $("input#league_name").val();
+        var team_name = $("input#team_name").val();
+        var d_date = $("input#datepicker").val();
+        var cmd = $("input#cmd").val();
+        var ssid = $("input#ssid").val();
+
+
+
+        if (league_name == "" && team_name == "" && d_date == "") {
+            $('#create').shake();
+            $("form#c_league input:text").css("border", "1px solid red");
+            $("#cleague").html("<div class='alert alert-danger' role='alert' id='errors'><span style='color:#cc0000'>Error:</span> All fields are empty!</div> ");
+            return false; // stop the script
+        }
+
+
+        if (league_name == "" || team_name == "" || d_date == "") {
+            $('#create').shake();
+            $("form#c_league input:text").css("border", "1px solid red");
+            $("#cleague").html("<div class='alert alert-danger' role='alert' id='errors'><span style='color:#cc0000'>Error:</span> One or more fields are empty! </div>");
+            return false; // stop the script
+        }
+
+        $.ajax({// JQuery ajax function
+            type: "POST", // Submitting Method
+            url: 'ajax_process.php', // PHP processor -->DONOT CHANGE
+            data: 'league_name=' + league_name + '&team_name=' + team_name + '&d_date=' + d_date + '&createleagues=true' + '&ssid=' + ssid + '&create=Submit', // the data that will be sent to php processor
+            dataType: "html", // type of returned data
+            success: function (data) {
+                console.log(data);
+                if (data == "error#15") { // if league name is taken Error #15
+                    //Shake animation effect.
+                    $('#create').shake();
+                    $("form#c_league input:text").css("border", "1px solid red");
+                    $("#cleague").html("<div class='alert alert-danger' role='alert' id='errors'><span style='color:#cc0000'>Error:</span>League name is taken.</div> ");
+                } else if (data == "error#16") { // if time and date is in the past Error #16
+                    $('#create').shake();
+                    $("form#c_league input:text").css("border", "1px solid red");
+                    $("#cleague").html("<div class='alert alert-danger' role='alert' id='errors'><span style='color:#cc0000'>Error:</span>Date and time are in the past!. </div>");
+
+                } else { // if the reurned data not Error#15,Error#16 than data is ssid
+                    $("form#c_league input:text").css("border", "1px solid black");
+                    $('#cleague').html("<span style='color:#009938; font-size:15px;'><strong>League Created</strong></span>");// print success message   
+                    //document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
                 }
             }
         });

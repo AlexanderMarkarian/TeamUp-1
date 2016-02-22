@@ -249,6 +249,7 @@ class loader {
                         $values = array(
                             "0" => $_GET['id']
                         );
+                        var_dump($values);
 
                         $delete_leagues = $function->DeleteItems($tables, $fields, $values);
                     }
@@ -263,7 +264,7 @@ class loader {
                         "data" => $data,
                         "forms" => $forms,
                         "functions" => $function,
-                        "create_league" => $this->_post_values
+
                     );
 
                     break;

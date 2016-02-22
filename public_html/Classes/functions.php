@@ -300,7 +300,6 @@ class functions {
     public function UniversalCheckValues(array $table, array $field, array $search_value, $option3) {
         $query_row = array();
         $sql = "SELECT * FROM `" . $table['table0'] . "` WHERE `" . $field['0'] . "` = '" . $search_value['0'] . "'";
-        echo "<br/>";
         $result = $this->_mysqli->query($sql);
         while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
             $query_row[] = $row;
@@ -319,6 +318,7 @@ class functions {
                             $result = $this->_mysqli->query($sql);
                             $row = $result->fetch_array(MYSQLI_ASSOC);
                             $query_row[] = $row;
+                            // var_dump($query_row[]);
                             if ($row[$search_value['3']] == $search_value['4']) {
 
                                 return true;
@@ -328,6 +328,84 @@ class functions {
                         }
                     }
                 }
+            }
+        }
+    }
+
+    public function CheckIfExists(array $tables, array $fields, array $values, $options = "0") {
+
+        if (isset($options) && $options != NULL) {
+            switch ($options) {
+
+                case "1":
+                    $sql = "SELECT * FROM `" . $tables['0'] . "` WHERE `" . $fields['0'] . "` = '" . $values['0'] . "'";
+                    $result = $this->_mysqli->query($sql);
+                    while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+
+                        $q_array = array();
+                        $q_array[] = $row;
+                    }
+                    foreach ($q_array as $fetched_values) {
+                        if ($fetched_values['parent'] != 0) {
+                            
+                        }
+                    }
+                    break;
+                case "2":
+                    $sql = "SELECT * FROM `" . $tables['0'] . "` WHERE `" . $fields['0'] . "` = '" . $values['0'] . "'";
+                    $result = $this->_mysqli->query($sql);
+                    while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+
+                        $q_array = array();
+                        $q_array[] = $row;
+                    }
+                    foreach ($q_array as $fetched_values) {
+                        if ($fetched_values[$values['1']] != NULL) {
+
+                            $sql = "SELECT * FROM `" . $tables['1'] . "` WHERE `" . $fields['1'] . "` = '" . $fetched_values[$values['1']] . "'";
+                            $result = $this->_mysqli->query($sql);
+                            while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+                                $query = array();
+                                $query = $row;
+                            }
+                            foreach ($query as $res) {
+                                if ($res[$values['2']] != NULL) {
+                                    $sql = "SELECT * FROM `" . $tables['2'] . "` WHERE `" . $fields['2'] . "` = '" . $res[$values['2']] . "'";
+
+                                    $result = $this->_mysqli->query($sql);
+                                    $num_rows = $result->num_rows;
+                                    if ($num_rows == 1) {
+                                        while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+
+                                            if ($row[$values['3']] == $values['4']) {
+
+                                                return TRUE;
+                                            } else {
+                                                
+                                            }
+                                            $this->_data[] = $row;
+                                        }
+                                    } else {
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    break;
+                case "3":
+                    $sql = "SELECT * FROM `" . $tables['0'] . "` WHERE `" . $fields['0'] . "` = '" . $values['0'] . "'";
+                    $result = $this->_mysqli->query($sql);
+                    while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+                        if ($row[$values['1']] != NULL) {
+
+                            $sql = "SELECT * FROM `" . $tables['1'] . "` WHERE `" . $fields['1'] . "` = '" . $row[$values['1']] . "'";
+                            $result = $this->_mysqli->query($sql);
+                            while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+                                $this->_data[] = $row;
+                            }
+                        }
+                    }
             }
         }
     }
@@ -418,13 +496,19 @@ class functions {
      * RS 02/13/2016
      */
 
-    public function GetIDFromTables($table, $field, $key) {
+    public function GetIDFromTables($table, array $field, array $key, $option = 0) {
 
-        $sql = "SELECT * FROM `$table` WHERE $field = '$key'";
+        $sql = "SELECT * FROM `$table` WHERE";
+        $sql .=" `" . $field['0'] . "` = '" . $key['0'] . "'";
+        if ($option != 0) {
+            $sql .=" AND `" . $field['1'] . "` = '" . $key['1'] . "'";
+        }
+        var_dump($sql);
         $result = $this->_mysqli->query($sql);
         if ($result) {
             $row = $result->fetch_array(MYSQLI_ASSOC);
             $this->_id = $row;
+            var_dump($row);
         } else {
             $this->_id = false;
         }
@@ -468,29 +552,26 @@ class functions {
     public function EmailInvitation(array $email_values) {
         
     }
-    
+
     /*
      * @auth: Rostom
      * Desc: Delete items
      * @para: $tables[], $fields[], $keys[]
      * RS 02/14/20106
      */
-    
-    public function DeleteItems(array $tables, array $fields, array $keys){
-        for($i=0; $i<count($tables); $i++){
-        $sql = "DELETE FROM `".$tables[$i]."` WHERE `".$fields[$i]."` = '".$keys['0']."'";
-        
-        $result = $this->_mysqli->query($sql);
-        
-        if($result){
-            
-            array_push($this->_messages, "league was deleted from-->".$tables[$i]);
-            //$this->_flag = 21;
+
+    public function DeleteItems(array $tables, array $fields, array $keys) {
+        for ($i = 0; $i < count($tables); $i++) {
+            $sql = "DELETE FROM `" . $tables[$i] . "` WHERE `" . $fields[$i] . "` = '" . $keys['0'] . "'";
+
+            $result = $this->_mysqli->query($sql);
+
+            if ($result) {
+
+                array_push($this->_messages, "league was deleted from-->" . $tables[$i]);
+                //$this->_flag = 21;
+            }
         }
-        
-        
-        
-        }     
     }
 
 }
