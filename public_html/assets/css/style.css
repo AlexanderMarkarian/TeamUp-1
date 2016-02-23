@@ -29,16 +29,6 @@ body{
     color:white;
 }
 
-
-
-#services{
-  background: url(../images/other/football.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 .navbar-default{
     background-color: black;
 }
@@ -169,13 +159,6 @@ h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*text-transform: uppercase;*/
   font-weight: 700;
-}
-
-.league_name{
-  font-size: 18px;
-  color: #18bc9c;
-  display: block;
-  text-decoration: none !important;
 }
 
 .resize{
@@ -861,7 +844,4 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #fed136;
-}
-.delete_color{
-    color: #e74c3c;
 }

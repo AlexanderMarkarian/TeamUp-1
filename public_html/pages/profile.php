@@ -18,44 +18,38 @@ var_dump($pg['league_info']);
                     <?php
                     $pg['functions']->DateAndTime();
                     echo "<br/>" . $pg['functions']->ReturnDate();
-                    ?>
+                    ?>  
                 </h3>
             </div>
         </div>
-        <div class="row text-center">
-            <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="service-heading">Create League</h4>
-                <!------------------CREATE LEAGUE FORM GOES HERE ---------------------->
-                <?php
-                //$pg['forms']->CreateLeagueProcess($pg['create_league']);
-                echo $pg['forms']->CreateLeague();
-                ?>
-                <script type='text/javascript' src='<?= ABSOLUTH_PATH_JS ?>ajax_proccess.js'></script>
-
-                <!----------END FORM---------------------------------------->
+     
+        <div class="row text-center" id="animationSandbox">
+            <div class='secondStep'>
+                <div class="col-md-6">
+                    <h4 class="create-header">Create League</h4>
+                    <!------------------CREATE LEAGUE FORM GOES HERE ---------------------->
+                    <?php
+                    //$pg['forms']->CreateLeagueProcess($pg['create_league']);
+                    echo $pg['forms']->CreateLeague();
+                    ?>
+                    <script type='text/javascript' src='<?= ABSOLUTH_PATH_JS ?>ajax_proccess.js'></script>
+                    <a href="#" id="back"><i class="fa fa-backward"></i></a>
+                    <!----------END FORM---------------------------------------->
+                </div>
+                <div class='col-md-6'>
+                    <input type="button"  name="create" class="btn btn-info" value="Invite Members" id="gotoThirdStep">
+                </div>
             </div>
-            <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-exchange fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="service-heading">Invite Team Members</h4>
+            <div class="col-md-12 thirdStep">
+               <h4 class="create-header">Add League Members</h4>
                 <!----------INVITE PEOPLE TO JOIN LEAGUE FORM GOES HERE----------------->
                 <?php
                 echo $pg['forms']->InviteTeamMembers($pg['data']);
                 ?>
+                <a href="#" id="back2"><i class="fa fa-backward"></i></a>
                 <!--------------------END FORM------------------------->
             </div>
-            <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-list fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="service-heading">My Leagues</h4>
+            <div class="col-md-12 firstStep">
                 <?php
 //FOR Universal CHECK
                 $tables = array(
@@ -88,24 +82,18 @@ var_dump($pg['league_info']);
                     <?php
                 }
                 ?>
-                <table class="table table-bordered table-hover">
-
-                    <?php
+                <?php
                     foreach ($leagues as $league_name) {
                         ?>
-                        <tr class="">
-                            <td>
-                                <a href="#<?= $league_name['id'] ?>" class="league_name"><?= $league_name['league_name'] ?></a>
-                            </td>
-                            <td>
-                                <a href="loader.php?cmd=profile&ssid=<?= $_GET['ssid'] ?>&id=<?= $league_name['id'] ?>"><i class="fa fa-times-circle delete_color"></i></a>
-                            </td>
-                        </tr>
+                        <div>
+                            <a href="#<?= $league_name['id'] ?>" class="league_name"><?= $league_name['league_name'] ?></a>
+                            <a href="loader.php?cmd=profile&ssid=<?= $_GET['ssid'] ?>&id=<?= $league_name['id'] ?>"><i class="fa fa-times-circle delete_color" data-toggle="tooltip" data-placement="top" title="Delete League"></i></a>
+                        </div>
+
                         <?php
                     }
                     ?>
-
-                </table>
+                    <a href="#" id="gotoSecondStep"><i class="fa fa-plus add_color" data-toggle="tooltip" data-placement="top" title="Create League"></i></a>
 
                 <?php
                 if ($league_name['league_name'] == NULL) {

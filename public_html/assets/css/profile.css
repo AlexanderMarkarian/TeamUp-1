@@ -1,0 +1,104 @@
+
+.league_name{
+  font-size: 50px;
+  color: #e74c3c;
+  display:inline;
+  text-decoration: none !important;
+  text-align: center;
+}
+
+body{
+  background: url(../images/other/football.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.delete_color{
+    color: #e74c3c;
+    font-size: 50px;
+    margin-left: 5px;
+}
+
+.delete_color:hover{
+    color: white;
+}
+
+.add_color{
+    color: #e74c3c;
+    font-size: 50px;
+    margin-left: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30;
+}
+
+.add_color:hover{
+    color: white;
+}
+
+.firstStep{
+    height: 300px;
+    text-align: center;
+}
+
+.create-header{
+    font-size: 50px;
+    text-align: left;
+    color: white;
+}
+
+.form-group input{
+    height: 62px;
+    max-width: 600px;
+    font-size: 30px;
+    border-radius: 5%;
+    color: black;
+}
+
+.form-group select{
+    height: 62px;
+    max-width: 600px;
+    font-size: 30px;
+    border-radius: 5%;
+    color: black;
+}
+
+.back{
+    color: green;
+    font-size: 15px;
+}
+
+.alert{
+    max-width: 600px;
+}
+
+#gotoThirdStep{
+   height: 150px;
+   width: 400px;
+   position: absolute;
+   top: 80px;
+   left: 20px;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #3cb0fd;
+  font-size: 40px;
+  background: #ffffff;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+#gotoThirdStep:hover {
+  background: #3cb0fd;
+  color: white;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}

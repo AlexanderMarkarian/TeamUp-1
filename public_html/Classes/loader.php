@@ -83,7 +83,8 @@ class loader {
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "profile") {
 
-            array_push($css, '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'jquery.datetimepicker.css">', '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css" rel="stylesheet" type="text/css"/>'
+            array_push($css, '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'jquery.datetimepicker.css">', '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css" rel="stylesheet" type="text/css"/>', 
+                    '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'animate.css">', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'profile.css">'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "roster") {
 
