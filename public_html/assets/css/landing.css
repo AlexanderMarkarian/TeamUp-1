@@ -48,7 +48,7 @@ html,body {
 	text-decoration: none;
 }
 .top-nav ul li a:hover{
-	color:#42B8DD;
+	color:#e74c3c;
 	transition:.5s all;
 	-webkit-transition:.5s all;
 	-moz-transition:.5s all;
@@ -56,10 +56,10 @@ html,body {
 	-ms-transition:.5s all;
 }
 .top-nav ul li a.Signup {
-	color: #42B8DD;
+	color: #e74c3c;
 	margin-left: 33em;
 	padding: 0.5em 1em;
-	border: #42B8DD solid 2px;
+	border: #e74c3c solid 2px;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -67,10 +67,10 @@ html,body {
 	-ms-border-radius: 10px;
 }
 .top-nav ul li a.LogIn {
-	color: #42B8DD;
+	color: #e74c3c;
 	margin-left: 2em;
 	padding: 0.5em 1em;
-	border: #42B8DD solid 2px;
+	border: #e74c3c solid 2px;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -128,7 +128,7 @@ html,body {
 	font-weight: 100;
 }
 .banner-info p a{
-	color:#42B8DD;
+	color:#e74c3c;
 	font-family: 'Open Sans', sans-serif;
 	font-size:16px;
 	text-decoration:none;
@@ -149,7 +149,7 @@ html,body {
 }
 /*---- services ----*/
 .services{
-	background:#42B8DD;
+	background:#e74c3c;
 	padding: 0 0 4em 0;
 }
 .services-hedding h3{
@@ -528,7 +528,7 @@ p.b-animate.b-from-left.b-delay03 small
 h2.b-animate.b-from-left.b-delay03 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
-	color: #42B8DD;
+	color: #e74c3c;
 	margin: 1.5em 0 .5em 0;
 }
 /*---- work-bottom ----*/
@@ -839,7 +839,7 @@ h2.b-animate.b-from-left.b-delay03 {
 	margin: 0 0 0 3.8em;
 }
 .team-grid-text h5{
-	color:#42B8DD;
+	color:#e74c3c;
 	font-size:16px;
 	font-family: 'Open Sans', sans-serif;
 	text-transform:uppercase;
@@ -916,14 +916,14 @@ h2.b-animate.b-from-left.b-delay03 {
 }
 .circles-text-wrp {
 	font-size: 30.5px;
-	color: #42B8DD;
+	color: #e74c3c;
 }
 .skills-grid-text {
 	width: 85%;
 	margin: 0 0 0 6em;
 }
 .skills-grid-text h5{	
-	color:#42B8DD;
+	color:#e74c3c;
 	text-transform:uppercase;
 	font-family: 'Open Sans', sans-serif;
 	font-size:16px;
@@ -956,12 +956,12 @@ h2.b-animate.b-from-left.b-delay03 {
 	margin-right: .5em;
 }
 .totam ul li.text{
-	color:#42B8DD;
+	color:#e74c3c;
 	font-size:14px;
 	font-family: 'Open Sans', sans-serif;
 }
 .totam ul li.minus{
-	color:#42B8DD;
+	color:#e74c3c;
 	margin-left:1em;
 }
 .totam p{
@@ -1010,7 +1010,7 @@ h2.b-animate.b-from-left.b-delay03 {
 }		
 /*---- skills-middle ----*/
 .skills-middle{
-	background:#42B8DD;
+	background:#e74c3c;
 	padding: 1em 0;
         text-align: center;
 }
@@ -1024,7 +1024,7 @@ h2.b-animate.b-from-left.b-delay03 {
 .skills-middle-text form input[type="text"] {
 	width: 100%;
 	padding: 3.5% 0;
-	background: #42B8DD;
+	background: #e74c3c;
 	color: #FFF;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 26px;
@@ -1040,7 +1040,7 @@ h2.b-animate.b-from-left.b-delay03 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	background: #FFF;
-	color: #42B8DD;
+	color: #e74c3c;
 	margin-top: 0.8em;
 	border-radius: 7px;
 	-webkit-border-radius: 7px;
@@ -1064,7 +1064,7 @@ h2.b-animate.b-from-left.b-delay03 {
 	font-family: 'Open Sans', sans-serif;
 	font-size:16px;
 	background: #FFF;
-	color: #42B8DD;
+	color: #e74c3c;
 	margin-top: 0.8em;
 	float: right;
 	border-radius: 7px;
@@ -1224,7 +1224,7 @@ form input[type="submit"] {
 	background: url(../images/other/tick.png) no-repeat 92px 29px #FFF;
 	text-align: center;
 	font-size: 26px;
-	color: #42B8DD;
+	color: #e74c3c;
 	outline: none;
 	border: none;
 	margin-top: 3.5em;
@@ -1995,7 +1995,7 @@ span.menu
 		font-family: 'Open Sans', sans-serif;
 		font-size: 14px;
 		background: #FFF;
-		color: #42B8DD;
+		color: #e74c3c;
 		margin-top: 0.8em;
 		border-radius: 7px;
 		-webkit-border-radius: 7px;
