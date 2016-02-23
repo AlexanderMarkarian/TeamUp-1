@@ -110,6 +110,7 @@ html,body {
 	display: block;
 	background-size: 100%;
 }
+/*
 .banner-info a span:hover{
 	background: url(../images/playhr.png) no-repeat 0px 0px;
 	background-size: 100%;
@@ -119,6 +120,7 @@ html,body {
 	-o-transition:.5s all;
 	-ms-transition:.5s all;
 }
+*/
 .banner-info h2{
 	font-size: 50px;
 	color: #FFF;
