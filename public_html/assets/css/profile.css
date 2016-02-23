@@ -25,17 +25,17 @@ body{
     color: white;
 }
 
-.add_color{
+#gotoSecondStep{
+    position: absolute;
+    bottom: 0;
+    right: 0; 
     color: #e74c3c;
     font-size: 50px;
     margin-left: 5px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 30;
+    display: inline;
 }
 
-.add_color:hover{
+#gotoSecondStep:hover{
     color: white;
 }
 
@@ -66,21 +66,13 @@ body{
     color: black;
 }
 
-.back{
-    color: green;
-    font-size: 15px;
-}
-
 .alert{
     max-width: 600px;
 }
 
-#gotoThirdStep{
-   height: 150px;
+#gotoThirdStep, #back, #back2{
+   height: 100px;
    width: 400px;
-   position: absolute;
-   top: 80px;
-   left: 20px;
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
@@ -92,7 +84,19 @@ body{
   text-decoration: none;
 }
 
-#gotoThirdStep:hover {
+#gotoThirdStep, #back2{
+   position: absolute;
+   top: 80px;
+   left: 20px; 
+}
+
+#back{
+   position: absolute;
+   top: 200px;
+   left: 20px;  
+}
+
+#gotoThirdStep:hover, #back:hover, #back2:hover {
   background: #3cb0fd;
   color: white;
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);

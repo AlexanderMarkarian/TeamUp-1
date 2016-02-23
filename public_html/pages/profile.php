@@ -33,21 +33,25 @@ var_dump($pg['league_info']);
                     echo $pg['forms']->CreateLeague();
                     ?>
                     <script type='text/javascript' src='<?= ABSOLUTH_PATH_JS ?>ajax_proccess.js'></script>
-                    <a href="#" id="back"><i class="fa fa-backward"></i></a>
                     <!----------END FORM---------------------------------------->
                 </div>
                 <div class='col-md-6'>
-                    <input type="button"  name="create" class="btn btn-info" value="Invite Members" id="gotoThirdStep">
+                    <input type="button"  class="btn btn-info" value="Invite Members" id="gotoThirdStep">
+                    <input type="button"  class="btn btn-info" value="Go Back" id="back">
                 </div>
             </div>
-            <div class="col-md-12 thirdStep">
-               <h4 class="create-header">Add League Members</h4>
-                <!----------INVITE PEOPLE TO JOIN LEAGUE FORM GOES HERE----------------->
-                <?php
-                echo $pg['forms']->InviteTeamMembers($pg['data']);
-                ?>
-                <a href="#" id="back2"><i class="fa fa-backward"></i></a>
-                <!--------------------END FORM------------------------->
+            <div class='thirdStep'>
+                <div class="col-md-6">
+                   <h4 class="create-header">Add League Members</h4>
+                    <!----------INVITE PEOPLE TO JOIN LEAGUE FORM GOES HERE----------------->
+                    <?php
+                    echo $pg['forms']->InviteTeamMembers($pg['data']);
+                    ?>
+                    <!--------------------END FORM------------------------->
+                </div>
+                <div class='col-md-6'>
+                    <input type="button"  class="btn btn-info" value="Go Back" id="back2">  
+                </div>
             </div>
             <div class="col-md-12 firstStep">
                 <?php
@@ -93,7 +97,7 @@ var_dump($pg['league_info']);
                         <?php
                     }
                     ?>
-                    <a href="#" id="gotoSecondStep"><i class="fa fa-plus add_color" data-toggle="tooltip" data-placement="top" title="Create League"></i></a>
+                <a href="#" id="gotoSecondStep"><i class="fa fa-plus-circle add_color" data-toggle="tooltip" data-placement="top" title="Create League"></i></a>
 
                 <?php
                 if ($league_name['league_name'] == NULL) {
