@@ -679,7 +679,7 @@ class forms {
                 <input type="text" class="form-control" placeholder="Team Name" name="form[j_league][team_name]" value="<?= $_POST['form']['j_league']['team_name'] ?>">
             </div>
             <div class="form-group">
-                <input type="button"  class="btn btn-info" value="Submit">
+                <input type="button"  class="btn" value="Submit">
             </div>
         </form>
 
@@ -741,7 +741,7 @@ class forms {
                 <input type="email" class="form-control" placeholder="Team Member's Email" name="form[invite][tm_email]" value="<?= $_POST['form']['invite']['tm_email'] ?>" <?= $disabled ?>>
             </div>
             <div class="form-group">
-                <input type="button"  class="btn btn-info" value="Send Invitation" <?= $disabled ?>>
+                <input type="button"  class="btn btn-info" id='join' value="Send Invitation" <?= $disabled ?>>
             </div>
         </form>
 

@@ -36,8 +36,8 @@ var_dump($pg['league_info']);
                     <!----------END FORM---------------------------------------->
                 </div>
                 <div class='col-md-6'>
-                    <input type="button"  class="btn btn-info" value="Invite Members" id="gotoThirdStep">
-                    <input type="button"  class="btn btn-info" value="Go Back" id="back">
+                    <input type="button"  class="btn" value="Invite Members" id="gotoThirdStep">
+                    <input type="button"  class="btn" value="Go Back" id="back">
                 </div>
             </div>
             <div class='thirdStep'>
@@ -50,7 +50,7 @@ var_dump($pg['league_info']);
                     <!--------------------END FORM------------------------->
                 </div>
                 <div class='col-md-6'>
-                    <input type="button"  class="btn btn-info" value="Go Back" id="back2">  
+                    <input type="button"  class="btn" value="Go Back" id="back2">  
                 </div>
             </div>
             <div class="col-md-12 firstStep">

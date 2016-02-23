@@ -33,6 +33,9 @@ body{
     background-color: black;
 }
 
+.navbar-default .navbar-nav>li>a:hover{
+    color: #e74c3c;
+}
 
 .roster-bottom {
   margin-top: 30px;
