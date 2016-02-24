@@ -26,7 +26,7 @@ $(document).ready(function(){
           testAnim('slideInRight');
           $(".firstStep").hide();
           $(".secondStep").show();
-       }, 500);
+       }, 200);
     });
     
     $("#back").click(function(){
@@ -36,7 +36,7 @@ $(document).ready(function(){
           testAnim('slideInLeft');
           $(".secondStep").hide();
           $(".firstStep").show();
-       }, 1000); 
+       }, 200); 
     });
     
     $("#back2").click(function(){
@@ -46,7 +46,7 @@ $(document).ready(function(){
           testAnim('slideInLeft');
           $(".thirdStep").hide();
           $(".secondStep").show();
-       }, 1000); 
+       }, 200); 
     });
     
     $("#gotoThirdStep").click(function(){
@@ -56,7 +56,7 @@ $(document).ready(function(){
           testAnim('slideInRight');
           $(".secondStep").hide();
           $(".thirdStep").show();
-       }, 500);
+       }, 200);
     });
     
     function testAnim(x) {
