@@ -573,5 +573,26 @@ class functions {
             }
         }
     }
+    
+    public function GetALL(array $tables, array $fields, array $values, $option="0"){
+        var_dump($option);
+        $results_array = array();
+        if($option != "0"){
+            switch($option){
+                case "1":
+                    $sql = "SELECT * FROM `".$tables['0']."`";
+                    var_dump($sql);
+                    $result = $this->_mysqli->query($sql);
+                    
+                    while($row = $result->fetch_array(MYSQLI_ASSOC)){
+                        $results_array[]= $row;
+                    }
+                    
+                    break;
+
+            }
+            return $results_array;
+        }
+    }
 
 }

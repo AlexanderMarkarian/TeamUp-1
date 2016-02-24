@@ -650,8 +650,21 @@ class forms {
                         );
                         $this->_fucntions->InsertAll($insert_values, $cmd = "insert in to teams");
 
-
-                        //$this->_flag = 21;
+                        $table = array(
+                            "0"=>"leagues"
+                        );
+                        $fields = array();
+                        $values = array();
+                        var_dump($table);
+                       $results = $this->_fucntions->GetALL($table,$fields,$values, $option = "1");
+                       $pass_array = array(
+                           "id" => "309",
+                           "league_information" => $results
+                       );
+                       var_dump($results);
+                       $pass_values = new body();
+                       $pass_values->BuildPages($pass_values);
+                       //$this->_flag = 21;
                     }
                 }
             }
