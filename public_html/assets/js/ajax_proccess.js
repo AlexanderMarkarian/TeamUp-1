@@ -8,6 +8,7 @@
  */
 $(function () {
     $("#login").click(function () {
+        var audio = new Audio('../assets/sounds/referee.mp3');
 
         var username = $("input#email").val();
         if (username == "") {
@@ -37,8 +38,11 @@ $(function () {
 
 
                 } else { // if the reurned data not empty then it passes value ssid to url
-                    $('#show').html("<span style='color:#009938; font-size:15px;'><strong>Redirecting...</strong></span>");// print success message   
-                    document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
+                    audio.play();
+                    $('#show').html("<span style='color:#009938; font-size:15px;'><strong>Redirecting...</strong></span>");// print success message 
+                    var timer = setTimeout(function () {
+                        document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
+                    }, 1000);
                 }
             }
         });

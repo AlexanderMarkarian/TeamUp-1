@@ -23,37 +23,26 @@
             </div>
         </div>
      
-        <div class="row text-center" id="animationSandbox">
-            <div class='secondStep'>
-                <div class="col-md-6">
-                    <h4 class="create-header">Create League</h4>
-                    <!------------------CREATE LEAGUE FORM GOES HERE ---------------------->
-                    <?php
-                    //$pg['forms']->CreateLeagueProcess($pg['create_league']);
-                    echo $pg['forms']->CreateLeague();
-                    ?>
-                    <script type='text/javascript' src='<?= ABSOLUTH_PATH_JS ?>ajax_proccess.js'></script>
-                    <!----------END FORM---------------------------------------->
-                </div>
-                <div class='col-md-6'>
-                    <input type="button"  class="btn" value="Invite Members" id="gotoThirdStep">
-                    <input type="button"  class="btn" value="Go Back" id="back">
-                </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h4 class="create-header">Create League</h4>
+                <!------------------CREATE LEAGUE FORM GOES HERE ---------------------->
+                <?php
+                //$pg['forms']->CreateLeagueProcess($pg['create_league']);
+                echo $pg['forms']->CreateLeague();
+                ?>
+                <script type='text/javascript' src='<?= ABSOLUTH_PATH_JS ?>ajax_proccess.js'></script>
+                <!----------END FORM---------------------------------------->
             </div>
-            <div class='thirdStep'>
-                <div class="col-md-6">
-                   <h4 class="create-header">Add League Members</h4>
-                    <!----------INVITE PEOPLE TO JOIN LEAGUE FORM GOES HERE----------------->
-                    <?php
-                    echo $pg['forms']->InviteTeamMembers($pg['data']);
-                    ?>
-                    <!--------------------END FORM------------------------->
-                </div>
-                <div class='col-md-6'>
-                    <input type="button"  class="btn" value="Go Back" id="back2">  
-                </div>
+            <div class="col-md-4">
+               <h4 class="create-header">Add League Members</h4>
+                <!----------INVITE PEOPLE TO JOIN LEAGUE FORM GOES HERE----------------->
+                <?php
+                echo $pg['forms']->InviteTeamMembers($pg['data']);
+                ?>
+                <!--------------------END FORM------------------------->
             </div>
-            <div class="col-md-12 firstStep">
+            <div class="col-md-4">
                 <?php
 //FOR Universal CHECK
                 $tables = array(
@@ -97,7 +86,6 @@
                         <?php
                     }
                     ?>
-                <a href="#" id="gotoSecondStep"><i class="fa fa-plus-circle add_color" data-toggle="tooltip" data-placement="top" title="Create League"></i></a>
 
                 <?php
                 if ($league_name['league_name'] == NULL) {

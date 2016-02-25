@@ -1,7 +1,9 @@
 $(document).ready(function(){
+    /*
     $(".secondStep").hide();
     $(".thirdStep").hide();
-    
+    */
+   
     $('[data-toggle="tooltip"]').tooltip()
     
     var today = new Date();
@@ -18,6 +20,7 @@ $(document).ready(function(){
         startDate:  date
     });
     
+    /*
     var timer;
     $('#gotoSecondStep').click(function () {
        testAnim('slideOutLeft');
@@ -64,4 +67,5 @@ $(document).ready(function(){
            $(this).removeClass();
         });
      };
+     */
 });   

@@ -84,7 +84,7 @@ class loader {
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "profile") {
 
             array_push($css, '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'jquery.datetimepicker.css">', '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css" rel="stylesheet" type="text/css"/>', 
-                    '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'animate.css">', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'profile.css">'
+                    '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'animate.css">', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'profile.css">',  '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'fastuts.css">'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "roster") {
 
@@ -151,6 +151,7 @@ class loader {
         /* USE ABSOLUTH_PATH_PAGES for page paths */
         $navigation = array(
             "Leagues" => array(
+
                 "League Management" => array(
                     "link" => "loader.php?cmd=profile&ssid={$_GET['ssid']}",
                     "class" => "glyphicon glyphicon-user"),
@@ -432,7 +433,8 @@ class loader {
 
             $footer_script = array(
                 "js4" => '<script src="' . ABSOLUTH_PATH_JS . 'jquery.datetimepicker.full.min.js"></script>',
-                "js5" => '<script src="' . ABSOLUTH_PATH_JS . 'profile.js"></script>'
+                "js5" => '<script src="' . ABSOLUTH_PATH_JS . 'profile.js"></script>',
+                "js6" => '<script src="' . ABSOLUTH_PATH_JS . 'fastuts.js"></script>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "roster") {
 
