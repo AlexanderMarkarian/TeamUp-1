@@ -5,3 +5,9 @@ body{
   -o-background-size: cover !important;
   background-size: cover !important;
 }
+
+.media:hover{
+    background: white;
+    color:black;
+    cursor: pointer;
+}

@@ -39,7 +39,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="main-content">
             <div class="col-lg-12">
                 <ul id="myTab" class="nav nav-tabs nav-justified">
                     <li class="active"><a href="#service-one" data-toggle="tab"> NBA</a>
