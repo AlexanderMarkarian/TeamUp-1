@@ -1,6 +1,6 @@
 
 <?php
-var_dump($pg['league_info']);
+//var_dump($pg['league_info']);
 ?>
 <section id="services">
     <div class="container">

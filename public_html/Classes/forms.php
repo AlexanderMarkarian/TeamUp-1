@@ -439,7 +439,7 @@ class forms {
                 <input type="text" id="datepicker" class="form-control datetimepicker" placeholder="Draft Date" name="d_date" value="<?= $_POST['d_date'] ?>" >
             </div>
             <div class="form-group">
-                <input type="hidden" name="cmd" value="pcreate_league" id="cmd" />
+                <input type="hidden" name="cmd" value="profile" id="cmd" />
                 <input type="hidden" name="ssid" value="<?= $_GET['ssid'] ?>" id="ssid"/>
                 <input type="submit"  name="create" class="btn btn-info" value="Submit" id="create">
             </div>
@@ -465,6 +465,7 @@ class forms {
         $form_inputs['d_date'] = $this->_formInputs['d_date'];
         $form_inputs['create'] = $this->_formInputs['create'];
         $form_inputs['ssid'] = $this->_formInputs['ssid'];
+        $form_inputs['cmd'] = $this->_formInputs['cmd'];
         //FOR Universal CHECK
         $tables = array(
             "0" => "users",
@@ -516,20 +517,21 @@ class forms {
                     unset($this->_league_message);
                 }
             } else if ($league_information = $this->_fucntions->CheckIfExists($tables, $fields, $required_fields, $options = "2")) {
-
+                var_dump($this->_flag);
                 $this->_flag = 1;
                 if ($this->_flag == 1) {
                     $errors = array();
                     array_push($errors, "League name taken.");
                     $this->_league_message = $errors;
                     echo "error#15";
+                     var_dump($this->_flag);
                 } else {
                     $this->_flag = 0;
                     unset($this->_league_message);
                 }
             } else if ($this->_fucntions->CheckDateTime($form_inputs['d_date'])) {
                 $this->_flag = 1;
-
+ var_dump($this->_flag);
                 //var_dump($this->_flag);
                 if ($this->_flag == 1) {
                     $errors = array();
@@ -539,6 +541,7 @@ class forms {
                 } else {
                     $this->_flag = 0;
                     unset($this->_league_message);
+                     var_dump($this->_flag);
                 }
             } else {
 
@@ -568,7 +571,7 @@ class forms {
                         "2" => "userid",
                         "3" => "created_on",
                     );
-
+ var_dump($this->_flag);
                     $tables = array(
                         "table0" => "leagues",
                     );
@@ -582,7 +585,7 @@ class forms {
                         "tables" => $tables
                     );
 
-                    var_dump($this->_pass_value['user_id']);
+                   /// var_dump($this->_pass_value['user_id']);
                     $this->_fucntions->InsertAll($insert_values, $cmd = "insert league");
 
                     if ($this->_fucntions->ReturnFlag() == 0) {
@@ -600,7 +603,7 @@ class forms {
                         $league_id = $this->_fucntions->GetIDFromTables("leagues", $fields, $values, $option = 1);
                         $league_id = $this->_fucntions->SetIDFromTables();
 
-
+ var_dump($this->_flag);
                         /*
                          * Table 2
                          */
@@ -616,7 +619,7 @@ class forms {
                         $values = array();
                         array_push($values, "'" . $user_id['user_id'] . "'");
                         array_push($values, "'" . $league_id['id'] . "'");
-                        var_dump($values);
+                       /// var_dump($values);
                         $insert_values = array(
                             "values" => $values,
                             "fields" => $fields,
@@ -633,7 +636,7 @@ class forms {
                             "3" => "created_on",
                             "4" => "status"
                         );
-
+ var_dump($this->_flag);
                         $tables = array(
                             "table0" => "teams",
                         );
@@ -649,22 +652,24 @@ class forms {
                             "tables" => $tables
                         );
                         $this->_fucntions->InsertAll($insert_values, $cmd = "insert in to teams");
-
+                        echo $form_inputs['ssid'];
                         $table = array(
                             "0"=>"leagues"
                         );
                         $fields = array();
                         $values = array();
-                        var_dump($table);
+                       // var_dump($table);
                        $results = $this->_fucntions->GetALL($table,$fields,$values, $option = "1");
                        $pass_array = array(
                            "id" => "309",
                            "league_information" => $results
                        );
-                       var_dump($results);
+                        var_dump($this->_flag);
+                      // var_dump($results);
                        $pass_values = new body();
                        $pass_values->BuildPages($pass_values);
                        //$this->_flag = 21;
+                        var_dump($this->_flag);
                     }
                 }
             }

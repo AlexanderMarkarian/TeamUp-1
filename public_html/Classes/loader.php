@@ -150,8 +150,8 @@ class loader {
         /* ADD NAVIGATION LINKS TO THIS ARRAY */
         /* USE ABSOLUTH_PATH_PAGES for page paths */
         $navigation = array(
-            "Profile" => array(
-                "Profile" => array(
+            "Leagues" => array(
+                "League Management" => array(
                     "link" => "loader.php?cmd=profile&ssid={$_GET['ssid']}",
                     "class" => "glyphicon glyphicon-user"),
                 "Settings" => array(

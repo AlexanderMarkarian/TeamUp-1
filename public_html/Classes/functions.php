@@ -486,6 +486,7 @@ class functions {
 
     public function ReturnFlag() {
         return $this->_flag;
+         var_dump($this->_flag);
     }
 
     /*
@@ -503,12 +504,12 @@ class functions {
         if ($option != 0) {
             $sql .=" AND `" . $field['1'] . "` = '" . $key['1'] . "'";
         }
-        var_dump($sql);
+        //var_dump($sql);
         $result = $this->_mysqli->query($sql);
         if ($result) {
             $row = $result->fetch_array(MYSQLI_ASSOC);
             $this->_id = $row;
-            var_dump($row);
+            ///var_dump($row);
         } else {
             $this->_id = false;
         }
@@ -575,13 +576,13 @@ class functions {
     }
     
     public function GetALL(array $tables, array $fields, array $values, $option="0"){
-        var_dump($option);
+        //var_dump($option);
         $results_array = array();
         if($option != "0"){
             switch($option){
                 case "1":
                     $sql = "SELECT * FROM `".$tables['0']."`";
-                    var_dump($sql);
+                   // var_dump($sql);
                     $result = $this->_mysqli->query($sql);
                     
                     while($row = $result->fetch_array(MYSQLI_ASSOC)){
