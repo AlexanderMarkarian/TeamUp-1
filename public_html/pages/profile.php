@@ -94,8 +94,8 @@ var_dump($pg['league_info']);
 
                     <?php
                 }
+                
                 ?>
-
 
             </div>
         </div>
