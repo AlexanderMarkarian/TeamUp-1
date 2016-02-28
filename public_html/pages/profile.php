@@ -1,7 +1,4 @@
 
-<?php
-//var_dump($pg['league_info']);
-?>
 <section id="services">
     <div class="container">
         <div class="row">
@@ -39,28 +36,31 @@
                 <!----------INVITE PEOPLE TO JOIN LEAGUE FORM GOES HERE----------------->
                 <?php
                 echo $pg['forms']->InviteTeamMembers($pg['data']);
+                $pg['forms']->InviteMembersProcess($pg['invite']);
+                
                 ?>
                 <!--------------------END FORM------------------------->
             </div>
             <div class="col-md-4">
                 <?php
-//FOR Universal CHECK
+                //FOR Universal CHECK
                 $tables = array(
                     "0" => "league_user",
                     "1" => "leagues"
                 );
                 $fields = array(
                     "0" => "userid",
-                    "1" => "userid"
+                    "1" => "id"
                 );
                 $required_fields = array(
                     "0" => $user_info['user_id'],
-                    "1" => "userid"
+                    "1" => "league_id"
                 );
-// var_dump($user_info);
+
                 unset($pg['functions']->_data);
                 $leagues = $pg['functions']->CheckIfExists($tables, $fields, $required_fields, $option = "3");
                 $leagues = $pg['functions']->SetDataQuery();
+                ///var_dump($leagues);
                 if ($pg['functions']->_flag == 22) {
                     ?>
                     <div class='alert alert-success' role='alert'>

@@ -92,7 +92,6 @@ class body {
                 case '306':
                     $ajax = new forms();
                     echo $ajax->CreateLeagueProcess($pg['create_league']);
-
                     break;
                 case "404":
                     include ABSOLUTH_PATH_PAGE . "404.php";

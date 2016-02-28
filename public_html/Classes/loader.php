@@ -20,6 +20,7 @@ class loader {
     public $_post_values = array();
     public $_functions;
     public $_head;
+
     public function __construct() {
 
         echo $this->PageHeader();
@@ -83,8 +84,7 @@ class loader {
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "profile") {
 
-            array_push($css, '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'jquery.datetimepicker.css">', '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css" rel="stylesheet" type="text/css"/>', 
-                    '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'animate.css">', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'profile.css">',  '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'fastuts.css">'
+            array_push($css, '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'jquery.datetimepicker.css">', '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css" rel="stylesheet" type="text/css"/>', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'animate.css">', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'profile.css">', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'fastuts.css">'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "roster") {
 
@@ -106,12 +106,10 @@ class loader {
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "draft") {
             array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'draft.css" rel="stylesheet" type="text/css"/>'
             );
-        }
-        else if (isset($_GET['cmd']) && $_GET['cmd'] == "help") {
+        } else if (isset($_GET['cmd']) && $_GET['cmd'] == "help") {
             array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>'
             );
-        }
-        else if (isset($_GET['cmd']) && $_GET['cmd'] == "faq") {
+        } else if (isset($_GET['cmd']) && $_GET['cmd'] == "faq") {
             array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] != "") {
@@ -151,7 +149,6 @@ class loader {
         /* USE ABSOLUTH_PATH_PAGES for page paths */
         $navigation = array(
             "Leagues" => array(
-
                 "League Management" => array(
                     "link" => "loader.php?cmd=profile&ssid={$_GET['ssid']}",
                     "class" => "glyphicon glyphicon-user"),
@@ -205,10 +202,10 @@ class loader {
 
         $this->_post_values = $_POST;
 
-     
 
 
-           /*
+
+        /*
          * Pages 
          * Default set for Home page
          * follow the procedure from below
@@ -222,7 +219,6 @@ class loader {
                 "div_name" => "landing",
                 "signup" => $this->_post_values,
                 "login" => $this->_post_values,
-           
             );
 
 
@@ -274,7 +270,7 @@ class loader {
                         "data" => $data,
                         "forms" => $forms,
                         "functions" => $function,
-
+                        "invite" => $this->_post_values
                     );
 
                     break;

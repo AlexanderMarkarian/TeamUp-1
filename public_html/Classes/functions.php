@@ -19,6 +19,7 @@ class functions {
     private $_mysqli;
     private $_results;
     public $_data = array();
+    public $_data_row = array();
     public $_pooldata = array();
     public $_count;
     public $_date;
@@ -207,6 +208,10 @@ class functions {
         return $this->_data;
     }
 
+    public function RetdDataRow() {
+        return $this->_data_row;
+    }
+
     /*
      * @auth: Rostom
      * Used to fetch all the data from Pool table
@@ -318,7 +323,6 @@ class functions {
                             $result = $this->_mysqli->query($sql);
                             $row = $result->fetch_array(MYSQLI_ASSOC);
                             $query_row[] = $row;
-                            // var_dump($query_row[]);
                             if ($row[$search_value['3']] == $search_value['4']) {
 
                                 return true;
@@ -354,40 +358,25 @@ class functions {
                 case "2":
                     $sql = "SELECT * FROM `" . $tables['0'] . "` WHERE `" . $fields['0'] . "` = '" . $values['0'] . "'";
                     $result = $this->_mysqli->query($sql);
-                    while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
-
-                        $q_array = array();
-                        $q_array[] = $row;
-                    }
-                    foreach ($q_array as $fetched_values) {
-                        if ($fetched_values[$values['1']] != NULL) {
-
-                            $sql = "SELECT * FROM `" . $tables['1'] . "` WHERE `" . $fields['1'] . "` = '" . $fetched_values[$values['1']] . "'";
-                            $result = $this->_mysqli->query($sql);
-                            while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
-                                $query = array();
-                                $query = $row;
-                            }
-                            foreach ($query as $res) {
-                                if ($res[$values['2']] != NULL) {
-                                    $sql = "SELECT * FROM `" . $tables['2'] . "` WHERE `" . $fields['2'] . "` = '" . $res[$values['2']] . "'";
-
-                                    $result = $this->_mysqli->query($sql);
-                                    $num_rows = $result->num_rows;
-                                    if ($num_rows == 1) {
-                                        while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
-
-                                            if ($row[$values['3']] == $values['4']) {
-
-                                                return TRUE;
-                                            } else {
-                                                
-                                            }
-                                            $this->_data[] = $row;
-                                        }
-                                    } else {
-                                        
-                                    }
+                    $row = $result->fetch_array(MYSQLI_ASSOC);
+                    if ($row[$values['1']] != NULL) {
+                        $sql = "SELECT * FROM `" . $tables['1'] . "` WHERE `" . $fields['1'] . "` = '" . $row[$values['1']] . "'";
+                        $result = $this->_mysqli->query($sql);
+                        $num_rows = $result->num_rows;
+                        while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+                            $this->_data_row[] = $row[$values['2']];
+                        }
+                        $data = array();
+                        $data[] = $this->RetdDataRow();
+                        foreach ($data as $res) {
+                            for ($i = 0; $i < $num_rows; $i++) {
+                                $sql = "SELECT * FROM `" . $tables['2'] . "` WHERE `" . $fields['3'] . "` = '" . $res[$i] . "'";
+                                $result = $this->_mysqli->query($sql);
+                                $row = $result->fetch_array(MYSQLI_ASSOC);
+                                if (mysqli_real_escape_string($this->_mysqli, $row[$values['3']]) == mysqli_real_escape_string($this->_mysqli, $values['4'])) {
+                                    return true;
+                                } else {
+                                    
                                 }
                             }
                         }
@@ -396,16 +385,20 @@ class functions {
                 case "3":
                     $sql = "SELECT * FROM `" . $tables['0'] . "` WHERE `" . $fields['0'] . "` = '" . $values['0'] . "'";
                     $result = $this->_mysqli->query($sql);
+                    $num_rows = $result->num_rows;
                     while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
-                        if ($row[$values['1']] != NULL) {
+                        $this->_data_row[] = $row;
+                    }
 
-                            $sql = "SELECT * FROM `" . $tables['1'] . "` WHERE `" . $fields['1'] . "` = '" . $row[$values['1']] . "'";
+                    foreach ($this->RetdDataRow() as $ret)
+                        if ($ret[$values['1']] != NULL) {
+                            $sql = "SELECT * FROM `" . $tables['1'] . "` WHERE `" . $fields['1'] . "` = '" . $ret[$values['1']] . "'";
                             $result = $this->_mysqli->query($sql);
-                            while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
-                                $this->_data[] = $row;
+                            while ($rows = $result->fetch_array(MYSQLI_ASSOC)) {
+                                //
+                                $this->_data[] = $rows;
                             }
                         }
-                    }
             }
         }
     }
@@ -444,7 +437,6 @@ class functions {
                     . ") ";
             $sql .= "VALUES ";
             $sql .="(" . implode(",", $values['values']) . ")";
-
             $result = $this->_mysqli->query($sql);
             if ($result) {
                 array_push($this->_messages, $values['tables']['table0'] . " were updated");
@@ -486,7 +478,6 @@ class functions {
 
     public function ReturnFlag() {
         return $this->_flag;
-         var_dump($this->_flag);
     }
 
     /*
@@ -504,12 +495,10 @@ class functions {
         if ($option != 0) {
             $sql .=" AND `" . $field['1'] . "` = '" . $key['1'] . "'";
         }
-        //var_dump($sql);
         $result = $this->_mysqli->query($sql);
         if ($result) {
             $row = $result->fetch_array(MYSQLI_ASSOC);
             $this->_id = $row;
-            ///var_dump($row);
         } else {
             $this->_id = false;
         }
@@ -574,25 +563,53 @@ class functions {
             }
         }
     }
-    
-    public function GetALL(array $tables, array $fields, array $values, $option="0"){
-        //var_dump($option);
-        $results_array = array();
-        if($option != "0"){
-            switch($option){
-                case "1":
-                    $sql = "SELECT * FROM `".$tables['0']."`";
-                   // var_dump($sql);
-                    $result = $this->_mysqli->query($sql);
-                    
-                    while($row = $result->fetch_array(MYSQLI_ASSOC)){
-                        $results_array[]= $row;
-                    }
-                    
-                    break;
 
+    public function GetALL(array $tables, array $fields, array $values, $option = "0") {
+        $results_array = array();
+        if ($option != "0") {
+            switch ($option) {
+                case "1":
+                    $sql = "SELECT * FROM `" . $tables['0'] . "`";
+
+                    $result = $this->_mysqli->query($sql);
+
+                    while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+                        $results_array[] = $row;
+                    }
+
+                    break;
             }
             return $results_array;
+        }
+    }
+
+    public function AddMoreFileds(array $fields, array $number_of_fields, $option = "0") {
+
+        if ($option != "0") {
+            switch ($option) {
+
+                case "invite":
+                    if ($number_of_fields['num_fields'] > 0) {
+                        for ($i = 0; $i < $number_of_fields['num_fields']; $i++) {
+                            $num_for_place_holder = $i + 1;
+                            $value1 = (isset($_POST[$fields['2'] . $i]) ? $_POST[$fields['2'] . $i] : "");
+                            $value2 = (isset($_POST[$fields['3'] . $i]) ? $_POST[$fields['3'] . $i] : "");
+
+                            echo $name_fields = "<div class='form-group'><input type='" . $fields['0'] . "' value='" .$value1 . "' name='" . $fields['8'] . "{$i}' class='form-control' placeholder='Team Member #{$num_for_place_holder} Name ' /></div>";
+                            echo $email_fields = "<div class='form-group'><input type='" . $fields['1'] . "' value='" .$value2 . "' name='" . $fields['7'] . "{$i}' class='form-control' placeholder='Team Member #{$num_for_place_holder} Email '/></div>";
+                        }
+                        echo $hidden_field = '<input type="hidden" name="num_people" value="' . $number_of_fields['num_fields'] . '"/>';
+                        echo $submit_form = "<div class='form-group'><input type='" . $fields['4'] . "'  value='" . $fields['5'] . "'  class='btn btn-info' name='" . $fields['6'] . "'/></div>";
+                    } else {
+                        $this->_flag = 24;
+                        var_dump($this->_flag);
+                        if ($this->_flag == 24) {
+                            unset($this->_messages);
+                            array_push($this->_messages, "Please Enter number of people you would like to have under this league.");
+                        }
+                    }
+                    break;
+            }
         }
     }
 

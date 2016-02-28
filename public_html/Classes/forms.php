@@ -220,11 +220,11 @@ class forms {
         $input_values = array();
         $helper_functions = new functions();
         if (isset($this->_formInputs['register'])) {
-            $input_values['fname'] = $this->_formInputs['firstname'];
-            $input_values['lname'] = $this->_formInputs['lastname'];
-            $input_values['email'] = $this->_formInputs['email'];
-            $input_values['password'] = $this->_formInputs['password'];
-            $input_values['page_name'] = $this->_formInputs['page_name'];
+            $input_values['fname'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['firstname']);
+            $input_values['lname'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['lastname']);
+            $input_values['email'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['email']);
+            $input_values['password'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['password']);
+            $input_values['page_name'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['page_name']);
 
             /*
              * RS 20160131
@@ -348,8 +348,8 @@ class forms {
         $input_values = array();
 
         if (isset($this->_formInputs['do_login'])) {
-            $input_values['email'] = $this->_formInputs['email'];
-            $input_values['password'] = $this->_formInputs['password'];
+            $input_values['email'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['email']);
+            $input_values['password'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['password']);
 
             if (empty($input_values['email']) && empty($input_values['password'])) {
                 $this->_flag = 1;
@@ -460,12 +460,12 @@ class forms {
         $this->_formInputs = $form_values;
 
         $form_inputs = array();
-        $form_inputs['league_name'] = $this->_formInputs['league_name'];
-        $form_inputs['team_name'] = $this->_formInputs['team_name'];
-        $form_inputs['d_date'] = $this->_formInputs['d_date'];
-        $form_inputs['create'] = $this->_formInputs['create'];
-        $form_inputs['ssid'] = $this->_formInputs['ssid'];
-        $form_inputs['cmd'] = $this->_formInputs['cmd'];
+        $form_inputs['league_name'] = mysqli_real_escape_string($this->_mysqli, str_replace(" ", "_", $this->_formInputs['league_name']));
+        $form_inputs['team_name'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['team_name']);
+        $form_inputs['d_date'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['d_date']);
+        $form_inputs['create'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['create']);
+        $form_inputs['ssid'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['ssid']);
+        $form_inputs['cmd'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['cmd']);
         //FOR Universal CHECK
         $tables = array(
             "0" => "users",
@@ -475,14 +475,15 @@ class forms {
         $fields = array(
             "0" => "ssid",
             "1" => "userid",
-            "2" => "id",
+            "2" => "league_id",
+            "3" => "id"
         );
         $required_fields = array(
             "0" => $form_inputs['ssid'],
             "1" => "user_id",
             "2" => "league_id",
             "3" => "league_name",
-            "4" => $form_inputs['league_name']
+            "4" => trim($form_inputs['league_name'])
         );
 
         if (isset($form_inputs['create'])) {
@@ -517,22 +518,19 @@ class forms {
                     unset($this->_league_message);
                 }
             } else if ($league_information = $this->_fucntions->CheckIfExists($tables, $fields, $required_fields, $options = "2")) {
-                var_dump($this->_flag);
+
                 $this->_flag = 1;
                 if ($this->_flag == 1) {
                     $errors = array();
-                    array_push($errors, "League name taken.");
+                    array_push($errors, " League name taken.");
                     $this->_league_message = $errors;
                     echo "error#15";
-                     var_dump($this->_flag);
                 } else {
                     $this->_flag = 0;
                     unset($this->_league_message);
                 }
             } else if ($this->_fucntions->CheckDateTime($form_inputs['d_date'])) {
                 $this->_flag = 1;
- var_dump($this->_flag);
-                //var_dump($this->_flag);
                 if ($this->_flag == 1) {
                     $errors = array();
                     array_push($errors, "Selected time is in the past");
@@ -541,7 +539,6 @@ class forms {
                 } else {
                     $this->_flag = 0;
                     unset($this->_league_message);
-                     var_dump($this->_flag);
                 }
             } else {
 
@@ -561,33 +558,33 @@ class forms {
                 $values = array(
                     "0" => $form_inputs['ssid']
                 );
+
                 if ($this->_flag == 0) {
                     $user_id = $this->_fucntions->GetIDFromTables("users", $fields, $values, $option = 0);
                     $user_id = $this->_fucntions->SetIDFromTables();
                     $this->_pass_value['league_name'] = $form_inputs['league_name'];
                     $this->_pass_value['user_id'] = $user_id['user_id'];
                     $fields = array(
+                        "0" => "id",
                         "1" => "league_name",
-                        "2" => "userid",
-                        "3" => "created_on",
+                        "2" => "created_on",
                     );
- var_dump($this->_flag);
+
                     $tables = array(
                         "table0" => "leagues",
                     );
                     $values = array();
+                    $prefix = $form_inputs['league_name'][0];
+                    $uid = $this->_fucntions->UIDGEN($prefix);
+                    array_push($values, "'" . $uid . "'");
                     array_push($values, "'" . $form_inputs['league_name'] . "'");
-                    array_push($values, "'" . $user_id['user_id'] . "'");
                     array_push($values, "'" . $form_inputs['d_date'] . "'");
                     $insert_values = array(
                         "values" => $values,
                         "fields" => $fields,
                         "tables" => $tables
                     );
-
-                   /// var_dump($this->_pass_value['user_id']);
                     $this->_fucntions->InsertAll($insert_values, $cmd = "insert league");
-
                     if ($this->_fucntions->ReturnFlag() == 0) {
                         /*
                          * Get league ids and user ids
@@ -600,10 +597,7 @@ class forms {
                             "0" => $this->_pass_value['league_name'],
                             "1" => $this->_pass_value['user_id']
                         );
-                        $league_id = $this->_fucntions->GetIDFromTables("leagues", $fields, $values, $option = 1);
-                        $league_id = $this->_fucntions->SetIDFromTables();
 
- var_dump($this->_flag);
                         /*
                          * Table 2
                          */
@@ -618,8 +612,7 @@ class forms {
                         );
                         $values = array();
                         array_push($values, "'" . $user_id['user_id'] . "'");
-                        array_push($values, "'" . $league_id['id'] . "'");
-                       /// var_dump($values);
+                        array_push($values, "'" . $uid . "'");
                         $insert_values = array(
                             "values" => $values,
                             "fields" => $fields,
@@ -636,13 +629,12 @@ class forms {
                             "3" => "created_on",
                             "4" => "status"
                         );
- var_dump($this->_flag);
                         $tables = array(
                             "table0" => "teams",
                         );
                         $values = array();
                         array_push($values, "'" . $form_inputs['team_name'] . "'");
-                        array_push($values, "'" . $league_id['id'] . "'");
+                        array_push($values, "'" . $uid . "'");
                         array_push($values, "'" . $form_inputs['d_date'] . "'");
                         array_push($values, 0);
 
@@ -653,23 +645,8 @@ class forms {
                         );
                         $this->_fucntions->InsertAll($insert_values, $cmd = "insert in to teams");
                         echo $form_inputs['ssid'];
-                        $table = array(
-                            "0"=>"leagues"
-                        );
-                        $fields = array();
-                        $values = array();
-                       // var_dump($table);
-                       $results = $this->_fucntions->GetALL($table,$fields,$values, $option = "1");
-                       $pass_array = array(
-                           "id" => "309",
-                           "league_information" => $results
-                       );
-                        var_dump($this->_flag);
-                      // var_dump($results);
-                       $pass_values = new body();
-                       $pass_values->BuildPages($pass_values);
-                       //$this->_flag = 21;
-                        var_dump($this->_flag);
+
+                        //$this->_flag = 21;
                     }
                 }
             }
@@ -734,18 +711,33 @@ class forms {
         $leagues = $this->_fucntions->UniversalCheckValues($tables, $fields, $required_fields, "HELLO");
 
         $leagues = $this->_fucntions->SetDataQuery();
-        ?>
+        var_dump($this->_flag);
+                if ($this->_flag == 24) {
+            ?>
+
+            <div class='alert alert-success' role='alert'>
+                <ul >
+                    <?php
+                    foreach ($this->_fucntions->RetMessages() as $ms) {
+                        echo "<p class='h6'>" . $ms . "</p>";
+                    }
+                    ?>
+                </ul>
+            </div>
+                <?php } ?>
+      
         <form method="post" name="form[invite]">
             <div class="form-group">
-        <?php
-        foreach ($leagues as $league_name) {
-            
-        }$disabled = ($league_name['id'] == NULL) ? "disabled='disabled'" : " ";
-        ?>
-                <select name="form[invite][league_id]" class="form-control" <?= $disabled ?>>
                 <?php
                 foreach ($leagues as $league_name) {
-                    ?>
+                    
+                }
+                $disabled = ($league_name['id'] == NULL) ? "disabled='disabled'" : " ";
+                ?>
+                <select name="form[invite][league_id]" class="form-control" <?= $disabled ?>>
+                    <?php
+                    foreach ($leagues as $league_name) {
+                        ?>
                         <option  value="<?= $league_name['id'] ?>"><?= $league_name['league_name'] ?></option>
                         <?php
                     }
@@ -753,17 +745,47 @@ class forms {
                 </select>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Team Member Name" name="form[invite][tm_name]" value="<?= $_POST['form']['invite']['tm_name'] ?>" <?= $disabled ?>>
+                <label for="how many people">
+                    How many people would you like to invite? 
+                </label>
+                <input type="number" id="num_people" name="num_people" value="<?= $_POST['form']['invite']['num_people'] ?>" class="form-control" <?= $disabled ?>/>
+
             </div>
             <div class="form-group">
-                <input type="email" class="form-control" placeholder="Team Member's Email" name="form[invite][tm_email]" value="<?= $_POST['form']['invite']['tm_email'] ?>" <?= $disabled ?>>
+                <input type="submit" name="do_add_fields"  class="btn btn-success btn-xs" id="add_rows" value="Add" <?= $disabled ?>>
             </div>
-            <div class="form-group">
-                <input type="button"  class="btn btn-info" id='join' value="Send Invitation" <?= $disabled ?>>
-            </div>
+            <?php
+            if (isset($_POST['do_add_fields']) || isset($_POST['do_invite'])) {
+                $input_type = array(
+                    "0" => "text",
+                    "1" => "email",
+                    "2" => "name",
+                    "3" => "email",
+                    "4" => "submit",
+                    "5" => "Invite Team Member",
+                    "6" => "do_invite",
+                    "7" => "email",
+                    "8" => "name"       
+                );
+                $num_fields = array();
+                $num_fields['num_fields'] = $_POST['num_people'];       
+                $option = "invite";
+                echo $additional_fields = $this->_fucntions->AddMoreFileds($input_type, $num_fields, $option);
+         
+            }
+            ?>
+
         </form>
 
         <?php
+    }
+    
+    public function InviteMembersProcess(array $invitaion){
+        
+        if($invitaion['num_people'] == ""){
+            $this->_flag = 24;
+        }
+        var_dump($invitaion['num_people']);
     }
 
 }

@@ -24,7 +24,7 @@ define("DATE_TIME", date('l jS \of F Y h:i:s A')); // Prints something like: Mon
 
 /*SEREVER RELATED*/
 $username= "teamupdb";
-$password="TeamUp123";
+$password="TeamUp123*";
 $host="localhost";
 $database="comp491";
 

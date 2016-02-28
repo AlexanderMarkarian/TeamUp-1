@@ -1,4 +1,5 @@
 <?php
+
 /*
  * @Auth: Rostom
  * Desc: routes to body.php passes the post values from forms to form processes
@@ -15,7 +16,6 @@ if (isset($_POST['login'])) {
     );
 
     $ajax->BuildPages($page_content_array);
-    
 } else if (isset($_POST['signup'])) {
     unset($page_content_array);
     $page_content_array[] = array(
@@ -23,17 +23,13 @@ if (isset($_POST['login'])) {
         "signup" => $_POST,
     );
     $ajax->BuildPages($page_content_array);
-    
-    
-}else if (isset($_POST['createleagues'])) {
+} else if (isset($_POST['createleagues'])) {
     unset($page_content_array);
     $page_content_array[] = array(
         "id" => "306",
         "create_league" => $_POST,
     );
-
-    
     $ajax->BuildPages($page_content_array);
-}
-
+    
+} 
 
