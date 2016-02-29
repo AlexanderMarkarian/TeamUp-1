@@ -7,6 +7,27 @@
             </div>
         </div>
 
+        <div class="overlay"></div>
+        <div class="modal">
+            <img src="<?= ABSOLUTH_PATH_IMAGES ."other/close.png" ?>" id="close">
+            <div class="col-md-4" style="display:inline;">
+                <div style="display:block;">
+                    <img class="img-responsive img-hover" id="add-image" src="" alt="">
+                </div>
+                <div style="display:block;">
+                    <h5 id="add-name"></h5> 
+                </div>
+            </div>
+            <div class="col-md-2">
+                <span id="trade-image"><i class="fa fa-exchange"></i></span>
+                <div id="complete-button">
+                    <button class="btn btn-danger btn-lg" style="margin-top:30px;"> Complete</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+
         <!--
         <div class="row" id="add-drop" style="display:none;">
             <div class="col-md-3" id="add-side" style="margin-left:17%">

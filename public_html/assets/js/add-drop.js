@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	$(".overlay").hide();
+	$(".modal").hide();
 	/*
 	$("#complete-button").hide();
 
@@ -29,6 +31,25 @@ $(document).ready(function(){
 			this.src = source;
 			this.id = "";
 		});
+
+		$('.resize').click(function(){
+			console.log(this.alt);
+			$('#add-name').html(this.alt);
+			document.getElementById('add-image').src = source;
+			$(".overlay").show();
+			$(".modal").show();
+
+			$("#close").click(function(){
+				$(".overlay").hide();
+				$(".modal").hide();
+				$('#add-name').html("");
+				document.getElementById('add-image').src = "";
+			});
+
+		});
 	});
+
+
+
 
 });
