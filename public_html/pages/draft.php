@@ -1,139 +1,272 @@
-<section id="bc-t">
+<section id="draft">
     <div class="container">
-        <h1 class="blog-title">Draft</h1>
+
+        <div class="row">
+
+            <!-- LEFT SIDEBAR -->
+            <div class="col-md-2">
+
+                <div class="top-left">
+                    <div class="time">0:00</div>
+                    <div class="clock-time">On the clock</div>
+                    <div class="clock">
+                            <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
+                        <span class="clock-team">Team A</span>
+                    </div>
+                </div>
+
+                <div class="middle-left">
+                    <div class="round">Round 1</div>
+                    <div class="round-section">
+                        <div class="round-item">
+                            <span class="round-number">32.</span>
+                            <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
+                            <span class="round-name">Team B</span>
+                        </div>
+                        <div class="round-item">
+                            <span class="round-number">33.</span>
+                            <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
+                            <span class="round-name">Team C</span>
+                        </div>
+                        <div class="round-item">
+                            <span class="round-number">34.</span>
+                            <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
+                            <span class="round-name">Team D</span>
+                        </div>
+                    </div>
+                    <div class="round">Round 2</div>
+                    <div class="round-section">
+                        <div class="round-item">
+                            <span class="round-number">32.</span>
+                            <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
+                            <span class="round-name">Team B</span>
+                        </div>
+                        <div class="round-item">
+                            <span class="round-number">33.</span>
+                            <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
+                            <span class="round-name">Team C</span>
+                        </div>
+                        <div class="round-item">
+                            <span class="round-number">34.</span>
+                            <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
+                            <span class="round-name">Team D</span>
+                        </div>
+                    </div>
+                    <div class="round">Round 3</div>
+                    <div class="round-section">
+                        <div class="round-item">
+                            <span class="round-number">32.</span>
+                            <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
+                            <span class="round-name">Team B</span>
+                        </div>
+                        <div class="round-item">
+                            <span class="round-number">33.</span>
+                            <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
+                            <span class="round-name">Team C</span>
+                        </div>
+                        <div class="round-item">
+                            <span class="round-number">34.</span>
+                            <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
+                            <span class="round-name">Team D</span>
+                        </div>
+                    </div> 
+                    <div class="round">Round 4</div>
+                    <div class="round-section">
+                        <div class="round-item">
+                            <span class="round-number">32.</span>
+                            <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
+                            <span class="round-name">Team B</span>
+                        </div>
+                        <div class="round-item">
+                            <span class="round-number">33.</span>
+                            <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
+                            <span class="round-name">Team C</span>
+                        </div>
+                        <div class="round-item">
+                            <span class="round-number">34.</span>
+                            <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
+                            <span class="round-name">Team D</span>
+                        </div>
+                    </div>                                       
+                </div>
+            </div>
+
+            <!-- MIDDLE SECTION -->
+            <div class="col-md-8">
+                <div class="top-middle">
+                    <span id="selected-team">Los Angeles Lakers </span> 
+                    <span id="selected-league">NBA</span>
+
+                    <div class="selected-info">
+                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg"  id="selected-logo">
+                        <span id="selected-stats">
+                            <div id="stat-box">
+                                Rank: <span>19</span>
+                            </div>                            
+                            <div id="stat-box">
+                                Wins: <span>43</span>
+                            </div>
+                            <div id="stat-box">
+                                Losses: <span>17</span>
+                            </div>
+                            <div id="stat-box">
+                                Win Pct: <span>0.65</span>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="selected-buttons">
+                        <button class="btn btn-success btn-lg">Draft Team</button>
+                        <button class="btn btn-info btn-lg">Add to Queue</button>
+                    </div>
+                </div>
+
+
+                <div class="middle-middle well">
+                    <div style="float:left">
+                        <button class="btn btn-default">All</button>
+                        <button class="btn btn-default">NBA</button>
+                        <button class="btn btn-default">NFL</button>
+                        <button class="btn btn-default">MLB</button>
+                        <button class="btn btn-default">NHL</button>
+                    </div>
+                    <div style="float:right">
+                        <span class="input-group">
+                            <input type="text" class="form-control" placeholder="Search For Team...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <span>Go</span>
+                                </button>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="bottom-middle">
+                    <table class="table table-responsive">
+                        <thead>
+                          <tr>
+                            <th>Rank</th>
+                            <th>Team</th>
+                            <th>League</th>
+                            <th>2015 Stats</th>
+                            <th>Add</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                                $i = 0;
+                                foreach ($pg['data'] as $info) {
+
+                                    if ($info['sport'] == "NBA") {
+                                        $i++;
+                                        echo '<tr><td>' . $i . '</td><td class="selected">' . $info['name'] . '</td><td>NBA</td><td></td><td><button class="btn btn-danger">+</button></td> </tr>';
+                                    }
+                                }
+                            ?>
+                            <?php
+                                $i = 0;
+                                foreach ($pg['data'] as $info) {
+
+                                    if ($info['sport'] == "NFL") {
+                                        $i++;
+                                        echo '<tr><td>' . $i . '</td><td class="selected">' . $info['name'] . '</td><td>NFL</td><td></td><td><button class="btn btn-danger">+</button></td> </tr>';
+                                    }
+                                }
+                            ?>
+                            <?php
+                                $i = 0;
+                                foreach ($pg['data'] as $info) {
+
+                                    if ($info['sport'] == "MLB") {
+                                        $i++;
+                                        echo '<tr><td>' . $i . '</td><td class="selected">' . $info['name'] . '</td><td>MLB</td><td></td><td><button class="btn btn-danger">+</button></td> </tr>';
+                                    }
+                                }
+                            ?>
+                            <?php
+                                $i = 0;
+                                foreach ($pg['data'] as $info) {
+
+                                    if ($info['sport'] == "NHL") {
+                                        $i++;
+                                        echo '<tr><td>' . $i . '</td><td class="selected">' . $info['name'] . '</td><td>NHL</td><td></td><td><button class="btn btn-danger">+</button></td> </tr>';
+                                    }
+                                }
+                            ?>
+                                                   
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <div class="col-md-2">
+                <div class="top-right">
+                    <div class="queue-title">Draft Queue</div>
+                    <div class="queue-list">
+                        <div class="queue-item">Golden State Warriors <span class="queue-league"></span></div>
+                        <div class="queue-item">Golden State Warriors <span class="queue-league"></span></div>
+                    </div>
+                </div>
+                <div class="middle-right">
+                    <div class="history-title">Draft History</div>
+                    <div class="history-list">
+                        <div class="history-round">Round 1</div>
+                        <div class="draft-history">
+                            <div class="draft-team">1. L.A. Clippers<span class="draft-league"> NBA</span></div>
+                            <div class="draft-team">2. L.A. Clippers<span class="draft-league"> NBA</span></div>
+                            <div class="draft-team">3. L.A. Clippers<span class="draft-league"> NBA</span></div>
+                            <div class="draft-team">4. L.A. Clippers<span class="draft-league"> NBA</span></div>
+                        </div>
+                        <div class="draft-round">Round 2</div>
+                        <div class="draft-history">
+                            <div class="draft-team">1. L.A. Clippers<span class="draft-league"> NBA</span></div>
+                            <div class="draft-team">2. L.A. Clippers<span class="draft-league"> NBA</span></div>
+                            <div class="draft-team">3. L.A. Clippers<span class="draft-league"> NBA</span></div>
+                            <div class="draft-team">4. L.A. Clippers<span class="draft-league"> NBA</span></div>
+                        </div>
+                        <div class="draft-round">Round 3</div>
+                        <div class="draft-history">
+                            <div class="draft-team">1. L.A. Clippers<span class="draft-league"> NBA</span></div>
+                            <div class="draft-team">2. L.A. Clippers<span class="draft-league"> NBA</span></div>
+                            <div class="draft-team">3. L.A. Clippers<span class="draft-league"> NBA</span></div>
+                            <div class="draft-team">4. L.A. Clippers<span class="draft-league"> NBA</span></div>
+                        </div>
+                        <div class="draft-round">Round 4</div>
+                        <div class="draft-history">
+                            <div class="draft-team">1. L.A. Clippers<span class="draft-league"> NBA</span></div>
+                            <div class="draft-team">2. L.A. Clippers<span class="draft-league"> NBA</span></div>
+                            <div class="draft-team">3. L.A. Clippers<span class="draft-league"> NBA</span></div>
+                            <div class="draft-team">4. L.A. Clippers<span class="draft-league"> NBA</span></div>
+                        </div>                        
+                    </div>
+                </div>
+                <!--
+                <div class="bottom-right">
+                    <div class="roster-title">Current Rosters</div>
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Dropdown
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>
+                    <div class="draft-history">
+                        <div class="draft-team">1. L.A. Clippers<span> NBA</span></div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+
     </div>
+
 </section>
-<section id="video">
-    <div class="container">
-        <div class="b-menu">
-            <nav id="blog-menu">
-                <ul class="clearfix">
-                    <li>On the Clock: </li>
-                    <li class="active"><a href="#">Team 1</a></li>
-                    <li><a href="#">Team 2</a></li>
-                    <li><a href="#">Team 3</a></li>
-                    <li><a href="#">Team 4</a></li>                      
-                </ul>
-                <a href="#" id="pull-blog">Menu</a>
-            </nav>
-        </div>
-        <br>
-        <div id="v-tabs">
-            <ul class="clearfix col-4">
-                <li><i class="fa fa-play"></i><a href="#section-1">NBA <span>Teams Available</span></a></li>
-                <li><i class="fa fa-play"></i><a href="#section-2">NFL <span>Teams Available</span></a></li>
-                <li><i class="fa fa-play"></i><a href="#section-3">MLB <span>Teams Available</span></a></li>
-                <li><i class="fa fa-play"></i><a href="#section-4">NHL <span>Teams Available</span></a></li>
-            </ul>
-            <div id="section-1" class="tab-content col-8">
-                <div class="liga-t scroll-table">
-                    <table class="table-striped">
-                        <tr class="t-h"><td class="t-c">Pos</td><td>Team</td></tr>
-                        <?php
-                        $i = 0;
-                        foreach ($pg['data'] as $info) {
-
-                            if ($info['sport'] == "NBA") {
-                                $i++;
-
-
-                                echo '<tr><td class="t-c">' . $i . '</td><td class="selected"><a>' . $info['name'] . '</a></td></tr>';
-                            }
-                        }
-                        ?>
-                    </table>
-                </div>
-            </div>
-            <div id="section-2" class="tab-content col-8">
-                <div class="liga-t scroll-table">
-                    <table class="table-striped">
-                        <tr class="t-h"><td class="t-c">Pos</td><td>Team</td></tr>
-                        <?php
-                        $i = 0;
-                        foreach ($pg['data'] as $info) {
-
-                            if ($info['sport'] == "NFL") {
-                                $i++;
-
-                                echo '<tr><td class="t-c">' . $i . '</td><td class="selected"><a>' . $info['name'] . '</a></td></tr>';
-                            }
-                        }
-                        ?>
-                    </table>
-                </div>
-            </div>
-            <div id="section-3" class="tab-content col-8">
-                <div class="liga-t scroll-table">
-                    <table class="table-striped">
-                        <tr class="t-h"><td class="t-c">Pos</td><td>Team</td></tr>
-                        <?php
-                        $i = 0;
-                        foreach ($pg['data'] as $info) {
-
-                            if ($info['sport'] == "MLB") {
-                                $i++;
-
-                                echo '<tr><td class="t-c">' . $i . '</td><td class="selected"><a href="#'.$info['ID'].'">' . $info['name'] . '</a></td></tr>';
-                            }
-                        }
-                        ?>
-                    </table>
-                </div>
-            </div>
-            <div id="section-4" class="tab-content col-8">
-                <div class="liga-t scroll-table">
-                    <table class="table-striped">
-                        <tr class="t-h"><td class="t-c">Pos</td><td>Team</td></tr>
-                        <?php
-                        $i = 0;
-                        foreach ($pg['data'] as $info) {
-
-                            if ($info['sport'] == "NHL") {
-                                $i++;
-                                echo '<tr><td class="t-c">' . $i . '</td><td class="selected"><a>' . $info['name'] . '</a></td></tr>';
-                            }
-                        }
-                        ?>
-                    </table>
-                </div>
-            </div>
-
-            <br>
-            <div class="players">
-                <div class="col-4">
-                    <div class="our">
-                        <h3><span>our</span> players</h3>
-                    </div>
-                    <select class="all-team">
-                        <option>Your Team</option>
-                        <option>Team 1</option>
-                        <option>Team 2</option>
-                        <option>Team 3</option>
-                    </select>
-                </div>
-                <div class="col-8">
-                    <div class="slider1">
-                        <div class="slide col-4"><img src="http://placehold.it/157x177" alt=""/><div class="player-name"><a href="roster.php">Placeholder</a><p>Placeholder</p></div></div>
-                        <div class="slide col-4"><img src="http://placehold.it/157x177" alt=""/><div class="player-name"><a href="roster.php">Placeholder</a><p>Placeholder</p></div></div>
-                        <div class="slide col-4"><img src="http://placehold.it/157x177" alt=""/><div class="player-name"><a href="roster.php">Placeholder</a><p>Placeholder</p></div></div>
-                        <div class="slide col-4"><img src="http://placehold.it/157x177" alt=""/><div class="player-name"><a href="roster.php">Placeholder</a><p>Placeholder</p></div></div>
-                        <div class="slide col-4"><img src="http://placehold.it/157x177" alt=""/><div class="player-name"><a href="roster.php">Placeholder</a><p>Placeholder</p></div></div>
-                        <div class="slide col-4"><img src="http://placehold.it/157x177" alt=""/><div class="player-name"><a href="roster.php">Placeholder</a><p>Placeholder</p></div></div>
-                        <div class="slide col-4"><img src="http://placehold.it/157x177" alt=""/><div class="player-name"><a href="roster.php">Placeholder</a><p>Placeholder</p></div></div>
-                        <div class="slide col-4"><img src="http://placehold.it/157x177" alt=""/><div class="player-name"><a href="roster.php">Placeholder</a><p>Placeholder</p></div></div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-</section>
-
-<!-- Libs -->
-<script src="js/libs/jquery-1.10.2.min.js"></script>
-<script src='js/libs/jquery.flexslider-min.js'></script>
-<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-<script src="js/libs/jquery.bxslider.min.js"></script>
-<script src="js/pageLoader.js"></script>
-<script src="js/scripts.js"></script>
-<script src="js/libs/jquery.pietimer.min.js"></script>
-<script src="js/drafting.js"></script>
