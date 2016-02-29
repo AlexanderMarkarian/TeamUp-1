@@ -19,7 +19,7 @@
                 </h3>
             </div>
         </div>
-     
+
         <div class="row text-center">
             <div class="col-md-4">
                 <h4 class="create-header">Create League</h4>
@@ -32,18 +32,20 @@
                 <!----------END FORM---------------------------------------->
             </div>
             <div class="col-md-4">
-               <h4 class="create-header">Add League Members</h4>
+                <h4 class="create-header">Add League Members</h4>
                 <!----------INVITE PEOPLE TO JOIN LEAGUE FORM GOES HERE----------------->
                 <?php
+                /*
+                 * Invite Form + InvitememberProcess Data coming from loader.php 
+                 */
+                echo $pg['forms']->InviteMembersProcess($pg['invite']);
                 echo $pg['forms']->InviteTeamMembers($pg['data']);
-                $pg['forms']->InviteMembersProcess($pg['invite']);
-                
                 ?>
                 <!--------------------END FORM------------------------->
             </div>
             <div class="col-md-4">
                 <?php
-                //FOR Universal CHECK
+//FOR Universal CHECK
                 $tables = array(
                     "0" => "league_user",
                     "1" => "leagues"
@@ -60,7 +62,7 @@
                 unset($pg['functions']->_data);
                 $leagues = $pg['functions']->CheckIfExists($tables, $fields, $required_fields, $option = "3");
                 $leagues = $pg['functions']->SetDataQuery();
-                ///var_dump($leagues);
+///var_dump($leagues);
                 if ($pg['functions']->_flag == 22) {
                     ?>
                     <div class='alert alert-success' role='alert'>
@@ -76,16 +78,16 @@
                 }
                 ?>
                 <?php
-                    foreach ($leagues as $league_name) {
-                        ?>
-                        <div>
-                            <a href="#<?= $league_name['id'] ?>" class="league_name"><?= $league_name['league_name'] ?></a>
-                            <a href="loader.php?cmd=profile&ssid=<?= $_GET['ssid'] ?>&id=<?= $league_name['id'] ?>"><i class="fa fa-times-circle delete_color" data-toggle="tooltip" data-placement="top" title="Delete League"></i></a>
-                        </div>
-
-                        <?php
-                    }
+                foreach ($leagues as $league_name) {
                     ?>
+                    <div>
+                        <a href="#<?= $league_name['id'] ?>" class="league_name"><?= $league_name['league_name'] ?></a>
+                        <a href="loader.php?cmd=profile&ssid=<?= $_GET['ssid'] ?>&id=<?= $league_name['id'] ?>"><i class="fa fa-times-circle delete_color" data-toggle="tooltip" data-placement="top" title="Delete League"></i></a>
+                    </div>
+
+                    <?php
+                }
+                ?>
 
                 <?php
                 if ($league_name['league_name'] == NULL) {
@@ -94,7 +96,6 @@
 
                     <?php
                 }
-                
                 ?>
 
             </div>

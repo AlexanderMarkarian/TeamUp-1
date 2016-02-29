@@ -439,6 +439,7 @@ class functions {
             $sql .="(" . implode(",", $values['values']) . ")";
             $result = $this->_mysqli->query($sql);
             if ($result) {
+                
                 array_push($this->_messages, $values['tables']['table0'] . " were updated");
             } else {
                 $this->_flag = 1;
@@ -583,26 +584,28 @@ class functions {
         }
     }
 
-    public function AddMoreFileds(array $fields, array $number_of_fields, $option = "0") {
+    public function AddMoreFileds(array $fields, array $number_of_fields, $option = NULL) {
 
-        if ($option != "0") {
+        if ($option != NULL) {
             switch ($option) {
 
                 case "invite":
-                    if ($number_of_fields['num_fields'] > 0) {
+
+
+                    if (is_numeric($number_of_fields['num_fields']) && $number_of_fields['num_fields'] != NULL) {
                         for ($i = 0; $i < $number_of_fields['num_fields']; $i++) {
                             $num_for_place_holder = $i + 1;
                             $value1 = (isset($_POST[$fields['2'] . $i]) ? $_POST[$fields['2'] . $i] : "");
                             $value2 = (isset($_POST[$fields['3'] . $i]) ? $_POST[$fields['3'] . $i] : "");
 
-                            echo $name_fields = "<div class='form-group'><input type='" . $fields['0'] . "' value='" .$value1 . "' name='" . $fields['8'] . "{$i}' class='form-control' placeholder='Team Member #{$num_for_place_holder} Name ' /></div>";
-                            echo $email_fields = "<div class='form-group'><input type='" . $fields['1'] . "' value='" .$value2 . "' name='" . $fields['7'] . "{$i}' class='form-control' placeholder='Team Member #{$num_for_place_holder} Email '/></div>";
+                            echo $name_fields = "<div class='form-group'><input type='" . $fields['0'] . "' value='" . $value1 . "' name='" . $fields['8'] . "{$i}' class='form-control' placeholder='Team Member #{$num_for_place_holder} Name ' /></div>";
+                            echo $email_fields = "<div class='form-group'><input type='" . $fields['1'] . "' value='" . $value2 . "' name='" . $fields['7'] . "{$i}' class='form-control' placeholder='Team Member #{$num_for_place_holder} Email '/></div>";
                         }
+                        echo $hidden_field = '<input type="hidden" name="do_add_fields" value="Add"/>';
                         echo $hidden_field = '<input type="hidden" name="num_people" value="' . $number_of_fields['num_fields'] . '"/>';
                         echo $submit_form = "<div class='form-group'><input type='" . $fields['4'] . "'  value='" . $fields['5'] . "'  class='btn btn-info' name='" . $fields['6'] . "'/></div>";
                     } else {
                         $this->_flag = 24;
-                        var_dump($this->_flag);
                         if ($this->_flag == 24) {
                             unset($this->_messages);
                             array_push($this->_messages, "Please Enter number of people you would like to have under this league.");
@@ -611,6 +614,35 @@ class functions {
                     break;
             }
         }
+    }
+    /*
+     * Email
+     * Mail params
+     * @to
+     * @subject
+     * @message
+     * @additional Headers
+     * @additional param
+     */
+    public function SendEmail(array $data, $options= NULL){
+        $num_emails = $data['num_emails'];
+        $to = $data['email'];
+        $subject = $data['subject'];
+        $message = $data['message'];
+        $headers = $data['from'];
+        
+        if($options !=NULL){
+            switch ($options){
+                
+                case "invite":
+                    
+                    mail($to, $subject, $message, $headers);
+                   
+                    break;
+            }
+        }
+        
+        
     }
 
 }

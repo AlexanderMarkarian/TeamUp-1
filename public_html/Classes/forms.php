@@ -22,6 +22,7 @@ class forms {
     public $_message = array();
     public $_login_message = array();
     public $_league_message = array();
+    public $_invite_message = array();
     public $_fucntions;
     public $_hidden_key;
     public $_pass_value = array();
@@ -681,6 +682,26 @@ class forms {
         <?php
     }
 
+    public function MoreFieldsCall() {
+        if (isset($_POST['do_add_fields'])) {
+            $input_type = array(
+                "0" => "text",
+                "1" => "email",
+                "2" => "name",
+                "3" => "email",
+                "4" => "submit",
+                "5" => "Invite Team Member",
+                "6" => "do_invite",
+                "7" => "email",
+                "8" => "name"
+            );
+            $num_fields = array();
+            $num_fields['num_fields'] = $_POST['num_people'];
+            $option = "invite";
+            $additional_fields = $this->_fucntions->AddMoreFileds($input_type, $num_fields, $option);
+        }
+    }
+
     /*
      * @auth: ALex
      * Join league form goes here
@@ -689,7 +710,6 @@ class forms {
      */
 
     public function InviteTeamMembers(array $data) {
-
         foreach ($data as $user_info) {
             
         }
@@ -711,21 +731,9 @@ class forms {
         $leagues = $this->_fucntions->UniversalCheckValues($tables, $fields, $required_fields, "HELLO");
 
         $leagues = $this->_fucntions->SetDataQuery();
-        var_dump($this->_flag);
-                if ($this->_flag == 24) {
-            ?>
+        ?>
+        <!-------INVITE TEAM MEMBER FROM BEGINS------------->
 
-            <div class='alert alert-success' role='alert'>
-                <ul >
-                    <?php
-                    foreach ($this->_fucntions->RetMessages() as $ms) {
-                        echo "<p class='h6'>" . $ms . "</p>";
-                    }
-                    ?>
-                </ul>
-            </div>
-                <?php } ?>
-      
         <form method="post" name="form[invite]">
             <div class="form-group">
                 <?php
@@ -748,44 +756,150 @@ class forms {
                 <label for="how many people">
                     How many people would you like to invite? 
                 </label>
-                <input type="number" id="num_people" name="num_people" value="<?= $_POST['form']['invite']['num_people'] ?>" class="form-control" <?= $disabled ?>/>
+                <input type="number" id="num_people" name="num_people" value="<?= $_POST['form']['invite']['num_people'] ?>" class="form-control" <?= $disabled ?> maxlength="1" max="8" min="2"/>
 
             </div>
             <div class="form-group">
-                <input type="submit" name="do_add_fields"  class="btn btn-success btn-xs" id="add_rows" value="Add" <?= $disabled ?>>
-            </div>
+                <input type="submit" name="do_add_fields"  class="btn btn-success" id="add_rows" value="Add" <?= $disabled ?>>
+            </div>  
+
+
+
+            <!---END OF INVITE TEAM MEMBERS FORM--------->
             <?php
-            if (isset($_POST['do_add_fields']) || isset($_POST['do_invite'])) {
-                $input_type = array(
-                    "0" => "text",
-                    "1" => "email",
-                    "2" => "name",
-                    "3" => "email",
-                    "4" => "submit",
-                    "5" => "Invite Team Member",
-                    "6" => "do_invite",
-                    "7" => "email",
-                    "8" => "name"       
-                );
-                $num_fields = array();
-                $num_fields['num_fields'] = $_POST['num_people'];       
-                $option = "invite";
-                echo $additional_fields = $this->_fucntions->AddMoreFileds($input_type, $num_fields, $option);
-         
+            foreach ($this->_invite_message as $errors) {
+                echo "<div class='alert alert-danger' role='alert'>" . $errors . "</div>";
             }
             ?>
 
+            <input type="hidden" name="sender_info" value="<?= $user_info['first_name'] . " " . $user_info['last_name'] ?>" />
+            <input type="hidden" name="sender_email" value="<?= $user_info['email'] ?>" />
+            <input type="hidden" name="league_id" value="<?= $_POST['form']['invite']['league_id'] ?>" />
+            <?php
+            $this->MoreFieldsCall();
+            ?>
         </form>
-
         <?php
     }
-    
-    public function InviteMembersProcess(array $invitaion){
-        
-        if($invitaion['num_people'] == ""){
-            $this->_flag = 24;
+
+    /*
+     * @Auth: Rostom
+     * Desc: ADDS TEAM MEMEBER INFO INTO TABLE
+     * 02/28/2016
+     */
+
+    public function InviteMembersProcess(array $invitaion) {
+
+
+
+        if (isset($invitaion['do_invite'])) {
+
+
+            $this->_formInputs = $invitaion;
+            $sender_name = $this->_formInputs['sender_info'];
+            $sender_email = $this->_formInputs['sender_email'];
+            for ($i = 0; $i < $invitaion['num_people']; $i++) {
+
+                $name["name" . $i] = $this->_formInputs['name' . $i];
+                $email["email" . $i] = $this->_formInputs['email' . $i];
+
+
+                if ($email["email" . $i] == "" && $name["name" . $i] == "") {
+
+                    $this->_flag = 1;
+                    if ($this->_flag == 1) {
+                        $errors = array();
+                        array_push($errors, "All fields are required.");
+                        $this->_invite_message = $errors;
+                    } else {
+                        $this->_flag = 0;
+                        unset($this->_invite_message);
+                    }
+                } else if ($email["email" . $i] == "" || $name["name" . $i] == "") {
+                    $this->_flag = 1;
+                    if ($this->_flag == 1) {
+                        $errors = array();
+                        array_push($errors, "All fields are required.");
+                        $this->_invite_message = $errors;
+                    } else {
+                        $this->_flag = 0;
+                        unset($this->_invite_message);
+                    }
+                } else if (filter_var($email['email' . $i], FILTER_VALIDATE_EMAIL) === false) {
+                    $this->_flag = 1;
+                    if ($this->_flag == 1) {
+                        $errors = array();
+                        array_push($errors, "Please enter a valid email address.");
+                        $this->_invite_message = $errors;
+                    } else {
+                        $this->_flag = 0;
+                        unset($this->_invite_message);
+                    }
+                } else {
+
+                    $new_date = $this->_fucntions->DateAndTime();
+                    $new_date = $this->_fucntions->ReturnDate();
+                    $today = date("Ymd");
+                    $link_id = $this->_fucntions->UIDGEN($today);
+
+                    //Insert into teams
+                    $fields = array(
+                        "1" => "linkid",
+                        "2" => "name",
+                        "3" => "email",
+                        "4" => "league_id",
+                        "5" => "sent_on"
+                    );
+                    $tables = array(
+                        "table0" => "temp_invite",
+                    );
+                    $values = array();
+                    array_push($values, "'" . $link_id . "'");
+                    array_push($values, "'" . $name['name' . $i] . "'");
+                    array_push($values, "'" . $email['email' . $i] . "'");
+                    array_push($values, "'" . $invitaion['league_id'] . "'");
+                    array_push($values, "'" . $new_date . "'");
+
+                    $insert_values = array(
+                        "values" => $values,
+                        "fields" => $fields,
+                        "tables" => $tables
+                    );
+                    $this->_fucntions->InsertAll($insert_values, $cmd = "insert into temp_invite");
+
+                    $message_link = '<a href="http://dev.teamup.webulence.com/public_html/Classes/loader.php?cmd=profile&lid=' . $link_id . '">Click to join</a>';
+                    $message = ""
+                            . "Hi There {$name['name' . $i]}, \n"
+                            . "\n"
+                            . "{$sender_name} has invited you to join him to a fantasy league match up.\n"
+                            . "Please follow the link to join \n"
+                            . "click {$message_link}  \n"
+                            . "Ref#: {$link_id}";
+                    $subject = "TeamUp - Invitation";
+                    $headers = 'MIME-Version: 1.0' . "\r\n";
+                    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+                    $headers .= "From: '" . $sender_email . " \r\n ";
+                    $to = $email['email' . $i];
+                    $send_mail = mail($to, $subject, $message, $headers);
+                    if ($send_mail) {
+                        $this->_flag = 200;
+                    } else {
+                        $this->_flag = 1;
+                        if ($this->_flag == 1) {
+                            $errors = array();
+                            array_push($errors, "Emails were not sent.");
+                            $this->_invite_message = $errors;
+                        } else {
+                            $this->_flag = 0;
+                            unset($this->_invite_message);
+                        }
+                    }
+                }
+            }
+            if ($this->_flag == 200) {
+                echo "<div class='alert alert-success' role='alert'>Emails were successfully sent.</div>";
+            }
         }
-        var_dump($invitaion['num_people']);
     }
 
 }
