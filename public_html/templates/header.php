@@ -109,9 +109,6 @@ class header {
                                                 </ul>
                                             </li>
 
-
-
-
                                             <?php
                                         } else {
                                             ?>

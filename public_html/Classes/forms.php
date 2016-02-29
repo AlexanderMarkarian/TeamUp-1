@@ -56,25 +56,29 @@ class forms {
             ?>
             <h4>Please Enter Your Details</h4>
             <input type="text" placeholder="First Name" name="form[signup][firstname]" id="firstname" onfocus="this.value = '';" onblur="if (this.value == '') {
-                        this.value = 'First Name';
-                    }" value="<?php
+                                this.value = 'First Name';
+                            }" value="<?php
                    echo $_POST['form']['signup']['firstname'];
                    ?>">
             <input type="text" name="form[signup][lastname]" id="lastname" placeholder="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {
-                        this.value = 'Second Name';
-                    }" value="<?php
+                                this.value = 'Second Name';
+                            }" value="<?php
                    echo $_POST['form']['signup']['lastname'];
                    ?>">
             <input type="text" class="email" placeholder="Email" name="form[signup][email]" id="email" onfocus="this.value = '';" onblur="if (this.value == '') {
-                        this.value = 'Email';
-                    }" value="<?php
+                                this.value = 'Email';
+                            }" value="<?php
                    echo $_POST['form']['signup']['email'];
                    ?>">
             <input type="password" placeholder="Password" name="form[signup][password]" id="password" onfocus="this.value = '';" onblur="if (this.value == '') {
-                        this.value = 'Password';
-                    }" value="<?php
+                                this.value = 'Password';
+                            }" value="<?php
                    echo $_POST['form']['signup']['password'];
                    ?>">
+                   <?php
+                   $lid = (isset($_GET['lid']) ? $_GET['lid'] : "");
+                   ?>
+            <input type="hidden" name="form[signup][lid]" value="<?= $lid ?>" id="lid"/>
             <input type="submit"  name="form[signup][register]" value="Sign Up" id="signup"/>
         </form>
         <div id="s_show"></div>
@@ -99,18 +103,22 @@ class forms {
                 echo "<div class='alert alert-danger' role='alert' id='errors'>" . $errors . "</div>";
             }
             ?>
-            <input type="text" id="email" class="email" name="form[login][email]" placeholder="Email" onfocus="this.value = '';" onblur="if (this.value == '') {
-                        this.value = 'Email';
-                    }" value="<?php
+            <input type="text" id="email_login" class="email" name="form[login][email]" placeholder="Email" onfocus="this.value = '';" onblur="if (this.value == '') {
+                                this.value = 'Email';
+                            }" value="<?php
                    echo $_POST['form']['login']['email'];
                    ?>">
-            <input type="password" id="password" name="form[login][password]" placeholder="Password" onfocus="this.value = '';" onblur="if (this.value == '') {
-                        this.value = 'Password';
-                    }"  value="<?php
+            <input type="password" id="password_login" name="form[login][password]" placeholder="Password" onfocus="this.value = '';" onblur="if (this.value == '') {
+                                this.value = 'Password';
+                            }"  value="<?php
                    echo $_POST['form']['login']['password'];
                    ?>">
+                   <?php
+                   $lid = (isset($_GET['lid']) ? $_GET['lid'] : "");
+                   ?>
+            <input type="hidden" name="form[login][lid]" value="<?= $lid ?>" id="lid1"/>
             <input type="hidden" name="form[login][sec_id]" value="<?= $this->ret_hidden_val(); ?>" id="sec_id"/>
-            <input type="hidden" name="form[login][cmd]" value="profile" id="cmd"/>
+            <input type="hidden" name="form[login][cmd]" value="profile" id="cmd_login"/>
             <input type="submit" id="login"  name="form[login][do_login]" value="Login"/>
         </form>
         <div id="show"></div>
@@ -226,6 +234,7 @@ class forms {
             $input_values['email'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['email']);
             $input_values['password'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['password']);
             $input_values['page_name'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['page_name']);
+            $input_values['lid'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['lid']);
 
             /*
              * RS 20160131
@@ -308,6 +317,18 @@ class forms {
                 }
             } else {
                 /*
+                 * IF Link ID is set Update status to One
+                 */
+                if ($input_values['lid'] != "") {
+
+                    $table = array("0" => "temp_invite");
+                    $field = array("0" => "status", "1" => "linkid");
+                    $value = array("0" => "1", "1" => $input_values['lid']);
+                    $option = "1";
+                    $update = $this->_fucntions->UpdateValues($table, $field, $value, $option);
+                }
+
+                /*
                  * RS 20160201
                  * If all is flags are zero InsertNewUser and reedirect to profile page
                  */
@@ -323,6 +344,7 @@ class forms {
                 $fields['ssid'] = "ssid";
                 $query = $helper_functions->InsertNewUser("users", $fields, $input_values);
                 if ($query) {
+
                     echo $input_values['ssid'];
                     $_SESSION['isLoggedin'] = $helper_functions->UIDGEN(date("Ymd"));
                     header("location: loader.php?cmd=profile&ssid=" . $input_values['ssid']);
@@ -351,6 +373,8 @@ class forms {
         if (isset($this->_formInputs['do_login'])) {
             $input_values['email'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['email']);
             $input_values['password'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['password']);
+            $input_values['lid'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['lid']);
+
 
             if (empty($input_values['email']) && empty($input_values['password'])) {
                 $this->_flag = 1;
@@ -384,7 +408,17 @@ class forms {
                         $this->_login_message = $error;
                     }
                 } else {
+                    /*
+                     * IF Link ID is set Update status to One
+                     */
+                    if ($input_values['lid'] != "") {
 
+                        $table = array("0" => "temp_invite");
+                        $field = array("0" => "status", "1" => "linkid");
+                        $value = array("0" => "1", "1" => $input_values['lid']);
+                        $option = "1";
+                        $update = $this->_fucntions->UpdateValues($table, $field, $value, $option);
+                    }
                     $input_values['ssid'] = $insertion->UIDGEN("User_");
 
                     $insertion->UpdateLoginSSID("users", $input_values['ssid'], "email", $input_values['email']);
@@ -867,7 +901,7 @@ class forms {
                     );
                     $this->_fucntions->InsertAll($insert_values, $cmd = "insert into temp_invite");
 
-                    $message_link = '<a href="http://dev.teamup.webulence.com/public_html/Classes/loader.php?cmd=profile&lid=' . $link_id . '">Click to join</a>';
+                    $message_link = '<a href="http://dev.teamup.webulence.com/public_html/Classes/loader.php?lid=' . $link_id . '">Click to join</a>';
                     $message = ""
                             . "Hi There {$name['name' . $i]}, \n"
                             . "\n"
@@ -878,7 +912,7 @@ class forms {
                     $subject = "TeamUp - Invitation";
                     $headers = 'MIME-Version: 1.0' . "\r\n";
                     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-                    $headers .= "From: '" . $sender_email . " \r\n ";
+                    $headers .= "From: " . $sender_email . " \r\n ";
                     $to = $email['email' . $i];
                     $send_mail = mail($to, $subject, $message, $headers);
                     if ($send_mail) {

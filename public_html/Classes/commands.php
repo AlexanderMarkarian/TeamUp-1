@@ -43,7 +43,8 @@ class commands {
             "edit-profile",
             "log-out",
             "faq",
-            "help"
+            "help",
+            "invited"
         );
         
         if (in_array($needle, $commands)) {

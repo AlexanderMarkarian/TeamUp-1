@@ -399,6 +399,17 @@ class functions {
                                 $this->_data[] = $rows;
                             }
                         }
+                    break;
+                case "4":
+                    $sql = "SELECT * FROM `" . $tables['0'] . "` WHERE `" . $fields['0'] . "` = '" . $values['0'] . "' AND `" . $fields['1'] . "` = '" . $values['1'] . "'";
+                    $result = $this->_mysqli->query($sql);
+                    $num_rows = $result->num_rows;
+                    if ($num_rows == 1) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                    break;
             }
         }
     }
@@ -439,7 +450,7 @@ class functions {
             $sql .="(" . implode(",", $values['values']) . ")";
             $result = $this->_mysqli->query($sql);
             if ($result) {
-                
+
                 array_push($this->_messages, $values['tables']['table0'] . " were updated");
             } else {
                 $this->_flag = 1;
@@ -615,6 +626,7 @@ class functions {
             }
         }
     }
+
     /*
      * Email
      * Mail params
@@ -624,25 +636,40 @@ class functions {
      * @additional Headers
      * @additional param
      */
-    public function SendEmail(array $data, $options= NULL){
+
+    public function SendEmail(array $data, $options = NULL) {
         $num_emails = $data['num_emails'];
         $to = $data['email'];
         $subject = $data['subject'];
         $message = $data['message'];
         $headers = $data['from'];
-        
-        if($options !=NULL){
-            switch ($options){
-                
+
+        if ($options != NULL) {
+            switch ($options) {
+
                 case "invite":
-                    
+
                     mail($to, $subject, $message, $headers);
-                   
+
                     break;
             }
         }
-        
-        
+    }
+
+    public function UpdateValues(array $tables, array $fields, array $values, $option = NULL) {
+        if ($option != NULL) {
+            switch ($option) {
+                case "1":
+                    $sql = "UPDATE `" . $tables['0'] . "` SET `" . $fields['0'] . "`='" . $values['0'] . "' WHERE `" . $fields['1'] . "`='" . $values['1'] . "'";
+                    $result = $this->_mysqli->query($sql);
+                    if ($result) {
+                        return false;
+                    } else {
+                        return true;
+                    }
+                    break;
+            }
+        }
     }
 
 }

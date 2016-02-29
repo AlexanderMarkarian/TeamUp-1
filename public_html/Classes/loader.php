@@ -104,7 +104,7 @@ class loader {
             array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'matchup.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "draft") {
-            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>','<link href="' . ABSOLUTH_PATH_CSS . 'draft.css" rel="stylesheet" type="text/css"/>'
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'draft.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "help") {
             array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'help.css" rel="stylesheet" type="text/css"/>'
@@ -151,6 +151,12 @@ class loader {
         /* ADD NAVIGATION LINKS TO THIS ARRAY */
         /* USE ABSOLUTH_PATH_PAGES for page paths */
         $navigation = array(
+            "Home" => "loader.php?cmd=home&ssid={$_GET['ssid']}",
+            "Roster" => "loader.php?cmd=roster&ssid={$_GET['ssid']}",
+            "Add/Drop" => "loader.php?cmd=add-drop&ssid={$_GET['ssid']}",
+            "Trades" => "loader.php?cmd=trades&ssid={$_GET['ssid']}",
+            "Match Up" => "loader.php?cmd=matchup&ssid={$_GET['ssid']}",
+            "Draft" => "loader.php?cmd=draft&ssid={$_GET['ssid']}",
             "Leagues" => array(
                 "League Management" => array(
                     "link" => "loader.php?cmd=profile&ssid={$_GET['ssid']}",
@@ -173,12 +179,6 @@ class loader {
                     "link" => "loader.php?cmd=log-out&ssid={$_GET['ssid']}",
                     "class" => "glyphicon glyphicon-off")
             ),
-            "Home" => "loader.php?cmd=home&ssid={$_GET['ssid']}",
-            "Roster" => "loader.php?cmd=roster&ssid={$_GET['ssid']}",
-            "Add/Drop" => "loader.php?cmd=add-drop&ssid={$_GET['ssid']}",
-            "Trades" => "loader.php?cmd=trades&ssid={$_GET['ssid']}",
-            "Match Up" => "loader.php?cmd=matchup&ssid={$_GET['ssid']}",
-            "Draft" => "loader.php?cmd=draft&ssid={$_GET['ssid']}",
         );
         $this->_head->GetHomeSlider($home_slider_images);
         $this->_head->SetHomeSlider();
@@ -204,9 +204,15 @@ class loader {
         $command->FindAllCommands($_GET['cmd']);
 
         $this->_post_values = $_POST;
-
-
-
+        /*
+         * IF THE USER COMES FROM EMAIL URL 
+         */
+        if(isset($_GET['lid'])){
+        $table = array("0" => "temp_invite");
+        $fields = array("0" => "linkid", "1" => "status");
+        $values = array("0" => $_GET['lid'], "1" => "0");
+        $option = "4";
+        }
 
         /*
          * Pages 
@@ -214,17 +220,24 @@ class loader {
          * follow the procedure from below
          * Do NOT Change fist if statment 
          */
-        if (!isset($_GET['cmd']) || $_GET['cmd'] == "") {
+        if (!isset($_GET['cmd']) || $_GET['cmd'] == "" ) {
+            
+            if (isset($_GET['lid']) && $function->CheckIfExists($table, $fields, $values, $option)) {
 
-            $page_content_array[] = array(
-                "id" => "0",
-                "page_name" => "Landing",
-                "div_name" => "landing",
-                "signup" => $this->_post_values,
-                "login" => $this->_post_values,
-            );
-
-
+                $page_content_array[] = array(
+                    "id" => "55",
+                    "invite_info" => $_GET['lid']
+                );
+               
+            } else {
+                $page_content_array[] = array(
+                    "id" => "0",
+                    "page_name" => "Landing",
+                    "div_name" => "landing",
+                    "signup" => $this->_post_values,
+                    "login" => $this->_post_values,
+                );
+            }
             /*
              * Profile
              * id @ 1

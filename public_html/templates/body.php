@@ -93,6 +93,11 @@ class body {
                     $ajax = new forms();
                     echo $ajax->CreateLeagueProcess($pg['create_league']);
                     break;
+                case '55':              
+                    $forms = new forms();
+                    $functions = new functions();
+                    include ABSOLUTH_PATH_PAGE . "invited_signup.php";
+                    break;
                 case "404":
                     include ABSOLUTH_PATH_PAGE . "404.php";
                     break;

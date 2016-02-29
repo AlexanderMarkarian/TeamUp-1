@@ -9,24 +9,30 @@
 $(function () {
     $("#login").click(function () {
         var audio = new Audio('../assets/sounds/referee.mp3');
+        var email = $("input#email_login").val();
+        var password = $("input#password_login").val();
+        var lid = $("input#lid1").val();
+        var cmd = $("input#cmd_login").val();
+        console.log(password);
+        console.log(email);
+        console.log(lid);
 
-        var username = $("input#email").val();
-        if (username == "") {
+        if (email == "") {
             $('#small-dialog3').shake();
             $('#show').html("<div class='alert alert-danger' role='alert' id='errors'>Please Insert Your email address</div>");
             return false; // stop the script
         }
-        var password = $("input#password").val();
+
         if (password == "") { // if password variable is empty
             $('#small-dialog3').shake();
             $('#show').html("<div class='alert alert-danger' role='alert' id='errors'>Please Insert Your Password</div>");
             return false; // stop the script
         }
-        var cmd = $("input#cmd").val();
+        
         $.ajax({// JQuery ajax function
             type: "POST", // Submitting Method
             url: 'ajax_process.php', // PHP processor->DONOT CHANGE 02/20/2016
-            data: 'email=' + username + '&password=' + password + '&login=true' + '&do_login=Login', // the data that will be sent to php processor
+            data: 'email=' + email + '&password=' + password + '&login=true' + '&do_login=Login' + "&lid=" + lid, // the data that will be sent to php processor
             dataType: "html", // type of returned data
             success: function (data) {
                 console.log(data)// if ajax function results success
@@ -60,6 +66,7 @@ $(function () {
         var email = $("input#email").val();
         var password = $("input#password").val();
         var cmd = $("input#cmd").val();
+        var lid = $("input#lid").val();
 
         if (firstname == "" && lastname == "" && email == "" && password == "") { // if username variable is empty
             $('#small-dialog2').shake();
@@ -77,7 +84,7 @@ $(function () {
         $.ajax({// JQuery ajax function
             type: "POST", // Submitting Method
             url: 'ajax_process.php', // PHP processor -->DONOT CHANGE
-            data: 'firstname=' + firstname + '&lastname=' + lastname + '&email=' + email + '&password=' + password + '&signup=true' + '&register=Sign Up', // the data that will be sent to php processor
+            data: 'firstname=' + firstname + '&lastname=' + lastname + '&email=' + email + '&password=' + password + '&signup=true' + '&register=Sign Up' + '&lid=' + lid, // the data that will be sent to php processor
             dataType: "html", // type of returned data
             success: function (data) {
                 console.log(data);
@@ -95,6 +102,12 @@ $(function () {
                     $('#small-dialog2').shake();
                     $("#signup").val('Signup');
                     $("#s_show").html("<div class='alert alert-danger' role='alert' id='errors'><span style='color:#cc0000'>Error:</span> Password must be at least 5 charecters long and alpha-numeric.</div> ");
+                } else if (data == "im here") { // if Password is all numeric or less than 5 Error #13
+                    $('#small-dialog2').shake();
+                    $("#signup").val('Signup');
+                    $("#s_show").html("<div class='alert alert-danger' role='alert' id='errors'><span style='color:#cc0000'>Error:</span> Password must be at least 5 charecters long and alpha-numeric.</div> ");
+
+
                 } else { // if the reurned data not Error#11,Error#12,Error#13 than data is ssid
                     $('#s_show').html("<span style='color:#009938; font-size:15px;'><strong>Redirecting...</strong></span>");// print success message   
                     document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
@@ -140,7 +153,7 @@ $(function () {
         $.ajax({// JQuery ajax function
             type: "POST", // Submitting Method
             url: 'ajax_process.php', // PHP processor -->DONOT CHANGE
-            data: 'league_name=' + league_name + '&team_name=' + team_name + '&d_date=' + d_date + '&createleagues=true' + '&ssid=' + ssid + '&create=Submit'+"data=true", // the data that will be sent to php processor
+            data: 'league_name=' + league_name + '&team_name=' + team_name + '&d_date=' + d_date + '&createleagues=true' + '&ssid=' + ssid + '&create=Submit' + "data=true", // the data that will be sent to php processor
             dataType: "html", // type of returned data
             success: function (data) {
                 console.log(data);
@@ -153,13 +166,13 @@ $(function () {
                     $('#create').shake();
                     $("form#c_league input:text").css("border", "1px solid red");
                     $("#cleague").html("<div class='alert alert-danger' role='alert' id='errors'>Date and time are in the past!. </div>");
-   console.log(data);
+                    console.log(data);
                 } else { // if the reurned data not Error#15,Error#16 than data is ssid
-                       console.log(data);
+                    console.log(data);
                     $("form#c_league input:text").css("border", "1px solid black");
                     $('#cleague').html("<span style='color:#009938; font-size:15px;'><strong>League Created</strong></span>");// print success message   
                     document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
-                       console.log(data);
+                    console.log(data);
                 }
             }
         });
