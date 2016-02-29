@@ -65,7 +65,7 @@ $(function () {
         var lastname = $("input#lastname").val();
         var email = $("input#email").val();
         var password = $("input#password").val();
-        var cmd = $("input#cmd").val();
+        var cmd = $("input#cmd_signup").val();
         var lid = $("input#lid").val();
 
         if (firstname == "" && lastname == "" && email == "" && password == "") { // if username variable is empty

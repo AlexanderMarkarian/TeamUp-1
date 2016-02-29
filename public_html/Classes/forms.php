@@ -78,6 +78,7 @@ class forms {
                    <?php
                    $lid = (isset($_GET['lid']) ? $_GET['lid'] : "");
                    ?>
+            <input type="hidden" name="form[signup][cmd]" value="profile" id="cmd_signup"/> 
             <input type="hidden" name="form[signup][lid]" value="<?= $lid ?>" id="lid"/>
             <input type="submit"  name="form[signup][register]" value="Sign Up" id="signup"/>
         </form>
@@ -790,7 +791,7 @@ class forms {
                 <label for="how many people">
                     How many people would you like to invite? 
                 </label>
-                <input type="number" id="num_people" name="num_people" value="<?= $_POST['form']['invite']['num_people'] ?>" class="form-control" <?= $disabled ?> maxlength="1" max="8" min="2"/>
+                <input type="number" id="num_people" name="num_people" value="<?= $_POST['form']['invite']['num_people'] ?>" class="form-control" <?= $disabled ?> maxlength="1" max="8" min="1"/>
 
             </div>
             <div class="form-group">
