@@ -62,21 +62,6 @@ body{
   padding-top: 25%;
 }
 
-.other-matchup{
-  border: 1px solid black;
-  text-align: center;
-}
-
-.other-matchup:hover{
-  cursor: pointer;
-  border: 3px solid red;
-  font-weight: bold;
-}
-
-.matchup-score{
-  float: right;
-}
-
 .small-pic{
   width: 30px;
   height: 25px;
