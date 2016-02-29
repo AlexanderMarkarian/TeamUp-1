@@ -9,6 +9,7 @@
         <div class="row">
         	<div class="col-sm-6 col-md-6">
 	            <div class="well">
+	            <section id= "teamone">
 	        		<h1 class="text-primary text-center">Team 1</h1>
 	        		<h4><span class="label label-success">Starting Points</span></h4>
 	        		<div id="matchup-teams">
