@@ -90,33 +90,6 @@ body{
     margin-right: auto;
 }
 
-#standingsTable {
-    background-color: #FFF;
-}
-
-#standingsTable td, #standingsTable th {
-    padding: 15px;
-}
-
-#standingsTable thead>tr#head>th {
-    font-size: 1.2em;
-    border: none !important;
-    background-color: #00A6FC;
-    color: #006092;
-}
-
-#standingsTable thead>tr#subhead>th {
-    text-transform: uppercase;
-    font-size: .8em;
-    padding: 10px 15px;
-    border: 2px solid #E7E7E7;
-    background-color: #E8ECEF;
-    color: #949394;
-}
-
-#standingsTable tr td {
-    border: 2px solid #E7E7E7;
-}
 
 td{
   text-align: center;
@@ -147,16 +120,6 @@ h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*text-transform: uppercase;*/
   font-weight: 700;
-}
-
-.resize{
-  width: 60px;
-  height: 55px;
-  border-radius: 50%;
-  float: left;
-}
-.resize:hover{
-  cursor: pointer;
 }
 
 .league_name:hover{

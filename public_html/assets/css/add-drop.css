@@ -1,13 +1,63 @@
 body{
-  background: url(../images/other/dropadd.jpg) no-repeat center center fixed !important; 
+  background: url(../images/backgrounds/dropadd.jpg) no-repeat center center fixed !important; 
   -webkit-background-size: cover !important;
   -moz-background-size: cover !important;
   -o-background-size: cover !important;
   background-size: cover !important;
 }
 
+/*
 .media:hover{
     background: white;
     color:black;
     cursor: pointer;
+}
+*/
+.grey-area{
+  background: #303136;
+}
+
+.nav-tabs{
+  background-color:#161616;
+}
+
+#myTab{
+  width: 100%;
+}
+
+.tab-content{
+    background-color:#303136;
+    color:#fff;
+    padding:5px
+}
+
+.nav-tabs > li > a{
+  border: medium none;
+  color: #e74c3c;
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.nav-tabs > li > a:hover{
+  background-color: #303136 !important;
+  border: medium none;
+  border-radius: 0;
+  color:#fff;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover{
+    background-color: #303136 !important;
+}
+
+.resize{
+  width: 60px;
+  height: 55px;
+  border-radius: 50%;
+  float: left;
+}
+
+.resize:hover{
+  cursor: pointer;
 }

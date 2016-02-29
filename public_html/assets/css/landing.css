@@ -90,7 +90,7 @@ html,body {
 
 /*---- banner ----*/
 .banner{
-	background:url(../images/other/3.jpg) no-repeat 0px 0px;
+	background:url(../images/backgrounds/3.jpg) no-repeat 0px 0px;
 	background-size: cover;
 	min-height: 668px;
 	position:relative;

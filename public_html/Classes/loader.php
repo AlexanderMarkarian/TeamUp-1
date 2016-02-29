@@ -84,33 +84,36 @@ class loader {
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "profile") {
 
-            array_push($css, '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'jquery.datetimepicker.css">', '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css" rel="stylesheet" type="text/css"/>', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'animate.css">', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'profile.css">', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'fastuts.css">'
+            array_push($css, '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'jquery.datetimepicker.css">', '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css" rel="stylesheet" type="text/css"/>', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'animate.css">', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'profile.css">', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'fastuts.css">'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "roster") {
 
-            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'roster.css" rel="stylesheet" type="text/css"/>'
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'roster.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "add-drop") {
 
-            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'add-drop.css" rel="stylesheet" type="text/css"/>'
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'add-drop.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "trades") {
-            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'trades.css" rel="stylesheet" type="text/css"/>'
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'trades.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "home") {
-            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'home.css" rel="stylesheet" type="text/css"/>'
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'home.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "matchup") {
-            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'matchup.css" rel="stylesheet" type="text/css"/>'
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'matchup.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "draft") {
             array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>','<link href="' . ABSOLUTH_PATH_CSS . 'draft.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "help") {
-            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>'
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'help.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "faq") {
-            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap3.3.5.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>'
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'faq.css" rel="stylesheet" type="text/css"/>'
+            );
+        } else if (isset($_GET['cmd']) && $_GET['cmd'] == "edit-profile") {
+            array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'edit-profile.css" rel="stylesheet" type="text/css"/>'
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] != "") {
 

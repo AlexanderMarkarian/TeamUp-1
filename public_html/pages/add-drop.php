@@ -7,6 +7,7 @@
             </div>
         </div>
 
+        <!--
         <div class="row" id="add-drop" style="display:none;">
             <div class="col-md-3" id="add-side" style="margin-left:17%">
                 <h4>Team To Add</h4>
@@ -38,30 +39,26 @@
                 </div>
             </div>
         </div>
+        -->
 
         <div class="row" id="main-content">
-            <div class="col-lg-12">
-                <ul id="myTab" class="nav nav-tabs nav-justified">
-                    <li class="active"><a href="#service-one" data-toggle="tab"> NBA</a>
-                    </li>
-                    <li class=""><a href="#service-two" data-toggle="tab"> NFL</a>
-                    </li>
-                    <li class=""><a href="#service-three" data-toggle="tab"> MLB</a>
-                    </li>
-                    <li class=""><a href="#service-four" data-toggle="tab"> NHL</a>
-                    </li>
+            <div class="col-lg-12 grey-area">
+                <ul class="nav nav-tabs" id="myTab">
+                    <li><a data-toggle="tab" href="#sectionA">NBA</a></li>
+                    <li><a data-toggle="tab" href="#sectionB">NFL</a></li>
+                    <li><a data-toggle="tab" href="#sectionC">MLB</a></li>
+                    <li><a data-toggle="tab" href="#sectionD">NHL</a></li>
                 </ul>
-
-                <div id="myTabContent" class="tab-content">
-                    <div class="tab-pane fade active in" id="service-one">
-                         <?php
+                <div class="tab-content">
+                    <div id="sectionA" class="tab-pane fade in active">
+                        <?php
                             foreach ($pg['data'] as $info) {
                                 if ($info['sport'] == "NBA") {
                                     ?>
                                     <div class="col-md-4" style="margin-top:15px;">
                                         <div class="media">
                                             <div class="pull-left">
-                                                <img src="<?= ABSOLUTH_PATH_IMAGES . $info['logo'] ?>" alt="<?= $info['name'] ?>" class="resize"/>
+                                                <img src="<?= ABSOLUTH_PATH_IMAGES . $info['logo'] ?>" id="<?= $info['name'] ?>"alt="<?= $info['name'] ?>" class="resize"/>
                                             </div>
                                             <div class="media-body">
                                                 <h4 class="media-heading" id="<?= $info['ID'] ?>"><?= $info['name'] ?></h4>
@@ -73,7 +70,7 @@
                             }
                         ?>
                     </div>
-                    <div class="tab-pane fade" id="service-two">
+                    <div id="sectionB" class="tab-pane fade">
                         <?php
                             foreach ($pg['data'] as $info) {
                                 if ($info['sport'] == "NFL") {
@@ -93,9 +90,8 @@
                                 }
                             }
                         ?>
-
                     </div>
-                    <div class="tab-pane fade" id="service-three">
+                    <div id="sectionC" class="tab-pane fade">
                         <?php
                             foreach ($pg['data'] as $info) {
                                 if ($info['sport'] == "MLB") {
@@ -114,9 +110,8 @@
                                 }
                             }
                         ?>
- 
                     </div>
-                    <div class="tab-pane fade" id="service-four">
+                    <div id="sectionD" class="tab-pane fade">
                         <?php
                             foreach ($pg['data'] as $info) {
                                 if ($info['sport'] == "NHL") {
@@ -135,7 +130,6 @@
                                 }
                             }
                         ?>
-
                     </div>
                 </div>
             </div>
