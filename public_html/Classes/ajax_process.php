@@ -31,5 +31,7 @@ if (isset($_POST['login'])) {
     );
     $ajax->BuildPages($page_content_array);
     
-} 
+} else if(isset ($_POST['do_add_fields'])){
+    var_dump($_POST);
+}
 

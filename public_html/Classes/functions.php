@@ -590,7 +590,7 @@ class functions {
         }
     }
 
-    public function AddMoreFileds(array $fields, array $number_of_fields, $option = NULL) {
+    public function AddMoreFields(array $fields, array $number_of_fields, $option = NULL) {
 
         if ($option != NULL) {
             switch ($option) {

@@ -713,6 +713,7 @@ class forms {
      * Join league form goes here
      * Mod as needed
      * RS 02072016
+     * NOT USED
      */
 
     public function JoinLeague() {
@@ -731,6 +732,12 @@ class forms {
 
         <?php
     }
+    /*
+     * @Auth: Rostom
+     * Desc: uses AddMoreFileds from functions.php 
+     * adds more invitation fields as needed min=1 max=8
+     * I want to ajax this process
+     */
 
     public function MoreFieldsCall() {
         if (isset($_POST['do_add_fields'])) {
@@ -748,12 +755,12 @@ class forms {
             $num_fields = array();
             $num_fields['num_fields'] = $_POST['num_people'];
             $option = "invite";
-            $additional_fields = $this->_fucntions->AddMoreFileds($input_type, $num_fields, $option);
+            $additional_fields = $this->_fucntions->AddMoreFields($input_type, $num_fields, $option);
         }
     }
 
     /*
-     * @auth: ALex
+     * @auth: Rostom
      * Join league form goes here
      * Mod as needed
      * RS 02072016
