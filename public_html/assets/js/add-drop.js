@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-	$(".overlay").hide();
-	$(".modal").hide();
 	/*
 	$("#complete-button").hide();
 
@@ -36,12 +34,12 @@ $(document).ready(function(){
 			console.log(this.alt);
 			$('#add-name').html(this.alt);
 			document.getElementById('add-image').src = source;
-			$(".overlay").show();
-			$(".modal").show();
+			document.getElementById('overlay').style.visibility = "visible";
+			document.getElementById('add-area').style.visibility = "visible";
 
 			$("#close").click(function(){
-				$(".overlay").hide();
-				$(".modal").hide();
+				document.getElementById('overlay').style.visibility = "hidden";
+				document.getElementById('add-area').style.visibility = "hidden";	
 				$('#add-name').html("");
 				document.getElementById('add-image').src = "";
 			});

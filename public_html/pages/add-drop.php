@@ -7,8 +7,8 @@
             </div>
         </div>
 
-        <div class="overlay"></div>
-        <div class="modal">
+        <div id="overlay" style="visibility:hidden"></div>
+        <div id="add-area" style="visibility:hidden">
             <img src="<?= ABSOLUTH_PATH_IMAGES ."other/close.png" ?>" id="close">
             <div class="col-md-4" style="display:inline;">
                 <div style="display:block;">

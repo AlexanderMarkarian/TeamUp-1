@@ -86,7 +86,7 @@ body{
 }
 
 
-.overlay {
+#overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -108,7 +108,7 @@ body{
   cursor: pointer;
 }
 
-.modal {
+#add-area {
     width: 700px;
     height:250px;
     line-height: 200px;
@@ -124,6 +124,34 @@ body{
     z-index: 11; 
 }
 
-@media (max-width: 1092){
+@media (max-width: 1082px){
+  #close{
+    height: 30px;
+    width: 30px;
+  }
 
+  #add-area{
+    width: 500px;
+    height: 150px;
+  }
+
+  #add-name{
+    font-size: 15px;
+  }
+
+  #add-image{
+    height: 80px;
+    width: 80px;
+    margin-top: 4px;
+  }
+
+  #trade-image{
+    font-size: 30px;
+  }
+
+  .btn{
+    width: 60px;
+    height: 30px;
+    font-size: 10px;
+  }
 }
