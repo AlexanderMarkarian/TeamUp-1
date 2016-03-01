@@ -5,3 +5,41 @@ body{
   -o-background-size: cover !important;
   background-size: cover !important;
 }
+
+
+tr:hover {background-color: #e74c3c}
+
+caption {
+	color: white;
+	font-size: 20px !important;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 20px !important;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+    font-size: 20px !important;
+    color: black;
+}
+
+tr {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+th {
+    background-color: #303136;
+    color: white;
+}
+
+.teamleft{
+text-align: left;
+
+}
