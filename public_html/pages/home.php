@@ -17,7 +17,7 @@
   </tr>
   <tr>
     <td>1</td>
-    <td class = "teamleft">Supreme Team</td>
+    <td class = "teamleft"><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/11.png" ?>" id="teamlogo" height='33' width='33'> Supreme Team</td>
     <td>13-4-0</td>
     <td>.765</td>
     <td>20721.05</td>
@@ -26,7 +26,8 @@
   </tr>
   <tr>
     <td>2</td>
-    <td class = "teamleft">AGBU AllStars</td>
+
+    <td class = "teamleft"><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/star.png" ?>" id="teamlogo" height='33' width='33'> AGBU AllStars</td>
     <td>13-4-0</td>
     <td>.765</td>
     <td>20426.50</td>
@@ -35,7 +36,7 @@
   </tr>
   <tr>
     <td>3</td>
-    <td class = "teamleft">Ferrari Squad</td>
+    <td class = "teamleft"><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/drose.jpg" ?>" id="teamlogo" height='33' width='33'> Ferrari Squad</td>
     <td>12-5-0</td>
     <td>.706</td>
     <td>21340.40</td>
@@ -44,7 +45,7 @@
   </tr>
   <tr>
     <td>4</td>
-    <td class = "teamleft">PHP-Python Beast</td>
+    <td class = "teamleft"><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/green.png" ?>" id="teamlogo" height='33' width='33'> PHP-Python Beast</td>
     <td>10-7-0</td>
     <td>.588</td>
     <td>20287.90</td>
@@ -53,7 +54,7 @@
 </tr>
  <tr>
     <td>5</td>
-    <td class = "teamleft">Lob City Clips</td>
+    <td class = "teamleft"><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/clips.jpg" ?>" id="teamlogo" height='33' width='33'> Lob City Clips</td>
     <td>9-8-0</td>
     <td>.529</td>
     <td>20546.20</td>
@@ -62,7 +63,7 @@
 </tr>
  <tr>
     <td>6</td>
-    <td class = "teamleft">Grizzlies Country</td>
+    <td class = "teamleft"><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/grizz.jpg" ?>" id="teamlogo" height='33' width='33'> Grizzlies Country</td>
     <td>0-17-0</td>
     <td>.000</td>
     <td>16446.90</td>
