@@ -345,14 +345,7 @@ class functions {
                     $sql = "SELECT * FROM `" . $tables['0'] . "` WHERE `" . $fields['0'] . "` = '" . $values['0'] . "'";
                     $result = $this->_mysqli->query($sql);
                     while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
-
-                        $q_array = array();
-                        $q_array[] = $row;
-                    }
-                    foreach ($q_array as $fetched_values) {
-                        if ($fetched_values['parent'] != 0) {
-                            
-                        }
+                        $this->_data[] = $row;
                     }
                     break;
                 case "2":
@@ -384,6 +377,7 @@ class functions {
                     break;
                 case "3":
                     $sql = "SELECT * FROM `" . $tables['0'] . "` WHERE `" . $fields['0'] . "` = '" . $values['0'] . "'";
+
                     $result = $this->_mysqli->query($sql);
                     $num_rows = $result->num_rows;
                     while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
@@ -393,6 +387,7 @@ class functions {
                     foreach ($this->RetdDataRow() as $ret)
                         if ($ret[$values['1']] != NULL) {
                             $sql = "SELECT * FROM `" . $tables['1'] . "` WHERE `" . $fields['1'] . "` = '" . $ret[$values['1']] . "'";
+
                             $result = $this->_mysqli->query($sql);
                             while ($rows = $result->fetch_array(MYSQLI_ASSOC)) {
                                 //

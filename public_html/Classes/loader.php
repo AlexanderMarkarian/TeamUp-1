@@ -82,7 +82,7 @@ class loader {
 
             array_push($css, '<link href="' . ABSOLUTH_PATH_CSS . 'landing.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'animate.css">', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'popupo-box.css">'
             );
-        } else if (isset($_GET['cmd']) && $_GET['cmd'] == "profile") {
+        } else if (isset($_GET['cmd']) && ($_GET['cmd'] == "profile" || $_GET['cmd'] == "invited")) {
 
             array_push($css, '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'jquery.datetimepicker.css">', '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'style.css" rel="stylesheet" type="text/css"/>', '<link href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css" rel="stylesheet" type="text/css"/>', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'animate.css">', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'profile.css">', '<link rel="stylesheet" href="' . ABSOLUTH_PATH_CSS . 'fastuts.css">'
             );
@@ -207,11 +207,11 @@ class loader {
         /*
          * IF THE USER COMES FROM EMAIL URL 
          */
-        if(isset($_GET['lid'])){
-        $table = array("0" => "temp_invite");
-        $fields = array("0" => "linkid", "1" => "status");
-        $values = array("0" => $_GET['lid'], "1" => "0");
-        $option = "4";
+        if (isset($_GET['lid'])) {
+            $table = array("0" => "temp_invite");
+            $fields = array("0" => "linkid", "1" => "status");
+            $values = array("0" => $_GET['lid'], "1" => "0");
+            $option = "4";
         }
 
         /*
@@ -220,15 +220,14 @@ class loader {
          * follow the procedure from below
          * Do NOT Change fist if statment 
          */
-        if (!isset($_GET['cmd']) || $_GET['cmd'] == "" ) {
-            
+        if (!isset($_GET['cmd']) || $_GET['cmd'] == "") {
+
             if (isset($_GET['lid']) && $function->CheckIfExists($table, $fields, $values, $option)) {
 
                 $page_content_array[] = array(
                     "id" => "55",
                     "invite_info" => $_GET['lid']
                 );
-               
             } else {
                 $page_content_array[] = array(
                     "id" => "0",
@@ -413,6 +412,19 @@ class loader {
                         "data" => $data
                     );
                     break;
+                case "invited":
+                    $page_content_array[] = array(
+                        "id" => "13",
+                        "page_name" => "Invited page",
+                        "div_name" => "m-a-n",
+                        "data" => $_GET['lid'],
+                        "forms" => $forms,
+                        "functions" => $function,
+                        "invite" => $this->_post_values,
+                        "ssid" => $_GET['ssid']
+                    );
+
+                    break;
             }
         } else if (isset($_GET['cmd']) && $function->CheckSSID("users", $_GET['ssid']) == false && !isset($_SESSION['isLoggedin'])) {
 
@@ -451,6 +463,7 @@ class loader {
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "roster") {
 
             $footer_script = array(
+                "js4" => '<script src="' . ABSOLUTH_PATH_JS . 'roster.js"></script>',
             );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "add-drop") {
 

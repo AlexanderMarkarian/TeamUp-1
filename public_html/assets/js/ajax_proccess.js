@@ -28,7 +28,7 @@ $(function () {
             $('#show').html("<div class='alert alert-danger' role='alert' id='errors'>Please Insert Your Password</div>");
             return false; // stop the script
         }
-        
+
         $.ajax({// JQuery ajax function
             type: "POST", // Submitting Method
             url: 'ajax_process.php', // PHP processor->DONOT CHANGE 02/20/2016
@@ -41,6 +41,9 @@ $(function () {
                     $('#small-dialog3').shake();
                     $("#login").val('Login');
                     $("#show").html("<div class='alert alert-danger' role='alert' id='errors'><span style='color:#cc0000'>Error:</span> There was an error loging you in!. </div>");
+                } else if (data.substr(0, 3) == "inv") { // if Password is all numeric or less than 5 Error #13
+                    $('#s_show').html("<span style='color:#009938; font-size:15px;'><strong>Redirecting...</strong></span>");// print success message   
+                    document.location.href = 'loader.php?cmd=invited' + "&ssid=" + data.substr(3) + "&lid=" + lid; // redirect to the private area  
 
 
                 } else { // if the reurned data not empty then it passes value ssid to url
@@ -102,11 +105,9 @@ $(function () {
                     $('#small-dialog2').shake();
                     $("#signup").val('Signup');
                     $("#s_show").html("<div class='alert alert-danger' role='alert' id='errors'><span style='color:#cc0000'>Error:</span> Password must be at least 5 charecters long and alpha-numeric.</div> ");
-                } else if (data == "im here") { // if Password is all numeric or less than 5 Error #13
-                    $('#small-dialog2').shake();
-                    $("#signup").val('Signup');
-                    $("#s_show").html("<div class='alert alert-danger' role='alert' id='errors'><span style='color:#cc0000'>Error:</span> Password must be at least 5 charecters long and alpha-numeric.</div> ");
-
+                } else if (data.substr(0, 3) == "inv") { // if Password is all numeric or less than 5 Error #13
+                    $('#s_show').html("<span style='color:#009938; font-size:15px;'><strong>Redirecting...</strong></span>");// print success message   
+                    document.location.href = 'loader.php?cmd=invited' + "&ssid=" + data.substr(3) + "&lid=" + lid; // redirect to the private area  
 
                 } else { // if the reurned data not Error#11,Error#12,Error#13 than data is ssid
                     $('#s_show').html("<span style='color:#009938; font-size:15px;'><strong>Redirecting...</strong></span>");// print success message   

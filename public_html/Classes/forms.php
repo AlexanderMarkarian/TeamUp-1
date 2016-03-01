@@ -317,6 +317,14 @@ class forms {
                     unset($this->_message);
                 }
             } else {
+
+
+                /*
+                 * RS 20160201
+                 * If all is flags are zero InsertNewUser and reedirect to profile page
+                 */
+                unset($this->_flag);
+                unset($this->_message);
                 /*
                  * IF Link ID is set Update status to One
                  */
@@ -327,14 +335,8 @@ class forms {
                     $value = array("0" => "1", "1" => $input_values['lid']);
                     $option = "1";
                     $update = $this->_fucntions->UpdateValues($table, $field, $value, $option);
+                    $this->_flag = 999; //USER COMING FROM INVITATION LINK
                 }
-
-                /*
-                 * RS 20160201
-                 * If all is flags are zero InsertNewUser and reedirect to profile page
-                 */
-                unset($this->_flag);
-                unset($this->_message);
                 $input_values["ssid"] = $helper_functions->UIDGEN($input_values['fname'] . "_");
                 $fields = array();
                 $fields['user_id'] = "user_id";
@@ -345,10 +347,15 @@ class forms {
                 $fields['ssid'] = "ssid";
                 $query = $helper_functions->InsertNewUser("users", $fields, $input_values);
                 if ($query) {
-
-                    echo $input_values['ssid'];
+                    if ($this->_flag == 999) {
+                        echo "inv" . $input_values['ssid'];
+                        $cmd = "invited";
+                    } else {
+                        echo $input_values['ssid'];
+                        $cmd = "profile";
+                    }
                     $_SESSION['isLoggedin'] = $helper_functions->UIDGEN(date("Ymd"));
-                    header("location: loader.php?cmd=profile&ssid=" . $input_values['ssid']);
+                    header("location: loader.php?cmd=" . $cmd . "&ssid=" . $input_values['ssid'] . "&lid=" . $input_valuesp['lid']);
                 }
             }
         }
@@ -419,6 +426,7 @@ class forms {
                         $value = array("0" => "1", "1" => $input_values['lid']);
                         $option = "1";
                         $update = $this->_fucntions->UpdateValues($table, $field, $value, $option);
+                        $this->_flag = 999; //USER COMING FROM INVITATION LINK
                     }
                     $input_values['ssid'] = $insertion->UIDGEN("User_");
 
@@ -429,7 +437,14 @@ class forms {
                     $this->_hidden_key = $_SESSION['isLoggedin'];
                     $_POST['form']['login']['sec_id'] = $this->_hidden_key;
                     array_push($_POST, $_POST['form']['login']['sec_id']);
-                    echo $input_values['ssid'];
+                    if ($this->_flag == 999) {
+                        echo "inv" . $input_values['ssid'];
+                        $cmd = "invited";
+                    } else {
+                        echo $input_values['ssid'];
+                        $cmd = "profile";
+                    }
+                  
                     header("location: loader.php?cmd=profile&ssid=" . $input_values['ssid'] . "&s=" . $_SESSION['isLoggedin']);
                 }
             }
@@ -937,4 +952,30 @@ class forms {
         }
     }
 
-}
+    public function TeamInformationForm() {
+        ?>
+        <form class="signup" role="form" method="post">
+            <h3>Team Name</h3>
+            <?php
+            foreach ($this->_message as $errors) {
+                echo "<div class='alert alert-danger' role='alert'>" . $errors . "</div>";
+            }
+            ?>
+            <form method="post" name="form[team]">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Team Name" id="team_name" name="form[team][name]" value="<?= $_POST['form']['team']['name'] ?>">
+                </div>
+
+                <div class="form-group">
+                    <input type="submit"  class="btn btn-info" value="Add Team Name" name="add_team_name" id="add_team_name">
+                </div>
+            </form> 
+            <?php
+        }
+
+        public function TeamInformationProcess() {
+            
+        }
+
+    }
+    
