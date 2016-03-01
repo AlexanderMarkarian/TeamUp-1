@@ -9,64 +9,46 @@
         <div class="row">
             <div class="col-sm-4">
                 <div class="team-member">
-                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg" class="img-responsive img-circle" alt="">
+                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg" alt="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg" class="roster-img img-responsive img-circle" alt="">
                     <h4>Los Angeles Lakers</h4>
                     <p class="text-muted">NBA</p>
-                    <ul class="list-inline social-buttons">
-                        <li><button class="btn btn-warning">Bench</button>  <button class="btn btn-danger">Drop</button></li>
-                    </ul>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="team-member">
-                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/kings.jpg" class="img-responsive img-circle" alt="">
+                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/kings.jpg" alt="<?= ABSOLUTH_PATH_IMAGES ?>nba/kings.jpg" class="roster-img img-responsive img-circle" alt="">
                     <h4>Sacramento Kings</h4>
                     <p class="text-muted">NBA</p>
-                    <ul class="list-inline social-buttons">
-                        <li><button class="btn btn-warning">Bench</button>  <button class="btn btn-danger">Drop</button></li>
-                    </ul>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="team-member">
-                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/spurs.jpg" class="img-responsive img-circle" alt="">
+                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/spurs.jpg"alt="<?= ABSOLUTH_PATH_IMAGES ?>nba/spurs.jpg" class="roster-img img-responsive img-circle" alt="">
                     <h4>San Antonio Spurs</h4>
                     <p class="text-muted">NBA</p>
-                    <ul class="list-inline social-buttons">
-                        <li><button class="btn btn-warning">Bench</button>  <button class="btn btn-danger">Drop</button></li>
-                    </ul>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-4">
                 <div class="team-member">
-                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/clippers.jpg" class="img-responsive img-circle" alt="">
+                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/clippers.jpg" alt="<?= ABSOLUTH_PATH_IMAGES ?>nba/clippers.jpg" class="roster-img img-responsive img-circle" alt="">
                     <h4>Los Angeles Clippers</h4>
                     <p class="text-muted">NBA</p>
-                    <ul class="list-inline social-buttons">
-                        <li><button class="btn btn-warning">Bench</button>  <button class="btn btn-danger">Drop</button></li>
-                    </ul>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="team-member">
-                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/warriors.jpg" class="img-responsive img-circle" alt="">
+                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/warriors.jpg" alt="<?= ABSOLUTH_PATH_IMAGES ?>nba/warriors.jpg" class="roster-img img-responsive img-circle" alt="">
                     <h4>Golden State Warriors</h4>
                     <p class="text-muted">NBA</p>
-                    <ul class="list-inline social-buttons">
-                        <li><button class="btn btn-warning">Bench</button>  <button class="btn btn-danger">Drop</button></li>
-                    </ul>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="team-member">
-                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/bucks.jpg" class="img-responsive img-circle" alt="">
+                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/bucks.jpg" alt="<?= ABSOLUTH_PATH_IMAGES ?>nba/bucks.jpg" class="roster-img img-responsive img-circle" alt="">
                     <h4>Milwaukee Bucks</h4>
                     <p class="text-muted">NBA</p>
-                    <ul class="list-inline social-buttons">
-                        <li><button class="btn btn-warning">Bench</button>  <button class="btn btn-danger">Drop</button></li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -75,7 +57,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-muted">Bench</h2>
+                <h2 class="section-heading">Bench</h2>
             </div>
         </div>
         <div class="row">
@@ -107,24 +89,6 @@
                     <ul class="list-inline social-buttons">
                         <li><button class="btn btn-success">Start</button>  <button class="btn btn-danger">Drop</button></li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="roster-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                   <h2>Find a different team</h2>
-                </div>
-                <div class="col-lg-4">
-                    <select class="form-control" id="team-select">
-                      <option>Los Angeles Lakers</option>
-                      <option>Milwaukee Bucks</option>
-                      <option>Philadelphia Eagles</option>
-                      <option>Washington Redskins</option>
-                      <option>Seattle Seahawks</option>
-                    </select>
                 </div>
             </div>
         </div>
