@@ -6,6 +6,9 @@ body{
   background-size: cover !important;
 }
 
+.matchuptr{
+	text-align: left;
+}
 
 tr:hover {background-color: #e74c3c}
 
@@ -20,6 +23,8 @@ table {
     font-size: 20px !important;
     border-collapse: collapse;
     width: 100%;
+    overflow-x: auto;
+     margin-bottom: 1cm;
 }
 
 th, td {
@@ -46,7 +51,17 @@ th {
 	width='4';
 }
 
+.teamright{
+	text-align: right;
+	height='4'; 
+	width='4';
+}
+
 .teamlogo{
 	height='4'; 
 	width='4';
+}
+
+@media screen and (max-width: 320px) {
+    .hide { display: none; }
 }
