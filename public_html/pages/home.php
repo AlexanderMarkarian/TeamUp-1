@@ -9,32 +9,32 @@
 <table id = "challenge">
 <caption><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/trophy.png" ?>" id="teamlogo" height='33' width='33'> Matchups & Challenges</caption>
   <tr>
-    <th colspan ="2" align="left"> Week 18 MatchUps</th>
-    <th colspan="2">in progress</th>
+    <th colspan ="2" align="left" class="put-me-left"> Week 18 MatchUps</th>
+    <th colspan="2" class="put-me-right">in progress</th>
   </tr>
   <tr>
     <td class = "teamright">Supreme Team <img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/11.png" ?>" id="teamlogo" height='33' width='33'>
-    <BR>13-4-0 | 1st<BR></td>
+    <BR><div class="margin-right">13-4-0 | 1st</div></td>
     <td>137.20</td>
     <td>160.75</td>
     <td class = "teamleft"><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/drose.jpg" ?>" id="teamlogo" height='33' width='33'> Ferrari Squad
-    <BR>12-5-0 | 3rd<BR></td>
+    <BR><div class="margin-left">12-5-0 | 3rd</div></td>
   </tr>
   <tr>
     <td class = "teamright">Grizzlies Country <img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/grizz.jpg" ?>" id="teamlogo" height='33' width='33'>
-    <BR>0-17-0 | 6th<BR></td>
+    <BR><div class="margin-right">0-17-0 | 6th</div></td>
     <td>189.60</td>
     <td>292.00</td>
     <td class = "teamleft"><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/clips.jpg" ?>" id="teamlogo" height='33' width='33'> Lob City Clips
-    <BR>9-8-0 | 5th<BR></td>
+    <BR><div class="margin-left">9-8-0 | 5th</div></td>
   </tr>
   <tr>
    <td class = "teamright">PHP-Python Beast <img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/green.png" ?>" id="teamlogo" height='33' width='33'>
-   <BR>10-7-0 | 4th<BR></td>
+   <BR><div class="margin-right">10-7-0 | 4th</div></td>
     <td>167.50</td>
     <td>63.15</td> 
     <td class = "teamleft"><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/star.png" ?>" id="teamlogo" height='33' width='33'> AGBU AllStars
-    <BR>13-4-0 | 2nd<BR></td>
+    <BR><div class="margin-left">13-4-0 | 2nd</div></td>
   </tr>
   </tr>
 </table>
