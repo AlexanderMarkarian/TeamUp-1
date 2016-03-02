@@ -5,3 +5,57 @@ body{
   -o-background-size: cover !important;
   background-size: cover !important;
 }
+
+.nav-tabs{
+  background-color:#161616;
+}
+
+.grey-area{
+  background: #303136;
+  padding-bottom: 10px;
+}
+#myTab{
+  width: 100%;
+}
+
+.tab-content{
+    background-color:#303136;
+    color:#fff;
+    padding:5px;
+    margin-top: 10px;
+}
+
+.nav-tabs > li > a{
+  border: medium none;
+  color: #e74c3c;
+  font-size: 15px;
+  margin-left: 30px;
+}
+
+.nav-tabs > li > a:hover{
+  background-color: #303136 !important;
+  border: medium none;
+  border-radius: 0;
+  color:#fff;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover{
+    background-color: #303136 !important;
+}
+
+.resize{
+  width: 80px;
+  height: 75px;
+  border-radius: 50%;
+  float: left;
+}
+
+.resize:hover{
+  cursor: pointer;
+}
+
+h4{
+  font-size: 25px;
+}
