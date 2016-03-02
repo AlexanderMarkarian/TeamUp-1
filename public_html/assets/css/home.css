@@ -80,6 +80,15 @@ th {
   margin-left: 40px;
 }
 
+.to-right{
+  float: right;
+  margin-right: 5px;
+}
+
+.space{
+  margin-left: 5px;
+}
+
 @media screen and (max-width: 320px) {
     .hide { display: none; }
 }

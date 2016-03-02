@@ -3,11 +3,14 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">League Name</h2>
-                <h3 class="section-subheading text-muted">Your Team Name</h3>
+                <h3 class="section-subheading text-muted">Week 18</h3>
 
 
 <table id = "challenge">
-<caption><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/trophy.png" ?>" id="teamlogo" height='33' width='33'> Matchups & Challenges</caption>
+<caption>
+  <img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/trophy.png" ?>" id="teamlogo" height='33' width='33'> Matchups & Challenges
+  <span class="to-right"><i class="space fa fa-arrow-left"></i> Week 18 <i class="space fa fa-arrow-right"></i></span>
+</caption>
   <tr>
     <th colspan ="2" align="left" class="put-me-left"> Week 18 MatchUps</th>
     <th colspan="2" class="put-me-right">in progress</th>
@@ -40,7 +43,7 @@
 </table>
 
 <table id = "standings">
-<caption>Standings</caption>
+<caption>Standings | Playoffs</caption>
   <tr id ="stand">
     <th>Rank</th>
     <th>Team</th>

@@ -124,6 +124,7 @@ body{
     z-index: 11; 
 }
 
+
 @media (max-width: 1082px){
   #close{
     height: 30px;
