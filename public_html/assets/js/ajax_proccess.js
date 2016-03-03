@@ -180,3 +180,15 @@ $(function () {
         return false;
     });
 });
+
+/*
+ * FOR ADDING FIELDS 
+ */
+$(function(){
+    $("#add_rows").click(function(){
+        
+        
+        console.log("clicked");
+        
+    });
+});

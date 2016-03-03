@@ -56,23 +56,23 @@ class forms {
             ?>
             <h4>Please Enter Your Details</h4>
             <input type="text" placeholder="First Name" name="form[signup][firstname]" id="firstname" onfocus="this.value = '';" onblur="if (this.value == '') {
-                                this.value = 'First Name';
-                            }" value="<?php
+                        this.value = 'First Name';
+                    }" value="<?php
                    echo $_POST['form']['signup']['firstname'];
                    ?>">
             <input type="text" name="form[signup][lastname]" id="lastname" placeholder="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {
-                                this.value = 'Second Name';
-                            }" value="<?php
+                        this.value = 'Second Name';
+                    }" value="<?php
                    echo $_POST['form']['signup']['lastname'];
                    ?>">
             <input type="text" class="email" placeholder="Email" name="form[signup][email]" id="email" onfocus="this.value = '';" onblur="if (this.value == '') {
-                                this.value = 'Email';
-                            }" value="<?php
+                        this.value = 'Email';
+                    }" value="<?php
                    echo $_POST['form']['signup']['email'];
                    ?>">
             <input type="password" placeholder="Password" name="form[signup][password]" id="password" onfocus="this.value = '';" onblur="if (this.value == '') {
-                                this.value = 'Password';
-                            }" value="<?php
+                        this.value = 'Password';
+                    }" value="<?php
                    echo $_POST['form']['signup']['password'];
                    ?>">
                    <?php
@@ -105,13 +105,13 @@ class forms {
             }
             ?>
             <input type="text" id="email_login" class="email" name="form[login][email]" placeholder="Email" onfocus="this.value = '';" onblur="if (this.value == '') {
-                                this.value = 'Email';
-                            }" value="<?php
+                        this.value = 'Email';
+                    }" value="<?php
                    echo $_POST['form']['login']['email'];
                    ?>">
             <input type="password" id="password_login" name="form[login][password]" placeholder="Password" onfocus="this.value = '';" onblur="if (this.value == '') {
-                                this.value = 'Password';
-                            }"  value="<?php
+                        this.value = 'Password';
+                    }"  value="<?php
                    echo $_POST['form']['login']['password'];
                    ?>">
                    <?php
@@ -444,7 +444,7 @@ class forms {
                         echo $input_values['ssid'];
                         $cmd = "profile";
                     }
-                  
+
                     header("location: loader.php?cmd=profile&ssid=" . $input_values['ssid'] . "&s=" . $_SESSION['isLoggedin']);
                 }
             }
@@ -732,6 +732,7 @@ class forms {
 
         <?php
     }
+
     /*
      * @Auth: Rostom
      * Desc: uses AddMoreFileds from functions.php 
@@ -740,7 +741,7 @@ class forms {
      */
 
     public function MoreFieldsCall() {
-        if (isset($_POST['do_add_fields'])) {
+        if (isset($_POST['form']['invite']['do_add_fields'])) {
             $input_type = array(
                 "0" => "text",
                 "1" => "email",
@@ -813,12 +814,13 @@ class forms {
                 <label for="how many people">
                     How many people would you like to invite? 
                 </label>
-                <input type="number" id="num_people" name="num_people" value="<?= $_POST['form']['invite']['num_people'] ?>" class="form-control" <?= $disabled ?> maxlength="1" max="8" min="1"/>
+                <input type="number" id="num_people" name="form[invite][num_people]" value="<?= $_POST['form']['invite']['num_people'] ?>" class="form-control" <?= $disabled ?> maxlength="1" max="8" min="1"/>
 
             </div>
             <div class="form-group">
-                <input type="submit" name="do_add_fields"  class="btn btn-success" id="add_rows" value="Add" <?= $disabled ?>>
+                <input type="submit" name="form[invite][do_add_fields]"  class="btn btn-success" id="add_rows" value="Add" <?= $disabled ?>>
             </div>  
+
 
 
 
@@ -836,6 +838,7 @@ class forms {
             $this->MoreFieldsCall();
             ?>
         </form>
+        <script type='text/javascript' src='<?= ABSOLUTH_PATH_JS ?>ajax_proccess.js'></script>
         <?php
     }
 
