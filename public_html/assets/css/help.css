@@ -5,3 +5,19 @@ body{
   -o-background-size: cover !important;
   background-size: cover !important;
 }
+
+.small-version{
+	height: 200px;
+	width: 300px;
+	border-radius: 4%;
+}
+
+.large-version{
+	width:auto;
+	height:auto;
+	text-align: center;
+}
+
+h4{
+	font-size: 30px;
+}

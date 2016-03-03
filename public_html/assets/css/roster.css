@@ -14,3 +14,48 @@ body{
 .roster-img:hover{
 	cursor: pointer;
 }
+
+#add-image{
+  height: 140px;
+  width: 140px;
+  border-radius: 15%;
+  margin-top: 15px;
+  text-align: center;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.8);
+}
+
+#close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 40px;
+}
+
+#close:hover{
+  cursor: pointer;
+}
+
+#add-area {
+    width: 700px;
+    height:250px;
+    line-height: 200px;
+    position: fixed;
+    top: 50%; 
+    left: 35%;
+    margin-top: -100px;
+    margin-left: -100px;
+    background-color: #303136;
+    color: #e74c3c;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 11; 
+}

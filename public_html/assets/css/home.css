@@ -5,3 +5,90 @@ body{
   -o-background-size: cover !important;
   background-size: cover !important;
 }
+
+.matchuptr{
+	text-align: left;
+}
+
+tr:hover {background-color: #e74c3c}
+
+caption {
+	color: white;
+	font-size: 20px !important;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 20px !important;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+     margin-bottom: 1cm;
+}
+
+th, td {
+	border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+    font-size: 20px !important;
+    color: black;
+}
+
+tr {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+th {
+    background-color: #303136;
+    color: white;
+}
+
+.teamleft{
+	text-align: left;
+	height='4'; 
+	width='4';
+}
+
+.teamright{
+	text-align: right;
+	height='4'; 
+	width='4';
+}
+
+.teamlogo{
+	height='4'; 
+	width='4';
+}
+
+.put-me-left{
+  text-align: left;
+  padding-left: 10px;
+}
+
+.put-me-right{
+  text-align: right;
+  padding-right: 10px;
+}
+
+.margin-right{
+  margin-right: 40px;
+}
+
+.margin-left{
+  margin-left: 40px;
+}
+
+.to-right{
+  float: right;
+  margin-right: 5px;
+}
+
+.space{
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 320px) {
+    .hide { display: none; }
+}
