@@ -28,7 +28,7 @@
                 //$pg['forms']->CreateLeagueProcess($pg['create_league']);
                 echo $pg['forms']->CreateLeague();
                 ?>
-                <script type='text/javascript' src='<?= ABSOLUTH_PATH_JS ?>ajax_proccess.js'></script>
+            
                 <!----------END FORM---------------------------------------->
             </div>
             <div class="col-md-4">
@@ -38,9 +38,11 @@
                 /*
                  * Invite Form + InvitememberProcess Data coming from loader.php 
                  */
-                echo $pg['forms']->InviteMembersProcess($pg['invite']);
-                echo $pg['forms']->InviteTeamMembers($pg['data']);
+               //echo $pg['forms']->InviteMembersProcess($pg['invite']);
+                echo $pg['forms']->InviteTeamMembers($pg['data'] , $pg['invite']);
+                var_dump($pg['invite']);
                 ?>
+            <script type='text/javascript' src='<?= ABSOLUTH_PATH_JS ?>ajax_proccess.js'></script>
                 <!--------------------END FORM------------------------->
             </div>
             <div class="col-md-4">

@@ -740,8 +740,10 @@ class forms {
      * I want to ajax this process
      */
 
-    public function MoreFieldsCall() {
-        if (isset($_POST['form']['invite']['do_add_fields'])) {
+    public function MoreFieldsCall(array $data) {
+        $this->_formInputs = $data;
+if(isset($this->_formInputs['do_add_fields'])){
+        if (isset($this->_formInputs['add_fields'])) {
             $input_type = array(
                 "0" => "text",
                 "1" => "email",
@@ -753,11 +755,29 @@ class forms {
                 "7" => "email",
                 "8" => "name"
             );
+
             $num_fields = array();
-            $num_fields['num_fields'] = $_POST['num_people'];
+            $num_fields['num_fields'] = $this->_formInputs['num_people'];
             $option = "invite";
+            $dditional_fields = array();
             $additional_fields = $this->_fucntions->AddMoreFields($input_type, $num_fields, $option);
+            $additional_fields = $this->_fucntions->DoShowFields();
+          
+            
+            foreach ($additional_fields as $key => $new_fields) {
+              $this->_pass_value[] = $new_fields;  
+            }
+              echo 'gotit';
+            $this->RetMoreFieldsCall();
+          
+            $this->_flag = 307;
+          }
+            
         }
+    }
+
+    public function RetMoreFieldsCall() {
+        return $this->_pass_value;
     }
 
     /*
@@ -767,7 +787,8 @@ class forms {
      * RS 02072016
      */
 
-    public function InviteTeamMembers(array $data) {
+    public function InviteTeamMembers(array $data, array $post_values) {
+        var_dump($post_values);
         foreach ($data as $user_info) {
             
         }
@@ -791,19 +812,19 @@ class forms {
         $leagues = $this->_fucntions->SetDataQuery();
         ?>
         <!-------INVITE TEAM MEMBER FROM BEGINS------------->
-
-        <form method="post" name="form[invite]">
+        <div id="invite_message"></div>    
+        <form method="post" name="invite" id="invite">
             <div class="form-group">
+        <?php
+        foreach ($leagues as $league_name) {
+            
+        }
+        $disabled = ($league_name['id'] == NULL) ? "disabled='disabled'" : " ";
+        ?>
+                <select name="form[invite][league_id]" class="form-control" <?= $disabled ?>>
                 <?php
                 foreach ($leagues as $league_name) {
-                    
-                }
-                $disabled = ($league_name['id'] == NULL) ? "disabled='disabled'" : " ";
-                ?>
-                <select name="form[invite][league_id]" class="form-control" <?= $disabled ?>>
-                    <?php
-                    foreach ($leagues as $league_name) {
-                        ?>
+                    ?>
                         <option  value="<?= $league_name['id'] ?>"><?= $league_name['league_name'] ?></option>
                         <?php
                     }
@@ -814,32 +835,38 @@ class forms {
                 <label for="how many people">
                     How many people would you like to invite? 
                 </label>
-                <input type="number" id="num_people" name="form[invite][num_people]" value="<?= $_POST['form']['invite']['num_people'] ?>" class="form-control" <?= $disabled ?> maxlength="1" max="8" min="1"/>
+                <input type="number" id="num_people" name="num_people" value="<?= $_POST['form']['invite']['num_people'] ?>" class="form-control" <?= $disabled ?> maxlength="1" max="8" min="1"/>
 
             </div>
             <div class="form-group">
-                <input type="submit" name="form[invite][do_add_fields]"  class="btn btn-success" id="add_rows" value="Add" <?= $disabled ?>>
+                <input type="submit" name="do_add_fields"  class="btn btn-success" id="add_rows" value="Add" <?= $disabled ?>/>
             </div>  
 
+        <?php
+      
+        ?>
 
 
 
             <!---END OF INVITE TEAM MEMBERS FORM--------->
-            <?php
-            foreach ($this->_invite_message as $errors) {
-                echo "<div class='alert alert-danger' role='alert'>" . $errors . "</div>";
-            }
-            ?>
+        <?php
+        foreach ($this->_invite_message as $errors) {
+            echo "<div class='alert alert-danger' role='alert'>" . $errors . "</div>";
+        }
+        ?>
 
             <input type="hidden" name="sender_info" value="<?= $user_info['first_name'] . " " . $user_info['last_name'] ?>" />
             <input type="hidden" name="sender_email" value="<?= $user_info['email'] ?>" />
             <input type="hidden" name="league_id" value="<?= $_POST['form']['invite']['league_id'] ?>" />
-            <?php
-            $this->MoreFieldsCall();
-            ?>
+
         </form>
-        <script type='text/javascript' src='<?= ABSOLUTH_PATH_JS ?>ajax_proccess.js'></script>
+
         <?php
+          if (isset($_POST['do_add_fields'])) {
+            var_dump($this->_flag);
+            var_dump($this->_pass_value);
+            var_dump($this->RetMoreFieldsCall());
+        }
     }
 
     /*
@@ -966,11 +993,11 @@ class forms {
         ?>
         <form class="signup" role="form" method="post">
             <h3>Team Name</h3>
-            <?php
-            foreach ($this->_message as $errors) {
-                echo "<div class='alert alert-danger' role='alert'>" . $errors . "</div>";
-            }
-            ?>
+        <?php
+        foreach ($this->_message as $errors) {
+            echo "<div class='alert alert-danger' role='alert'>" . $errors . "</div>";
+        }
+        ?>
             <form method="post" name="form[team]">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Your Team Name" id="team_name" name="form[team][name]" value="<?= $_POST['form']['team']['name'] ?>">
@@ -980,12 +1007,11 @@ class forms {
                     <input type="submit"  class="btn btn-info" value="Add Team Name" name="add_team_name" id="add_team_name">
                 </div>
             </form> 
-            <?php
-        }
-
-        public function TeamInformationProcess() {
-            
-        }
-
+        <?php
     }
-    
+
+    public function TeamInformationProcess() {
+        
+    }
+
+}

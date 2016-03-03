@@ -25,6 +25,8 @@ class functions {
     public $_date;
     public $_id;
     public $_flag = 0;
+    public $_fields = array();
+    public $_more_inputs = array();
 
     /*
      * @ auth: Rostom
@@ -599,17 +601,28 @@ class functions {
 
 
                     if (is_numeric($number_of_fields['num_fields']) && $number_of_fields['num_fields'] != NULL) {
+                        $form_fields = array();
                         for ($i = 0; $i < $number_of_fields['num_fields']; $i++) {
                             $num_for_place_holder = $i + 1;
                             $value1 = (isset($_POST[$fields['2'] . $i]) ? $_POST[$fields['2'] . $i] : "");
                             $value2 = (isset($_POST[$fields['3'] . $i]) ? $_POST[$fields['3'] . $i] : "");
 
-                            echo $name_fields = "<div class='form-group'><input type='" . $fields['0'] . "' value='" . $value1 . "' name='" . $fields['8'] . "{$i}' class='form-control' placeholder='Team Member #{$num_for_place_holder} Name ' /></div>";
-                            echo $email_fields = "<div class='form-group'><input type='" . $fields['1'] . "' value='" . $value2 . "' name='" . $fields['7'] . "{$i}' class='form-control' placeholder='Team Member #{$num_for_place_holder} Email '/></div>";
+                            $form_fields['name'] = "<div class='form-group'><input type='" . $fields['0'] . "' value='" . $value1 . "' name='" . $fields['8'] . "{$i}' class='form-control' placeholder='Team Member #{$num_for_place_holder} Name ' /></div>";
+                            $form_fields['email'] = "<div class='form-group'><input type='" . $fields['1'] . "' value='" . $value2 . "' name='" . $fields['7'] . "{$i}' class='form-control' placeholder='Team Member #{$num_for_place_holder} Email '/></div>";
+
+                            $this->_fields[] = $form_fields;
                         }
-                        echo $hidden_field = '<input type="hidden" name="do_add_fields" value="Add"/>';
-                        echo $hidden_field = '<input type="hidden" name="num_people" value="' . $number_of_fields['num_fields'] . '"/>';
-                        echo $submit_form = "<div class='form-group'><input type='" . $fields['4'] . "'  value='" . $fields['5'] . "'  class='btn btn-info' name='" . $fields['6'] . "'/></div>";
+                        $more_fields = array();
+                        $more_fields['com_fields'] = '<input type="hidden" name="do_add_fields" value="Add"/>';
+                        $more_fields['num_people_fields'] = '<input type="hidden" name="num_people" value="' . $number_of_fields['num_fields'] . '"/>';
+                        $more_fields['submit_fields'] = "<div class='form-group'><input type='" . $fields['4'] . "'  value='" . $fields['5'] . "'  class='btn btn-info' name='" . $fields['6'] . "'/></div>";
+
+                        $this->_more_inputs[] = array(
+                                    "ne" => $this->_fields,
+                                    "additional" => $more_fields
+                        );
+
+                        //var_dump($this->_more_inputs['hidden']);
                     } else {
                         $this->_flag = 24;
                         if ($this->_flag == 24) {
@@ -620,6 +633,10 @@ class functions {
                     break;
             }
         }
+    }
+
+    public function DoShowFields() {
+        return $this->_more_inputs;
     }
 
     /*

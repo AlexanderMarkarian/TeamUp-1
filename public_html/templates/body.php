@@ -82,7 +82,7 @@ class body {
                     include ABSOLUTH_PATH_PAGE . "faq.php";
                     break;
                 case "13":
-                     $forms = new forms();
+                    $forms = new forms();
                     include ABSOLUTH_PATH_PAGE . "teaminfo.php";
                     break;
                 case '304':
@@ -96,6 +96,11 @@ class body {
                 case '306':
                     $ajax = new forms();
                     echo $ajax->CreateLeagueProcess($pg['create_league']);
+                    break;
+                case '307':
+                    $ajax = new forms();
+                    echo $ajax->MoreFieldsCall($pg['add_more_fields']);
+                  
                     break;
                 case '55':
                     $forms = new forms();

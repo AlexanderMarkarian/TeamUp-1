@@ -184,11 +184,31 @@ $(function () {
 /*
  * FOR ADDING FIELDS 
  */
-$(function(){
-    $("#add_rows").click(function(){
-        
-        
-        console.log("clicked");
-        
+$(function () {
+    $("#add_rows").click(function () {
+
+        var num_people = $("input#num_people").val();
+        console.log(num_people);
+        if (num_people == "") {
+            $("form#invite input:text").css("border", "1px solid black");
+            $("#invite_message").html("<div class='alert alert-danger' role='alert' id='errors'>Please enter number of people you would like to invite to your league(1-8)! </div>");
+            return false; // stop the script
+        }
+        $.ajax({// JQuery ajax function
+            type: "POST", // Submitting Method
+            url: 'ajax_process.php', // PHP processor -->DONOT CHANGE
+            data: 'num_people=' + num_people + '&add_fields=true'+'&do_add_fields=Add'+'&data=true'+'ssid=', // the data that will be sent to php processor
+            dataType: "html", // type of returned data
+            success: function (data) {
+                if(data == "gotit"){
+                    $('#invite_message').shake();
+                    //$("form#c_league input:text").css("border", "1px solid red");
+                    $("#invite_message").html("<div class='alert alert-danger' role='alert' id='errors'>Adding...</div> ");
+                }
+
+            }
+
+        });
+        return false;
     });
 });
