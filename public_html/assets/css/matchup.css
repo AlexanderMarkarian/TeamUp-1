@@ -7,6 +7,79 @@ body{
   font-weight: bold !important;
 }
 
+.dates{
+  border-top: -1000;
+  border-spacing:-1000;
+  border-collapse:collapse;
+  border-spacing: 0px;
+}
+
+.to-left{
+  float: left;
+  margin-left: 5px;
+}
+
+.space{
+  margin-right: 5px;
+}
+
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.scoreboard{
+  border-collapse: collapse;
+    width: 100%;
+}
+
+.teamname{
+  text-align: left;
+}
+
+th, td {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+    padding: 8px;
+    font-size: 20px;
+    color: black;
+}
+
+.pts{
+  font-size: 14px;
+}
+
+.bold{
+  font-size: 29px;
+  font-weight: bold;
+}
+
+.big{
+font-size: 28px;
+color: blue;
+}
+
+.cap{
+  color: white;
+  margin-top: 25px;
+}
+
+
+tr {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+th {
+    background-color: #303136;
+    color: white;
+}
+
 .other-matchup{
   border: 1px solid black;
   text-align: center;
@@ -20,4 +93,12 @@ body{
 
 .matchup-score{
   float: right;
+}
+
+.margin-right{
+  margin-left: 78px;
+}
+
+.margin-left{
+  margin-right: 78px;
 }
