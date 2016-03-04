@@ -40,5 +40,16 @@ if (isset($_POST['login'])) {
         "add_more_fields" => $_POST,
     );
     $ajax->BuildPages($page_content_array);
+    
+}else if (isset($_POST['do_invite'])) {
+    
+    unset($page_content_array);
+    $page_content_array[] = array(
+        "id" => "308",
+        "send_invite_now" => $_POST,
+    );
+    
+    $ajax->BuildPages($page_content_array);
 }
+
 

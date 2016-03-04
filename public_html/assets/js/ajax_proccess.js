@@ -188,7 +188,7 @@ $(function () {
     $("#add_rows").click(function () {
 
         var num_people = $("input#num_people").val();
-        console.log(num_people);
+
         if (num_people == "") {
             $("form#invite input:text").css("border", "1px solid black");
             $("#invite_message").html("<div class='alert alert-danger' role='alert' id='errors'>Please enter number of people you would like to invite to your league(1-8)! </div>");
@@ -197,13 +197,15 @@ $(function () {
         $.ajax({// JQuery ajax function
             type: "POST", // Submitting Method
             url: 'ajax_process.php', // PHP processor -->DONOT CHANGE
-            data: 'num_people=' + num_people + '&add_fields=true'+'&do_add_fields=Add'+'&data=true'+'ssid=', // the data that will be sent to php processor
+            data: 'num_people=' + num_people + '&add_fields=true' + '&do_add_fields=Add' + '&data=true', // the data that will be sent to php processor
             dataType: "html", // type of returned data
             success: function (data) {
-                if(data == "gotit"){
-                    $('#invite_message').shake();
-                    //$("form#c_league input:text").css("border", "1px solid red");
-                    $("#invite_message").html("<div class='alert alert-danger' role='alert' id='errors'>Adding...</div> ");
+                // console.log(data);
+                if (data.substr(0, 10) == "add fields") {
+                    //$('#invite_message').shake();
+                    $("#do_invite_now").css("display", "");
+                    $("#invite_message").html("");
+                    $("#put_fields_here").html(data.substr(10));
                 }
 
             }
@@ -211,4 +213,54 @@ $(function () {
         });
         return false;
     });
+});
+
+
+$(function () {
+    $("#do_invite_now").click(function () {
+
+        var do_invite = $("#do_invite_now").val();
+        var ssid = $("input#invite_ssid").val();
+        var sender_info = $("input#invite_sender_info").val();
+        var sender_email = $("input#invite_sender_email").val();
+        var league_id = $("#league_id option:selected").val();
+        var num_people = $("input#num_people").val();
+        for (i = 0; i < num_people; i++) {
+            var name = [];
+            name = $("input#name" + i).val();
+            var email = [];
+            email = $("input#email" + i).val();
+
+            if ((name == "" && email == "") || (name == "" || email == "")) {
+                $("#invite_message").html("<div class='alert alert-danger' role='alert' id='errors'>All fields are required! </div>");
+                return false
+
+            }
+
+
+        }
+        var dataObject = $('#invite').serialize();
+
+        $.ajax({// JQuery ajax function
+            type: "POST", // Submitting Method
+            url: 'ajax_process.php', // PHP processor -->DONOT CHANGE
+            data: dataObject + "&do_invite=" + do_invite, // the data that will be sent to php processor
+            dataType: "html", // type of returned data
+            success: function (data) {
+                console.log(data);
+
+                if (data.substr(0, 8) == "error#20") {
+                    //$('#invite_message').shake();
+                    //$("form#c_league input:text").css("border", "1px solid red");
+                    $("#invite_message").html("<div class='alert alert-danger' role='alert' id='errors'><span style='color:#cc0000'>Error:</span> Please enter a valid email address. </div>");
+
+                }
+
+            }
+
+        });
+
+        return false;
+    });
+
 });

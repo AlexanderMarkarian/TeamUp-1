@@ -100,7 +100,11 @@ class body {
                 case '307':
                     $ajax = new forms();
                     echo $ajax->MoreFieldsCall($pg['add_more_fields']);
-                  
+                    break;
+                case '308':
+                    $ajax = new forms();
+                    echo $ajax->InviteMembersProcess($pg['send_invite_now']);
+                    //var_dump($pg['send_invite_now']);
                     break;
                 case '55':
                     $forms = new forms();

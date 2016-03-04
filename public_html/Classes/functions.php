@@ -607,22 +607,20 @@ class functions {
                             $value1 = (isset($_POST[$fields['2'] . $i]) ? $_POST[$fields['2'] . $i] : "");
                             $value2 = (isset($_POST[$fields['3'] . $i]) ? $_POST[$fields['3'] . $i] : "");
 
-                            $form_fields['name'] = "<div class='form-group'><input type='" . $fields['0'] . "' value='" . $value1 . "' name='" . $fields['8'] . "{$i}' class='form-control' placeholder='Team Member #{$num_for_place_holder} Name ' /></div>";
-                            $form_fields['email'] = "<div class='form-group'><input type='" . $fields['1'] . "' value='" . $value2 . "' name='" . $fields['7'] . "{$i}' class='form-control' placeholder='Team Member #{$num_for_place_holder} Email '/></div>";
+                            $form_fields['name'] = "<div class='form-group'><input type='" . $fields['0'] . "' value='" . $value1 . "' name='" . $fields['8'] . "{$i}' class='form-control' placeholder='Team member #{$num_for_place_holder} name ' id='" . $fields['8'] . "{$i}' /></div>";
+                            $form_fields['email'] = "<div class='form-group'><input type='" . $fields['1'] . "' value='" . $value2 . "' name='" . $fields['7'] . "{$i}' class='form-control' placeholder='Team member #{$num_for_place_holder} email ' id='" . $fields['7'] . "{$i}'/></div>";
 
                             $this->_fields[] = $form_fields;
                         }
                         $more_fields = array();
                         $more_fields['com_fields'] = '<input type="hidden" name="do_add_fields" value="Add"/>';
-                        $more_fields['num_people_fields'] = '<input type="hidden" name="num_people" value="' . $number_of_fields['num_fields'] . '"/>';
-                        $more_fields['submit_fields'] = "<div class='form-group'><input type='" . $fields['4'] . "'  value='" . $fields['5'] . "'  class='btn btn-info' name='" . $fields['6'] . "'/></div>";
+                        $more_fields['num_people_fields'] = '<input type="hidden" name="num_people" value="' . $number_of_fields['num_fields'] . '" id="'.$fields['9'].'"/>';
+                        //$more_fields['submit_fields'] = "<div class='form-group'><input type='" . $fields['4'] . "'  value='" . $fields['5'] . "'  class='btn btn-info' name='" . $fields['6'] . "' id='".$fields['6']."'/></div>";
 
                         $this->_more_inputs[] = array(
                                     "ne" => $this->_fields,
                                     "additional" => $more_fields
                         );
-
-                        //var_dump($this->_more_inputs['hidden']);
                     } else {
                         $this->_flag = 24;
                         if ($this->_flag == 24) {

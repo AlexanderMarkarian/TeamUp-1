@@ -56,23 +56,23 @@ class forms {
             ?>
             <h4>Please Enter Your Details</h4>
             <input type="text" placeholder="First Name" name="form[signup][firstname]" id="firstname" onfocus="this.value = '';" onblur="if (this.value == '') {
-                        this.value = 'First Name';
-                    }" value="<?php
+                                this.value = 'First Name';
+                            }" value="<?php
                    echo $_POST['form']['signup']['firstname'];
                    ?>">
             <input type="text" name="form[signup][lastname]" id="lastname" placeholder="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {
-                        this.value = 'Second Name';
-                    }" value="<?php
+                                this.value = 'Second Name';
+                            }" value="<?php
                    echo $_POST['form']['signup']['lastname'];
                    ?>">
             <input type="text" class="email" placeholder="Email" name="form[signup][email]" id="email" onfocus="this.value = '';" onblur="if (this.value == '') {
-                        this.value = 'Email';
-                    }" value="<?php
+                                this.value = 'Email';
+                            }" value="<?php
                    echo $_POST['form']['signup']['email'];
                    ?>">
             <input type="password" placeholder="Password" name="form[signup][password]" id="password" onfocus="this.value = '';" onblur="if (this.value == '') {
-                        this.value = 'Password';
-                    }" value="<?php
+                                this.value = 'Password';
+                            }" value="<?php
                    echo $_POST['form']['signup']['password'];
                    ?>">
                    <?php
@@ -105,13 +105,13 @@ class forms {
             }
             ?>
             <input type="text" id="email_login" class="email" name="form[login][email]" placeholder="Email" onfocus="this.value = '';" onblur="if (this.value == '') {
-                        this.value = 'Email';
-                    }" value="<?php
+                                this.value = 'Email';
+                            }" value="<?php
                    echo $_POST['form']['login']['email'];
                    ?>">
             <input type="password" id="password_login" name="form[login][password]" placeholder="Password" onfocus="this.value = '';" onblur="if (this.value == '') {
-                        this.value = 'Password';
-                    }"  value="<?php
+                                this.value = 'Password';
+                            }"  value="<?php
                    echo $_POST['form']['login']['password'];
                    ?>">
                    <?php
@@ -742,7 +742,7 @@ class forms {
 
     public function MoreFieldsCall(array $data) {
         $this->_formInputs = $data;
-if(isset($this->_formInputs['do_add_fields'])){
+        //var_dump($data);
         if (isset($this->_formInputs['add_fields'])) {
             $input_type = array(
                 "0" => "text",
@@ -753,8 +753,11 @@ if(isset($this->_formInputs['do_add_fields'])){
                 "5" => "Invite Team Member",
                 "6" => "do_invite",
                 "7" => "email",
-                "8" => "name"
+                "8" => "name",
+                "9" => "add_rows"
             );
+
+            $_POST['num_people'] = $this->_formInputs['num_people'];
 
             $num_fields = array();
             $num_fields['num_fields'] = $this->_formInputs['num_people'];
@@ -762,21 +765,26 @@ if(isset($this->_formInputs['do_add_fields'])){
             $dditional_fields = array();
             $additional_fields = $this->_fucntions->AddMoreFields($input_type, $num_fields, $option);
             $additional_fields = $this->_fucntions->DoShowFields();
-          
-            
+            echo "add fields";
+
+            /*
+             * This will show the additional fields in #put_fields_here function InviteTeamMembers
+             */
             foreach ($additional_fields as $key => $new_fields) {
-              $this->_pass_value[] = $new_fields;  
+                foreach ($new_fields['ne'] as $name_email) {
+                    foreach ($name_email as $name_email_fields) {
+                        echo $name_email_fields;
+                    }
+                }
+                foreach ($new_fields['additional'] as $additionals) {
+                    echo $additionals;
+                }
             }
-              echo 'gotit';
-            $this->RetMoreFieldsCall();
-          
-            $this->_flag = 307;
-          }
-            
         }
     }
 
     public function RetMoreFieldsCall() {
+
         return $this->_pass_value;
     }
 
@@ -787,12 +795,10 @@ if(isset($this->_formInputs['do_add_fields'])){
      * RS 02072016
      */
 
-    public function InviteTeamMembers(array $data, array $post_values) {
-        var_dump($post_values);
+    public function InviteTeamMembers(array $data) {
         foreach ($data as $user_info) {
             
         }
-
         //FOR Universal CHECK
         $tables = array(
             "table0" => "league_user",
@@ -813,18 +819,18 @@ if(isset($this->_formInputs['do_add_fields'])){
         ?>
         <!-------INVITE TEAM MEMBER FROM BEGINS------------->
         <div id="invite_message"></div>    
-        <form method="post" name="invite" id="invite">
+        <form method="post" name="form[invite]" id="invite">
             <div class="form-group">
-        <?php
-        foreach ($leagues as $league_name) {
-            
-        }
-        $disabled = ($league_name['id'] == NULL) ? "disabled='disabled'" : " ";
-        ?>
-                <select name="form[invite][league_id]" class="form-control" <?= $disabled ?>>
                 <?php
                 foreach ($leagues as $league_name) {
-                    ?>
+                    
+                }
+                $disabled = ($league_name['id'] == NULL) ? "disabled='disabled'" : " ";
+                ?>
+                <select name="form[invite][league_id]" class="form-control" <?= $disabled ?> id="league_id">
+                    <?php
+                    foreach ($leagues as $league_name) {
+                        ?>
                         <option  value="<?= $league_name['id'] ?>"><?= $league_name['league_name'] ?></option>
                         <?php
                     }
@@ -835,38 +841,35 @@ if(isset($this->_formInputs['do_add_fields'])){
                 <label for="how many people">
                     How many people would you like to invite? 
                 </label>
-                <input type="number" id="num_people" name="num_people" value="<?= $_POST['form']['invite']['num_people'] ?>" class="form-control" <?= $disabled ?> maxlength="1" max="8" min="1"/>
+                <input type="number" id="num_people" name="form[invite][num_people]" value="<?= $_POST['form']['invite']['num_people'] ?>" class="form-control" <?= $disabled ?> maxlength="1" max="8" min="1"/>
 
             </div>
             <div class="form-group">
-                <input type="submit" name="do_add_fields"  class="btn btn-success" id="add_rows" value="Add" <?= $disabled ?>/>
+                <input type="submit" name="form[invite][do_add_fields]"  class="btn btn-success" id="add_rows" value="Add" <?= $disabled ?>/>
             </div>  
-
-        <?php
-      
-        ?>
-
 
 
             <!---END OF INVITE TEAM MEMBERS FORM--------->
-        <?php
-        foreach ($this->_invite_message as $errors) {
-            echo "<div class='alert alert-danger' role='alert'>" . $errors . "</div>";
-        }
-        ?>
+            <?php
+            foreach ($this->_invite_message as $errors) {
+                echo "<div class='alert alert-danger' role='alert'>" . $errors . "</div>";
+            }
+            ?>
+            <!--ADDITIONAL FIELDS GO HERE FROM MOREFIELDSCALLS function--->
+            <div class="form-group" id="put_fields_here">
 
-            <input type="hidden" name="sender_info" value="<?= $user_info['first_name'] . " " . $user_info['last_name'] ?>" />
-            <input type="hidden" name="sender_email" value="<?= $user_info['email'] ?>" />
-            <input type="hidden" name="league_id" value="<?= $_POST['form']['invite']['league_id'] ?>" />
 
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="form[invite][ssid]" value="<?= $user_info['ssid'] ?>" id="invite_ssid" />
+                <input type="hidden" name="form[invite][sender_info]" value="<?= $user_info['first_name'] . " " . $user_info['last_name'] ?>" id="invite_sender_info"/>
+                <input type="hidden" name="form[invite][sender_email]" value="<?= $user_info['email'] ?>" id="invite_sender_email"/>
+                <input type="hidden" name="form[invite][league_id_h]" value="<?= $_POST['form']['invite']['league_id'] ?>" id="invite_league_id" />
+                <input type="submit" name="form[invite][do_invite_now]" id="do_invite_now" value="invite" class="btn btn-info" style="display: none;"/>
+            </div>
         </form>
 
         <?php
-          if (isset($_POST['do_add_fields'])) {
-            var_dump($this->_flag);
-            var_dump($this->_pass_value);
-            var_dump($this->RetMoreFieldsCall());
-        }
     }
 
     /*
@@ -876,15 +879,15 @@ if(isset($this->_formInputs['do_add_fields'])){
      */
 
     public function InviteMembersProcess(array $invitaion) {
-
-
+        parse_str($invitaion);
+      
 
         if (isset($invitaion['do_invite'])) {
-
+       
 
             $this->_formInputs = $invitaion;
-            $sender_name = $this->_formInputs['sender_info'];
-            $sender_email = $this->_formInputs['sender_email'];
+            $sender_name = $this->_formInputs['form']['invite']['sender_info'];
+            $sender_email = $this->_formInputs['form']['invite']['sender_email'];
             for ($i = 0; $i < $invitaion['num_people']; $i++) {
 
                 $name["name" . $i] = $this->_formInputs['name' . $i];
@@ -908,6 +911,7 @@ if(isset($this->_formInputs['do_add_fields'])){
                         $errors = array();
                         array_push($errors, "All fields are required.");
                         $this->_invite_message = $errors;
+                        echo "error#21";
                     } else {
                         $this->_flag = 0;
                         unset($this->_invite_message);
@@ -918,6 +922,7 @@ if(isset($this->_formInputs['do_add_fields'])){
                         $errors = array();
                         array_push($errors, "Please enter a valid email address.");
                         $this->_invite_message = $errors;
+                        echo 'error#20';
                     } else {
                         $this->_flag = 0;
                         unset($this->_invite_message);
@@ -944,7 +949,7 @@ if(isset($this->_formInputs['do_add_fields'])){
                     array_push($values, "'" . $link_id . "'");
                     array_push($values, "'" . $name['name' . $i] . "'");
                     array_push($values, "'" . $email['email' . $i] . "'");
-                    array_push($values, "'" . $invitaion['league_id'] . "'");
+                    array_push($values, "'" . $invitaion['form']['invite']['league_id'] . "'");
                     array_push($values, "'" . $new_date . "'");
 
                     $insert_values = array(
@@ -993,11 +998,11 @@ if(isset($this->_formInputs['do_add_fields'])){
         ?>
         <form class="signup" role="form" method="post">
             <h3>Team Name</h3>
-        <?php
-        foreach ($this->_message as $errors) {
-            echo "<div class='alert alert-danger' role='alert'>" . $errors . "</div>";
-        }
-        ?>
+            <?php
+            foreach ($this->_message as $errors) {
+                echo "<div class='alert alert-danger' role='alert'>" . $errors . "</div>";
+            }
+            ?>
             <form method="post" name="form[team]">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Your Team Name" id="team_name" name="form[team][name]" value="<?= $_POST['form']['team']['name'] ?>">
@@ -1007,11 +1012,12 @@ if(isset($this->_formInputs['do_add_fields'])){
                     <input type="submit"  class="btn btn-info" value="Add Team Name" name="add_team_name" id="add_team_name">
                 </div>
             </form> 
-        <?php
-    }
+            <?php
+        }
 
-    public function TeamInformationProcess() {
-        
-    }
+        public function TeamInformationProcess() {
+            
+        }
 
-}
+    }
+    
