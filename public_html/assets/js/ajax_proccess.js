@@ -47,11 +47,39 @@ $(function () {
 
 
                 } else { // if the reurned data not empty then it passes value ssid to url
-                    audio.play();
-                    $('#show').html("<span style='color:#009938; font-size:15px;'><strong>Redirecting...</strong></span>");// print success message 
-                    var timer = setTimeout(function () {
+                   // audio.play();
+                   // $('#show').html("<span style='color:#009938; font-size:15px;'><strong>Redirecting...</strong></span>");// print success message 
+                    //var timer = setTimeout(function () {
+                    //    document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
+                    //}, 1000);
+
+                    $('#show').html("<div class='alert alert-success' role='alert' id='errors'>verifying you account.<img src='../assets/images/other/spinner6.gif'/> </div>");// print success message   
+                    //document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
+                    window.setTimeout(function () {
+                        $("#show").html("<div class='alert alert-success' role='alert' id='errors'><strong>"+email+" verified</strong></div>");
+
+                    }, 2000);
+                     audio.play();
+                    window.setTimeout(function () {
+                        $("#show").html("<div class='alert alert-success' role='alert' id='errors'>Redirecting <img src='../assets/images/other/spinner6.gif'/> </div>");
+
+                    }, 2500);
+                    window.setTimeout(function () {
+                        $("#s_show").hide();
+                       
+                        // Move to a new location or you can do something else
+                    }, 3000);
+                    window.setTimeout(function () {
                         document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
-                    }, 1000);
+
+                    }, 3200);
+
+
+
+
+
+
+
                 }
             }
         });
@@ -110,8 +138,24 @@ $(function () {
                     document.location.href = 'loader.php?cmd=invited' + "&ssid=" + data.substr(3) + "&lid=" + lid; // redirect to the private area  
 
                 } else { // if the reurned data not Error#11,Error#12,Error#13 than data is ssid
-                    $('#s_show').html("<span style='color:#009938; font-size:15px;'><strong>Redirecting...</strong></span>");// print success message   
-                    document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
+                    $('#s_show').html("<div class='alert alert-success' role='alert' id='errors'>We are creating you account.<img src='../assets/images/other/spinner6.gif'/> </div>");// print success message   
+                    //document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
+                    window.setTimeout(function () {
+                        $("#s_show").html("<div class='alert alert-success' role='alert' id='errors'>" + firstname + " your account was successfully created.</div>");
+
+                    }, 1500);
+                    window.setTimeout(function () {
+                        $("#s_show").html("<div class='alert alert-success' role='alert' id='errors'>Redirecting <img src='../assets/images/other/spinner6.gif'/> </div>");
+
+                    }, 2000);
+                    window.setTimeout(function () {
+                        $("#s_show").hide();
+                        // Move to a new location or you can do something else
+                    }, 2500);
+                    window.setTimeout(function () {
+                        document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
+
+                    }, 2500);
                 }
             }
         });
@@ -169,11 +213,22 @@ $(function () {
                     $("#cleague").html("<div class='alert alert-danger' role='alert' id='errors'>Date and time are in the past!. </div>");
                     console.log(data);
                 } else { // if the reurned data not Error#15,Error#16 than data is ssid
-                    console.log(data);
+//                    console.log(data);
                     $("form#c_league input:text").css("border", "1px solid black");
-                    $('#cleague').html("<span style='color:#009938; font-size:15px;'><strong>League Created</strong></span>");// print success message   
-                    document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
+                    $("#cleague").html("<div class='alert alert-success' role='alert' id='errors'>" + league_name + " is being created.<img src='../assets/images/other/spinner6.gif'/> </div>");
                     console.log(data);
+                    window.setTimeout(function () {
+                        $("#cleague").html("<div class='alert alert-success' role='alert' id='errors'>" + league_name + " created.</div>");
+
+                    }, 1000);
+                    window.setTimeout(function () {
+                        $("#cleague").hide();
+                        // Move to a new location or you can do something else
+                    }, 1300);
+                    window.setTimeout(function () {
+                        document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
+
+                    }, 1600);
                 }
             }
         });
@@ -181,8 +236,9 @@ $(function () {
     });
 });
 
-/*
+/* @athur: Rostom Sahakian
  * FOR ADDING FIELDS 
+ * 03032016
  */
 $(function () {
     $("#add_rows").click(function () {
@@ -217,10 +273,23 @@ $(function () {
             success: function (data) {
                 // console.log(data);
                 if (data.substr(0, 10) == "add fields") {
+
                     $("form#invite input#num_people").css("border", "1px solid green");
-                    $("#do_invite_now").css("display", "");
                     $("#invite_message").html("");
-                    $("#put_fields_here").html(data.substr(10));
+                    $("#add_message_div").html("<div class='alert alert-success' role='alert' id='errors'>Generating " + num_people + " fileds <img src='../assets/images/other/spinner6.gif'/> </div>");
+                    $("#add_message_div").show();
+
+                    window.setTimeout(function () {
+                        $("#add_message_div").hide();
+                        // Move to a new location or you can do something else
+                    }, 500);
+
+                    window.setTimeout(function () {
+                        $("#put_fields_here").html(data.substr(10));
+                        $("#do_invite_now").css("display", "");
+                    }, 600);
+
+
                 }
 
             }
@@ -229,7 +298,10 @@ $(function () {
         return false;
     });
 });
-
+/* @athur: Rostom Sahakian
+ * Email Invitation Ajax
+ * 03042016
+ */
 
 $(function () {
     $("#do_invite_now").click(function () {
@@ -283,7 +355,7 @@ $(function () {
                         $("form#invite input#email" + i).css("border", "1px solid green");
 
                     }
-                    $("#invite_messages_div").html("<div class='alert alert-success' role='alert' id='errors'>Sending <img src='../assets/images/other/spinner5.gif'/> </div>");
+                    $("#invite_messages_div").html("<div class='alert alert-success' role='alert' id='errors'>Sending <img src='../assets/images/other/spinner6.gif'/> </div>");
                     $("#invite_messages_div").show();
                     // Your application has indicated there's an error
                     window.setTimeout(function () {

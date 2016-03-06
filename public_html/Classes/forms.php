@@ -847,7 +847,7 @@ class forms {
             <div class="form-group">
                 <input type="submit" name="form[invite][do_add_fields]"  class="btn btn-success" id="add_rows" value="Add" <?= $disabled ?>/>
             </div>  
-
+            <div id="add_message_div"></div>
 
             <!---END OF INVITE TEAM MEMBERS FORM--------->
             <?php
