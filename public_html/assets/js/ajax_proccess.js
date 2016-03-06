@@ -190,9 +190,24 @@ $(function () {
         var num_people = $("input#num_people").val();
 
         if (num_people == "") {
-            $("form#invite input:text").css("border", "1px solid black");
-            $("#invite_message").html("<div class='alert alert-danger' role='alert' id='errors'>Please enter number of people you would like to invite to your league(1-8)! </div>");
+            $("form#invite input#num_people").css("border", "1px solid red");
+            $("#invite_message").html("<div class='alert alert-danger' role='alert' id='errors'>Please enter number of people you would like to invite to your league <strong>(1-7)</strong> </div>");
             return false; // stop the script
+        }
+        if (num_people > 7) {
+            $("form#invite input#num_people").css("border", "1px solid red");
+            $("#invite_message").html("<div class='alert alert-danger' role='alert' id='errors'>You can only invite maximum of 7 people per league</div>");
+            return false;
+        }
+        if (num_people < 1) {
+            $("form#invite input#num_people").css("border", "1px solid red");
+            $("#invite_message").html("<div class='alert alert-danger' role='alert' id='errors'>Minimum number must be at least 1</div>");
+            return false;
+        }
+        if (Number(num_people) === false) {
+            $("form#invite input#num_people").css("border", "1px solid red");
+            $("#invite_message").html("<div class='alert alert-danger' role='alert' id='errors'>Input must be in digits only</div>");
+            return false;
         }
         $.ajax({// JQuery ajax function
             type: "POST", // Submitting Method
@@ -202,7 +217,7 @@ $(function () {
             success: function (data) {
                 // console.log(data);
                 if (data.substr(0, 10) == "add fields") {
-                    //$('#invite_message').shake();
+                    $("form#invite input#num_people").css("border", "1px solid green");
                     $("#do_invite_now").css("display", "");
                     $("#invite_message").html("");
                     $("#put_fields_here").html(data.substr(10));
@@ -232,7 +247,10 @@ $(function () {
             email = $("input#email" + i).val();
 
             if ((name == "" && email == "") || (name == "" || email == "")) {
-                $("#invite_message").html("<div class='alert alert-danger' role='alert' id='errors'>All fields are required! </div>");
+                $('#do_invite_now').shake();
+                $("form#invite input#name" + i).css("border", "1px solid red");
+                $("form#invite input#email" + i).css("border", "1px solid red");
+                $("#invite_messages_div").html("<div class='alert alert-danger' role='alert' id='errors'>All fields are required! </div>");
                 return false
 
             }
@@ -250,10 +268,35 @@ $(function () {
                 console.log(data);
 
                 if (data.substr(0, 8) == "error#20") {
-                    //$('#invite_message').shake();
+                    $("form#invite input:text").css("border", "1px solid green");
+                    for (i = 0; i < num_people; i++) {
+                        $("form#invite input#email" + i).css("background-color", "#F2DEDE");
+                    }
+                    $('#do_invite_now').shake();
                     //$("form#c_league input:text").css("border", "1px solid red");
-                    $("#invite_message").html("<div class='alert alert-danger' role='alert' id='errors'><span style='color:#cc0000'>Error:</span> Please enter a valid email address. </div>");
+                    $("#invite_messages_div").html("<div class='alert alert-danger' role='alert' id='errors'><span style='color:#cc0000'>Error:</span> Please enter a valid email address. </div>");
 
+                } else if (data.substr(0, 7) == "success") {
+                    $("form#invite input:text").css("border", "1px solid green");
+                    for (i = 0; i < num_people; i++) {
+                        $("form#invite input#email" + i).css("background-color", "#fff");
+                        $("form#invite input#email" + i).css("border", "1px solid green");
+
+                    }
+                    $("#invite_messages_div").html("<div class='alert alert-success' role='alert' id='errors'>Sending <img src='../assets/images/other/spinner5.gif'/> </div>");
+                    $("#invite_messages_div").show();
+                    // Your application has indicated there's an error
+                    window.setTimeout(function () {
+
+                        $("#invite_messages_div").hide();
+//                        // Move to a new location or you can do something else
+
+                        $("#invite_messages_div").html("<div class='alert alert-success' role='alert' id='errors'>Invitation Sent</div>");
+                        $("#invite_messages_div").show();
+                        window.setTimeout(function () {
+                            window.location.href = 'loader.php?cmd=profile' + "&ssid=" + data.substr(7);
+                        }, 2000);
+                    }, 4000);
                 }
 
             }

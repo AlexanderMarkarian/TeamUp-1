@@ -868,7 +868,7 @@ class forms {
                 <input type="submit" name="form[invite][do_invite_now]" id="do_invite_now" value="invite" class="btn btn-info" style="display: none;"/>
             </div>
         </form>
-
+        <div id="invite_messages_div"></div>
         <?php
     }
 
@@ -989,7 +989,7 @@ class forms {
                 }
             }
             if ($this->_flag == 200) {
-                echo "<div class='alert alert-success' role='alert'>Emails were successfully sent.</div>";
+                echo "success".$this->_formInputs['form']['invite']['ssid'];
             }
         }
     }
