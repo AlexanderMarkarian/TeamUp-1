@@ -27,6 +27,7 @@ class functions {
     public $_flag = 0;
     public $_fields = array();
     public $_more_inputs = array();
+    public $_num_rows;
 
     /*
      * @ auth: Rostom
@@ -338,7 +339,7 @@ class functions {
         }
     }
 
-    public function CheckIfExists(array $tables, array $fields, array $values, $options = "0") {
+    public function CheckIfExists(array $tables, array $fields, array $values, $options = "0", $option2 = "0") {
 
         if (isset($options) && $options != NULL) {
             switch ($options) {
@@ -398,7 +399,10 @@ class functions {
                         }
                     break;
                 case "4":
-                    $sql = "SELECT * FROM `" . $tables['0'] . "` WHERE `" . $fields['0'] . "` = '" . $values['0'] . "' AND `" . $fields['1'] . "` = '" . $values['1'] . "'";
+                    $sql = "SELECT * FROM `" . $tables['0'] . "` WHERE `" . $fields['0'] . "` = '" . $values['0'] . "'";
+                    if ($option2 == "1") {
+                        $sql .=" AND `" . $fields['1'] . "` = '" . $values['1'] . "'";
+                    }
                     $result = $this->_mysqli->query($sql);
                     $num_rows = $result->num_rows;
                     if ($num_rows == 1) {
@@ -535,7 +539,7 @@ class functions {
     /*
      * @Auth: Rostom
      * Desc: Next process after creating league
-     * 
+     * TBD
      */
 
 
@@ -614,12 +618,10 @@ class functions {
                         }
                         $more_fields = array();
                         $more_fields['com_fields'] = '<input type="hidden" name="do_add_fields" value="Add"/>';
-                        $more_fields['num_people_fields'] = '<input type="hidden" name="num_people" value="' . $number_of_fields['num_fields'] . '" id="'.$fields['9'].'"/>';
-                        //$more_fields['submit_fields'] = "<div class='form-group'><input type='" . $fields['4'] . "'  value='" . $fields['5'] . "'  class='btn btn-info' name='" . $fields['6'] . "' id='".$fields['6']."'/></div>";
-
+                        $more_fields['num_people_fields'] = '<input type="hidden" name="num_people" value="' . $number_of_fields['num_fields'] . '" id="' . $fields['9'] . '"/>';
                         $this->_more_inputs[] = array(
-                                    "ne" => $this->_fields,
-                                    "additional" => $more_fields
+                            "ne" => $this->_fields,
+                            "additional" => $more_fields
                         );
                     } else {
                         $this->_flag = 24;
@@ -680,6 +682,37 @@ class functions {
                     break;
             }
         }
+    }
+
+    /*
+     * @author: Rostom
+     * Desc: gets the number of rows for specific search value
+     * @param: $table[], $value[], $fields[], $options
+     * can be expanded using $option values
+     */
+
+    public function GetNumberOfRows(array $table, array $fields, array $value, $option = "0") {
+
+        if ($option != "0") {
+
+            switch ($option) {
+                case "1":
+                    $sql = "SELECT * FROM `" . $table['0'] . "` WHERE `" . $fields['0'] . "` = '" . $value["0"] . "'";
+                    $result = $this->_mysqli->query($sql);
+                    $num_rows = $result->num_rows;
+                    $this->_num_rows = $num_rows;
+                    break;
+            }
+        }
+    }
+
+    /*
+     * @author: Rostom
+     * Desc: Returns the number of rows
+     */
+
+    public function SetNumberOfRows() {
+        return $this->_num_rows;
     }
 
 }

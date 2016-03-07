@@ -20,8 +20,8 @@
                     "1" => "league_id"
                 );
                 $option = "3";
-
-                $fetch_team_member_info = $pg['functions']->CheckIfExists($tables, $fields, $values, $option);
+                $option2 = "0";
+                $fetch_team_member_info = $pg['functions']->CheckIfExists($tables, $fields, $values, $option, $option2);
                 $fetch_team_member_info = $pg['functions']->SetDataQuery();
                 foreach ($fetch_team_member_info as $fetch_data) {
                     
@@ -38,7 +38,8 @@
                     "0" => $commissioner_id
                 );
                 $options = "1";
-                $fetch_user_name = $pg['functions']->CheckIfExists($table, $field, $value, $options);
+                $option2 = "0";
+                $fetch_user_name = $pg['functions']->CheckIfExists($table, $field, $value, $options, $option2);
                 $fetch_user_name = $pg['functions']->SetDataQuery();
                 foreach ($fetch_user_name as $all_user_data) {
                     
@@ -48,7 +49,8 @@
                 $league_field = array("0" => "id");
                 $league_value = array("0" => $league_id);
                 $league_option = "1";
-                $league_name_query = $pg['functions']->CheckIfExists($league_table, $league_field, $league_value, $league_option);
+                $league_option2 = "0";
+                $league_name_query = $pg['functions']->CheckIfExists($league_table, $league_field, $league_value, $league_option, $league_option2);
                 $league_name_query = $pg['functions']->SetDataQuery();
                 foreach ($league_name_query as $league_data) {
                     
@@ -59,6 +61,7 @@
                 $user_fields = array("0" => "ssid");
                 $user_values = array("0" => $pg['ssid']);
                 $user_option = "1";
+                $user_option2 = "0";
                 $team_member_query = $pg['functions']->CheckIfExists($user_table, $user_fields, $user_values, $user_option);
                 $team_member_query = $pg['functions']->SetDataQuery();
                 foreach ($team_member_query as $tmember_data) {

@@ -42,13 +42,31 @@ $(function () {
                     $("#login").val('Login');
                     $("#show").html("<div class='alert alert-danger' role='alert' id='errors'><span style='color:#cc0000'>Error:</span> There was an error loging you in!. </div>");
                 } else if (data.substr(0, 3) == "inv") { // if Password is all numeric or less than 5 Error #13
-                    $('#s_show').html("<span style='color:#009938; font-size:15px;'><strong>Redirecting...</strong></span>");// print success message   
-                    document.location.href = 'loader.php?cmd=invited' + "&ssid=" + data.substr(3) + "&lid=" + lid; // redirect to the private area  
+                    //$('#s_show').html("<span style='color:#009938; font-size:15px;'><strong>Redirecting...</strong></span>");// print success message   
+                    $('#show').html("<div class='alert alert-success' role='alert' id='errors'>verifying you account.<img src='../assets/images/other/spinner6.gif'/> </div>");// print success message   
+                    //document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
+                    window.setTimeout(function () {
+                        $("#show").html("<div class='alert alert-success' role='alert' id='errors'><strong>" + email + " verified</strong></div>");
 
+                    }, 2000);
+                    audio.play();
+                    window.setTimeout(function () {
+                        $("#show").html("<div class='alert alert-success' role='alert' id='errors'>Redirecting <img src='../assets/images/other/spinner6.gif'/> </div>");
+
+                    }, 2500);
+                    window.setTimeout(function () {
+                        $("#s_show").hide();
+
+                        // Move to a new location or you can do something else
+                    }, 3000);
+                    window.setTimeout(function () {
+                        document.location.href = 'loader.php?cmd=invited' + "&ssid=" + data.substr(3) + "&lid=" + lid; // redirect to the private area  
+
+                    }, 3200);
 
                 } else { // if the reurned data not empty then it passes value ssid to url
-                   // audio.play();
-                   // $('#show').html("<span style='color:#009938; font-size:15px;'><strong>Redirecting...</strong></span>");// print success message 
+                    // audio.play();
+                    // $('#show').html("<span style='color:#009938; font-size:15px;'><strong>Redirecting...</strong></span>");// print success message 
                     //var timer = setTimeout(function () {
                     //    document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
                     //}, 1000);
@@ -56,17 +74,17 @@ $(function () {
                     $('#show').html("<div class='alert alert-success' role='alert' id='errors'>verifying you account.<img src='../assets/images/other/spinner6.gif'/> </div>");// print success message   
                     //document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
                     window.setTimeout(function () {
-                        $("#show").html("<div class='alert alert-success' role='alert' id='errors'><strong>"+email+" verified</strong></div>");
+                        $("#show").html("<div class='alert alert-success' role='alert' id='errors'><strong>" + email + " verified</strong></div>");
 
                     }, 2000);
-                     audio.play();
+                    audio.play();
                     window.setTimeout(function () {
                         $("#show").html("<div class='alert alert-success' role='alert' id='errors'>Redirecting <img src='../assets/images/other/spinner6.gif'/> </div>");
 
                     }, 2500);
                     window.setTimeout(function () {
                         $("#s_show").hide();
-                       
+
                         // Move to a new location or you can do something else
                     }, 3000);
                     window.setTimeout(function () {
@@ -133,13 +151,27 @@ $(function () {
                     $('#small-dialog2').shake();
                     $("#signup").val('Signup');
                     $("#s_show").html("<div class='alert alert-danger' role='alert' id='errors'><span style='color:#cc0000'>Error:</span> Password must be at least 5 charecters long and alpha-numeric.</div> ");
-                } else if (data.substr(0, 3) == "inv") { // if Password is all numeric or less than 5 Error #13
-                    $('#s_show').html("<span style='color:#009938; font-size:15px;'><strong>Redirecting...</strong></span>");// print success message   
-                    document.location.href = 'loader.php?cmd=invited' + "&ssid=" + data.substr(3) + "&lid=" + lid; // redirect to the private area  
+                } else if (data.substr(0, 3) == "inv") { // if Password is all numeric or less than 5 Error #13   
+                    $('#s_show').html("<div class='alert alert-success' role='alert' id='errors'>We are creating you account.<img src='../assets/images/other/spinner6.gif'/> </div>");// print success message   
+                    window.setTimeout(function () {
+                        $("#s_show").html("<div class='alert alert-success' role='alert' id='errors'>" + firstname + " your account was successfully created.</div>");
+
+                    }, 1500);
+                    window.setTimeout(function () {
+                        $("#s_show").html("<div class='alert alert-success' role='alert' id='errors'>Redirecting <img src='../assets/images/other/spinner6.gif'/> </div>");
+
+                    }, 2000);
+                    window.setTimeout(function () {
+                        $("#s_show").hide();
+                        // Move to a new location or you can do something else
+                    }, 2500);
+                    window.setTimeout(function () {
+                        document.location.href = 'loader.php?cmd=invited' + "&ssid=" + data.substr(3) + "&lid=" + lid; // redirect to the private area 
+
+                    }, 2500);
 
                 } else { // if the reurned data not Error#11,Error#12,Error#13 than data is ssid
                     $('#s_show').html("<div class='alert alert-success' role='alert' id='errors'>We are creating you account.<img src='../assets/images/other/spinner6.gif'/> </div>");// print success message   
-                    //document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
                     window.setTimeout(function () {
                         $("#s_show").html("<div class='alert alert-success' role='alert' id='errors'>" + firstname + " your account was successfully created.</div>");
 
@@ -244,6 +276,8 @@ $(function () {
     $("#add_rows").click(function () {
 
         var num_people = $("input#num_people").val();
+        var league_id = $("#league_id option:selected").val();
+
 
         if (num_people == "") {
             $("form#invite input#num_people").css("border", "1px solid red");
@@ -268,11 +302,19 @@ $(function () {
         $.ajax({// JQuery ajax function
             type: "POST", // Submitting Method
             url: 'ajax_process.php', // PHP processor -->DONOT CHANGE
-            data: 'num_people=' + num_people + '&add_fields=true' + '&do_add_fields=Add' + '&data=true', // the data that will be sent to php processor
+            data: 'num_people=' + num_people + '&add_fields=true' + '&do_add_fields=Add' + '&data=true' + '&league_id_h=' + league_id, // the data that will be sent to php processor
             dataType: "html", // type of returned data
             success: function (data) {
-                // console.log(data);
-                if (data.substr(0, 10) == "add fields") {
+                console.log(data);
+                if (data.substr(0, 8) == "error#30") {
+                    $("form#invite input#num_people").css("border", "1px solid red");
+                    $("#invite_message").html("<div class='alert alert-danger' role='alert' id='errors'>" + data.substr(8) + " more members can be added.</div>");
+
+                } else if (data.substr(0, 8) == "error#31") {
+                    $("form#invite input#num_people").css("border", "1px solid red");
+                    $("#invite_message").html("<div class='alert alert-danger' role='alert' id='errors'>League is full try to choosing another league.</div>");
+
+                } else if (data.substr(0, 10) == "add fields") {
 
                     $("form#invite input#num_people").css("border", "1px solid green");
                     $("#invite_message").html("");
@@ -347,6 +389,9 @@ $(function () {
                     $('#do_invite_now').shake();
                     //$("form#c_league input:text").css("border", "1px solid red");
                     $("#invite_messages_div").html("<div class='alert alert-danger' role='alert' id='errors'><span style='color:#cc0000'>Error:</span> Please enter a valid email address. </div>");
+                } else if (data.substr(0, 8) == "error#22") {
+                    $('#do_invite_now').shake();
+                    $("#invite_messages_div").html("<div class='alert alert-danger' role='alert' id='errors'><span style='color:#cc0000'>Error:</span>You cannot add your self to your own league. </div>");
 
                 } else if (data.substr(0, 7) == "success") {
                     $("form#invite input:text").css("border", "1px solid green");
@@ -355,7 +400,7 @@ $(function () {
                         $("form#invite input#email" + i).css("border", "1px solid green");
 
                     }
-                    $("#invite_messages_div").html("<div class='alert alert-success' role='alert' id='errors'>Sending <img src='../assets/images/other/spinner6.gif'/> </div>");
+                    $("#invite_messages_div").html("<div class='alert alert-success' role='alert' id='errors'>Sending <img src='../assets/images/other/sending.gif'/> </div>");
                     $("#invite_messages_div").show();
                     // Your application has indicated there's an error
                     window.setTimeout(function () {

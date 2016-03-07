@@ -62,9 +62,9 @@
                 );
 
                 unset($pg['functions']->_data);
-                $leagues = $pg['functions']->CheckIfExists($tables, $fields, $required_fields, $option = "3");
+                $leagues = $pg['functions']->CheckIfExists($tables, $fields, $required_fields, $option = "3", $option2 = "0");
                 $leagues = $pg['functions']->SetDataQuery();
-///var_dump($leagues);
+
                 if ($pg['functions']->_flag == 22) {
                     ?>
                     <div class='alert alert-success' role='alert'>

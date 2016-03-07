@@ -212,6 +212,7 @@ class loader {
             $fields = array("0" => "linkid", "1" => "status");
             $values = array("0" => $_GET['lid'], "1" => "0");
             $option = "4";
+            $option2 = "1";
         }
 
         /*
@@ -221,9 +222,9 @@ class loader {
          * Do NOT Change fist if statment 
          */
         if (!isset($_GET['cmd']) || $_GET['cmd'] == "") {
-
-            if (isset($_GET['lid']) && $function->CheckIfExists($table, $fields, $values, $option)) {
-
+          
+            if (isset($_GET['lid']) && $function->CheckIfExists($table, $fields, $values, $option, $option2)) {
+                
                 $page_content_array[] = array(
                     "id" => "55",
                     "invite_info" => $_GET['lid']
@@ -260,12 +261,14 @@ class loader {
                         $tables = array(
                             "0" => "leagues",
                             "1" => "league_user",
-                            "2" => "teams"
+                            "2" => "teams",
+                            "3" => "temp_invite"
                         );
                         $fields = array(
                             "0" => "id",
                             "1" => "league_id",
-                            "2" => "parent"
+                            "2" => "parent",
+                            "3" => "league_id"
                         );
                         $values = array(
                             "0" => $_GET['id']

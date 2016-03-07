@@ -568,7 +568,7 @@ class forms {
                     $this->_flag = 0;
                     unset($this->_league_message);
                 }
-            } else if ($league_information = $this->_fucntions->CheckIfExists($tables, $fields, $required_fields, $options = "2")) {
+            } else if ($league_information = $this->_fucntions->CheckIfExists($tables, $fields, $required_fields, $options = "2", $option2 = "0")) {
 
                 $this->_flag = 1;
                 if ($this->_flag == 1) {
@@ -742,7 +742,7 @@ class forms {
 
     public function MoreFieldsCall(array $data) {
         $this->_formInputs = $data;
-        //var_dump($data);
+        // var_dump($data);
         if (isset($this->_formInputs['add_fields'])) {
             $input_type = array(
                 "0" => "text",
@@ -756,28 +756,48 @@ class forms {
                 "8" => "name",
                 "9" => "add_rows"
             );
-
-            $_POST['num_people'] = $this->_formInputs['num_people'];
-
             $num_fields = array();
             $num_fields['num_fields'] = $this->_formInputs['num_people'];
-            $option = "invite";
-            $dditional_fields = array();
-            $additional_fields = $this->_fucntions->AddMoreFields($input_type, $num_fields, $option);
-            $additional_fields = $this->_fucntions->DoShowFields();
-            echo "add fields";
+            //Check if the selected league has invited member if so how many if more than 7 give error
+            $league_id = $this->_formInputs['league_id_h'];
+            $table = array("0" => "temp_invite");
+            $fields = array("0" => "league_id");
+            $value = array("0" => $league_id);
+            $option = "1";
+            $max_num_allowed = 7;
+            $get_number_of_invitations = $this->_fucntions->GetNumberOfRows($table, $fields, $value, $option);
+            $get_number_of_invitations = $this->_fucntions->SetNumberOfRows();
+            if ($get_number_of_invitations + $num_fields['num_fields'] > $max_num_allowed) {
 
-            /*
-             * This will show the additional fields in #put_fields_here function InviteTeamMembers
-             */
-            foreach ($additional_fields as $key => $new_fields) {
-                foreach ($new_fields['ne'] as $name_email) {
-                    foreach ($name_email as $name_email_fields) {
-                        echo $name_email_fields;
-                    }
+                $num_left = abs($max_num_allowed - $get_number_of_invitations);
+                if (intval($num_left) == 0) {
+                    echo "error#31";
+                } else {
+                    echo "error#30" . $num_left;
                 }
-                foreach ($new_fields['additional'] as $additionals) {
-                    echo $additionals;
+            } else if ($get_number_of_invitations > 7) {
+                echo "error#29";
+            } else {
+
+                $option = "invite";
+                $dditional_fields = array();
+                $additional_fields = $this->_fucntions->AddMoreFields($input_type, $num_fields, $option);
+                $additional_fields = $this->_fucntions->DoShowFields();
+
+
+                echo "add fields";
+                /*
+                 * This will show the additional fields in #put_fields_here function InviteTeamMembers
+                 */
+                foreach ($additional_fields as $key => $new_fields) {
+                    foreach ($new_fields['ne'] as $name_email) {
+                        foreach ($name_email as $name_email_fields) {
+                            echo $name_email_fields;
+                        }
+                    }
+                    foreach ($new_fields['additional'] as $additionals) {
+                        echo $additionals;
+                    }
                 }
             }
         }
@@ -836,6 +856,7 @@ class forms {
                     }
                     ?>
                 </select>
+                <input type="hidden" name="form[invite][league_id_h]" value="<?= $_POST['form']['invite']['league_id'] ?>" id="invite_league_id" />
             </div>
             <div class="form-group">
                 <label for="how many people">
@@ -864,7 +885,7 @@ class forms {
                 <input type="hidden" name="form[invite][ssid]" value="<?= $user_info['ssid'] ?>" id="invite_ssid" />
                 <input type="hidden" name="form[invite][sender_info]" value="<?= $user_info['first_name'] . " " . $user_info['last_name'] ?>" id="invite_sender_info"/>
                 <input type="hidden" name="form[invite][sender_email]" value="<?= $user_info['email'] ?>" id="invite_sender_email"/>
-                <input type="hidden" name="form[invite][league_id_h]" value="<?= $_POST['form']['invite']['league_id'] ?>" id="invite_league_id" />
+
                 <input type="submit" name="form[invite][do_invite_now]" id="do_invite_now" value="invite" class="btn btn-info" style="display: none;"/>
             </div>
         </form>
@@ -880,10 +901,10 @@ class forms {
 
     public function InviteMembersProcess(array $invitaion) {
         parse_str($invitaion);
-      
+
 
         if (isset($invitaion['do_invite'])) {
-       
+
 
             $this->_formInputs = $invitaion;
             $sender_name = $this->_formInputs['form']['invite']['sender_info'];
@@ -923,6 +944,17 @@ class forms {
                         array_push($errors, "Please enter a valid email address.");
                         $this->_invite_message = $errors;
                         echo 'error#20';
+                    } else {
+                        $this->_flag = 0;
+                        unset($this->_invite_message);
+                    }
+                } else if ($sender_email == $email['email' . $i]) {
+                    $this->_flag = 1;
+                    if ($this->_flag == 1) {
+                        $errors = array();
+                        array_push($errors, "You cannot add your self to your own league.");
+                        $this->_invite_message = $errors;
+                        echo 'error#22';
                     } else {
                         $this->_flag = 0;
                         unset($this->_invite_message);
@@ -989,7 +1021,7 @@ class forms {
                 }
             }
             if ($this->_flag == 200) {
-                echo "success".$this->_formInputs['form']['invite']['ssid'];
+                echo "success" . $this->_formInputs['form']['invite']['ssid'];
             }
         }
     }
