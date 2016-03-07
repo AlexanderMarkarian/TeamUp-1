@@ -1,9 +1,9 @@
 <?php
 // database details
 $servername = "localhost";
-$username = "school_teamup";
-$password = "teamup!@#$%^";
-$dbname = "school_teamup";
+$username = "teamupdb";
+$password = "TeamUp123";
+$dbname = "comp491";
 
 // database create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
