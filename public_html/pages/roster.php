@@ -33,22 +33,22 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg" alt="<?= $info['name'] ?>" class="roster-img img-responsive img-circle" alt="">
-                        <h4 id="1610612747" class="teamInfo">Los Angeles Lakers</h4>
+                        <img id="1610612747" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg" alt="<?= $info['name'] ?>" class="roster-img img-responsive img-circle" name="Los Angeles Lakers">
+                        <h4 class="teamInfo">Los Angeles Lakers</h4>
                         <p class="text-muted">NBA</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/kings.jpg" alt="<?= $info['name'] ?>" class="roster-img img-responsive img-circle" alt="">
-                        <h4 id="1610612758" class="teamInfo">Sacramento Kings</h4>
+                        <img id="1610612758" name="Sacramento Kings" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/kings.jpg" alt="<?= $info['name'] ?>" class="roster-img img-responsive img-circle" alt="">
+                        <h4  class="teamInfo">Sacramento Kings</h4>
                         <p class="text-muted">NBA</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/spurs.jpg"alt="<?= $info['name'] ?>" class="roster-img img-responsive img-circle" alt="">
-                        <h4 id="1610612759" class="teamInfo">San Antonio Spurs</h4>
+                        <img id="1610612759" name="San Antonio Spurs" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/spurs.jpg"alt="<?= $info['name'] ?>" class="roster-img img-responsive img-circle" alt="">
+                        <h4 class="teamInfo">San Antonio Spurs</h4>
                         <p class="text-muted">NBA</p>
                     </div>
                 </div>
@@ -56,22 +56,22 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/clippers.jpg" alt="<?= $info['name'] ?>" class="roster-img img-responsive img-circle" alt="">
-                        <h4 id="1610612746" class="teamInfo">Los Angeles Clippers</h4>
+                        <img id="1610612746" name="Los Angeles Clippers" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/clippers.jpg" alt="<?= $info['name'] ?>" class="roster-img img-responsive img-circle" alt="">
+                        <h4  class="teamInfo">Los Angeles Clippers</h4>
                         <p class="text-muted">NBA</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/warriors.jpg" alt="<?= $info['name'] ?>" class="roster-img img-responsive img-circle" alt="">
-                        <h4 id="1610612744" class="teamInfo">Golden State Warriors</h4>
+                        <img id="1610612744" name="Golden State Warriors" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/warriors.jpg" alt="<?= $info['name'] ?>" class="roster-img img-responsive img-circle" alt="">
+                        <h4 class="teamInfo">Golden State Warriors</h4>
                         <p class="text-muted">NBA</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/bucks.jpg" alt="<?= $info['name'] ?>" class="roster-img img-responsive img-circle" alt="">
-                        <h4 id="1610612749" class="teamInfo">Milwaukee Bucks</h4>
+                        <img id="1610612749" name="Milwaukee Bucks" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/bucks.jpg" alt="<?= $info['name'] ?>" class="roster-img img-responsive img-circle" alt="">
+                        <h4 class="teamInfo">Milwaukee Bucks</h4>
                         <p class="text-muted">NBA</p>
                     </div>
                 </div>
@@ -87,22 +87,22 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/blazers.jpg" class="img-responsive img-circle" alt="">
-                        <h4 id="1610612757" class="teamInfo">Portland TrailBlazers</h4>
+                        <img id="1610612757" name="Portland TrailBlazers" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/blazers.jpg" class="img-responsive img-circle" alt="">
+                        <h4 class="teamInfo">Portland TrailBlazers</h4>
                         <p class="text-muted">NBA</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/suns.jpg" class="img-responsive img-circle" alt="">
-                        <h4 id="1610612756" class="teamInfo">Phoenix Suns</h4>
+                        <img id="1610612756" name="Phoenix Suns" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/suns.jpg" class="img-responsive img-circle" alt="">
+                        <h4 class="teamInfo">Phoenix Suns</h4>
                         <p class="text-muted">NBA</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/timberwolves.jpg" class="img-responsive img-circle" alt="">
-                        <h4 id="1610612750" class="teamInfo">Minnesota Timberwolves</h4>
+                        <img id="1610612750" name="Minnesota Timberwolves" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/timberwolves.jpg" class="img-responsive img-circle" alt="">
+                        <h4 class="teamInfo">Minnesota Timberwolves</h4>
                         <p class="text-muted">NBA</p>
                     </div>
                 </div>

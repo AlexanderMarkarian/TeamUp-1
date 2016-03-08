@@ -268,12 +268,12 @@ th{
 }
 
 
-
-
 @media(min-width: 1200px){
-	.container {
-    	width: 1570px;
+	.main {
+    	width: 95%;
+    	height: 100%;
 	}
 }
+
 
 

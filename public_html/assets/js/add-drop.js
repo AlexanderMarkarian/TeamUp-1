@@ -1,25 +1,6 @@
 $(document).ready(function(){
-
+	
 	/*
-	$("#complete-button").hide();
-
-	var roster_select = document.getElementById('roster-select');
-	roster_select.onchange = function(event){
-		var selected = $('#roster-select :selected').text();
-		$("#drop-name").html(selected);
-		$("#drop-prompt").html("Select a different team");
-		document.getElementById('drop-image').src = "../assets/images/nfl/seahawks.jpg";
-		$("#trade-image").hide();
-		$("#complete-button").show();
-	}
-
-	$('.resize').click(function(){
-		$("#add-drop").show();
-		$('#add-name').html(this.alt);
-		document.getElementById('add-image').src = this.src;
-	});
-*/
-
 	$(".resize").hover(function(){
 		var source = this.src;
 		this.src = "../assets/images/other/add.png";
@@ -45,6 +26,31 @@ $(document).ready(function(){
 			});
 
 		});
+	});
+	*/
+
+	$.ajax({
+		type: "GET",
+		url: "../backup_basketball_data/2016-03-06.json",
+		data:{
+
+		},
+		success:function(data){
+			var string = "";
+			for(var k in data){
+				if(data[k].teamName != "d"){
+					var wins = parseInt(data[k].w);
+					var loses = parseInt(data[k].l);
+					var total = wins + loses;
+					var winPct = (wins / total).toFixed(2);
+					string += "<tr><td><i class='fa fa-star-o star-btn'></i>"+data[k].teamName+"<i class='fa fa-plus add-btn'></i><i class='fa fa-calendar add-btn'></i></td>";
+					string += "<td>NBA</td><td>Free Agent</td><td>"+total+"</td><td>"+wins+"</td><td>"+loses+"</td><td>"+winPct+"</td>";
+				}
+			}
+
+			$("#table-body").append(string);
+			$('#myTable').DataTable();
+		} 
 	});
 
 

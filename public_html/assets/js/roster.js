@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	$("#mainInfo").hide();
 
+/*
 	$(".roster-img").hover(function(){
 		var source = this.src;
 		this.src = "../assets/images/other/bench.png";
@@ -12,24 +13,29 @@ $(document).ready(function(){
 		});
 
 		$('.roster-img').click(function(){
-			$('#add-name').html(this.alt);
-			document.getElementById('add-image').src = source;
-			document.getElementById('overlay').style.visibility = "visible";
-			document.getElementById('add-area').style.visibility = "visible";
+			
+		});
+	});
+*/	
+	$(".teamInfo").click(function(){
+		$('#add-name').html($(this).html());
+		document.getElementById('add-image').src = $(this).name;
+		document.getElementById('overlay').style.visibility = "visible";
+		document.getElementById('add-area').style.visibility = "visible";
 
-			$("#close").click(function(){
-				document.getElementById('overlay').style.visibility = "hidden";
-				document.getElementById('add-area').style.visibility = "hidden";	
-				$('#add-name').html("");
-				document.getElementById('add-image').src = "";
-			});
+		$("#close").click(function(){
+			document.getElementById('overlay').style.visibility = "hidden";
+			document.getElementById('add-area').style.visibility = "hidden";	
+			$('#add-name').html("");
+			document.getElementById('add-image').src = "";
 		});
 	});
 
-	$(".teamInfo").click(function(){
+
+	$(".roster-img").click(function(){
 		document.getElementById('load_screen').style.visibility = "visible";
 		var teamID = this.id;
-		var name = $("#"+teamID).html();
+		var name = this.name;
 		$.ajax({
 			type:"POST",
 			url: "scrapers.php",

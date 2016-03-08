@@ -30,95 +30,19 @@
 
         <div class="row" id="main-content">
             <div class="col-lg-12 grey-area">
-                <ul class="nav nav-tabs" id="myTab">
-                    <li class="active"><a data-toggle="tab" href="#sectionA">NBA</a></li>
-                    <li><a data-toggle="tab" href="#sectionB">NFL</a></li>
-                    <li><a data-toggle="tab" href="#sectionC">MLB</a></li>
-                    <li><a data-toggle="tab" href="#sectionD">NHL</a></li>
-                </ul>
-                <div class="tab-content">
-                    <div id="sectionA" class="tab-pane fade in active">
-                        <?php
-                            foreach ($pg['data'] as $info) {
-                                if ($info['sport'] == "NBA") {
-                                    ?>
-                                    <div class="col-md-4" style="margin-top:15px;">
-                                        <div class="media">
-                                            <div class="pull-left">
-                                                <img src="<?= ABSOLUTH_PATH_IMAGES . $info['logo'] ?>" id="<?= $info['name'] ?>"alt="<?= $info['name'] ?>" class="resize"/>
-                                            </div>
-                                            <div class="media-body">
-                                                <h4 class="media-heading" id="<?= $info['ID'] ?>"><?= $info['name'] ?></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <?php
-                                }
-                            }
-                        ?>
-                    </div>
-                    <div id="sectionB" class="tab-pane fade">
-                        <?php
-                            foreach ($pg['data'] as $info) {
-                                if ($info['sport'] == "NFL") {
-                                    ?>
-                                    <div class="col-md-4" style="margin-top:15px;">
-                                        <div class="media">
-                                            <div class="pull-left">
-                                                <img src="<?= ABSOLUTH_PATH_IMAGES . $info['logo'] ?>" alt="<?= $info['name'] ?>" class="resize"/>
-                                            </div>
-                                            <div class="media-body">
-                                                <h4 class="media-heading" id="<?= $info['ID'] ?>"><?= $info['name'] ?></h4>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                <?php
-                                }
-                            }
-                        ?>
-                    </div>
-                    <div id="sectionC" class="tab-pane fade">
-                        <?php
-                            foreach ($pg['data'] as $info) {
-                                if ($info['sport'] == "MLB") {
-                                    ?>
-                                    <div class="col-md-4" style="margin-top:15px;">
-                                        <div class="media">
-                                            <div class="pull-left">
-                                                <img src="<?= ABSOLUTH_PATH_IMAGES . $info['logo'] ?>" alt="<?= $info['name'] ?>" class="resize"/>
-                                            </div>
-                                            <div class="media-body">
-                                                <h4 class="media-heading" id="<?= $info['ID'] ?>"><?= $info['name'] ?></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <?php
-                                }
-                            }
-                        ?>
-                    </div>
-                    <div id="sectionD" class="tab-pane fade">
-                        <?php
-                            foreach ($pg['data'] as $info) {
-                                if ($info['sport'] == "NHL") {
-                                    ?>
-                                    <div class="col-md-4" style="margin-top:15px;">
-                                        <div class="media">
-                                            <div class="pull-left">
-                                                <img src="<?= ABSOLUTH_PATH_IMAGES . $info['logo'] ?>" alt="<?= $info['name'] ?>" class="resize"/>
-                                            </div>
-                                            <div class="media-body">
-                                                <h4 class="media-heading" id="<?= $info['ID'] ?>"><?= $info['name'] ?></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <?php
-                                }
-                            }
-                        ?>
-                    </div>
-                </div>
+                <table id="myTable" class="table table-bordered dt-responsive nowrap" cellspacing="0">
+                    <thead>
+                        <th>Team</th>
+                        <th>Sport</th>
+                        <th>Owner</th>
+                        <th>GP</th>
+                        <th>Wins</th>
+                        <th>Loses</th>
+                        <th>Win Pct.</th>
+                    </thead>
+                    <tbody id="table-body">                
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
