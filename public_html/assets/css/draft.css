@@ -127,15 +127,25 @@ body{
 
 
 /* MIDDLE MIDDLE SECTION */
-.input-group{
-	width: 200px;
-}
-
-.middle-middle{
-	height: 80px;
+.list{
+	background: #303136;
+	padding: 20px;
 	margin-bottom: 0;
 	max-height: auto;
 }
+
+.fa-plus:hover{
+	cursor: pointer;
+}
+
+.fa-times{
+	color: #e74c3c;
+}
+
+.fa-times:hover{
+	cursor: pointer;
+}
+
 
 
 
@@ -192,6 +202,7 @@ th{
 .top-right{
 	background: #222;
 	color: #8c8c8c;
+	height: auto;
 }
 
 .queue-title{
@@ -203,7 +214,6 @@ th{
 .queue-list{
 	overflow-y: scroll;
 	height: auto;
-	max-height: 100px;
 	font-size: 20px;
 	text-align: left;
 	padding-left: 10px;

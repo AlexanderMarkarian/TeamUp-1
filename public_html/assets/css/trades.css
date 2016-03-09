@@ -5,6 +5,32 @@ body{
   -o-background-size: cover !important;
   background-size: cover !important;
 }
+.table>tbody>tr>td{
+  vertical-align: middle;
+}
+
+th{
+  text-align: center;
+}
+
+.right{
+  text-align: right;
+}
+
+.roster-img{
+  width: 70px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.fa-exchange{
+  font-size: 25px;
+  color: #e74c3c;
+}
+
+.fa-exchange:hover{
+  cursor: pointer;
+}
 
 .nav-tabs{
   background-color:#161616;

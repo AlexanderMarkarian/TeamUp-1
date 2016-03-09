@@ -1,4 +1,7 @@
 <section id="landing">
+    <div id="load_screen" style="visibility:hidden">
+        <img id="image" src="<?= ABSOLUTH_PATH_IMAGES . "other/loading.gif" ?>">
+    </div>
     <div id="home" class="heder">
         <div class="container">
             <div class="header-top">

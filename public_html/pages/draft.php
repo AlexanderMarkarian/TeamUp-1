@@ -94,121 +94,55 @@
             <!-- MIDDLE SECTION -->
             <div class="col-md-8">
                 <div class="top-middle">
-                    <span id="selected-team">Los Angeles Lakers </span> 
+                    <span id="selected-team">Team Name</span> 
                     <span id="selected-league">NBA</span>
 
                     <div class="selected-info">
                         <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg"  id="selected-logo">
                         <span id="selected-stats">
                             <div id="stat-box">
-                                Rank: <span>19</span>
+                                GP: <span id="gp">0</span>
                             </div>                            
                             <div id="stat-box">
-                                Wins: <span>43</span>
+                                Wins: <span id="w">0</span>
                             </div>
                             <div id="stat-box">
-                                Losses: <span>17</span>
+                                Losses: <span id="l">0</span>
                             </div>
                             <div id="stat-box">
-                                Win Pct: <span>0.65</span>
+                                Win Pct: <span id="pct">0</span>
                             </div>
                         </span>
                     </div>
 
                     <div class="selected-buttons">
-                        <button class="btn btn-success btn-lg">Draft Team</button>
-                        <button class="btn btn-info btn-lg">Add to Queue</button>
+                        <button class="btn btn-success btn-lg" id="draft-team">Draft Team</button>
+                        <button class="btn btn-info btn-lg" id="add-queue">Add to Queue</button>
                     </div>
                 </div>
 
-
-                <div class="middle-middle well">
-                    <div style="float:left">
-                        <button class="btn btn-default">All</button>
-                        <button class="btn btn-default">NBA</button>
-                        <button class="btn btn-default">NFL</button>
-                        <button class="btn btn-default">MLB</button>
-                        <button class="btn btn-default">NHL</button>
-                    </div>
-                    <div style="float:right">
-                        <span class="input-group">
-                            <input type="text" class="form-control" placeholder="Search For Team...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <span>Go</span>
-                                </button>
-                            </span>
-                        </span>
-                    </div>
-                </div>
-
-
-                <div class="bottom-middle">
-                    <table class="table table-responsive">
+                <div class="list">
+                    <table id="myTable" class="table table-bordered dt-responsive nowrap" cellspacing="0">
                         <thead>
-                          <tr>
-                            <th>Rank</th>
                             <th>Team</th>
-                            <th>League</th>
-                            <th>2015 Stats</th>
-                            <th>Add</th>
-                          </tr>
+                            <th>Owner</th>
+                            <th>GP</th>
+                            <th>Wins</th>
+                            <th>Loses</th>
+                            <th>Win Pct.</th>
+                            <th></th>
                         </thead>
-                        <tbody>
-                            <?php
-                                $i = 0;
-                                foreach ($pg['data'] as $info) {
-
-                                    if ($info['sport'] == "NBA") {
-                                        $i++;
-                                        echo '<tr><td>' . $i . '</td><td class="selected">' . $info['name'] . '</td><td>NBA</td><td></td><td><button class="btn btn-danger">+</button></td> </tr>';
-                                    }
-                                }
-                            ?>
-                            <?php
-                                $i = 0;
-                                foreach ($pg['data'] as $info) {
-
-                                    if ($info['sport'] == "NFL") {
-                                        $i++;
-                                        echo '<tr><td>' . $i . '</td><td class="selected">' . $info['name'] . '</td><td>NFL</td><td></td><td><button class="btn btn-danger">+</button></td> </tr>';
-                                    }
-                                }
-                            ?>
-                            <?php
-                                $i = 0;
-                                foreach ($pg['data'] as $info) {
-
-                                    if ($info['sport'] == "MLB") {
-                                        $i++;
-                                        echo '<tr><td>' . $i . '</td><td class="selected">' . $info['name'] . '</td><td>MLB</td><td></td><td><button class="btn btn-danger">+</button></td> </tr>';
-                                    }
-                                }
-                            ?>
-                            <?php
-                                $i = 0;
-                                foreach ($pg['data'] as $info) {
-
-                                    if ($info['sport'] == "NHL") {
-                                        $i++;
-                                        echo '<tr><td>' . $i . '</td><td class="selected">' . $info['name'] . '</td><td>NHL</td><td></td><td><button class="btn btn-danger">+</button></td> </tr>';
-                                    }
-                                }
-                            ?>
-                                                   
-                        </tbody>
-                      </table>
+                        <tbody id="table-body"></tbody>
+                    </table>
                 </div>
+                
             </div>
 
             <!-- RIGHT SIDEBAR -->
             <div class="col-md-2">
                 <div class="top-right">
                     <div class="queue-title">Draft Queue</div>
-                    <div class="queue-list">
-                        <div class="queue-item">Golden State Warriors <span class="queue-league"></span></div>
-                        <div class="queue-item">Golden State Warriors <span class="queue-league"></span></div>
-                    </div>
+                    <div class="queue-list"></div>
                 </div>
                 <div class="middle-right">
                     <div class="history-title">Draft History</div>
