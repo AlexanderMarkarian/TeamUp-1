@@ -20,9 +20,11 @@ class loader {
     public $_post_values = array();
     public $_functions;
     public $_head;
-
+    private $_db;
+    private $_mysqli;
     public function __construct() {
-
+        $this->_db = db_connect::getInstance();
+        $this->_mysqli = $this->_db->getConnection();
         echo $this->PageHeader();
         echo $this->LoadPageBody();
         echo $this->LoadPageFooter();
@@ -201,6 +203,7 @@ class loader {
         $function = new functions();
         $command = new commands();
         $forms = new forms();
+        $curl = new Utilities();
         $command->FindAllCommands($_GET['cmd']);
 
         $this->_post_values = $_POST;
@@ -222,9 +225,9 @@ class loader {
          * Do NOT Change fist if statment 
          */
         if (!isset($_GET['cmd']) || $_GET['cmd'] == "") {
-          
+
             if (isset($_GET['lid']) && $function->CheckIfExists($table, $fields, $values, $option, $option2)) {
-                
+
                 $page_content_array[] = array(
                     "id" => "55",
                     "invite_info" => $_GET['lid']
@@ -277,6 +280,10 @@ class loader {
 
                         $delete_leagues = $function->DeleteItems($tables, $fields, $values);
                     }
+
+
+
+
                     $date = $function->getDataQuery("users", "ssid", $_GET['ssid']);
 
                     $data = $function->SetDataQuery();
@@ -288,7 +295,8 @@ class loader {
                         "data" => $data,
                         "forms" => $forms,
                         "functions" => $function,
-                        "invite" => $this->_post_values
+                        "invite" => $this->_post_values,
+                        "curl_data" => $curl
                     );
 
                     break;
