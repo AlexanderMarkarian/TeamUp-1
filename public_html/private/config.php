@@ -13,6 +13,8 @@ define("ABSOLUTH_PATH_CSS", "../assets/css/"); //DONT CHANGE
 define("ABSOLUTH_PATH_IMAGES", "../assets/images/"); //DONT CHANGE
 define("ABSOLUTH_PATH_PAGE", "../pages/"); //DONT CHANGE
 define("ABSOLUTH_PATH_ERRORS", "../errors/"); //DONT CHANGE
+define("ABSOLUTH_PATH_CRON_BKP", "../cronjob/bkp/");
+define("ABSOLUTH_PATH_CLASSES", "../Classes/");
 /*******************************************/
 
 /*TIME RELATED*/

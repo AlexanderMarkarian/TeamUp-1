@@ -17,5 +17,6 @@ function __autoload($class) {
 
     //include "../Classes/" . $class . ".php";
     include $class . ".php";
+    include "../cronjob/" . $class . ".php";
     include "../templates/" . $class . ".php";
 }

@@ -28,6 +28,7 @@ class functions {
     public $_fields = array();
     public $_more_inputs = array();
     public $_num_rows;
+    public $_all_data = array();
 
     /*
      * @ auth: Rostom
@@ -440,7 +441,9 @@ class functions {
     public function InsertAll(array $values, $cmd = NULL) {
 
         if ($cmd != NULL) {
+
             foreach ($values as $v) {
+
                 $table = $v['table0'];
                 $sql = "INSERT INTO `$table`";
             }
@@ -449,6 +452,7 @@ class functions {
                     . ") ";
             $sql .= "VALUES ";
             $sql .="(" . implode(",", $values['values']) . ")";
+
             $result = $this->_mysqli->query($sql);
             if ($result) {
 
@@ -587,13 +591,16 @@ class functions {
                     $result = $this->_mysqli->query($sql);
 
                     while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
-                        $results_array[] = $row;
+                        $this->_all_data[] = $row;
                     }
 
                     break;
             }
-            return $results_array;
         }
+    }
+
+    public function RetGETALL() {
+        return $this->_all_data;
     }
 
     public function AddMoreFields(array $fields, array $number_of_fields, $option = NULL) {
@@ -713,6 +720,47 @@ class functions {
 
     public function SetNumberOfRows() {
         return $this->_num_rows;
+    }
+
+    /*
+     * Delete All (temporary)
+     */
+
+    public function DeleteALL(array $table, $option = "0") {
+        if ($option != "0") {
+            switch ($option) {
+                case "1":
+                    $sql = "DELETE FROM `" . $table['0'] . "`";
+                    $result = $this->_mysqli->query($sql);
+                    if ($result) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                    break;
+            }
+        }
+    }
+
+    public function InsertAPIData(array $values, $options) {
+
+        foreach ($values['tables'] as $table) {
+
+            $sql = "INSERT INTO `" . $table . "` ";
+            $sql .= "("
+                    . implode(",", $values['fields'])
+                    . ") ";
+            $sql .= "VALUES ";
+            foreach ($values['values'] as $data) {
+                $sql .="(" . implode(",", $data) . ")";
+            }
+            $result = $this->_mysqli->query($sql);
+            if($result){
+                return true;
+            }else{
+                return false;
+            }
+        }
     }
 
 }
