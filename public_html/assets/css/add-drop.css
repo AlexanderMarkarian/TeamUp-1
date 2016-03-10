@@ -16,6 +16,7 @@ body{
 .grey-area{
   background: #303136;
   padding: 20px;
+  border-radius: 2%;
 }
 
 #myTable{

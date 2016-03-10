@@ -19,31 +19,24 @@ body{
   cursor: pointer;
 }
 
-table {
-    border: 2px solid black;
-    border-collapse: collapse;
-    font-size: 20px;
-    border-collapse: collapse;
-    width: 100%;
-    overflow-x: auto;
-    margin-top: 30px;
-}
-th, td {
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-    padding: 8px;
-    font-size: 20px;
-    color: black;
-}
-tr {
-    background-color: #f2f2f2;
-    color: black;
+.grey-area{
+  background: #303136;
+  padding: 20px;
+  border-radius: 2%;
 }
 
-th {
-    background-color: #303136;
-    color: white;
+.table>tbody>tr>td{
+  vertical-align: middle;
 }
+
+th{
+  text-align: center;
+}
+
+.right{
+  text-align: right;
+}
+
 
 .cap{
   color: white;
@@ -51,69 +44,26 @@ th {
 }
 
 .heading{
-  text-align: center;
+  text-align: left;
   color: white;
-  font-size: 40px;
+  font-size: 30px;
 }
-
-
-
-
 
 .roster-img{
-	width: 210px;
-	height: 170px;
+  width: 70px;
+  height: 60px;
+  border-radius: 50%;
 }
 
-.roster-img:hover{
-	cursor: pointer;
+.fa-arrows{
+  font-size: 25px;
+  color: #e74c3c;
 }
 
-#add-image{
-  height: 140px;
-  width: 140px;
-  border-radius: 15%;
-  margin-top: 15px;
-  text-align: center;
-}
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 10;
-  background-color: rgba(0,0,0,0.8);
-}
-
-#close{
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 40px;
-  width: 40px;
-}
-
-#close:hover{
+.fa-arrows:hover{
   cursor: pointer;
 }
 
-#add-area {
-    width: 700px;
-    height:250px;
-    line-height: 200px;
-    position: fixed;
-    top: 50%; 
-    left: 35%;
-    margin-top: -100px;
-    margin-left: -100px;
-    background-color: #303136;
-    color: #e74c3c;
-    border-radius: 5px;
-    text-align: center;
-    z-index: 11; 
-}
 
-h4:hover{
-  cursor: pointer;
-}
+
+

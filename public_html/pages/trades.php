@@ -21,219 +21,418 @@
                     </ul>
                     <div class="tab-content">
                         <div id="sectionA" class="tab-pane fade in active">
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/lakers.jpg" id="lakers"class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Los Angeles Lakers</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/lakers.jpg" id="lakers"class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Los Angeles Lakers</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/lakers.jpg" id="lakers"class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Los Angeles Lakers</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/lakers.jpg" id="lakers"class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Los Angeles Lakers</h4>
-                                    </div>
-                                </div>
-                            </div>
+                            <table class="table">
+                                <thead>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th class="right">Overall</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th class="right">This Week</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </thead>
+                                <thead>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Teams</th>
+                                    <th>Next Opp</th>
+                                    <th>GP</th>
+                                    <th>Wins</th>
+                                    <th>Loses</th>
+                                    <th>Win Pct</th>
+                                    <th>GP</th>
+                                    <th>Wins</th>
+                                    <th>Loses</th>
+                                    <th>Win Pct</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fa fa-exchange"></i></td>
+                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg"></td>
+                                        <td>Los Angeles Lakers</td>
+                                        <td>@Min</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-exchange"></i></td>
+                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/clippers.jpg"></td>
+                                        <td>Los Angeles Clippers</td>
+                                        <td>@Min</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-exchange"></i></td>
+                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/spurs.jpg"></td>
+                                        <td>San Antonio Spurs</td>
+                                        <td>@Min</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-exchange"></i></td>
+                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/76ers.jpg"></td>
+                                        <td>Philadelphia 76ers</td>
+                                        <td>@Min</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                    </tr>                                                                        
+                                </tbody>
+                            </table>
                         </div>
 
 
                         <div id="sectionB" class="tab-pane fade">
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/grizzlies.jpg" class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Memphis Grizzlies</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/grizzlies.jpg" class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Memphis Grizzlies</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/grizzlies.jpg" class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Memphis Grizzlies</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/grizzlies.jpg" class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Memphis Grizzlies</h4>
-                                    </div>
-                                </div>
-                            </div>
+                            <table class="table">
+                                <thead>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th class="right">Overall</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th class="right">This Week</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </thead>
+                                <thead>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Teams</th>
+                                    <th>Next Opp</th>
+                                    <th>GP</th>
+                                    <th>Wins</th>
+                                    <th>Loses</th>
+                                    <th>Win Pct</th>
+                                    <th>GP</th>
+                                    <th>Wins</th>
+                                    <th>Loses</th>
+                                    <th>Win Pct</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fa fa-exchange"></i></td>
+                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/warriors.jpg"></td>
+                                        <td>Golden State Warriors</td>
+                                        <td>@Min</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-exchange"></i></td>
+                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/suns.jpg"></td>
+                                        <td>Phoenix Suns</td>
+                                        <td>@Min</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-exchange"></i></td>
+                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/rockets.jpg"></td>
+                                        <td>Houston Rockets</td>
+                                        <td>@Min</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                    </tr>                                                                       
+                                </tbody>
+                            </table>
 
                         </div>
+
                         <div id="sectionC" class="tab-pane fade">
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/pistons.jpg" class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Detroit Pistons</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/pistons.jpg" class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Detroit Pistons</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/pistons.jpg" class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Detroit Pistons</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/pistons.jpg" class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Detroit Pistons</h4>
-                                    </div>
-                                </div>
-                            </div>
+                           <table class="table">
+                                <thead>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th class="right">Overall</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th class="right">This Week</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </thead>
+                                <thead>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Teams</th>
+                                    <th>Next Opp</th>
+                                    <th>GP</th>
+                                    <th>Wins</th>
+                                    <th>Loses</th>
+                                    <th>Win Pct</th>
+                                    <th>GP</th>
+                                    <th>Wins</th>
+                                    <th>Loses</th>
+                                    <th>Win Pct</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fa fa-exchange"></i></td>
+                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg"></td>
+                                        <td>Los Angeles Lakers</td>
+                                        <td>@Min</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-exchange"></i></td>
+                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/clippers.jpg"></td>
+                                        <td>Los Angeles Clippers</td>
+                                        <td>@Min</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-exchange"></i></td>
+                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/spurs.jpg"></td>
+                                        <td>San Antonio Spurs</td>
+                                        <td>@Min</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-exchange"></i></td>
+                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/76ers.jpg"></td>
+                                        <td>Philadelphia 76ers</td>
+                                        <td>@Min</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                    </tr>                                                                        
+                                </tbody>
+                            </table>
 
                         </div>
                         <div id="sectionD" class="tab-pane fade">
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/clippers.jpg" class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Los Angeles Clippers</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/clippers.jpg" class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Los Angeles Clippers</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/clippers.jpg" class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Los Angeles Clippers</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/clippers.jpg" class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Los Angeles Clippers</h4>
-                                    </div>
-                                </div>
-                            </div>
+                           <table class="table">
+                                <thead>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th class="right">Overall</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th class="right">This Week</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </thead>
+                                <thead>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Teams</th>
+                                    <th>Next Opp</th>
+                                    <th>GP</th>
+                                    <th>Wins</th>
+                                    <th>Loses</th>
+                                    <th>Win Pct</th>
+                                    <th>GP</th>
+                                    <th>Wins</th>
+                                    <th>Loses</th>
+                                    <th>Win Pct</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fa fa-exchange"></i></td>
+                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/warriors.jpg"></td>
+                                        <td>Golden State Warriors</td>
+                                        <td>@Min</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-exchange"></i></td>
+                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/suns.jpg"></td>
+                                        <td>Phoenix Suns</td>
+                                        <td>@Min</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-exchange"></i></td>
+                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/rockets.jpg"></td>
+                                        <td>Houston Rockets</td>
+                                        <td>@Min</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                    </tr>                                                                       
+                                </tbody>
+                            </table>
 
                         </div>
                         <div id="sectionE" class="tab-pane fade">
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/thunder.jpg" class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Oklahoma City Thunder</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/thunder.jpg" class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Oklahoma City Thunder</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/thunder.jpg" class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Oklahoma City Thunder</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/thunder.jpg" class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Oklahoma City Thunder</h4>
-                                    </div>
-                                </div>
-                            </div>
+                            <table class="table">
+                                <thead>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th class="right">Overall</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th class="right">This Week</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </thead>
+                                <thead>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Teams</th>
+                                    <th>Next Opp</th>
+                                    <th>GP</th>
+                                    <th>Wins</th>
+                                    <th>Loses</th>
+                                    <th>Win Pct</th>
+                                    <th>GP</th>
+                                    <th>Wins</th>
+                                    <th>Loses</th>
+                                    <th>Win Pct</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fa fa-exchange"></i></td>
+                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/warriors.jpg"></td>
+                                        <td>Golden State Warriors</td>
+                                        <td>@Min</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-exchange"></i></td>
+                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/suns.jpg"></td>
+                                        <td>Phoenix Suns</td>
+                                        <td>@Min</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-exchange"></i></td>
+                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/rockets.jpg"></td>
+                                        <td>Houston Rockets</td>
+                                        <td>@Min</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                        <td>43</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>0.90</td>
+                                    </tr>                                                                       
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
