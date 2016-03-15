@@ -12,11 +12,14 @@
  * @author rostom
  */
 require_once '../private/config.php';
+spl_autoload_register(function ($class) {
 
-function __autoload($class) {
+    if (file_exists($class . '.php') || file_exists(ABSOLUTH_PATH_TEMPLATES . $class . ".php")) {
+        include $class . '.php';
+        include ABSOLUTH_PATH_TEMPLATES . $class . ".php";
+        return true;
+    }
+    return false;
+//    throw new Exception("Unable to load $class.");
+});
 
-    //include "../Classes/" . $class . ".php";
-    include $class . ".php";
-    include "../cronjob/" . $class . ".php";
-    include "../templates/" . $class . ".php";
-}

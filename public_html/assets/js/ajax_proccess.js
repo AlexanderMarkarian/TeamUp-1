@@ -13,9 +13,7 @@ $(function () {
         var password = $("input#password_login").val();
         var lid = $("input#lid1").val();
         var cmd = $("input#cmd_login").val();
-        console.log(password);
-        console.log(email);
-        console.log(lid);
+
 
         if (email == "") {
             $('#small-dialog3').shake();
@@ -35,7 +33,8 @@ $(function () {
             data: 'email=' + email + '&password=' + password + '&login=true' + '&do_login=Login' + "&lid=" + lid, // the data that will be sent to php processor
             dataType: "html", // type of returned data
             success: function (data) {
-                console.log(data)// if ajax function results success
+                console.log(data);// if ajax function results success
+                //throw new Error("Something went badly wrong!");
                 if (data === "") { // if the returned data is empty means false
 
                     $('#small-dialog3').shake();
@@ -70,7 +69,8 @@ $(function () {
                     //var timer = setTimeout(function () {
                     //    document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
                     //}, 1000);
-
+                    console.log(data);// if ajax function results success
+                    //throw new Error("Something went badly wrong!");
                     $('#show').html("<div class='alert alert-success' role='alert' id='errors'>verifying you account.<img src='../assets/images/other/spinner6.gif'/> </div>");// print success message   
                     //document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
                     window.setTimeout(function () {
@@ -88,9 +88,12 @@ $(function () {
                         // Move to a new location or you can do something else
                     }, 3000);
                     window.setTimeout(function () {
+                        console.log(data);// if ajax function results success
+                        console.log(cmd);
+                        //  throw new Error("Something went badly wrong!");
                         document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
-
-                    }, 3200);
+                        console.log(data);
+                    }, 3300);
 
 
 
@@ -185,9 +188,12 @@ $(function () {
                         // Move to a new location or you can do something else
                     }, 2500);
                     window.setTimeout(function () {
+                        console.log(data);// if ajax function results success
+                        console.log(cmd);
+                     //throw new Error("Something went badly wrong!");
                         document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
 
-                    }, 2500);
+                    }, 3000);
                 }
             }
         });

@@ -329,7 +329,7 @@ class forms {
                  * IF Link ID is set Update status to One
                  */
                 if ($input_values['lid'] != "") {
-
+                    unset($this->_flag);
                     $table = array("0" => "temp_invite");
                     $field = array("0" => "status", "1" => "linkid");
                     $value = array("0" => "1", "1" => $input_values['lid']);
@@ -346,15 +346,18 @@ class forms {
                 $fields['password'] = "password";
                 $fields['ssid'] = "ssid";
                 $query = $helper_functions->InsertNewUser("users", $fields, $input_values);
+                 $_SESSION['isLoggedin'] = $helper_functions->UIDGEN(date("Ymd"));
                 if ($query) {
                     if ($this->_flag == 999) {
                         echo "inv" . $input_values['ssid'];
                         $cmd = "invited";
                     } else {
                         echo $input_values['ssid'];
+                        
+                    
                         $cmd = "profile";
                     }
-                    $_SESSION['isLoggedin'] = $helper_functions->UIDGEN(date("Ymd"));
+                   
                     header("location: loader.php?cmd=" . $cmd . "&ssid=" . $input_values['ssid'] . "&lid=" . $input_valuesp['lid']);
                 }
             }
@@ -420,7 +423,7 @@ class forms {
                      * IF Link ID is set Update status to One
                      */
                     if ($input_values['lid'] != "") {
-
+                        unset($this->_flag);
                         $table = array("0" => "temp_invite");
                         $field = array("0" => "status", "1" => "linkid");
                         $value = array("0" => "1", "1" => $input_values['lid']);
@@ -437,12 +440,19 @@ class forms {
                     $this->_hidden_key = $_SESSION['isLoggedin'];
                     $_POST['form']['login']['sec_id'] = $this->_hidden_key;
                     array_push($_POST, $_POST['form']['login']['sec_id']);
+                    //var_dump($input_values);
+                    //var_dump($_POST);
+                    //var_dump($this->_flag);
+                    
+                    
                     if ($this->_flag == 999) {
+
                         echo "inv" . $input_values['ssid'];
                         $cmd = "invited";
                     } else {
                         echo $input_values['ssid'];
                         $cmd = "profile";
+                        die();
                     }
 
                     header("location: loader.php?cmd=profile&ssid=" . $input_values['ssid'] . "&s=" . $_SESSION['isLoggedin']);

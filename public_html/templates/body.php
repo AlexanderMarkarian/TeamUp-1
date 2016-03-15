@@ -122,6 +122,7 @@ class body {
                     echo $forms->LoginForm();
                     echo '</div>';
                     echo '</section>';
+                    
 
                     break;
             }

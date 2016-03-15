@@ -1,14 +1,17 @@
 <?php
 
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
 /**
- * Description of Utilities
+ * Description of cron
  *
  * @author rostom
- * This is utility that will help the Curl and cron process 
- * use this functions to call for curl 
- * Cron Job will run @11:21 PM Every Day 2123**** (cron code) For Basketball API
  */
-class Utilities {
+class cron {
 
     private $_mysqli;
     private $_db;
@@ -95,12 +98,12 @@ class Utilities {
 
     public function DoBackUpOldData(array $data, $newFile, $file_extension) {
 
-        $filename = ABSOLUTH_PATH_CRON_BKP . $newFile . "_" . date('Ymd') . ".".$file_extension;
+        $filename = ABSOLUTH_PATH_CRON_BKP . $newFile . "_" . date('Ymd') . "." . $file_extension;
         $json_data = json_encode($data);
         $linecount = 0;
         if (file_exists($filename)) {
 
-            $filename = ABSOLUTH_PATH_CRON_BKP . $newFile . "_" . date('Ymd') . ".".$file_extension;
+            $filename = ABSOLUTH_PATH_CRON_BKP . $newFile . "_" . date('Ymd') . "." . $file_extension;
         }
         $backup_data = $filename;
         $log = fopen($backup_data, 'w') or die("Cannot open file:" . $backup_data);

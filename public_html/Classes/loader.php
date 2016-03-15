@@ -203,7 +203,7 @@ class loader {
         $function = new functions();
         $command = new commands();
         $forms = new forms();
-        $curl = new Utilities();
+        $curl = new cron();
         $command->FindAllCommands($_GET['cmd']);
 
         $this->_post_values = $_POST;
@@ -241,6 +241,7 @@ class loader {
                     "login" => $this->_post_values,
                 );
             }
+   
             /*
              * Profile
              * id @ 1
@@ -276,7 +277,7 @@ class loader {
                         $values = array(
                             "0" => $_GET['id']
                         );
-                        var_dump($values);
+                       // var_dump($values);
 
                         $delete_leagues = $function->DeleteItems($tables, $fields, $values);
                     }
@@ -284,7 +285,7 @@ class loader {
 
 
 
-                    $date = $function->getDataQuery("users", "ssid", $_GET['ssid']);
+                    $data = $function->getDataQuery("users", "ssid", $_GET['ssid']);
 
                     $data = $function->SetDataQuery();
 
@@ -296,7 +297,7 @@ class loader {
                         "forms" => $forms,
                         "functions" => $function,
                         "invite" => $this->_post_values,
-                        "curl_data" => $curl
+                       
                     );
 
                     break;

@@ -10,6 +10,7 @@
  *
  * @author rostom
  */
+
 class functions {
 
     //put your code here
@@ -17,7 +18,7 @@ class functions {
     public $_messages = array();
     private $_db;
     private $_mysqli;
-    private $_results;
+    public $_results;
     public $_data = array();
     public $_data_row = array();
     public $_pooldata = array();
@@ -587,7 +588,6 @@ class functions {
             switch ($option) {
                 case "1":
                     $sql = "SELECT * FROM `" . $tables['0'] . "`";
-
                     $result = $this->_mysqli->query($sql);
 
                     while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
@@ -755,9 +755,9 @@ class functions {
                 $sql .="(" . implode(",", $data) . ")";
             }
             $result = $this->_mysqli->query($sql);
-            if($result){
+            if ($result) {
                 return true;
-            }else{
+            } else {
                 return false;
             }
         }
