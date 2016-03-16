@@ -40,6 +40,9 @@ table {
 
 .teamname{
   text-align: left;
+   width:15%;
+    margin:auto;
+    border-collapse:collapse;
 }
 
 th, td {

@@ -49,246 +49,100 @@
 	<caption class = "cap"><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/11.png" ?>" id="teamlogo" height='33' width='33'> Supreme Team</caption>
 	      <tr>
 	      <th>Team</th>
+	      <th>Sport</th>
 	      <th>Fan Points</th>
+	      <th>GP</th>
 	      <th>W</th>	
 	<th>L</th>	
 	<th>W%</th>	
-	<th>MIN</th>
-	<th>FGM</th>	
-	<th>FGA</th>	
-	<th>FG%</th>	
-	<th>3PM</th>	
-	<th>3PA</th>	
-	<th>3P%</th>	
-	<th>FTM</th>	
-	<th>FTA</th>	
-	<th>FT%</th>	
-	<th>OREB</th>	
-	<th>DREB</th>	
-	<th>REB</th>	
-	<th>AST</th>	
-	<th>TOV</th>	
-	<th>STL</th>	
-	<th>BLK</th>
+	
 
 	    </tr>
 	    <tr>
-	      <td class = "teamname">Lakers</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/lakers.jpg" ?>" id="teamlogo" height='33' width='33'> Lakers
+	      </td>
+	      <th>NBA</th>
 	      <th>62</th>
 	      <th>12</th>	
 	<th>50</th>	
 	<th>19.4</th>	
 	<th>48.1</th>	
-	<th>35.2</th>		
-	<th>84.6</th>		
-	<th>41.6</th>		
-	<th>8.1</th>		
-	<th>24.9</th>		
-	<th>32.4</th>		
-	<th>19.4</th>		
-	<th>25.2</th>		
-	<th>77.0</th>		
-	<th>10.6</th>		
-	<th>32.1</th>		
-	<th>42.8</th>		
-	<th>18.1</th>		
-	<th>13.7</th>		
-	<th>7.1</th>		
-	<th>4.3</th>	
 	    </tr>
 	    <tr>
-	      <td class = "teamname">Kings</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/kings.jpg" ?>" id="teamlogo" height='33' width='33'> Kings</td>
+	            <th>NBA</th>
 	            <th>62</th>
 	      <th>12</th>	
 	<th>50</th>	
 	<th>19.4</th>	
 	<th>48.1</th>	
-	<th>35.2</th>		
-	<th>84.6</th>		
-	<th>41.6</th>		
-	<th>8.1</th>		
-	<th>24.9</th>		
-	<th>32.4</th>		
-	<th>19.4</th>		
-	<th>25.2</th>		
-	<th>77.0</th>		
-	<th>10.6</th>		
-	<th>32.1</th>		
-	<th>42.8</th>		
-	<th>18.1</th>		
-	<th>13.7</th>		
-	<th>7.1</th>		
-	<th>4.3</th>
+	
 	    </tr>
 	    <tr>
-	      <td class = "teamname">Spurs</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/spurs.jpg" ?>" id="teamlogo" height='33' width='33'> Spurs</td>
+	            <th>NBA</th>
 	            <th>62</th>
 	      <th>12</th>	
 	<th>50</th>	
 	<th>19.4</th>	
 	<th>48.1</th>	
-	<th>35.2</th>		
-	<th>84.6</th>		
-	<th>41.6</th>		
-	<th>8.1</th>		
-	<th>24.9</th>		
-	<th>32.4</th>		
-	<th>19.4</th>		
-	<th>25.2</th>		
-	<th>77.0</th>		
-	<th>10.6</th>		
-	<th>32.1</th>		
-	<th>42.8</th>		
-	<th>18.1</th>		
-	<th>13.7</th>		
-	<th>7.1</th>		
-	<th>4.3</th>
+
 	    </tr>
 	    <tr>
-	      <td class = "teamname">Clippers</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/clippers.jpg" ?>" id="teamlogo" height='33' width='33'> Clippers</td>
+	            <th>NBA</th>
 	            <th>62</th>
 	      <th>12</th>	
 	<th>50</th>	
 	<th>19.4</th>	
 	<th>48.1</th>	
-	<th>35.2</th>		
-	<th>84.6</th>		
-	<th>41.6</th>		
-	<th>8.1</th>		
-	<th>24.9</th>		
-	<th>32.4</th>		
-	<th>19.4</th>		
-	<th>25.2</th>		
-	<th>77.0</th>		
-	<th>10.6</th>		
-	<th>32.1</th>		
-	<th>42.8</th>		
-	<th>18.1</th>		
-	<th>13.7</th>		
-	<th>7.1</th>		
-	<th>4.3</th>
 	    </tr>
 	    <tr>
-	      <td class = "teamname">Warriors</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/warriors.jpg" ?>" id="teamlogo" height='33' width='33'> Warriors</td>
+	     <th>NBA</th>
 	      <th>59</th>		
 	<th>54</th>		
 	<th>5</th>		
 	<th>91.5</th>		
-	<th>48.5</th>		
-	<th>42.6</th>		
-	<th>87.6</th>		
-	<th>48.7</th>		
-	<th>12.9</th>		
-	<th>30.8</th>		
-	<th>41.9</th>		
-	<th>17.2</th>		
-	<th>22.8</th>		
-	<th>75.7</th>		
-	<th>10.3</th>		
-	<th>36.1</th>		
-	<th>46.4</th>		
-	<th>29.1</th>		
-	<th>15.3</th>		
-	<th>8.5</th>		
-	<th>6.0</th>		
+	<th>48.5</th>			
 
 	    </tr>
 	    <tr>
-	      <td class = "teamname">Bucks</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/bucks.jpg" ?>" id="teamlogo" height='33' width='33'> Bucks</td>
+	          <th>NBA</th>
 	           <th>62</th>
 	      <th>12</th>	
 	<th>50</th>	
 	<th>19.4</th>	
 	<th>48.1</th>	
-	<th>35.2</th>		
-	<th>84.6</th>		
-	<th>41.6</th>		
-	<th>8.1</th>		
-	<th>24.9</th>		
-	<th>32.4</th>		
-	<th>19.4</th>		
-	<th>25.2</th>		
-	<th>77.0</th>		
-	<th>10.6</th>		
-	<th>32.1</th>		
-	<th>42.8</th>		
-	<th>18.1</th>		
-	<th>13.7</th>		
-	<th>7.1</th>		
-	<th>4.3</th>
-
 	    </tr>
 	    <tr>
-	      <td class = "teamname">TrailBlazers</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/blazers.jpg" ?>" id="teamlogo" height='33' width='33'> TrailBlazers</td>
+	           <th>NBA</th>
 	            <th>62</th>
 	      <th>12</th>	
 	<th>50</th>	
 	<th>19.4</th>	
 	<th>48.1</th>	
-	<th>35.2</th>		
-	<th>84.6</th>		
-	<th>41.6</th>		
-	<th>8.1</th>		
-	<th>24.9</th>		
-	<th>32.4</th>		
-	<th>19.4</th>		
-	<th>25.2</th>		
-	<th>77.0</th>		
-	<th>10.6</th>		
-	<th>32.1</th>		
-	<th>42.8</th>		
-	<th>18.1</th>		
-	<th>13.7</th>		
-	<th>7.1</th>		
-	<th>4.3</th>
 	    </tr>
 	    <tr>
-	      <td class = "teamname">Suns</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/suns.jpg" ?>" id="teamlogo" height='33' width='33'> Suns</td>
+	           <th>NBA</th>
 	           <th>62</th>
 	      <th>12</th>	
 	<th>50</th>	
 	<th>19.4</th>	
 	<th>48.1</th>	
-	<th>35.2</th>		
-	<th>84.6</th>		
-	<th>41.6</th>		
-	<th>8.1</th>		
-	<th>24.9</th>		
-	<th>32.4</th>		
-	<th>19.4</th>		
-	<th>25.2</th>		
-	<th>77.0</th>		
-	<th>10.6</th>		
-	<th>32.1</th>		
-	<th>42.8</th>		
-	<th>18.1</th>		
-	<th>13.7</th>		
-	<th>7.1</th>		
-	<th>4.3</th>
 	    </tr>
 	    <tr>
-	      <td class = "teamname">Bulls</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/bulls.jpg" ?>" id="teamlogo" height='33' width='33'> Bulls</td>
+	        <th>NBA</th>
 	         <th>62</th>
 	      <th>12</th>	
 	<th>50</th>	
 	<th>19.4</th>	
 	<th>48.1</th>	
-	<th>35.2</th>		
-	<th>84.6</th>		
-	<th>41.6</th>		
-	<th>8.1</th>		
-	<th>24.9</th>		
-	<th>32.4</th>		
-	<th>19.4</th>		
-	<th>25.2</th>		
-	<th>77.0</th>		
-	<th>10.6</th>		
-	<th>32.1</th>		
-	<th>42.8</th>		
-	<th>18.1</th>		
-	<th>13.7</th>		
-	<th>7.1</th>		
-	<th>4.3</th>
+
 	    </tr>
 	  </table>
 
@@ -297,246 +151,103 @@
 	<caption class = "cap"><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/drose.jpg" ?>" id="teamlogo" height='33' width='33'> Ferrari Squad</caption>
 	     <tr>
 	      <th>Team</th>
+	      <th>Sport</th>
 	      <th>Fan Points</th>
+	      <th>GP</th>
 	      <th>W</th>	
 	<th>L</th>	
 	<th>W%</th>	
-	<th>MIN</th>
-	<th>FGM</th>	
-	<th>FGA</th>	
-	<th>FG%</th>	
-	<th>3PM</th>	
-	<th>3PA</th>	
-	<th>3P%</th>	
-	<th>FTM</th>	
-	<th>FTA</th>	
-	<th>FT%</th>	
-	<th>OREB</th>	
-	<th>DREB</th>	
-	<th>REB</th>	
-	<th>AST</th>	
-	<th>TOV</th>	
-	<th>STL</th>	
-	<th>BLK</th>
 
 	    </tr>
 	    <tr>
-	      <td class = "teamname">Heat</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/heat.jpg" ?>" id="teamlogo" height='33' width='33'> Heat</td>
+	      <th>NBA</th>
 	      <th>62</th>
 	      <th>12</th>	
 	<th>50</th>	
 	<th>19.4</th>	
-	<th>48.1</th>	
-	<th>35.2</th>		
-	<th>84.6</th>		
-	<th>41.6</th>		
-	<th>8.1</th>		
-	<th>24.9</th>		
-	<th>32.4</th>		
-	<th>19.4</th>		
-	<th>25.2</th>		
-	<th>77.0</th>		
-	<th>10.6</th>		
-	<th>32.1</th>		
-	<th>42.8</th>		
-	<th>18.1</th>		
-	<th>13.7</th>		
-	<th>7.1</th>		
-	<th>4.3</th>	
+	<th>48.1</th>		
 	    </tr>
 	    <tr>
-	      <td class = "teamname">Cavaliers</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/cavaliers.jpg" ?>" id="teamlogo" height='33' width='33'> Cavaliers</td>
+	            <th>NBA</th>
 	            <th>62</th>
 	      <th>12</th>	
 	<th>50</th>	
 	<th>19.4</th>	
 	<th>48.1</th>	
-	<th>35.2</th>		
-	<th>84.6</th>		
-	<th>41.6</th>		
-	<th>8.1</th>		
-	<th>24.9</th>		
-	<th>32.4</th>		
-	<th>19.4</th>		
-	<th>25.2</th>		
-	<th>77.0</th>		
-	<th>10.6</th>		
-	<th>32.1</th>		
-	<th>42.8</th>		
-	<th>18.1</th>		
-	<th>13.7</th>		
-	<th>7.1</th>		
-	<th>4.3</th>
 	    </tr>
 	    <tr>
-	      <td class = "teamname">76ers</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/76ers.jpg" ?>" id="teamlogo" height='33' width='33'> 76ers</td>
+	            <th>NBA</th>
 	            <th>62</th>
 	      <th>12</th>	
 	<th>50</th>	
 	<th>19.4</th>	
 	<th>48.1</th>	
-	<th>35.2</th>		
-	<th>84.6</th>		
-	<th>41.6</th>		
-	<th>8.1</th>		
-	<th>24.9</th>		
-	<th>32.4</th>		
-	<th>19.4</th>		
-	<th>25.2</th>		
-	<th>77.0</th>		
-	<th>10.6</th>		
-	<th>32.1</th>		
-	<th>42.8</th>		
-	<th>18.1</th>		
-	<th>13.7</th>		
-	<th>7.1</th>		
-	<th>4.3</th>
+
 	    </tr>
 	    <tr>
-	      <td class = "teamname">Knicks</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/knicks.jpg" ?>" id="teamlogo" height='33' width='33'> Knicks</td>
+	            <th>NBA</th>
 	            <th>62</th>
 	      <th>12</th>	
 	<th>50</th>	
 	<th>19.4</th>	
 	<th>48.1</th>	
-	<th>35.2</th>		
-	<th>84.6</th>		
-	<th>41.6</th>		
-	<th>8.1</th>		
-	<th>24.9</th>		
-	<th>32.4</th>		
-	<th>19.4</th>		
-	<th>25.2</th>		
-	<th>77.0</th>		
-	<th>10.6</th>		
-	<th>32.1</th>		
-	<th>42.8</th>		
-	<th>18.1</th>		
-	<th>13.7</th>		
-	<th>7.1</th>		
-	<th>4.3</th>
+
 	    </tr>
 	    <tr>
-	      <td class = "teamname">Wizards</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/wizards.jpg" ?>" id="teamlogo" height='33' width='33'> Wizards</td>
+	      <th>NBA</th>
 	      <th>59</th>		
 	<th>54</th>		
 	<th>5</th>		
 	<th>91.5</th>		
 	<th>48.5</th>		
-	<th>42.6</th>		
-	<th>87.6</th>		
-	<th>48.7</th>		
-	<th>12.9</th>		
-	<th>30.8</th>		
-	<th>41.9</th>		
-	<th>17.2</th>		
-	<th>22.8</th>		
-	<th>75.7</th>		
-	<th>10.3</th>		
-	<th>36.1</th>		
-	<th>46.4</th>		
-	<th>29.1</th>		
-	<th>15.3</th>		
-	<th>8.5</th>		
-	<th>6.0</th>		
+		
 
 	    </tr>
 	    <tr>
-	      <td class = "teamname">Magic</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/magic.jpg" ?>" id="teamlogo" height='33' width='33'> Magic</td>
+	           <th>NBA</th>
 	           <th>62</th>
 	      <th>12</th>	
 	<th>50</th>	
 	<th>19.4</th>	
 	<th>48.1</th>	
-	<th>35.2</th>		
-	<th>84.6</th>		
-	<th>41.6</th>		
-	<th>8.1</th>		
-	<th>24.9</th>		
-	<th>32.4</th>		
-	<th>19.4</th>		
-	<th>25.2</th>		
-	<th>77.0</th>		
-	<th>10.6</th>		
-	<th>32.1</th>		
-	<th>42.8</th>		
-	<th>18.1</th>		
-	<th>13.7</th>		
-	<th>7.1</th>		
-	<th>4.3</th>
+
 
 	    </tr>
 	    <tr>
-	      <td class = "teamname">Mavericks</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/mavericks.jpg" ?>" id="teamlogo" height='33' width='33'> Mavericks</td>
+	            <th>NBA</th>
 	            <th>62</th>
 	      <th>12</th>	
 	<th>50</th>	
 	<th>19.4</th>	
 	<th>48.1</th>	
-	<th>35.2</th>		
-	<th>84.6</th>		
-	<th>41.6</th>		
-	<th>8.1</th>		
-	<th>24.9</th>		
-	<th>32.4</th>		
-	<th>19.4</th>		
-	<th>25.2</th>		
-	<th>77.0</th>		
-	<th>10.6</th>		
-	<th>32.1</th>		
-	<th>42.8</th>		
-	<th>18.1</th>		
-	<th>13.7</th>		
-	<th>7.1</th>		
-	<th>4.3</th>
+
 	    </tr>
 	    <tr>
-	      <td class = "teamname">Celtics</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/celtics.jpg" ?>" id="teamlogo" height='33' width='33'> Celtics</td>
+	          <th>NBA</th>
 	           <th>62</th>
 	      <th>12</th>	
 	<th>50</th>	
 	<th>19.4</th>	
 	<th>48.1</th>	
-	<th>35.2</th>		
-	<th>84.6</th>		
-	<th>41.6</th>		
-	<th>8.1</th>		
-	<th>24.9</th>		
-	<th>32.4</th>		
-	<th>19.4</th>		
-	<th>25.2</th>		
-	<th>77.0</th>		
-	<th>10.6</th>		
-	<th>32.1</th>		
-	<th>42.8</th>		
-	<th>18.1</th>		
-	<th>13.7</th>		
-	<th>7.1</th>		
-	<th>4.3</th>
+
 	    </tr>
 	    <tr>
-	      <td class = "teamname">Thunder</td>
+	      <td class = "teamname"><img src="<?= ABSOLUTH_PATH_IMAGES ."nba/thunder.jpg" ?>" id="teamlogo" height='33' width='33'> Thunder</td>
+	        <th>NBA</th>
 	         <th>62</th>
 	      <th>12</th>	
 	<th>50</th>	
 	<th>19.4</th>	
 	<th>48.1</th>	
-	<th>35.2</th>		
-	<th>84.6</th>		
-	<th>41.6</th>		
-	<th>8.1</th>		
-	<th>24.9</th>		
-	<th>32.4</th>		
-	<th>19.4</th>		
-	<th>25.2</th>		
-	<th>77.0</th>		
-	<th>10.6</th>		
-	<th>32.1</th>		
-	<th>42.8</th>		
-	<th>18.1</th>		
-	<th>13.7</th>		
-	<th>7.1</th>		
-	<th>4.3</th>
+
 	    </tr>
 	  </table>
 
