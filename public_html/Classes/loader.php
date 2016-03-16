@@ -225,14 +225,16 @@ class loader {
          * Do NOT Change fist if statment 
          */
         if (!isset($_GET['cmd']) || $_GET['cmd'] == "") {
-
-            if (isset($_GET['lid']) && $function->CheckIfExists($table, $fields, $values, $option, $option2)) {
+            
+          
+            if (isset($_GET['lid']) &&  $function->CheckIfExists($table, $fields, $values, $option, $option2)) {
 
                 $page_content_array[] = array(
                     "id" => "55",
                     "invite_info" => $_GET['lid']
                 );
             } else {
+               
                 $page_content_array[] = array(
                     "id" => "0",
                     "page_name" => "Landing",
@@ -254,33 +256,33 @@ class loader {
             switch ($_GET['cmd']) {
                 case "profile":
 
-                    if (isset($_GET['id'])) {
-                        /*
-                         * Delete tables with league information
-                         * 1. leagues
-                         * 2. league_user
-                         * 3. teams
-                         * 4. TBD
-                         */
-                        $tables = array(
-                            "0" => "leagues",
-                            "1" => "league_user",
-                            "2" => "teams",
-                            "3" => "temp_invite"
-                        );
-                        $fields = array(
-                            "0" => "id",
-                            "1" => "league_id",
-                            "2" => "parent",
-                            "3" => "league_id"
-                        );
-                        $values = array(
-                            "0" => $_GET['id']
-                        );
-                       // var_dump($values);
-
-                        $delete_leagues = $function->DeleteItems($tables, $fields, $values);
-                    }
+//                    if (isset($_GET['id'])) {
+//                        /*
+//                         * Delete tables with league information
+//                         * 1. leagues
+//                         * 2. league_user
+//                         * 3. teams
+//                         * 4. TBD
+//                         */
+//                        $tables = array(
+//                            "0" => "leagues",
+//                            "1" => "league_user",
+//                            "2" => "teams",
+//                            "3" => "temp_invite"
+//                        );
+//                        $fields = array(
+//                            "0" => "id",
+//                            "1" => "league_id",
+//                            "2" => "parent",
+//                            "3" => "league_id"
+//                        );
+//                        $values = array(
+//                            "0" => $_GET['id']
+//                        );
+//                       // var_dump($values);
+//
+//                        $delete_leagues = $function->DeleteItems($tables, $fields, $values);
+//                    }
 
 
 
@@ -297,6 +299,8 @@ class loader {
                         "forms" => $forms,
                         "functions" => $function,
                         "invite" => $this->_post_values,
+                        "link_stat" => $link_status,
+                        "delete_key" => $_GET['id']
                        
                     );
 

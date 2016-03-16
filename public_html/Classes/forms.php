@@ -56,23 +56,23 @@ class forms {
             ?>
             <h4>Please Enter Your Details</h4>
             <input type="text" placeholder="First Name" name="form[signup][firstname]" id="firstname" onfocus="this.value = '';" onblur="if (this.value == '') {
-                                this.value = 'First Name';
-                            }" value="<?php
+                        this.value = 'First Name';
+                    }" value="<?php
                    echo $_POST['form']['signup']['firstname'];
                    ?>">
             <input type="text" name="form[signup][lastname]" id="lastname" placeholder="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {
-                                this.value = 'Second Name';
-                            }" value="<?php
+                        this.value = 'Second Name';
+                    }" value="<?php
                    echo $_POST['form']['signup']['lastname'];
                    ?>">
             <input type="text" class="email" placeholder="Email" name="form[signup][email]" id="email" onfocus="this.value = '';" onblur="if (this.value == '') {
-                                this.value = 'Email';
-                            }" value="<?php
+                        this.value = 'Email';
+                    }" value="<?php
                    echo $_POST['form']['signup']['email'];
                    ?>">
             <input type="password" placeholder="Password" name="form[signup][password]" id="password" onfocus="this.value = '';" onblur="if (this.value == '') {
-                                this.value = 'Password';
-                            }" value="<?php
+                        this.value = 'Password';
+                    }" value="<?php
                    echo $_POST['form']['signup']['password'];
                    ?>">
                    <?php
@@ -105,13 +105,13 @@ class forms {
             }
             ?>
             <input type="text" id="email_login" class="email" name="form[login][email]" placeholder="Email" onfocus="this.value = '';" onblur="if (this.value == '') {
-                                this.value = 'Email';
-                            }" value="<?php
+                        this.value = 'Email';
+                    }" value="<?php
                    echo $_POST['form']['login']['email'];
                    ?>">
             <input type="password" id="password_login" name="form[login][password]" placeholder="Password" onfocus="this.value = '';" onblur="if (this.value == '') {
-                                this.value = 'Password';
-                            }"  value="<?php
+                        this.value = 'Password';
+                    }"  value="<?php
                    echo $_POST['form']['login']['password'];
                    ?>">
                    <?php
@@ -346,19 +346,19 @@ class forms {
                 $fields['password'] = "password";
                 $fields['ssid'] = "ssid";
                 $query = $helper_functions->InsertNewUser("users", $fields, $input_values);
-                 $_SESSION['isLoggedin'] = $helper_functions->UIDGEN(date("Ymd"));
+                $_SESSION['isLoggedin'] = $helper_functions->UIDGEN(date("Ymd"));
                 if ($query) {
                     if ($this->_flag == 999) {
                         echo "inv" . $input_values['ssid'];
                         $cmd = "invited";
                     } else {
                         echo $input_values['ssid'];
-                        
-                    
+
+
                         $cmd = "profile";
                     }
-                   
-                    header("location: loader.php?cmd=" . $cmd . "&ssid=" . $input_values['ssid'] . "&lid=" . $input_valuesp['lid']);
+
+                    // header("location: loader.php?cmd=" . $cmd . "&ssid=" . $input_values['ssid'] . "&lid=" . $input_valuesp['lid']);
                 }
             }
         }
@@ -385,8 +385,6 @@ class forms {
             $input_values['email'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['email']);
             $input_values['password'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['password']);
             $input_values['lid'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['lid']);
-
-
             if (empty($input_values['email']) && empty($input_values['password'])) {
                 $this->_flag = 1;
                 if ($this->_flag == 1) {
@@ -422,14 +420,27 @@ class forms {
                     /*
                      * IF Link ID is set Update status to One
                      */
-                    if ($input_values['lid'] != "") {
-                        unset($this->_flag);
+                                  /*
+                         * Check LID status first then decide if it should be changed
+                         * 
+                         */
                         $table = array("0" => "temp_invite");
-                        $field = array("0" => "status", "1" => "linkid");
-                        $value = array("0" => "1", "1" => $input_values['lid']);
-                        $option = "1";
-                        $update = $this->_fucntions->UpdateValues($table, $field, $value, $option);
-                        $this->_flag = 999; //USER COMING FROM INVITATION LINK
+                        $fields = array("0" => "linkid", "1" => "status");
+                        $values = array("0" => $input_values['lid'], "1" => "0");
+                        $option= "4";
+                        $option2 = "1";
+                        $links_status = $this->_fucntions->CheckIfExists($table, $fields, $values, $option, $option2);   
+                        
+                    if ($input_values['lid'] != "" && $links_status) {
+
+                            unset($this->_flag);
+                            $table = array("0" => "temp_invite");
+                            $field = array("0" => "status", "1" => "linkid");
+                            $value = array("0" => "1", "1" => $input_values['lid']);
+                            $option = "1";
+                            $update = $this->_fucntions->UpdateValues($table, $field, $value, $option);
+                            $this->_flag = "999"; //USER COMING FROM INVITATION LINK
+
                     }
                     $input_values['ssid'] = $insertion->UIDGEN("User_");
 
@@ -440,22 +451,17 @@ class forms {
                     $this->_hidden_key = $_SESSION['isLoggedin'];
                     $_POST['form']['login']['sec_id'] = $this->_hidden_key;
                     array_push($_POST, $_POST['form']['login']['sec_id']);
-                    //var_dump($input_values);
-                    //var_dump($_POST);
-                    //var_dump($this->_flag);
-                    
-                    
-                    if ($this->_flag == 999) {
+
+                    if ($this->_flag == "999") {
 
                         echo "inv" . $input_values['ssid'];
                         $cmd = "invited";
                     } else {
                         echo $input_values['ssid'];
                         $cmd = "profile";
-                        die();
                     }
-
-                    header("location: loader.php?cmd=profile&ssid=" . $input_values['ssid'] . "&s=" . $_SESSION['isLoggedin']);
+                    //Removed because it causes issues with ajax. since ajax has a timer to initialize it loaded this before the other header.
+                    // header("location: loader.php?cmd=profile&ssid=" . $input_values['ssid'] . "&s=" . $_SESSION['isLoggedin']);
                 }
             }
         }

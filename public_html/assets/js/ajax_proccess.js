@@ -59,6 +59,9 @@ $(function () {
                         // Move to a new location or you can do something else
                     }, 3000);
                     window.setTimeout(function () {
+                        console.log(data);// if ajax function results success
+                        console.log(cmd);
+                      /// throw new Error("Something went badly wrong!");
                         document.location.href = 'loader.php?cmd=invited' + "&ssid=" + data.substr(3) + "&lid=" + lid; // redirect to the private area  
 
                     }, 3200);
@@ -88,11 +91,11 @@ $(function () {
                         // Move to a new location or you can do something else
                     }, 3000);
                     window.setTimeout(function () {
-                        console.log(data);// if ajax function results success
-                        console.log(cmd);
-                        //  throw new Error("Something went badly wrong!");
+                      console.log(data);// if ajax function results success
+                      console.log(cmd);
+                       //throw new Error("Something went badly wrong!");
                         document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
-                        console.log(data);
+                        //console.log(data);
                     }, 3300);
 
 
@@ -190,7 +193,7 @@ $(function () {
                     window.setTimeout(function () {
                         console.log(data);// if ajax function results success
                         console.log(cmd);
-                     //throw new Error("Something went badly wrong!");
+                        //throw new Error("Something went badly wrong!");
                         document.location.href = 'loader.php?cmd=' + cmd + "&ssid=" + data; // redirect to the private area  
 
                     }, 3000);
