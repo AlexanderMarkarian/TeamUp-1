@@ -70,6 +70,7 @@ class loader {
 
         $css = array(
             "css1" => '<link href="' . ABSOLUTH_PATH_CSS . 'pageLoader.css" rel="stylesheet" type="text/css"/>',
+            "css2" => '<link href="' . ABSOLUTH_PATH_CSS . 'media.css" rel="stylesheet" type="text/css"/>'
                 /*
                   "css2" => '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>',
                   "css3" => '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css">'

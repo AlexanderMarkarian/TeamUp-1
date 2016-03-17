@@ -17,48 +17,7 @@ class footer {
             echo $footer_scripts;
         
         }
-        echo '<div class="grid">
-                      <div class="grid-item">
-                        <div>9:00 pm</div>
-                        <div>Philadelphia Eagles</div>
-                        <div>Dallas Cowboys</div>
-                      </div>
-                       <div class="grid-item">
-                        <div>9:00 pm</div>
-                        <div>Philadelphia Eagles</div>
-                        <div>Dallas Cowboys</div>
-                      </div>
-                        <div class="grid-item">
-                        <div>9:00 pm</div>
-                        <div>Philadelphia Eagles</div>
-                        <div>Dallas Cowboys</div>
-                      </div>
-                      <div class="grid-item">
-                        <div>9:00 pm</div>
-                        <div>Philadelphia Eagles</div>
-                        <div>Dallas Cowboys</div>
-                      </div>
-                      <div class="grid-item">
-                        <div>9:00 pm</div>
-                        <div>Philadelphia Eagles</div>
-                        <div>Dallas Cowboys</div>
-                      </div>
-                      <div class="grid-item">
-                        <div>9:00 pm</div>
-                        <div>Philadelphia Eagles</div>
-                        <div>Dallas Cowboys</div>
-                      </div>
-                      <div class="grid-item">
-                        <div>9:00 pm</div>
-                        <div>Philadelphia Eagles</div>
-                        <div>Dallas Cowboys</div>
-                      </div>
-                      <div class="grid-item">
-                        <div>9:00 pm</div>
-                        <div>Philadelphia Eagles</div>
-                        <div>Dallas Cowboys</div>
-                      </div>
-                    </div></body></html>';
+        echo '</body></html>';
     }
 
     public function FooterScripts(array $scripts) {

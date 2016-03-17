@@ -1066,6 +1066,76 @@ class forms {
         public function TeamInformationProcess() {
             
         }
+        
+
+        /*
+
+         * Auth: Alex
+
+         * Desc: Displays the Scores of todays games
+
+         * Wirte a processor for ajax calls (Rsotom)
+
+         */
+
+        public function ScoreNavBar(array $data){
+
+            ?>
+
+            <!---HTML GOES HERE-Aex---->
+
+            <div class="grid">
+              <div class="grid-item">
+                <div>9:00 pm</div>
+                <div>Philadelphia Eagles</div>
+                <div>Dallas Cowboys</div>
+              </div>
+               <div class="grid-item">
+                <div>9:00 pm</div>
+                <div>Philadelphia Eagles</div>
+                <div>Dallas Cowboys</div>
+              </div>
+                <div class="grid-item">
+                <div>9:00 pm</div>
+                <div>Philadelphia Eagles</div>
+                <div>Dallas Cowboys</div>
+              </div>
+              <div class="grid-item">
+                <div>9:00 pm</div>
+                <div>Philadelphia Eagles</div>
+                <div>Dallas Cowboys</div>
+              </div>
+              <div class="grid-item">
+                <div>9:00 pm</div>
+                <div>Philadelphia Eagles</div>
+                <div>Dallas Cowboys</div>
+              </div>
+              <div class="grid-item">
+                <div>9:00 pm</div>
+                <div>Philadelphia Eagles</div>
+                <div>Dallas Cowboys</div>
+              </div>
+              <div class="grid-item">
+                <div>9:00 pm</div>
+                <div>Philadelphia Eagles</div>
+                <div>Dallas Cowboys</div>
+              </div>
+              <div class="grid-item">
+                <div>9:00 pm</div>
+                <div>Philadelphia Eagles</div>
+                <div>Dallas Cowboys</div>
+              </div>
+            </div>
+
+            
+
+            
+
+            <?php
+
+            
+
+        }
 
     }
     
