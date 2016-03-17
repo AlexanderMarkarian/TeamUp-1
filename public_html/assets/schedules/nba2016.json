@@ -1,0 +1,7382 @@
+[
+  {
+    "Date": "Tue Oct 27 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Tue Oct 27 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Tue Oct 27 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Wed Oct 28 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Wed Oct 28 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Wed Oct 28 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Wed Oct 28 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Wed Oct 28 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Wed Oct 28 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Wed Oct 28 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Wed Oct 28 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Wed Oct 28 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Wed Oct 28 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Wed Oct 28 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Wed Oct 28 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Wed Oct 28 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Wed Oct 28 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Thu Oct 29 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Thu Oct 29 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Thu Oct 29 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Fri Oct 30 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Fri Oct 30 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Fri Oct 30 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Fri Oct 30 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Fri Oct 30 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Fri Oct 30 2015",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Fri Oct 30 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Fri Oct 30 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Fri Oct 30 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Fri Oct 30 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Fri Oct 30 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Fri Oct 30 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Sat Oct 31 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Sat Oct 31 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Sat Oct 31 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Sat Oct 31 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Sat Oct 31 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Sat Oct 31 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Sun Nov 1 2015",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Sun Nov 1 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Sun Nov 1 2015",
+    "Start (ET)": "2:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Sun Nov 1 2015",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Sun Nov 1 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Sun Nov 1 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Sun Nov 1 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Mon Nov 2 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Mon Nov 2 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Mon Nov 2 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Mon Nov 2 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Mon Nov 2 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Mon Nov 2 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Mon Nov 2 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Tue Nov 3 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Tue Nov 3 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Tue Nov 3 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Tue Nov 3 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Tue Nov 3 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Tue Nov 3 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Tue Nov 3 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Wed Nov 4 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Wed Nov 4 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Wed Nov 4 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Wed Nov 4 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Wed Nov 4 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Wed Nov 4 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Wed Nov 4 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Wed Nov 4 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Wed Nov 4 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Wed Nov 4 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Thu Nov 5 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Thu Nov 5 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Thu Nov 5 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Thu Nov 5 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Thu Nov 5 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Fri Nov 6 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Fri Nov 6 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Fri Nov 6 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Fri Nov 6 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Fri Nov 6 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Fri Nov 6 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Fri Nov 6 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Fri Nov 6 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Fri Nov 6 2015",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Fri Nov 6 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Sat Nov 7 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Sat Nov 7 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Sat Nov 7 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Sat Nov 7 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Sat Nov 7 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Sat Nov 7 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Sat Nov 7 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Sat Nov 7 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Sat Nov 7 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Sun Nov 8 2015",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Sun Nov 8 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Sun Nov 8 2015",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Sun Nov 8 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Sun Nov 8 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Mon Nov 9 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Mon Nov 9 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Mon Nov 9 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Mon Nov 9 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Mon Nov 9 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Mon Nov 9 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Mon Nov 9 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Tue Nov 10 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Tue Nov 10 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Tue Nov 10 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Tue Nov 10 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Tue Nov 10 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Tue Nov 10 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Tue Nov 10 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Wed Nov 11 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Wed Nov 11 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Wed Nov 11 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Wed Nov 11 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Wed Nov 11 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Wed Nov 11 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Wed Nov 11 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Wed Nov 11 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Wed Nov 11 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Wed Nov 11 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Wed Nov 11 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Thu Nov 12 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Thu Nov 12 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Thu Nov 12 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Fri Nov 13 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Fri Nov 13 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Fri Nov 13 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Fri Nov 13 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Fri Nov 13 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Fri Nov 13 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Fri Nov 13 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Fri Nov 13 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Fri Nov 13 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Fri Nov 13 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Fri Nov 13 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Sat Nov 14 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Sat Nov 14 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Sat Nov 14 2015",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Sat Nov 14 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Sat Nov 14 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Sat Nov 14 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Sat Nov 14 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Sun Nov 15 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Sun Nov 15 2015",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Sun Nov 15 2015",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Sun Nov 15 2015",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Sun Nov 15 2015",
+    "Start (ET)": "12:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Sun Nov 15 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Sun Nov 15 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Mon Nov 16 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Mon Nov 16 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Mon Nov 16 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Mon Nov 16 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Mon Nov 16 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Mon Nov 16 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Tue Nov 17 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Tue Nov 17 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Tue Nov 17 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Tue Nov 17 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Tue Nov 17 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Tue Nov 17 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Tue Nov 17 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Wed Nov 18 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Wed Nov 18 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Wed Nov 18 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Wed Nov 18 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Wed Nov 18 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Wed Nov 18 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Wed Nov 18 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Wed Nov 18 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Wed Nov 18 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Wed Nov 18 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Thu Nov 19 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Thu Nov 19 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Thu Nov 19 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Fri Nov 20 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Fri Nov 20 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Fri Nov 20 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Fri Nov 20 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Fri Nov 20 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Fri Nov 20 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Fri Nov 20 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Fri Nov 20 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Fri Nov 20 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Fri Nov 20 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Fri Nov 20 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Sat Nov 21 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Sat Nov 21 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Sat Nov 21 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Sat Nov 21 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Sat Nov 21 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Sat Nov 21 2015",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Sat Nov 21 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Sun Nov 22 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Sun Nov 22 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Sun Nov 22 2015",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Sun Nov 22 2015",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Sun Nov 22 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Sun Nov 22 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Mon Nov 23 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Mon Nov 23 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Mon Nov 23 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Mon Nov 23 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Mon Nov 23 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Mon Nov 23 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Mon Nov 23 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Tue Nov 24 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Tue Nov 24 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Tue Nov 24 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Tue Nov 24 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Tue Nov 24 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Tue Nov 24 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Wed Nov 25 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Wed Nov 25 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Wed Nov 25 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Wed Nov 25 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Wed Nov 25 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Wed Nov 25 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Wed Nov 25 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Wed Nov 25 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Wed Nov 25 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Wed Nov 25 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Wed Nov 25 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Wed Nov 25 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Fri Nov 27 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Fri Nov 27 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Fri Nov 27 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Fri Nov 27 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Fri Nov 27 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Fri Nov 27 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Fri Nov 27 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Fri Nov 27 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Fri Nov 27 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Fri Nov 27 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Fri Nov 27 2015",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Fri Nov 27 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Sat Nov 28 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Sat Nov 28 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Sat Nov 28 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Sat Nov 28 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Sat Nov 28 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Sat Nov 28 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Sat Nov 28 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Sun Nov 29 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Sun Nov 29 2015",
+    "Start (ET)": "2:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Sun Nov 29 2015",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Sun Nov 29 2015",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Sun Nov 29 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Sun Nov 29 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Sun Nov 29 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Sun Nov 29 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Mon Nov 30 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Mon Nov 30 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Mon Nov 30 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Mon Nov 30 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Mon Nov 30 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Mon Nov 30 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Mon Nov 30 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Mon Nov 30 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Tue Dec 1 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Tue Dec 1 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Tue Dec 1 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Tue Dec 1 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Tue Dec 1 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Tue Dec 1 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Wed Dec 2 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Wed Dec 2 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Wed Dec 2 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Wed Dec 2 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Wed Dec 2 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Wed Dec 2 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Wed Dec 2 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Wed Dec 2 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Wed Dec 2 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Thu Dec 3 2015",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Thu Dec 3 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Thu Dec 3 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Thu Dec 3 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Thu Dec 3 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Thu Dec 3 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Fri Dec 4 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Fri Dec 4 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Fri Dec 4 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Fri Dec 4 2015",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Fri Dec 4 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Fri Dec 4 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Sat Dec 5 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Sat Dec 5 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Sat Dec 5 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Sat Dec 5 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Sat Dec 5 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Sat Dec 5 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Sat Dec 5 2015",
+    "Start (ET)": "1:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Sat Dec 5 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Sat Dec 5 2015",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Sat Dec 5 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Sun Dec 6 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Sun Dec 6 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Sun Dec 6 2015",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Sun Dec 6 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Sun Dec 6 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Mon Dec 7 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Mon Dec 7 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Mon Dec 7 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Mon Dec 7 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Mon Dec 7 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Mon Dec 7 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Mon Dec 7 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Mon Dec 7 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Mon Dec 7 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Tue Dec 8 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Tue Dec 8 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Tue Dec 8 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Tue Dec 8 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Tue Dec 8 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Tue Dec 8 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Wed Dec 9 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Wed Dec 9 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Wed Dec 9 2015",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Wed Dec 9 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Wed Dec 9 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Wed Dec 9 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Wed Dec 9 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Wed Dec 9 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Wed Dec 9 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Wed Dec 9 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Thu Dec 10 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Thu Dec 10 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Thu Dec 10 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Thu Dec 10 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Fri Dec 11 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Fri Dec 11 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Fri Dec 11 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Fri Dec 11 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Fri Dec 11 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Fri Dec 11 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Fri Dec 11 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Fri Dec 11 2015",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Fri Dec 11 2015",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Fri Dec 11 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Fri Dec 11 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Sat Dec 12 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Sat Dec 12 2015",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Sat Dec 12 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Sat Dec 12 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Sat Dec 12 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Sat Dec 12 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Sat Dec 12 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Sat Dec 12 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Sat Dec 12 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Sun Dec 13 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Sun Dec 13 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Sun Dec 13 2015",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Sun Dec 13 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Mon Dec 14 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Mon Dec 14 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Mon Dec 14 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Mon Dec 14 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Mon Dec 14 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Mon Dec 14 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Mon Dec 14 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Mon Dec 14 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Mon Dec 14 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Mon Dec 14 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Tue Dec 15 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Tue Dec 15 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Tue Dec 15 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Tue Dec 15 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Wed Dec 16 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Wed Dec 16 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Wed Dec 16 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Wed Dec 16 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Wed Dec 16 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Wed Dec 16 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Wed Dec 16 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Wed Dec 16 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Wed Dec 16 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Wed Dec 16 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Wed Dec 16 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Wed Dec 16 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Thu Dec 17 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Thu Dec 17 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Thu Dec 17 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Fri Dec 18 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Fri Dec 18 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Fri Dec 18 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Fri Dec 18 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Fri Dec 18 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Fri Dec 18 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Fri Dec 18 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Fri Dec 18 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Fri Dec 18 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Fri Dec 18 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Fri Dec 18 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Fri Dec 18 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Sat Dec 19 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Sat Dec 19 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Sat Dec 19 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Sat Dec 19 2015",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Sat Dec 19 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Sun Dec 20 2015",
+    "Start (ET)": "1:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Sun Dec 20 2015",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Sun Dec 20 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Sun Dec 20 2015",
+    "Start (ET)": "1:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Sun Dec 20 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Sun Dec 20 2015",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Sun Dec 20 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Mon Dec 21 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Mon Dec 21 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Mon Dec 21 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Mon Dec 21 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Mon Dec 21 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Mon Dec 21 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Mon Dec 21 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Mon Dec 21 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Mon Dec 21 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Tue Dec 22 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Tue Dec 22 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Tue Dec 22 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Tue Dec 22 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Wed Dec 23 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Wed Dec 23 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Wed Dec 23 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Wed Dec 23 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Wed Dec 23 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Wed Dec 23 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Wed Dec 23 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Wed Dec 23 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Wed Dec 23 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Wed Dec 23 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Wed Dec 23 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Wed Dec 23 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Wed Dec 23 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Fri Dec 25 2015",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Fri Dec 25 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Fri Dec 25 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Fri Dec 25 2015",
+    "Start (ET)": "12:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Fri Dec 25 2015",
+    "Start (ET)": "2:30 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Sat Dec 26 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Sat Dec 26 2015",
+    "Start (ET)": "4:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Sat Dec 26 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Sat Dec 26 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Sat Dec 26 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Sat Dec 26 2015",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Sat Dec 26 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Sat Dec 26 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Sat Dec 26 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Sat Dec 26 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Sat Dec 26 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Sat Dec 26 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Sat Dec 26 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Sun Dec 27 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Sun Dec 27 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Sun Dec 27 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Sun Dec 27 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Mon Dec 28 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Mon Dec 28 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Mon Dec 28 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Mon Dec 28 2015",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Mon Dec 28 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Mon Dec 28 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Mon Dec 28 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Mon Dec 28 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Mon Dec 28 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Mon Dec 28 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Mon Dec 28 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Tue Dec 29 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Tue Dec 29 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Tue Dec 29 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Tue Dec 29 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Tue Dec 29 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Wed Dec 30 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Wed Dec 30 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Wed Dec 30 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Wed Dec 30 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Wed Dec 30 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Wed Dec 30 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Wed Dec 30 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Wed Dec 30 2015",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Wed Dec 30 2015",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Wed Dec 30 2015",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Thu Dec 31 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Thu Dec 31 2015",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Thu Dec 31 2015",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Thu Dec 31 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Thu Dec 31 2015",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Thu Dec 31 2015",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Fri Jan 1 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Fri Jan 1 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Fri Jan 1 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Fri Jan 1 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Fri Jan 1 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Sat Jan 2 2016",
+    "Start (ET)": "3:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Sat Jan 2 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Sat Jan 2 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Sat Jan 2 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Sat Jan 2 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Sat Jan 2 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Sat Jan 2 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Sat Jan 2 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Sat Jan 2 2016",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Sat Jan 2 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Sat Jan 2 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Sun Jan 3 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Sun Jan 3 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Sun Jan 3 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Sun Jan 3 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Sun Jan 3 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Mon Jan 4 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Mon Jan 4 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Mon Jan 4 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Mon Jan 4 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Mon Jan 4 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Mon Jan 4 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Mon Jan 4 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Mon Jan 4 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Mon Jan 4 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Mon Jan 4 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Tue Jan 5 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Tue Jan 5 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Tue Jan 5 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Tue Jan 5 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Wed Jan 6 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Wed Jan 6 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Wed Jan 6 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Wed Jan 6 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Wed Jan 6 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Wed Jan 6 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Wed Jan 6 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Wed Jan 6 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Wed Jan 6 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Wed Jan 6 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Wed Jan 6 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Thu Jan 7 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Thu Jan 7 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Thu Jan 7 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Thu Jan 7 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Fri Jan 8 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Fri Jan 8 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Fri Jan 8 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Fri Jan 8 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Fri Jan 8 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Fri Jan 8 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Fri Jan 8 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Fri Jan 8 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Fri Jan 8 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Fri Jan 8 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Sat Jan 9 2016",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Sat Jan 9 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Sat Jan 9 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Sat Jan 9 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Sat Jan 9 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Sat Jan 9 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Sat Jan 9 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Sun Jan 10 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Sun Jan 10 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Sun Jan 10 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Sun Jan 10 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Sun Jan 10 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Sun Jan 10 2016",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Sun Jan 10 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Sun Jan 10 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Sun Jan 10 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Mon Jan 11 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Mon Jan 11 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Mon Jan 11 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Tue Jan 12 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Tue Jan 12 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Tue Jan 12 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Tue Jan 12 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Tue Jan 12 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Tue Jan 12 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Tue Jan 12 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Tue Jan 12 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Wed Jan 13 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Wed Jan 13 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Wed Jan 13 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Wed Jan 13 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Wed Jan 13 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Wed Jan 13 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Wed Jan 13 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Wed Jan 13 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Wed Jan 13 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Wed Jan 13 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Thu Jan 14 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Thu Jan 14 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Thu Jan 14 2016",
+    "Start (ET)": "3:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Thu Jan 14 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Thu Jan 14 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Thu Jan 14 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Fri Jan 15 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Fri Jan 15 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Fri Jan 15 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Fri Jan 15 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Fri Jan 15 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Fri Jan 15 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Fri Jan 15 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Fri Jan 15 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Fri Jan 15 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Sat Jan 16 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Sat Jan 16 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Sat Jan 16 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Sat Jan 16 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Sat Jan 16 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Sat Jan 16 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Sat Jan 16 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Sat Jan 16 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Sun Jan 17 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Sun Jan 17 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Sun Jan 17 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Sun Jan 17 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Sun Jan 17 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Mon Jan 18 2016",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Mon Jan 18 2016",
+    "Start (ET)": "2:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Mon Jan 18 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Mon Jan 18 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Mon Jan 18 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Mon Jan 18 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Mon Jan 18 2016",
+    "Start (ET)": "2:30 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Mon Jan 18 2016",
+    "Start (ET)": "1:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Mon Jan 18 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Mon Jan 18 2016",
+    "Start (ET)": "2:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Tue Jan 19 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Tue Jan 19 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Tue Jan 19 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Tue Jan 19 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Wed Jan 20 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Wed Jan 20 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Wed Jan 20 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Wed Jan 20 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Wed Jan 20 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Wed Jan 20 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Wed Jan 20 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Wed Jan 20 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Wed Jan 20 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Wed Jan 20 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Wed Jan 20 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Thu Jan 21 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Thu Jan 21 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Thu Jan 21 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Thu Jan 21 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Thu Jan 21 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Fri Jan 22 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Fri Jan 22 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Fri Jan 22 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Fri Jan 22 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Fri Jan 22 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Fri Jan 22 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Fri Jan 22 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Fri Jan 22 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Fri Jan 22 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Sat Jan 23 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Sat Jan 23 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Sat Jan 23 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Sat Jan 23 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Sat Jan 23 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Sat Jan 23 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Sat Jan 23 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Sat Jan 23 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Sun Jan 24 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Sun Jan 24 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Sun Jan 24 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Sun Jan 24 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Mon Jan 25 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Mon Jan 25 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Mon Jan 25 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Mon Jan 25 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Mon Jan 25 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Mon Jan 25 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Mon Jan 25 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Mon Jan 25 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Mon Jan 25 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Tue Jan 26 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Tue Jan 26 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Tue Jan 26 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Tue Jan 26 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Tue Jan 26 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Tue Jan 26 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Tue Jan 26 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Tue Jan 26 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Wed Jan 27 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Wed Jan 27 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Wed Jan 27 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Wed Jan 27 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Wed Jan 27 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Wed Jan 27 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Wed Jan 27 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Wed Jan 27 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Thu Jan 28 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Thu Jan 28 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Thu Jan 28 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Thu Jan 28 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Thu Jan 28 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Thu Jan 28 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Fri Jan 29 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Fri Jan 29 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Fri Jan 29 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Fri Jan 29 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Fri Jan 29 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Fri Jan 29 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Fri Jan 29 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Fri Jan 29 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Fri Jan 29 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Sat Jan 30 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Sat Jan 30 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Sat Jan 30 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Sat Jan 30 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Sat Jan 30 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Sat Jan 30 2016",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Sat Jan 30 2016",
+    "Start (ET)": "6:30 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Sun Jan 31 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Sun Jan 31 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Sun Jan 31 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Sun Jan 31 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Sun Jan 31 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Sun Jan 31 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Sun Jan 31 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Mon Feb 1 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Mon Feb 1 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Mon Feb 1 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Mon Feb 1 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Mon Feb 1 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Mon Feb 1 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Mon Feb 1 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Mon Feb 1 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Mon Feb 1 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Tue Feb 2 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Tue Feb 2 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Tue Feb 2 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Tue Feb 2 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Tue Feb 2 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Wed Feb 3 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Wed Feb 3 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Wed Feb 3 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Wed Feb 3 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Wed Feb 3 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Wed Feb 3 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Wed Feb 3 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Wed Feb 3 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Wed Feb 3 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Wed Feb 3 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Wed Feb 3 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Thu Feb 4 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Thu Feb 4 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Thu Feb 4 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Thu Feb 4 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Fri Feb 5 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Fri Feb 5 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Fri Feb 5 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Fri Feb 5 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Fri Feb 5 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Fri Feb 5 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Fri Feb 5 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Fri Feb 5 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Fri Feb 5 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Fri Feb 5 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Sat Feb 6 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Sat Feb 6 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Sat Feb 6 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Sat Feb 6 2016",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Sat Feb 6 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Sat Feb 6 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Sat Feb 6 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Sat Feb 6 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Sat Feb 6 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Sat Feb 6 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Sun Feb 7 2016",
+    "Start (ET)": "1:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Sun Feb 7 2016",
+    "Start (ET)": "2:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Sun Feb 7 2016",
+    "Start (ET)": "1:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Sun Feb 7 2016",
+    "Start (ET)": "1:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Mon Feb 8 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Mon Feb 8 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Mon Feb 8 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Mon Feb 8 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Mon Feb 8 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Mon Feb 8 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Mon Feb 8 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Mon Feb 8 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Mon Feb 8 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Mon Feb 8 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Tue Feb 9 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Tue Feb 9 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Tue Feb 9 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Tue Feb 9 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Tue Feb 9 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Wed Feb 10 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Wed Feb 10 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Wed Feb 10 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Wed Feb 10 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Wed Feb 10 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Wed Feb 10 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Wed Feb 10 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Wed Feb 10 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Wed Feb 10 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Wed Feb 10 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Wed Feb 10 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Wed Feb 10 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Thu Feb 11 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Thu Feb 11 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Thu Feb 18 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Thu Feb 18 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Thu Feb 18 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Fri Feb 19 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Fri Feb 19 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Fri Feb 19 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Fri Feb 19 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Fri Feb 19 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Fri Feb 19 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Fri Feb 19 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Fri Feb 19 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Fri Feb 19 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Fri Feb 19 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Fri Feb 19 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Fri Feb 19 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Fri Feb 19 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Fri Feb 19 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Sat Feb 20 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Sat Feb 20 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Sat Feb 20 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Sat Feb 20 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Sun Feb 21 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Sun Feb 21 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Sun Feb 21 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Sun Feb 21 2016",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Sun Feb 21 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Sun Feb 21 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Sun Feb 21 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Sun Feb 21 2016",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Sun Feb 21 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Sun Feb 21 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Mon Feb 22 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Mon Feb 22 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Mon Feb 22 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Mon Feb 22 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Mon Feb 22 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Mon Feb 22 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Mon Feb 22 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Tue Feb 23 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Tue Feb 23 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Tue Feb 23 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Tue Feb 23 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Tue Feb 23 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Wed Feb 24 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Wed Feb 24 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Wed Feb 24 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Wed Feb 24 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Wed Feb 24 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Wed Feb 24 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Wed Feb 24 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Wed Feb 24 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Wed Feb 24 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Wed Feb 24 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Thu Feb 25 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Thu Feb 25 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Thu Feb 25 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Thu Feb 25 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Thu Feb 25 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Thu Feb 25 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Fri Feb 26 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Fri Feb 26 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Fri Feb 26 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Fri Feb 26 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Fri Feb 26 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Fri Feb 26 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Fri Feb 26 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Fri Feb 26 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Sat Feb 27 2016",
+    "Start (ET)": "3:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Sat Feb 27 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Sat Feb 27 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Sat Feb 27 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Sat Feb 27 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Sat Feb 27 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Sat Feb 27 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Sat Feb 27 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Sun Feb 28 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Sun Feb 28 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Sun Feb 28 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Sun Feb 28 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Sun Feb 28 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Sun Feb 28 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Sun Feb 28 2016",
+    "Start (ET)": "1:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Mon Feb 29 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Mon Feb 29 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Mon Feb 29 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Mon Feb 29 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Mon Feb 29 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Mon Feb 29 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Mon Feb 29 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Tue Mar 1 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Tue Mar 1 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Tue Mar 1 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Tue Mar 1 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Tue Mar 1 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Tue Mar 1 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Wed Mar 2 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Wed Mar 2 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Wed Mar 2 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Wed Mar 2 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Wed Mar 2 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Wed Mar 2 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Wed Mar 2 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Wed Mar 2 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Wed Mar 2 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Wed Mar 2 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Wed Mar 2 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Thu Mar 3 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Thu Mar 3 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Thu Mar 3 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Thu Mar 3 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Fri Mar 4 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Fri Mar 4 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Fri Mar 4 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Fri Mar 4 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Fri Mar 4 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Fri Mar 4 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Fri Mar 4 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Fri Mar 4 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Fri Mar 4 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Fri Mar 4 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Sat Mar 5 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Sat Mar 5 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Sat Mar 5 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Sat Mar 5 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Sat Mar 5 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Sat Mar 5 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Sat Mar 5 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Sat Mar 5 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Sun Mar 6 2016",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Sun Mar 6 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Sun Mar 6 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Sun Mar 6 2016",
+    "Start (ET)": "4:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Sun Mar 6 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Sun Mar 6 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Sun Mar 6 2016",
+    "Start (ET)": "6:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Mon Mar 7 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Mon Mar 7 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Mon Mar 7 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Mon Mar 7 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Mon Mar 7 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Mon Mar 7 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Mon Mar 7 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Tue Mar 8 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Tue Mar 8 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Tue Mar 8 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Tue Mar 8 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Tue Mar 8 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Tue Mar 8 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Wed Mar 9 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Wed Mar 9 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Wed Mar 9 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Wed Mar 9 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Wed Mar 9 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Wed Mar 9 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Wed Mar 9 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Wed Mar 9 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Wed Mar 9 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Thu Mar 10 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Thu Mar 10 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Thu Mar 10 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Thu Mar 10 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Fri Mar 11 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Fri Mar 11 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Fri Mar 11 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Fri Mar 11 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Fri Mar 11 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Fri Mar 11 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Fri Mar 11 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Fri Mar 11 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Fri Mar 11 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Fri Mar 11 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Sat Mar 12 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Sat Mar 12 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Sat Mar 12 2016",
+    "Start (ET)": "2:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Sat Mar 12 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Sat Mar 12 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Sat Mar 12 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Sat Mar 12 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Sat Mar 12 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Sat Mar 12 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Sat Mar 12 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Sun Mar 13 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Sun Mar 13 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Sun Mar 13 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Sun Mar 13 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Sun Mar 13 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Mon Mar 14 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Mon Mar 14 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Mon Mar 14 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Mon Mar 14 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Mon Mar 14 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Mon Mar 14 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Mon Mar 14 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Mon Mar 14 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Mon Mar 14 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Tue Mar 15 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Tue Mar 15 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Tue Mar 15 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Tue Mar 15 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Tue Mar 15 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Tue Mar 15 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Wed Mar 16 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Wed Mar 16 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Wed Mar 16 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Wed Mar 16 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Wed Mar 16 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Wed Mar 16 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Wed Mar 16 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Wed Mar 16 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Wed Mar 16 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Thu Mar 17 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Thu Mar 17 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Thu Mar 17 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Thu Mar 17 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Thu Mar 17 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Thu Mar 17 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Thu Mar 17 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Thu Mar 17 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Fri Mar 18 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Fri Mar 18 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Fri Mar 18 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Fri Mar 18 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Fri Mar 18 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Fri Mar 18 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Fri Mar 18 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Fri Mar 18 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Sat Mar 19 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Sat Mar 19 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Sat Mar 19 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Sat Mar 19 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Sat Mar 19 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Sat Mar 19 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Sat Mar 19 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Sat Mar 19 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Sat Mar 19 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Sun Mar 20 2016",
+    "Start (ET)": "4:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Sun Mar 20 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Sun Mar 20 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Sun Mar 20 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Sun Mar 20 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Sun Mar 20 2016",
+    "Start (ET)": "4:30 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Mon Mar 21 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Mon Mar 21 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Mon Mar 21 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Mon Mar 21 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Mon Mar 21 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Mon Mar 21 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Mon Mar 21 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Mon Mar 21 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Mon Mar 21 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Tue Mar 22 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Tue Mar 22 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Tue Mar 22 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Tue Mar 22 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Wed Mar 23 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Wed Mar 23 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Wed Mar 23 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Wed Mar 23 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Wed Mar 23 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Wed Mar 23 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Wed Mar 23 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Wed Mar 23 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Wed Mar 23 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Wed Mar 23 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Wed Mar 23 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Wed Mar 23 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Thu Mar 24 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Thu Mar 24 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Thu Mar 24 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Thu Mar 24 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Thu Mar 24 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Fri Mar 25 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Fri Mar 25 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Fri Mar 25 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Fri Mar 25 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Fri Mar 25 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Fri Mar 25 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Fri Mar 25 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Fri Mar 25 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Fri Mar 25 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Sat Mar 26 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Sat Mar 26 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Sat Mar 26 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Sat Mar 26 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Sat Mar 26 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Sat Mar 26 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Sat Mar 26 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Sat Mar 26 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Sat Mar 26 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Sat Mar 26 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Sun Mar 27 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Sun Mar 27 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Sun Mar 27 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Sun Mar 27 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Sun Mar 27 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Mon Mar 28 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Mon Mar 28 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Mon Mar 28 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Mon Mar 28 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Mon Mar 28 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Mon Mar 28 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Mon Mar 28 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Mon Mar 28 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Mon Mar 28 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Mon Mar 28 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Tue Mar 29 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Tue Mar 29 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Tue Mar 29 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Tue Mar 29 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Tue Mar 29 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Tue Mar 29 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Wed Mar 30 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Wed Mar 30 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Wed Mar 30 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Wed Mar 30 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Wed Mar 30 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Wed Mar 30 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Wed Mar 30 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Wed Mar 30 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Wed Mar 30 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Thu Mar 31 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Thu Mar 31 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Thu Mar 31 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Thu Mar 31 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Thu Mar 31 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Thu Mar 31 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Fri Apr 1 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Fri Apr 1 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Fri Apr 1 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Fri Apr 1 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Fri Apr 1 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Fri Apr 1 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Fri Apr 1 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Fri Apr 1 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Fri Apr 1 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Fri Apr 1 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Sat Apr 2 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Sat Apr 2 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Sat Apr 2 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Sat Apr 2 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Sat Apr 2 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Sun Apr 3 2016",
+    "Start (ET)": "1:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Sun Apr 3 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Sun Apr 3 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Sun Apr 3 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Sun Apr 3 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Sun Apr 3 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Sun Apr 3 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Sun Apr 3 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Sun Apr 3 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Sun Apr 3 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Sun Apr 3 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Tue Apr 5 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Tue Apr 5 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Tue Apr 5 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Tue Apr 5 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Tue Apr 5 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Tue Apr 5 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Tue Apr 5 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Tue Apr 5 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Tue Apr 5 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Portland Trail Blazers",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Tue Apr 5 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Tue Apr 5 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Wed Apr 6 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Wed Apr 6 2016",
+    "Start (ET)": "9:30 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Wed Apr 6 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Wed Apr 6 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Wed Apr 6 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Wed Apr 6 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Wed Apr 6 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Wed Apr 6 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Thu Apr 7 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Thu Apr 7 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Thu Apr 7 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Thu Apr 7 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Thu Apr 7 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Fri Apr 8 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Fri Apr 8 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Fri Apr 8 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Fri Apr 8 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Fri Apr 8 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Fri Apr 8 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Fri Apr 8 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Fri Apr 8 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Fri Apr 8 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Fri Apr 8 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Sat Apr 9 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Boston Celtics",
+    "Home/Neutral": "Atlanta Hawks"
+  },
+  {
+    "Date": "Sat Apr 9 2016",
+    "Start (ET)": "8:30 PM",
+    "Visitor/Neutral": "Cleveland Cavaliers",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Sat Apr 9 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "Memphis Grizzlies"
+  },
+  {
+    "Date": "Sat Apr 9 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Phoenix Suns",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Sat Apr 9 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Minnesota Timberwolves",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Sat Apr 9 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "Sacramento Kings"
+  },
+  {
+    "Date": "Sun Apr 10 2016",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Denver Nuggets"
+  },
+  {
+    "Date": "Sun Apr 10 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Sun Apr 10 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Brooklyn Nets",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Sun Apr 10 2016",
+    "Start (ET)": "3:30 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Sun Apr 10 2016",
+    "Start (ET)": "6:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Miami Heat"
+  },
+  {
+    "Date": "Sun Apr 10 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "New York Knicks"
+  },
+  {
+    "Date": "Sun Apr 10 2016",
+    "Start (ET)": "5:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Philadelphia 76ers"
+  },
+  {
+    "Date": "Sun Apr 10 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Golden State Warriors",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Sun Apr 10 2016",
+    "Start (ET)": "12:00 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Washington Wizards"
+  },
+  {
+    "Date": "Mon Apr 11 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Charlotte Hornets",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Mon Apr 11 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Washington Wizards",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Mon Apr 11 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Mon Apr 11 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Houston Rockets",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Mon Apr 11 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Chicago Bulls",
+    "Home/Neutral": "New Orleans Pelicans"
+  },
+  {
+    "Date": "Mon Apr 11 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Los Angeles Lakers",
+    "Home/Neutral": "Oklahoma City Thunder"
+  },
+  {
+    "Date": "Mon Apr 11 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "Milwaukee Bucks",
+    "Home/Neutral": "Orlando Magic"
+  },
+  {
+    "Date": "Mon Apr 11 2016",
+    "Start (ET)": "10:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Mon Apr 11 2016",
+    "Start (ET)": "9:00 PM",
+    "Visitor/Neutral": "Dallas Mavericks",
+    "Home/Neutral": "Utah Jazz"
+  },
+  {
+    "Date": "Tue Apr 12 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Detroit Pistons"
+  },
+  {
+    "Date": "Tue Apr 12 2016",
+    "Start (ET)": "7:00 PM",
+    "Visitor/Neutral": "New York Knicks",
+    "Home/Neutral": "Indiana Pacers"
+  },
+  {
+    "Date": "Tue Apr 12 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Los Angeles Clippers"
+  },
+  {
+    "Date": "Tue Apr 12 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Oklahoma City Thunder",
+    "Home/Neutral": "San Antonio Spurs"
+  },
+  {
+    "Date": "Tue Apr 12 2016",
+    "Start (ET)": "7:30 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Toronto Raptors"
+  },
+  {
+    "Date": "Wed Apr 13 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Miami Heat",
+    "Home/Neutral": "Boston Celtics"
+  },
+  {
+    "Date": "Wed Apr 13 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Toronto Raptors",
+    "Home/Neutral": "Brooklyn Nets"
+  },
+  {
+    "Date": "Wed Apr 13 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Philadelphia 76ers",
+    "Home/Neutral": "Chicago Bulls"
+  },
+  {
+    "Date": "Wed Apr 13 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Orlando Magic",
+    "Home/Neutral": "Charlotte Hornets"
+  },
+  {
+    "Date": "Wed Apr 13 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Detroit Pistons",
+    "Home/Neutral": "Cleveland Cavaliers"
+  },
+  {
+    "Date": "Wed Apr 13 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "San Antonio Spurs",
+    "Home/Neutral": "Dallas Mavericks"
+  },
+  {
+    "Date": "Wed Apr 13 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Memphis Grizzlies",
+    "Home/Neutral": "Golden State Warriors"
+  },
+  {
+    "Date": "Wed Apr 13 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Sacramento Kings",
+    "Home/Neutral": "Houston Rockets"
+  },
+  {
+    "Date": "Wed Apr 13 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Utah Jazz",
+    "Home/Neutral": "Los Angeles Lakers"
+  },
+  {
+    "Date": "Wed Apr 13 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Indiana Pacers",
+    "Home/Neutral": "Milwaukee Bucks"
+  },
+  {
+    "Date": "Wed Apr 13 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "New Orleans Pelicans",
+    "Home/Neutral": "Minnesota Timberwolves"
+  },
+  {
+    "Date": "Wed Apr 13 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Los Angeles Clippers",
+    "Home/Neutral": "Phoenix Suns"
+  },
+  {
+    "Date": "Wed Apr 13 2016",
+    "Start (ET)": "10:30 PM",
+    "Visitor/Neutral": "Denver Nuggets",
+    "Home/Neutral": "Portland Trail Blazers"
+  },
+  {
+    "Date": "Wed Apr 13 2016",
+    "Start (ET)": "8:00 PM",
+    "Visitor/Neutral": "Atlanta Hawks",
+    "Home/Neutral": "Washington Wizards"
+  }
+]

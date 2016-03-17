@@ -1,6 +1,3 @@
-
-<script type="text/javascript" src="../assets/js/trades.js"></script>
-
 <section id="trades">
     <div class="container">
         <div class="row">

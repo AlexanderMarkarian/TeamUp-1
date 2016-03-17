@@ -1,5 +1,23 @@
 $(document).ready(function(){
 
+	$(".table").tableDnD({
+        onDragStart: function(table,row){
+            $(row).css("border","solid 3px #e74c3c");
+        },
+        onDrop: function(table,row){
+            $('#drag-area tr').each(function (i, row) {
+                if(i == 0 || i == 1 || i == 2 || i == 3){
+                    $(this).find('.starting').text("Starting");
+                }
+                else{
+                    $(this).find('.starting').text("Bench");
+                }               
+            });
+
+            $(row).css("border","none");
+        }
+    });
+
 /*
 	$.ajax({
 		type: "GET",

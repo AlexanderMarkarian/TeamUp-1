@@ -8,7 +8,7 @@
  */
 $(function () {
     $("#login").click(function () {
-        var audio = new Audio('../assets/sounds/referee.mp3');
+        //var audio = new Audio('../assets/sounds/referee.mp3');
         var email = $("input#email_login").val();
         var password = $("input#password_login").val();
         var lid = $("input#lid1").val();
@@ -48,7 +48,7 @@ $(function () {
                         $("#show").html("<div class='alert alert-success' role='alert' id='errors'><strong>" + email + " verified</strong></div>");
 
                     }, 2000);
-                    audio.play();
+                    //audio.play();
                     window.setTimeout(function () {
                         $("#show").html("<div class='alert alert-success' role='alert' id='errors'>Redirecting <img src='../assets/images/other/spinner6.gif'/> </div>");
 
