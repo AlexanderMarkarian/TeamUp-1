@@ -129,7 +129,9 @@ class loader {
             "js1" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "jquery.js'></script>",
             "js2" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "bootstrap.min.js'></script>",
             "js3" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "pageLoader.js'></script>",
-            "jsShanke" => " <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "jquery.ui.shake.js'></script>"
+            "jsShanke" => " <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "jquery.ui.shake.js'></script>",
+            "jsmason" => "<script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "masonry.js'></script>",
+            "mason" => "<script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "scores.js'></script>"
         );
         /* LOADS -> [meta, title, css, js] */
         $this->_head->GetMetaForHeader($meta);

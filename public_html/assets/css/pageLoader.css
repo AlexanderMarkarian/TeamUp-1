@@ -21,3 +21,27 @@ div#load_screen > div#loading {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.grid {
+  position: absolute;
+  bottom: 0;
+  margin-top: 75px;
+  background: black;
+  max-width: 100%;
+}
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  width: 160px;
+  height: 85px;
+  float: left;
+  background: #303136;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+  padding:10px;
+}
