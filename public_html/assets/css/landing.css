@@ -1330,7 +1330,7 @@ span.menu
 		width: 64%;
 	}
 }
-@media (max-width:1024px){
+@media (max-width:1224px){
 	.icons ul li {
 		margin: 0 4em;
 	}
@@ -1355,7 +1355,7 @@ span.menu
 	.col-md-9.img-grid-text {
 		padding: 0 1em;
 		overflow: hidden;
-		height: 80px;
+		height: 120px;
 	}
 	.works-hedding h3 {
 		font-size: 53px;
@@ -1427,11 +1427,11 @@ span.menu
 	}
 }
 
-@media (max-width:992px){
-        span.menu
+@media (max-width:900px){
+    span.menu
 	{
-         display:block;
-		 text-align:right;
+        display:block;
+		text-align:right;
 		padding: 1.3em;
 	}
 	span.menu img{
@@ -1464,13 +1464,16 @@ span.menu
 		text-align: center;
 		padding: 1em 0;
 		background: rgba(2, 2, 2, 0.48);
-        }
+    }
 	.top-nav ul li a 
 	{
 		font-size: 16px
 	}
 }
 @media (max-width:768px){
+	.col-md-9{
+		vertical-align: top;
+	}
 	.banner-info {
 		width: 90%;
 		right: 3%;
@@ -1887,7 +1890,7 @@ span.menu
 		min-height: 297px;
 	}
 	.banner-info {
-		top: 18%;
+		top: 0%;
 	}
 	.banner-info h2 {
 		font-size: 24px;

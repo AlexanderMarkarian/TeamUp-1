@@ -12,9 +12,7 @@
             </div>
             <div class="row grey-area">
                 <table class="table">
-                    <div class="heading">Starting Lineup</div>
                     <thead>
-                        <th></th>
                         <th></th>
                         <th></th>
                         <th></th>
@@ -26,11 +24,12 @@
                         <th></th>
                         <th></th>
                         <th></th>
+                        <th></th>
                     </thead>
                     <thead>
                         <th></th>
-                        <th></th>
                         <th>Teams</th>
+                        <th>Status</th>
                         <th>Next Opp</th>
                         <th>GP</th>
                         <th>Wins</th>
@@ -41,11 +40,11 @@
                         <th>Loses</th>
                         <th>Win Pct</th>
                     </thead>
-                    <tbody>
+                    <tbody id="drag-area">
                         <tr>
-                            <td><i class="fa fa-arrows"></i></td>
                             <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg"></td>
                             <td>Los Angeles Lakers</td>
+                            <td class="starting">Starting</td>
                             <td>@Min</td>
                             <td>43</td>
                             <td>22</td>
@@ -57,9 +56,9 @@
                             <td>0.90</td>
                         </tr>
                         <tr>
-                            <td><i class="fa fa-arrows"></i></td>
                             <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/clippers.jpg"></td>
                             <td>Los Angeles Clippers</td>
+                            <td class="starting">Starting</td>
                             <td>@Min</td>
                             <td>43</td>
                             <td>22</td>
@@ -71,9 +70,9 @@
                             <td>0.90</td>
                         </tr>
                         <tr>
-                            <td><i class="fa fa-arrows"></i></td>
                             <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/spurs.jpg"></td>
                             <td>San Antonio Spurs</td>
+                            <td class="starting">Starting</td>
                             <td>@Min</td>
                             <td>43</td>
                             <td>22</td>
@@ -85,9 +84,9 @@
                             <td>0.90</td>
                         </tr>
                         <tr>
-                            <td><i class="fa fa-arrows"></i></td>
                             <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/76ers.jpg"></td>
                             <td>Philadelphia 76ers</td>
+                            <td class="starting">Starting</td>
                             <td>@Min</td>
                             <td>43</td>
                             <td>22</td>
@@ -97,45 +96,11 @@
                             <td>22</td>
                             <td>21</td>
                             <td>0.90</td>
-                        </tr>                                                                        
-                    </tbody>
-                </table>
-
-                <table class="table">
-                    <div class="heading">Bench</div>
-                    <thead>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th class="right">Overall</th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th class="right">This Week</th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </thead>
-                    <thead>
-                        <th></th>
-                        <th></th>
-                        <th>Teams</th>
-                        <th>Next Opp</th>
-                        <th>GP</th>
-                        <th>Wins</th>
-                        <th>Loses</th>
-                        <th>Win Pct</th>
-                        <th>GP</th>
-                        <th>Wins</th>
-                        <th>Loses</th>
-                        <th>Win Pct</th>
-                    </thead>
-                    <tbody>
+                        </tr>       
                         <tr>
-                            <td><i class="fa fa-arrows"></i></td>
                             <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/warriors.jpg"></td>
                             <td>Golden State Warriors</td>
+                            <td class="starting">Bench</td>
                             <td>@Min</td>
                             <td>43</td>
                             <td>22</td>
@@ -147,9 +112,9 @@
                             <td>0.90</td>
                         </tr>
                         <tr>
-                            <td><i class="fa fa-arrows"></i></td>
                             <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/pelicans.jpg"></td>
                             <td>New Orleans Pelicans</td>
+                            <td class="starting">Bench</td>
                             <td>@Min</td>
                             <td>43</td>
                             <td>22</td>
@@ -166,3 +131,26 @@
         </div>
     </div>
 </section>
+
+<script src="../assets/js/jquery.tableDnD.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".table").tableDnD({
+            onDragStart: function(table,row){
+                $(row).css("border","solid 3px #e74c3c");
+            },
+            onDrop: function(table,row){
+                $('#drag-area tr').each(function (i, row) {
+                    if(i == 0 || i == 1 || i == 2 || i == 3){
+                        $(this).find('.starting').text("Starting");
+                    }
+                    else{
+                        $(this).find('.starting').text("Bench");
+                    }               
+                });
+
+                $(row).css("border","none");
+            }
+        });
+    });
+</script>
