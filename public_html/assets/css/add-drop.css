@@ -6,19 +6,6 @@ body{
   background-size: cover !important;
 }
 
-/*
-.media:hover{
-    background: white;
-    color:black;
-    cursor: pointer;
-}
-*/
-.grey-area{
-  background: #303136;
-  padding: 20px;
-  border-radius: 2%;
-}
-
 #myTable{
   margin-top: 35px;
   margin-bottom: 35px;
@@ -53,133 +40,58 @@ body{
   width: 100%;
 }
 
-#trade-image{
-  font-size:60px;
-  display: block;
-  margin: auto;
-  text-align: center;
-  padding-top: 25%;
+label{
+  color: white;
+  font-size: 15px;
 }
 
-.tab-content{
-    background-color:#303136;
-    color:#fff;
-    padding:5px
+
+tr:hover {
+  background-color: #e74c3c;
+  color: white;
+  cursor: pointer;
 }
 
-.nav-tabs > li > a{
-  border: medium none;
-  color: #e74c3c;
-  font-size: 25px;
-  margin-left: 30px;
+tr > .add-btn:hover{
+  color: white;
+} 
+
+caption {
+    color: white;
+    font-size: 20px !important;
 }
 
-.nav-tabs > li > a:hover{
-  background-color: #303136 !important;
-  border: medium none;
-  border-radius: 0;
-  color:#fff;
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 20px !important;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+     margin-bottom: 1cm;
 }
 
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:focus,
-.nav-tabs > li.active > a:hover{
-    background-color: #303136 !important;
+th, td {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+    font-size: 20px !important;
+    color: black;
 }
 
-.resize{
-  width: 60px;
-  height: 55px;
+tr {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+th {
+    background-color: #303136;
+    color: white;
+}
+
+.roster-img{
+  width: 70px;
+  height: 60px;
   border-radius: 50%;
   float: left;
-}
-
-.resize:hover{
-  cursor: pointer;
-}
-
-
-#add-image{
-  height: 140px;
-  width: 140px;
-  border-radius: 15%;
-  margin-top: 15px;
-  text-align: center;
-}
-
-#add-name{
-  font-size: 20px;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 10;
-  background-color: rgba(0,0,0,0.8);
-}
-
-#close{
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 40px;
-  width: 40px;
-}
-
-#close:hover{
-  cursor: pointer;
-}
-
-#add-area {
-    width: 700px;
-    height:250px;
-    line-height: 200px;
-    position: fixed;
-    top: 50%; 
-    left: 35%;
-    margin-top: -100px;
-    margin-left: -100px;
-    background-color: #303136;
-    color: #e74c3c;
-    border-radius: 5px;
-    text-align: center;
-    z-index: 11; 
-}
-
-@media (max-width: 1082px){
-  #close{
-    height: 30px;
-    width: 30px;
-  }
-
-  #add-area{
-    width: 500px;
-    height: 150px;
-  }
-
-  #add-name{
-    font-size: 15px;
-  }
-
-  #add-image{
-    height: 80px;
-    width: 80px;
-    margin-top: 4px;
-  }
-
-  #trade-image{
-    font-size: 30px;
-  }
-
-  .btn{
-    width: 60px;
-    height: 30px;
-    font-size: 10px;
-  }
 }

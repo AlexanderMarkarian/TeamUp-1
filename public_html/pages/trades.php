@@ -8,8 +8,8 @@
         </div>
         <div class="row" id="main-content">
             <div id="other-team">
-                <div class="col-lg-12 grey-area">
-                    <ul class="nav nav-tabs" id="myTab">
+                <div class="col-lg-12">
+                    <ul class="nav nav-tabs grey-area" id="myTab">
                         <li class="active"><a data-toggle="tab" href="#sectionA">Supreme Team</a></li>
                         <li><a data-toggle="tab" href="#sectionB">Grizzlies Country</a></li>
                         <li><a data-toggle="tab" href="#sectionC">PHP Phyton Beast</a></li>
@@ -19,447 +19,394 @@
                     <div class="tab-content">
                         <div id="sectionA" class="tab-pane fade in active">
                             <table class="table">
-                                <thead>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th class="right">Overall</th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th class="right">This Week</th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                </thead>
-                                <thead>
-                                    <th></th>
-                                    <th></th>
+                                <tr>
                                     <th>Teams</th>
                                     <th>Next Opp</th>
                                     <th>GP</th>
                                     <th>Wins</th>
                                     <th>Loses</th>
                                     <th>Win Pct</th>
-                                    <th>GP</th>
-                                    <th>Wins</th>
-                                    <th>Loses</th>
-                                    <th>Win Pct</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><i class="fa fa-exchange"></i></td>
-                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg"></td>
-                                        <td>Los Angeles Lakers</td>
-                                        <td>@Min</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-exchange"></i></td>
-                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/clippers.jpg"></td>
-                                        <td>Los Angeles Clippers</td>
-                                        <td>@Min</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-exchange"></i></td>
-                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/spurs.jpg"></td>
-                                        <td>San Antonio Spurs</td>
-                                        <td>@Min</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-exchange"></i></td>
-                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/76ers.jpg"></td>
-                                        <td>Philadelphia 76ers</td>
-                                        <td>@Min</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                    </tr>                                                                        
-                                </tbody>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg"> Los Angeles Lakers</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/clippers.jpg"> Los Angeles Clippers</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/spurs.jpg"> San Antonio Spurs</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/76ers.jpg"> Philadelphia 76ers</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>                                                                        
                             </table>
                         </div>
 
 
                         <div id="sectionB" class="tab-pane fade">
                             <table class="table">
-                                <thead>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th class="right">Overall</th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th class="right">This Week</th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                </thead>
-                                <thead>
-                                    <th></th>
-                                    <th></th>
+                                <tr>
                                     <th>Teams</th>
                                     <th>Next Opp</th>
                                     <th>GP</th>
                                     <th>Wins</th>
                                     <th>Loses</th>
                                     <th>Win Pct</th>
-                                    <th>GP</th>
-                                    <th>Wins</th>
-                                    <th>Loses</th>
-                                    <th>Win Pct</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><i class="fa fa-exchange"></i></td>
-                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/warriors.jpg"></td>
-                                        <td>Golden State Warriors</td>
-                                        <td>@Min</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-exchange"></i></td>
-                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/suns.jpg"></td>
-                                        <td>Phoenix Suns</td>
-                                        <td>@Min</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-exchange"></i></td>
-                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/rockets.jpg"></td>
-                                        <td>Houston Rockets</td>
-                                        <td>@Min</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                    </tr>                                                                       
-                                </tbody>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg"> Los Angeles Lakers</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/clippers.jpg"> Los Angeles Clippers</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/spurs.jpg"> San Antonio Spurs</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/76ers.jpg"> Philadelphia 76ers</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>                                                                        
                             </table>
-
                         </div>
 
                         <div id="sectionC" class="tab-pane fade">
                            <table class="table">
-                                <thead>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th class="right">Overall</th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th class="right">This Week</th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                </thead>
-                                <thead>
-                                    <th></th>
-                                    <th></th>
+                                <tr>
                                     <th>Teams</th>
                                     <th>Next Opp</th>
                                     <th>GP</th>
                                     <th>Wins</th>
                                     <th>Loses</th>
                                     <th>Win Pct</th>
-                                    <th>GP</th>
-                                    <th>Wins</th>
-                                    <th>Loses</th>
-                                    <th>Win Pct</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><i class="fa fa-exchange"></i></td>
-                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg"></td>
-                                        <td>Los Angeles Lakers</td>
-                                        <td>@Min</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-exchange"></i></td>
-                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/clippers.jpg"></td>
-                                        <td>Los Angeles Clippers</td>
-                                        <td>@Min</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-exchange"></i></td>
-                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/spurs.jpg"></td>
-                                        <td>San Antonio Spurs</td>
-                                        <td>@Min</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-exchange"></i></td>
-                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/76ers.jpg"></td>
-                                        <td>Philadelphia 76ers</td>
-                                        <td>@Min</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                    </tr>                                                                        
-                                </tbody>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg"> Los Angeles Lakers</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/clippers.jpg"> Los Angeles Clippers</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/spurs.jpg"> San Antonio Spurs</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/76ers.jpg"> Philadelphia 76ers</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>                                                                        
                             </table>
 
                         </div>
                         <div id="sectionD" class="tab-pane fade">
                            <table class="table">
-                                <thead>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th class="right">Overall</th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th class="right">This Week</th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                </thead>
-                                <thead>
-                                    <th></th>
-                                    <th></th>
+                                <tr>
                                     <th>Teams</th>
                                     <th>Next Opp</th>
                                     <th>GP</th>
                                     <th>Wins</th>
                                     <th>Loses</th>
                                     <th>Win Pct</th>
-                                    <th>GP</th>
-                                    <th>Wins</th>
-                                    <th>Loses</th>
-                                    <th>Win Pct</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><i class="fa fa-exchange"></i></td>
-                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/warriors.jpg"></td>
-                                        <td>Golden State Warriors</td>
-                                        <td>@Min</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-exchange"></i></td>
-                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/suns.jpg"></td>
-                                        <td>Phoenix Suns</td>
-                                        <td>@Min</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-exchange"></i></td>
-                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/rockets.jpg"></td>
-                                        <td>Houston Rockets</td>
-                                        <td>@Min</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                    </tr>                                                                       
-                                </tbody>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg"> Los Angeles Lakers</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/clippers.jpg"> Los Angeles Clippers</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/spurs.jpg"> San Antonio Spurs</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/76ers.jpg"> Philadelphia 76ers</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>                                                                        
                             </table>
 
                         </div>
                         <div id="sectionE" class="tab-pane fade">
                             <table class="table">
-                                <thead>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th class="right">Overall</th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th class="right">This Week</th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                </thead>
-                                <thead>
-                                    <th></th>
-                                    <th></th>
+                                <tr>
                                     <th>Teams</th>
                                     <th>Next Opp</th>
                                     <th>GP</th>
                                     <th>Wins</th>
                                     <th>Loses</th>
                                     <th>Win Pct</th>
-                                    <th>GP</th>
-                                    <th>Wins</th>
-                                    <th>Loses</th>
-                                    <th>Win Pct</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><i class="fa fa-exchange"></i></td>
-                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/warriors.jpg"></td>
-                                        <td>Golden State Warriors</td>
-                                        <td>@Min</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-exchange"></i></td>
-                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/suns.jpg"></td>
-                                        <td>Phoenix Suns</td>
-                                        <td>@Min</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-exchange"></i></td>
-                                        <td><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/rockets.jpg"></td>
-                                        <td>Houston Rockets</td>
-                                        <td>@Min</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                        <td>43</td>
-                                        <td>22</td>
-                                        <td>21</td>
-                                        <td>0.90</td>
-                                    </tr>                                                                       
-                                </tbody>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg"> Los Angeles Lakers</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/clippers.jpg"> Los Angeles Clippers</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/spurs.jpg"> San Antonio Spurs</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>
+                                <tr class="opp-teams">
+                                    <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/76ers.jpg"> Philadelphia 76ers</td>
+                                    <td>@Min</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                    <td>43</td>
+                                    <td>22</td>
+                                    <td>21</td>
+                                    <td>0.90</td>
+                                </tr>                                                                        
                             </table>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="my-team">
-                <div class="col-lg-12 grey-area">
-                    <ul class="nav nav-tabs" id="myTab">
-                        <li class="active"><a data-toggle="tab" href="#sectionA">Your Team</a></li>
-                        <li style="float:right"><a data-toggle="tab" id="back">Back</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="sectionA" class="tab-pane fade in active">
-                            <div class="col-md-4" style="margin-top:15px;">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img src="<?= ABSOLUTH_PATH_IMAGES ?>/nba/lakers.jpg" id="lakers"class="resize"/>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Los Angeles Lakers</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <table class="table">
+                    <caption>
+                      <img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/trophy.png" ?>" id="teamlogo" height='33' width='33'> My Roster
+                      <span class="to-right"> Go Back </span>
+                    </caption>
+                    <tr>
+                        <th>Teams</th>
+                        <th>Next Opp</th>
+                        <th>GP</th>
+                        <th>Wins</th>
+                        <th>Loses</th>
+                        <th>Win Pct</th>
+                    </tr>
+                    <tr class="my-teams">
+                        <td class="row"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg"> Los Angeles Lakers</td>
+                        <td>@Min</td>
+                        <td>43</td>
+                        <td>22</td>
+                        <td>21</td>
+                        <td>0.90</td>
+                        <td>43</td>
+                        <td>22</td>
+                        <td>21</td>
+                        <td>0.90</td>
+                    </tr>
+                    <tr class="my-teams">
+                        <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/clippers.jpg"> Los Angeles Clippers</td>
+                        <td>@Min</td>
+                        <td>43</td>
+                        <td>22</td>
+                        <td>21</td>
+                        <td>0.90</td>
+                        <td>43</td>
+                        <td>22</td>
+                        <td>21</td>
+                        <td>0.90</td>
+                    </tr>
+                    <tr class="my-teams">
+                        <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/spurs.jpg"> San Antonio Spurs</td>
+                        <td>@Min</td>
+                        <td>43</td>
+                        <td>22</td>
+                        <td>21</td>
+                        <td>0.90</td>
+                        <td>43</td>
+                        <td>22</td>
+                        <td>21</td>
+                        <td>0.90</td>
+                    </tr>
+                    <tr class="my-teams">
+                        <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/76ers.jpg"> Philadelphia 76ers</td>
+                        <td>@Min</td>
+                        <td>43</td>
+                        <td>22</td>
+                        <td>21</td>
+                        <td>0.90</td>
+                        <td>43</td>
+                        <td>22</td>
+                        <td>21</td>
+                        <td>0.90</td>
+                    </tr>                                                                        
+                </table>
+                
             </div>
 
             <div id="hand-shake">
-
-
+                <table class="table">
+                    <tr class="no-hover">
+                        <td class="teamright">
+                            <img id="opp_team_logo" height='33' width='33'>
+                            <span id="opp_team_name"></span>
+                            <BR><div class="margin-right trading_names" id="opp_owner"></div>
+                        </td> 
+                        <td><button class="btn btn-success">Propose Trade</button></td>
+                        <td class="teamleft">
+                            <img id="my_team_logo" height='33' width='33'> 
+                            <span id="my_team_name"></span>
+                            <BR><div class="margin-left trading_names">My Roster</div>
+                        </td>                  
+                    </tr>
+                </table>
             </div>
         </div>
     </div>

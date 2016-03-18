@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+
 	$.ajax({
 		type: "GET",
 		url: "../backup_basketball_data/2016-03-06.json",
@@ -14,7 +14,7 @@ $(document).ready(function(){
 					var loses = parseInt(data[k].l);
 					var total = wins + loses;
 					var winPct = (wins / total).toFixed(2);
-					string += "<tr><td><i class='fa fa-star-o star-btn'></i>"+data[k].teamName+"<i class='fa fa-plus add-btn'></i><i id="+data[k].teamID+" class='fa fa-calendar add-btn'></i></td>";
+					string += "<tr class='table-row'><td><i class='fa fa-star-o star-btn'></i>"+data[k].teamName+"<i class='fa fa-plus add-btn'></i><i id="+data[k].teamID+" class='fa fa-calendar add-btn'></i></td>";
 					string += "<td>NBA</td><td>Free Agent</td><td>"+total+"</td><td>"+wins+"</td><td>"+loses+"</td><td>"+winPct+"</td></tr>";
 				}
 			}
@@ -25,6 +25,14 @@ $(document).ready(function(){
 
 			$(".fa-calendar").click(function(){
 				var id = this.id;
+			});
+
+			$('.table-row').hover(function() {
+				$(this).find(".add-btn").css("color","white");
+
+				$(".table-row").mouseout(function(){
+					$(this).find(".add-btn").css("color","#e74c3c");
+				});	
 			});
 		} 
 	});

@@ -1,27 +1,42 @@
 $(document).ready(function(){
 	$("#my-team").hide();
+	$("#hand-shake").hide();
 
-	$(".resize").hover(function(){
+	$(".opp-teams").click(function(){
+		var opp_image = $(this).find(".ros")[0].firstChild.src;
+		var opp_team = $(this).find(".ros").text();
 
-		var source = this.src;
-		this.src = "../assets/images/other/trade.png";
-		this.id = "hovering";
+		var opp_owner;
 
-		$("#hovering").mouseout(function(){
-			this.src = source;
-			this.id = "";
+		$("#myTab li").each(function(idx, li) {
+		    if(li.className == "active"){
+		    	opp_owner = $(li).text();
+		    }
 		});
 
-		$(".resize").click(function(){
-			$("#other-team").hide();
-			$("#my-team").show();
+		$("#other-team").hide();
+		$("#my-team").show();
+
+		$(".to-right").click(function(){
+			$("#other-team").show();
+			$("#my-team").hide();
 		});
-	});
 
 
+		$(".my-teams").click(function(){
+			var my_image = $(this).find(".ros")[0].firstChild.src;
+			var my_team = $(this).find(".ros").text();
 
-	$("#back").click(function(){
-		$("#other-team").show();
-		$("#my-team").hide();
+			$("#my-team").hide();
+			$("#hand-shake").show();
+
+			$("#opp_team_name").text(opp_team);
+			document.getElementById('opp_team_logo').src = opp_image;
+
+			$("#my_team_name").text(my_team);
+			document.getElementById('my_team_logo').src = my_image;
+
+			$("#opp_owner").text(opp_owner);
+		});
 	});
 });

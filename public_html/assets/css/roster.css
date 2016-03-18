@@ -6,62 +6,70 @@ body{
   background-size: cover !important;
 }
 
-.scoreboard{
-  border-collapse: collapse;
+tr:hover {background-color: #e74c3c}
+
+caption {
+    color: white;
+    font-size: 20px !important;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 20px !important;
+    border-collapse: collapse;
     width: 100%;
+    overflow-x: auto;
+     margin-bottom: 1cm;
 }
 
-.fa-backward{
-  font-size: 30px;
+th, td {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+    font-size: 20px !important;
+    color: black;
 }
 
-.fa-backward:hover{
-  cursor: pointer;
+tr {
+    background-color: #f2f2f2;
+    color: black;
 }
 
-.grey-area{
-  background: #303136;
-  padding: 20px;
-  border-radius: 2%;
-}
-
-.table>tbody>tr>td{
-  vertical-align: middle;
-}
-
-th{
-  text-align: center;
-}
-
-.right{
-  text-align: right;
-}
-
-
-.cap{
-  color: white;
-  font-size: 30px;
-}
-
-.heading{
-  text-align: left;
-  color: white;
-  font-size: 30px;
+th {
+    background-color: #303136;
+    color: white;
 }
 
 .roster-img{
   width: 70px;
   height: 60px;
   border-radius: 50%;
+  float: left;
 }
 
-.fa-arrows{
-  font-size: 25px;
-  color: #e74c3c;
+@media screen and (max-width: 1000px){
+  th,td{
+    font-size: 15px !important;
+  }
+  .roster-img{
+    width: 35px !important;
+    height: 30px !important;
+  }
 }
 
-.fa-arrows:hover{
-  cursor: pointer;
+@media screen and (max-width: 715px){
+  th,td{
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+    th,td { font-size: 9px !important; }
+}
+
+@media screen and (max-width: 485px) {
+    th,td { font-size: 7px !important; }
 }
 
 
