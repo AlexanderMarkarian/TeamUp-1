@@ -50,6 +50,12 @@ if (isset($_POST['login'])) {
     );
     
     $ajax->BuildPages($page_content_array);
+}else if (isset($_POST['scores'])) {
+    unset($page_content_array);
+    $page_content_array[] = array(
+        "id" => "309",
+        "create_nav" => $_POST['d'],
+    );
+    $ajax->BuildPages($page_content_array);
 }
-
 

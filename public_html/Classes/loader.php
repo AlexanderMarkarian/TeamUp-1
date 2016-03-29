@@ -70,7 +70,8 @@ class loader {
 
         $css = array(
             "css1" => '<link href="' . ABSOLUTH_PATH_CSS . 'pageLoader.css" rel="stylesheet" type="text/css"/>',
-            "css2" => '<link href="' . ABSOLUTH_PATH_CSS . 'media.css" rel="stylesheet" type="text/css"/>'
+            "css2" => '<link href="' . ABSOLUTH_PATH_CSS . 'media.css" rel="stylesheet" type="text/css"/>',
+            "css3" => '<link href="' . ABSOLUTH_PATH_CSS . 'jquery.bxslider.css" rel="stylesheet" type="text/css"/>',
                 /*
                   "css2" => '<link href="' . ABSOLUTH_PATH_CSS . 'bootstrap.min.css" rel="stylesheet" type="text/css"/>',
                   "css3" => '<link rel="stylesheet" type="text/css" href="' . ABSOLUTH_PATH_CSS . 'font-awesome.css">'
@@ -131,8 +132,8 @@ class loader {
             "js2" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "bootstrap.min.js'></script>",
             "js3" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "pageLoader.js'></script>",
             "jsShanke" => " <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "jquery.ui.shake.js'></script>",
-            "jsmason" => "<script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "masonry.js'></script>",
-            "mason" => "<script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "scores.js'></script>"
+            "box" => "<script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "jquery.bxslider.min.js'></script>",
+            "schedules" => "<script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "schedules.js'></script>"
         );
         /* LOADS -> [meta, title, css, js] */
         $this->_head->GetMetaForHeader($meta);

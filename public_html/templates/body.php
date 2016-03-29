@@ -106,6 +106,10 @@ class body {
                     echo $ajax->InviteMembersProcess($pg['send_invite_now']);
                     //var_dump($pg['send_invite_now']);
                     break;
+                case '309':
+                    $ajax = new forms();
+                    echo $ajax->ScoreNavBar($pg['create_nav']);
+                    break;
                 case '55':
                     $forms = new forms();
                     $functions = new functions();

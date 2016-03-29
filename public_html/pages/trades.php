@@ -1,5 +1,6 @@
 <section id="trades">
     <div class="container">
+        <div class="slider4"></div>
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Trades</h2>
@@ -340,7 +341,7 @@
                         <th>Win Pct</th>
                     </tr>
                     <tr class="my-teams">
-                        <td class="row"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg"> Los Angeles Lakers</td>
+                        <td class="ros"><img id="1610612747" class="roster-img" src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg"> Los Angeles Lakers</td>
                         <td>@Min</td>
                         <td>43</td>
                         <td>22</td>

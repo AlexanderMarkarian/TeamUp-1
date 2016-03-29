@@ -20,7 +20,9 @@ body{
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
+
 .col-md-2, .col-md-8{
+	background: #303136;
 	padding-left:0;
 	padding-right:0;
 }
@@ -67,12 +69,16 @@ body{
 
 /* TOP MIDDLE SECTION */
 .top-middle{	
-	background:black;
-	color:#e74c3c;
-	border-radius: 2%;
-	height: auto;
+	height: 250px;
 	padding-left: 40px;
 }
+
+#intro-box{
+	text-align: center;
+	font-size: 60px;
+	padding-top: 15px;
+}
+
 #selected-team{
 	display: inline;
 	font-size: 40px;
@@ -100,16 +106,13 @@ body{
 }
 
 #stat-box{
-	color: black;
 	border-radius: 5%;
-	color:#e74c3c;
 	text-align: center;
 	padding: 10px;
 	width: 20px;
 	margin-left: 5px;
 	display: inline;
 }
-
 
 .selected-buttons{
 	padding-bottom:20px;
@@ -126,83 +129,17 @@ body{
 
 
 
-/* MIDDLE MIDDLE SECTION */
+/* TABLE SECTION */
 .list{
-	background: #303136;
 	padding: 20px;
 	margin-bottom: 0;
 	max-height: auto;
 }
 
-.fa-plus:hover{
-	cursor: pointer;
-}
 
-.fa-times{
-	color: #e74c3c;
-}
-
-.fa-times:hover{
-	cursor: pointer;
-}
-
-
-
-
-/* BOTTOM MIDDLE */
-.bottom-middle{
-	background: black;
-	color: white;
-	border-radius: 2%;
-	overflow-y: scroll;
-	height: 500px;
-}
-
-th{
-	text-align: center;
-}
-
-
-
-/* MIDDLE-LEFT SECTION */
-.middle-left{
-	margin-top:2px; 
-	background: #222;
-	color: #8c8c8c;
-	border-radius: 2%;
-	padding-left: 5px;
-	overflow-y: scroll;
-	height: auto;
-	max-height: 600px;
-}
-.round{
-	margin-top: 10px;
-	margin-bottom: 10px;
-	text-align: center;
-	width: 100%;
-	height: 20px;
-}
-/*
-.round-item{
-	border: 1px solid black;
-}
-*/
-.round-name, .round-number{
-	font-size: 25px;
-}
-
-.round-image{
-	width: 50px;
-	height: 50px;
-}
-
-
-
-/* TOP-RIGHT SECTION*/
-.top-right{
-	background: #222;
-	color: #8c8c8c;
-	height: auto;
+/* DRAFT QUEUE*/
+.draft-queue{
+	height: 600px;
 }
 
 .queue-title{
@@ -212,7 +149,6 @@ th{
 }
 
 .queue-list{
-	overflow-y: scroll;
 	height: auto;
 	font-size: 20px;
 	text-align: left;
@@ -221,61 +157,64 @@ th{
 	padding-bottom: 20px;
 }
 
-
-
-
-/* MIDDLE-RIGHT SECTION */
-.middle-right{
-	background: #222;
-	color: #8c8c8c;
-	margin-top: 15px;
-}
-
-.history-title{
-	text-align: center;
-	font-size: 18px;
-	padding-top: 10px;
-}
-
-.history-list{
-	overflow-y: scroll;
-	height: auto;
-	max-height: 300px;
-}
-
-.draft-history{
-	font-size: 20px;
-	text-align: left;
-	padding-left: 10px;
-	padding-bottom: 20px;
-}
-
-.history-round{
-	margin-top: 10px;
-	margin-bottom: 10px;
-	text-align: left;
-	padding-left: 5px;
-}
-
-.draft-league{
-	font-size: 15px;
-	margin-left: 10px;
-}
-
-
-
-/* BOTTOM RIGHT SECTION */
-.bottom-right{
-	background: #222;
-	color: #8c8c8c;
-	margin-top: 15px;	
-}
-
 .roster-title{
 	text-align: center;
 	font-size: 18px;
 	padding-top: 10px;	
 }
+
+tr:hover {
+	background-color: #e74c3c;
+	cursor:pointer;
+}
+
+caption {
+    color: white;
+    font-size: 20px !important;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 20px !important;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+     margin-bottom: 1cm;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+    font-size: 20px !important;
+    color: black;
+}
+
+tr {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+th {
+    background-color: #303136;
+    color: white;
+}
+
+/* ROUND SECTION */
+.top-right{
+	height: 600px;
+}
+
+.round-image{
+	width: 50px;
+	height: 50px;
+}
+
+.round-item{
+	width: auto;
+}
+
 
 
 @media(min-width: 1200px){

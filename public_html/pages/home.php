@@ -1,5 +1,6 @@
 <section id="home">
 	<div class="container">
+    <div class="slider4"></div>
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">League Name</h2>

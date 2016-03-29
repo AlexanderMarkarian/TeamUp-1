@@ -1079,58 +1079,10 @@ class forms {
          */
 
         public function ScoreNavBar(array $data){
-
+            foreach ($data as $d) {
+                echo "<div class='slide'><div>".$d[Date]."</div><div>".$d[Home]."</div><div>".$d[Visitor]."</div></div>";
+            }
             ?>
-
-            <!---HTML GOES HERE-Aex---->
-
-            <div class="grid">
-              <div class="grid-item">
-                <div>9:00 pm</div>
-                <div>Philadelphia Eagles</div>
-                <div>Dallas Cowboys</div>
-              </div>
-               <div class="grid-item">
-                <div>9:00 pm</div>
-                <div>Philadelphia Eagles</div>
-                <div>Dallas Cowboys</div>
-              </div>
-                <div class="grid-item">
-                <div>9:00 pm</div>
-                <div>Philadelphia Eagles</div>
-                <div>Dallas Cowboys</div>
-              </div>
-              <div class="grid-item">
-                <div>9:00 pm</div>
-                <div>Philadelphia Eagles</div>
-                <div>Dallas Cowboys</div>
-              </div>
-              <div class="grid-item">
-                <div>9:00 pm</div>
-                <div>Philadelphia Eagles</div>
-                <div>Dallas Cowboys</div>
-              </div>
-              <div class="grid-item">
-                <div>9:00 pm</div>
-                <div>Philadelphia Eagles</div>
-                <div>Dallas Cowboys</div>
-              </div>
-              <div class="grid-item">
-                <div>9:00 pm</div>
-                <div>Philadelphia Eagles</div>
-                <div>Dallas Cowboys</div>
-              </div>
-              <div class="grid-item">
-                <div>9:00 pm</div>
-                <div>Philadelphia Eagles</div>
-                <div>Dallas Cowboys</div>
-              </div>
-            </div>
-
-            
-
-            
-
             <?php
 
             

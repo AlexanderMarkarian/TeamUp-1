@@ -1,0 +1,6152 @@
+[
+  {
+    "Date": "10/7/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "10/7/2015",
+    "Visitor": "New York Rangers",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "10/7/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "10/7/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "10/8/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "10/8/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "10/8/2015",
+    "Visitor": "Minnesota Wild",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "10/8/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "10/8/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "10/8/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "10/8/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "10/9/2015",
+    "Visitor": "New York Rangers",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "10/9/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "10/9/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "10/9/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "10/9/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "10/10/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "10/10/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "10/10/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "10/10/2015",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "10/10/2015",
+    "Visitor": "New York Islanders",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "10/10/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "10/10/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "10/10/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "10/10/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "10/10/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "10/10/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "10/10/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "10/10/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "10/10/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "10/11/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "10/12/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "10/12/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "10/12/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "10/12/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "10/12/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "10/13/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "10/13/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "10/13/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "10/13/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "10/13/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "10/13/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "10/13/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "10/13/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "10/13/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "10/14/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "10/14/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "10/14/2015",
+    "Visitor": "Boston Bruins",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "10/14/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "10/15/2015",
+    "Visitor": "Minnesota Wild",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "10/15/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "10/15/2015",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "10/15/2015",
+    "Visitor": "New York Rangers",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "10/15/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "10/15/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "10/15/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "10/15/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "10/16/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "10/16/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "10/16/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "10/16/2015",
+    "Visitor": "Minnesota Wild",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "10/16/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "10/16/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "10/16/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "10/17/2015",
+    "Visitor": "Boston Bruins",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "10/17/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "10/17/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "10/17/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "10/17/2015",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "10/17/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "10/17/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "10/17/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "10/17/2015",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "10/17/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "10/18/2015",
+    "Visitor": "Minnesota Wild",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "10/18/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "10/18/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "10/18/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "10/18/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "10/19/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "10/20/2015",
+    "Visitor": "New York Islanders",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "10/20/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "10/20/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "10/20/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "10/20/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "10/20/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "10/20/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "10/21/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "10/21/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "10/21/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "10/21/2015",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "10/22/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "10/22/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "10/22/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "10/22/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "10/22/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "10/22/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "10/22/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "10/22/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "10/23/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "10/23/2015",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "10/23/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "10/23/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "10/23/2015",
+    "Visitor": "Boston Bruins",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "10/23/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "10/24/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "10/24/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "10/24/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "10/24/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "10/24/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "10/24/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "10/24/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "10/24/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "10/24/2015",
+    "Visitor": "New York Rangers",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "10/24/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "10/24/2015",
+    "Visitor": "New York Islanders",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "10/24/2015",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "10/25/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "10/25/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "10/25/2015",
+    "Visitor": "Minnesota Wild",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "10/26/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "10/26/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "10/26/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "10/27/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "10/27/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "10/27/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "10/27/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "10/27/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "10/27/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "10/27/2015",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "10/27/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "10/27/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "10/27/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "10/28/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "10/28/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "10/28/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "10/29/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "10/29/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "10/29/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "10/29/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "10/29/2015",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "10/29/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "10/29/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "10/29/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "10/30/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "10/30/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "10/30/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "10/30/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "10/30/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "10/30/2015",
+    "Visitor": "Boston Bruins",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "10/30/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "10/30/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "10/30/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "10/31/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "10/31/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "10/31/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "10/31/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "10/31/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "10/31/2015",
+    "Visitor": "New York Islanders",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "10/31/2015",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "10/31/2015",
+    "Visitor": "Minnesota Wild",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "10/31/2015",
+    "Visitor": "Boston Bruins",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "10/31/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "11/1/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "11/1/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "11/1/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "11/1/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "11/1/2015",
+    "Visitor": "Buffalo Sabres",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "11/2/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "11/2/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "11/2/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "11/3/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "11/3/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "11/3/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "11/3/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "11/3/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "11/3/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "11/3/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "11/3/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "11/3/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "11/4/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "11/4/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "11/4/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "11/4/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "11/5/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "11/5/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "11/5/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "11/5/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "11/5/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "11/5/2015",
+    "Visitor": "New York Islanders",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "11/5/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "11/5/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "11/5/2015",
+    "Visitor": "Boston Bruins",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "11/6/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "11/6/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "11/6/2015",
+    "Visitor": "New York Rangers",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "11/6/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "11/6/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "11/6/2015",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "11/7/2015",
+    "Visitor": "New York Rangers",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "11/7/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "11/7/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "11/7/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "11/7/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "11/7/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "11/7/2015",
+    "Visitor": "Boston Bruins",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "11/7/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "11/7/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "11/7/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "11/7/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "11/8/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "11/8/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "11/8/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "11/8/2015",
+    "Visitor": "Boston Bruins",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "11/9/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "11/10/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "11/10/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "11/10/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "11/10/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "11/10/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "11/10/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "11/10/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "11/10/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "11/10/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "11/10/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "11/10/2015",
+    "Visitor": "New York Islanders",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "11/10/2015",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "11/11/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "11/11/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "11/12/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "11/12/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "11/12/2015",
+    "Visitor": "Minnesota Wild",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "11/12/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "11/12/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "11/12/2015",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "11/12/2015",
+    "Visitor": "New York Islanders",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "11/12/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "11/12/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "11/12/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "11/12/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "11/12/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "11/13/2015",
+    "Visitor": "New York Islanders",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "11/13/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "11/13/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "11/13/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "11/14/2015",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "11/14/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "11/14/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "11/14/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "11/14/2015",
+    "Visitor": "Minnesota Wild",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "11/14/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "11/14/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "11/14/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "11/14/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "11/14/2015",
+    "Visitor": "New York Rangers",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "11/14/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "11/14/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "11/14/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "11/15/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "11/15/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "11/16/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "11/16/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "11/16/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "11/16/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "11/16/2015",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "11/16/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "11/17/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "11/17/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "11/17/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "11/17/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "11/17/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "11/17/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "11/17/2015",
+    "Visitor": "Minnesota Wild",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "11/17/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "11/18/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "11/18/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "11/18/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "11/19/2015",
+    "Visitor": "Minnesota Wild",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "11/19/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "11/19/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "11/19/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "11/19/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "11/19/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "11/19/2015",
+    "Visitor": "Buffalo Sabres",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "11/19/2015",
+    "Visitor": "New York Rangers",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "11/19/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "11/20/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "11/20/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "11/20/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "11/20/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "11/20/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "11/20/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "11/21/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "11/21/2015",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "11/21/2015",
+    "Visitor": "New York Rangers",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "11/21/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "11/21/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "11/21/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "11/21/2015",
+    "Visitor": "Detroit Red Wings",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "11/21/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "11/21/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "11/21/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "11/21/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "11/22/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "11/22/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "11/22/2015",
+    "Visitor": "New York Islanders",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "11/22/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "11/23/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "11/23/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "11/23/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "11/23/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "11/23/2015",
+    "Visitor": "Boston Bruins",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "11/23/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "11/23/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "11/24/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "11/24/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "11/25/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "11/25/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "11/25/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "11/25/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "11/25/2015",
+    "Visitor": "Boston Bruins",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "11/25/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "11/25/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "11/25/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "11/25/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "11/25/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "11/25/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "11/25/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "11/25/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "11/27/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "11/27/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "11/27/2015",
+    "Visitor": "New York Rangers",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "11/27/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "11/27/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "11/27/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "11/27/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "11/27/2015",
+    "Visitor": "New York Islanders",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "11/27/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "11/27/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "11/27/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "11/27/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "11/28/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "11/28/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "11/28/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "11/28/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "11/28/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "11/28/2015",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "11/28/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "11/28/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "11/28/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "11/28/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "11/28/2015",
+    "Visitor": "New York Islanders",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "11/28/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "11/29/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "11/30/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "11/30/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "11/30/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "11/30/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "12/1/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "12/1/2015",
+    "Visitor": "Minnesota Wild",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "12/1/2015",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "12/1/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "12/1/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "12/1/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "12/1/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "12/1/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "12/1/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "12/1/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "12/2/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "12/2/2015",
+    "Visitor": "Boston Bruins",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "12/2/2015",
+    "Visitor": "New York Rangers",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "12/2/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "12/3/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "12/3/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "12/3/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "12/3/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "12/3/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "12/3/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "12/3/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "12/3/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "12/4/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "12/4/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "12/4/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "12/4/2015",
+    "Visitor": "Boston Bruins",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "12/4/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "12/4/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "12/4/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "12/5/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "12/5/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "12/5/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "12/5/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "12/5/2015",
+    "Visitor": "New York Islanders",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "12/5/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "12/5/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "12/5/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "12/5/2015",
+    "Visitor": "Boston Bruins",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "12/5/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "12/6/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "12/6/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "12/6/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "12/6/2015",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "12/6/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "12/6/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "12/6/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "12/7/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "12/7/2015",
+    "Visitor": "Minnesota Wild",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "12/7/2015",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "12/8/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "12/8/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "12/8/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "12/8/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "12/8/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "12/8/2015",
+    "Visitor": "New York Islanders",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "12/8/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "12/8/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "12/8/2015",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "12/9/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "12/9/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "12/9/2015",
+    "Visitor": "Boston Bruins",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "12/9/2015",
+    "Visitor": "New York Rangers",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "12/10/2015",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "12/10/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "12/10/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "12/10/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "12/10/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "12/10/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "12/10/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "12/11/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "12/11/2015",
+    "Visitor": "Minnesota Wild",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "12/11/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "12/11/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "12/11/2015",
+    "Visitor": "New York Rangers",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "12/11/2015",
+    "Visitor": "Detroit Red Wings",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "12/11/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "12/12/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "12/12/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "12/12/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "12/12/2015",
+    "Visitor": "New York Islanders",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "12/12/2015",
+    "Visitor": "New York Rangers",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "12/12/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "12/12/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "12/12/2015",
+    "Visitor": "Minnesota Wild",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "12/12/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "12/12/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "12/13/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "12/13/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "12/13/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "12/14/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "12/14/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "12/14/2015",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "12/14/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "12/14/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "12/15/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "12/15/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "12/15/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "12/15/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "12/15/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "12/15/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "12/15/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "12/15/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "12/15/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "12/15/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "12/15/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "12/16/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "12/16/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "12/17/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "12/17/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "12/17/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "12/17/2015",
+    "Visitor": "New York Islanders",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "12/17/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "12/17/2015",
+    "Visitor": "New York Rangers",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "12/17/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "12/17/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "12/17/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "12/17/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "12/17/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "12/18/2015",
+    "Visitor": "Florida Panthers",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "12/18/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "12/18/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "12/18/2015",
+    "Visitor": "Boston Bruins",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "12/18/2015",
+    "Visitor": "New York Rangers",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "12/18/2015",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "12/19/2015",
+    "Visitor": "New York Islanders",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "12/19/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "12/19/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "12/19/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "12/19/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "12/19/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "12/19/2015",
+    "Visitor": "Minnesota Wild",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "12/19/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "12/19/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "12/19/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "12/20/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "12/20/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "12/20/2015",
+    "Visitor": "Calgary Flames",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "12/20/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "12/20/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "12/20/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "12/21/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "12/21/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "12/21/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "12/21/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "12/21/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "12/21/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "12/21/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "12/21/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "12/22/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "12/22/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "12/22/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "12/22/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "12/22/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "12/22/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "12/22/2015",
+    "Visitor": "San Jose Sharks",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "12/22/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "12/22/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "12/22/2015",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "12/26/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "12/26/2015",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "12/26/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "12/26/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "12/26/2015",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "12/26/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "12/26/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "12/26/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "12/26/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "12/27/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "12/27/2015",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "12/27/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "12/27/2015",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "12/27/2015",
+    "Visitor": "St. Louis Blues",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "12/27/2015",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "12/27/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "12/27/2015",
+    "Visitor": "Boston Bruins",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "12/27/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "12/28/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "12/28/2015",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "12/28/2015",
+    "Visitor": "New York Rangers",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "12/28/2015",
+    "Visitor": "Colorado Avalanche",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "12/28/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "12/28/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "12/29/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "12/29/2015",
+    "Visitor": "Ottawa Senators",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "12/29/2015",
+    "Visitor": "Dallas Stars",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "12/29/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "12/29/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "12/29/2015",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "12/29/2015",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "12/29/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "12/29/2015",
+    "Visitor": "New York Islanders",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "12/29/2015",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "12/30/2015",
+    "Visitor": "New Jersey Devils",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "12/30/2015",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "12/30/2015",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "12/30/2015",
+    "Visitor": "New York Rangers",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "12/30/2015",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "12/31/2015",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "12/31/2015",
+    "Visitor": "New York Islanders",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "12/31/2015",
+    "Visitor": "Washington Capitals",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "12/31/2015",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "12/31/2015",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "12/31/2015",
+    "Visitor": "Nashville Predators",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "12/31/2015",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "12/31/2015",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "12/31/2015",
+    "Visitor": "Minnesota Wild",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "1/1/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "1/1/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "1/2/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "1/2/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "1/2/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "1/2/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "1/2/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "1/2/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "1/2/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "1/2/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "1/2/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "1/2/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "1/2/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "1/2/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "1/3/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "1/3/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "1/3/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "1/3/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "1/4/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "1/4/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "1/4/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "1/4/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "1/4/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "1/5/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "1/5/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "1/5/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "1/5/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "1/5/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "1/5/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "1/5/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "1/5/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "1/6/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "1/6/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "1/6/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "1/6/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "1/6/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "1/7/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "1/7/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "1/7/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "1/7/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "1/7/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "1/7/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "1/7/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "1/8/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "1/8/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "1/8/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "1/8/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "1/8/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "1/8/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "1/9/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "1/9/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "1/9/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "1/9/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "1/9/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "1/9/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "1/9/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "1/9/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "1/9/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "1/9/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "1/10/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "1/10/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "1/10/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "1/10/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "1/10/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "1/10/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "1/11/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "1/11/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "1/11/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "1/11/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "1/12/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "1/12/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "1/12/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "1/12/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "1/12/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "1/12/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "1/12/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "1/12/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "1/13/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "1/13/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "1/13/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "1/13/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "1/14/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "1/14/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "1/14/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "1/14/2016",
+    "Visitor": "New York Rangers",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "1/14/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "1/14/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "1/14/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "1/14/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "1/15/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "1/15/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "1/15/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "1/15/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "1/15/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "1/15/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "1/16/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "1/16/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "1/16/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "1/16/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "1/16/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "1/16/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "1/16/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "1/16/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "1/16/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "1/16/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "1/17/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "1/17/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "1/17/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "1/17/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "1/17/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "1/17/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "1/17/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "1/18/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "1/18/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "1/18/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "1/18/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "1/18/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "1/19/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "1/19/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "1/19/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "1/19/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "1/19/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "1/19/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "1/19/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "1/19/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "1/20/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "1/20/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "1/20/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "1/21/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "1/21/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "1/21/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "1/21/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "1/21/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "1/21/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "1/21/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "1/21/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "1/21/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "1/21/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "1/22/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "1/22/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "1/22/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "1/22/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "1/22/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "1/23/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "1/23/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "1/23/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "1/23/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "1/23/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "1/23/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "1/23/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "1/23/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "1/23/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "1/23/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "1/24/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "1/24/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "1/24/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "1/24/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "1/25/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "1/25/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "1/25/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "1/25/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "1/25/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "1/25/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "1/26/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "1/26/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "1/26/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "1/26/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "1/26/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "1/26/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "1/26/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "1/26/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "1/26/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "1/27/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "1/27/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "1/27/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "1/27/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "2/2/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "2/2/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "2/2/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "2/2/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "2/2/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "2/2/2016",
+    "Visitor": "New York Rangers",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "2/2/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "2/2/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "2/2/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "2/2/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "2/2/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "2/2/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "2/3/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "2/3/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "2/3/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "2/4/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "2/4/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "2/4/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "2/4/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "2/4/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "2/4/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "2/4/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "2/4/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "2/4/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "2/4/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "2/4/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "2/4/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "2/5/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "2/5/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "2/5/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "2/5/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "2/6/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "2/6/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "2/6/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "2/6/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "2/6/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "2/6/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "2/6/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "2/6/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "2/6/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "2/6/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "2/6/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "2/6/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "2/7/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "2/7/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "2/7/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "2/8/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "2/8/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "2/8/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "2/8/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "2/9/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "2/9/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "2/9/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "2/9/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "2/9/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "2/9/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "2/9/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "2/9/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "2/9/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "2/9/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "2/9/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "2/9/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "2/10/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "2/10/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "2/10/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "2/11/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "2/11/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "2/11/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "2/11/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "2/11/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "2/11/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "2/11/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "2/11/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "2/11/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "2/12/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "2/12/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "2/12/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "2/12/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "2/12/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "2/12/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "2/12/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "2/13/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "2/13/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "2/13/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "2/13/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "2/13/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "2/13/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "2/13/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "2/13/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "2/13/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "2/13/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "2/14/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "2/14/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "2/14/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "2/14/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "2/14/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "2/15/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "2/15/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "2/15/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "2/15/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "2/15/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "2/15/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "2/15/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "2/16/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "2/16/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "2/16/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "2/16/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "2/16/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "2/16/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "2/16/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "2/16/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "2/17/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "2/17/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "2/17/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "2/18/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "2/18/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "2/18/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "2/18/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "2/18/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "2/18/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "2/18/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "2/18/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "2/18/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "2/18/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "2/18/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "2/19/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "2/19/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "2/19/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "2/19/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "2/19/2016",
+    "Visitor": "New York Islanders",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "2/20/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "2/20/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "2/20/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "2/20/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "2/20/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "2/20/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "2/20/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "2/20/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "2/20/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "2/21/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "2/21/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "2/21/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "2/21/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "2/21/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "2/21/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "2/22/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "2/22/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "2/22/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "2/22/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "2/23/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "2/23/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "2/23/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "2/23/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "2/23/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "2/23/2016",
+    "Visitor": "New York Rangers",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "2/23/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "2/23/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "2/23/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "2/24/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "2/24/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "2/24/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "2/24/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "2/25/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "2/25/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "2/25/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "2/25/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "2/25/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "2/25/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "2/25/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "2/25/2016",
+    "Visitor": "New York Rangers",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "2/25/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "2/25/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "2/26/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "2/26/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "2/26/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "2/26/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "2/26/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "2/27/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "2/27/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "2/27/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "2/27/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "2/27/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "2/27/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "2/27/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "2/27/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "2/27/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "2/28/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "2/28/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "2/28/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "2/28/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "2/28/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "2/28/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "2/28/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "2/29/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "2/29/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "2/29/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "2/29/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "2/29/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "2/29/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "3/1/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "3/1/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "3/1/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "3/1/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "3/1/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "3/1/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "3/1/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "3/1/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "3/1/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "3/2/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "3/2/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "3/2/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "3/3/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "3/3/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "3/3/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "3/3/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "3/3/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "3/3/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "3/3/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "3/3/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "3/3/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "3/3/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "3/3/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "3/3/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "3/4/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "3/4/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "3/4/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "3/5/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "3/5/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "3/5/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "3/5/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "3/5/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "3/5/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "3/5/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "3/5/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "3/5/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "3/5/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "3/5/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "3/6/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "3/6/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "3/6/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "3/6/2016",
+    "Visitor": "New York Islanders",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "3/6/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "3/6/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "3/7/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "3/7/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "3/7/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "3/7/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "3/7/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "3/7/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "3/7/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "3/8/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "3/8/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "3/8/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "3/8/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "3/8/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "3/8/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "3/8/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "3/8/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "3/9/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "3/9/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "3/9/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "3/9/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "3/9/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "3/9/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "3/10/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "3/10/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "3/10/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "3/10/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "3/10/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "3/10/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "3/11/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "3/11/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "3/11/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "3/11/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "3/11/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "3/12/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "3/12/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "3/12/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "3/12/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "3/12/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "3/12/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "3/12/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "3/12/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "3/12/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "3/12/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "3/12/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "3/12/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "3/13/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "3/13/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "3/13/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "3/14/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "3/14/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "3/14/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "3/14/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "3/14/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "3/14/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "3/15/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "3/15/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "3/15/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "3/15/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "3/15/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "3/15/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "3/15/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "3/15/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "3/16/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "3/16/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "3/16/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "3/16/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "3/16/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "3/16/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "3/17/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "3/17/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "3/17/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "3/17/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "3/17/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "3/17/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "3/17/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "3/17/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "3/18/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "3/18/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "3/18/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "3/18/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "3/18/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "3/18/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "3/19/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "3/19/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "3/19/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "3/19/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "3/19/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "3/19/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "3/19/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "3/19/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "3/19/2016",
+    "Visitor": "New York Rangers",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "3/19/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "3/19/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "3/20/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "3/20/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "3/20/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "3/20/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "3/20/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "3/20/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "3/20/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "3/21/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "3/21/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "3/21/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "3/21/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "3/22/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "3/22/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "3/22/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "3/22/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "3/22/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "3/22/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "3/22/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "3/22/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "3/22/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "3/22/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "3/23/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "3/23/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "3/24/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "3/24/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "3/24/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "3/24/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "3/24/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "3/24/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "3/24/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "3/24/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "3/24/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "3/24/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "3/24/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "3/25/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "3/25/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "3/25/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "3/26/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "3/26/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "3/26/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "3/26/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "3/26/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "3/26/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "3/26/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "3/26/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "3/26/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "3/26/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "3/26/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "3/26/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "3/26/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "3/26/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "3/27/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "3/27/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "3/27/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "3/28/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "3/28/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "3/28/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "3/28/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "3/28/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "3/28/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "3/28/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "3/28/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "3/29/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "3/29/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "3/29/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "3/29/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "3/29/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "3/29/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "3/29/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "3/29/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "3/29/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "3/30/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "3/30/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "3/30/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "3/31/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "3/31/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "3/31/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "3/31/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "3/31/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "3/31/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "3/31/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "3/31/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "3/31/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "3/31/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "4/1/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "4/1/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "4/1/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "4/1/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "4/1/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "4/2/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "Arizona Coyotes"
+  },
+  {
+    "Date": "4/2/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "4/2/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "4/2/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "4/2/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "4/2/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "4/2/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "4/2/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "4/2/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "4/2/2016",
+    "Visitor": "New Jersey Devils",
+    "Home": "Tampa Bay Lightning"
+  },
+  {
+    "Date": "4/2/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "4/3/2016",
+    "Visitor": "Dallas Stars",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "4/3/2016",
+    "Visitor": "Boston Bruins",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "4/3/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "4/3/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Pittsburgh Penguins"
+  },
+  {
+    "Date": "4/3/2016",
+    "Visitor": "Minnesota Wild",
+    "Home": "Winnipeg Jets"
+  },
+  {
+    "Date": "4/4/2016",
+    "Visitor": "New York Rangers",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "4/4/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "4/4/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "4/4/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "4/4/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "4/5/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Anaheim Ducks"
+  },
+  {
+    "Date": "4/5/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "4/5/2016",
+    "Visitor": "Los Angeles Kings",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "4/5/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "4/5/2016",
+    "Visitor": "San Jose Sharks",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "4/5/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "4/5/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "4/5/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "4/5/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "4/5/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "4/5/2016",
+    "Visitor": "New York Islanders",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "4/6/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "Detroit Red Wings"
+  },
+  {
+    "Date": "4/6/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Edmonton Oilers"
+  },
+  {
+    "Date": "4/6/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Toronto Maple Leafs"
+  },
+  {
+    "Date": "4/7/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "4/7/2016",
+    "Visitor": "Montreal Canadiens",
+    "Home": "Carolina Hurricanes"
+  },
+  {
+    "Date": "4/7/2016",
+    "Visitor": "Vancouver Canucks",
+    "Home": "Calgary Flames"
+  },
+  {
+    "Date": "4/7/2016",
+    "Visitor": "St. Louis Blues",
+    "Home": "Chicago Blackhawks"
+  },
+  {
+    "Date": "4/7/2016",
+    "Visitor": "Colorado Avalanche",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "4/7/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "4/7/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "4/7/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "Nashville Predators"
+  },
+  {
+    "Date": "4/7/2016",
+    "Visitor": "New York Islanders",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "4/7/2016",
+    "Visitor": "Florida Panthers",
+    "Home": "Ottawa Senators"
+  },
+  {
+    "Date": "4/7/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "4/7/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "4/7/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Washington Capitals"
+  },
+  {
+    "Date": "4/8/2016",
+    "Visitor": "Columbus Blue Jackets",
+    "Home": "Buffalo Sabres"
+  },
+  {
+    "Date": "4/9/2016",
+    "Visitor": "Ottawa Senators",
+    "Home": "Boston Bruins"
+  },
+  {
+    "Date": "4/9/2016",
+    "Visitor": "Chicago Blackhawks",
+    "Home": "Columbus Blue Jackets"
+  },
+  {
+    "Date": "4/9/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Colorado Avalanche"
+  },
+  {
+    "Date": "4/9/2016",
+    "Visitor": "Nashville Predators",
+    "Home": "Dallas Stars"
+  },
+  {
+    "Date": "4/9/2016",
+    "Visitor": "Carolina Hurricanes",
+    "Home": "Florida Panthers"
+  },
+  {
+    "Date": "4/9/2016",
+    "Visitor": "Winnipeg Jets",
+    "Home": "Los Angeles Kings"
+  },
+  {
+    "Date": "4/9/2016",
+    "Visitor": "Calgary Flames",
+    "Home": "Minnesota Wild"
+  },
+  {
+    "Date": "4/9/2016",
+    "Visitor": "Tampa Bay Lightning",
+    "Home": "Montreal Canadiens"
+  },
+  {
+    "Date": "4/9/2016",
+    "Visitor": "Toronto Maple Leafs",
+    "Home": "New Jersey Devils"
+  },
+  {
+    "Date": "4/9/2016",
+    "Visitor": "Buffalo Sabres",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "4/9/2016",
+    "Visitor": "Detroit Red Wings",
+    "Home": "New York Rangers"
+  },
+  {
+    "Date": "4/9/2016",
+    "Visitor": "Pittsburgh Penguins",
+    "Home": "Philadelphia Flyers"
+  },
+  {
+    "Date": "4/9/2016",
+    "Visitor": "Arizona Coyotes",
+    "Home": "San Jose Sharks"
+  },
+  {
+    "Date": "4/9/2016",
+    "Visitor": "Washington Capitals",
+    "Home": "St. Louis Blues"
+  },
+  {
+    "Date": "4/9/2016",
+    "Visitor": "Edmonton Oilers",
+    "Home": "Vancouver Canucks"
+  },
+  {
+    "Date": "4/10/2016",
+    "Visitor": "Philadelphia Flyers",
+    "Home": "New York Islanders"
+  },
+  {
+    "Date": "4/10/2016",
+    "Visitor": "Anaheim Ducks",
+    "Home": "Washington Capitals"
+  }
+]
