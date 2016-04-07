@@ -105,3 +105,8 @@ th {
 .margin-left{
   margin-right: 78px;
 }
+
+@media screen and (max-width: 375px) {
+    .hide { display: none; }
+    th,td { font-size: 9px !important; }
+}
