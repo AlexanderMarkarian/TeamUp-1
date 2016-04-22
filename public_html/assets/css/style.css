@@ -2,6 +2,12 @@
 @import url(https://fonts.googleapis.com/css?family=Maiden+Orange);
 @import url(https://fonts.googleapis.com/css?family=Mate+SC);
 @import url(https://fonts.googleapis.com/css?family=Port+Lligat+Slab);
+
+.bx-next, .bx-prev{
+    z-index: 0 !important;
+}
+
+
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;

@@ -62,3 +62,8 @@ div#load_screen > div#loading {
   text-align: center;
   font-size: 12px;
 }
+
+section{
+  padding-top: 100px !important;
+  padding-bottom: 180px !important;
+}

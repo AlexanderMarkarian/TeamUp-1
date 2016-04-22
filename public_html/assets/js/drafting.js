@@ -1,39 +1,133 @@
 $(document).ready(function(){
 
     $("#main-box").hide();
+    
+    // SETTING USER INFO -------------------------------
+    var oneWayOrder = [];
+    var reverseOrder = [];
+    
+    $.ajax({
+       type:"POST",
+       url:"../Classes/draft.php",
+       data:{
+           getUsers:true
+       },
+       success:function(response){
+           var data = $.parseJSON(response);
+           for(var k in data){
+               oneWayOrder.push(data[k]);
+           }
+           for(var i=oneWayOrder.length-1; i>=0; i--){
+               reverseOrder.push(oneWayOrder[i]);
+           }
+           var oddString = '', evenString = '';
+           var count = 1;
+           for(var k in oneWayOrder){
+               oddString += '<tr class="round-item"><td><span class="round-number pull-left">'+count+'</span>';
+               oddString += '<span class="round-name">'+oneWayOrder[k]+'</span></td></tr>';
+               count++;
+           }
+           $(".odd_round").append(oddString);
+           
+           for(var k in reverseOrder){
+               evenString += '<tr class="round-item"><td><span class="round-number pull-left">'+count+'</span>';
+               evenString += '<span class="round-name">'+reverseOrder[k]+'</span></td></tr>';
+               count++;
+           }
+           $(".even_round").append(evenString);
+           
+           //timer();
+           
+       }
+    });
+    // -------------------------------------------------
 
     var team = {};
     var interval;
     
+    var date = new Date();
+    var month = date.getMonth();
+    var nMonth = date.getMonth()+1;
+    var day = date.getDate();
+    var year = date.getFullYear();
+    var nday = day+1;
     $.ajax({
-        type: "GET",
-        url: "../backup_basketball_data/2016-03-06.json",
-        data:{
+       type: "POST",
+       url: "../allsportsdata/allsportsdata.php",
+       data:{},
+       success: function(response){
+                                                   
+           $.ajax({
+              type: "GET",
+              url: "../allsportsdata/nba/nba_2016-04-22.json",
+              data:{
+                  
+              },
+              success:function(data){
+                  var string = "";
+                  for(var k in data){
+                      for(var l in data[k]){
+                          string += "<tr class='teams' id="+data[k][l].image+"><td>" + data[k][l].team + "</td><td>NBA</td><td>Free Agent</td><td>"+data[k][l].GP+"</td><td>"+data[k][l].wins+"</td><td>"+data[k][l].loses+"</td><td>"+data[k][l].percentage+"</td></tr>";
+                      }
+                  }
+                  $.ajax({
+                    type: "GET",
+                    url: "../allsportsdata/nhl/nhl_2016-04-22.json",
+                    data:{
 
-        },
-        success:function(data){
-            var string = "";
-            for(var k in data){
-                if(data[k].teamName != "d"){
-                    var wins = parseInt(data[k].w);
-                    var loses = parseInt(data[k].l);
-                    var total = wins + loses;
-                    var winPct = (wins / total).toFixed(2);
-                    string += "<tr class='teams'><td>"+data[k].teamName+"</td><td>NBA</td><td>Free Agent</td>";
-                    string += "<td>"+total+"</td><td>"+wins+"</td><td>"+loses+"</td><td>"+winPct+"</td></tr>";
-                }
-            }
+                    },
+                    success:function(data){
+                        for(var k in data){
+                            for(var l in data[k]){
+                                string += "<tr class='teams' id="+data[k][l].image+"><td>" + data[k][l].team + "</td><td>NHL</td><td>Free Agent</td><td>"+data[k][l].GP+"</td><td>"+data[k][l].wins+"</td><td>"+data[k][l].loses+"</td><td>"+data[k][l].percentage+"</td></tr>";
+                            }
+                        }
+                        $.ajax({
+                           type: "GET",
+                           url: "../allsportsdata/mlb/mlb_2016-04-22.json",
+                           data:{
+                               
+                           },
+                           success:function(data){
+                                for(var k in data){
+                                    for(var l in data[k]){
+                                        
+                                        string += "<tr class='teams' id="+data[k][l].image+"><td>" + data[k][l].team + "</td><td>MLB</td><td>Free Agent</td><td>"+data[k][l].GP+"</td><td>"+data[k][l].wins+"</td><td>"+data[k][l].loses+"</td><td>"+data[k][l].percentage+"</td></tr>";
+                                    }
+                                } 
+                                $.ajax({
+                                   type: "GET",
+                                   url: "../allsportsdata/nfl/nfl_2016-04-22.json",
+                                   data:{
+                                       
+                                   },
+                                   success: function(data){
+                                        for(var k in data){
+                                            for(var l in data[k]){
+                                                string += "<tr class='teams' id="+data[k][l].image+"><td>" + data[k][l].team + "</td><td>NFL</td><td>Free Agent</td><td>"+data[k][l].GP+"</td><td>"+data[k][l].wins+"</td><td>"+data[k][l].loses+"</td><td>"+data[k][l].percentage+"</td></tr>";
+                                            }
+                                        }  
+                                        $("#table-body").append(string);
+                                        $('#myTable').DataTable();
+                                   }
+                                });
 
-            $("#table-body").append(string);
-            $('#myTable').DataTable();
-        }
+                           }
+                        });
+
+                    }
+                 });
+              }
+           });
+       }
     });
+
 
     $(document.body).on("click", ".teams", function(){
         $("#intro-box").hide();
         $("#main-box").show();
 
-        if($(this)[0].id){
+        if($(this)[0].id == ""){
             $(".queue").html("Remove From Queue");
             $(".queue").attr("id","remove-queue");
             $("#remove-queue").removeClass("btn-info");
@@ -52,6 +146,8 @@ $(document).ready(function(){
         team.wins = $(this)[0].cells[4].innerHTML;
         team.loses = $(this)[0].cells[5].innerHTML;
         team.pct = $(this)[0].cells[6].innerHTML;
+        team.image = "../assets/" + $(this)[0].id;
+        document.getElementById("selected-logo").src = team.image;
         $("#selected-team").html(team.team);
         $("#selected-league").html(team.league);
         $("#gp").html(team.GP);
@@ -72,8 +168,11 @@ $(document).ready(function(){
     });
 
     $(document.body).on("click","#draft-team", function(){
-
-        clearInterval(interval);
+        timer();
+    });
+    
+    function timer(){
+      clearInterval(interval);
         var twoMinutes = 60 * 2,
             display = $('.time');
         startTimer(twoMinutes, display);
@@ -94,8 +193,8 @@ $(document).ready(function(){
                 }
             }, 1000);
 
-        }
-    });
+        }  
+    }
 
 
     $(document.body).on("click","#remove-queue", function(){

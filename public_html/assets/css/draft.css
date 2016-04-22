@@ -6,6 +6,14 @@ body{
   background-size: cover !important;
 }
 
+.onTheClock{
+    background:#e74c3c;
+}
+
+.main{
+    margin-top:20px;
+}
+
 ::-webkit-scrollbar {
     width: 12px;
 }

@@ -1080,13 +1080,10 @@ class forms {
 
         public function ScoreNavBar(array $data){
             foreach ($data as $d) {
-                echo "<div class='slide'><div>".$d[Date]."</div><div>".$d[Home]."</div><div>".$d[Visitor]."</div></div>";
+                echo "<div class='slide'><div>".date("m/d/Y")."</div><div>".$d[Home]."</div><div>".$d[Visitor]."</div></div>";
             }
             ?>
             <?php
-
-            
-
         }
 
     }

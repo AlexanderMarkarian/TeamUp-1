@@ -32,7 +32,7 @@
                         <span id="selected-league"></span>
 
                         <div class="selected-info">
-                            <img src="<?= ABSOLUTH_PATH_IMAGES ?>nba/lakers.jpg"  id="selected-logo">
+                            <img id="selected-logo">
                             <span id="selected-stats">
                                 <div id="stat-box">
                                     GP: <span id="gp">0</span>
@@ -85,106 +85,22 @@
                         <thead>
                             <th>Round 1</th>
                         </thead>
-                        <tbody>
-                            <tr class="round-item">
-                                <td>
-                                    <span class="round-number">32.</span>
-                                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
-                                    <span class="round-name">Team B</span>
-                                </td>
-                            </tr>
-                            <tr class="round-item">
-                                <td>
-                                    <span class="round-number">32.</span>
-                                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
-                                    <span class="round-name">Team B</span>
-                                </td>
-                            </tr>
-                            <tr class="round-item">
-                                <td>
-                                    <span class="round-number">32.</span>
-                                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
-                                    <span class="round-name">Team B</span>
-                                </td>
-                            </tr>
+                        <tbody class="odd_round">
                         </tbody>
                         <thead>
                             <th>Round 2</th>
                         </thead>
-                        <tbody>
-                           <tr class="round-item">
-                                <td>
-                                    <span class="round-number">32.</span>
-                                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
-                                    <span class="round-name">Team B</span>
-                                </td>
-                            </tr>
-                            <tr class="round-item">
-                                <td>
-                                    <span class="round-number">32.</span>
-                                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
-                                    <span class="round-name">Team B</span>
-                                </td>
-                            </tr>
-                            <tr class="round-item">
-                                <td>
-                                    <span class="round-number">32.</span>
-                                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
-                                    <span class="round-name">Team B</span>
-                                </td>
-                            </tr>
+                        <tbody class="even_round">
                         </tbody>
                         <thead>
                             <th>Round 3</th>
                         </thead>
-                        <tbody>
-                           <tr class="round-item">
-                                <td>
-                                    <span class="round-number">32.</span>
-                                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
-                                    <span class="round-name">Team B</span>
-                                </td>
-                            </tr>
-                            <tr class="round-item">
-                                <td>
-                                    <span class="round-number">32.</span>
-                                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
-                                    <span class="round-name">Team B</span>
-                                </td>
-                            </tr>
-                            <tr class="round-item">
-                                <td>
-                                    <span class="round-number">32.</span>
-                                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
-                                    <span class="round-name">Team B</span>
-                                </td>
-                            </tr>
+                        <tbody class="odd_round">
                         </tbody>
                         <thead>
                             <th>Round 4</th>
                         </thead>
-                        <tbody>
-                           <tr class="round-item">
-                                <td>
-                                    <span class="round-number">32.</span>
-                                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
-                                    <span class="round-name">Team B</span>
-                                </td>
-                            </tr>
-                            <tr class="round-item">
-                                <td>
-                                    <span class="round-number">32.</span>
-                                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
-                                    <span class="round-name">Team B</span>
-                                </td>
-                            </tr>
-                            <tr class="round-item">
-                                <td>
-                                    <span class="round-number">32.</span>
-                                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
-                                    <span class="round-name">Team B</span>
-                                </td>
-                            </tr>
+                        <tbody class="even_round">
                         </tbody>
                     </table>
                 </div>            

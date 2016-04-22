@@ -133,7 +133,10 @@ class loader {
             "js3" => "  <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "pageLoader.js'></script>",
             "jsShanke" => " <script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "jquery.ui.shake.js'></script>",
             "box" => "<script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "jquery.bxslider.min.js'></script>",
-            "schedules" => "<script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "schedules.js'></script>"
+            "nbaSchedule" => "<script type='text/javascript' src='../assets/schedules/nba2016.js'></script>",
+            "nhlSchedule" => "<script type='text/javascript' src='../assets/schedules/nhl2016.js'></script>",
+            "mlbSchedule" => "<script type='text/javascript' src='../assets/schedules/mlb2016.js'></script>",
+            "schedules" => "<script type='text/javascript' src='" . ABSOLUTH_PATH_JS . "schedules.js'></script>",
         );
         /* LOADS -> [meta, title, css, js] */
         $this->_head->GetMetaForHeader($meta);
