@@ -211,7 +211,8 @@ th {
 
 /* ROUND SECTION */
 .top-right{
-	height: 600px;
+    height: 870px;   
+    overflow-y : scroll;
 }
 
 .round-image{

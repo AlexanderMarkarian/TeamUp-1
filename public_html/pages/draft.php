@@ -1,4 +1,5 @@
 <section id="draft">
+    <div id='load_screen'><img src='../assets/images/other/loading.gif' id='image'></img></div>
     <div class="container main">
 
         <div class="row">
@@ -10,8 +11,8 @@
                     <div class="time">02:00</div>
                     <div class="clock-time">On the clock</div>
                     <div class="clock">
-                            <img src="<?= ABSOLUTH_PATH_IMAGES ?>other/icon.png" class="round-image">
-                        <span class="clock-team">Team A</span>
+                        <span class="clock-team">Alexander Markarian</span>
+                        <br>
                     </div>
                 </div>
                 <div class="draft-queue">
@@ -55,7 +56,9 @@
                         </div>
                     </div>
                     <div id="intro-box">
-                        Welcome to TeamUp
+                        Welcome to TeamUp Draft 
+                        <br>
+                        Your Draft Begins in <span id='draft-time'></span>
                     </div>
                 </div>
 
@@ -79,31 +82,39 @@
             </div>
 
             <!-- RIGHT SIDEBAR -->
-            <div class="col-md-2">
-                <div class="top-right">
-                    <table class="round-section">
-                        <thead>
-                            <th>Round 1</th>
-                        </thead>
-                        <tbody class="odd_round">
-                        </tbody>
-                        <thead>
-                            <th>Round 2</th>
-                        </thead>
-                        <tbody class="even_round">
-                        </tbody>
-                        <thead>
-                            <th>Round 3</th>
-                        </thead>
-                        <tbody class="odd_round">
-                        </tbody>
-                        <thead>
-                            <th>Round 4</th>
-                        </thead>
-                        <tbody class="even_round">
-                        </tbody>
-                    </table>
-                </div>            
+            <div class="col-md-2 top-right">
+                <table class="round-section">
+                    <thead>
+                        <th>Round 1</th>
+                    </thead>
+                    <tbody class="odd_round">
+                    </tbody>
+                    <thead>
+                        <th>Round 2</th>
+                    </thead>
+                    <tbody class="even_round">
+                    </tbody>
+                    <thead>
+                        <th>Round 3</th>
+                    </thead>
+                    <tbody class="odd_round">
+                    </tbody>
+                    <thead>
+                        <th>Round 4</th>
+                    </thead>
+                    <tbody class="even_round">
+                    </tbody>
+                    <thead>
+                        <th>Round 5</th>
+                    </thead>
+                    <tbody class="odd_round">
+                    </tbody>
+                    <thead>
+                        <th>Round 6</th>
+                    </thead>
+                    <tbody class="even_round">
+                    </tbody>
+                </table>        
             </div>
         </div>
     </div>

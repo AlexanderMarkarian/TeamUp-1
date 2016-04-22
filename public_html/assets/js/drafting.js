@@ -2,6 +2,10 @@ $(document).ready(function(){
 
     $("#main-box").hide();
     
+     setInterval(function(){
+        $("#load_screen").hide();
+     },5000);
+
     // SETTING USER INFO -------------------------------
     var oneWayOrder = [];
     var reverseOrder = [];
@@ -21,18 +25,13 @@ $(document).ready(function(){
                reverseOrder.push(oneWayOrder[i]);
            }
            var oddString = '', evenString = '';
-           var count = 1;
            for(var k in oneWayOrder){
-               oddString += '<tr class="round-item"><td><span class="round-number pull-left">'+count+'</span>';
-               oddString += '<span class="round-name">'+oneWayOrder[k]+'</span></td></tr>';
-               count++;
+               oddString += '<tr class="round-item"><td><span class="round-name">'+oneWayOrder[k]+'</span></td></tr>';
            }
            $(".odd_round").append(oddString);
            
            for(var k in reverseOrder){
-               evenString += '<tr class="round-item"><td><span class="round-number pull-left">'+count+'</span>';
-               evenString += '<span class="round-name">'+reverseOrder[k]+'</span></td></tr>';
-               count++;
+               evenString += '<tr class="round-item"><td><span class="round-name">'+reverseOrder[k]+'</span></td></tr>';
            }
            $(".even_round").append(evenString);
            

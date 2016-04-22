@@ -168,15 +168,8 @@
                 <div class="clearfix"> </div>
                 <div class="skills-grid-text">
                     <h5 class="plus wow fadeInRight">Something about our skills</h5>
-                    <p class="wow bounceIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        Excepteur sint occaecat cupidatat non proident.
-                    </p>
-                    <p class="wow bounceIn" data-wow-delay="0.4s">	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-                        dicta.
+                    <p class="wow bounceIn" data-wow-delay="0.4s">We utilized both our professional and academic programming skills to create a new style
+                        fantasy sports league that runs all year.
                     </p>
                 </div>
             </div>
@@ -192,35 +185,35 @@
                     </div>
                     <div class="tab2 wow bounceIn" data-wow-delay="0.4s">
                         <ul>
-                            <li class="lock"></li>
-                            <li class="sub-text">Nemo enim ipsam voluptatem</li>
+                            <li class="glyphicon glyphicon-star"></li>
+                            <li class="sub-text">PHP</li>
                             <li class="char">+</li>
                         </ul>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                        <p>Our project is built with object-oriented PHP. We run a loader class to pre-load all necessary files for a more quick and efficient solution</p>
                     </div>
                     <div class="tab3 wow bounceIn" data-wow-delay="0.4s">
                         <ul>
-                            <li class="tower"></li>
-                            <li class="sub-text">Ut enim ad minima veniam</li>
+                            <li class="glyphicon glyphicon-star"></li>
+                            <li class="sub-text">Node</li>
                             <li class="char">+</li>
                         </ul>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                        <p>Without any free sports API's, we decided to scrap our data from the web. We run that project in Node and call it once a day through a cronjob</p>
                     </div>
                     <div class="tab4 wow bounceIn" data-wow-delay="0.4s">
                         <ul>
-                            <li class="phone"></li>
-                            <li class="sub-text">Quis nostrum exercitationem ullam</li>
+                            <li class="glyphicon glyphicon-star"></li>
+                            <li class="sub-text">Javascript/Jquery</li>
                             <li class="char">+</li>
                         </ul>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                        <p>We run JQuery as our front-end Javascript library. Through ajax calls, we call our necessary PHP functions</p>
                     </div>
                     <div class="tab5 wow bounceIn" data-wow-delay="0.4s">
                         <ul>
-                            <li class="book"></li>
-                            <li class="sub-text">Neque porro quisquam est qui</li>
+                            <li class="glyphicon glyphicon-star"></li>
+                            <li class="sub-text">Python</li>
                             <li class="char">+</li>
                         </ul>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
