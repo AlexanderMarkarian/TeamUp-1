@@ -1,14 +1,15 @@
 $(document).ready(function(){
 
+    var table, ajaxTeams = [];
     $("#main-box").hide();
     
      setInterval(function(){
         $("#load_screen").hide();
      },5000);
+     
+
 
     // SETTING USER INFO -------------------------------
-    var oneWayOrder = [];
-    var reverseOrder = [];
     
     $.ajax({
        type:"POST",
@@ -17,29 +18,65 @@ $(document).ready(function(){
            getUsers:true
        },
        success:function(response){
+        
            var data = $.parseJSON(response);
-           for(var k in data){
-               oneWayOrder.push(data[k]);
-           }
-           for(var i=oneWayOrder.length-1; i>=0; i--){
-               reverseOrder.push(oneWayOrder[i]);
-           }
+           console.log(data);
            var oddString = '', evenString = '';
-           for(var k in oneWayOrder){
-               oddString += '<tr class="round-item"><td><span class="round-name">'+oneWayOrder[k]+'</span></td></tr>';
+           var count = 1;
+           var normalOrder = [], reverseOrder = [];
+           for(var k in data){
+               oddString += '<tr class="round-item"><td><span class="round-number pull-left">'+count+'</span><span class="round-name" id='+k+'>'+data[k]+'</span></td></tr>';
+               count++;
+               normalOrder.push(data[k]);
            }
            $(".odd_round").append(oddString);
            
+           reverseOrder = normalOrder.reverse();
+           
+      
            for(var k in reverseOrder){
-               evenString += '<tr class="round-item"><td><span class="round-name">'+reverseOrder[k]+'</span></td></tr>';
+               evenString += '<tr class="round-item"><td><span class="round-number pull-left">'+count+'</span><span class="round-name">'+reverseOrder[k]+'</span></td></tr>';
+               count++;
            }
            $(".even_round").append(evenString);
-           
+          
            //timer();
+           
+           setPick();
            
        }
     });
     // -------------------------------------------------
+    
+    function setPick(){
+        var team = $("#1").text();
+        $.ajax({
+            type:"POST",
+            url:"../Classes/draft.php",
+            data:{
+                team:team,
+                setPick:true
+            },
+            success:function(response){
+                whoIsNext();
+            }
+        })
+    }
+    
+    function whoIsNext(){
+        $.ajax({
+            type: "POST",
+            url: "../Classes/draft.php",
+            data:{
+                whoIsNext: true
+            },
+            success: function(response){
+                var d = $("#"+response).text();
+                $(".clock-team").text(d);
+                $(".clock-team").attr("id",response);
+            }
+        });
+    }
 
     var team = {};
     var interval;
@@ -50,77 +87,8 @@ $(document).ready(function(){
     var day = date.getDate();
     var year = date.getFullYear();
     var nday = day+1;
-    $.ajax({
-       type: "POST",
-       url: "../allsportsdata/allsportsdata.php",
-       data:{},
-       success: function(response){
-                                                   
-           $.ajax({
-              type: "GET",
-              url: "../allsportsdata/nba/nba_2016-04-22.json",
-              data:{
-                  
-              },
-              success:function(data){
-                  var string = "";
-                  for(var k in data){
-                      for(var l in data[k]){
-                          string += "<tr class='teams' id="+data[k][l].image+"><td>" + data[k][l].team + "</td><td>NBA</td><td>Free Agent</td><td>"+data[k][l].GP+"</td><td>"+data[k][l].wins+"</td><td>"+data[k][l].loses+"</td><td>"+data[k][l].percentage+"</td></tr>";
-                      }
-                  }
-                  $.ajax({
-                    type: "GET",
-                    url: "../allsportsdata/nhl/nhl_2016-04-22.json",
-                    data:{
-
-                    },
-                    success:function(data){
-                        for(var k in data){
-                            for(var l in data[k]){
-                                string += "<tr class='teams' id="+data[k][l].image+"><td>" + data[k][l].team + "</td><td>NHL</td><td>Free Agent</td><td>"+data[k][l].GP+"</td><td>"+data[k][l].wins+"</td><td>"+data[k][l].loses+"</td><td>"+data[k][l].percentage+"</td></tr>";
-                            }
-                        }
-                        $.ajax({
-                           type: "GET",
-                           url: "../allsportsdata/mlb/mlb_2016-04-22.json",
-                           data:{
-                               
-                           },
-                           success:function(data){
-                                for(var k in data){
-                                    for(var l in data[k]){
-                                        
-                                        string += "<tr class='teams' id="+data[k][l].image+"><td>" + data[k][l].team + "</td><td>MLB</td><td>Free Agent</td><td>"+data[k][l].GP+"</td><td>"+data[k][l].wins+"</td><td>"+data[k][l].loses+"</td><td>"+data[k][l].percentage+"</td></tr>";
-                                    }
-                                } 
-                                $.ajax({
-                                   type: "GET",
-                                   url: "../allsportsdata/nfl/nfl_2016-04-22.json",
-                                   data:{
-                                       
-                                   },
-                                   success: function(data){
-                                        for(var k in data){
-                                            for(var l in data[k]){
-                                                string += "<tr class='teams' id="+data[k][l].image+"><td>" + data[k][l].team + "</td><td>NFL</td><td>Free Agent</td><td>"+data[k][l].GP+"</td><td>"+data[k][l].wins+"</td><td>"+data[k][l].loses+"</td><td>"+data[k][l].percentage+"</td></tr>";
-                                            }
-                                        }  
-                                        $("#table-body").append(string);
-                                        $('#myTable').DataTable();
-                                   }
-                                });
-
-                           }
-                        });
-
-                    }
-                 });
-              }
-           });
-       }
-    });
-
+    callAjax();
+   
 
     $(document.body).on("click", ".teams", function(){
         $("#intro-box").hide();
@@ -167,7 +135,26 @@ $(document).ready(function(){
     });
 
     $(document.body).on("click","#draft-team", function(){
-        timer();
+        var user = $(".clock-team").attr('id');
+        var team = $("#selected-team").text();
+        var teamID;
+        for(var k in ajaxTeams){
+          if(ajaxTeams[k].team == team){
+            teamID = ajaxTeams[k].id;
+          }
+        }
+        $.ajax({
+          type: "POST",
+          url: "../Classes/draft.php",
+          data: {
+            user: user,
+            team: teamID,
+            inputTeams: true
+          },
+          success: function(response){
+            setTable();
+          }
+        });
     });
     
     function timer(){
@@ -201,6 +188,107 @@ $(document).ready(function(){
         $("#main-box").hide();
         $("#intro-box").show();
     });
+
+
+
+function setTable(){
+  $.ajax({
+      type: "POST",
+      url: "../Classes/draft.php",
+      data:{
+        newTable: true
+      },
+      success:function(response){
+        var data = $.parseJSON(response);
+        var teamID ='', userName = '';
+        for(var k in data){
+          teamID = k;
+          userName  =data[k];
+          var string = '';
+          for(var k in ajaxTeams){
+              if(ajaxTeams[k].id == teamID){
+                ajaxTeams[k].owner = userName;
+              }
+              string += "<tr class='teams' id="+ajaxTeams[k].image+"><td>"+ajaxTeams[k].team+"</td><td>"+ajaxTeams[k].sport+"</td><td>"+ajaxTeams[k].owner+"</td><td>"+ajaxTeams[k].GP+"</td><td>"+ajaxTeams[k].wins+"</td><td>"+ajaxTeams[k].loses+"</td><td>"+ajaxTeams[k].percentage+"</td></tr>";
+          }
+        }
+        $("#table-body").html(string);
+        table = $('#myTable').DataTable();
+      }
+  });
+
+}
+
+function callAjax(){
+    $.ajax({
+       type: "POST",
+       url: "../allsportsdata/allsportsdata.php",
+       data:{},
+       success: function(response){
+                                                   
+           $.ajax({
+              type: "GET",
+              url: "../allsportsdata/nba/nba_2016-04-22.json",
+              data:{
+                  
+              },
+              success:function(data){
+                  for(var k in data){
+                      for(var l in data[k]){
+                         ajaxTeams.push({id: data[k][l].id, team: data[k][l].team, image:data[k][l].image, GP:data[k][l].GP, sport:"NBA", wins:data[k][l].wins, loses:data[k][l].loses, percentage:data[k][l].percentage, owner:"Free Agent"});
+                      }
+                  }
+                  $.ajax({
+                    type: "GET",
+                    url: "../allsportsdata/nhl/nhl_2016-04-22.json",
+                    data:{
+
+                    },
+                    success:function(data){
+                        for(var k in data){
+                          for(var l in data[k]){
+                            ajaxTeams.push({id: data[k][l].id, team: data[k][l].team, image:data[k][l].image, GP:data[k][l].GP, sport:"NHL", wins:data[k][l].wins, loses:data[k][l].loses, percentage:data[k][l].percentage, owner:"Free Agent"});
+                          }
+                        }
+                        $.ajax({
+                           type: "GET",
+                           url: "../allsportsdata/mlb/mlb_2016-04-22.json",
+                           data:{
+                               
+                           },
+                           success:function(data){
+                                for(var k in data){
+                                  for(var l in data[k]){
+                                    ajaxTeams.push({id: data[k][l].id, team: data[k][l].team, image:data[k][l].image, GP:data[k][l].GP, sport:"MLB", wins:data[k][l].wins, loses:data[k][l].loses, percentage:data[k][l].percentage, owner:"Free Agent"});
+                                  }
+                                } 
+                                $.ajax({
+                                   type: "GET",
+                                   url: "../allsportsdata/nfl/nfl_2016-04-22.json",
+                                   data:{
+                                       
+                                   },
+                                   success: function(data){
+                                        for(var k in data){
+                                          for(var l in data[k]){
+                                            ajaxTeams.push({id: data[k][l].id, team: data[k][l].team, image:data[k][l].image, GP:data[k][l].GP, sport:"NFL", wins:data[k][l].wins, loses:data[k][l].loses, percentage:data[k][l].percentage, owner:"Free Agent"});
+                                          }
+                                        }  
+                                        setTable();
+                                   }
+                                });
+
+                           }
+                        });
+
+                    }
+                 });
+              }
+           });
+       }
+    });
+}
+
 
 
 });

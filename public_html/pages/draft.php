@@ -11,7 +11,7 @@
                     <div class="time">02:00</div>
                     <div class="clock-time">On the clock</div>
                     <div class="clock">
-                        <span class="clock-team">Alexander Markarian</span>
+                        <span class="clock-team"></span>
                         <br>
                     </div>
                 </div>
