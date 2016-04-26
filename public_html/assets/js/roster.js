@@ -19,9 +19,19 @@ $(document).ready(function(){
 				for(var k in data){
 					for(var l in ajaxTeams){
 						if(ajaxTeams[l].id == data[k]){
-							startingString += '<tr><td><img class="roster-img" src="../assets/'+ajaxTeams[l].image+'"> '+ajaxTeams[l].team+'</td>';
-							startingString += '<td class="starting">Starting</td><td>'+ajaxTeams[l].sport+'</td><td>'+ajaxTeams[l].GP+'</td><td>'+ajaxTeams[l].wins+'</td>';
-							startingString += '<td>'+ajaxTeams[l].loses+'</td><td>'+ajaxTeams[l].percentage+'</td><td>'+ajaxTeams[l].id+'</td></tr>';
+							if(ajaxTeams[l].image.substring(0,1) == " "){
+								ajaxTeams[l].image = ajaxTeams[l].image.substring(1,ajaxTeams[l].image.length);
+							}
+							if(k == 4 || k == 5){
+								startingString += '<tr id='+ajaxTeams[l].id+'><td><img class="roster-img" src="../assets/'+ajaxTeams[l].image+'"> '+ajaxTeams[l].team+'</td>';
+								startingString += '<td class="starting">Bench</td><td>'+ajaxTeams[l].sport+'</td><td>'+ajaxTeams[l].GP+'</td><td>'+ajaxTeams[l].wins+'</td>';
+								startingString += '<td>'+ajaxTeams[l].loses+'</td><td>'+ajaxTeams[l].percentage+'</td><td>'+ajaxTeams[l].id+'</td></tr>';
+							}
+							else{
+								startingString += '<tr id='+ajaxTeams[l].id+'><td><img class="roster-img" src="../assets/'+ajaxTeams[l].image+'"> '+ajaxTeams[l].team+'</td>';
+								startingString += '<td class="starting">Starting</td><td>'+ajaxTeams[l].sport+'</td><td>'+ajaxTeams[l].GP+'</td><td>'+ajaxTeams[l].wins+'</td>';
+								startingString += '<td>'+ajaxTeams[l].loses+'</td><td>'+ajaxTeams[l].percentage+'</td><td>'+ajaxTeams[l].id+'</td></tr>';
+							}
 						}
 					}
 				}
@@ -34,6 +44,7 @@ $(document).ready(function(){
 			            $('#drag-area tr').each(function (i, row) {
 			                if(i == 0 || i == 1 || i == 2 || i == 3){
 			                    $(this).find('.starting').text("Starting");
+			                    console.log($(this)[0].id);
 			                }
 			                else{
 			                    $(this).find('.starting').text("Bench");

@@ -33,6 +33,25 @@ if(!empty($_POST['newTable'])){
     $mysqli->close();
 }
 
+// called from Add Drop page
+if(!empty($_POST['addDrop'])){
+    $addID = $_POST['addID'];
+    $dropID = $_POST['dropID'];
+    $userID = 3;
+    $leagueID = 10;
+    $query = "SELECT * FROM usersleagues WHERE userID='$userID' AND leagueID='$leagueID'";
+    $result = $mysqli->query($query);
+    $usersLeaguesID = '';
+    while($row = $result->fetch_row()){
+        $usersLeaguesID = $row[0];
+    }
+    $update = "UPDATE usersteams SET team_ID='$addID' WHERE team_ID='$dropID'";
+    $res = $mysqli->query($update);
+    if($res){
+        echo 2;
+    }
+}
+
 if(!empty($_POST['whoIsNext'])){
     $select = "SELECT * FROM draftturns WHERE draft = '1'";
     $result = $mysqli->query($select);
@@ -59,6 +78,7 @@ if(!empty($_POST['setPick'])){
     }
 }
 
+// called from roster page
 if(!empty($_POST['getRoster'])){
     $userID = 3;
     $leagueID = 10;
@@ -91,7 +111,8 @@ if(!empty($_POST['getRoster'])){
             }
         }
     }
-    echo json_encode($starting);
+    $merge = array_merge($starting, $bench);
+    echo json_encode($merge);
     $mysqli->close();
 }
 
