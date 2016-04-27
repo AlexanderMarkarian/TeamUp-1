@@ -192,31 +192,6 @@ $(document).ready(function(){
     }
 
   function setTable(){
-    /*
-    $.ajax({
-        type: "POST",
-        url: "../Classes/draft.php",
-        data:{
-          newTable: true
-        },
-        success:function(response){
-          var data = $.parseJSON(response);
-          console.log(data);
-          var teamID ='', userName = '';
-          for(var k in data){
-            teamID = k;
-            userName  =data[k];
-            var string = '';
-            for(var k in ajaxTeams){
-                if(ajaxTeams[k].id == teamID){
-                  ajaxTeams[k].owner = userName;
-                }
-                string += "<tr class='teams' id="+ajaxTeams[k].image+"><td>"+ajaxTeams[k].team+"</td><td>"+ajaxTeams[k].sport+"</td><td>"+ajaxTeams[k].owner+"</td><td>"+ajaxTeams[k].GP+"</td><td>"+ajaxTeams[k].wins+"</td><td>"+ajaxTeams[k].loses+"</td><td>"+ajaxTeams[k].percentage+"</td></tr>";
-            }
-          }
-          $("#table-body").html(string);
-        }
-    });*/
           var string = '';
           for(var k in ajaxTeams){
               string += "<tr class='teams' id="+ajaxTeams[k].image+"><td>"+ajaxTeams[k].team+"</td><td>"+ajaxTeams[k].sport+"</td><td>"+ajaxTeams[k].owner+"</td><td>"+ajaxTeams[k].GP+"</td><td>"+ajaxTeams[k].wins+"</td><td>"+ajaxTeams[k].loses+"</td><td>"+ajaxTeams[k].percentage+"</td></tr>";    

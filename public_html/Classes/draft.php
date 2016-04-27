@@ -6,6 +6,9 @@ $host="mysql1217.ixwebhosting.com";
 $database="A951763_dev";
 $mysqli = new mysqli($host,$username,$password,$database);
 
+
+// GET NAME OF THE LEAGUE
+// CALLED FROM home.js
 if(!empty($_POST['getLeagueName'])){
     $ulID = 10;
     $select = "SELECT * FROM leagues WHERE leagueID='$ulID'";
@@ -17,6 +20,8 @@ if(!empty($_POST['getLeagueName'])){
     echo $name;
 }
 
+// GET POINTS FROM EACH TEAM IN THE LEAGUE
+// CALLED FROM home.js
 if(!empty($_POST['getStandings'])){
     $lID = 10;
     $select = "SELECT * FROM usersleagues WHERE leagueID ='$lID'";
@@ -33,6 +38,9 @@ if(!empty($_POST['getStandings'])){
     echo json_encode($points);
 }
 
+// INPUT ALL TEAMS STATS INTO TABLE
+// CALLED ONCE FROM profile.js WHEN USER LOGINS
+// WE NEED AN UPDATE ONE THAT IS CALLED EVERY TIME AS WELL
 if(!empty($_POST['inputIntoTable'])){
     $array = json_decode($_POST['array']);
     for($i=0; $i<121; $i++){
@@ -68,6 +76,8 @@ if(!empty($_POST['draftTeam'])){
 }
 */
 
+// GET ALL THE TEAMS THAT HAVE ALREADY BEEN DRAFTED AND OWNED
+// CALLED FROM drafting.js
 if(!empty($_POST['getTakenTeams'])){
     $leagueID = 10;
     $query = "SELECT * FROM usersleagues WHERE leagueID='$leagueID'";
@@ -84,6 +94,8 @@ if(!empty($_POST['getTakenTeams'])){
     echo json_encode($teams);
 }
 
+// GET ALL THE TEAM STATS THAT WAS SAVED INTO OUR TABLE
+// CALLED FROM EVERY PAGE
 if(!empty($_POST['getData'])){
     $query = "SELECT * FROM teamList";
     $res = $mysqli->query($query);
@@ -94,6 +106,8 @@ if(!empty($_POST['getData'])){
     echo json_encode($array);
 }
 
+// GET TEAMS THAT ALREADY HAVE AN OWNER
+// CALLED FROM add-drop.js and soon drafting.js
 if(!empty($_POST['getTeams'])){
     $userID = 3;
     $leagueID = 10;
@@ -112,34 +126,8 @@ if(!empty($_POST['getTeams'])){
 }
     
 
-if(!empty($_POST['newTable'])){
-    $ulID = 1;
-    $query = "SELECT * FROM userteams WHERE usersleaguesID='$ulID'";
-    $result = $mysqli->query($query);
-    $table = '';
-    $userID = [];
-    $teamID = [];
-    $name = [];
-    $count = 0;
-    while($row = $result->fetch_row()){
-        $userID[$count] = $row[1];
-        $teamID[$count] = $row[2];
-        $count++;
-    }
-    for($i=0; $i<sizeof($userID); $i++){
-        $currentID = $userID[$i];
-        $findName = "SELECT * FROM rosters WHERE ID ='$currentID'";
-        $find = $mysqli->query($findName);
-
-        while($row = $find->fetch_row()){
-            $name[$teamID[$i]] = $row[0];
-        }
-    }
-    echo json_encode($name);
-    $mysqli->close();
-}
-
-// called from Add Drop page
+// ADD A TEAM AND DROP A TEAM 
+// CALLED FROM add-drop.js
 if(!empty($_POST['addDrop'])){
     $addID = $_POST['addID'];
     $dropID = $_POST['dropID'];
@@ -158,6 +146,8 @@ if(!empty($_POST['addDrop'])){
     }
 }
 
+// GET DRAFT ORDER 
+// CALLED FROM drafting.js
 if(!empty($_POST['draftOrder'])){
     $leagueID = 10;
     $getUserLeagueID = "SELECT * FROM usersleagues WHERE leagueID='$leagueID'";
@@ -172,19 +162,10 @@ if(!empty($_POST['draftOrder'])){
         }
     }
     echo json_encode($turns);
-    /*
-    $select = "SELECT * FROM draftturns WHERE draft = '1'";
-    $result = $mysqli->query($select);
-    $team = '';
-    while($row = $result->fetch_row()){
-        $team = $row[1]; 
-    }
-    echo $team;
-    $mysqli->close();
-     * 
-     */
 }
 
+// UPDATE FLAG FOR NEXT PICK
+// CALLED FROM drafting.js
 if(!empty($_POST['setPick'])){
     $team = $_POST['team'];
     $select = "SELECT * FROM rosters WHERE name = '$team'";
@@ -200,7 +181,8 @@ if(!empty($_POST['setPick'])){
     }
 }
 
-// called from roster page
+// GET USERS CURRENT ROSTER
+// CALLED FORM roster.js
 if(!empty($_POST['getRoster'])){
     $userID = 3;
     $leagueID = 10;
@@ -238,34 +220,5 @@ if(!empty($_POST['getRoster'])){
     $mysqli->close();
 }
 
-    
-if(!empty($_POST['getUsers'])){ 
-  
-    $query = "SELECT * FROM rosters";
-    $result = $mysqli->query($query);
-    $mysqli->close();
-    $array = array();
-    while ($row = $result->fetch_row()) {
-        $array[$row[1]] = $row[0];
-    }
-    echo json_encode($array);
-    
-/*
-    $draftOrder = [];
-    $len = sizeof($array)/2;  // total number of numbers
-    $min = 1; 
-    $max = sizeof($array)/2; // maximum
-    foreach (range(0, $len - 1) as $i) {
-        while(in_array($num = mt_rand($min, $max), $range));
-        $range[] = $num;
-    }
-
-    for($i=0; $i<sizeof($array)/2; $i++){
-        $draftOrder[] = $array[$pop];
-        array_push($draftOrder, $array[])
-    }
-    echo json_encode($draftOrder);
-    */
-}
 
 
