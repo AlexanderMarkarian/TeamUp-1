@@ -49,6 +49,41 @@ if(!empty($_POST['inputIntoTable'])){
     }
 }
 
+/*
+if(!empty($_POST['draftTeam'])){
+    $leagueID = 10;
+    $teamID = $_POST['teamID'];
+    $getUserLeagueID = "SELECT * FROM usersleagues WHERE leagueID='$leagueID'";
+    $res = $mysqli->query($getUserLeagueID);
+    $turns = [];
+    while($row = $res->fetch_row()){
+        $currentID = $row[0];
+        $select = "SELECT * FROM draftturns WHERE usersleaguesID='$currentID'";
+        $result = $mysqli->query($select);
+        while($r = $result->fetch_row()){
+            $turns[$r[3]] = $row[3];
+        }
+    }
+    echo json_encode($turns);
+}
+*/
+
+if(!empty($_POST['getTakenTeams'])){
+    $leagueID = 10;
+    $query = "SELECT * FROM usersleagues WHERE leagueID='$leagueID'";
+    $res = $mysqli->query($query);
+    $teams = [];
+    while($row = $res->fetch_row()){
+        $currentID = $row[0];
+        $select = "SELECT * FROM usersteams WHERE usersleaguesID='$currentID'";
+        $result = $mysqli->query($select);
+        while($r = $result->fetch_row()){
+            $teams[] = $r[2];
+        }
+    }
+    echo json_encode($teams);
+}
+
 if(!empty($_POST['getData'])){
     $query = "SELECT * FROM teamList";
     $res = $mysqli->query($query);
@@ -123,7 +158,21 @@ if(!empty($_POST['addDrop'])){
     }
 }
 
-if(!empty($_POST['whoIsNext'])){
+if(!empty($_POST['draftOrder'])){
+    $leagueID = 10;
+    $getUserLeagueID = "SELECT * FROM usersleagues WHERE leagueID='$leagueID'";
+    $res = $mysqli->query($getUserLeagueID);
+    $turns = [];
+    while($row = $res->fetch_row()){
+        $currentID = $row[0];
+        $select = "SELECT * FROM draftturns WHERE usersleaguesID='$currentID'";
+        $result = $mysqli->query($select);
+        while($r = $result->fetch_row()){
+            $turns[$r[3]] = $row[3];
+        }
+    }
+    echo json_encode($turns);
+    /*
     $select = "SELECT * FROM draftturns WHERE draft = '1'";
     $result = $mysqli->query($select);
     $team = '';
@@ -132,6 +181,8 @@ if(!empty($_POST['whoIsNext'])){
     }
     echo $team;
     $mysqli->close();
+     * 
+     */
 }
 
 if(!empty($_POST['setPick'])){

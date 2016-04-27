@@ -17,7 +17,7 @@
                 <div class="draft-queue">
                     <table class="queue-title">
                         <thead>
-                            <th>Draft Queue</th>
+                            <th>Taken Teams</th>
                         </thead>
                         <tbody class="queue-list"></tbody>
                     </table>        
@@ -51,7 +51,6 @@
 
                         <div class="selected-buttons">
                             <button class="btn btn-success btn-lg" id="draft-team">Draft Team</button>
-                            <button class="btn btn-info btn-lg queue"></button>
                         </div>
                     </div>
                     <div id="intro-box">

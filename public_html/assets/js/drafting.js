@@ -16,47 +16,33 @@ $(document).ready(function(){
         }
         setTable();
         $('#myTable').DataTable();
+        getTakenTeams();
       }
    });
-
-
-    // SETTING USER INFO -------------------------------
-    
-    $.ajax({
-       type:"POST",
-       url:"../Classes/draft.php",
-       data:{
-           getUsers:true
-       },
-       success:function(response){
-        
-           var data = $.parseJSON(response);
-           var oddString = '', evenString = '';
-           var count = 1;
-           var normalOrder = [], reverseOrder = [];
-           for(var k in data){
-               oddString += '<tr class="round-item"><td><span class="round-number pull-left">'+count+'</span><span class="round-name" id='+k+'>'+data[k]+'</span></td></tr>';
-               count++;
-               normalOrder.push(data[k]);
+   
+   function getTakenTeams(){
+       $.ajax({
+           type: "POST",
+           url: "../Classes/draft.php",
+           data:{
+               getTakenTeams: true
+           },
+           success:function(response){
+               var data = $.parseJSON(response);
+               console.log(data);
+               var string = '';
+               for(var m in data){
+                   for(var k in ajaxTeams){
+                       if(ajaxTeams[k].id == data[m]){
+                           string += '<tr class="teams"><td>'+ajaxTeams[k].team+'</td></tr>';
+                       }
+                   }
+               }
+               $(".queue-list").html(string);
            }
-           $(".odd_round").append(oddString);
-           
-           reverseOrder = normalOrder.reverse();
-           
-      
-           for(var k in reverseOrder){
-               evenString += '<tr class="round-item"><td><span class="round-number pull-left">'+count+'</span><span class="round-name">'+reverseOrder[k]+'</span></td></tr>';
-               count++;
-           }
-           $(".even_round").append(evenString);
-          
-           //timer();
-           
-           setPick();
-           
-       }
-    });
-    // -------------------------------------------------
+       })
+   }
+
     
     function setPick(){
         var team = $("#1").text();
@@ -68,23 +54,45 @@ $(document).ready(function(){
                 setPick:true
             },
             success:function(response){
-                whoIsNext();
+                //whoIsNext();
             }
         })
     }
     
-    function whoIsNext(){
+    $.ajax({
+        type: "POST",
+        url: "../Classes/draft.php",
+        data:{
+            draftOrder: true
+        },
+        success: function(response){
+           var data = $.parseJSON(response);
+           var order = [];
+           var oddString = '', evenString = '';
+           for(var k in data){
+               order.push(data[k]);
+               oddString += '<tr class="round-item"><td><span class="round-name" id='+k+'>'+data[k]+'</span></td></tr>';
+           }
+           for(var i=order.length-1; i>=0; i--){
+               evenString += '<tr class="round-item"><td><span class="round-name">'+order[i]+'</span></td></tr>';
+           }
+           $(".odd_round").append(oddString);
+           $(".even_round").append(evenString);
+           $(".clock-team").text(order[0]);
+            //$(".clock-team").attr("id",response);
+        }
+    });
+    
+    function getFlag(){
         $.ajax({
-            type: "POST",
-            url: "../Classes/draft.php",
-            data:{
-                whoIsNext: true
-            },
-            success: function(response){
-                var d = $("#"+response).text();
-                $(".clock-team").text(d);
-                $(".clock-team").attr("id",response);
-            }
+           type: "POST",
+           url: "../Classes/draft.php",
+           data:{
+               getFlag:true
+           },
+           success: function(response){
+               console.log(response);
+           }
         });
     }
 
@@ -103,19 +111,6 @@ $(document).ready(function(){
         $("#intro-box").hide();
         $("#main-box").show();
 
-        if($(this)[0].id == ""){
-            $(".queue").html("Remove From Queue");
-            $(".queue").attr("id","remove-queue");
-            $("#remove-queue").removeClass("btn-info");
-            $("#remove-queue").addClass("btn-danger"); 
-        }
-        else{
-            $(".queue").html("Add To Queue");
-            $(".queue").attr("id","add-queue");
-            $("#add-queue").removeClass("btn-danger");
-            $("#add-queue").addClass("btn-info");
-        }
-
         team.team = $(this)[0].cells[0].innerHTML;
         team.league = $(this)[0].cells[1].innerHTML;
         team.GP = $(this)[0].cells[3].innerHTML;
@@ -133,25 +128,29 @@ $(document).ready(function(){
 
     });
 
-
-    $(document.body).on("click", "#add-queue", function(){
-        var string = '<tr class="teams" id="queued"><td>'+team.team+'</td><td style="display:none">'+team.league+'</td><td style="display:none"></td><td style="display:none">'+team.GP+'</td><td style="display:none">'+team.wins+'</td><td style="display:none">'+team.loses+'</td><td style="display:none">'+team.pct+'</td></tr>';
-        $(".queue-list").append(string);
-        $(".queue").html("Remove From Queue");
-        $(".queue").attr("id","remove-queue");
-        $("#remove-queue").removeClass("btn-info");
-        $("#remove-queue").addClass("btn-danger");
-    });
-
     $(document.body).on("click","#draft-team", function(){
-        var user = $(".clock-team").attr('id');
         var team = $("#selected-team").text();
-        var teamID;
         for(var k in ajaxTeams){
           if(ajaxTeams[k].team == team){
             teamID = ajaxTeams[k].id;
           }
         }
+        /*
+        $.ajax({
+            type: "POST",
+            url: "../Classes/draft.php",
+            data:{
+                draftTeam: true,
+                teamID : teamID
+            },
+            success:function(response){
+                console.log(response);
+            }
+        });
+        */
+        var teamID;
+        /*
+
         $.ajax({
           type: "POST",
           url: "../Classes/draft.php",
@@ -164,6 +163,7 @@ $(document).ready(function(){
             setTable();
           }
         });
+        */
     });
     
     function timer(){
@@ -190,13 +190,6 @@ $(document).ready(function(){
 
         }  
     }
-
-
-    $(document.body).on("click","#remove-queue", function(){
-        $(".queue-list tr:contains('"+team.team+"')").remove();
-        $("#main-box").hide();
-        $("#intro-box").show();
-    });
 
   function setTable(){
     /*

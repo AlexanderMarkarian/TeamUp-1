@@ -7,14 +7,30 @@
       getData: true
     },
     success:function(response){
-      var data = $.parseJSON(response);
-      for(var k in data){
-        ajaxTeams.push({id: data[k][0], owner: "Free Agent", team: data[k][1], sport: data[k][3], image: data[k][2], GP: data[k][4], wins: data[k][5], loses: data[k][6], percentage: data[k][7]});
-      }
-      setTable();
-      $('#myTable').DataTable();
+        var data = $.parseJSON(response);
+        $.ajax({
+            type: "POST",
+            url: "../Classes/draft.php",
+            data: {
+                getTeams: true
+            },
+            success: function(res){
+                var d = $.parseJSON(res);
+                for(var k in data){
+                    ajaxTeams.push({id: data[k][0], owner: "Free Agent", team: data[k][1], sport: data[k][3], image: data[k][2], GP: data[k][4], wins: data[k][5], loses: data[k][6], percentage: data[k][7]});
+                    for(var m in d){
+                        if(data[k][0] == m){
+                            ajaxTeams[k].owner = d[m];
+                        }
+                    }
+                }
+                setTable();
+                $('#myTable').DataTable();
+            }
+        })
+
     }
- })
+ });
  
 $(document).on("click",".teams",function(){
     addID = $(this)[0].id;
