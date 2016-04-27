@@ -32,7 +32,7 @@ if(!empty($_POST['getStandings'])){
         $query = "SELECT * FROM userspoints WHERE userleaguesID='$ulID'";
         $result = $mysqli->query($query);
         while($r = $result->fetch_row()){
-            $points[$row[3]] = [$r[2], $r[3], $r[4], $r[5], $r[6]];
+            $points[] = [$row[3],$r[2], $r[3], $r[4], $r[5], $r[6]];
         }
     }
     echo json_encode($points);
@@ -54,6 +54,54 @@ if(!empty($_POST['inputIntoTable'])){
         $image = $array[$i]->image;
         $select = "INSERT INTO teamList (ID, team, image, sport, GP, wins, loses, percentage) VALUES ('$ID','$team','$image','$sport','$GP','$wins','$loses','$percentage')";
         $res = $mysqli->query($select);
+    }
+}
+
+// SET STARTERS FOR USER TEAM
+// CALLED IN roster.js
+if(!empty($_POST['setStarters'])){
+    $starters = json_decode($_POST['newStarters']);
+    $leagueID = 10;
+    $userID = 3;
+    $getULID = "SELECT * FROM usersleagues WHERE leagueID='$leagueID' AND userID='$userID'";
+    $res = $mysqli->query($getULID);
+    while($row = $res->fetch_row()){
+        $ULID = $row[0];
+        for($i=0; $i<4; $i++){
+            $starterID = $starters[$i]->teamID;
+            $select = "SELECT * FROM usersteams WHERE usersleaguesID='$ULID' AND team_ID='$starterID'";
+            $result = $mysqli->query($select);
+            while($r = $result->fetch_row()){
+                $UTID = $r[0];
+                echo json_encode($UTID);
+                $up = "UPDATE usersrosters SET starting=".'1'." WHERE usersteamsID='$UTID'";
+                //$up = "SELECT * FROM usersrosters WHERE usersteamsID='$UTID'";
+                $s = $mysqli->query($up);
+            }
+        }
+    }
+}
+
+// SET BENCH FOR USER TEAM
+// CALLED IN roster.js
+if(!empty($_POST['setBench'])){
+    $starters = json_decode($_POST['newBench']);
+    $leagueID = 10;
+    $userID = 3;
+    $getULID = "SELECT * FROM usersleagues WHERE leagueID='$leagueID' AND userID='$userID'";
+    $res = $mysqli->query($getULID);
+    while($row = $res->fetch_row()){
+        $ULID = $row[0];
+        for($i=0; $i<4; $i++){
+            $starterID = $starters[$i]->teamID;
+            $select = "SELECT * FROM usersteams WHERE usersleaguesID='$ULID' AND team_ID='$starterID'";
+            $result = $mysqli->query($select);
+            while($r = $result->fetch_row()){
+                $UTID = $r[0];
+                $update = "UPDATE usersrosters SET starting='0' WHERE usersteamsID='$UTID'";
+                $setupdate = $mysqli->query($update);
+            }
+        }
     }
 }
 
@@ -106,8 +154,21 @@ if(!empty($_POST['getData'])){
     echo json_encode($array);
 }
 
+// GET ROSTER OF SPECIFIC TEAMID
+// CALLED IN trades.js
+if(!empty($_POST['getTeamMembers'])){
+    $teamID = $_POST['teamID'];
+    $select = "SELECT * FROM usersteams WHERE usersleaguesID='$teamID'";
+    $res = $mysqli->query($select);
+    $return = [];
+    while($row = $res->fetch_row()){
+        $return[] = $row[2];
+    }
+    echo json_encode($return);
+}
+
 // GET TEAMS THAT ALREADY HAVE AN OWNER
-// CALLED FROM add-drop.js and soon drafting.js
+// CALLED FROM add-drop.js
 if(!empty($_POST['getTeams'])){
     $userID = 3;
     $leagueID = 10;
@@ -121,6 +182,21 @@ if(!empty($_POST['getTeams'])){
         while($r = $res->fetch_row()){
             $return[$r[2]] = $row[3];
         }
+    }
+    echo json_encode($return);
+}
+
+// GET TEAMS and TEAMS ID THAT ALREADY HAVE AN OWNER
+// CALLED FROM trading.js
+if(!empty($_POST['getTeamsID'])){
+    $userID = 3;
+    $leagueID = 10;
+    $query = "SELECT * FROM usersleagues WHERE leagueID='$leagueID' AND userID != '$userID'";
+    $result = $mysqli->query($query);
+    $return = [];
+    
+    while($row = $result->fetch_row()){
+        $return[$row[0]] = $row[3];
     }
     echo json_encode($return);
 }

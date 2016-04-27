@@ -7,7 +7,7 @@
                 <h3 class="section-subheading text-muted">Week 18</h3>
 
                 <table id = "standings">
-                    <caption>Standings | Playoffs</caption>
+                    <caption>Standings</caption>
                       <thead id ="stand">
                           <tr>
                             <th>Rank</th>
@@ -22,17 +22,6 @@
                       <tbody id="homebody">
                           
                       </tbody>
-                      <!--
-                      <tr id ="stand">
-                        <td>1</td>
-                        <td class = "teamleft"><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/11.png" ?>" id="teamlogo" height='33' width='33'> Supreme Team</td>
-                        <td>13-4-0</td>
-                        <td>.765</td>
-                        <td>20721.05</td>
-                        <td>4</td>
-                        <td>11</td>
-                      </tr>
-                      -->
                 </table>
 
                                 <table id = "challenge">

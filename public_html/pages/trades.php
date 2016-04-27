@@ -38,14 +38,42 @@
                         <tbody id="dropbody"></tbody>
                     </table>
                 </div>
-                <div>
+                <div id="addteam">
                     <div class="btn-group">
-                      <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
                         Select a team to trade with <span class="caret"></span>
                       </button>
                       <ul class="dropdown-menu" id="teamlist">
                       </ul>
                     </div>
+                    <br>
+                    <table class="table" id="selectTable" style="display:none">
+                        <tr>
+                            <th>Teams</th>
+                            <th>Sport</th>
+                            <th>GP</th>
+                            <th>Wins</th>
+                            <th>Loses</th>
+                            <th>Win Pct</th>
+                            <th>ID</th>
+                        </tr>
+                        <tbody id="addbody"></tbody>
+                    </table>
+                </div>
+                <div id="addingteam" style="display:none">
+                    <table class="table">
+                        <caption id="closeAdd">Close</caption>
+                        <tr>
+                            <th>Teams</th>
+                            <th>Sport</th>
+                            <th>GP</th>
+                            <th>Wins</th>
+                            <th>Loses</th>
+                            <th>Win Pct</th>
+                            <th>ID</th>
+                        </tr>
+                        <tbody id="addingBody"></tbody>
+                    </table>
                 </div>
             </div>
         </div>
