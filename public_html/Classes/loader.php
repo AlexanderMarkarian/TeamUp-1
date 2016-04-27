@@ -488,6 +488,12 @@ class loader {
                 "js4" => '<script src="' . ABSOLUTH_PATH_JS . 'roster.js"></script>',
                 "js5" => '<script src="' . ABSOLUTH_PATH_JS . 'jquery.tableDnD.js"></script>'
             );
+        
+       }else if (isset($_GET['cmd']) && $_GET['cmd'] == "home") {
+
+            $footer_script = array(
+                "js4" => '<script src="' . ABSOLUTH_PATH_JS . 'home.js"></script>',
+            );
         } else if (isset($_GET['cmd']) && $_GET['cmd'] == "trades") {
 
             $footer_script = array(

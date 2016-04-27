@@ -4,7 +4,34 @@ $username= "A951763_user";
 $password="Dev135Test";
 $host="mysql1217.ixwebhosting.com";
 $database="A951763_dev";
-$mysqli = new mysqli($host,$username,$password,$database); 
+$mysqli = new mysqli($host,$username,$password,$database);
+
+if(!empty($_POST['getLeagueName'])){
+    $ulID = 10;
+    $select = "SELECT * FROM leagues WHERE leagueID='$ulID'";
+    $res = $mysqli->query($select);
+    $name = '';
+    while($row = $res->fetch_row()){
+        $name = $row[1];
+    }
+    echo $name;
+}
+
+if(!empty($_POST['getStandings'])){
+    $lID = 10;
+    $select = "SELECT * FROM usersleagues WHERE leagueID ='$lID'";
+    $res = $mysqli->query($select);
+    $points = [];
+    while($row = $res->fetch_row()){
+        $ulID = $row[0];
+        $query = "SELECT * FROM userspoints WHERE userleaguesID='$ulID'";
+        $result = $mysqli->query($query);
+        while($r = $result->fetch_row()){
+            $points[$row[3]] = [$r[2], $r[3], $r[4], $r[5], $r[6]];
+        }
+    }
+    echo json_encode($points);
+}
 
 if(!empty($_POST['inputIntoTable'])){
     $array = json_decode($_POST['array']);
