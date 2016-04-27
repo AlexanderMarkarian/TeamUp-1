@@ -5,10 +5,54 @@ $password="Dev135Test";
 $host="mysql1217.ixwebhosting.com";
 $database="A951763_dev";
 $mysqli = new mysqli($host,$username,$password,$database); 
+
+if(!empty($_POST['inputIntoTable'])){
+    $array = json_decode($_POST['array']);
+    for($i=0; $i<121; $i++){
+        $team = $array[$i]->team;
+        $ID = $array[$i]->id;
+        $wins = $array[$i]->wins;
+        $loses = $array[$i]->loses;
+        $percentage = $array[$i]->percentage;
+        $sport = $array[$i]->sport;
+        $GP = $array[$i]->GP;
+        $image = $array[$i]->image;
+        $select = "INSERT INTO teamList (ID, team, image, sport, GP, wins, loses, percentage) VALUES ('$ID','$team','$image','$sport','$GP','$wins','$loses','$percentage')";
+        $res = $mysqli->query($select);
+    }
+}
+
+if(!empty($_POST['getData'])){
+    $query = "SELECT * FROM teamList";
+    $res = $mysqli->query($query);
+    $array = [];
+    while($row = $res->fetch_row()){
+        $array[] = $row;
+    }
+    echo json_encode($array);
+}
+
+if(!empty($_POST['getTeams'])){
+    $userID = 3;
+    $leagueID = 10;
+    $query = "SELECT * FROM usersleagues WHERE leagueID='$leagueID' AND userID != '$userID'";
+    $result = $mysqli->query($query);
+    $return = [];
+    while($row = $result->fetch_row()){
+        $ulID = $row[0];
+        $select = "SELECT * FROM usersteams WHERE usersleaguesID = '$ulID'";
+        $res = $mysqli->query($select);
+        while($r = $res->fetch_row()){
+            $return[$r[2]] = $row[3];
+        }
+    }
+    echo json_encode($return);
+}
     
 
 if(!empty($_POST['newTable'])){
-    $query = "SELECT * FROM userteams";
+    $ulID = 1;
+    $query = "SELECT * FROM userteams WHERE usersleaguesID='$ulID'";
     $result = $mysqli->query($query);
     $table = '';
     $userID = [];

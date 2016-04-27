@@ -94,6 +94,10 @@ caption {
     font-size: 20px !important;
 }
 
+caption:hover{
+  cursor: pointer;
+}
+
 table {
     border: 2px solid black;
     border-collapse: collapse;

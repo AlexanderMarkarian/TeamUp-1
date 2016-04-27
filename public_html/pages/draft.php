@@ -1,5 +1,4 @@
 <section id="draft">
-    <div id='load_screen'><img src='../assets/images/other/loading.gif' id='image'></img></div>
     <div class="container main">
 
         <div class="row">

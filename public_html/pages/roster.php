@@ -1,10 +1,7 @@
 <section id="team">
-    <!--
     <div id="load_screen" style="visibility:hidden">
         <img id="image" src="<?= ABSOLUTH_PATH_IMAGES . "other/loading.gif" ?>">
     </div>
--->
-    <div id='load_screen'><img src='../assets/images/other/loading.gif' id='image'></img></div>
     <div id="main">
         <div class="container">
             <div class="slider4"></div>

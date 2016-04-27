@@ -1,10 +1,7 @@
 $(document).ready(function(){
-    /*
-    $(".secondStep").hide();
-    $(".thirdStep").hide();
-    */
-   
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip();
+
+    var ajaxTeams = [];
     
     var today = new Date();
     var dd = today.getDate();
@@ -19,53 +16,90 @@ $(document).ready(function(){
         disabledDates:['1986/01/08','1986/01/09','1986/01/10'],
         startDate:  date
     });
+
+    function inputIntoTable(){
+        $.ajax({
+          type : "POST",
+          url: "../Classes/draft.php",
+          data:{
+            inputIntoTable: true,
+            array: JSON.stringify(ajaxTeams)
+          },
+          success: function(response){
+            var data = $.parseJSON(response);
+            console.log(data);
+          }
+        })
+    }
     
-    /*
-    var timer;
-    $('#gotoSecondStep').click(function () {
-       testAnim('slideOutLeft');
-       clearTimeout(timer);
-       timer = setTimeout(function () {
-          testAnim('slideInRight');
-          $(".firstStep").hide();
-          $(".secondStep").show();
-       }, 200);
+
+    $.ajax({
+       type: "POST",
+       url: "../allsportsdata/allsportsdata.php",
+       data:{},
+       success: function(response){
+                                                   
+           $.ajax({
+              type: "GET",
+              url: "../allsportsdata/nba/nba_2016-04-22.json",
+              data:{
+                  
+              },
+              success:function(data){
+                  var string = "";
+                  for(var k in data){
+                      for(var l in data[k]){
+                          ajaxTeams.push({id: data[k][l].id, team: data[k][l].team, image:data[k][l].image, GP:data[k][l].GP, sport:"NBA", wins:data[k][l].wins, loses:data[k][l].loses, percentage:data[k][l].percentage, owner:"Free Agent"});
+                      }
+                  }
+                  $.ajax({
+                    type: "GET",
+                    url: "../allsportsdata/nhl/nhl_2016-04-22.json",
+                    data:{
+
+                    },
+                    success:function(data){
+                        for(var k in data){
+                            for(var l in data[k]){
+                                ajaxTeams.push({id: data[k][l].id, team: data[k][l].team, image:data[k][l].image, GP:data[k][l].GP, sport:"NHL", wins:data[k][l].wins, loses:data[k][l].loses, percentage:data[k][l].percentage, owner:"Free Agent"});
+                            }
+                        }
+                        $.ajax({
+                           type: "GET",
+                           url: "../allsportsdata/mlb/mlb_2016-04-22.json",
+                           data:{
+                               
+                           },
+                           success:function(data){
+                                for(var k in data){
+                                    for(var l in data[k]){
+                                        ajaxTeams.push({id: data[k][l].id, team: data[k][l].team, image:data[k][l].image, GP:data[k][l].GP, sport:"MLB", wins:data[k][l].wins, loses:data[k][l].loses, percentage:data[k][l].percentage, owner:"Free Agent"});
+                                    }
+                                } 
+                                $.ajax({
+                                   type: "GET",
+                                   url: "../allsportsdata/nfl/nfl_2016-04-22.json",
+                                   data:{
+                                       
+                                   },
+                                   success: function(data){
+                                        for(var k in data){
+                                            for(var l in data[k]){
+                                                ajaxTeams.push({id: data[k][l].id, team: data[k][l].team, image:data[k][l].image, GP:data[k][l].GP, sport:"NFL", wins:data[k][l].wins, loses:data[k][l].loses, percentage:data[k][l].percentage, owner:"Free Agent"});
+                                            }
+                                        }  
+                                        //inputIntoTable();
+                                   }
+                                });
+
+                           }
+                        });
+
+                    }
+                 });
+              }
+           });
+       }
     });
-    
-    $("#back").click(function(){
-       testAnim('slideOutRight');
-       clearTimeout(timer);
-       timer = setTimeout(function () {
-          testAnim('slideInLeft');
-          $(".secondStep").hide();
-          $(".firstStep").show();
-       }, 200); 
-    });
-    
-    $("#back2").click(function(){
-       testAnim('slideOutRight');
-       clearTimeout(timer);
-       timer = setTimeout(function () {
-          testAnim('slideInLeft');
-          $(".thirdStep").hide();
-          $(".secondStep").show();
-       }, 200); 
-    });
-    
-    $("#gotoThirdStep").click(function(){
-       testAnim('slideOutLeft');
-       clearTimeout(timer);
-       timer = setTimeout(function () {
-          testAnim('slideInRight');
-          $(".secondStep").hide();
-          $(".thirdStep").show();
-       }, 200);
-    });
-    
-    function testAnim(x) {
-        $('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-           $(this).removeClass();
-        });
-     };
-     */
+  
 });   
