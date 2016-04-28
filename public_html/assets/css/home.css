@@ -24,7 +24,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     overflow-x: auto;
-     margin-bottom: 1cm;
+2     margin-bottom: 1cm;
 }
 
 th, td {
@@ -58,7 +58,38 @@ th {
 .teamlogo{
 }
 
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width: 435px) {
     .hide { display: none; }
+    caption {font-size: 10px !important}
     th,td { font-size: 9px !important; }
 }
+
+@media screen and (max-width: 414px) {
+    .hide { display: none; }
+    caption {font-size: 10px !important}
+    th,td { font-size: 9px !important; }
+    section h2.section-heading{
+      margin-left: 5px;
+    }
+    section h3.section-heading{
+      margin-left: 140px;
+    }
+    element.style{
+      padding-right: 30px;
+      padding-left: 7px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hide { display: none; }
+    caption {font-size: 10px !important}
+    th,td { font-size: 9px !important; }
+}
+
+@media screen and (max-width: 320px) {
+    .hide { display: none; }
+    caption {font-size: 9px !important}
+    th,td { font-size: 7px !important; }
+}
+
