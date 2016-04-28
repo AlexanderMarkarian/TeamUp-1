@@ -20,7 +20,7 @@ $(document).ready(function(){
     function inputIntoTable(){
         $.ajax({
           type : "POST",
-          url: "../Classes/draft.php",
+          url: "../Classes/ajax_process.php",
           data:{
             inputIntoTable: true,
             array: JSON.stringify(ajaxTeams)

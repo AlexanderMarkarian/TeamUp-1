@@ -4,7 +4,7 @@ $(document).ready(function(){
         // GET DATA FOR ALL TEAMS
 	 $.ajax({
 	    type: "POST",
-	    url: "../Classes/draft.php",
+	    url: "../Classes/ajax_process.php",
 	    data:{
 	      getData: true
 	    },
@@ -51,7 +51,7 @@ $(document).ready(function(){
            // GET TEAM MEMBERS OF USER
            $.ajax({
               type: "POST",
-              url: "../Classes/draft.php",
+              url: "../Classes/ajax_process.php",
               data:{
                   teamID: teamID,
                   getTeamMembers: true
@@ -67,7 +67,7 @@ $(document).ready(function(){
                       }
                   }
                   $("#selectTable").show();
-                  $(".dropdown-toggle").html(teamName + '  <span class="caret"></span>');
+                  $(".btn-default").html(teamName + '  <span class="caret"></span>');
                   $("#addbody").html(string);
               }
            });
@@ -76,7 +76,7 @@ $(document).ready(function(){
 	function getTeams(){
             $.ajax({
                 type: "POST",
-                url: "../Classes/draft.php",
+                url: "../Classes/ajax_process.php",
                 data:{
                     getTeamsID: true
                 },
@@ -92,7 +92,7 @@ $(document).ready(function(){
                     // GET MY CURRENT ROSTER
                     $.ajax({
                         type: "POST",
-                        url: "../Classes/draft.php",
+                        url: "../Classes/ajax_process.php",
                         data:{
                           getRoster: true
                         },

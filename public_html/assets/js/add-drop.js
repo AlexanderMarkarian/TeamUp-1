@@ -2,7 +2,7 @@
 
  $.ajax({
     type: "POST",
-    url: "../Classes/draft.php",
+    url: "../Classes/ajax_process.php",
     data:{
       getData: true
     },
@@ -10,7 +10,7 @@
         var data = $.parseJSON(response);
         $.ajax({
             type: "POST",
-            url: "../Classes/draft.php",
+            url: "../Classes/ajax_process.php",
             data: {
                 getTeams: true
             },
@@ -69,7 +69,7 @@ $("#completeAdd").click(function(){
     console.log(addID + " " + dropID);
     $.ajax({
       type: "POST",
-      url: "../Classes/draft.php",
+      url: "../Classes/ajax_process.php",
       data:{
         addDrop: true,
         addID: addID,
@@ -106,7 +106,7 @@ $(document).on("click",".my-team", function(){
 
     $.ajax({
         type: "POST",
-        url: "../Classes/draft.php",
+        url: "../Classes/ajax_process.php",
         data:{
           getRoster: true
         },

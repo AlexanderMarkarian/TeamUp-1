@@ -5,7 +5,7 @@ $(document).ready(function(){
          
     $.ajax({
       type: "POST",
-      url: "../Classes/draft.php",
+      url: "../Classes/ajax_process.php",
       data:{
         getData: true
       },
@@ -23,7 +23,7 @@ $(document).ready(function(){
    function getTakenTeams(){
        $.ajax({
            type: "POST",
-           url: "../Classes/draft.php",
+           url: "../Classes/ajax_process.php",
            data:{
                getTakenTeams: true
            },
@@ -48,7 +48,7 @@ $(document).ready(function(){
         var team = $("#1").text();
         $.ajax({
             type:"POST",
-            url:"../Classes/draft.php",
+            url:"../Classes/ajax_process.php",
             data:{
                 team:team,
                 setPick:true
@@ -61,7 +61,7 @@ $(document).ready(function(){
     
     $.ajax({
         type: "POST",
-        url: "../Classes/draft.php",
+        url: "../Classes/ajax_process.php",
         data:{
             draftOrder: true
         },
@@ -84,16 +84,7 @@ $(document).ready(function(){
     });
     
     function getFlag(){
-        $.ajax({
-           type: "POST",
-           url: "../Classes/draft.php",
-           data:{
-               getFlag:true
-           },
-           success: function(response){
-               console.log(response);
-           }
-        });
+        
     }
 
     var team = {};
@@ -135,35 +126,7 @@ $(document).ready(function(){
             teamID = ajaxTeams[k].id;
           }
         }
-        /*
-        $.ajax({
-            type: "POST",
-            url: "../Classes/draft.php",
-            data:{
-                draftTeam: true,
-                teamID : teamID
-            },
-            success:function(response){
-                console.log(response);
-            }
-        });
-        */
         var teamID;
-        /*
-
-        $.ajax({
-          type: "POST",
-          url: "../Classes/draft.php",
-          data: {
-            user: user,
-            team: teamID,
-            inputTeams: true
-          },
-          success: function(response){
-            setTable();
-          }
-        });
-        */
     });
     
     function timer(){

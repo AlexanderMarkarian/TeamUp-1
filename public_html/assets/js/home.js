@@ -3,7 +3,7 @@ $(document).ready(function(){
     // get league name
     $.ajax({
         type: "POST",
-        url: "../Classes/draft.php",
+        url: "../Classes/ajax_process.php",
         data:{
             getLeagueName: true
         },
@@ -15,7 +15,7 @@ $(document).ready(function(){
     // get standings
     $.ajax({
        type: "POST",
-       url: "../Classes/draft.php",
+       url: "../Classes/ajax_process.php",
        data:{
            getStandings: true
        },

@@ -128,20 +128,20 @@
     <div class="team-bottom">
         <div class="container">
             <div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
-                <p>2009</p>
+                <p id="numUsers"></p>
                 <p class="text">USERS</p>
             </div>
             <div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
-                <p>13,562</p>
+                <p id="numLeagues"></p>
                 <p class="text">LEAGUES</p>
             </div>
             <div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
-                <p>8,710</p>
+                <p id="numTeams"></p>
                 <p class="text">TEAMS</p>
             </div>
             <div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
-                <p>715</p>
-                <p class="text">AWARDS</p>
+                <p id="numPoints"></p>
+                <p class="text">POINTS</p>
             </div>
             <div class="clearfix"> </div>
         </div>

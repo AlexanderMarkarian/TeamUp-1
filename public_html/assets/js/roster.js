@@ -7,7 +7,7 @@ $(document).ready(function(){
 	function include(){
             $.ajax({
                type: "POST",
-               url: "../Classes/draft.php",
+               url: "../Classes/ajax_process.php",
                data:{
                  getData: true
                },
@@ -25,7 +25,7 @@ $(document).ready(function(){
 	function start(){
             $.ajax({
                     type: "POST",
-                    url: "../Classes/draft.php",
+                    url: "../Classes/ajax_process.php",
                     data:{
                             getRoster: true
                     },
@@ -72,7 +72,7 @@ $(document).ready(function(){
                                 $(row).css("border","none");
                                 $.ajax({
                                     type: "POST",
-                                    url: "../Classes/draft.php",
+                                    url: "../Classes/ajax_process.php",
                                     data: {
                                         newStarters : JSON.stringify(newStarters),
                                         setStarters: true
@@ -82,7 +82,7 @@ $(document).ready(function(){
                                         /*
                                         $.ajax({
                                             type: "POST",
-                                            url: "../Classes/draft.php",
+                                            url: "../Classes/ajax_process.php",
                                             data:{
                                                 setBench:true,
                                                 newBench: JSON.stringify(newBench)
