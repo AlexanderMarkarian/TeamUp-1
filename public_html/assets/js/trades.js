@@ -1,21 +1,16 @@
 $(document).ready(function(){
+   $(".tradelist").click(function(){
+        var teamID = $(this)[0].id;
+        var teamName = $(this)[0].innerHTML;
+        console.log(teamID);
+        console.log(teamName);
+   });
+});
+
+/*
+$(document).ready(function(){
 	var ajaxTeams = [], addID = 0, dropID = 0;
         
-        // GET DATA FOR ALL TEAMS
-	 $.ajax({
-	    type: "POST",
-	    url: "../Classes/ajax_process.php",
-	    data:{
-	      getData: true
-	    },
-	    success:function(response){
-	      var data = $.parseJSON(response);
-	      for(var k in data){
-	        ajaxTeams.push({id: data[k][0], owner: "Free Agent", team: data[k][1], sport: data[k][3], image: data[k][2], GP: data[k][4], wins: data[k][5], loses: data[k][6], percentage: data[k][7]});
-	      }
-	      getTeams();
-	    }
-	 });
 
          // GET CLICK OF ONE OF YOUR ROSTER TEAMS
 	$(document).on("click",".my-team", function(){
@@ -118,3 +113,4 @@ $(document).ready(function(){
             });
 	}
 });
+*/

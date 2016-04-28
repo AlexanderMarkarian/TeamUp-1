@@ -315,41 +315,59 @@ class loader {
                 case "home":
                     $function->getDataQuery("users", "ssid", $_GET['ssid']);
                     $data = $function->SetDataQuery();
+                    $leagueName = $function->GetLeagueName();
+                    $leagueStandings = $function->GetStandings();
                     $page_content_array[] = array(
                         "id" => "2",
                         "page_name" => "Home",
                         "div_name" => "home",
-                        "data" => $data
+                        "data" => $data,
+                        "league_name" => $leagueName,
+                        "league_standings"=>$leagueStandings
                     );
                     break;
                 case "roster":
                     $function->getDataQuery("users", "ssid", $_GET['ssid']);
                     $data = $function->SetDataQuery();
+                    $userRoster = $function->GetRoster();
+                    $pool = $function->GetData();
                     $page_content_array[] = array(
                         "id" => "3",
                         "page_name" => "Roster",
                         "div_name" => "team",
-                        "data" => $data
+                        "data" => $data,
+                        "roster" => $userRoster,
+                        "pool" => $pool
                     );
                     break;
                 case "add-drop":
                     $function->GetDataFromPool();
                     $data = $function->SetPoolDataQuery();
+                    $userRoster = $function->GetRoster();
+                    $pool = $function->GetData();
                     $page_content_array[] = array(
                         "id" => "4",
                         "page_name" => "Add/Drop",
                         "div_name" => "add-drop",
-                        "data" => $data
+                        "data" => $data,
+                        "roster" => $userRoster,
+                        "pool" => $pool
                     );
                     break;
                 case "trades":
                     $function->getDataQuery("users", "ssid", $_GET['ssid']);
                     $data = $function->SetDataQuery();
+                    $userRoster = $function->GetRoster();
+                    $pool = $function->GetData();
+                    $teamID = $function->GetTeamsID();
                     $page_content_array[] = array(
                         "id" => "5",
                         "page_name" => "Trades",
                         "div_name" => "trades",
-                        "data" => $data
+                        "data" => $data,
+                        "roster"=>$userRoster,
+                        "pool"=>$pool,
+                        "teamsID"=>$teamID
                     );
                     break;
                 case "matchup":
@@ -386,12 +404,14 @@ class loader {
                     $function->GetDataFromPool();
                     $data = $function->SetPoolDataQuery();
                     array_push($data, $counts);
+                    $pool = $function->GetData();
                     $page_content_array[] = array(
                         "id" => "7",
                         "page_name" => "Draft",
                         "div_name" => "draft",
                         "data" => $data,
-                        "count" => $counts
+                        "count" => $counts,
+                        "pool" => $pool
                     );
                     break;
                 case "settings":

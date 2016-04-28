@@ -762,5 +762,138 @@ class functions {
             }
         }
     }
+    
+    
+    /*
+     * AUTHOR: ALEX
+     * GET NAME OF THE LEAGUE
+     */
+    public function GetLeagueName(){
+        $username= "A951763_user";
+        $password="Dev135Test";
+        $host="mysql1217.ixwebhosting.com";
+        $database="A951763_dev";
+        $mysqli = new mysqli($host,$username,$password,$database);
+        $ulID = 10;
+        $select = "SELECT * FROM leagues WHERE leagueID='$ulID'";
+        $res = $mysqli->query($select);
+        $name = '';
+        while($row = $res->fetch_row()){
+            $name = $row[1];
+        }
+        return $name;
+    }
+    
+    /*
+     * AUTHOR: ALEX
+     * GET STANDINGS OF LEAGUE
+     */
+    public function GetStandings(){
+        $username= "A951763_user";
+        $password="Dev135Test";
+        $host="mysql1217.ixwebhosting.com";
+        $database="A951763_dev";
+        $mysqli = new mysqli($host,$username,$password,$database);
+        $lID = 10;
+        $select = "SELECT * FROM usersleagues WHERE leagueID ='$lID'";
+        $res = $mysqli->query($select);
+        $points = [];
+        while($row = $res->fetch_row()){
+            $ulID = $row[0];
+            $query = "SELECT * FROM userspoints WHERE userleaguesID='$ulID'";
+            $result = $mysqli->query($query);
+            while($r = $result->fetch_row()){
+                $points[] = [$row[3],$r[2], $r[3], $r[4], $r[5], $r[6]];
+            }
+        }
+        return json_encode($points);
+    }
+    
+    /*
+     * AUTHOR: ALEX
+     * GET USER ROSTER
+     */
+    public function GetRoster(){
+        $username= "A951763_user";
+        $password="Dev135Test";
+        $host="mysql1217.ixwebhosting.com";
+        $database="A951763_dev";
+        $mysqli = new mysqli($host,$username,$password,$database);
+        $userID = 3;
+        $leagueID = 10;
+        $query = "SELECT * FROM usersleagues WHERE userID='$userID' AND leagueID='$leagueID'";
+        $result = $mysqli->query($query);
+        $usersLeaguesID = '';
+        while($row = $result->fetch_row()){
+            $usersLeaguesID = $row[0];
+        }
+        $getRoster = "SELECT * FROM usersteams WHERE usersleaguesID='$usersLeaguesID'";
+        $rosters = $mysqli->query($getRoster);
+        $array = [];
+        $id = [];
+        while($row = $rosters->fetch_row()){
+            $array[] = $row[2];
+            $id[] = $row[0];
+        }
+        $starting = [];
+        $bench = [];
+        for($i = 0; $i < sizeof($id); $i++){
+            $currentID = $id[$i];
+            $select  = "SELECT * FROM usersrosters WHERE usersteamsID='$currentID'";
+            $res = $mysqli->query($select);
+            while($row = $res->fetch_row()){
+                if($row[2] == 1){
+                    $starting[] = $array[$i];
+                }
+                else{
+                    $bench[] = $array[$i];
+                }
+            }
+        }
+        $merge = array_merge($starting, $bench);
+        return json_encode($merge);
+    }
+    
+    /*
+     * AUTHOR: ALEX
+     * GET ALL SPORTS DATA FORM DB
+     */
+    public function GetData(){
+        $username= "A951763_user";
+        $password="Dev135Test";
+        $host="mysql1217.ixwebhosting.com";
+        $database="A951763_dev";
+        $mysqli = new mysqli($host,$username,$password,$database);
+        $query = "SELECT * FROM teamList";
+        $res = $mysqli->query($query);
+        $array = [];
+        while($row = $res->fetch_row()){
+            $array[] = $row;
+        }
+        return json_encode($array);
+    }
+    
+    /*
+     * AUTHOR: ALEX
+     * GET TEAMS IN A LEAGUE FOR TRADE
+     * 
+     */
+    public function GetTeamsID(){
+        $username= "A951763_user";
+        $password="Dev135Test";
+        $host="mysql1217.ixwebhosting.com";
+        $database="A951763_dev";
+        $mysqli = new mysqli($host,$username,$password,$database);
+        $userID = 3;
+        $leagueID = 10;
+        $query = "SELECT * FROM usersleagues WHERE leagueID='$leagueID' AND userID != '$userID'";
+        $result = $mysqli->query($query);
+        $return = [];
+
+        while($row = $result->fetch_row()){
+            $return[] = [$row[0], $row[3]];
+        }
+        return json_encode($return);
+    }
 
 }

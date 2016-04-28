@@ -9,72 +9,56 @@
         </div>
         <div class="row" id="main-content">
             <div class="col-lg-12">
-                <div id="tradingTeam">
-                    <table class="table">
-                        <tr>
-                            <th>Teams</th>
-                            <th>Sport</th>
-                            <th>GP</th>
-                            <th>Wins</th>
-                            <th>Loses</th>
-                            <th>Win Pct</th>
-                            <th>ID</th>
-                        </tr>
-                        <tbody id="tradebody"></tbody>
-                    </table>
+                <table class="table">
+                    <tr>
+                        <th>Teams</th>
+                        <th>Sport</th>
+                        <th>GP</th>
+                        <th>Wins</th>
+                        <th>Loses</th>
+                        <th>Win Pct</th>
+                        <th>ID</th>
+                    </tr>
+                    <tbody id="tradebody">
+                        <?php
+                              $jsonData = json_decode($pg['pool']);
+                              $jsonRoster = json_decode($pg['roster']);
+                              foreach($jsonData as $j){
+                                  foreach($jsonRoster as $r){
+                                      if($j[0] == $r){
+                                          echo "<tr class='my-team' id=".$j[0]."><td><img class='roster-img' src='../assets/".$j[2]."'>".$j[1]."</td><td>".$j[3]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td><td>".$j[0]."</td></tr>";
+                                      }
+                                  }
+                              }
+                        ?>
+                    </tbody>
+                </table>
+                <div class="btn-group">
+                  <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+                    Select a team to trade with <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <?php
+                        $teamsID = json_decode($pg['teamsID']);
+                        foreach($teamsID as $t){                           
+                            echo '<li><a href="#" class="tradelist" id='.$t[0].'>'.$t[1].'</a></li>';
+                        }
+                    ?>
+                  </ul>
                 </div>
-                <div id="droppedTeam" style="display:none">
-                    <table class="table">
-                        <caption id="closeDrop">Close</caption>
-                        <tr>
-                            <th>Teams</th>
-                            <th>Sport</th>
-                            <th>GP</th>
-                            <th>Wins</th>
-                            <th>Loses</th>
-                            <th>Win Pct</th>
-                            <th>ID</th>
-                        </tr>
-                        <tbody id="dropbody"></tbody>
-                    </table>
-                </div>
-                <div id="addteam">
-                    <div class="btn-group">
-                      <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
-                        Select a team to trade with <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu" id="teamlist">
-                      </ul>
-                    </div>
-                    <br>
-                    <table class="table" id="selectTable" style="display:none">
-                        <tr>
-                            <th>Teams</th>
-                            <th>Sport</th>
-                            <th>GP</th>
-                            <th>Wins</th>
-                            <th>Loses</th>
-                            <th>Win Pct</th>
-                            <th>ID</th>
-                        </tr>
-                        <tbody id="addbody"></tbody>
-                    </table>
-                </div>
-                <div id="addingteam" style="display:none">
-                    <table class="table">
-                        <caption id="closeAdd">Close</caption>
-                        <tr>
-                            <th>Teams</th>
-                            <th>Sport</th>
-                            <th>GP</th>
-                            <th>Wins</th>
-                            <th>Loses</th>
-                            <th>Win Pct</th>
-                            <th>ID</th>
-                        </tr>
-                        <tbody id="addingBody"></tbody>
-                    </table>
-                </div>
+                <br>
+                <table class="table" id="selectTable" style="display:none">
+                    <tr>
+                        <th>Teams</th>
+                        <th>Sport</th>
+                        <th>GP</th>
+                        <th>Wins</th>
+                        <th>Loses</th>
+                        <th>Win Pct</th>
+                        <th>ID</th>
+                    </tr>
+                    <tbody id="addbody"></tbody>
+                </table>
             </div>
         </div>
     </div>

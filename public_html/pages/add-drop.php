@@ -20,24 +20,14 @@
                             <th>Loses</th>
                             <th>Win Pct.</th>
                         </thead>
-                        <tbody id="table-body">                
+                        <tbody id="table-body">  
+                            <?php
+                              $jsonData = json_decode($pg['pool']);
+                              foreach($jsonData as $j){
+                                   echo "<tr class='teams' id=".$j[0]."><td><img class='roster-img' src='../assets/".$j[2]."'>".$j[1]."</td><td>Free Agent</td><td>".$j[3]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td></tr>";
+                              }
+                            ?>
                         </tbody>
-                    </table>
-                </div>
-                <div id="addedTeam" style="display:none">
-                    <table class="table">
-                        <caption id="closeAdd">Close</caption>
-                        <tr>
-                            <th>Teams</th>
-                            <th>Status</th>
-                            <th>Sport</th>
-                            <th>GP</th>
-                            <th>Wins</th>
-                            <th>Loses</th>
-                            <th>Win Pct</th>
-                            <th>ID</th>
-                        </tr>
-                        <tbody id="addbody"></tbody>
                     </table>
                 </div>
             </div>
@@ -62,29 +52,27 @@
                         <th>Win Pct</th>
                         <th>ID</th>
                     </tr>
-                    <tbody id="droppingbody"></tbody>
-                </table>
-            </div>
-            <div id="droppedTeam" style="display:none">
-                <table class="table">
-                    <caption id="closeDrop">Close</caption>
-                    <tr>
-                        <th>Teams</th>
-                        <th>Sport</th>
-                        <th>GP</th>
-                        <th>Wins</th>
-                        <th>Loses</th>
-                        <th>Win Pct</th>
-                        <th>ID</th>
-                    </tr>
-                    <tbody id="dropbody"></tbody>
+                    <tbody id="droppingbody">
+                        <?php
+                              $jsonData = json_decode($pg['pool']);
+                              $jsonRoster = json_decode($pg['roster']);
+                              foreach($jsonData as $j){
+                                  foreach($jsonRoster as $r){
+                                      if($j[0] == $r){
+                                          echo "<tr class='my-team' id=".$j[0]."><td><img class='roster-img' src='../assets/".$j[2]."'>".$j[1]."</td><td>".$j[3]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td><td>".$j[0]."</td></tr>";
+                                      }
+                                  }
+                              }
+                          ?>
+                    </tbody>
                 </table>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <button id="completeAdd" class="btn btn-lg" disabled>Complete</button>
+            <button id="completeAdd" class="btn btn-lg">Complete</button>
+            <span class="alert alert-danger" style="display:none"></span>
         </div>
     </div>
 </section>

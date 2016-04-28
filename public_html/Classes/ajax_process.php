@@ -64,24 +64,11 @@ if (isset($_POST['login'])) {
     unset($page_content_array);
     $page_content_array[] = array(
         "id" => "309",
-        "create_nav" => $_POST['d'],
+        "creae_nav" => $_POST['d'],
     );
     $ajax->BuildPages($page_content_array);
-} 
-
-
-// GET NAME OF THE LEAGUE
-// CALLED FROM home.js
-else if(isset($_POST['getLeagueName'])){
-    $ulID = 10;
-    $select = "SELECT * FROM leagues WHERE leagueID='$ulID'";
-    $res = $mysqli->query($select);
-    $name = '';
-    while($row = $res->fetch_row()){
-        $name = $row[1];
-    }
-    echo $name;
 }
+
 
 // GET POINTS FROM EACH TEAM IN THE LEAGUE
 // CALLED FROM home.js
@@ -170,7 +157,7 @@ else if(isset($_POST['addDrop'])){
         echo 2;
     }
 }
-
+/*
 // GET USERS CURRENT ROSTER
 // CALLED FORM roster.js
 else if(isset($_POST['getRoster'])){
@@ -208,7 +195,7 @@ else if(isset($_POST['getRoster'])){
     $merge = array_merge($starting, $bench);
     echo json_encode($merge);
     $mysqli->close();
-}
+}*/
 
 // GET DRAFT ORDER 
 // CALLED FROM drafting.js
@@ -243,18 +230,6 @@ else if(isset($_POST['setPick'])){
     if($update){
         echo 4;
     }
-}
-
-// GET ALL THE TEAM STATS THAT WAS SAVED INTO OUR TABLE
-// CALLED FROM EVERY PAGE
-else if(isset($_POST['getData'])){
-    $query = "SELECT * FROM teamList";
-    $res = $mysqli->query($query);
-    $array = [];
-    while($row = $res->fetch_row()){
-        $array[] = $row;
-    }
-    echo json_encode($array);
 }
 
 // INPUT ALL TEAMS STATS INTO TABLE

@@ -72,7 +72,14 @@
                                 <th>Loses</th>
                                 <th>Win Pct.</th>
                             </thead>
-                            <tbody id="table-body"></tbody>
+                            <tbody id="table-body">
+                                <?php
+                                   $jsonData = json_decode($pg['pool']);
+                                    foreach($jsonData as $j){
+                                         echo "<tr class='teams' id=".$j[0]."><td>".$j[1]."</td><td>Free Agent</td><td>".$j[3]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td></tr>";
+                                    }
+                                ?>
+                            </tbody>
                         </table>
                     </div>
                 </div>
