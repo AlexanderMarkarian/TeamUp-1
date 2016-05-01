@@ -15,11 +15,11 @@
 		    	<div class="margin-right">Jamey</div>
 		    	<div class="margin-right">13-4-0 | 1st</div>
 		    </td>
-		    <td><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/11.png" ?>" class ="teamlogo" height='93' width='66'></td>
+		    <td class = "main"><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/11.png" ?>" class ="teamlogo" height='93' width='66'></td>
 		    <td><span class="bold">137.20</span></td>
 		    <td><span class="pts">points</span></td>
 		    <td><span class="bold">160.75</span></td>
-		    <td><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/drose.jpg" ?>" id="teamlogo" height='93' width='66'></td>
+		    <td class = "main"><img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/drose.jpg" ?>" id="teamlogo" height='93' width='66'></td>
 		    <td class = "teamleft">
 		    
 		    <span class="big">Ferrari Squad</span>

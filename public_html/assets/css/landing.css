@@ -9,6 +9,14 @@ section{
     padding-bottom:0px !important;
 }
 
+.mobile{
+	font-size: 30px;
+}
+
+.about{
+    text-align: center;
+}
+
 html,body {
 	font-family: 'Open Sans', sans-serif;
 	background:#FFF;
@@ -93,6 +101,10 @@ html,body {
 	-ms-transition:.5s all;
 }
 
+about{
+    text-align: center;
+}
+
 /*---- banner ----*/
 .banner{
 	background:url(../images/backgrounds/3.jpg) no-repeat 0px 0px;
@@ -158,7 +170,7 @@ html,body {
 	padding: 0 0 4em 0;
 }
 .services-hedding h3{
-	font-size: 67px;
+	font-size: 45px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -482,6 +494,10 @@ ul#filters {
   width: 0;
   height: 0;
 }
+
+
+
+}
 /*----- effects-comman-css------*/
 .contenthover{
 	padding:1em;
@@ -736,6 +752,10 @@ h2.b-animate.b-from-left.b-delay03 {
   .callbacks_nav {
     top: 47%;
     }
+    .logo {
+    width: 100%;
+    height: auto;
+}
 }
 /*----*/
 .callbacks_tabs li{
@@ -769,7 +789,7 @@ h2.b-animate.b-from-left.b-delay03 {
 	padding: 3em 0 10em 0;
 }
 .team-hedding h3{
-	font-size: 67px;
+	font-size: 45px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -1323,12 +1343,20 @@ span.menu
 	.banner-info {
 		width: 57%;
 	}
+	.logo {
+    width: 100%;
+    height: auto;
+}
 }
 @media (max-width:1366px)
 {
 	.banner-info {
 		width: 60%;
 	}
+	.logo {
+    width: 100%;
+    height: auto;
+}
 }
 @media (max-width:1280px){
 	.banner-info {

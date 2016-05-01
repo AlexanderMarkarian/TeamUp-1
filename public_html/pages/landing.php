@@ -58,67 +58,64 @@
     <div id="services" class="services">
         <div class="container">
             <div class="col-md-4 services-hedding wow bounceIn" data-wow-delay="0.4s">
-                <h3>Our Services</h3>
+                <h3>HOW TO PLAY</h3>
             </div>
             <div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
-                <div class="col-md-9 img-grid-text">
-                    <h4>Year Round Match Ups</h4>
-                    <p>Drafting from any of the four major US leagues ensures year-round fun</p>
+                <img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/play.png" ?>" height='220px' width='750px'>
                 </div>
             </div>
-            <div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
-                <div class="col-md-9 img-grid-text">
-                    <h4>Favorite Teams</h4>
-                    <p>You can add all your favorite teams from your home city</p>
-                </div>
-            </div>
-            <div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
-                <div class="col-md-9 img-grid-text">
-                    <h4>Winning Odds</h4>
-                    <p>We give you the best up-to-date statistics to ensure your success</p>
-                </div>
-            </div>
-            <div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
-                <div class="col-md-9 img-grid-text">
-                    <h4>Real-Time Scoring</h4>
-                    <p>Grabbing data as it happens</p>
-                </div>
             </div>
             <div class="clearfix"> </div>
         </div>
-    </div>              
+    </div> 
+
+
     <div class="our-team">
         <div class="container">
-            <div class="team-hedding wow bounceIn" data-wow-delay="0.4s">
-                <h3>Our team</h3>
+            <div class="team-hedding wow bounceIn" >
+                <h3 class = "about">ABOUT TEAMUP</h3>
             </div>
             <div class="team-grids">
                 <div class="col-md-6 team-grid">
                     <div class="team-grid-text wow bounceIn" data-wow-delay="0.4s">
-                        <h5>Rostom Sahakian</h5>
-                        <p class="caption">Back-End Developer</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        <h5>AN INDUSTRY INNOVATOR </h5>
+                        <p>TeamUp provides a unique fantasy experience utilizing multiple sports</p>
                     </div>
                 </div>
                 <div class="col-md-6 team-grid">
                     <div class="team-grid-text wow bounceIn" data-wow-delay="0.4s">
-                        <h5>Jamey Dogom</h5>
-                        <p class="caption">Front-End Developer</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        <h5>YEAR ROUND MATCHUPS</h5>
+                        <p>Drafting from any of the four major US sports ensures you year-round fun</p>
                     </div>
                 </div>
                 <div class="col-md-6 team-grid">
                     <div class="team-grid-text wow bounceIn" data-wow-delay="0.4s">
-                        <h5>Ibrahim Hayek</h5>
-                        <p class="caption">Back-End Developer</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        <h5>SOMETHING FOR EVERYONE</h5>
+                        <p>Easy to play and easy to win -everyone can join in on the action</p>
                     </div>
                 </div>
                 <div class="col-md-6 team-grid">
                     <div class="team-grid-text wow bounceIn" data-wow-delay="0.4s">
-                        <h5>Alex Markarian</h5>
-                        <p class="caption">Front-End Developer</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        <h5>PLAY ANYWHERE</h5>
+                        <p>Available on desktop, tablet & mobile - Mobile Friendly for Android & iOS</p>
+                    </div>
+                </div>
+                <div class="col-md-6 team-grid">
+                    <div class="team-grid-text wow bounceIn" data-wow-delay="0.4s">
+                        <h5>REAL TIME STATISTICS</h5>
+                        <p>Football, baseball, basketball, & hockey team statistics updated in realtime</p>
+                    </div>
+                </div>
+                <div class="col-md-6 team-grid">
+                    <div class="team-grid-text wow bounceIn" data-wow-delay="0.4s">
+                        <h5>FAVORITE TEAMS</h5>
+                        <p>Add all of your favorite teams from across many sports</p>
+                    </div>
+                </div>
+                <div class="col-md-6 team-grid">
+                    <div class="team-grid-text wow bounceIn" data-wow-delay="0.4s">
+                        <h5>WINNINGS</h5>
+                        <p>We give you the best up-to-date statistics to give you the winning edge</p>
                     </div>
                 </div>
                 <div class="clearfix"> </div>
@@ -146,6 +143,19 @@
             <div class="clearfix"> </div>
         </div>
     </div>
+
+     <div id="services" class="services">
+        <div class="container">
+            <div class="col-md-4 services-hedding wow bounceIn" data-wow-delay="0.4s">
+                <h3>PLAY WHEN YOU WANT. WHERE YOU WANT. ON ANY DEVICE.</h3>
+            </div>
+            <div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
+                <img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/mobile.png" ?>" height='420px' width='650px'>
+                </div>
+            </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
 
     <div id="about" class="skills">
         <div class="container">
