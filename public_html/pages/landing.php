@@ -16,43 +16,29 @@
             </div>
         </div>
     </div>
-
-    <div class="banner">
-        <div class="container">
-            <div class="banner-info wow bounceIn" data-wow-delay="0.4s">
-                <a class="play-icon popup-with-zoom-anim" href="#small-dialog">
-                    <span> </span>
-                </a>
-                <div class="banner-text">
-                    <h2>Learn more about fantasy sports</h2>
-                    <p><a class="play-icon popup-with-zoom-anim" href="#small-dialog">Click to play video</a></p>
-                </div>
-
-                <div id="small-dialog" class="mfp-hide">
-                    <iframe src="http://www.youtube.com/embed/S-jqDdQ_-SM" width="560" height="315" frameborder="0" allowfullscreen></iframe>        
-                </div>
-
-                <div id="small-dialog2" class="mfp-hide">
-                    <?php
-                    echo $forms->SignUpForm();
-                    $forms->SignUpProcess($pg['signup']);
-                    ?>
-                </div>	
-                <div id="small-dialog3" class="mfp-hide">
-                    <?php
-                    echo $forms->LoginForm();
-                    ?>
-                    <?php
-
-                    
-                    $forms->LoginProcess($pg['login']);
-                    ?>
-                    <script type='text/javascript' src='<?= ABSOLUTH_PATH_JS ?>ajax_proccess.js'></script>
+    <div id='bg'>
+        <video id="bgvid" autoplay="" loop="" muted="true">
+          <source src="../assets/images/backgrounds/stephvideo.mp4" type="video/mp4"/>
+        </video>
+    </div>
+    <div id="small-dialog2" class="mfp-hide">
+        <?php
+        echo $forms->SignUpForm();
+        $forms->SignUpProcess($pg['signup']);
+        ?>
+    </div>  
+    <div id="small-dialog3" class="mfp-hide">
+        <?php
+        echo $forms->LoginForm();
+        ?>
+        <?php
 
 
-                </div>				
-            </div>
-        </div>
+        $forms->LoginProcess($pg['login']);
+        ?>
+        <script type='text/javascript' src='<?= ABSOLUTH_PATH_JS ?>ajax_proccess.js'></script>
+
+
     </div>
 
     <div id="services" class="services">

@@ -107,7 +107,7 @@ about{
 
 /*---- banner ----*/
 .banner{
-	background:url(../images/backgrounds/3.jpg) no-repeat 0px 0px;
+	/*background:url(../images/backgrounds/3.jpg) no-repeat 0px 0px;*/
 	background-size: cover;
 	min-height: 668px;
 	position:relative;
@@ -164,6 +164,12 @@ about{
 .banner-text{
 	float:right;
 }
+
+#bgvid{
+    width: 100%;
+}
+
+
 /*---- services ----*/
 .services{
 	background:#e74c3c;
@@ -496,8 +502,6 @@ ul#filters {
 }
 
 
-
-}
 /*----- effects-comman-css------*/
 .contenthover{
 	padding:1em;
@@ -1659,6 +1663,10 @@ span.menu
 	}
 }
 @media(max-width:640px){
+        
+    #bg{
+        background:url(../images/backgrounds/3.jpg);
+    }
 	.container {
 		width: 100%;
 		margin: 0 auto;
