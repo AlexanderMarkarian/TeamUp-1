@@ -47,7 +47,7 @@
                 <h3>HOW TO PLAY</h3>
             </div>
             <div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
-                <img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/plays.png" ?>"  id="how_pics">
+                <img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/playing.png" ?>"  id="how_pics">
             </div>
             
             </div>
@@ -145,10 +145,10 @@
             <div class="clearfix"> </div>
         </div>
 
-    <div id="about" class="skills">
+     <div class="our-team">
         <div class="container">
-            <div class="skills-hedding wow bounceIn" data-wow-delay="0.4s">
-                <h3>Our skills</h3>
+    
+                <h3 class = "every">FOR EVERY SPORTS FAN, EVERY DAY ALL YEAR</h3>
             </div>
             <div class="col-md-9">
                 <div class="col-md-3 skills-grid">

@@ -15,6 +15,11 @@ section{
 
 .about{
     text-align: center;
+
+}
+
+.navbar-default {
+    background-color: #000000;
 }
 
 html,body {
@@ -26,12 +31,38 @@ ul.nav1
 {
     display:block;
 }
+
+.every{
+	font-size: 30px;
+	text-align: center !important;
+}
+
+h1{
+	text-align: center !important;
+}
+
+#navigation {
+position: fixed;
+background: #000;
+}
+
 /*---- heder ----*/
 .heder{
+	    list-style: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+    height:40px
+	box-shadow: 0;
+	z-index: 150;
+	top: 0%;
+	position: fixed;
 	background:#000;
 }
 .container{
-	width:85%;
+	width:100%;
 	margin:0 auto;
 }
 .heder-logo{
@@ -106,9 +137,7 @@ ul.nav1
 	-ms-transition:.5s all;
 }
 
-about{
-    text-align: center;
-}
+
 
 /*---- banner ----*/
 .banner{
@@ -212,6 +241,7 @@ about{
 	padding: 0 0 4em 0;
 }
 .services-hedding h3{
+	text-align: center !important;
 	font-size: 45px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
@@ -329,6 +359,8 @@ about{
 	padding: 1em 0 7em 0;
 }
 .works-hedding h3{
+	text-align: center !important;
+
 	font-size: 67px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
@@ -543,6 +575,7 @@ ul#filters {
 	padding:1em;
 }
 .contenthover h3{
+	text-align: center !important;
 	color:#FFF;
 }
 .contenthover p{
@@ -557,6 +590,7 @@ ul#filters {
 	margin-left:9%;
 }
 .caption h3{
+	text-align: center !important;
 	color:#FFF;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
@@ -829,6 +863,7 @@ h2.b-animate.b-from-left.b-delay03 {
 	padding: 3em 0 10em 0;
 }
 .team-hedding h3{
+	text-align: center !important;
 	font-size: 45px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
@@ -970,6 +1005,7 @@ h2.b-animate.b-from-left.b-delay03 {
 	padding: 6em 0;
 }
 .skills-hedding h3 {
+	text-align: center !important;
 	font-size: 67px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
@@ -1163,6 +1199,7 @@ h2.b-animate.b-from-left.b-delay03 {
 	padding: 5em 0;
 }
 .contact-hedding h3 {
+	text-align: center !important;
 	font-size: 67px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
@@ -1423,6 +1460,7 @@ span.menu
 		width: 80%;
 	}
 	.services-hedding h3 {
+		text-align: center !important;
 		font-size: 53px;
 	}
 	.col-md-9.img-grid-text {
@@ -1431,6 +1469,7 @@ span.menu
 		height: 120px;
 	}
 	.works-hedding h3 {
+		text-align: center !important;
 		font-size: 53px;
 	}
 	.b-link-stripe .b-wrapper {
@@ -1441,6 +1480,7 @@ span.menu
 		height: 33px;
 	}
 	.team-hedding h3 {
+		text-align: center !important;
 		font-size: 53px;
 	}	
 	.team-grid ul {
