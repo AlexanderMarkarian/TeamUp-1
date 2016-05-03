@@ -45,9 +45,9 @@
         <div class="container">
             <div class="col-md-4 services-hedding wow bounceIn" data-wow-delay="0.4s">
                 <h3>HOW TO PLAY</h3>
-                <div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
-                <img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/plays.png" ?>"  id="pics">
-                </div>
+            </div>
+            <div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
+                <img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/plays.png" ?>"  id="how_pics">
             </div>
             
             </div>
@@ -135,9 +135,9 @@
         <div class="container">
             <div class="col-md-4 services-hedding wow bounceIn" data-wow-delay="0.4s">
                 <h3>PLAY WHEN YOU WANT. WHERE YOU WANT. ON ANY DEVICE.</h3>
-                <div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
-                <img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/mobile.png" ?>" id="pics">
-                </div>
+            </div>
+            <div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
+                <img src="<?= ABSOLUTH_PATH_IMAGES ."teamlogos/mobile.png" ?>" id="play_pics">
             </div>
             
             </div>
