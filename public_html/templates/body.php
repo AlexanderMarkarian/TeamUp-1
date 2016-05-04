@@ -114,6 +114,10 @@ class body {
                     $ajax = new forms();
                     echo $ajax->JoinLeagueProcess($pg['join_league']);
                     break;
+                case '311':
+                    $ajax = new forms();
+                    echo $ajax->AddDropProcess($pg['add_drop']);
+                    break;
                 case '55':
                     $forms = new forms();
                     $functions = new functions();

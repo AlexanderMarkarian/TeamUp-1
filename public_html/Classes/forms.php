@@ -786,6 +786,26 @@ class forms {
             echo "Error1";
         }
     }
+    
+    
+    public function AddDropProcess(array $form_value){
+       $addTeams = json_decode($form_value['addTeams']);
+       $dropTeams = json_decode($form_value['dropTeams']);
+       $ssid = $form_value['ssid'];;
+       $leagueid = $form_value['leagueid'];
+       if(sizeof($addTeams) != sizeof($dropTeams)){
+           echo "Error1";
+       }
+       else{
+           foreach($addTeams as $teams){
+               $this->_fucntions->AddTeam($teams, $leagueid, $ssid);
+           }
+           foreach($dropTeams as $teams){
+               $this->_fucntions->DropTeam($teams, $leagueid, $ssid);
+           }
+           echo "Success";
+       }
+    }
 
 
     /*

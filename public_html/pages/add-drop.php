@@ -76,7 +76,10 @@
     <div class="container">
         <div class="row">
             <button id="completeAdd" class="btn btn-lg">Complete</button>
+            <input type="hidden" name="ssid" value="<?= $_GET['ssid'] ?>" id="ssid"/>
+            <input type="hidden" name="ssid" value="<?= $_GET['leagueid'] ?>" id="leagueid"/>
             <span class="alert alert-danger" style="display:none"></span>
+            <span class="alert alert-success" style="display:none"></span>
         </div>
     </div>
 </section>

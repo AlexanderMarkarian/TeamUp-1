@@ -875,6 +875,7 @@ class functions {
         while($row = $result->fetch_assoc()){
             $league_user_id = $row['id'];
         }
+        
         $getRoster = "SELECT team_id FROM roster WHERE leagues_user_id='$league_user_id'";
         $roster = $this->_mysqli->query($getRoster);
         $teams = [];
@@ -882,6 +883,7 @@ class functions {
             $teams[] = $row['team_id'];
         }
         return json_encode($teams);
+         
     }
 
     
@@ -980,6 +982,41 @@ class functions {
         return $return;
     }
 
+    public function AddTeam($teamID, $leagueID, $ssid){
+        $getuserid = "SELECT user_id FROM users WHERE ssid='$ssid'";
+        $res = $this->_mysqli->query($getuserid);
+        $userid = '';
+        while($row = $res->fetch_assoc()){
+            $userid = $row['user_id'];
+        }
+        $select = "SELECT id FROM league_user WHERE league_id='$leagueID' AND userid='$userid'";
+        $result = $this->_mysqli->query($select);
+        $league_user_id = '';
+        while($row = $result->fetch_assoc()){
+            $league_user_id = $row['id'];
+        }
+        $insert = "INSERT INTO roster (leagues_user_id, team_id) VALUES ('$league_user_id','$teamID')";
+        $final = $this->_mysqli->query($insert);
+    }
+    
+    public function DropTeam($teamID, $leagueID, $ssid){
+               $getuserid = "SELECT user_id FROM users WHERE ssid='$ssid'";
+        $res = $this->_mysqli->query($getuserid);
+        $userid = '';
+        while($row = $res->fetch_assoc()){
+            $userid = $row['user_id'];
+        }
+        $select = "SELECT id FROM league_user WHERE league_id='$leagueID' AND userid='$userid'";
+        $result = $this->_mysqli->query($select);
+        $league_user_id = '';
+        while($row = $result->fetch_assoc()){
+            $league_user_id = $row['id'];
+        }
+        
+        $delete = "DELETE FROM roster WHERE leagues_user_id='$league_user_id' AND team_id='$teamID'";
+        $final = $this->_mysqli->query($delete); 
+       
+    }
 
     
     /*
