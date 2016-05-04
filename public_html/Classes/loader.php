@@ -360,7 +360,7 @@ class loader {
                     $function->getDataQuery("users", "ssid", $_GET['ssid']);
                     $userRoster = $function->GetRoster();
                     $pool = $function->GetData();
-                    //$teamID = $function->GetTeamsID();
+                    $teamID = $function->GetTeamsID();
                    // $teamMembers = $function->GetTeamMembers();
                     $page_content_array[] = array(
                         "id" => "5",
@@ -369,7 +369,7 @@ class loader {
                         //"data" => $data,
                         "roster"=>$userRoster,
                         "pool"=>$pool,
-                       // "teamsID"=>$teamID,
+                        "teamsID"=>$teamID,
                        // "teamMembers"=>$teamMembers
                     );
                     break;

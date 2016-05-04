@@ -75,26 +75,3 @@ if (isset($_POST['login'])) {
     );    
     $ajax->BuildPages($page_content_array);
 }
-
-
-/*
-// ADD A TEAM AND DROP A TEAM 
-// CALLED FROM add-drop.js
-else if(isset($_POST['addDrop'])){
-    $addID = $_POST['addID'];
-    $dropID = $_POST['dropID'];
-    $userID = 3;
-    $leagueID = 10;
-    $query = "SELECT * FROM usersleagues WHERE userID='$userID' AND leagueID='$leagueID'";
-    $result = $mysqli->query($query);
-    $usersLeaguesID = '';
-    while($row = $result->fetch_row()){
-        $usersLeaguesID = $row[0];
-    }
-    $update = "UPDATE usersteams SET team_ID='$addID' WHERE team_ID='$dropID'";
-    $res = $mysqli->query($update);
-    if($res){
-        echo 2;
-    }
-}
-*/

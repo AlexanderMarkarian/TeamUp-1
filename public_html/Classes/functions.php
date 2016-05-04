@@ -1024,25 +1024,25 @@ class functions {
      * GET TEAMS IN A LEAGUE FOR TRADE
      * 
      */
-    /*
+    
     public function GetTeamsID(){
-        $username= "A951763_user";
-        $password="Dev135Test";
-        $host="mysql1217.ixwebhosting.com";
-        $database="A951763_dev";
-        $mysqli = new mysqli($host,$username,$password,$database);
-        $userID = 3;
-        $leagueID = 10;
-        $query = "SELECT * FROM usersleagues WHERE leagueID='$leagueID' AND userID != '$userID'";
-        $result = $mysqli->query($query);
-        $return = [];
-
-        while($row = $result->fetch_row()){
-            $return[] = [$row[0], $row[3]];
+        $ssid = $_GET['ssid'];
+        $leagueID = $_GET['leagueid'];
+        $getuserid = "SELECT user_id FROM users WHERE ssid='$ssid'";
+        $res = $this->_mysqli->query($getuserid);
+        $userid = '';
+        while($row = $res->fetch_assoc()){
+            $userid = $row['user_id'];
         }
-        return json_encode($return);
+        $query = "SELECT * FROM league_user WHERE league_id='$leagueID' AND userid != '$userid'";
+        $res = $this->_mysqli->query($query);
+        $teams = [];
+        while($row = $res->fetch_assoc()){
+            $teams[] = [$row['id'], $row['team_name']];
+        }
+        return json_encode($teams);
     }
-    */
+    
     
     /*
     public function GetTeamMembers(){

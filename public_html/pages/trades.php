@@ -35,22 +35,19 @@
                 </table>
                 <br>
                  <div class="col-lg-12">
-                     <ul class="nav nav-tabs grey-area" id="myTab">
-                        <?php
-                            $teamsID = json_decode($pg['teamsID']);
-                            $count = 1;
-                            foreach($teamsID as $t){       
-                                if($count == 1)
-                                    echo '<li class="active"><a data-toggle="tab" href="#section'.$count.'" class="tradelist" id='.$t[0].'>'.$t[1].'</a></li>';
-                                else
-                                    echo '<li><a data-toggle="tab" href="#section'.$count.'" class="tradelist" id='.$t[0].'>'.$t[1].'</a></li>';
-                                $count++;
-                            }
-                        ?>
-                     </ul>
-                     <div class="tab-content">
-                        
-                    </div>
+                     <div class="btn-group">
+                        <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+                          Select a team to trade with <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" id="teamlist">
+                            <?php
+                                $teamsID = json_decode($pg['teamsID']);
+                                foreach($teamsID as $t){       
+                                    echo '<li><a href="#" class="tradelist" id='.$t[0].'>'.$t[1].'</a></li>';
+                                }
+                            ?>
+                        </ul>
+                      </div>
  <!--
                 <table class="table" id="selectTable" style="display:none">
                     <tr>
