@@ -155,6 +155,9 @@ class functions {
         $result = $this->_mysqli->query($sql);
         $num_rows = $result->num_rows;
         if ($num_rows == 1) {
+            while($row = $result->fetch_assoc()){
+                $_SESSION['user_id'] = $row['user_id'];
+            }
             return $this->_results = true;
         } else {
             return $this->_results = false;
@@ -195,6 +198,14 @@ class functions {
 
     public function getDataQuery($table, $field, $value) {
         $sql = "SELECT * FROM `$table` WHERE $field = '$value'";
+        $result = $this->_mysqli->query($sql);
+        while ($rows = $result->fetch_array(MYSQLI_ASSOC)) {
+            $this->_data[] = $rows;
+        }
+    }
+
+    public function getDataLongQuery($table, $field1, $field2, $value1, $value2) {
+        $sql = "SELECT * FROM `$table` WHERE $field1 = '$value1' AND $field2 = $value2";
         $result = $this->_mysqli->query($sql);
         while ($rows = $result->fetch_array(MYSQLI_ASSOC)) {
             $this->_data[] = $rows;
@@ -762,122 +773,141 @@ class functions {
             }
         }
     }
-    
-    
+        
     /*
      * AUTHOR: ALEX
      * GET NAME OF THE LEAGUE
      */
+    
     public function GetLeagueName(){
-        $username= "A951763_user";
-        $password="Dev135Test";
-        $host="mysql1217.ixwebhosting.com";
-        $database="A951763_dev";
-        $mysqli = new mysqli($host,$username,$password,$database);
-        $ulID = 10;
-        $select = "SELECT * FROM leagues WHERE leagueID='$ulID'";
-        $res = $mysqli->query($select);
+        $league_id = $_GET['leagueid'];
+        $league_name_query = "SELECT league_name FROM leagues WHERE id='$league_id'";
+        $result = $this->_mysqli->query($league_name_query);
         $name = '';
-        while($row = $res->fetch_row()){
-            $name = $row[1];
+        while($row = $result->fetch_row()){
+            $name = $row[0];
         }
         return $name;
     }
+
+
+
+    /*
+     * AUTHOR: ALEX
+     * GET NUMBER OF TEAMUP USERS FOR LANDING
+     */
+    
+    public function GetNumUsers(){
+        $query = "SELECT * FROM users";
+        $result = $this->_mysqli->query($query);
+        return $result->_num_rows;
+    }
+    
     
     /*
      * AUTHOR: ALEX
      * GET STANDINGS OF LEAGUE
      */
+    
     public function GetStandings(){
-        $username= "A951763_user";
-        $password="Dev135Test";
-        $host="mysql1217.ixwebhosting.com";
-        $database="A951763_dev";
-        $mysqli = new mysqli($host,$username,$password,$database);
-        $lID = 10;
-        $select = "SELECT * FROM usersleagues WHERE leagueID ='$lID'";
-        $res = $mysqli->query($select);
-        $points = [];
-        while($row = $res->fetch_row()){
+
+        $league_id = $_GET['leagueid'];
+        
+        $select = "SELECT * FROM league_user WHERE league_id ='$league_id'";
+        $result = $this->_mysqli->query($select);
+        $names = [];
+        while($row = $result->fetch_assoc()){
+            /*
             $ulID = $row[0];
             $query = "SELECT * FROM userspoints WHERE userleaguesID='$ulID'";
             $result = $mysqli->query($query);
             while($r = $result->fetch_row()){
                 $points[] = [$row[3],$r[2], $r[3], $r[4], $r[5], $r[6]];
             }
+            */
+            $names[] = $row['team_name'];
         }
-        return json_encode($points);
+        return json_encode($names);
+        
     }
+
+
+    /*
+     * AUTHOR: ALEX
+     * GET YOUR TEAM NAME
+     */
+    public function GetTeamName(){
+        $league_id = $_GET['leagueid'];
+        $ssid = $_GET['ssid'];
+        $getuserid = "SELECT user_id FROM users WHERE ssid='$ssid'";
+        $res = $this->_mysqli->query($getuserid);
+        $userid = '';
+        while($row = $res->fetch_assoc()){
+            $userid = $row['user_id'];
+        }
+        $getTeamName = "SELECT team_name FROM league_user WHERE league_id='$league_id' AND userid='$userid'";
+        $result = $this->_mysqli->query($getTeamName);
+        $teamName = '';
+        while($row = $result->fetch_assoc()){
+            $teamName = $row['team_name'];
+        }
+        return $teamName;
+    }
+    
     
     /*
      * AUTHOR: ALEX
      * GET USER ROSTER
      */
+    
     public function GetRoster(){
-        $username= "A951763_user";
-        $password="Dev135Test";
-        $host="mysql1217.ixwebhosting.com";
-        $database="A951763_dev";
-        $mysqli = new mysqli($host,$username,$password,$database);
-        $userID = 3;
-        $leagueID = 10;
-        $query = "SELECT * FROM usersleagues WHERE userID='$userID' AND leagueID='$leagueID'";
-        $result = $mysqli->query($query);
-        $usersLeaguesID = '';
-        while($row = $result->fetch_row()){
-            $usersLeaguesID = $row[0];
+        $league_id = $_GET['leagueid'];
+        $ssid = $_GET['ssid'];
+        $getuserid = "SELECT user_id FROM users WHERE ssid='$ssid'";
+        $res = $this->_mysqli->query($getuserid);
+        $userid = '';
+        while($row = $res->fetch_assoc()){
+            $userid = $row['user_id'];
         }
-        $getRoster = "SELECT * FROM usersteams WHERE usersleaguesID='$usersLeaguesID'";
-        $rosters = $mysqli->query($getRoster);
-        $array = [];
-        $id = [];
-        while($row = $rosters->fetch_row()){
-            $array[] = $row[2];
-            $id[] = $row[0];
+        $get_league_user_id = "SELECT id FROM league_user WHERE league_id='$league_id' AND userid='$userid'";
+        $result = $this->_mysqli->query($get_league_user_id);
+        $league_user_id = '';
+        while($row = $result->fetch_assoc()){
+            $league_user_id = $row['id'];
         }
-        $starting = [];
-        $bench = [];
-        for($i = 0; $i < sizeof($id); $i++){
-            $currentID = $id[$i];
-            $select  = "SELECT * FROM usersrosters WHERE usersteamsID='$currentID'";
-            $res = $mysqli->query($select);
-            while($row = $res->fetch_row()){
-                if($row[2] == 1){
-                    $starting[] = $array[$i];
-                }
-                else{
-                    $bench[] = $array[$i];
-                }
-            }
+        $getRoster = "SELECT team_id FROM roster WHERE leagues_user_id='$league_user_id'";
+        $roster = $this->_mysqli->query($getRoster);
+        $teams = [];
+        while($row = $roster->fetch_assoc()){
+            $teams[] = $row['team_id'];
         }
-        $merge = array_merge($starting, $bench);
-        return json_encode($merge);
+        return json_encode($teams);
     }
+
+    
     
     /*
      * AUTHOR: ALEX
      * GET ALL SPORTS DATA FORM DB
      */
+    
     public function GetData(){
-        $username= "A951763_user";
-        $password="Dev135Test";
-        $host="mysql1217.ixwebhosting.com";
-        $database="A951763_dev";
-        $mysqli = new mysqli($host,$username,$password,$database);
-        $query = "SELECT * FROM teamList";
-        $res = $mysqli->query($query);
+        $query = "SELECT * FROM pool";
+        $result = $this->_mysqli->query($query);
         $array = [];
-        while($row = $res->fetch_row()){
+        while($row = $result->fetch_row()){
             $array[] = $row;
         }
         return json_encode($array);
     }
+    
     
     /*
      * AUTHOR: ALEX
      * GET TEAMS IN A LEAGUE FOR TRADE
      * 
      */
+    /*
     public function GetTeamsID(){
         $username= "A951763_user";
         $password="Dev135Test";
@@ -895,5 +925,37 @@ class functions {
         }
         return json_encode($return);
     }
+    */
+    
+    /*
+    public function GetTeamMembers(){
+        $username= "A951763_user";
+        $password="Dev135Test";
+        $host="mysql1217.ixwebhosting.com";
+        $database="A951763_dev";
+        $mysqli = new mysqli($host,$username,$password,$database);
+        $userID = 3;
+        $leagueID = 10;
+        $query = "SELECT * FROM usersleagues WHERE leagueID='$leagueID' AND userID != '$userID'";
+        $result = $mysqli->query($query);
+        $return = [];
+
+        while($row = $result->fetch_row()){
+            $currentID = $row[0];   
+            $select = "SELECT * FROM usersteams WHERE usersleaguesID='$currentID'";
+            $res = $mysqli->query($select);
+            while($r = $res->fetch_row()){
+                $get = "SELECT * FROM teamList";
+                $res2 = $mysqli->query($get);
+                while($t = $res2->fetch_row()){
+                    if($r[2] == $t[0]){
+                        $return[] = [$row[0], $t];
+                    }
+                }
+            }
+        }
+        return json_encode($return);
+    }
+    */
 
 }

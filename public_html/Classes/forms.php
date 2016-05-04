@@ -672,6 +672,8 @@ class forms {
                         $fields = array(
                             "1" => "userid",
                             "2" => "league_id",
+                            "3" => "team_name",
+                            "4" => "commisioner"
                         );
 
                         $tables = array(
@@ -680,6 +682,8 @@ class forms {
                         $values = array();
                         array_push($values, "'" . $user_id['user_id'] . "'");
                         array_push($values, "'" . $uid . "'");
+                        array_push($values, "'" . $form_inputs['team_name'] . "'");
+                        array_push($values, 1);
                         $insert_values = array(
                             "values" => $values,
                             "fields" => $fields,
@@ -690,6 +694,7 @@ class forms {
                          * Table 3
                          */
                         //Insert into teams
+                        /*
                         $fields = array(
                             "1" => "team_name",
                             "2" => "parent",
@@ -711,6 +716,7 @@ class forms {
                             "tables" => $tables
                         );
                         $this->_fucntions->InsertAll($insert_values, $cmd = "insert in to teams");
+                        */
                         echo $form_inputs['ssid'];
 
                         //$this->_flag = 21;
@@ -1085,7 +1091,6 @@ class forms {
             ?>
             <?php
         }
-
 
     }
     

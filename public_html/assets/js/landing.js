@@ -2,22 +2,6 @@
 
 $(document).ready(function($) {
     
-    // SET LANDING STATS
-    $.ajax({
-       type: "POST",
-       url: "../Classes/ajax_process.php",
-       data:{
-           landingStats: true
-       },
-       success:function(response){
-           var data = $.parseJSON(response);
-           $("#numUsers").html(data[0]);
-           $("#numLeagues").html(data[1]);
-           $("#numTeams").html(data[2]);
-           $("#numPoints").html(data[3]);
-       }
-    });
-
     $(".scroll").click(function(event){		
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);

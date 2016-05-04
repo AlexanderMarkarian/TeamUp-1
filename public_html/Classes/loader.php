@@ -160,12 +160,12 @@ class loader {
         /* ADD NAVIGATION LINKS TO THIS ARRAY */
         /* USE ABSOLUTH_PATH_PAGES for page paths */
         $navigation = array(
-            "Home" => "loader.php?cmd=home&ssid={$_GET['ssid']}",
-            "Roster" => "loader.php?cmd=roster&ssid={$_GET['ssid']}",
-            "Add/Drop" => "loader.php?cmd=add-drop&ssid={$_GET['ssid']}",
-            "Trades" => "loader.php?cmd=trades&ssid={$_GET['ssid']}",
-            "Match Up" => "loader.php?cmd=matchup&ssid={$_GET['ssid']}",
-            "Draft" => "loader.php?cmd=draft&ssid={$_GET['ssid']}",
+            "Home" => "loader.php?cmd=home&ssid={$_GET['ssid']}&leagueid={$_GET['leagueid']}",
+            "Roster" => "loader.php?cmd=roster&ssid={$_GET['ssid']}&leagueid={$_GET['leagueid']}",
+            "Add/Drop" => "loader.php?cmd=add-drop&ssid={$_GET['ssid']}&leagueid={$_GET['leagueid']}",
+            "Trades" => "loader.php?cmd=trades&ssid={$_GET['ssid']}&leagueid={$_GET['leagueid']}",
+            "Match Up" => "loader.php?cmd=matchup&ssid={$_GET['ssid']}&leagueid={$_GET['leagueid']}",
+            "Draft" => "loader.php?cmd=draft&ssid={$_GET['ssid']}&leagueid={$_GET['leagueid']}",
             "Leagues" => array(
                 "League Management" => array(
                     "link" => "loader.php?cmd=profile&ssid={$_GET['ssid']}",
@@ -189,6 +189,8 @@ class loader {
                     "class" => "glyphicon glyphicon-off")
             ),
         );
+
+
         $this->_head->GetHomeSlider($home_slider_images);
         $this->_head->SetHomeSlider();
         $this->_head->GetNavLinks($navigation);
@@ -242,12 +244,14 @@ class loader {
                 );
             } else {
                
+                $numUsers = $function->GetNumUsers();
                 $page_content_array[] = array(
                     "id" => "0",
                     "page_name" => "Landing",
                     "div_name" => "landing",
                     "signup" => $this->_post_values,
                     "login" => $this->_post_values,
+                    "numUsers" => $numUsers
                 );
             }
    
@@ -317,57 +321,56 @@ class loader {
                     $data = $function->SetDataQuery();
                     $leagueName = $function->GetLeagueName();
                     $leagueStandings = $function->GetStandings();
+                    
                     $page_content_array[] = array(
                         "id" => "2",
                         "page_name" => "Home",
                         "div_name" => "home",
                         "data" => $data,
                         "league_name" => $leagueName,
-                        "league_standings"=>$leagueStandings
+                        "league_standings"=>$leagueStandings,
                     );
                     break;
                 case "roster":
                     $function->getDataQuery("users", "ssid", $_GET['ssid']);
-                    $data = $function->SetDataQuery();
+                    $data = $function->GetData();
+                    $teamName = $function->GetTeamName();
                     $userRoster = $function->GetRoster();
-                    $pool = $function->GetData();
                     $page_content_array[] = array(
                         "id" => "3",
                         "page_name" => "Roster",
                         "div_name" => "team",
                         "data" => $data,
                         "roster" => $userRoster,
-                        "pool" => $pool
+                        "teamName" => $teamName
                     );
                     break;
                 case "add-drop":
-                    $function->GetDataFromPool();
-                    $data = $function->SetPoolDataQuery();
                     $userRoster = $function->GetRoster();
-                    $pool = $function->GetData();
+                    $data = $function->GetData();
                     $page_content_array[] = array(
                         "id" => "4",
                         "page_name" => "Add/Drop",
                         "div_name" => "add-drop",
                         "data" => $data,
                         "roster" => $userRoster,
-                        "pool" => $pool
                     );
                     break;
                 case "trades":
                     $function->getDataQuery("users", "ssid", $_GET['ssid']);
-                    $data = $function->SetDataQuery();
                     $userRoster = $function->GetRoster();
                     $pool = $function->GetData();
-                    $teamID = $function->GetTeamsID();
+                    //$teamID = $function->GetTeamsID();
+                   // $teamMembers = $function->GetTeamMembers();
                     $page_content_array[] = array(
                         "id" => "5",
                         "page_name" => "Trades",
                         "div_name" => "trades",
-                        "data" => $data,
+                        //"data" => $data,
                         "roster"=>$userRoster,
                         "pool"=>$pool,
-                        "teamsID"=>$teamID
+                       // "teamsID"=>$teamID,
+                       // "teamMembers"=>$teamMembers
                     );
                     break;
                 case "matchup":
@@ -382,35 +385,11 @@ class loader {
                     break;
 
                 case "draft":
-                    $nba = $function->GetCountFromPool("NBA");
-                    $nba = $function->SetCountFromPool();
-
-                    $nfl = $function->GetCountFromPool("NFL");
-                    $nfl = $function->SetCountFromPool();
-
-                    $mlb = $function->GetCountFromPool("MLB");
-                    $mlb = $function->SetCountFromPool();
-
-                    $nhl = $function->GetCountFromPool("NHL");
-                    $nhl = $function->SetCountFromPool();
-
-                    $counts = array(
-                        "nba" => $nba,
-                        "nfl" => $nfl,
-                        "mlb" => $mlb,
-                        "nhl" => $nhl
-                    );
-
-                    $function->GetDataFromPool();
-                    $data = $function->SetPoolDataQuery();
-                    array_push($data, $counts);
                     $pool = $function->GetData();
                     $page_content_array[] = array(
                         "id" => "7",
                         "page_name" => "Draft",
                         "div_name" => "draft",
-                        "data" => $data,
-                        "count" => $counts,
                         "pool" => $pool
                     );
                     break;

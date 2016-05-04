@@ -75,6 +75,7 @@ if (isset($pg['delete_key'])) {
             </div>
             <div class="col-md-4">
                 <h4 class="create-header">League Names & Invitations</h4>
+                <p>Click on a league name to go to its homepage</p>
                 <?php
 //FOR Universal CHECK
                 $tables = array(
@@ -165,7 +166,7 @@ if (isset($pg['delete_key'])) {
                                     <i class="fa fa-minus drop_logo l_minus"></i>
                                 </a>
                                 <!--- League name and Id--->
-                                <a href="#<?= $league_name['id'] ?>" class="league_name"><?= $league_name['league_name'] ?></a>
+                                <a href="loader.php?cmd=home&ssid=<?= $_GET['ssid']?>&leagueid=<?= $league_name['id'] ?>" name class="league_name"><?= $league_name['league_name'] ?></a>
 
                                 <!--Number of people invited in each league--->
                                 <span class="badge"><?= $get_number_of_invitations; ?></span>

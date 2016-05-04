@@ -21,12 +21,15 @@
                       </thead>
                       <tbody id="homebody">
                           <?php
+                          
                             $standings = json_decode($pg['league_standings']);
                             $count = 1;
                             foreach($standings as $s){                           
-                                echo '<tr id="stand"><td>'.$count.'</td><td class="teamleft"><img src="../assets/images/teamlogos/11.png" id="teamlogo" height="33" width="33">'.$s[0].'</td><td>'.$s[1].'</td><td>'.$s[2].'</td><td>'.$s[3].'</td><td>'.$s[4].'</td><td>'.$s[5].'</td></tr>';
+                                //echo '<tr id="stand"><td>'.$count.'</td><td class="teamleft"><img src="../assets/images/teamlogos/11.png" id="teamlogo" height="33" width="33">'.$s[0].'</td><td>'.$s[1].'</td><td>'.$s[2].'</td><td>'.$s[3].'</td><td>'.$s[4].'</td><td>'.$s[5].'</td></tr>';
+                                echo '<tr id="stand"><td>'.$count.'</td><td>'.$s.'</td></tr>';
                                 $count++;
                             }
+                            
                           ?>
                       </tbody>
                 </table>

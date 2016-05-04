@@ -86,7 +86,7 @@
                     <h4 class="create-header">League Info</h4>
                     <h5 class="create-header">League Name:<a href="#"> <?= $league_data['league_name']; ?></a></h5>
                     <h5 class="create-header">League Commissioner: <a href="#"><?= $commissioner_name; ?></a></h5>
-                    <h5 class="create-header">Match Up Begins: <a href="#"><?= $league_data['created_on']; ?></a></h5>
+                    <h5 class="create-header">Draft Begins: <a href="#"><?= $league_data['created_on']; ?></a></h5>
 
                     <?php
                     echo $forms->TeamInformationForm();

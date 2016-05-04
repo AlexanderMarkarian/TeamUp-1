@@ -65,8 +65,8 @@
                         <table id="myTable" class="table table-bordered dt-responsive table-responsive nowrap" cellspacing="0">
                             <thead>
                                 <th>Team</th>
-                                <th>Sport</th>
                                 <th>Owner</th>
+                                <th>Sport</th>
                                 <th>GP</th>
                                 <th>Wins</th>
                                 <th>Loses</th>
@@ -76,7 +76,7 @@
                                 <?php
                                    $jsonData = json_decode($pg['pool']);
                                     foreach($jsonData as $j){
-                                         echo "<tr class='teams' id=".$j[0]."><td>".$j[1]."</td><td>Free Agent</td><td>".$j[3]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td></tr>";
+                                         echo "<tr class='teams' id=".$j[0]."><td>".$j[1]."</td><td>Free Agent</td><td>".$j[2]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td></tr>";
                                     }
                                 ?>
                             </tbody>

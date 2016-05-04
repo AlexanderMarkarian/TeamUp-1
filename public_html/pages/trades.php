@@ -26,27 +26,32 @@
                               foreach($jsonData as $j){
                                   foreach($jsonRoster as $r){
                                       if($j[0] == $r){
-                                          echo "<tr class='my-team' id=".$j[0]."><td><img class='roster-img' src='../assets/".$j[2]."'>".$j[1]."</td><td>".$j[3]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td><td>".$j[0]."</td></tr>";
+                                          echo "<tr class='my-team' id=".$j[0]."><td><img class='roster-img' src='../assets/".$j[3]."'>".$j[1]."</td><td>".$j[2]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td><td>".$j[0]."</td></tr>";
                                       }
                                   }
                               }
                         ?>
                     </tbody>
                 </table>
-                <div class="btn-group">
-                  <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
-                    Select a team to trade with <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <?php
-                        $teamsID = json_decode($pg['teamsID']);
-                        foreach($teamsID as $t){                           
-                            echo '<li><a href="#" class="tradelist" id='.$t[0].'>'.$t[1].'</a></li>';
-                        }
-                    ?>
-                  </ul>
-                </div>
                 <br>
+                 <div class="col-lg-12">
+                     <ul class="nav nav-tabs grey-area" id="myTab">
+                        <?php
+                            $teamsID = json_decode($pg['teamsID']);
+                            $count = 1;
+                            foreach($teamsID as $t){       
+                                if($count == 1)
+                                    echo '<li class="active"><a data-toggle="tab" href="#section'.$count.'" class="tradelist" id='.$t[0].'>'.$t[1].'</a></li>';
+                                else
+                                    echo '<li><a data-toggle="tab" href="#section'.$count.'" class="tradelist" id='.$t[0].'>'.$t[1].'</a></li>';
+                                $count++;
+                            }
+                        ?>
+                     </ul>
+                     <div class="tab-content">
+                        
+                    </div>
+ <!--
                 <table class="table" id="selectTable" style="display:none">
                     <tr>
                         <th>Teams</th>
@@ -59,6 +64,7 @@
                     </tr>
                     <tbody id="addbody"></tbody>
                 </table>
+ -->
             </div>
         </div>
     </div>

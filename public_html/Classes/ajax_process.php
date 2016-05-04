@@ -10,13 +10,6 @@
 require_once 'autoLoader.php';
 $ajax = new body();
 
-// ALEX DB
-$username= "A951763_user";
-$password="Dev135Test";
-$host="mysql1217.ixwebhosting.com";
-$database="A951763_dev";
-$mysqli = new mysqli($host,$username,$password,$database);
-
 
 if (isset($_POST['login'])) {
 
@@ -69,25 +62,7 @@ if (isset($_POST['login'])) {
     $ajax->BuildPages($page_content_array);
 }
 
-
-// GET POINTS FROM EACH TEAM IN THE LEAGUE
-// CALLED FROM home.js
-else if(isset($_POST['getStandings'])){
-    $lID = 10;
-    $select = "SELECT * FROM usersleagues WHERE leagueID ='$lID'";
-    $res = $mysqli->query($select);
-    $points = [];
-    while($row = $res->fetch_row()){
-        $ulID = $row[0];
-        $query = "SELECT * FROM userspoints WHERE userleaguesID='$ulID'";
-        $result = $mysqli->query($query);
-        while($r = $result->fetch_row()){
-            $points[] = [$row[3],$r[2], $r[3], $r[4], $r[5], $r[6]];
-        }
-    }
-    echo json_encode($points);
-}
-
+/*
 // GET ALL THE TEAMS THAT HAVE ALREADY BEEN DRAFTED AND OWNED
 // CALLED FROM drafting.js
 else if(isset($_POST['getTakenTeams'])){
@@ -104,19 +79,6 @@ else if(isset($_POST['getTakenTeams'])){
         }
     }
     echo json_encode($teams);
-}
-
-// GET ROSTER OF SPECIFIC TEAMID
-// CALLED IN trades.js
-else if(isset($_POST['getTeamMembers'])){
-    $teamID = $_POST['teamID'];
-    $select = "SELECT * FROM usersteams WHERE usersleaguesID='$teamID'";
-    $res = $mysqli->query($select);
-    $return = [];
-    while($row = $res->fetch_row()){
-        $return[] = $row[2];
-    }
-    echo json_encode($return);
 }
 
 // GET TEAMS THAT ALREADY HAVE AN OWNER
@@ -157,45 +119,6 @@ else if(isset($_POST['addDrop'])){
         echo 2;
     }
 }
-/*
-// GET USERS CURRENT ROSTER
-// CALLED FORM roster.js
-else if(isset($_POST['getRoster'])){
-    $userID = 3;
-    $leagueID = 10;
-    $query = "SELECT * FROM usersleagues WHERE userID='$userID' AND leagueID='$leagueID'";
-    $result = $mysqli->query($query);
-    $usersLeaguesID = '';
-    while($row = $result->fetch_row()){
-        $usersLeaguesID = $row[0];
-    }
-    $getRoster = "SELECT * FROM usersteams WHERE usersleaguesID='$usersLeaguesID'";
-    $rosters = $mysqli->query($getRoster);
-    $array = [];
-    $id = [];
-    while($row = $rosters->fetch_row()){
-        $array[] = $row[2];
-        $id[] = $row[0];
-    }
-    $starting = [];
-    $bench = [];
-    for($i = 0; $i < sizeof($id); $i++){
-        $currentID = $id[$i];
-        $select  = "SELECT * FROM usersrosters WHERE usersteamsID='$currentID'";
-        $res = $mysqli->query($select);
-        while($row = $res->fetch_row()){
-            if($row[2] == 1){
-                $starting[] = $array[$i];
-            }
-            else{
-                $bench[] = $array[$i];
-            }
-        }
-    }
-    $merge = array_merge($starting, $bench);
-    echo json_encode($merge);
-    $mysqli->close();
-}*/
 
 // GET DRAFT ORDER 
 // CALLED FROM drafting.js
@@ -235,8 +158,32 @@ else if(isset($_POST['setPick'])){
 // INPUT ALL TEAMS STATS INTO TABLE
 // CALLED ONCE FROM profile.js WHEN USER LOGINS
 // WE NEED AN UPDATE ONE THAT IS CALLED EVERY TIME AS WELL
+
 else if(isset($_POST['inputIntoTable'])){
+
     $array = json_decode($_POST['array']);
+    $username= "teamupuser";
+    $password="teamup123";
+    $host="localhost";
+    $database="teamupdb";
+    $sql = <<<SQL
+    SELECT *
+    FROM `leagues`
+SQL;
+$db = new mysqli($host, $username, $password, $database);
+if(!$result = $db->query($sql)){
+    die('There was an error running the query [' . $db->error . ']');
+}
+
+while($row = $result->fetch_row()){
+    echo $row[1] . '<br />';
+}
+    
+    $mysqli = new mysqli($host,$username,$password,$database);
+    if (mysqli_connect_errno()) {
+    printf("Connect failed: %s\n", mysqli_connect_error());
+    exit();
+}
     for($i=0; $i<121; $i++){
         $team = $array[$i]->team;
         $ID = $array[$i]->id;
@@ -246,10 +193,14 @@ else if(isset($_POST['inputIntoTable'])){
         $sport = $array[$i]->sport;
         $GP = $array[$i]->GP;
         $image = $array[$i]->image;
-        $select = "INSERT INTO teamList (ID, team, image, sport, GP, wins, loses, percentage) VALUES ('$ID','$team','$image','$sport','$GP','$wins','$loses','$percentage')";
-        $res = $mysqli->query($select);
+        $select = "INSERT INTO teamList (id, team_name, image, sport, GP, wins, loses, percentage) VALUES ('$ID','$team','$image','$sport','$GP','$wins','$loses','$percentage')";
+        echo $select . '<br />';
+        
+        if(!$result = $mysqli->query($select)){
+            die('There was an error running the query [' . $mysqli->error . ']');
+        }
+
     }
-}
 
 // SET STARTERS FOR USER TEAM
 // CALLED IN roster.js
@@ -299,39 +250,6 @@ else if(isset($_POST['setBench'])){
     }
 }
 
-// GET TEAMS and TEAMS ID THAT ALREADY HAVE AN OWNER
-// CALLED FROM trading.js
-else if(isset($_POST['getTeamsID'])){
-    $userID = 3;
-    $leagueID = 10;
-    $query = "SELECT * FROM usersleagues WHERE leagueID='$leagueID' AND userID != '$userID'";
-    $result = $mysqli->query($query);
-    $return = [];
-    
-    while($row = $result->fetch_row()){
-        $return[$row[0]] = $row[3];
-    }
-    echo json_encode($return);
-}
-
-/*
-else if(isset($_POST['draftTeam'])){
-    $leagueID = 10;
-    $teamID = $_POST['teamID'];
-    $getUserLeagueID = "SELECT * FROM usersleagues WHERE leagueID='$leagueID'";
-    $res = $mysqli->query($getUserLeagueID);
-    $turns = [];
-    while($row = $res->fetch_row()){
-        $currentID = $row[0];
-        $select = "SELECT * FROM draftturns WHERE usersleaguesID='$currentID'";
-        $result = $mysqli->query($select);
-        while($r = $result->fetch_row()){
-            $turns[$r[3]] = $row[3];
-        }
-    }
-    echo json_encode($turns);
-}
-*/
 
 // GET LANDING STATS
 // CALLED FOR landing.js
@@ -353,3 +271,4 @@ else if(isset($_POST['landingStats'])){
     }
     echo json_encode([$numUsers, $numLeagues, $numTeams, $numPoints]);
 }
+*/

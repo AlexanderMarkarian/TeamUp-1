@@ -26,13 +26,13 @@ $(document).ready(function(){
             array: JSON.stringify(ajaxTeams)
           },
           success: function(response){
-            var data = $.parseJSON(response);
-            console.log(data);
+              console.log(response);
           }
         })
     }
+  
     
-
+/*
     $.ajax({
        type: "POST",
        url: "../allsportsdata/allsportsdata.php",
@@ -88,7 +88,7 @@ $(document).ready(function(){
                                                 ajaxTeams.push({id: data[k][l].id, team: data[k][l].team, image:data[k][l].image, GP:data[k][l].GP, sport:"NFL", wins:data[k][l].wins, loses:data[k][l].loses, percentage:data[k][l].percentage, owner:"Free Agent"});
                                             }
                                         }  
-                                        //inputIntoTable();
+                                        inputIntoTable();
                                    }
                                 });
 
@@ -101,5 +101,5 @@ $(document).ready(function(){
            });
        }
     });
-  
+  */
 });   
