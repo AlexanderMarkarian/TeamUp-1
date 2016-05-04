@@ -900,7 +900,87 @@ class functions {
         }
         return json_encode($array);
     }
+
+
+    /*
+     * AUTHOR: ALEX
+     * CHECK IF LEAGUE ID EXISTS
+     */
+    public function CheckLeagueId($leagueid){
+        $select = "SELECT * FROM leagues WHERE id='$leagueid'";
+        $result = $this->_mysqli->query($select);
+        if($result->num_rows > 0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public function CheckTeamName($leagueId, $teamName){
+        $select = "SELECT * FROM league_user WHERE league_id='$leagueId' AND team_name='$teamName'";
+        $res = $this->_mysqli->query($select);
+        if($res->num_rows > 0){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
+    public function CheckUserLeague($leagueId, $ssid){
+        $getuserid = "SELECT user_id FROM users WHERE ssid='$ssid'";
+        $res = $this->_mysqli->query($getuserid);
+        $userid = '';
+        while($row = $res->fetch_assoc()){
+            $userid = $row['user_id'];
+        }
+        $select = "SELECT * FROM league_user WHERE league_id='$leagueId' AND userid='$userid'";
+        $result = $this->_mysqli->query($select);
+        if($result->num_rows > 0){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
+    /*
+     * AUTHOR: ALEX
+     * INSERT USER BY JOIN
+     */
+    public function InsertJoin($leagueid, $teamName, $ssid){
+        $getuserid = "SELECT user_id FROM users WHERE ssid='$ssid'";
+        $res = $this->_mysqli->query($getuserid);
+        $userid = '';
+        while($row = $res->fetch_assoc()){
+            $userid = $row['user_id'];
+        }
+        $insert = "INSERT INTO league_user (team_name, userid, league_id, commisioner) VALUES ('$teamName', '$userid', '$leagueid', '0')";
+        $result = $this->_mysqli->query($insert);
+        if($result)
+            return true;
+        return false;
+    }
     
+
+    public function GetLeagueInfo($leagueid, $ssid){
+        $select = "SELECT * FROM league_user WHERE league_id='$leagueid'";
+        $result = $this->_mysqli->query($select);
+        $return = [];
+        while($row = $result->fetch_assoc()){
+            $team_name = $row['team_name'];
+            $current = $row['userid'];
+            $getEmail = "SELECT * FROM users WHERE user_id='$current'";
+            $r = $this->_mysqli->query($getEmail);
+            while($ro = $r->fetch_assoc()){
+                $return[] = [$team_name, $ro['email'], $ro['ssid']];
+            }
+        }   
+        return $return;
+    }
+
+
     
     /*
      * AUTHOR: ALEX

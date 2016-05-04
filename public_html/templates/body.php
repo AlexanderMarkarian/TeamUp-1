@@ -110,6 +110,10 @@ class body {
                     $ajax = new forms();
                     echo $ajax->ScoreNavBar($pg['create_nav']);
                     break;
+                case '310':
+                    $ajax = new forms();
+                    echo $ajax->JoinLeagueProcess($pg['join_league']);
+                    break;
                 case '55':
                     $forms = new forms();
                     $functions = new functions();

@@ -60,6 +60,13 @@ if (isset($_POST['login'])) {
         "creae_nav" => $_POST['d'],
     );
     $ajax->BuildPages($page_content_array);
+} else if(isset($_POST['join_league'])){
+    unset($page_content_array);
+    $page_content_array[] = array(
+        "id" => "310",
+        "join_league" => $_POST
+    );
+    $ajax->BuildPages($page_content_array);
 }
 
 /*

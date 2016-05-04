@@ -8,6 +8,7 @@ $(document).ready(function(){
     var mm = today.getMonth()+1;
     var y = today.getFullYear();
     var date = y + "/" + mm + "/" + dd;
+
    
    
     $('.datetimepicker').datetimepicker({
@@ -30,6 +31,62 @@ $(document).ready(function(){
           }
         })
     }
+
+
+    $("#join_league").click(function(){
+        var leagueId = $("#j_league_id").val();
+        var teamName = $("#j_team_name").val();
+        var ssid = $("#join_ssid").val();
+        if(leagueId == "" || teamName == ""){
+          $("#jleague").html("<div class='alert alert-danger' role='alert' id='errors'> All fields are empty!</div> ");
+        }
+        else{
+          $.ajax({
+              type: "POST",
+              url: "ajax_process.php",
+              data:{
+                join_league: true,
+                league_id: leagueId,
+                team_name: teamName,
+                ssid: ssid
+              },
+              success: function(response){
+                if(response == "Error1"){
+                  $("#jleague").html("<div class='alert alert-danger' role='alert' id='errors'> League Id does not exist</div> ");
+                  $("#j_league_id").val("");
+                }
+                else if(response == "Error2"){
+                    $("#jleague").html("<div class='alert alert-danger' role='alert' id='errors'> There was an error inserting you</div> ");
+                    $("#j_league_id").val("");
+                    $("#j_team_name").val("");
+                }
+                else if(response == "Error3"){
+                    $("#jleague").html("<div class='alert alert-danger' role='alert' id='errors'> That team name already exists in this league</div> ");
+                    $("#j_team_name").val("");
+                }
+                else if(response == "Error4"){
+                    $("#jleague").html("<div class='alert alert-danger' role='alert' id='errors'> User already in this league</div> ");
+                    $("#j_team_name").val("");
+                    $("#j_league_id").val("");
+                }
+                else{
+                  $("#jleague").html("<div class='alert alert-success' role='alert' id='errors'> You have been successfully added</div> ");
+                    $("#j_league_id").val("");
+                    $("#j_team_name").val("");
+                    window.setTimeout(function () {
+                        $("#jleague").hide();
+                        window.location.href = 'loader.php?cmd=profile' + "&ssid=" +ssid;
+                    }, 2000);
+                }
+              }
+          });
+        }
+    });
+
+
+    $(".fa-trash-o").click(function(){
+      alert("Sdf");
+    });
   
     
 /*

@@ -467,6 +467,7 @@ class forms {
         }
     }
 
+
     /*
      * @author: Alex
      * Create league form is below which is used in profile.php
@@ -738,22 +739,54 @@ class forms {
      * NOT USED
      */
 
-    public function JoinLeague() {
+    public function JoinLeague(){
         ?>
-        <form method="post" name="form[j_league]">
+        <div id="jleague"></div>
+        <form method="post" name="j_league" action="ajax_process.php" id="j_league">
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="League ID" name="form[j_league][league_id]" value="<?= $_POST['form']['j_league']['league_id'] ?>">
+                <input type="text" class="form-control" placeholder="League Id" id="j_league_id" value="<? $_POST['league_id'] ?>">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Team Name" name="form[j_league][team_name]" value="<?= $_POST['form']['j_league']['team_name'] ?>">
+                <input type="text" class="form-control" placeholder="Your Team Name" id="j_team_name" value="<? $_POST['team_name'] ?>">
             </div>
             <div class="form-group">
-                <input type="button"  class="btn" value="Submit">
+                <input type="hidden"  value="<?= $_GET['ssid'] ?>" id="join_ssid"/>
+                <input type="button"  id="join_league" class="btn btn-info" value="Submit">
             </div>
         </form>
-
         <?php
     }
+
+    public function JoinLeagueProcess(array $form_values){
+
+        $teamName = $form_values['team_name'];
+        $leagueId = $form_values['league_id'];
+        $ssid = $form_values['ssid'];
+
+        if($this->_fucntions->CheckLeagueId($leagueId)){
+            if($this->_fucntions->CheckTeamName($leagueId, $teamName)){
+                if($this->_fucntions->CheckUserLeague($leagueId, $ssid)){
+                    if($this->_fucntions->InsertJoin($leagueId, $teamName, $ssid)){
+                        echo "Success";
+                    }
+                    else{
+                        echo "Error2";
+                    }
+                }
+                else{
+                    echo "Error4";
+                }
+
+            }
+            else{
+                echo "Error3";
+            }
+        }
+        else{
+            echo "Error1";
+        }
+    }
+
 
     /*
      * @Auth: Rostom
@@ -1006,6 +1039,8 @@ class forms {
                     array_push($values, "'" . $invitaion['form']['invite']['league_id'] . "'");
                     array_push($values, "'" . $new_date . "'");
 
+                    $league_id = $values[3];
+
                     $insert_values = array(
                         "values" => $values,
                         "fields" => $fields,
@@ -1013,14 +1048,13 @@ class forms {
                     );
                     $this->_fucntions->InsertAll($insert_values, $cmd = "insert into temp_invite");
 
-                    $message_link = '<a href="http://dev.teamup.webulence.com/public_html/Classes/loader.php?lid=' . $link_id . '">Click to join</a>';
+                    $message_link = '<a href="http://dev.teamup.webulence.com/public_html/Classes/loader.php">Click to join</a>';
                     $message = ""
                             . "Hi There {$name['name' . $i]}, \n"
                             . "\n"
-                            . "{$sender_name} has invited you to join him to a fantasy league match up.\n"
-                            . "Please follow the link to join \n"
-                            . "click {$message_link}  \n"
-                            . "Ref#: {$link_id}";
+                            . "{$sender_name} has invited you to join his/her league in TeamUp.\n"
+                            . "Please follow the link and enter {$league_id} in the Join League slot after logging in or registering \n"
+                            . "click {$message_link}  \n";
                     $subject = "TeamUp - Invitation";
                     $headers = 'MIME-Version: 1.0' . "\r\n";
                     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";

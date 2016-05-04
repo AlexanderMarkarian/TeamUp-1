@@ -48,20 +48,18 @@ if (isset($pg['delete_key'])) {
             </div>
         </div>
 
+        <h3>League Info</h3>
         <div class="row text-center grey-area">
             <div class="col-md-4">
                 <h4 class="create-header">Create League</h4>
-                <!------------------CREATE LEAGUE FORM GOES HERE ---------------------->
                 <?php
 //$pg['forms']->CreateLeagueProcess($pg['create_league']);
                 echo $pg['forms']->CreateLeague();
                 ?>
 
-                <!----------END FORM---------------------------------------->
             </div>
             <div class="col-md-4">
                 <h4 class="create-header">Add League Members</h4>
-                <!----------INVITE PEOPLE TO JOIN LEAGUE FORM GOES HERE----------------->
                 <?php
                 /*
                  * Invite Form + InvitememberProcess Data coming from loader.php 
@@ -71,13 +69,23 @@ if (isset($pg['delete_key'])) {
 // echo $pg['forms']->InviteMembersProcess($pg['invite']);
                 ?>
                 <script type='text/javascript' src='<?= ABSOLUTH_PATH_JS ?>ajax_proccess.js'></script>
-                <!--------------------END FORM------------------------->
             </div>
             <div class="col-md-4">
+                <h4>Join League</h4>
+                <?php
+                    echo $pg['forms']->JoinLeague();
+                ?>
+            </div>
+
+
+        </div>
+        <h3>My Leagues</h3>
+        <div class="row text-center grey-area">
+            <div class="col-md-6">
                 <h4 class="create-header">League Names & Invitations</h4>
                 <p>Click on a league name to go to its homepage</p>
                 <?php
-//FOR Universal CHECK
+            //FOR Universal CHECK
                 $tables = array(
                     "0" => "league_user",
                     "1" => "leagues"
@@ -147,7 +155,7 @@ if (isset($pg['delete_key'])) {
                         /*
                          * Display the number of people invited per league
                          */
-                        $table = array("0" => "temp_invite");
+                        $table = array("0" => "league_user");
                         $fields = array("0" => "league_id");
                         $value = array("0" => $league_name['id']);
                         $option = "1";
@@ -192,6 +200,7 @@ if (isset($pg['delete_key'])) {
                                  * Desc: gets the team members invited by league owner and displays them under the league name
                                  * 03/15/2016
                                  */
+                                /*
                                 $table = array("0" => "temp_invite");
                                 $field = array("0" => "league_id");
                                 $value = array("0" => $league_name['id']);
@@ -200,17 +209,22 @@ if (isset($pg['delete_key'])) {
                                 unset($pg['functions']->_data);
                                 $get_team_members_info = $pg['functions']->CheckIfExists($table, $field, $value, $option, $option2);
                                 $get_team_members_info = $pg['functions']->SetDataQuery();
+                                */
+                                $value = $league_name['id'];
+                                
+                                $get_team_members_info = $pg['functions']->GetLeagueInfo($value, $_GET['ssid']);
                                 ?>
                                 <?php
+                                
                                 foreach ($get_team_members_info as $team_member) {
                                     ?>
                                     <tr>
 
-                                        <td><?= $team_member['name']; ?></td>
-                                        <td><a href="mailto:<?= $team_member['email']; ?>" data-toggle="tooltip" data-placement="top" title="click to send email"><?= $team_member['email']; ?></a></td>
+                                        <td><?= $team_member[0]; ?></td>
+                                        <td><a href="mailto:<?= $team_member['email']; ?>" data-toggle="tooltip" data-placement="top" title="click to send email"><?= $team_member[1]; ?></a></td>
                                         <?php
-                                        $status = ($team_member['status'] == "0") ? "fa-minus-circle" : "fa-check-circle";
-                                        $class = ($team_member['status'] == "0") ? "member-status-off" : "member-status-on";
+                                        $status = ($team_member[2] != $_GET['ssid']) ? "fa-trash-o" : "fa-user";
+                                        $class = ($team_member[2] != $_GET['ssid']) ? "member-status-off" : "member-status-on";
                                         ?>
                                         <td class="<?= $class; ?>"><i class="fa <?= $status ?>"></i></td>
                                     </tr>
@@ -239,7 +253,6 @@ if (isset($pg['delete_key'])) {
 
 
             </div>
-
         </div>
     </div>
 </section>
