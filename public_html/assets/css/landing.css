@@ -871,7 +871,7 @@ h2.b-animate.b-from-left.b-delay03 {
 	margin: .7em 0;
 	color: #222;
 	border-bottom: 10px solid #222;
-	width: 29%;
+
 }
 .team-grid img{
 	border-radius:50%;
@@ -1032,7 +1032,8 @@ h2.b-animate.b-from-left.b-delay03 {
 	margin: 3em 0 1em 0;
 }
 .skills-grid-text p{
-	font-size: 14px;
+	padding-bottom: 10px;
+	font-size: 20px;
 	font-family: 'Open Sans', sans-serif;
 }
 .totam ul{
@@ -1377,7 +1378,7 @@ form input[type="submit"]:hover{
 }
 /*---- footer ----*/
 .footer{
-	background:#252525;
+	background: #000;
 	text-align:center;
 }
 .footer h4{
@@ -2058,7 +2059,7 @@ span.menu
 		left: 32%;
 	}
 	.team-hedding h3 {
-		width: 48%;
+
 		font-size: 24px;
 		border-bottom: 4px solid #222;
 	}
