@@ -245,13 +245,19 @@ class loader {
             } else {
                
                 $numUsers = $function->GetNumUsers();
+                $numLeagues = $function->GetNumLeagues();
+                $numTeams = $function->GetNumTeams();
+                $numPoints = $function->GetNumPoints();
                 $page_content_array[] = array(
                     "id" => "0",
                     "page_name" => "Landing",
                     "div_name" => "landing",
                     "signup" => $this->_post_values,
                     "login" => $this->_post_values,
-                    "numUsers" => $numUsers
+                    "numUsers" => $numUsers,
+                    "numLeagues" => $numLeagues,
+                    "numTeams" => $numTeams,
+                    "numPoints" => $numPoints
                 );
             }
    

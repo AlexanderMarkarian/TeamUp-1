@@ -112,19 +112,27 @@
     <div class="team-bottom">
         <div class="container">
             <div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
-                <p id="numUsers"></p>
+                <p id="numUsers">
+                    <?php echo $pg['numUsers']; ?>
+                </p>
                 <p class="text">USERS</p>
             </div>
             <div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
-                <p id="numLeagues"></p>
+                <p id="numLeagues">
+                    <?php echo $pg['numLeagues']; ?>
+                </p>
                 <p class="text">LEAGUES</p>
             </div>
             <div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
-                <p id="numTeams"></p>
+                <p id="numTeams">
+                    <?php echo $pg['numTeams']; ?>
+                </p>
                 <p class="text">TEAMS</p>
             </div>
             <div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
-                <p id="numPoints"></p>
+                <p id="numPoints">
+                    <?php echo $pg['numPoints']; ?>
+                </p>
                 <p class="text">POINTS</p>
             </div>
             <div class="clearfix"> </div>

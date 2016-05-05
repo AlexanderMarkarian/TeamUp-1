@@ -800,7 +800,25 @@ class functions {
     public function GetNumUsers(){
         $query = "SELECT * FROM users";
         $result = $this->_mysqli->query($query);
-        return $result->_num_rows;
+        return $result->num_rows;
+    }
+    
+    public function GetNumLeagues(){
+        $query = "SELECT * FROM leagues";
+        $result = $this->_mysqli->query($query);
+        return $result->num_rows;       
+    }
+    
+    public function GetNumTeams(){
+        $query = "SELECT * FROM league_user";
+        $result = $this->_mysqli->query($query);
+        return $result->num_rows;          
+    }
+    
+    public function GetNumPoints(){
+        $query = "SELECT * FROM points";
+        $result = $this->_mysqli->query($query);
+        return $result->num_rows;        
     }
     
     
