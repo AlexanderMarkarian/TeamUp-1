@@ -392,11 +392,17 @@ class loader {
 
                 case "draft":
                     $pool = $function->GetData();
+                    $draftOrder = $function->DraftOrder();
+                    $reverseOrder = $function->DraftReverseOrder();
+                    $onTheClock = $function->OnTheClock();
                     $page_content_array[] = array(
                         "id" => "7",
                         "page_name" => "Draft",
                         "div_name" => "draft",
-                        "pool" => $pool
+                        "pool" => $pool,
+                        "draftOrder" => $draftOrder,
+                        "reverseOrder" =>$reverseOrder,
+                        "clock" => $onTheClock
                     );
                     break;
                 case "settings":

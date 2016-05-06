@@ -8,9 +8,13 @@
 
                 <div class="top-left">
                     <div class="time">02:00</div>
-                    <div class="clock-time">On the clock</div>
+                    <div class="clock-time">On the clock:</div>
                     <div class="clock">
-                        <span class="clock-team"></span>
+                        <span class="clock-team">
+                            <?php
+                                echo $pg['clock'];
+                            ?>
+                        </span>
                         <br>
                     </div>
                 </div>
@@ -92,32 +96,65 @@
                     <thead>
                         <th>Round 1</th>
                     </thead>
-                    <tbody class="odd_round">
+                    <tbody>
+                        <?php
+                            $teams = json_decode($pg['draftOrder']);
+                            foreach($teams as $team){
+                                echo '<tr class="round-item"><td><span class="round-name">'.$team.'</span></td></tr>';
+                            }
+                        ?>
                     </tbody>
                     <thead>
                         <th>Round 2</th>
                     </thead>
-                    <tbody class="even_round">
+                    <tbody>
+                        <?php
+                           $reverse = json_decode($pg['reverseOrder']);
+                            foreach($reverse as $team){
+                                echo '<tr class="round-item"><td><span class="round-name">'.$team.'</span></td></tr>';
+                            }
+                        ?>
                     </tbody>
                     <thead>
                         <th>Round 3</th>
                     </thead>
-                    <tbody class="odd_round">
+                    <tbody>
+                        <?php
+                            foreach($teams as $team){
+                                echo '<tr class="round-item"><td><span class="round-name">'.$team.'</span></td></tr>';
+                            }
+                        ?>
                     </tbody>
                     <thead>
                         <th>Round 4</th>
                     </thead>
-                    <tbody class="even_round">
+                    <tbody>
+                        <?php
+                            foreach($reverse as $team){
+                                echo '<tr class="round-item"><td><span class="round-name">'.$team.'</span></td></tr>';
+                            }
+                        ?>                        
                     </tbody>
                     <thead>
                         <th>Round 5</th>
                     </thead>
-                    <tbody class="odd_round">
+                    <tbody>
+                        <?php
+                            foreach($teams as $team){
+                                echo '<tr class="round-item"><td><span class="round-name">'.$team.'</span></td></tr>';
+                            }
+
+                        ?>
                     </tbody>
                     <thead>
                         <th>Round 6</th>
                     </thead>
-                    <tbody class="even_round">
+                    <tbody>
+                         <?php
+                            foreach($reverse as $team){
+                                echo '<tr class="round-item"><td><span class="round-name">'.$team.'</span></td></tr>';
+                            }
+                        ?>                         
                     </tbody>
                 </table>        
             </div>

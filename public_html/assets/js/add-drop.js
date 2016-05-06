@@ -3,7 +3,7 @@ $(document).ready(function(){
      var addCount = 0, dropCount = 0;
     $('#myTable').DataTable(); 
     
-    $(".teams").click(function(){
+    $(document).on("click", ".teams", function(){
         if($.inArray($(this)[0].id, addID) > -1){
             var index = $.inArray($(this)[0].id, addID);
             addID.splice(index, 1);
@@ -75,27 +75,3 @@ $(document).ready(function(){
     });
  });
 
-/*
-
-$("#completeAdd").click(function(){
-    console.log(addID + " " + dropID);
-    $.ajax({
-      type: "POST",
-      url: "../Classes/ajax_process.php",
-      data:{
-        addDrop: true,
-        addID: addID,
-        dropID: dropID
-      },
-      success:function(response){
-        if(response == 2){
-          location.reload();
-        }
-      }
-    });
-
-});
-
-*/
-
- 

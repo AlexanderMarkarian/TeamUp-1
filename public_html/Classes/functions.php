@@ -983,6 +983,63 @@ class functions {
         return false;
     }
     
+    
+    public function DraftOrder(){
+        $league_id = $_GET['leagueid'];
+        $search = "SELECT * FROM draft_order WHERE league_id='$league_id' ORDER BY turn ASC";
+        $result = $this->_mysqli->query($search);
+        $teamName = [];
+        while($row = $result->fetch_assoc()){
+            $currentId = $row['league_user_id'];
+            $select = "SELECT team_name FROM league_user WHERE id='$currentId'";
+            $res = $this->_mysqli->query($select);
+            while($r = $res->fetch_assoc()){
+                $teamName[] = $r["team_name"];
+            }
+        }
+        return json_encode($teamName);
+    }
+    
+    public function DraftReverseOrder(){
+        $league_id = $_GET['leagueid'];
+        $search = "SELECT * FROM draft_order WHERE league_id='$league_id' ORDER BY turn DESC";
+        $result = $this->_mysqli->query($search);
+        $teamName = [];
+        while($row = $result->fetch_assoc()){
+            $currentId = $row['league_user_id'];
+            $select = "SELECT team_name FROM league_user WHERE id='$currentId'";
+            $res = $this->_mysqli->query($select);
+            while($r = $res->fetch_assoc()){
+                $teamName[] = $r["team_name"];
+            }
+        }
+        return json_encode($teamName);       
+    }
+    
+    
+    public function OnTheClock(){
+        $league_id = $_GET['leagueid'];
+        $select = "SELECT pick FROM draft_count WHERE league_id='$league_id'";
+        $res = $this->_mysqli->query($select);
+        $pick = '';
+        while($row = $res->fetch_assoc()){
+            $pick = $row['pick'];
+        }
+        $query = "SELECT league_user_id FROM draft_order WHERE league_id='$league_id' AND turn='$pick'";
+        $result = $this->_mysqli->query($query);
+        $userleagueid = '';
+        while($row = $result->fetch_assoc()){
+            $userleagueid = $row['league_user_id'];
+        }
+        $s = "SELECT team_name FROM league_user WHERE id='$userleagueid'";
+        $name = $this->_mysqli->query($s);
+        $clockName = '';
+        while($row=$name->fetch_assoc()){
+            $clockName = $row['team_name'];
+        }
+        return $clockName;
+    }
+    
 
     public function GetLeagueInfo($leagueid, $ssid){
         $select = "SELECT * FROM league_user WHERE league_id='$leagueid'";

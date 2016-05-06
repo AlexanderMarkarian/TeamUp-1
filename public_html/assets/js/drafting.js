@@ -3,73 +3,21 @@ $(document).ready(function(){
     var ajaxTeams = [];
     $("#main-box").hide();
     $('#myTable').DataTable();
-         
-    getTakenTeams();
-   
-   function getTakenTeams(){
-       $.ajax({
-           type: "POST",
-           url: "../Classes/ajax_process.php",
-           data:{
-               getTakenTeams: true
-           },
-           success:function(response){
-               var data = $.parseJSON(response);
-               console.log(data);
-               var string = '';
-               for(var m in data){
-                   for(var k in ajaxTeams){
-                       if(ajaxTeams[k].id == data[m]){
-                           string += '<tr class="teams"><td>'+ajaxTeams[k].team+'</td></tr>';
-                       }
-                   }
-               }
-               $(".queue-list").html(string);
-           }
-       })
-   }
-
     
-    function setPick(){
-        var team = $("#1").text();
-        $.ajax({
-            type:"POST",
-            url:"../Classes/ajax_process.php",
-            data:{
-                team:team,
-                setPick:true
-            },
-            success:function(response){
-                //whoIsNext();
-            }
-        })
+    var ajaxInterval;
+    //start();
+    
+    function start(){
+        clearInterval(ajaxInterval);
+        ajaxInterval = setInterval(function(){
+            console.log("Here");
+            start();
+        },20000);
     }
-    
-    $.ajax({
-        type: "POST",
-        url: "../Classes/ajax_process.php",
-        data:{
-            draftOrder: true
-        },
-        success: function(response){
-           var data = $.parseJSON(response);
-           var order = [];
-           var oddString = '', evenString = '';
-           for(var k in data){
-               order.push(data[k]);
-               oddString += '<tr class="round-item"><td><span class="round-name" id='+k+'>'+data[k]+'</span></td></tr>';
-           }
-           for(var i=order.length-1; i>=0; i--){
-               evenString += '<tr class="round-item"><td><span class="round-name">'+order[i]+'</span></td></tr>';
-           }
-           $(".odd_round").append(oddString);
-           $(".even_round").append(evenString);
-           $(".clock-team").text(order[0]);
-            //$(".clock-team").attr("id",response);
-        }
-    });
-    
 
+         
+    /*     
+   
     var team = {};
     var interval;
     
@@ -136,5 +84,5 @@ $(document).ready(function(){
 
         }  
     }
-
+    */
 });
