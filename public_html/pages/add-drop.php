@@ -6,7 +6,8 @@
                 <h2 class="section-heading">Add Team</h2>
             </div>
         </div>
-
+      
+        
         <div class="row" id="main-content">
             <div class="col-lg-12">
                 <div id="addingTeam">
@@ -22,19 +23,28 @@
                         </thead>
                         <tbody id="table-body">  
                             <?php
-                            
+                              $taken = json_decode($pg['taken']);
                               $jsonData = json_decode($pg['data']);
-                              foreach($jsonData as $j){
-                                   echo "<tr class='teams' id=".$j[0]."><td><img class='roster-img' src='../assets/".$j[3]."'>".$j[1]."</td><td>Free Agent</td><td>".$j[2]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td></tr>";
-                              }
+                              $bool = false;
                               
+                              foreach($jsonData as $j){
+                                  foreach($taken as $t){
+                                      if($t == $j[0]){
+                                          $bool = true;
+                                      }
+                                  }
+                                  if(!$bool)
+                                    echo "<tr class='teams' id=".$j[0]."><td><img class='roster-img' src='../assets/".$j[3]."'>".$j[1]."</td><td>Free Agent</td><td>".$j[2]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td></tr>"; 
+                  
+                                  $bool = false;
+                              }
                             ?>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
-
+     
     </div>
     <div class="container">
         <div class="slider4"></div>
@@ -57,7 +67,6 @@
                     <tbody id="droppingbody">
 
                         <?php
-                              $jsonData = json_decode($pg['data']);
                               $jsonRoster = json_decode($pg['roster']);
                               foreach($jsonData as $j){
                                   foreach($jsonRoster as $r){

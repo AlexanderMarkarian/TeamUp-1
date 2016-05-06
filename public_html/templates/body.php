@@ -118,6 +118,14 @@ class body {
                     $ajax = new forms();
                     echo $ajax->AddDropProcess($pg['add_drop']);
                     break;
+                case '312':
+                    $ajax = new forms();
+                    echo $ajax->CheckTurn($pg['checkTurn']);
+                    break;
+                case '313':
+                    $ajax = new forms();
+                    echo $ajax->CheckRefresh($pg['refresh']);
+                    break;
                 case '55':
                     $forms = new forms();
                     $functions = new functions();

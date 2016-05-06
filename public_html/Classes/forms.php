@@ -787,6 +787,33 @@ class forms {
         }
     }
     
+    public function CheckTurn(array $form_value){
+        $leagueId = $form_value['leagueid'];
+        $ssid = $form_value['ssid'];
+        $teamid = $form_value['teamid'];
+        if($this->_fucntions->CheckUserTurn($leagueId, $ssid)){
+            $this->_fucntions->AddTeam($teamid, $leagueId, $ssid);
+            $this->_fucntions->UpdateRefresh($leagueId);
+            $this->_fucntions->UpdatePick($leagueId);
+            echo "Success";
+        }
+        else{
+            echo "Error1";
+        }
+    }
+    
+    public function CheckRefresh(array $form_value){
+        $leagueId = $form_value['leagueid'];
+        $ssid = $form_value['ssid'];  
+        if($this->_fucntions->CheckUserRefresh($leagueId, $ssid) == 1){
+            $id = $this->_fucntions->GetLeagueUserID($leagueId, $ssid);
+            $this->_fucntions->CloseRefresh($id);
+            echo 1;
+        }
+        else{
+            echo 0;
+        }
+    }
     
     public function AddDropProcess(array $form_value){
        $addTeams = json_decode($form_value['addTeams']);

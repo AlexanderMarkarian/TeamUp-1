@@ -87,7 +87,7 @@ body{
 	padding-top: 15px;
 }
 
-#selected-team{
+.selected-team{
 	display: inline;
 	font-size: 40px;
 }

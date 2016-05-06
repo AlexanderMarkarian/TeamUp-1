@@ -354,12 +354,14 @@ class loader {
                 case "add-drop":
                     $userRoster = $function->GetRoster();
                     $data = $function->GetData();
+                    $taken = $function->TakenTeams();
                     $page_content_array[] = array(
                         "id" => "4",
                         "page_name" => "Add/Drop",
                         "div_name" => "add-drop",
                         "data" => $data,
                         "roster" => $userRoster,
+                        "taken" => $taken
                     );
                     break;
                 case "trades":
@@ -367,16 +369,15 @@ class loader {
                     $userRoster = $function->GetRoster();
                     $pool = $function->GetData();
                     $teamID = $function->GetTeamsID();
-                   // $teamMembers = $function->GetTeamMembers();
+                    $teamMembers = $function->GetTeamMembers();
                     $page_content_array[] = array(
                         "id" => "5",
                         "page_name" => "Trades",
                         "div_name" => "trades",
-                        //"data" => $data,
                         "roster"=>$userRoster,
                         "pool"=>$pool,
                         "teamsID"=>$teamID,
-                       // "teamMembers"=>$teamMembers
+                        "teamMembers"=>$teamMembers
                     );
                     break;
                 case "matchup":
@@ -395,6 +396,8 @@ class loader {
                     $draftOrder = $function->DraftOrder();
                     $reverseOrder = $function->DraftReverseOrder();
                     $onTheClock = $function->OnTheClock();
+                    $teamsTaken = $function->TeamsTaken();
+                    $taken = $function->TakenTeams();
                     $page_content_array[] = array(
                         "id" => "7",
                         "page_name" => "Draft",
@@ -402,7 +405,9 @@ class loader {
                         "pool" => $pool,
                         "draftOrder" => $draftOrder,
                         "reverseOrder" =>$reverseOrder,
-                        "clock" => $onTheClock
+                        "clock" => $onTheClock,
+                        "teamsTaken" => $teamsTaken,
+                        "taken" => $taken
                     );
                     break;
                 case "settings":

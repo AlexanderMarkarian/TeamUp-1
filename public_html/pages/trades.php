@@ -47,21 +47,32 @@
                                 }
                             ?>
                         </ul>
-                      </div>
- <!--
-                <table class="table" id="selectTable" style="display:none">
-                    <tr>
-                        <th>Teams</th>
-                        <th>Sport</th>
-                        <th>GP</th>
-                        <th>Wins</th>
-                        <th>Loses</th>
-                        <th>Win Pct</th>
-                        <th>ID</th>
-                    </tr>
-                    <tbody id="addbody"></tbody>
-                </table>
- -->
+                      </div> 
+                     <br>
+                    <table class="table" id="selectTable" style="display:none">
+                        <tr>
+                            <th>Teams</th>
+                            <th>Sport</th>
+                            <th>GP</th>
+                            <th>Wins</th>
+                            <th>Loses</th>
+                            <th>Win Pct</th>
+                            <th>ID</th>
+                        </tr>
+                        <tbody id="addbody">
+                            <?php
+                              $trades = json_decode($pg['teamMembers']);
+                              foreach($jsonData as $j){
+                                  foreach($trades as $t){
+                                      if($j[0] == $t[1]){
+                                          echo "<tr class='other-team' id=".$j[0]."><td><img class='roster-img' src='../assets/".$j[3]."'>".$j[1]."</td><td>".$j[2]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td><td>".$j[0]."</td></tr>";
+                                      }
+                                  }
+                              }
+                            ?>
+                        </tbody>
+                    </table>
+
             </div>
         </div>
     </div>

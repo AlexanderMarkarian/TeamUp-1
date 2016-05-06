@@ -74,4 +74,18 @@ if (isset($_POST['login'])) {
         "add_drop" => $_POST
     );    
     $ajax->BuildPages($page_content_array);
+} else if(isset($_POST['checkTurn'])){
+    unset($page_content_array);
+    $page_content_array[] = array(
+        "id" => "312",
+        "checkTurn" => $_POST
+    );
+    $ajax->BuildPages($page_content_array);
+} else if(isset($_POST['checkRefresh'])){
+    unset($page_content_array);
+    $page_content_array[] = array(
+        "id"=> "313",
+        "refresh"=> $_POST
+    );
+    $ajax->BuildPages($page_content_array);
 }

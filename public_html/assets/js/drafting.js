@@ -1,24 +1,83 @@
 $(document).ready(function(){
 
-    var ajaxTeams = [];
+    var team = {};
     $("#main-box").hide();
     $('#myTable').DataTable();
     
     var ajaxInterval;
-    //start();
+    var ssid = $("#ssid").val();
+    var leagueid = $("#leagueid").val();
+    start();
     
     function start(){
         clearInterval(ajaxInterval);
         ajaxInterval = setInterval(function(){
-            console.log("Here");
+            $.ajax({
+               type: "POST",
+               url: "../Classes/ajax_process.php",
+               data:{
+                   checkRefresh: true,
+                   ssid: ssid,
+                   leagueid: leagueid
+               },
+               success: function(response){
+                   console.log(response);
+                   if(response == 1){
+                      window.location.href = 'loader.php?cmd=draft' + "&ssid=" + ssid + "&leagueid=" + leagueid; 
+                   }
+               }
+            });
             start();
-        },20000);
+        },10000);
     }
 
+    $(document.body).on("click", ".teams", function(){
+        $("#intro-box").hide();
+        $("#main-box").show();
+        team.team = $(this)[0].cells[0].innerHTML;
+        team.league = $(this)[0].cells[2].innerHTML;
+        team.GP = $(this)[0].cells[3].innerHTML;
+        team.wins = $(this)[0].cells[4].innerHTML;
+        team.loses = $(this)[0].cells[5].innerHTML;
+        team.pct = $(this)[0].cells[6].innerHTML;
+        team.image = "../assets/" + $(this).attr('name');
+        document.getElementById("selected-logo").src = team.image;
+        $(".selected-team").html(team.team);
+        $(".selected-team").attr('id', $(this)[0].id);
+        $("#selected-league").html(team.league);
+        $("#gp").html(team.GP);
+        $("#w").html(team.wins);
+        $("#l").html(team.loses);                
+        $("#pct").html(team.pct);
+    });
+    
+    $(document.body).on("click","#draft-team", function(){
+        var team = $(".selected-team").attr('id');
+        $.ajax({
+           type: "POST",
+           url: "../Classes/ajax_process.php",
+           data:{
+               checkTurn: true,
+               ssid: ssid,
+               leagueid: leagueid,
+               teamid: team
+           },
+           success: function(response){
+               if(response == "Error1"){
+                   $(".alert-sucess").hide();
+                   $(".alert-danger").show();
+               }
+               else{
+                   $(".alert-danger").hide();
+                   $(".alert-success").show();
+                   $(".alert-success").html("You have successfully drafted the: " + $(".selected-team").text());
+               }
+           }
+        });
+    });
          
     /*     
    
-    var team = {};
     var interval;
     
     var date = new Date();
@@ -29,36 +88,9 @@ $(document).ready(function(){
     var nday = day+1;
    
 
-    $(document.body).on("click", ".teams", function(){
-        $("#intro-box").hide();
-        $("#main-box").show();
 
-        team.team = $(this)[0].cells[0].innerHTML;
-        team.league = $(this)[0].cells[1].innerHTML;
-        team.GP = $(this)[0].cells[3].innerHTML;
-        team.wins = $(this)[0].cells[4].innerHTML;
-        team.loses = $(this)[0].cells[5].innerHTML;
-        team.pct = $(this)[0].cells[6].innerHTML;
-        team.image = "../assets/" + $(this)[0].id;
-        document.getElementById("selected-logo").src = team.image;
-        $("#selected-team").html(team.team);
-        $("#selected-league").html(team.league);
-        $("#gp").html(team.GP);
-        $("#w").html(team.wins);
-        $("#l").html(team.loses);                
-        $("#pct").html(team.pct);
 
-    });
 
-    $(document.body).on("click","#draft-team", function(){
-        var team = $("#selected-team").text();
-        for(var k in ajaxTeams){
-          if(ajaxTeams[k].team == team){
-            teamID = ajaxTeams[k].id;
-          }
-        }
-        var teamID;
-    });
     
     function timer(){
       clearInterval(interval);

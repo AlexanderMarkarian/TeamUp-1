@@ -1,5 +1,7 @@
 <section id="draft">
     <div class="container main">
+        <input type="hidden" id="ssid" value="<?= $_GET['ssid']; ?>"/>
+        <input type="hidden" id="leagueid" value="<?= $_GET['leagueid']; ?>"/>
 
         <div class="row">
 
@@ -23,7 +25,19 @@
                         <thead>
                             <th>Taken Teams</th>
                         </thead>
-                        <tbody class="queue-list"></tbody>
+                        <tbody class="queue-list">
+                            <?php
+                                $taken = json_decode($pg['teamsTaken']);
+                                $jsonData = json_decode($pg['pool']);
+                                foreach($jsonData as $j){
+                                    foreach($taken as $t){
+                                        if($t == $j[0]){
+                                            echo '<tr><td>'.$j[1].'</td></tr>';
+                                        }
+                                    }
+                                }
+                            ?>
+                        </tbody>
                     </table>        
                 </div>
             </div>
@@ -32,7 +46,7 @@
             <div class="col-md-8">
                 <div class="top-middle">
                     <div id="main-box">
-                        <span id="selected-team"></span> 
+                        <span class="selected-team"></span> 
                         <span id="selected-league"></span>
 
                         <div class="selected-info">
@@ -55,6 +69,8 @@
 
                         <div class="selected-buttons">
                             <button class="btn btn-success btn-lg" id="draft-team">Draft Team</button>
+                            <span class='alert alert-danger' style="display:none">It is not your turn to draft yet!</span>
+                            <span class='alert alert-success' style="display:none"></span>
                         </div>
                     </div>
                     <div id="intro-box">
@@ -78,9 +94,19 @@
                             </thead>
                             <tbody id="table-body">
                                 <?php
-                                   $jsonData = json_decode($pg['pool']);
+                                    $takenRosters = json_decode($pg['taken']);
+                                    $bool = false;
+                              
                                     foreach($jsonData as $j){
-                                         echo "<tr class='teams' id=".$j[0]."><td>".$j[1]."</td><td>Free Agent</td><td>".$j[2]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td></tr>";
+                                        foreach($takenRosters as $t){
+                                            if($t == $j[0]){
+                                                $bool = true;
+                                            }
+                                        }
+                                        if(!$bool)
+                                            echo "<tr class='teams' name=".$j[3]." id=".$j[0]."><td>".$j[1]."</td><td>Free Agent</td><td>".$j[2]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td></tr>";
+
+                                        $bool = false;
                                     }
                                 ?>
                             </tbody>
@@ -98,9 +124,11 @@
                     </thead>
                     <tbody>
                         <?php
+                            $count = 0;
                             $teams = json_decode($pg['draftOrder']);
                             foreach($teams as $team){
-                                echo '<tr class="round-item"><td><span class="round-name">'.$team.'</span></td></tr>';
+                                echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';
+                                $count++;
                             }
                         ?>
                     </tbody>
@@ -111,7 +139,8 @@
                         <?php
                            $reverse = json_decode($pg['reverseOrder']);
                             foreach($reverse as $team){
-                                echo '<tr class="round-item"><td><span class="round-name">'.$team.'</span></td></tr>';
+                                echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';
+                                $count++;
                             }
                         ?>
                     </tbody>
@@ -121,7 +150,8 @@
                     <tbody>
                         <?php
                             foreach($teams as $team){
-                                echo '<tr class="round-item"><td><span class="round-name">'.$team.'</span></td></tr>';
+                                echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';
+                                $count++;
                             }
                         ?>
                     </tbody>
@@ -131,7 +161,8 @@
                     <tbody>
                         <?php
                             foreach($reverse as $team){
-                                echo '<tr class="round-item"><td><span class="round-name">'.$team.'</span></td></tr>';
+                                echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';
+                                $count++;
                             }
                         ?>                        
                     </tbody>
@@ -141,7 +172,8 @@
                     <tbody>
                         <?php
                             foreach($teams as $team){
-                                echo '<tr class="round-item"><td><span class="round-name">'.$team.'</span></td></tr>';
+                                echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';
+                                $count++;
                             }
 
                         ?>
@@ -152,7 +184,8 @@
                     <tbody>
                          <?php
                             foreach($reverse as $team){
-                                echo '<tr class="round-item"><td><span class="round-name">'.$team.'</span></td></tr>';
+                                echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';
+                                $count++;
                             }
                         ?>                         
                     </tbody>

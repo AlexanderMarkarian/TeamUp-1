@@ -1040,6 +1040,62 @@ class functions {
         return $clockName;
     }
     
+    public function CheckUserRefresh($leagueid, $ssid){
+        $user = "SELECT user_id FROM users WHERE ssid='$ssid'";
+        $result = $this->_mysqli->query($user);
+        $userid = '';
+        while($row = $result->fetch_assoc()){
+            $userid = $row['user_id'];
+        }
+        $select ="SELECT id FROM league_user WHERE userid='$userid' AND league_id='$leagueid'";
+        $res = $this->_mysqli->query($select);
+        $league_user_id = '';
+        while($row = $res->fetch_assoc()){
+            $league_user_id = $row['id'];
+        }
+        $check = "SELECT refresh FROM draft_order WHERE league_user_id='$league_user_id'";
+        $refresh = $this->_mysqli->query($check);
+        while($row = $refresh->fetch_assoc()){
+            return $row['refresh'];
+        }
+    }
+    
+    
+    public function CheckUserTurn($leagueid, $ssid){
+        $getUID = "SELECT user_id FROM users WHERE ssid='$ssid'";
+        $user_result = $this->_mysqli->query($getUID);
+        $user_id = '';
+        while($row = $user_result->fetch_assoc()){
+            $user_id = $row['user_id'];
+        }
+        $getULID = "SELECT id FROM league_user WHERE league_id='$leagueid' AND userid='$user_id'";
+        $result = $this->_mysqli->query($getULID);
+        $league_user_id = '';
+        while($row = $result->fetch_assoc()){
+            $league_user_id = $row['id'];
+        }
+        
+        $getPick = "SELECT pick FROM draft_count WHERE league_id='$leagueid'";
+        $res = $this->_mysqli->query($getPick);
+        $pick = '';
+        while($row = $res->fetch_assoc()){
+            $pick = $row['pick'];
+        }
+        
+        $getTurn = "SELECT turn FROM draft_order WHERE league_user_id='$league_user_id'";
+        $r = $this->_mysqli->query($getTurn);
+        $turn = '';
+        while($row = $r->fetch_assoc()){
+            $turn = $row['turn']; 
+        }
+        
+        if($pick == $turn){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
     public function GetLeagueInfo($leagueid, $ssid){
         $select = "SELECT * FROM league_user WHERE league_id='$leagueid'";
@@ -1073,6 +1129,114 @@ class functions {
         $insert = "INSERT INTO roster (leagues_user_id, team_id) VALUES ('$league_user_id','$teamID')";
         $final = $this->_mysqli->query($insert);
     }
+    
+    public function UpdateRefresh($leagueID){
+        $update = "UPDATE draft_order SET refresh=1 WHERE league_id='$leagueID'";
+        $this->_mysqli->query($update);
+    }
+    
+    public function GetLeagueUserID($leagueID, $ssid){
+        $select = "SELECT user_id FROM users WHERE ssid='$ssid'";
+        $result = $this->_mysqli->query($select);
+        $userid = '';
+        while($row = $result->fetch_assoc()){
+            $userid = $row['user_id'];
+        }
+        $query = "SELECT id FROM league_user WHERE userid='$userid' AND league_id='$leagueID'";
+        $res = $this->_mysqli->query($query);
+        $id = '';
+        while($row=$res->fetch_assoc()){
+            $id = $row['id'];
+        }
+        return $id;
+    }
+    
+    public function CloseRefresh($id){
+        $update = "UPDATE draft_order SET refresh=0 WHERE league_user_id='$id'";
+        $this->_mysqli->query($update);
+    }
+    
+    public function UpdatePick($leagueID){    
+        $getPick = "SELECT * FROM draft_count WHERE league_id ='$leagueID'";
+        $result = $this->_mysqli->query($getPick);
+        $pick = '';
+        $teamcount = '';
+        $doublepick = '';
+        while($row = $result->fetch_assoc()){
+            $pick = $row['pick'];
+            $teamcount = $row['team_count'];
+            $doublepick = $row['doublepick'];
+        }
+        // pick = 2
+        // doublepick = 0
+        // reverse = 0
+        // teamcount = 3
+        // totalPicks = 4
+        /*
+         totalpicks++;
+         if((pick == teamcount || pick ==1) && doublepick == 1)
+                doublepick = 0;
+                if(pick = teamcount)
+                    pick --
+                else
+                    pick++
+         else
+            if(pick == teamcount)
+                doublepick = 1
+                reverse = 1
+            elseif(pick == 1)
+                if(totalpicks == 1)
+                    pick++;
+                else
+                    reverse = 0
+                    doublepick = 1
+            else
+                if(reverse == 0)
+                    pick++
+                else
+                    pick--;
+
+                
+                    
+           
+                
+          
+         
+         */
+        if(($pick == $teamcount || $pick == 1) && $doublepick == 1){
+            // doublepick = 0
+        }
+        else{
+            if($pick == $teamcount){
+                // pick--
+                // doublepick to 1
+            }
+            else{
+                // pick ++
+                // doubleppick = 1
+                $pickOne = $pick + 1;
+                $update = "UPDATE draft_count SET pick='$pickOne' WHERE league_id='$leagueID'";
+                $this->_mysqli->query($update);
+            }
+        }
+    }
+    
+    public function TeamsTaken(){
+        $leagueID = $_GET['leagueid'];
+        $select = "SELECT id FROM league_user WHERE league_id='$leagueID'";
+        $result = $this->_mysqli->query($select);
+        $teamID = [];
+        while($row = $result->fetch_assoc()){
+            $currentId = $row['id'];
+            $getRoster = "SELECT team_id FROM roster WHERE leagues_user_id='$currentId'";
+            $res = $this->_mysqli->query($getRoster);
+            while($r = $res->fetch_assoc()){
+                $teamID[] = $r['team_id'];
+            }
+        }
+        return json_encode($teamID);
+    }
+    
     
     public function DropTeam($teamID, $leagueID, $ssid){
                $getuserid = "SELECT user_id FROM users WHERE ssid='$ssid'";
@@ -1118,36 +1282,42 @@ class functions {
         return json_encode($teams);
     }
     
-    
-    /*
-    public function GetTeamMembers(){
-        $username= "A951763_user";
-        $password="Dev135Test";
-        $host="mysql1217.ixwebhosting.com";
-        $database="A951763_dev";
-        $mysqli = new mysqli($host,$username,$password,$database);
-        $userID = 3;
-        $leagueID = 10;
-        $query = "SELECT * FROM usersleagues WHERE leagueID='$leagueID' AND userID != '$userID'";
-        $result = $mysqli->query($query);
+    public function TakenTeams(){
+        $leagueID = $_GET['leagueid'];
+        $query = "SELECT id FROM league_user WHERE league_id='$leagueID'";
+        $res = $this->_mysqli->query($query);
         $return = [];
-
-        while($row = $result->fetch_row()){
-            $currentID = $row[0];   
-            $select = "SELECT * FROM usersteams WHERE usersleaguesID='$currentID'";
-            $res = $mysqli->query($select);
-            while($r = $res->fetch_row()){
-                $get = "SELECT * FROM teamList";
-                $res2 = $mysqli->query($get);
-                while($t = $res2->fetch_row()){
-                    if($r[2] == $t[0]){
-                        $return[] = [$row[0], $t];
-                    }
-                }
+        while($row = $res->fetch_assoc()){
+            $currentID = $row['id'];   
+            $select = "SELECT team_id FROM roster WHERE leagues_user_id='$currentID'";
+            $re = $this->_mysqli->query($select);
+            while($r = $re->fetch_assoc()){
+                $return[] = $r['team_id'];
+            }
+        }
+        return json_encode($return);       
+    }
+    
+    public function GetTeamMembers(){
+        $ssid = $_GET['ssid'];
+        $leagueID = $_GET['leagueid'];
+        $getuser = "SELECT user_id FROM users WHERE ssid='$ssid'";
+        $result = $this->_mysqli->query($getuser);
+        $userid = '';
+        while($row = $result->fetch_assoc()){
+            $userid = $row['user_id'];
+        }
+        $query = "SELECT id FROM league_user WHERE league_id='$leagueID' AND userid != '$userid'";
+        $res = $this->_mysqli->query($query);
+        $return = [];
+        while($row = $res->fetch_assoc()){
+            $currentID = $row['id'];   
+            $select = "SELECT team_id FROM roster WHERE leagues_user_id='$currentID'";
+            $re = $this->_mysqli->query($select);
+            while($r = $re->fetch_assoc()){
+                $return[] = [$row['id'], $r['team_id']];
             }
         }
         return json_encode($return);
     }
-    */
-
 }
