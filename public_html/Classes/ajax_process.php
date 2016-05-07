@@ -88,4 +88,11 @@ if (isset($_POST['login'])) {
         "refresh"=> $_POST
     );
     $ajax->BuildPages($page_content_array);
+} else if(isset($_POST['startDraft'])){
+    unset($page_content_array);
+    $page_content_array[] = array(
+        "id" => "314",
+        "startDraft" => $_POST
+    );
+    $ajax->BuildPages($page_content_array);
 }

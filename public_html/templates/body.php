@@ -126,6 +126,10 @@ class body {
                     $ajax = new forms();
                     echo $ajax->CheckRefresh($pg['refresh']);
                     break;
+                case '314':
+                    $ajax = new forms();
+                    echo $ajax->StartDraft($pg['startDraft']);
+                    break;
                 case '55':
                     $forms = new forms();
                     $functions = new functions();

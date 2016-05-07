@@ -815,6 +815,15 @@ class forms {
         }
     }
     
+    public function StartDraft(array $form_value){
+        $leagueId = $form_value['leagueid'];
+        $this->_fucntions->CreateDraftOrder($leagueId);
+        $this->_fucntions->CreateDraftCount($leagueId);
+        $this->_fucntions->UpdateDraftStatus($leagueId);
+        $this->_fucntions->UpdateRefresh($leagueId);
+        echo 1;
+    }
+    
     public function AddDropProcess(array $form_value){
        $addTeams = json_decode($form_value['addTeams']);
        $dropTeams = json_decode($form_value['dropTeams']);

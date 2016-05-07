@@ -1,16 +1,31 @@
 $(document).ready(function(){
 
     var team = {};
+    var ajaxInterval, interval;
+    var ssid = $("#ssid").val();
+    var leagueid = $("#leagueid").val();
     $("#main-box").hide();
     $('#myTable').DataTable({
         "autoWidth": false
     });
     
-    var ajaxInterval, interval;
-    var ssid = $("#ssid").val();
-    var leagueid = $("#leagueid").val();
     start();
-    timer();
+    
+    $("#startDraft").click(function(){
+        $.ajax({
+            type: "POST",
+            url: "../Classes/ajax_process.php",
+            data:{
+                startDraft: true,
+                leagueid: leagueid
+            },
+            success: function(){
+                document.getElementById("myNav").style.width = "0%"; 
+            }
+        })
+    });
+    
+
     
     function start(){
         clearInterval(ajaxInterval);
@@ -31,7 +46,7 @@ $(document).ready(function(){
                }
             });
             start();
-        },10000);
+        },5000);
     }
 
     $(document.body).on("click", ".teams", function(){

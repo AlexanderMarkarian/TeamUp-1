@@ -170,9 +170,6 @@ class loader {
                 "League Management" => array(
                     "link" => "loader.php?cmd=profile&ssid={$_GET['ssid']}",
                     "class" => "glyphicon glyphicon-user"),
-                "Settings" => array(
-                    "link" => "loader.php?cmd=settings&ssid={$_GET['ssid']}",
-                    "class" => "glyphicon glyphicon-cog"),
                 "Edit Profile" => array(
                     "link" => "loader.php?cmd=edit-profile&ssid={$_GET['ssid']}",
                     "class" => "glyphicon glyphicon-pencil"),
@@ -399,6 +396,9 @@ class loader {
                     $teamsTaken = $function->TeamsTaken();
                     $taken = $function->TakenTeams();
                     $totalPicks = $function->GetTotalPicks();
+                    $draftStatus = $function->GetDraftStatus();
+                    $getRosterStatus = $function->GetRosterStatus();
+                    $commisioner = $function->GetCommisioner();
                     $page_content_array[] = array(
                         "id" => "7",
                         "page_name" => "Draft",
@@ -409,7 +409,10 @@ class loader {
                         "clock" => $onTheClock,
                         "teamsTaken" => $teamsTaken,
                         "totalPicks" => $totalPicks,
-                        "taken" => $taken
+                        "taken" => $taken,
+                        "status" => $draftStatus,
+                        "rosterStatus" => $getRosterStatus,
+                        "commisioner" => $commisioner
                     );
                     break;
                 case "settings":
@@ -431,6 +434,7 @@ class loader {
                     );
                     break;
                 case "log-out":
+                    $function->LogOutStatus($_GET['ssid']);
                     $function->UpdateLoginSSID("users", $_SESSION['isLoggedin'], "ssid", $_GET['ssid']);
                     $page_content_array[] = array(
                         "id" => "10",

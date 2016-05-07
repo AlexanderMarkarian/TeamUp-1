@@ -2,7 +2,72 @@
     <div class="container main">
         <input type="hidden" id="ssid" value="<?= $_GET['ssid']; ?>"/>
         <input type="hidden" id="leagueid" value="<?= $_GET['leagueid']; ?>"/>
-
+        
+        <?php 
+            $status = $pg['status'];
+            
+            // status = 0 -> DRAFT HAS NOT STARTED YET
+            // status = 1 -> DRAFT IS CURRENTLY RUNNING
+            // status = 2 -> DRAFT IS OVER
+            
+            if($status == 0){
+                $rosterStatus = json_decode($pg['rosterStatus']);
+                $commish = $pg['commisioner'];
+                $bool = true;
+                foreach($rosterStatus as $r){
+                    if($r[1] == 0){
+                        $bool = false;
+                    }
+                }
+               
+                ?>
+                <div id="myNav" class="overlay">
+                    <div class="overlay-content">
+                        <?php
+                        foreach($rosterStatus as $r){
+                            if($r[1] == 1){
+                                echo '<a id="status_green">'.$r[0].'<i class="fa fa-check-circle" aria-hidden="true"></i></a>';
+                            }
+                            else{
+                                echo '<a id="status_red">'.$r[0].'<i class="fa fa-ban" aria-hidden="true"></i></a>';
+                            }
+                        }
+                                               
+                        if($bool){
+                            if($commish == $_GET['ssid']){
+                                ?>
+                                <button class="btn btn-lg btn-info" id="startDraft">Start Draft</button>
+                                <?php
+                            }
+                            else{
+                                ?>
+                                <h1>All users logged in. Wait for commissioner to start draft</h1>
+                                <?php
+                            }
+                        }
+                        else{
+                            ?>
+                            <h1>Not all users in this league are logged in</h1>
+                            <?php
+                        }
+                        
+                        ?>
+                     <!-- <button class="btn btn-lg btn-primary" id="startDraft">Start Draft</button> -->
+                    </div>
+                </div>
+                <?php
+            }
+            else if($status == 2){
+                ?>
+                <div id="myNav" class="overlay">
+                    <div class="overlay-content">
+                        <h1>Congratulations! You have completed your TeamUp Draft</h1>
+                        <h1>Your season has officially started</h1>
+                    </div>
+                </div>
+                <?php
+            }
+        ?>
         <div class="row">
 
             <!-- LEFT SIDEBAR -->
