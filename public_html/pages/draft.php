@@ -116,6 +116,10 @@
                 </div>
                 
             </div>
+            
+            <?php
+                $totalPicks = $pg['totalPicks'];
+            ?>
 
             <!-- RIGHT SIDEBAR -->
             <div class="col-md-2 top-right">
@@ -128,7 +132,12 @@
                             $count = 0;
                             $teams = json_decode($pg['draftOrder']);
                             foreach($teams as $team){
-                                echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';
+                                if($count == $totalPicks){
+                                    echo '<tr class="round-item" id='.$count.' style="background:#e74c3c"><td><span class="round-name">'.$team.'</span></td></tr>';  
+                                }
+                                else{
+                                    echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';  
+                                }
                                 $count++;
                             }
                         ?>
@@ -140,7 +149,12 @@
                         <?php
                            $reverse = json_decode($pg['reverseOrder']);
                             foreach($reverse as $team){
-                                echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';
+                                if($count == $totalPicks){
+                                    echo '<tr class="round-item" id='.$count.' style="background:#e74c3c"><td><span class="round-name">'.$team.'</span></td></tr>';  
+                                }
+                                else{
+                                    echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';  
+                                }
                                 $count++;
                             }
                         ?>
@@ -151,7 +165,12 @@
                     <tbody>
                         <?php
                             foreach($teams as $team){
-                                echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';
+                                if($count == $totalPicks){
+                                    echo '<tr class="round-item" id='.$count.' style="background:#e74c3c"><td><span class="round-name">'.$team.'</span></td></tr>';  
+                                }
+                                else{
+                                    echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';  
+                                }
                                 $count++;
                             }
                         ?>
@@ -162,7 +181,12 @@
                     <tbody>
                         <?php
                             foreach($reverse as $team){
-                                echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';
+                                if($count == $totalPicks){
+                                    echo '<tr class="round-item" id='.$count.' style="background:#e74c3c"><td><span class="round-name">'.$team.'</span></td></tr>';  
+                                }
+                                else{
+                                    echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';  
+                                }
                                 $count++;
                             }
                         ?>                        
@@ -173,7 +197,12 @@
                     <tbody>
                         <?php
                             foreach($teams as $team){
-                                echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';
+                                if($count == $totalPicks){
+                                    echo '<tr class="round-item" id='.$count.' style="background:#e74c3c"><td><span class="round-name">'.$team.'</span></td></tr>';  
+                                }
+                                else{
+                                    echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';  
+                                }
                                 $count++;
                             }
 
@@ -185,7 +214,12 @@
                     <tbody>
                          <?php
                             foreach($reverse as $team){
-                                echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';
+                                if($count == $totalPicks){
+                                    echo '<tr class="round-item" id='.$count.' style="background:#e74c3c"><td><span class="round-name">'.$team.'</span></td></tr>';  
+                                }
+                                else{
+                                    echo '<tr class="round-item" id='.$count.'><td><span class="round-name">'.$team.'</span></td></tr>';  
+                                }
                                 $count++;
                             }
                         ?>                         

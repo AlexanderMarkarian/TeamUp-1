@@ -398,6 +398,7 @@ class loader {
                     $onTheClock = $function->OnTheClock();
                     $teamsTaken = $function->TeamsTaken();
                     $taken = $function->TakenTeams();
+                    $totalPicks = $function->GetTotalPicks();
                     $page_content_array[] = array(
                         "id" => "7",
                         "page_name" => "Draft",
@@ -407,6 +408,7 @@ class loader {
                         "reverseOrder" =>$reverseOrder,
                         "clock" => $onTheClock,
                         "teamsTaken" => $teamsTaken,
+                        "totalPicks" => $totalPicks,
                         "taken" => $taken
                     );
                     break;

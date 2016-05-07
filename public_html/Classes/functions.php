@@ -1232,6 +1232,17 @@ class functions {
             }
         }
     }
+    
+    public function GetTotalPicks(){
+        $leagueid = $_GET['leagueid'];
+        $select = "SELECT total_picks FROM draft_count WHERE league_id='$leagueid'";
+        $result = $this->_mysqli->query($select);
+        $total_pick = '';
+        while($row = $result->fetch_assoc()){
+            $total_pick = $row['total_picks'];
+        }
+        return $total_pick;
+    }
         
     public function TeamsTaken(){
         $leagueID = $_GET['leagueid'];
