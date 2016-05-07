@@ -2,7 +2,9 @@ $(document).ready(function(){
 
     var team = {};
     $("#main-box").hide();
-    $('#myTable').DataTable();
+    $('#myTable').DataTable({
+        "autoWidth": false
+    });
     
     var ajaxInterval, interval;
     var ssid = $("#ssid").val();
@@ -36,11 +38,11 @@ $(document).ready(function(){
         $("#intro-box").hide();
         $("#main-box").show();
         team.team = $(this)[0].cells[0].innerHTML;
-        team.league = $(this)[0].cells[2].innerHTML;
-        team.GP = $(this)[0].cells[3].innerHTML;
-        team.wins = $(this)[0].cells[4].innerHTML;
-        team.loses = $(this)[0].cells[5].innerHTML;
-        team.pct = $(this)[0].cells[6].innerHTML;
+        team.league = $(this)[0].cells[1].innerHTML;
+        team.GP = $(this)[0].cells[2].innerHTML;
+        team.wins = $(this)[0].cells[3].innerHTML;
+        team.loses = $(this)[0].cells[4].innerHTML;
+        team.pct = $(this)[0].cells[5].innerHTML;
         team.image = "../assets/" + $(this).attr('name');
         document.getElementById("selected-logo").src = team.image;
         $(".selected-team").html(team.team);

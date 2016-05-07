@@ -175,6 +175,13 @@ body{
 	padding-top: 10px;	
 }
 
+.roster-img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+}
+
 tr:hover {
 	background-color: #e74c3c;
 	cursor:pointer;
@@ -228,13 +235,275 @@ th {
 	width: auto;
 }
 
+@media screen and (max-width: 1750px) {    
+    #myTable_wrapper{
+        width: 1050px;
+    }
+}
 
+@media screen and (max-width: 1690px) {
+    .time{
+        font-size: 75px;
+    }
+    
+    #myTable_wrapper{
+        width: 1000px;
+    }
+}
 
-@media(min-width: 1200px){
-	.main {
+@media screen and (max-width: 1600px) {    
+    #myTable_wrapper{
+        width: 950px;
+    }
+    
+    .queue-list td{
+        font-size: 15px !important;
+    }
+    
+    .roster-img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .round-section td{
+        font-size: 15px !important;
+    }
+}
+
+@media screen and (max-width: 1525px) {
+    #myTable_wrapper{
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    #myTable_wrapper{
+        width: 850px;
+    }
+    
+    .time{
+        font-size: 65px;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    #myTable_wrapper{
+        width: 800px;
+    }
+    
+    .time{
+        font-size: 60px;
+    }
+    
+    .selected-team{
+        font-size: 30px;
+    }
+    
+    #selected-stats{
+	font-size: 18px;
+    }
+    
+    #selected-logo{
+        height: 70px;
+	width: 90px;
+    }
+    
+    .top-middle{
+        height: 200px;
+    }
+    
+    #intro-box{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1288px) {
+    #myTable_wrapper{
+        width: 750px;
+    }
+    
+    #intro-box{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    #myTable_wrapper{
+        width: 700px;
+    }
+    
+    #table-body td{
+        font-size: 15px !important;
+    }
+   
+    th{
+        font-size: 15px !important;
+    }
+    
+    .time{
+        font-size: 55px;
+    }
+    
+    .clock-team, .clock-time{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    #myTable_wrapper{
+        width: 650px;
+    }
+    
+    .queue-list td{
+        font-size: 12px !important;
+    }
+    
+    .roster-img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .round-section td{
+        font-size: 12px !important;
+    }
+    
+    .pagination{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 1050px) {
+    #myTable_wrapper{
+        width: 600px;
+    }
+    
+    .time{
+        font-size: 50px;
+    }
+    
+    .clock-team, .clock-time{
+        font-size: 12px;
+    }
+    
+    .selected-team{
+        font-size: 25px;
+    }
+    
+    #selected-stats{
+	font-size: 15px;
+    }
+    
+    #selected-logo{
+        height: 50px;
+	width: 70px;
+    }
+    
+    .top-middle{
+        height: 180px;
+    }
+    
+    #intro-box{
+        font-size: 40px;
+    }  
+}
+
+@media screen and (max-width: 990px) {
+    #scroll{
+        height: 300px;
+    }
+    
+    #myTable_wrapper{
+        width: 100%;
+    }
+    
+    .table-responsive{
+        border: none;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .btn-lg{
+        padding:5px 8px ;
+        font-size: 12px;
+    }
+    
+    #intro-box{
+        font-size: 30px;
+    }  
+    
+    #selected-stats{
+	margin-left: 50px;
+    }
+    .top-middle{
+        height: 130px;
+    }
+    
+}
+
+@media screen and (max-width: 570px) {    
+    #intro-box{
+        font-size: 25px;
+    }  
+    
+    #selected-stats{
+	margin-left: 20px;
+    }
+    
+    #stat-box{
+        margin-left: 1px;
+        padding: 5px;
+    }  
+}
+
+@media screen and (max-width: 500px) {        
+    #selected-stats{
+	font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 415px) {            
+    .top-middle{
+        height: 150px;
+    }
+    
+    #selected-stats{
+        display: block;
+        margin-top: 15px;
+        margin-left: 0xp;
+        padding: 0px;
+    }
+    
+    .top-middle{
+        margin-bottom: 20px;
+    }
+   
+}
+
+@media screen and (max-width: 380px) {            
+    .selected-team{
+        font-size: 20px;
+    }
+    
+    #selected-league{
+        font-size: 10px;
+    }
+    
+    #intro-box{
+        font-size: 20px;
+    }
+    
+    .top-middle{
+        padding-left: 8px;
+    }
+}
+
+@media(min-width: 10px){
+    .main {
     	width: 95%;
     	height: 100%;
-	}
+    }   
 }
 
 

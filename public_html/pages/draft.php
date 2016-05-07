@@ -32,7 +32,7 @@
                                 foreach($jsonData as $j){
                                     foreach($taken as $t){
                                         if($t == $j[0]){
-                                            echo '<tr><td>'.$j[1].'</td></tr>';
+                                            echo "<tr><td><img class='roster-img' src='../assets/".$j[3]."'>".$j[1]."</td></tr>";
                                         }
                                     }
                                 }
@@ -86,7 +86,6 @@
                         <table id="myTable" class="table table-bordered dt-responsive table-responsive nowrap" cellspacing="0">
                             <thead>
                                 <th>Team</th>
-                                <th>Owner</th>
                                 <th>Sport</th>
                                 <th>GP</th>
                                 <th>Wins</th>
@@ -105,7 +104,7 @@
                                             }
                                         }
                                         if(!$bool)
-                                            echo "<tr class='teams' name=".$j[3]." id=".$j[0]."><td>".$j[1]."</td><td>Free Agent</td><td>".$j[2]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td></tr>";
+                                            echo "<tr class='teams' name=".$j[3]." id=".$j[0]."><td>".$j[1]."</td><td>".$j[2]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td></tr>";
 
                                         $bool = false;
                                     }
