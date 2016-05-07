@@ -794,8 +794,8 @@ class forms {
         if($this->_fucntions->CheckUserTurn($leagueId, $ssid)){
             $this->_fucntions->AddTeam($teamid, $leagueId, $ssid);
             $this->_fucntions->UpdateRefresh($leagueId);
-            $this->_fucntions->UpdatePick($leagueId);
-            echo "Success";
+            $this->_fucntions->UpdateTotalPicks($leagueId);
+            echo $this->_fucntions->UpdatePick($leagueId);
         }
         else{
             echo "Error1";

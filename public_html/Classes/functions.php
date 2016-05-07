@@ -1085,11 +1085,13 @@ class functions {
         $getTurn = "SELECT turn FROM draft_order WHERE league_user_id='$league_user_id'";
         $r = $this->_mysqli->query($getTurn);
         $turn = '';
+        $refresh = '';
         while($row = $r->fetch_assoc()){
             $turn = $row['turn']; 
+            $refresh = $row['refresh'];
         }
         
-        if($pick == $turn){
+        if($pick == $turn && $refresh != 1){
             return true;
         }
         else{
@@ -1156,71 +1158,81 @@ class functions {
         $this->_mysqli->query($update);
     }
     
+    public function UpdateTotalPicks($leagueID){
+        $query = "UPDATE draft_count SET total_picks=total_picks+1 WHERE league_id='$leagueID'";
+        $this->_mysqli->query($query);
+    }
+    
     public function UpdatePick($leagueID){    
         $getPick = "SELECT * FROM draft_count WHERE league_id ='$leagueID'";
         $result = $this->_mysqli->query($getPick);
         $pick = '';
         $teamcount = '';
         $doublepick = '';
+        $reverse = '';
+        $totalpick = '';
         while($row = $result->fetch_assoc()){
             $pick = $row['pick'];
             $teamcount = $row['team_count'];
             $doublepick = $row['doublepick'];
+            $reverse = $row['reverse'];
+            $totalpick = $row['total_picks'];
         }
+        
         // pick = 2
-        // doublepick = 0
         // reverse = 0
-        // teamcount = 3
-        // totalPicks = 4
-        /*
-         totalpicks++;
-         if((pick == teamcount || pick ==1) && doublepick == 1)
-                doublepick = 0;
-                if(pick = teamcount)
-                    pick --
-                else
-                    pick++
-         else
-            if(pick == teamcount)
-                doublepick = 1
-                reverse = 1
-            elseif(pick == 1)
-                if(totalpicks == 1)
-                    pick++;
-                else
-                    reverse = 0
-                    doublepick = 1
-            else
-                if(reverse == 0)
-                    pick++
-                else
-                    pick--;
-
-                
-                    
-           
-                
-          
-         
-         */
-        if(($pick == $teamcount || $pick == 1) && $doublepick == 1){
-            // doublepick = 0
+        // team count = 3
+        // doublepick = 0
+        
+        if(($pick == $teamcount || $pick ==1) && $doublepick == 1){
+            // update doublepick to 0
+            
+            $updateDoublePick = "UPDATE draft_count SET doublepick=0 WHERE league_id='$leagueID'";
+            $this->_mysqli->query($updateDoublePick);
+            if($pick == $teamcount){
+                $updatePickMinus = "UPDATE draft_count SET pick=pick-1 WHERE league_id='$leagueID'";
+                $this->_mysqli->query($updatePickMinus);
+                echo "pp";
+            }
+            else{
+                $updatePickPlus = "UPDATE draft_count SET pick=pick+1 WHERE league_id='$leagueID'";
+                $this->_mysqli->query($updatePickPlus); 
+                echo "oo";
+            }
         }
         else{
             if($pick == $teamcount){
-                // pick--
-                // doublepick to 1
+                $updateDoublePickReverse = "UPDATE draft_count SET doublepick=1, reverse=1 WHERE league_id='$leagueID'";
+                $this->_mysqli->query($updateDoublePickReverse);
+                echo "here";
+            }
+            else if($pick == 1){
+                if($totalpick == 1){
+                    $updatePickPlus = "UPDATE draft_count SET pick=pick+1 WHERE league_id='$leagueID'";
+                    $this->_mysqli->query($updatePickPlus); 
+                    echo "asf";
+                }
+                else{
+                    $updateDoublePickReverse = "UPDATE draft_count SET doublepick=1, reverse=0 WHERE league_id='$leagueID'";
+                    $this->_mysqli->query($updateDoublePickReverse);   
+                    echo "dd";
+                }
             }
             else{
-                // pick ++
-                // doubleppick = 1
-                $pickOne = $pick + 1;
-                $update = "UPDATE draft_count SET pick='$pickOne' WHERE league_id='$leagueID'";
-                $this->_mysqli->query($update);
+                if($reverse == 0){
+                    $updatePickPlus = "UPDATE draft_count SET pick=pick+1 WHERE league_id='$leagueID'";
+                    $this->_mysqli->query($updatePickPlus); 
+                    echo 'adsfadsf';
+                }
+                else{
+                    $updatePickMinus = "UPDATE draft_count SET pick=pick-1 WHERE league_id='$leagueID'";
+                    $this->_mysqli->query($updatePickMinus); 
+                    echo "npe";
+                }
             }
         }
     }
-    
+        
     public function TeamsTaken(){
         $leagueID = $_GET['leagueid'];
         $select = "SELECT id FROM league_user WHERE league_id='$leagueID'";

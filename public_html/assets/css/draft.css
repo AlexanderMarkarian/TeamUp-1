@@ -156,8 +156,12 @@ body{
 	padding-top: 10px;
 }
 
+#scroll{
+        height: 700px;   
+        overflow-y : scroll;
+}
+
 .queue-list{
-	height: auto;
 	font-size: 20px;
 	text-align: left;
 	padding-left: 10px;

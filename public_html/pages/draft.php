@@ -20,12 +20,12 @@
                         <br>
                     </div>
                 </div>
-                <div class="draft-queue">
+                <div class="draft-queue" id="scroll">
                     <table class="queue-title">
                         <thead>
                             <th>Taken Teams</th>
                         </thead>
-                        <tbody class="queue-list">
+                        <tbody class="queue-list"> 
                             <?php
                                 $taken = json_decode($pg['teamsTaken']);
                                 $jsonData = json_decode($pg['pool']);
@@ -38,6 +38,7 @@
                                 }
                             ?>
                         </tbody>
+
                     </table>        
                 </div>
             </div>

@@ -4,10 +4,11 @@ $(document).ready(function(){
     $("#main-box").hide();
     $('#myTable').DataTable();
     
-    var ajaxInterval;
+    var ajaxInterval, interval;
     var ssid = $("#ssid").val();
     var leagueid = $("#leagueid").val();
     start();
+    timer();
     
     function start(){
         clearInterval(ajaxInterval);
@@ -63,6 +64,7 @@ $(document).ready(function(){
                teamid: team
            },
            success: function(response){
+               console.log(response);
                if(response == "Error1"){
                    $(".alert-sucess").hide();
                    $(".alert-danger").show();
@@ -76,22 +78,7 @@ $(document).ready(function(){
         });
     });
          
-    /*     
-   
-    var interval;
-    
-    var date = new Date();
-    var month = date.getMonth();
-    var nMonth = date.getMonth()+1;
-    var day = date.getDate();
-    var year = date.getFullYear();
-    var nday = day+1;
-   
-
-
-
-
-    
+         
     function timer(){
       clearInterval(interval);
         var twoMinutes = 60 * 2,
@@ -116,5 +103,4 @@ $(document).ready(function(){
 
         }  
     }
-    */
 });
