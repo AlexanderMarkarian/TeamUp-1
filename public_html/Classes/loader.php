@@ -276,41 +276,10 @@ class loader {
 
             switch ($_GET['cmd']) {
                 case "profile":
-
-//                    if (isset($_GET['id'])) {
-//                        /*
-//                         * Delete tables with league information
-//                         * 1. leagues
-//                         * 2. league_user
-//                         * 3. teams
-//                         * 4. TBD
-//                         */
-//                        $tables = array(
-//                            "0" => "leagues",
-//                            "1" => "league_user",
-//                            "2" => "teams",
-//                            "3" => "temp_invite"
-//                        );
-//                        $fields = array(
-//                            "0" => "id",
-//                            "1" => "league_id",
-//                            "2" => "parent",
-//                            "3" => "league_id"
-//                        );
-//                        $values = array(
-//                            "0" => $_GET['id']
-//                        );
-//                       // var_dump($values);
-//
-//                        $delete_leagues = $function->DeleteItems($tables, $fields, $values);
-//                    }
-
-
-
-
                     $data = $function->getDataQuery("users", "ssid", $_GET['ssid']);
-
                     $data = $function->SetDataQuery();
+                    
+                    $userleagues = $function->GetUserLeagues();
                     
                     $page_content_array[] = array(
                         "id" => "1",
@@ -321,14 +290,12 @@ class loader {
                         "functions" => $function,
                         "invite" => $this->_post_values,
                         "link_stat" => $link_status,
-                        "delete_key" => $_GET['id']
-                       
+                        "delete_key" => $_GET['id'],
+                        "user_leagues" => $userleagues
                     );
 
                     break;
                 case "home":
-                    $function->getDataQuery("users", "ssid", $_GET['ssid']);
-                    $data = $function->SetDataQuery();
                     $leagueName = $function->GetLeagueName();
                     $leagueStandings = $function->GetStandings();
                     
@@ -336,13 +303,11 @@ class loader {
                         "id" => "2",
                         "page_name" => "Home",
                         "div_name" => "home",
-                        "data" => $data,
                         "league_name" => $leagueName,
                         "league_standings"=>$leagueStandings,
                     );
                     break;
                 case "roster":
-                    $function->getDataQuery("users", "ssid", $_GET['ssid']);
                     $data = $function->GetData();
                     $teamName = $function->GetTeamName();
                     $userRoster = $function->GetRoster();
@@ -369,7 +334,6 @@ class loader {
                     );
                     break;
                 case "trades":
-                    $function->getDataQuery("users", "ssid", $_GET['ssid']);
                     $userRoster = $function->GetRoster();
                     $pool = $function->GetData();
                     $teamID = $function->GetTeamsID();

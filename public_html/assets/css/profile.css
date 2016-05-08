@@ -67,6 +67,10 @@ body{
      font-size: 16px;
     color: #5cb85c;
 }
+
+.fa-minus-circle{
+    color: purple;
+}
 /*
 #gotoSecondStep{
     position: absolute;
