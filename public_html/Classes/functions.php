@@ -1138,6 +1138,35 @@ class functions {
         }   
         return $return;
     }
+    
+    public function GetUsersPerLeague($leagueID){
+        $select = "SELECT * FROM league_user WHERE league_id='$leagueID'";
+        $result = $this->_mysqli->query($select);
+        return $result->num_rows;
+    }
+    
+    public function GetUserLeagues(){
+        $ssid = $_GET['ssid'];
+        $select = "SELECT user_id FROM users WHERE ssid='$ssid'";
+        $result = $this->_mysqli->query($select);
+        $userid = '';
+        while($row = $result->fetch_assoc()){
+            $userid = $row['user_id'];
+        }
+        $query = "SELECT * FROM league_user WHERE userid='$userid'";
+        $res = $this->_mysqli->query($query);
+        $return = [];
+        while($row = $res->fetch_assoc()){
+            $leagueID = $row['league_id'];
+            $commish = $row['commisioner'];
+            $q = "SELECT league_name FROM leagues WHERE id='$leagueID'";
+            $r = $this->_mysqli->query($q);
+            while($ro = $r->fetch_assoc()){
+                $return[] = [$leagueID, $commish, $ro['league_name']];
+            }
+        }
+        return json_encode($return);
+    }
 
     public function AddTeam($teamID, $leagueID, $ssid){
         $getuserid = "SELECT user_id FROM users WHERE ssid='$ssid'";
