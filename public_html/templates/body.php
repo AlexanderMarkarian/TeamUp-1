@@ -141,7 +141,11 @@ class body {
                 case '317':
                     $ajax = new forms();
                     echo $ajax->CancelTradeProcess($pg['cancelTrade']);
-                    break;                        
+                    break; 
+                case '318':
+                    $ajax = new forms();
+                    echo $ajax->RenameLeagueProcess($pg['renameLeague']);
+                    break;                     
                 case '55':
                     $forms = new forms();
                     $functions = new functions();

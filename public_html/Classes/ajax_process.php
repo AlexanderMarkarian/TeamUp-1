@@ -116,4 +116,11 @@ if (isset($_POST['login'])) {
         "cancelTrade" => $_POST
     );
     $ajax->BuildPages($page_content_array);    
+} else if(isset($_POST['renameLeague'])){
+    unset($page_content_array);
+    $page_content_array[] = array(
+        "id" => "318",
+        "renameLeague" => $_POST
+    );
+    $ajax->BuildPages($page_content_array);      
 }

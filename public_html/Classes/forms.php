@@ -768,6 +768,7 @@ class forms {
                 if($this->_fucntions->CheckTeamName($leagueId, $teamName)){
                     if($this->_fucntions->CheckUserLeague($leagueId, $ssid)){
                         if($this->_fucntions->InsertJoin($leagueId, $teamName, $ssid)){
+                            $this->_fucntions->InsertPoints($leagueId, $ssid);
                             echo "Success";
                         }
                         else{
@@ -886,6 +887,12 @@ class forms {
            }
            echo "Success";
        }
+    }
+    
+    public function RenameLeagueProcess(array $form_value){
+        $newName = $form_value['newName'];
+        $leagueid = $form_value['leagueid'];
+        $this->_fucntions->ChangeLeagueName($leagueid, $newName);
     }
 
 

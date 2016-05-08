@@ -819,10 +819,19 @@ class functions {
         return $result->num_rows;          
     }
     
+    public function ChangeLeagueName($leagueid, $newName){
+        $update = "UPDATE leagues SET league_name='$newName' WHERE id='$leagueid'";
+        $this->_mysqli->query($update);
+    }
+    
     public function GetNumPoints(){
-        $query = "SELECT * FROM points";
+        $query = "SELECT total_points FROM points";
+        $count = '';
         $result = $this->_mysqli->query($query);
-        return $result->num_rows;        
+        while($row = $result->fetch_assoc()){
+            $count += $row['total_points'];
+        }
+        return $count;        
     }
     
     
@@ -835,22 +844,25 @@ class functions {
 
         $league_id = $_GET['leagueid'];
         
-        $select = "SELECT * FROM league_user WHERE league_id ='$league_id'";
+        $select = "SELECT * FROM points WHERE league_id ='$league_id' ORDER BY total_points DESC";
         $result = $this->_mysqli->query($select);
-        $names = [];
+        $return = [];
         while($row = $result->fetch_assoc()){
-            /*
-            $ulID = $row[0];
-            $query = "SELECT * FROM userspoints WHERE userleaguesID='$ulID'";
-            $result = $mysqli->query($query);
-            while($r = $result->fetch_row()){
-                $points[] = [$row[3],$r[2], $r[3], $r[4], $r[5], $r[6]];
+            $total_points = $row['total_points'];
+            $nba_points = $row['nba_points'];
+            $nfl_points = $row['nfl_points'];
+            $mlb_points = $row['mlb_points'];
+            $nhl_points = $row['nhl_points'];
+            $id = $row['leagues_user_id'];
+            $name = "SELECT team_name FROM league_user WHERE id='$id'";
+            $res = $this->_mysqli->query($name);
+            $team_name = '';
+            while($r = $res->fetch_assoc()){
+                $team_name = $r['team_name'];
             }
-            */
-            $names[] = $row['team_name'];
+            $return[] = [$team_name, $total_points, $nba_points, $nfl_points, $mlb_points, $nhl_points];
         }
-        return json_encode($names);
-        
+        return json_encode($return);
     }
 
 
@@ -981,10 +993,27 @@ class functions {
             $userid = $row['user_id'];
         }
         $insert = "INSERT INTO league_user (team_name, userid, league_id, commisioner) VALUES ('$teamName', '$userid', '$leagueid', '0')";
-        $result = $this->_mysqli->query($insert);
+        $result = $this->_mysqli->query($insert); 
         if($result)
             return true;
         return false;
+    }
+    
+    public function InsertPoints($leagueid, $ssid){
+        $select = "SELECT user_id FROM users WHERE ssid='$ssid'";
+        $result = $this->_mysqli->query($select);
+        $user_id = '';
+        while($row = $result->fetch_assoc()){
+            $user_id = $row['user_id'];
+        }
+        $query = "SELECT id FROM league_user WHERE userid='$user_id' AND league_id='$leagueid'";
+        $res = $this->_mysqli->query($query);
+        $ulid = '';
+        while($row = $res->fetch_assoc()){
+            $ulid = $row['id'];
+        }
+        $insert = "INSERT INTO points (leagues_user_id, league_id) VALUES ('$ulid', '$leagueid')";
+        $this->_mysqli->query($insert);
     }
     
     public function CreateDraftCount($leagueid){
@@ -1133,13 +1162,13 @@ class functions {
             $getEmail = "SELECT * FROM users WHERE user_id='$current'";
             $r = $this->_mysqli->query($getEmail);
             while($ro = $r->fetch_assoc()){
-                $return[] = [$team_name, $ro['email'], $ro['ssid']];
+                $return[] = [$team_name, $ro['email'], $ro['ssid'], $row['id']];
             }
         }   
         return $return;
     }
     
-    public function SendTradeRequest($leagueid, $ssid, $oppteamid, $addID, $dropID){
+  public function SendTradeRequest($leagueid, $ssid, $oppteamid, $addID, $dropID){
         $getulid = "SELECT user_id FROM users WHERE ssid='$ssid'";
         $result = $this->_mysqli->query($getulid);
         $userid = '';

@@ -1,7 +1,5 @@
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
-
-    var ajaxTeams = [];
     
     var today = new Date();
     var dd = today.getDate();
@@ -17,21 +15,35 @@ $(document).ready(function(){
         disabledDates:['1986/01/08','1986/01/09','1986/01/10'],
         startDate:  date
     });
-
-    function inputIntoTable(){
-        $.ajax({
-          type : "POST",
-          url: "../Classes/ajax_process.php",
-          data:{
-            inputIntoTable: true,
-            array: JSON.stringify(ajaxTeams)
-          },
-          success: function(response){
-              console.log(response);
-          }
-        })
-    }
-
+    
+    
+    $(".fa-pencil").click(function(){        
+        $this = $("."+this.id);
+        $this.replaceWith( $('<input id=name'+this.id+' /><button class="btn btn-primary btn-sm rename" id='+this.id+'>Submit</button>').val( $this.text() ) );
+        $this.css("color","black");
+    });
+    
+    $(".fa-trash-o").click(function(){
+       var del = this.id;
+       
+    });
+    
+    $(document).on("click",".rename",function(){
+        var newName = $("#name"+this.id).val();
+       $.ajax({
+            type: "POST",
+            url: "../Classes/ajax_process.php",
+            data:{
+                renameLeague: true,
+                leagueid: this.id,
+                newName: newName
+            },
+            success:function(response){
+               var ssid = $("#ssid").val();
+               window.location.href = 'loader.php?cmd=profile' + "&ssid=" + ssid;
+            }
+       });
+    });
 
     $("#join_league").click(function(){
         var leagueId = $("#j_league_id").val();
@@ -87,12 +99,6 @@ $(document).ready(function(){
           });
         }
     });
-
-
-    $(".fa-trash-o").click(function(){
-      alert("Sdf");
-    });
-  
     
 /*
     $.ajax({
