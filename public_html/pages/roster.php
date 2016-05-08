@@ -16,7 +16,6 @@
             <table class="table">
                 <tr>
                     <th>Teams</th>
-                    <th>Status</th>
                     <th>Sport</th>
                     <th>GP</th>
                     <th>Wins</th>
@@ -28,10 +27,11 @@
                     <?php
                         $jsonData = json_decode($pg['data']);
                         $jsonRoster = json_decode($pg['roster']);
+                       
                         foreach($jsonData as $j){
                             foreach($jsonRoster as $r){
                                 if($j[0] == $r){
-                                    echo "<tr><td><img class='roster-img' src='../assets/".$j[3]."'>".$j[1]."</td><td>Starting</td><td>".$j[2]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td><td>".$j[0]."</td></tr>";
+                                    echo "<tr><td><img class='roster-img' src='../assets/".$j[3]."'>".$j[1]."</td><td>".$j[2]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td><td>".$j[0]."</td></tr>";
                                 }
                             }
                         }

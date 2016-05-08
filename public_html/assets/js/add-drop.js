@@ -59,6 +59,10 @@ $(document).ready(function(){
                     if(response == "Error1"){
                         
                     }
+                    else if(response == "Error2"){
+                        $(".alert-danger").show();
+                        $(".alert-danger").html("Please wait for the draft to finish");
+                    }
                     else if(response == "Success"){
                         $(".alert-danger").hide();
                         $(".alert-success").show();

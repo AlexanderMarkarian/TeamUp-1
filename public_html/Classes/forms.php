@@ -879,13 +879,21 @@ class forms {
            echo "Error1";
        }
        else{
-           foreach($addTeams as $teams){
-               $this->_fucntions->AddTeam($teams, $leagueid, $ssid);
+        
+           $status = $this->_fucntions->CheckDraftStatus($leagueid);
+           if($status != 1){
+                foreach($addTeams as $teams){
+                    $this->_fucntions->AddTeam($teams, $leagueid, $ssid);
+                }
+                foreach($dropTeams as $teams){
+                    $this->_fucntions->DropTeam($teams, $leagueid, $ssid);
+                }
+                echo "Success";
            }
-           foreach($dropTeams as $teams){
-               $this->_fucntions->DropTeam($teams, $leagueid, $ssid);
+           
+           else{
+               echo "Error2";
            }
-           echo "Success";
        }
     }
     

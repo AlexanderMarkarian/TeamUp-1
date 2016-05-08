@@ -297,6 +297,7 @@ class loader {
                     break;
                 case "home":
                     $leagueName = $function->GetLeagueName();
+                    $function->SetPoints();
                     $leagueStandings = $function->GetStandings();
                     
                     $page_content_array[] = array(

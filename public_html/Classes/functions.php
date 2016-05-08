@@ -95,12 +95,12 @@ class functions {
 
     public function InsertNewUser($table, array $fields, array $values) {
 
-        $sql = "INSERT INTO `$table` (" . $fields['first_name'] . "," . $fields['last_name'] . "," . $fields['email'] . "," . $fields['password'] . "," . $fields['ssid'] . ") "
+        $sql = "INSERT INTO `$table` (" . $fields['first_name'] . "," . $fields['last_name'] . "," . $fields['email'] . "," . $fields['password'] . "," . $fields['ssid'] .",status". ") "
                 . "VALUES ('" . $values['fname'] . "',"
                 . "'" . $values['lname'] . "',"
                 . "'" . $values['email'] . "',"
                 . "'" . md5($values['password']) . "',"
-                . "'" . $values['ssid'] . "'"
+                . "'" . $values['ssid'] . "',1"
                 . ")";
         $result = $this->_mysqli->query($sql);
         if ($result) {
@@ -865,7 +865,25 @@ class functions {
         return json_encode($return);
     }
 
-
+    public function SetPoints(){
+       $league_id = $_GET['leagueid'];
+       $select = "SELECT id FROM league_user WHERE league_id='$league_id'";
+       $result = $this->_mysqli->query($select);
+       while($row = $result->fetch_assoc()){
+           $current = $row['id'];
+           $check = "SELECT * FROM points WHERE leagues_user_id='$current'";
+           $res = $this->_mysqli->query($check);
+           if($res->num_rows == 1){
+               
+           }
+           else{
+               $insert = "INSERT INTO points (leagues_user_id, league_id) VALUES ('$current', '$league_id')";
+               $this->_mysqli->query($insert);
+           }
+       }
+    }
+    
+    
     /*
      * AUTHOR: ALEX
      * GET YOUR TEAM NAME
@@ -1561,6 +1579,16 @@ class functions {
 
     public function GetDraftStatus(){
         $leagueid = $_GET['leagueid'];
+        $select = "SELECT draft_status FROM leagues WHERE id='$leagueid'";
+        $result = $this->_mysqli->query($select);
+        $status = '';
+        while($row = $result->fetch_assoc()){
+            $status = $row['draft_status'];
+        }
+        return $status;
+    }
+    
+    public function CheckDraftStatus($leagueid){
         $select = "SELECT draft_status FROM leagues WHERE id='$leagueid'";
         $result = $this->_mysqli->query($select);
         $status = '';

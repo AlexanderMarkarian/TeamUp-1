@@ -1,14 +1,14 @@
 $(document).ready(function(){
 
     var team = {};
-    var ajaxInterval, interval;
+    var ajaxInterval;
     var ssid = $("#ssid").val();
     var leagueid = $("#leagueid").val();
     $("#main-box").hide();
     $('#myTable').DataTable({
         "autoWidth": false
     });
-    
+        
     start();
     
     $("#startDraft").click(function(){
@@ -92,35 +92,57 @@ $(document).ready(function(){
                else{
                    $(".alert-danger").hide();
                    $(".alert-success").show();
-                   $(".alert-success").html("You have successfully drafted the: " + $(".selected-team").text());
+                   $(".alert-success").html("Drafting " + $(".selected-team").text() + "<img src='../assets/images/other/spinner6.gif'/>");
                }
            }
         });
     });
-         
-         
+    
     function timer(){
-      clearInterval(interval);
-        var twoMinutes = 60 * 2,
-            display = $('.time');
-        startTimer(twoMinutes, display);
+        localStorage.clear();
+        var minutesleft = 2; //give minutes you wish
+        var secondsleft = 00; // give seconds you wish
+        var finishedtext = "Countdown finished!";
+        var end1;
+        if(localStorage.getItem("end1")) {
+        end1 = new Date(localStorage.getItem("end1"));
+        } else {
+        end1 = new Date();
+        end1.setMinutes(end1.getMinutes()+minutesleft);
+        end1.setSeconds(end1.getSeconds()+secondsleft);
 
+        }
+        var counter = function () {
+        var now = new Date();
+        var diff = end1 - now;
 
-        function startTimer(duration, display) {
-            var timer = duration, minutes, seconds;
-            interval = setInterval(function () {
-                minutes = parseInt(timer / 60, 10)
-                seconds = parseInt(timer % 60, 10);
+        diff = new Date(diff);
 
-                minutes = minutes < 10 ? "0" + minutes : minutes;
-                seconds = seconds < 10 ? "0" + seconds : seconds;
+        var milliseconds = parseInt((diff%1000)/100)
+            var sec = parseInt((diff/1000)%60)
+            var mins = parseInt((diff/(1000*60))%60)
+            //var hours = parseInt((diff/(1000*60*60))%24);
 
-                display.text(minutes + ":" + seconds);
-                if (--timer < 0) {
-                    timer = duration;
-                }
-            }, 1000);
-
-        }  
+        if (mins < 10) {
+            mins = "0" + mins;
+        }
+        if (sec < 10) { 
+            sec = "0" + sec;
+        }     
+        if(now >= end1) {     
+            clearTimeout(interval);
+           // localStorage.setItem("end", null);
+             localStorage.removeItem("end1");
+             localStorage.clear();
+             alert("Fomosjed");
+        } else {
+            var value = mins + ":" + sec;
+            localStorage.setItem("end1", end1);
+            document.getElementById('timer').innerHTML = value;
+        }
+        }
+        var interval = setInterval(counter, 1000);
     }
+    
+
 });
