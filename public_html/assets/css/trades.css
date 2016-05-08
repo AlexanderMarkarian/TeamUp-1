@@ -116,6 +116,13 @@ th, td {
     color: black;
 }
 
+#completeTrade{
+  background: black;
+  color: #e74c3c;
+  text-align: center;
+
+}
+
 tr {
     background-color: #f2f2f2;
     color: black;

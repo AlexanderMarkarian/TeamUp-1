@@ -812,6 +812,41 @@ class forms {
         }
     }
     
+    public function TradeProcess(array $form_value){
+        $leagueId = $form_value['leagueid'];
+        $ssid = $form_value['ssid'];   
+        $oppteamID = $form_value['oppteamid'];
+        $addID = $form_value['addTeamID'];
+        $dropID = $form_value['dropTeamID'];
+        
+        if($this->_fucntions->SendTradeRequest($leagueId, $ssid, $oppteamID, $addID, $dropID)){
+            echo 1;
+        }
+        else{
+            echo 0;
+        }
+    }
+    
+    public function ApproveTradeProcess(array $form_value){
+        $tradeid = $form_value['tradeid'];
+        if($this->_fucntions->ApproveTrade($tradeid)){
+            echo 1;
+        }
+        else{
+            echo 0;
+        }
+    }
+    
+    public function CancelTradeProcess(array $form_value){
+        $tradeid = $form_value['tradeid'];
+        if($this->_fucntions->CancelTrade($tradeid)){
+            echo 1;
+        }
+        else{
+            echo 0;
+        }
+    }
+    
     public function CheckRefresh(array $form_value){
         $leagueId = $form_value['leagueid'];
         $ssid = $form_value['ssid'];  

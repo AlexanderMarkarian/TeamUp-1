@@ -1,4 +1,77 @@
 $(document).ready(function(){
+    var ssid = $("#ssid").val();
+    var leagueid = $("#leagueid").val();
+    
+    $(".approveTrade").click(function(){
+        var tradeid = $(this)[0].parentNode.parentNode.id;
+        $(this).html("Approving <img src='../assets/images/other/spinner6.gif'/>");
+        $.ajax({
+            type: "POST",
+            url: "../Classes/ajax_process.php",
+            data:{
+                approveTrade: true,
+                tradeid: tradeid
+            },
+            success: function(response){
+                if(response == 1){
+                    window.setTimeout(function () {
+                        window.location.href = 'loader.php?cmd=roster' + "&ssid=" + ssid + "&leagueid=" + leagueid;
+                    }, 1000);
+                }
+                else{
+                    console.log(response);
+                }
+            }
+        })
+    });
+    
+    $(".cancelTrade").click(function(){
+        var tradeid = $(this)[0].parentNode.parentNode.id;
+        $(this).html("Canceling <img src='../assets/images/other/spinner6.gif'/>");
+        $.ajax({
+           type: "POST",
+           url: "../Classes/ajax_process.php",
+           data: {
+               cancelTrade: true,
+               tradeid: tradeid
+           },
+           success: function(response){
+                if(response == 1){
+                    window.setTimeout(function () {
+                        window.location.href = 'loader.php?cmd=roster' + "&ssid=" + ssid + "&leagueid=" + leagueid;
+                    }, 1000);
+                }
+                else{
+                    console.log(response);
+                }   
+           }
+        });
+    });
+    
+    $(".declineTrade").click(function(){
+        var tradeid = $(this)[0].parentNode.parentNode.id;
+        $(this).html("Declining <img src='../assets/images/other/spinner6.gif'/>");       
+        $.ajax({
+           type: "POST",
+           url: "../Classes/ajax_process.php",
+           data: {
+               cancelTrade: true,
+               tradeid: tradeid
+           },
+           success: function(response){
+                if(response == 1){
+                    window.setTimeout(function () {
+                        window.location.href = 'loader.php?cmd=roster' + "&ssid=" + ssid + "&leagueid=" + leagueid;
+                    }, 1000);
+                }
+                else{
+                    console.log(response);
+                }   
+           }
+        });
+    });
+
+      /*
     $(".table").tableDnD({
         onDragStart: function(table,row){
             $(row).css("border","solid 3px #e74c3c");
@@ -26,7 +99,7 @@ $(document).ready(function(){
                 },
                 success: function(response){
                     console.log(response);
-                    /*
+                    
                     $.ajax({
                         type: "POST",
                         url: "../Classes/ajax_process.php",
@@ -38,9 +111,10 @@ $(document).ready(function(){
                             location.reload();
                         }
                     });
-                    */
+                    
                 }
             });    
         }
     });
+    */
 });

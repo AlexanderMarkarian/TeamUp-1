@@ -1139,6 +1139,132 @@ class functions {
         return $return;
     }
     
+    public function SendTradeRequest($leagueid, $ssid, $oppteamid, $addID, $dropID){
+        $getulid = "SELECT user_id FROM users WHERE ssid='$ssid'";
+        $result = $this->_mysqli->query($getulid);
+        $userid = '';
+        while($row = $result->fetch_assoc()){
+            $userid = $row['user_id'];
+        }
+        $query = "SELECT id FROM league_user WHERE userid='$userid' AND league_id='$leagueid'";
+        $res = $this->_mysqli->query($query);
+        $ulid = '';
+        while($row = $res->fetch_assoc()){
+            $ulid = $row['id'];
+        }
+        $insert = "INSERT INTO trades (sending_user_id, receiving_user_id, sending_team_id, receiving_team_id, status) VALUES('$ulid', '$oppteamid', '$dropID', '$addID', 0)";
+        if($this->_mysqli->query($insert)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    
+    public function GetTradeOffers(){
+        $leagueid = $_GET['leagueid'];
+        $ssid = $_GET['ssid'];
+       
+        $getulid = "SELECT user_id FROM users WHERE ssid='$ssid'";
+        $result = $this->_mysqli->query($getulid);
+        $userid = '';
+        while($row = $result->fetch_assoc()){
+            $userid = $row['user_id'];
+        }
+        
+        $query = "SELECT id FROM league_user WHERE userid='$userid' AND league_id='$leagueid'";
+        $res = $this->_mysqli->query($query);
+        $ulid = '';
+        while($row = $res->fetch_assoc()){
+            $ulid = $row['id'];
+        }
+        $select = "SELECT * FROM trades WHERE sending_user_id='$ulid' AND status=0";
+        $return = $this->_mysqli->query($select);
+        $array = [];
+        while($row = $return->fetch_assoc()){
+            $currentID = $row['receiving_user_id'];
+            $get = "SELECT team_name FROM league_user WHERE id='$currentID'";
+            $r = $this->_mysqli->query($get);
+            $team_name = '';
+            while($ro = $r->fetch_assoc()){
+                $team_name = $ro['team_name'];
+            }
+            $array[] = [$team_name, $row['sending_team_id'], $row['receiving_team_id'],$row['id']];
+        }
+        return json_encode($array);
+    }
+    
+    public function IncomingTrades(){
+        $leagueid = $_GET['leagueid'];
+        $ssid = $_GET['ssid'];
+       
+        $getulid = "SELECT user_id FROM users WHERE ssid='$ssid'";
+        $result = $this->_mysqli->query($getulid);
+        $userid = '';
+        while($row = $result->fetch_assoc()){
+            $userid = $row['user_id'];
+        }
+        
+        $query = "SELECT id FROM league_user WHERE userid='$userid' AND league_id='$leagueid'";
+        $res = $this->_mysqli->query($query);
+        $ulid = '';
+        while($row = $res->fetch_assoc()){
+            $ulid = $row['id'];
+        }
+        $select = "SELECT * FROM trades WHERE receiving_user_id='$ulid' AND status=0";
+        $return = $this->_mysqli->query($select);
+        $array = [];
+        while($row = $return->fetch_assoc()){
+            $currentID = $row['sending_user_id'];
+            $get = "SELECT team_name FROM league_user WHERE id='$currentID'";
+            $r = $this->_mysqli->query($get);
+            $team_name = '';
+            while($ro = $r->fetch_assoc()){
+                $team_name = $ro['team_name'];
+            }
+            $array[] = [$team_name, $row['receiving_team_id'], $row['sending_team_id'],$row['id']];
+        }
+        return json_encode($array);
+    }
+    
+    public function ApproveTrade($tradeid){
+        $select = "SELECT * FROM trades WHERE id='$tradeid'";
+        $result = $this->_mysqli->query($select);
+        $user1 = '';
+        $user2 = '';
+        $userteam1 = '';
+        $userteam2 = '';
+        while($row = $result->fetch_assoc()){
+            $user1 = $row['sending_user_id'];
+            $user2 = $row['receiving_user_id'];
+            $userteam1 = $row['sending_team_id'];
+            $userteam2 = $row['receiving_team_id'];
+        }
+        $update1 = "UPDATE roster SET team_id='$userteam2' WHERE leagues_user_id='$user1' AND team_id='$userteam1'";
+        $update2 = "UPDATE roster SET team_id='$userteam1' WHERE leagues_user_id='$user2' AND team_id='$userteam2'";
+        $result1 = $this->_mysqli->query($update1);
+        $result2 = $this->_mysqli->query($update2);
+        $updateTrade = "UPDATE trades SET status=1 WHERE id='$tradeid'";
+        $result3 = $this->_mysqli->query($updateTrade);
+        if($result1 && $result2 && $result3){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    
+    public function CancelTrade($tradeid){
+        $update = "UPDATE trades SET status=1 WHERE id='$tradeid'";
+        if($this->_mysqli->query($update)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    
+
     public function GetUsersPerLeague($leagueID){
         $select = "SELECT * FROM league_user WHERE league_id='$leagueID'";
         $result = $this->_mysqli->query($select);
@@ -1470,7 +1596,7 @@ class functions {
         while($row = $result->fetch_assoc()){
             $userid = $row['user_id'];
         }
-        $query = "SELECT id FROM league_user WHERE league_id='$leagueID' AND userid != '$userid'";
+        $query = "SELECT * FROM league_user WHERE league_id='$leagueID' AND userid != '$userid'";
         $res = $this->_mysqli->query($query);
         $return = [];
         while($row = $res->fetch_assoc()){
@@ -1478,7 +1604,7 @@ class functions {
             $select = "SELECT team_id FROM roster WHERE leagues_user_id='$currentID'";
             $re = $this->_mysqli->query($select);
             while($r = $re->fetch_assoc()){
-                $return[] = [$row['id'], $r['team_id']];
+                $return[] = [$row['id'], $row['team_name'], $r['team_id']];
             }
         }
         return json_encode($return);

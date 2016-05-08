@@ -311,13 +311,18 @@ class loader {
                     $data = $function->GetData();
                     $teamName = $function->GetTeamName();
                     $userRoster = $function->GetRoster();
+                    $getTradeOffers = $function->GetTradeOffers();
+                    $incomingTradeOffers = $function->IncomingTrades();
                     $page_content_array[] = array(
                         "id" => "3",
                         "page_name" => "Roster",
                         "div_name" => "team",
                         "data" => $data,
                         "roster" => $userRoster,
-                        "teamName" => $teamName
+                        "functions" => $function,
+                        "teamName" => $teamName,
+                        "trades"=>$getTradeOffers,
+                        "incoming"=>$incomingTradeOffers
                     );
                     break;
                 case "add-drop":
@@ -345,7 +350,7 @@ class loader {
                         "roster"=>$userRoster,
                         "pool"=>$pool,
                         "teamsID"=>$teamID,
-                        "teamMembers"=>$teamMembers
+                        "teamMembers"=>$teamMembers,
                     );
                     break;
                 case "matchup":

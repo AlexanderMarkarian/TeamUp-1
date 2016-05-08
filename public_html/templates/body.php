@@ -130,6 +130,18 @@ class body {
                     $ajax = new forms();
                     echo $ajax->StartDraft($pg['startDraft']);
                     break;
+                case '315':
+                    $ajax = new forms();
+                    echo $ajax->TradeProcess($pg['completeTrade']);
+                    break;       
+                case '316':
+                    $ajax = new forms();
+                    echo $ajax->ApproveTradeProcess($pg['approveTrade']);
+                    break;     
+                case '317':
+                    $ajax = new forms();
+                    echo $ajax->CancelTradeProcess($pg['cancelTrade']);
+                    break;                        
                 case '55':
                     $forms = new forms();
                     $functions = new functions();

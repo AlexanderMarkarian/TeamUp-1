@@ -95,4 +95,25 @@ if (isset($_POST['login'])) {
         "startDraft" => $_POST
     );
     $ajax->BuildPages($page_content_array);
+} else if(isset($_POST['completeTrade'])){
+    unset($page_content_array);
+    $page_content_array[] = array(
+        "id" => "315",
+        "completeTrade" => $_POST
+    );
+    $ajax->BuildPages($page_content_array);    
+} else if(isset($_POST['approveTrade'])){
+    unset($page_content_array);
+    $page_content_array[] = array(
+        "id" => "316",
+        "approveTrade" => $_POST
+    );
+    $ajax->BuildPages($page_content_array);   
+} else if(isset($_POST['cancelTrade'])){
+    unset($page_content_array);
+    $page_content_array[] = array(
+        "id" => "317",
+        "cancelTrade" => $_POST
+    );
+    $ajax->BuildPages($page_content_array);    
 }

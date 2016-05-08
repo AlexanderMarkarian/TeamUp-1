@@ -8,6 +8,10 @@ body{
 
 tr:hover {background-color: #e74c3c}
 
+.nohover:hover{
+    background-color: #f2f2f2;
+}
+
 caption {
     color: white;
     font-size: 20px !important;
