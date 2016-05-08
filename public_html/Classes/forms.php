@@ -504,7 +504,7 @@ class forms {
                 <input type="text" class="form-control" placeholder="Team Name" name="team_name" id="team_name" value="<?= $_POST['team_name'] ?>">
             </div>
             <div class="form-group">
-                <input type="text" id="datepicker" class="form-control datetimepicker" placeholder="Draft Date" name="d_date" value="<?= $_POST['d_date'] ?>" >
+                <input type="text" id="datepicker" class="form-control datetimepicker" placeholder="Season Ends" name="d_date" value="<?= $_POST['d_date'] ?>" >
             </div>
             <div class="form-group">
                 <input type="hidden" name="cmd" value="profile" id="cmd" />
@@ -764,22 +764,27 @@ class forms {
         $ssid = $form_values['ssid'];
 
         if($this->_fucntions->CheckLeagueId($leagueId)){
-            if($this->_fucntions->CheckTeamName($leagueId, $teamName)){
-                if($this->_fucntions->CheckUserLeague($leagueId, $ssid)){
-                    if($this->_fucntions->InsertJoin($leagueId, $teamName, $ssid)){
-                        echo "Success";
+            if($this->_fucntions->CheckLeagueDrafted($leagueId)){
+                if($this->_fucntions->CheckTeamName($leagueId, $teamName)){
+                    if($this->_fucntions->CheckUserLeague($leagueId, $ssid)){
+                        if($this->_fucntions->InsertJoin($leagueId, $teamName, $ssid)){
+                            echo "Success";
+                        }
+                        else{
+                            echo "Error2";
+                        }
                     }
                     else{
-                        echo "Error2";
+                        echo "Error4";
                     }
+
                 }
                 else{
-                    echo "Error4";
+                    echo "Error3";
                 }
-
             }
             else{
-                echo "Error3";
+                echo "Error5";
             }
         }
         else{
@@ -794,8 +799,13 @@ class forms {
         if($this->_fucntions->CheckUserTurn($leagueId, $ssid)){
             $this->_fucntions->AddTeam($teamid, $leagueId, $ssid);
             $this->_fucntions->UpdateRefresh($leagueId);
-            $this->_fucntions->UpdateTotalPicks($leagueId);
-            echo $this->_fucntions->UpdatePick($leagueId);
+            if($this->_fucntions->UpdateTotalPicks($leagueId)){
+                echo "over";
+            }
+            else{
+                echo $this->_fucntions->UpdatePick($leagueId);
+            }
+
         }
         else{
             echo "Error1";

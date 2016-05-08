@@ -69,6 +69,11 @@ $(document).ready(function(){
                     $("#j_team_name").val("");
                     $("#j_league_id").val("");
                 }
+                else if(response == "Error5"){
+                    $("#jleague").html("<div class='alert alert-danger' role='alert' id='errors'> This league has already drafted</div> ");
+                    $("#j_team_name").val("");
+                    $("#j_league_id").val("");
+                }
                 else{
                   $("#jleague").html("<div class='alert alert-success' role='alert' id='errors'> You have been successfully added</div> ");
                     $("#j_league_id").val("");

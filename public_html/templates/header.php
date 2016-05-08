@@ -14,6 +14,7 @@ class header {
     public $_css = array();
     public $_js = array();
     public $_nav = array();
+    public $_shortnav = array();
     private $_sliders = array();
     private $_vars = array();
 
@@ -84,8 +85,12 @@ class header {
                                      * Navigation menu
                                      * if you want to have drop down menu add it to the array
                                      */
+                                     foreach ($this->SetShortNavLinks() as $key => $nav_links) {
+                                         ?>
+                                         <li><a href="<?= $nav_links ?>"><?= $key; ?></a></li>
+                                         <?php
+                                     }
                                      ?>
-                                     <li><a href="loader.php?cmd=">Logout</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -218,12 +223,20 @@ class header {
 
                 $this->_nav = $nav;
             }
+            
+            public function GetShortNavLinks(array $nav){
+                $this->_shortnav = $nav;
+            }
 
             /* SET NAVIGATION */
 
             public function SetNavLinks() {
 
                 return $this->_nav;
+            }
+            
+            public function SetShortNavLinks(){
+                return $this->_shortnav;
             }
 
             public function GetHomeSlider(array $sliders) {

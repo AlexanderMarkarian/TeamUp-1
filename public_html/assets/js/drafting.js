@@ -46,7 +46,7 @@ $(document).ready(function(){
                }
             });
             start();
-        },5000);
+        },10000);
     }
 
     $(document.body).on("click", ".teams", function(){
@@ -85,6 +85,9 @@ $(document).ready(function(){
                if(response == "Error1"){
                    $(".alert-sucess").hide();
                    $(".alert-danger").show();
+               }
+               else if(response == "over"){
+                   window.location.href = 'loader.php?cmd=draft' + "&ssid=" + ssid + "&leagueid=" + leagueid; 
                }
                else{
                    $(".alert-danger").hide();

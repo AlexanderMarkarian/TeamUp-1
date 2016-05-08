@@ -171,14 +171,14 @@ class loader {
                     "link" => "loader.php?cmd=profile&ssid={$_GET['ssid']}",
                     "class" => "glyphicon glyphicon-user"),
                 "Edit Profile" => array(
-                    "link" => "loader.php?cmd=edit-profile&ssid={$_GET['ssid']}",
+                    "link" => "loader.php?cmd=edit-profile&ssid={$_GET['ssid']}&leagueid={$_GET['leagueid']}",
                     "class" => "glyphicon glyphicon-pencil"),
                 "Help" => array(
-                    "link" => "loader.php?cmd=help&ssid={$_GET['ssid']}",
+                    "link" => "loader.php?cmd=help&ssid={$_GET['ssid']}&leagueid={$_GET['leagueid']}",
                     "class" => "glyphicon glyphicon-info-sign"
                 ),
                 "FAQ" => array(
-                    "link" => "loader.php?cmd=faq&ssid={$_GET['ssid']}",
+                    "link" => "loader.php?cmd=faq&ssid={$_GET['ssid']}&leagueid={$_GET['leagueid']}",
                     "class" => "glyphicon glyphicon-question-sign"
                 ),
                 "Log Out" => array(
@@ -186,6 +186,13 @@ class loader {
                     "class" => "glyphicon glyphicon-off")
             ),
         );
+                    
+        $shortNavi = array(
+             "Log Out" =>"loader.php?cmd=log-out&ssid={$_GET['ssid']}"
+        );   
+        
+        $this->_head->GetShortNavLinks($shortNavi);
+        $this->_head->SetShortNavLinks($shortNavi);
 
 
         $this->_head->GetHomeSlider($home_slider_images);
@@ -304,7 +311,7 @@ class loader {
                     $data = $function->getDataQuery("users", "ssid", $_GET['ssid']);
 
                     $data = $function->SetDataQuery();
-
+                    
                     $page_content_array[] = array(
                         "id" => "1",
                         "page_name" => "Profile",

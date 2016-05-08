@@ -1183,8 +1183,39 @@ class functions {
     }
     
     public function UpdateTotalPicks($leagueID){
-        $query = "UPDATE draft_count SET total_picks=total_picks+1 WHERE league_id='$leagueID'";
-        $this->_mysqli->query($query);
+        $select = "SELECT * FROM draft_count WHERE league_id='$leagueID'";
+        $result = $this->_mysqli->query($select);
+        $total_picks = '';
+        $team_count = '';
+        while($row = $result->fetch_assoc()){
+            $total_picks = $row['total_picks'];
+            $team_count = $row['team_count'];
+        }
+        if($total_picks == 6*$team_count-1){
+            // draft over
+            $update = "UPDATE leagues SET draft_status=2 WHERE id='$leagueID'";
+            $this->_mysqli->query($update);
+            return true; 
+        }
+        else{
+            $query = "UPDATE draft_count SET total_picks=total_picks+1 WHERE league_id='$leagueID'";
+            $this->_mysqli->query($query);
+            return false;
+        }
+
+    }
+    
+    public function CheckLeagueDrafted($leagueID){
+        $select = "SELECT draft_status FROM leagues WHERE id='$leagueID'";
+        $result = $this->_mysqli->query($select);
+        while($row = $result->fetch_assoc()){
+            if($row['draft_status'] == 0){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
     }
     
     public function UpdatePick($leagueID){    

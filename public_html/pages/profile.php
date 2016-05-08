@@ -10,8 +10,7 @@ if (isset($pg['delete_key'])) {
     $tables = array(
         "0" => "leagues",
         "1" => "league_user",
-        "2" => "teams",
-        "3" => "temp_invite"
+        
     );
     $fields = array(
         "0" => "id",
@@ -82,7 +81,7 @@ if (isset($pg['delete_key'])) {
         <h3>My Leagues</h3>
         <div class="row text-center grey-area">
             <div class="col-md-6">
-                <h4 class="create-header">League Names & Invitations</h4>
+                <h4 class="create-header">Active Leagues</h4>
                 <p>Click on a league name to go to its homepage</p>
                 <?php
             //FOR Universal CHECK
@@ -252,6 +251,10 @@ if (isset($pg['delete_key'])) {
                 ?>
 
 
+            </div>
+            <div class="col-md-6">
+                <h4 class="create-header">Finished Leagues</h4>
+                
             </div>
         </div>
     </div>
