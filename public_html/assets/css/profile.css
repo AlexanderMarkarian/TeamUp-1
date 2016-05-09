@@ -56,10 +56,12 @@ input{
     margin-bottom: 20px !important;
     padding: 10px;
 }
+/*
 .members tr:hover{
     background-color: #454551;
     color: #000;
 }
+*/
 .league_list{
     padding: 9px 15px !important;
 }

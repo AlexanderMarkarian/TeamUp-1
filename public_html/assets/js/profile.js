@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
+    var ssid = $("#ssid").val();
     
     var today = new Date();
     var dd = today.getDate();
@@ -23,9 +24,39 @@ $(document).ready(function(){
         $this.css("color","black");
     });
     
-    $(".fa-trash-o").click(function(){
-       var del = this.id;
-       
+    $(".delete-league").click(function(){
+       $.ajax({
+         type: "POST",
+         url: "../Classes/ajax_process.php",
+         data:{
+             deleteLeague: true,
+             leagueid: this.id
+         },
+         success: function(response){
+             if(response == 1){
+                 window.location.href = 'loader.php?cmd=profile' + "&ssid=" + ssid;
+             }
+         }
+       });
+    });
+    
+    $(".delete-league-user").click(function(){
+       $.ajax({
+         type: "POST",
+         url: "../Classes/ajax_process.php",
+         data:{
+             deleteLeagueUser: true,
+             leagueuserid: this.id
+         },
+         success:function(response){
+             if(response == 1){
+                 window.location.href = 'loader.php?cmd=profile' + "&ssid=" + ssid;
+             }
+             else{
+                 $("#error").html("<div class='alert alert-danger'>Can't delete once draft has started</div>");
+             }
+         }
+       });
     });
     
     $(document).on("click",".rename",function(){

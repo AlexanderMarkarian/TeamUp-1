@@ -3,8 +3,13 @@
     <div class="slider4"></div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading"><?php echo $pg['league_name']; ?></h2>
-                <h3 class="section-subheading text-muted">Week 18</h3>
+                <?php
+                    $leagueStats = json_decode($pg['league_name']);
+                    foreach($leagueStats as $ls){
+                        echo "<h2 class='section-heading'>".$ls[0]."</h2>";
+                        echo "<h3 class='section-subheading text-muted'>League Ends: ".$ls[1]."</h3>";
+                    }
+                ?>
 
                 <table id = "standings">
                     <caption>Standings</caption>

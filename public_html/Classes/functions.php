@@ -785,13 +785,13 @@ class functions {
     
     public function GetLeagueName(){
         $league_id = $_GET['leagueid'];
-        $league_name_query = "SELECT league_name FROM leagues WHERE id='$league_id'";
+        $league_name_query = "SELECT * FROM leagues WHERE id='$league_id'";
         $result = $this->_mysqli->query($league_name_query);
-        $name = '';
-        while($row = $result->fetch_row()){
-            $name = $row[0];
+        $return = [];
+        while($row = $result->fetch_assoc()){
+            $return[] = [$row['league_name'], $row['season_ends']];
         }
-        return $name;
+        return json_encode($return);
     }
 
 
@@ -823,6 +823,50 @@ class functions {
         $update = "UPDATE leagues SET league_name='$newName' WHERE id='$leagueid'";
         $this->_mysqli->query($update);
     }
+    
+    public function DeleteLeague($leagueid){
+        $deleteFromLeagues = "DELETE FROM leagues WHERE id='$leagueid'";
+        $this->_mysqli->query($deleteFromLeagues);
+        $deleteFROMLeagueUser = "DELETE FROM league_user WHERE league_id='$leagueid'";
+        $this->_mysqli->query($deleteFROMLeagueUser);
+        $deleteFromDraftOrder = "DELETE FROM draft_order WHERE league_id='$leagueid'";
+        $this->_mysqli->query($deleteFromDraftOrder);
+        $deleteFromDraftCount = "DELETE FROM draft_count WHERE league_id='$leagueid'";
+        $this->_mysqli->query($deleteFromDraftCount);
+        $deleteFromPoints = "DELETE FROM points WHERE league_id='$leagueid'";
+        $this->_mysqli->query($deleteFromPoints);
+        $deleteFromRoster = "DELETE FROM roster WHERE league_id='$leagueid'";
+        $this->_mysqli->query($deleteFromRoster);
+        $deleteFromTrades = "DELETE FROM trades WHERE league_id='$leagueid'";
+        $this->_mysqli->query($deleteFromTrades);
+        return true;
+    }
+    
+    public function DeleteLeagueUser($leagueuserid){
+        $query = "SELECT league_id FROM league_user WHERE id='$leagueuserid'";
+        $result  = $this->_mysqli->query($query);
+        $league_id = '';
+        while($row = $result->fetch_assoc()){
+            $league_id = $row['league_id'];
+        }
+        $select = "SELECT draft_status FROM leagues WHERE id='$league_id'";
+        $res = $this->_mysqli->query($select);
+        $status = '';
+        while($row = $res->fetch_assoc()){
+            $status = $row['draft_status'];
+        }
+        if($status != 0){
+            return false;
+        }
+        else{
+            $deleteFromLeagueUser = "DELETE FROM league_user WHERE id='$leagueuserid'";
+            $this->_mysqli->query($deleteFromLeagueUser);
+            $deleteFromPoints = "DELETE FROM points WHERE leagues_user_id='$leagueuserid'";
+            $this->_mysqli->query($deleteFromPoints);
+            return true;
+        }
+    }
+    
     
     public function GetNumPoints(){
         $query = "SELECT total_points FROM points";
@@ -1199,7 +1243,7 @@ class functions {
         while($row = $res->fetch_assoc()){
             $ulid = $row['id'];
         }
-        $insert = "INSERT INTO trades (sending_user_id, receiving_user_id, sending_team_id, receiving_team_id, status) VALUES('$ulid', '$oppteamid', '$dropID', '$addID', 0)";
+        $insert = "INSERT INTO trades (sending_user_id, receiving_user_id, sending_team_id, receiving_team_id, status, league_id) VALUES('$ulid', '$oppteamid', '$dropID', '$addID', 0, '$leagueid')";
         if($this->_mysqli->query($insert)){
             return true;
         }
@@ -1354,7 +1398,7 @@ class functions {
         while($row = $result->fetch_assoc()){
             $league_user_id = $row['id'];
         }
-        $insert = "INSERT INTO roster (leagues_user_id, team_id) VALUES ('$league_user_id','$teamID')";
+        $insert = "INSERT INTO roster (leagues_user_id, team_id, league_id) VALUES ('$league_user_id','$teamID', '$leagueID')";
         $final = $this->_mysqli->query($insert);
     }
     

@@ -145,7 +145,15 @@ class body {
                 case '318':
                     $ajax = new forms();
                     echo $ajax->RenameLeagueProcess($pg['renameLeague']);
-                    break;                     
+                    break;  
+                case '319':
+                    $ajax = new forms();
+                    echo $ajax->DeleteLeagueProcess($pg['deleteLeague']);
+                    break;
+                case '320':
+                    $ajax = new forms();
+                    echo $ajax->DeleteLeagueUserProcess($pg['deleteLeagueUser']);
+                    break;
                 case '55':
                     $forms = new forms();
                     $functions = new functions();

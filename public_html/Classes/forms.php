@@ -635,7 +635,7 @@ class forms {
                     $fields = array(
                         "0" => "id",
                         "1" => "league_name",
-                        "2" => "created_on",
+                        "2" => "season_ends",
                     );
 
                     $tables = array(
@@ -901,6 +901,26 @@ class forms {
         $newName = $form_value['newName'];
         $leagueid = $form_value['leagueid'];
         $this->_fucntions->ChangeLeagueName($leagueid, $newName);
+    }
+    
+    public function DeleteLeagueProcess(array $form_value){
+        $leagueid = $form_value['leagueid'];
+        if($this->_fucntions->DeleteLeague($leagueid)){
+            echo 1;
+        }
+        else{
+            echo 0;
+        }
+    }
+    
+    public function DeleteLeagueUserProcess(array $form_value){
+        $leagueuserid = $form_value['leagueuserid'];
+        if($this->_fucntions->DeleteLeagueUser($leagueuserid)){
+            echo 1;
+        }
+        else{
+            echo 0;
+        }
     }
 
 

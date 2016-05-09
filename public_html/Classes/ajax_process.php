@@ -123,4 +123,18 @@ if (isset($_POST['login'])) {
         "renameLeague" => $_POST
     );
     $ajax->BuildPages($page_content_array);      
+} else if(isset($_POST['deleteLeague'])){
+    unset($page_content_array);
+    $page_content_array[] = array(
+        "id" => "319",
+        "deleteLeague" => $_POST
+    );
+    $ajax->BuildPages($page_content_array);  
+} else if(isset($_POST['deleteLeagueUser'])){
+    unset($page_content_array);
+    $page_content_array[] = array(
+        "id" => "320",
+        "deleteLeagueUser" => $_POST
+    );
+    $ajax->BuildPages($page_content_array);      
 }

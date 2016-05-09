@@ -1,42 +1,3 @@
-<?php
-if (isset($pg['delete_key'])) {
-    /*
-     * Delete tables with league information
-     * 1. leagues
-     * 2. league_user
-     * 3. teams
-     * 4. temp_invite
-     */
-    $tables = array(
-        "0" => "leagues",
-        "1" => "league_user",
-    );
-    $fields = array(
-        "0" => "id",
-        "1" => "league_id",
-        "2" => "parent",
-        "3" => "league_id"
-    );
-    $values = array(
-        "0" => $pg['delete_key']
-    );
-
-    $delete_leagues = $pg['functions']->DeleteItems($tables, $fields, $values);
-    
-    $tables = array(
-        "0" => "points"
-    );
-    
-    $fields = array(
-        "0" => "league_id"
-    );
-    
-    $values = array(
-        "0" => $pg['delete_key']
-    );
-    $delete_leagues = $pg['functions']->DeleteItems($tables, $fields, $values);
-}
-?>
 <section id="services">
     <input type="hidden" name="ssid" value="<?= $_GET['ssid'] ?>" id="ssid"/>
     <div class="container">
@@ -96,6 +57,7 @@ if (isset($pg['delete_key'])) {
             <div class="col-md-6">
                 <h4 class="create-header">Active Leagues</h4>
                 <p>Click on a league name to go to its homepage</p>
+                <p id="error"></p>
                 <?php
             //FOR Universal CHECK
                 $tables = array(
@@ -185,7 +147,8 @@ if (isset($pg['delete_key'])) {
                                     <?php
                                         if($u[1] == 1){
                                             ?>
-                                            <a href="loader.php?cmd=profile&ssid=<?= $_GET['ssid'] ?>&id=<?= $u[0] ?>"><i class="fa fa-trash-o delete_color del_logo" data-toggle="tooltip" data-placement="top" title="Delete League"></i></a>
+                                            <!--<a href="loader.php?cmd=profile&ssid=<?= $_GET['ssid'] ?>&id=<?= $u[0] ?>"><i class="fa fa-trash-o delete_color del_logo" data-toggle="tooltip" data-placement="top" title="Delete League"></i></a>-->
+                                            <a class="delete-league" id="<?= $u[0] ?>"><i class="fa fa-trash-o delete_color del_logo" data-toggle="tooltip" data-placement="top" title="Delete League"></i></a>
                                             <a><i class="fa fa-pencil delete_color del_logo" id='<?= $u[0] ?>' data-toggle="tooltip" data-placement="top" title="Rename League"></i></a>
                                             <?php
                                         }
@@ -201,7 +164,7 @@ if (isset($pg['delete_key'])) {
                             ?>
                             <!-- Table -->
 
-                                <table class="table table-bordered table-hover members" id="team_members_name<?= $i ?>" style="display: none;">
+                                <table class="table table-bordered members" id="team_members_name<?= $i ?>" style="display: none;">
                                     <tr>
                                         <th>Name</th>
                                         <th>Email</th>
@@ -223,7 +186,7 @@ if (isset($pg['delete_key'])) {
                                             <?php
                                             if($u[1] == 1){
                                                $id = ($team_member[2] != $_GET['ssid']) ? $team_member[3] : "";
-                                               $status = ($team_member[2] != $_GET['ssid']) ? "fa-trash-o" : "fa-user";
+                                               $status = ($team_member[2] != $_GET['ssid']) ? "fa-trash-o delete-league-user" : "fa-user";
                                             }
                                             else{
                                               $status = ($team_member[2] != $_GET['ssid']) ? "fa-minus-circle" : "fa-user"; 
