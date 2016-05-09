@@ -10,8 +10,8 @@ body{
     background:#e74c3c;
 }
 
-.fa-ban, .fa-check-circle{
-    margin-left: 10px;
+.fa-ban, .fa-check-circle, .fa-plus{
+    margin-left: 20px;
 }
 
 .main{
@@ -278,13 +278,38 @@ th {
 }
 */
 
-#status_green{
-   color: green;  
+.status_green{
+   color: green; 
 }
 
-#status_red{
+.status_red{
     color: #e74c3c;
 }
+
+.status_blue{
+    color: blue;
+}
+
+.status_green:hover{
+     color: green;   
+}
+
+.status_red:hover{
+    color: #e74c3c; 
+}
+
+.status_blue:hover{
+    color:blue;
+}
+
+
+
+.fa-plus:hover{
+    cursor:pointer;
+}
+
+
+
 
 /* Position the close button (top right corner) */
 .closebtn {

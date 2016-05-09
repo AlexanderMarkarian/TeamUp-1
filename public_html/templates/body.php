@@ -154,6 +154,10 @@ class body {
                     $ajax = new forms();
                     echo $ajax->DeleteLeagueUserProcess($pg['deleteLeagueUser']);
                     break;
+                case '321':
+                    $ajax = new forms();
+                    echo $ajax->ReadyDraftProcess($pg['readyDraft']);
+                    break;                   
                 case '55':
                     $forms = new forms();
                     $functions = new functions();

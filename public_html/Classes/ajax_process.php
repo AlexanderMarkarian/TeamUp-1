@@ -137,4 +137,11 @@ if (isset($_POST['login'])) {
         "deleteLeagueUser" => $_POST
     );
     $ajax->BuildPages($page_content_array);      
+} else if(isset($_POST['readyDraft'])){
+    unset($page_content_array);
+    $page_content_array[] = array(
+        "id" => "321",
+        "readyDraft" => $_POST
+    );
+    $ajax->BuildPages($page_content_array);     
 }

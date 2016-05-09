@@ -8,6 +8,20 @@ $(document).ready(function(){
     $('#myTable').DataTable({
         "autoWidth": false
     });
+    
+    $(".readyDraft").click(function(){
+       $.ajax({
+         type: "POST",
+         url: "../Classes/ajax_process.php",
+         data:{
+             readyDraft: true,
+             leagueuserid: this.id
+         },
+         success:function(response){
+             window.location.href = 'loader.php?cmd=draft' + "&ssid=" + ssid + "&leagueid=" + leagueid; 
+         }
+       });
+    });
         
     start();
     
@@ -46,7 +60,7 @@ $(document).ready(function(){
                }
             });
             start();
-        },10000);
+        },12000);
     }
 
     $(document.body).on("click", ".teams", function(){

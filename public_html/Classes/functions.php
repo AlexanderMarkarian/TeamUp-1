@@ -155,13 +155,6 @@ class functions {
         $result = $this->_mysqli->query($sql);
         $num_rows = $result->num_rows;
         if ($num_rows == 1) {
-            $userid = '';
-            while($row = $result->fetch_assoc()){
-                $userid = $row['user_id'];
-            }
-            $update = "UPDATE users SET status=1 WHERE user_id='$userid'";
-            $this->_mysqli->query($update);
-            $_SESSION['userid'] = $userid;
             return $this->_results = true;
         } else {
             return $this->_results = false;
@@ -1580,12 +1573,7 @@ class functions {
         $final = $this->_mysqli->query($delete); 
        
     }
-    
-    public function LogOutStatus($ssid){
-        $update = "UPDATE users SET status=0 WHERE ssid='$ssid'";
-        $this->_mysqli->query($update);
-    }
-    
+        
     public function GetCommisioner(){
         $league_id = $_GET['leagueid'];
         $select = "SELECT userid FROM league_user WHERE league_id='$league_id' AND commisioner=1";
@@ -1603,6 +1591,12 @@ class functions {
         return $ssid;
     }
     
+    public function ReadyDraft($leagueuserid){
+        $update = "UPDATE league_user SET status=1 WHERE id='$leagueuserid'";
+        $this->_mysqli->query($update);
+    }
+    
+    
     public function GetRosterStatus(){
         $leagueid = $_GET['leagueid'];
         $select = "SELECT * FROM league_user WHERE league_id='$leagueid'";
@@ -1610,16 +1604,16 @@ class functions {
         $return = [];
         while($row = $result->fetch_assoc()){
             $currentID = $row['userid'];
-            $teamName = $row['team_name'];
-            $query = "SELECT status FROM users WHERE user_id='$currentID'";
+            $query = "SELECT ssid FROM users WHERE user_id='$currentID'";
             $res = $this->_mysqli->query($query);
-            while($r = $res->fetch_assoc()){
-                $return[] = [$teamName, $r['status']];
+            $ssid = '';
+            while($ro = $res->fetch_assoc()){
+                $ssid = $ro['ssid'];
             }
+            $return[] = [$row['team_name'], $row['id'], $row['status'], $ssid];
         }
         return json_encode($return);
     }
-    
 
     public function GetDraftStatus(){
         $leagueid = $_GET['leagueid'];

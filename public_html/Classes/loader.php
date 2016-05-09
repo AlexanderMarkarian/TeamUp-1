@@ -411,7 +411,6 @@ class loader {
                     );
                     break;
                 case "log-out":
-                    $function->LogOutStatus($_GET['ssid']);
                     $function->UpdateLoginSSID("users", $_SESSION['isLoggedin'], "ssid", $_GET['ssid']);
                     $page_content_array[] = array(
                         "id" => "10",

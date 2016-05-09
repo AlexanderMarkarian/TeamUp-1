@@ -913,6 +913,16 @@ class forms {
         }
     }
     
+    public function ReadyDraftProcess(array $form_value){
+        $leagueuserid = $form_value['leagueuserid'];
+        if($this->_fucntions->ReadyDraft($leagueuserid)){
+            echo 1;
+        }
+        else{
+            echo 0;
+        }
+    }
+    
     public function DeleteLeagueUserProcess(array $form_value){
         $leagueuserid = $form_value['leagueuserid'];
         if($this->_fucntions->DeleteLeagueUser($leagueuserid)){

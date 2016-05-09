@@ -15,7 +15,7 @@
                 $commish = $pg['commisioner'];
                 $bool = true;
                 foreach($rosterStatus as $r){
-                    if($r[1] == 0){
+                    if($r[2] == 0){
                         $bool = false;
                     }
                 }
@@ -25,11 +25,17 @@
                     <div class="overlay-content">
                         <?php
                         foreach($rosterStatus as $r){
-                            if($r[1] == 1){
-                                echo '<a id="status_green">'.$r[0].'<i class="fa fa-check-circle" aria-hidden="true"></i></a>';
+                            if($r[2] == 1){
+                                echo '<a class="status_green">'.$r[0].'<i class="fa fa-check-circle" aria-hidden="true"></i></a>';
                             }
                             else{
-                                echo '<a id="status_red">'.$r[0].'<i class="fa fa-ban" aria-hidden="true"></i></a>';
+                                if($r[3] == $_GET['ssid']){
+                                    echo '<a class="status_blue">'.$r[0].'<i class="fa fa-plus readyDraft" aria-hidden="true" id='.$r[1].'></i></a>';
+                                }
+                                else{
+                                    echo '<a class="status_red">'.$r[0].'<i class="fa fa-ban" aria-hidden="true"></i></a>';  
+                                }
+
                             }
                         }
                                                
@@ -41,13 +47,13 @@
                             }
                             else{
                                 ?>
-                                <h1>All users logged in. Wait for commissioner to start draft</h1>
+                                <h1>All users ready for draft. Wait for commissioner to start draft</h1>
                                 <?php
                             }
                         }
                         else{
                             ?>
-                            <h1>Not all users in this league are logged in</h1>
+                            <h1>Not all users have indicated that they are ready to draft</h1>
                             <?php
                         }
                         
@@ -74,7 +80,7 @@
             <div class="col-md-2">
 
                 <div class="top-left">
-                    <div class="time" id="timer"></div>
+                    <div class="time" id="timer">2:00</div>
                     <div class="clock-time">On the clock:</div>
                     <div class="clock">
                         <span class="clock-team">
