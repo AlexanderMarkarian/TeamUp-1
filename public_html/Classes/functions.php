@@ -1245,6 +1245,67 @@ class functions {
         }
     }
     
+    public function SendTradeMail($leagueid, $ssid, $oppteamid, $addID, $dropID){
+        $select1 = "SELECT userid FROM league_user WHERE id='$oppteamid'";
+        $result1 = $this->_mysqli->query($select1);
+        $opp_user_id = '';
+        while($row = $result1->fetch_assoc()){
+            $opp_user_id = $row['userid'];
+        }
+        
+        $select2 = "SELECT * FROM users WHERE user_id='$opp_user_id'";
+        $result2 = $this->_mysqli->query($select2);
+        $opp_name = '';
+        $opp_email = '';
+        while($row = $result2->fetch_assoc()){
+            $opp_name = $row['first_name'];
+            $opp_email = $row['email'];
+        }
+        
+        $select3 = "SELECT team_name FROM pool WHERE ID='$addID'";
+        $result3 = $this->_mysqli->query($select3);
+        $receiving_team = '';
+        $sending_team = '';
+        while($row = $result3->fetch_assoc()){
+            $receiving_team = $row['team_name'];
+        }
+        
+        $select4 = "SELECT team_name FROM pool WHERE ID='$dropID'";
+        $result4 = $this->_mysqli->query($select4);
+        while($row = $result4->fetch_assoc()){
+            $sending_team = $row['team_name'];
+        }
+        
+        $select5 = "SELECT email FROM users WHERE ssid='$ssid'";
+        $result5 = $this->_mysqli->query($select5);
+        $your_email = '';
+        while($row = $result5->fetch_assoc()){
+            $your_email = $row['email'];
+        }
+        
+        $select6 = "SELECT league_name FROM leagues WHERE id='$leagueid'";
+        $result6 = $this->_mysqli->query($select6);
+        $league_name = '';
+        while($row = $result6->fetch_assoc()){
+            $league_name = $row['league_name'];
+        }
+        
+        $message = "Hello {$opp_name}. You have been offered a trade from league {$league_name}. You have been offered {$sending_team} for {$receiving_team}. Please "
+        . "go to your Roster page and either accept or decline this trade.";
+        $subject = "TeamUp - Notification";
+        $headers = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+        $headers .= "From: " . $your_email . " \r\n ";
+        $send_mail = mail($opp_email, $subject, $message, $headers);
+        if($send_mail){
+            return true;
+        }
+        else{
+            return false;
+        }
+        
+    }
+    
     public function GetTradeOffers(){
         $leagueid = $_GET['leagueid'];
         $ssid = $_GET['ssid'];
@@ -1330,7 +1391,83 @@ class functions {
         $result2 = $this->_mysqli->query($update2);
         $updateTrade = "UPDATE trades SET status=1 WHERE id='$tradeid'";
         $result3 = $this->_mysqli->query($updateTrade);
+        
         if($result1 && $result2 && $result3){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    
+    public function ApproveTradeMail($tradeid){
+        
+        $select1 = "SELECT * FROM trades WHERE id='$tradeid'";
+        $result1 = $this->_mysqli->query($select1);
+        $user1 = '';
+        $user2 = '';
+        $userteam1 = '';
+        $userteam2 = '';
+        
+        while($row = $result1->fetch_assoc()){
+            $user1 = $row['sending_user_id'];
+            $user2 = $row['receiving_user_id'];
+            $userteam1 = $row['sending_team_id'];
+            $userteam2 = $row['receiving_team_id'];
+        }
+        
+        $select2 = "SELECT userid FROM league_user WHERE id='$user1'";
+        $result2 = $this->_mysqli->query($select2);
+        $userid = '';
+        while($row = $result2->fetch_assoc()){
+            $userid = $row['userid'];
+        }
+        
+                
+        $select6 = "SELECT userid FROM league_user WHERE id='$user2'";
+        $result6 = $this->_mysqli->query($select6);
+        $userid2 = '';
+        while($row = $result6->fetch_assoc()){
+            $userid2 = $row['userid'];
+        }
+        
+        $select3 = "SELECT * FROM users WHERE user_id='$userid'";
+        $result3 = $this->_mysqli->query($select3);
+        $first_name = '';
+        $email = '';
+        while($row = $result3->fetch_assoc()){
+            $first_name = $row['first_name'];
+            $email = $row['email'];
+        }
+        
+        $select7 = "SELECT * FROM users WHERE user_id='$userid2'";
+        $result7 = $this->_mysqli->query($select7);
+        $email2 = '';
+        while($row = $result7->fetch_assoc()){
+            $email2 = $row['email'];
+        }
+        
+        $select4 = "SELECT team_name FROM pool WHERE ID='$userteam1'";
+        $result4 = $this->_mysqli->query($select4);
+        $receiving_team = '';
+        $sending_team = '';
+        while($row = $result4->fetch_assoc()){
+            $receiving_team = $row['team_name'];
+        }
+        
+        $select5 = "SELECT team_name FROM pool WHERE ID='$userteam2'";
+        $result5 = $this->_mysqli->query($select5);
+        while($row = $result5->fetch_assoc()){
+            $sending_team = $row['team_name'];
+        }
+        
+        $message = "Hello {$first_name}. Your trade offer {$receiving_team} for {$sending_team} has been accepted!";
+        $subject = "TeamUp - Notification";
+        $headers = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+        $headers .= "From: " . $email2 . " \r\n ";
+        $send_mail = mail($email, $subject, $message, $headers);
+        if($send_mail){
             return true;
         }
         else{
@@ -1346,6 +1483,10 @@ class functions {
         else{
             return false;
         }
+    }
+    
+    public function CancelTradeMail($tradeid){
+       return true; 
     }
     
 

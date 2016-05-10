@@ -146,9 +146,7 @@
                         </div>
                     </div>
                     <div id="intro-box">
-                        Welcome to TeamUp Draft 
-                        <br>
-                        Your Draft Begins in <span id='draft-time'></span>
+                        TeamUp Draft 
                     </div>
                 </div>
 

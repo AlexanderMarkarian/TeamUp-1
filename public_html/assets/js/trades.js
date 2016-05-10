@@ -36,7 +36,8 @@ $(document).ready(function(){
        if(addID == 0 || dropID == 0){
            $(".error").html('<span class="alert alert-danger">Error!</span>');
        }
-       else{           
+       else{  
+           $(this).html("Completing <img src='../assets/images/other/spinner6.gif'/>");
            $.ajax({
               type: "POST",
               url: "../Classes/ajax_process.php",
@@ -50,13 +51,13 @@ $(document).ready(function(){
               },
               success: function(response){
                   if(response == 1){
-                    $(".error").html('<span class="alert alert-success">Trade Offer Sent!</span>');
                     window.setTimeout(function () {
                         window.location.href = 'loader.php?cmd=trades' + "&ssid=" + ssid + "&leagueid=" + leagueid;
                     }, 1000);
                   }
                   else{
                       $(".error").html('<span class="alert alert-danger">There was an error processing your trade request</span>');
+                      $(this).html('<button id="completeTrade" class="btn btn-lg">Complete</button>');
                   }
               }
            });

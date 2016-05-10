@@ -821,7 +821,12 @@ class forms {
         $dropID = $form_value['dropTeamID'];
         
         if($this->_fucntions->SendTradeRequest($leagueId, $ssid, $oppteamID, $addID, $dropID)){
-            echo 1;
+            if($this->_fucntions->SendTradeMail($leagueId, $ssid, $oppteamID, $addID, $dropID)){
+                echo 1;
+            }
+            else{
+                echo 0;
+            }
         }
         else{
             echo 0;
@@ -831,7 +836,12 @@ class forms {
     public function ApproveTradeProcess(array $form_value){
         $tradeid = $form_value['tradeid'];
         if($this->_fucntions->ApproveTrade($tradeid)){
-            echo 1;
+            if($this->_fucntions->ApproveTradeMail($tradeid)){
+                echo 1;
+            }
+            else{
+                echo 0;
+            }
         }
         else{
             echo 0;
@@ -841,7 +851,12 @@ class forms {
     public function CancelTradeProcess(array $form_value){
         $tradeid = $form_value['tradeid'];
         if($this->_fucntions->CancelTrade($tradeid)){
-            echo 1;
+            if($this->_fucntions->CancelTradeMail($tradeid)){
+                echo 1;
+            }
+            else{
+                echo 0;
+            }
         }
         else{
             echo 0;
