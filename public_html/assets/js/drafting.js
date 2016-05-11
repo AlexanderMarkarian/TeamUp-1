@@ -55,6 +55,7 @@ $(document).ready(function(){
                success: function(response){
                    console.log(response);
                    if(response == 1){
+                      //timer();
                       window.location.href = 'loader.php?cmd=draft' + "&ssid=" + ssid + "&leagueid=" + leagueid; 
                    }
                }

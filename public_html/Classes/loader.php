@@ -164,7 +164,7 @@ class loader {
             "Roster" => "loader.php?cmd=roster&ssid={$_GET['ssid']}&leagueid={$_GET['leagueid']}",
             "Add/Drop" => "loader.php?cmd=add-drop&ssid={$_GET['ssid']}&leagueid={$_GET['leagueid']}",
             "Trades" => "loader.php?cmd=trades&ssid={$_GET['ssid']}&leagueid={$_GET['leagueid']}",
-            "Match Up" => "loader.php?cmd=matchup&ssid={$_GET['ssid']}&leagueid={$_GET['leagueid']}",
+            "Research" => "http://teamup-node.herokuapp.com",
             "Draft" => "loader.php?cmd=draft&ssid={$_GET['ssid']}&leagueid={$_GET['leagueid']}",
             "Leagues" => array(
                 "League Management" => array(

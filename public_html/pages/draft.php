@@ -80,7 +80,7 @@
             <div class="col-md-2">
 
                 <div class="top-left">
-                    <div class="time" id="timer">2:00</div>
+                    <div class="time" id="timer"></div>
                     <div class="clock-time">On the clock:</div>
                     <div class="clock">
                         <span class="clock-team">
