@@ -793,6 +793,17 @@ class forms {
         }
     }
     
+    public function CheckDraftStatusProcess(array $form_value){
+        $leagueid = $form_value['leagueid'];
+        $return = $this->_fucntions->CheckDraftStatus($leagueid);
+        if($return == 1){
+            echo 1;
+        }
+        else{
+            echo 0;
+        }
+    }
+    
     public function CheckTurn(array $form_value){
         $leagueId = $form_value['leagueid'];
         $ssid = $form_value['ssid'];
@@ -873,6 +884,20 @@ class forms {
         }
         else{
             echo 0;
+        }
+    }
+    
+    public function SelectRandomTeamProcesS(array $form_value){
+        $leagueid = $form_value['leagueid'];
+        if($this->_fucntions->SelectRandomTeam($leagueid)){
+            if($this->_fucntions->UpdateRefresh($leagueId)){
+                if($this->_fucntions->UpdateTotalPicks($leagueId)){
+                    echo "over";
+                }
+                else{
+                    echo $this->_fucntions->UpdatePick($leagueId);
+                }
+            }
         }
     }
     

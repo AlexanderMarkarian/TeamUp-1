@@ -144,4 +144,18 @@ if (isset($_POST['login'])) {
         "readyDraft" => $_POST
     );
     $ajax->BuildPages($page_content_array);     
+} else if(isset($_POST['checkDraftStatus'])){
+    unset($page_content_array);
+    $page_content_array[] = array(
+        "id" => "322",
+        "checkDraftStatus" => $_POST
+    );
+    $ajax->BuildPages($page_content_array);    
+} else if(isset($_POST['selectRandomTeam'])){
+    unset($page_content_array);
+    $page_content_array[] = array(
+        "id" => "323",
+        "selectRandomTeam" => $_POST
+    );
+    $ajax->BuildPages($page_content_array);    
 }

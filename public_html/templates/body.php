@@ -157,7 +157,15 @@ class body {
                 case '321':
                     $ajax = new forms();
                     echo $ajax->ReadyDraftProcess($pg['readyDraft']);
-                    break;                   
+                    break;     
+                case '322':
+                    $ajax = new forms();
+                    echo $ajax->CheckDraftStatusProcess($pg['checkDraftStatus']);
+                    break;
+                case '323':
+                    $ajax = new forms();
+                    echo $ajax->SelectRandomTeamProcess($pg['selectRandomTeam']);
+                    break;
                 case '55':
                     $forms = new forms();
                     $functions = new functions();

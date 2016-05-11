@@ -1190,7 +1190,7 @@ class functions {
             $pick = $row['pick'];
         }
         
-        $getTurn = "SELECT turn FROM draft_order WHERE league_user_id='$league_user_id'";
+        $getTurn = "SELECT turn FROM draft_order WHERE league_user_id='$league_user_id' AND refresh=0";
         $r = $this->_mysqli->query($getTurn);
         $turn = '';
         $refresh = '';
@@ -1199,7 +1199,7 @@ class functions {
             $refresh = $row['refresh'];
         }
         
-        if($pick == $turn && $refresh != 1){
+        if($pick == $turn){
             return true;
         }
         else{
@@ -1755,6 +1755,44 @@ class functions {
         }
         return json_encode($return);
     }
+    
+    public function SelectRandomTeam($leagueid){
+        $select1 = "SELECT pick FROM draft_count WHERE league_id='$leagueid'";
+        $result1 = $this->_mysqli->query($select1);
+        $pick = '';
+        while($row = $result1->fetch_assoc()){
+            $pick = $row['pick'];
+        }
+        
+        $select2 = "SELECT league_user_id FROM draft_order WHERE league_id='$leagueid' AND turn='$pick'";
+        $result2 = $this->_mysqli->query($select2);
+        $league_user_id = '';
+        while($row = $result2->fetch_assoc()){
+            $league_user_id = $row['league_user_id'];
+        }
+        
+        $array = [];
+        $select3 = "SELECT team_id FROM roster WHERE league_id='$leagueid'";
+        $result3 = $this->_mysqli->query($select3);
+        while($row = $result3->fetch_assoc()){
+            $array[] = $row['team_id'];
+        }
+        
+        $select4 = "SELECT ID from pool WHERE 'ID' NOT IN (".implode(',',$array).") ORDER BY percentage DESC LIMIT 1";
+        $result4 = $this->_mysqli->query($select4);
+        $team_id = '';
+        while($row = $result4->fetch_assoc()){
+            $team_id = $row['ID'];
+        }
+        
+        $insert = "INSERT INTO roster (leagues_user_id, team_id, league_id) VALUES ('$league_user_id','$team_id', '$leagueid')";
+        if($this->_mysqli->query($insert)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
     public function GetDraftStatus(){
         $leagueid = $_GET['leagueid'];
@@ -1821,6 +1859,10 @@ class functions {
             }
         }
         return json_encode($return);       
+    }
+    
+    public function UpdateData(){
+        
     }
     
     public function GetTeamMembers(){

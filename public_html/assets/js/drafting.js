@@ -1,12 +1,27 @@
 $(document).ready(function(){
 
     var team = {};
-    var ajaxInterval;
+    var ajaxInterval, end1, interval;
     var ssid = $("#ssid").val();
     var leagueid = $("#leagueid").val();
     $("#main-box").hide();
     $('#myTable').DataTable({
         "autoWidth": false
+    });
+    
+    $.ajax({
+       type: "POST",
+       url: "../Classes/ajax_process.php",
+       data:{
+           checkDraftStatus: true,
+           leagueid: leagueid
+       },
+       success:function(response){
+           console.log("alsdjfasdf   " + response);
+           if(response == 1){
+               timer();
+           }
+       }
     });
     
     $(".readyDraft").click(function(){
@@ -55,13 +70,15 @@ $(document).ready(function(){
                success: function(response){
                    console.log(response);
                    if(response == 1){
-                      //timer();
+                      clearTimeout(interval);
+                      localStorage.removeItem("end1");
+                      localStorage.clear();
                       window.location.href = 'loader.php?cmd=draft' + "&ssid=" + ssid + "&leagueid=" + leagueid; 
                    }
                }
             });
             start();
-        },12000);
+        },10000);
     }
 
     $(document.body).on("click", ".teams", function(){
@@ -86,6 +103,7 @@ $(document).ready(function(){
     
     $(document.body).on("click","#draft-team", function(){
         var team = $(".selected-team").attr('id');
+        this.disabled = true;
         $.ajax({
            type: "POST",
            url: "../Classes/ajax_process.php",
@@ -114,11 +132,9 @@ $(document).ready(function(){
     });
     
     function timer(){
-        localStorage.clear();
+       // localStorage.clear();
         var minutesleft = 2; //give minutes you wish
         var secondsleft = 00; // give seconds you wish
-        var finishedtext = "Countdown finished!";
-        var end1;
         if(localStorage.getItem("end1")) {
         end1 = new Date(localStorage.getItem("end1"));
         } else {
@@ -149,14 +165,26 @@ $(document).ready(function(){
            // localStorage.setItem("end", null);
              localStorage.removeItem("end1");
              localStorage.clear();
-             alert("Fomosjed");
+            document.getElementById('draft-team').disabled = true;
+            $.ajax({
+               type: "POST",
+               url: "../Classes/ajax_process.php",
+               data:{
+                   selectRandomTeam: true,
+                   leagueid: leagueid
+               },
+               success:function(){
+                   window.location.href = 'loader.php?cmd=draft' + "&ssid=" + ssid + "&leagueid=" + leagueid; 
+               }
+            });
+            
         } else {
             var value = mins + ":" + sec;
             localStorage.setItem("end1", end1);
             document.getElementById('timer').innerHTML = value;
         }
         }
-        var interval = setInterval(counter, 1000);
+        interval = setInterval(counter, 1000);
     }
     
 
