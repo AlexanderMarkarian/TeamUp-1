@@ -1793,6 +1793,8 @@ class functions {
             return false;
         }
     }
+    
+
 
     public function GetDraftStatus(){
         $leagueid = $_GET['leagueid'];

@@ -16,18 +16,34 @@
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
                 <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>help/add-drop.png" class="img-responsive small-version" alt="">
+                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>help/tradePart1.png" class="img-responsive small-version" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Add/Drop Page</h4>
+                    <h4>Trades Part 1</h4>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
                 <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>help/home.png" class="img-responsive small-version" alt="">
+                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>help/tradePart2.png" class="img-responsive small-version" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Home Page</h4>
+                    <h4>Trades Part 2</h4>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>help/add-drop1.png" class="img-responsive small-version" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Add/Drop Part 1</h4>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <img src="<?= ABSOLUTH_PATH_IMAGES ?>help/add-drop2.png" class="img-responsive small-version" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Add/Drop Part 2</h4>
                 </div>
             </div>
         </div>
@@ -52,7 +68,7 @@
                     </div>
                 </div>
             </div>
-             <img src="<?= ABSOLUTH_PATH_IMAGES ?>help/add-drop.png" class="large-version" alt="">
+             <img src="<?= ABSOLUTH_PATH_IMAGES ?>help/tradePart1.png" class="large-version" alt="">
         </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
@@ -63,7 +79,29 @@
                     </div>
                 </div>
             </div>
-             <img src="<?= ABSOLUTH_PATH_IMAGES ?>help/home.png" class="large-version" alt="">
+             <img src="<?= ABSOLUTH_PATH_IMAGES ?>help/tradePart2.png" class="large-version" alt="">
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+             <img src="<?= ABSOLUTH_PATH_IMAGES ?>help/add-drop1.png" class="large-version" alt="">
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+             <img src="<?= ABSOLUTH_PATH_IMAGES ?>help/add-drop2.png" class="large-version" alt="">
         </div>
     </div>
 </section>

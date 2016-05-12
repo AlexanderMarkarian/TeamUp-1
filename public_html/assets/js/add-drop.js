@@ -1,7 +1,9 @@
 $(document).ready(function(){
      var addID = [], dropID = [];
-     var addCount = 0, dropCount = 0;
-    $('#myTable').DataTable(); 
+     var addCount = 0, dropCount = 0; 
+        $('#myTable').DataTable({
+        "autoWidth": false
+    });
     
     $(document).on("click", ".teams", function(){
         if($.inArray($(this)[0].id, addID) > -1){

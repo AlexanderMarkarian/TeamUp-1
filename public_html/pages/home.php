@@ -20,8 +20,8 @@
                             <th>Total Points</th>
                             <th>NBA</th>
                             <th>NFL</th>
-                            <th>NHL</th>
                             <th>MLB</th>
+                            <th>NHL</th>
                           </tr>
                       </thead>
                       <tbody id="homebody">

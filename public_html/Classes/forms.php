@@ -888,15 +888,15 @@ class forms {
         }
     }
     
-    public function SelectRandomTeamProcesS(array $form_value){
+    public function SelectRandomTeamProcess(array $form_value){
         $leagueid = $form_value['leagueid'];
         if($this->_fucntions->SelectRandomTeam($leagueid)){
-            if($this->_fucntions->UpdateRefresh($leagueId)){
-                if($this->_fucntions->UpdateTotalPicks($leagueId)){
+            if($this->_fucntions->UpdateRefresh($leagueid)){
+                if($this->_fucntions->UpdateTotalPicks($leagueid)){
                     echo "over";
                 }
                 else{
-                    echo $this->_fucntions->UpdatePick($leagueId);
+                    echo $this->_fucntions->UpdatePick($leagueid);
                 }
             }
         }

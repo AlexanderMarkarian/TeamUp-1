@@ -20,7 +20,6 @@
                         <th>Wins</th>
                         <th>Loses</th>
                         <th>Win Pct</th>
-                        <th>ID</th>
                     </tr>
                     <tbody id="tradebody">
                         <?php
@@ -29,7 +28,7 @@
                               foreach($jsonData as $j){
                                   foreach($jsonRoster as $r){
                                       if($j[0] == $r){
-                                          echo "<tr class='my-team' id=".$j[0]."><td><img class='roster-img' src='../assets/".$j[3]."'>".$j[1]."</td><td>".$j[2]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td><td>".$j[0]."</td></tr>";
+                                          echo "<tr class='my-team' id=".$j[0]."><td><img class='roster-img' src='../assets/".$j[3]."'>".$j[1]."</td><td>".$j[2]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td></tr>";
                                       }
                                   }
                               }
@@ -71,14 +70,13 @@
                                     <th>Wins</th>
                                     <th>Loses</th>
                                     <th>Win Pct</th>
-                                    <th>ID</th>
                                 </tr>
                                 <tbody id="addbody">
                                     <?php
                                       foreach($jsonData as $j){
                                           foreach($trades as $t){
                                               if($j[0] == $t[2] && $t[0] == $_GET['oppteamid']){
-                                                  echo "<tr class='other-team' id=".$j[0]."><td><img class='roster-img' src='../assets/".$j[3]."'>".$j[1]."</td><td>".$j[2]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td><td>".$j[0]."</td></tr>";
+                                                  echo "<tr class='other-team' id=".$j[0]."><td><img class='roster-img' src='../assets/".$j[3]."'>".$j[1]."</td><td>".$j[2]."</td><td>".$j[4]."</td><td>".$j[5]."</td><td>".$j[6]."</td><td>".$j[7]."</td></tr>";
                                               }
                                           }
                                       }
