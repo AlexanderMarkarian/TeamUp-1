@@ -381,7 +381,7 @@ background: #000;
 	vertical-align:top;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	overflow:hidden;
+	overflow:visible;
 }
 .b-link-stripe .b-wrapper{
 	position: absolute;
@@ -392,7 +392,7 @@ left: 0;
 text-align: center;
 margin: 17.65em 0 0 0;
 color: #ffffff;
-overflow: hidden;
+overflow: visible;
 }
 .b-link-stripe .b-wrapper:hover {
 	background: #FFF;
@@ -1028,8 +1028,7 @@ h2.b-animate.b-from-left.b-delay03 {
 	text-transform:uppercase;
 	font-family: 'Open Sans', sans-serif;
 	font-size:16px;
-	font-weight: 700;
-	margin: 3em 0 1em 0;
+	font-weight: 700;;
 }
 .skills-grid-text p{
 	padding-bottom: 10px;
@@ -1653,8 +1652,8 @@ span.menu
 		margin: 0 auto;
 	}
 	.team-grid-text p {
-		overflow: hidden;
-		height: 38px;
+		overflow: visible;
+		height: 65;
 	}
 	.gift p {
 		font-size: 50px;
@@ -1667,8 +1666,8 @@ span.menu
 		padding: 1em 0;
 	}
 	.skills-grid-text p {
-		overflow: hidden;
-		height: 37px;
+		overflow: visible;
+		height: 320px;
 	}
 	.tab1 {
 		margin: .5em 0;
@@ -2026,8 +2025,8 @@ span.menu
 	}
 	.img-grid-text p {
 		width: 100%;
-		overflow:hidden;
-		height: 43px;
+		overflow:visible;
+		height: 75;
 	}
 	.icons ul li {
 		margin: 0;
@@ -2100,8 +2099,8 @@ span.menu
 	}
 	.totam p {
 		width: 100%;
-		overflow: hidden;
-		height: 58px;
+		overflow: visible;
+		height: 75;
 	}
 	.skills-middle-text {
 		width: 100%;

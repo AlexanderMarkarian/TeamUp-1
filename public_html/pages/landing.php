@@ -90,7 +90,7 @@
                 <div class="col-md-6 team-grid">
                     <div class="team-grid-text wow bounceIn" data-wow-delay="0.4s">
                         <h5>REAL TIME STATISTICS</h5>
-                        <p>Football, baseball, basketball, & hockey team statistics updated in realtime</p>
+                        <p>NFL, MLB, NBA, & NHL team stats updated in realtime</p>
                     </div>
                 </div>
                 <div class="col-md-6 team-grid">
@@ -159,7 +159,7 @@
                 <h3 class = "about">FOR EVERY SPORTS FAN. EVERY-DAY. ALL YEAR.</h3>
             </div>
             <div class="col-md-9">
-                <div class="col-md-3 skills-grid">
+            <!--    <div class="col-md-3 skills-grid">
                     <div class="circle" id="circles-1"></div>
                 </div>
                 <div class="col-md-3 skills-grid">
@@ -170,7 +170,7 @@
                 </div>
                 <div class="col-md-3 skills-grid">
                     <div class="circle" id="circles-4"></div>
-                </div>
+                </div>-->
                 <div class="clearfix"> </div>
                 <div class="skills-grid-text">
                     <h5 class="plus wow fadeInRight">TeamUp</h5>
