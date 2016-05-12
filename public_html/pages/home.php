@@ -37,6 +37,34 @@
                           ?>
                       </tbody>
                 </table>
+                <br><br>
+                <table id="points">
+                   <caption>Points</caption> 
+                   <thead id ="stand">
+                        <tr>
+                          <th>Roster</th>
+                          <th>Team</th>
+                          <th>Points</th>
+                          <th>Date</th>
+                        </tr>
+                   </thead>
+                   <tbody>
+                       <?php
+                       $dailyChanges = json_decode($pg['dailyChanges']);
+                       foreach($dailyChanges as $dc){
+                       ?>
+                       <tr>
+                           <td><?= $dc[0] ?></td>
+                           <td><?= $dc[1] ?></td>
+                           <td><?= $dc[2] ?></td>
+                           <td><?= $dc[3] ?></td>
+                       </tr>
+                       <?php
+                       }
+                       ?>
+                   </tbody>
+                    
+                </table>
             </div>
         </div>
     </div>

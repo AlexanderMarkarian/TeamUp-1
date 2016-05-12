@@ -299,6 +299,7 @@ class loader {
                     $leagueName = $function->GetLeagueName();
                     $function->SetPoints();
                     $leagueStandings = $function->GetStandings();
+                    $dailyChanges = $function->GetDailyChanges();
                     
                     $page_content_array[] = array(
                         "id" => "2",
@@ -306,6 +307,7 @@ class loader {
                         "div_name" => "home",
                         "league_name" => $leagueName,
                         "league_standings"=>$leagueStandings,
+                        "dailyChanges"=>$dailyChanges
                     );
                     break;
                 case "roster":
@@ -314,6 +316,7 @@ class loader {
                     $userRoster = $function->GetRoster();
                     $getTradeOffers = $function->GetTradeOffers();
                     $incomingTradeOffers = $function->IncomingTrades();
+                    $teamRank  = $function->GetTeamRank();
                     $page_content_array[] = array(
                         "id" => "3",
                         "page_name" => "Roster",
@@ -323,7 +326,8 @@ class loader {
                         "functions" => $function,
                         "teamName" => $teamName,
                         "trades"=>$getTradeOffers,
-                        "incoming"=>$incomingTradeOffers
+                        "incoming"=>$incomingTradeOffers,
+                        "teamRank"=>$teamRank
                     );
                     break;
                 case "add-drop":

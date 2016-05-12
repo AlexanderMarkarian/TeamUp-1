@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading"><?php echo $pg['teamName']; ?></h2>
-                    <h3 class="section-subheading text-muted">4th Place</h3>
+                    <h3 class="section-subheading text-muted"><?php echo $pg['teamRank']; ?></h3>
                     <input type="hidden" name="ssid" value="<?= $_GET['ssid'] ?>" id="ssid"/>
                     <input type="hidden" name="leagueid" value="<?= $_GET['leagueid'] ?>" id="leagueid"/>
                 </div>

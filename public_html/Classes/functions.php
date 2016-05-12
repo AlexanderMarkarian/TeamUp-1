@@ -1306,6 +1306,68 @@ class functions {
         
     }
     
+    public function GetDailyChanges(){
+        $leagueid = $_GET['leagueid'];
+        $select = "SELECT * FROM daily_changes WHERE league_id='$leagueid'";
+        $result = $this->_mysqli->query($select);
+        $return = [];
+        while($row = $result->fetch_assoc()){
+            $currentID = $row['league_user_id'];
+            $teamID = $row['team_id'];
+            $select2 = "SELECT team_name FROM league_user WHERE id='$currentID'";
+            $result2 = $this->_mysqli->query($select2);
+            $team_name = '';
+            while($r = $result2->fetch_assoc()){
+                $team_name = $r['team_name'];
+            }
+            $select3 = "SELECT team_name FROM pool WHERE ID='$teamID'";
+            $result3 = $this->_mysqli->query($select3);
+            $roster_name = '';
+            while($r = $result3->fetch_assoc()){
+                $roster_name = $r['team_name'];
+            }
+            $return[] = [$team_name, $roster_name, $row['points'], $row['date']];
+        }
+        return json_encode($return);
+    }
+    
+    public function GetTeamRank(){
+        $leagueid = $_GET['leagueid'];
+        $ssid = $_GET['ssid'];
+        $select1 = "SELECT user_id FROM users WHERE ssid='$ssid'";
+        $result1 = $this->_mysqli->query($select1);
+        $user_id = '';
+        while($row = $result1->fetch_assoc()){
+            $user_id = $row['user_id'];
+        }
+        $select2 = "SELECT id FROM league_user WHERE userid='$user_id' AND league_id='$leagueid'";
+        $result2 = $this->_mysqli->query($select2);
+        $ulid = '';
+        while($row = $result2->fetch_assoc()){
+            $ulid = $row['id'];
+        }
+        $select3 = "SELECT * FROM points WHERE league_id='$leagueid' ORDER BY total_points DESC";
+        $result3 = $this->_mysqli->query($select3);
+        $count = 1;
+        while($row = $result3->fetch_assoc()){
+            if($row['leagues_user_id'] == $ulid){
+                switch($count){
+                    case 1:
+                        return "1st Place";
+                    case 2: 
+                        return "2nd Place";
+                    case 3:
+                        return "3rd Place";
+                    default:
+                        return $count . "th Place";
+                }
+            }
+            else{
+                $count++;
+            }
+        }
+    }
+    
     public function GetTradeOffers(){
         $leagueid = $_GET['leagueid'];
         $ssid = $_GET['ssid'];
