@@ -80,7 +80,7 @@ $(function () {
                         $("#show").html("<div class='alert alert-success' role='alert' id='errors'><strong>" + email + " verified</strong></div>");
 
                     }, 2000);
-                    audio.play();
+                    //audio.play();
                     window.setTimeout(function () {
                         $("#show").html("<div class='alert alert-success' role='alert' id='errors'>Redirecting <img src='../assets/images/other/spinner6.gif'/> </div>");
 
@@ -139,7 +139,7 @@ $(function () {
         $.ajax({// JQuery ajax function
             type: "POST", // Submitting Method
             url: 'ajax_process.php', // PHP processor -->DONOT CHANGE
-            data: 'firstname=' + firstname + '&lastname=' + lastname + '&email=' + email + '&password=' + password + '&signup=true' + '&register=Sign Up' + '&lid=' + lid, // the data that will be sent to php processor
+            data: 'firstname=' + firstname + '&lastname=' + lastname + '&email=' + email + '&password=' + password + '&signup=true' + '&register=Sign Up', // the data that will be sent to php processor
             dataType: "html", // type of returned data
             success: function (data) {
                 console.log(data);

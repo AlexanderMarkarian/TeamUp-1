@@ -95,12 +95,12 @@ class functions {
 
     public function InsertNewUser($table, array $fields, array $values) {
 
-        $sql = "INSERT INTO `$table` (" . $fields['first_name'] . "," . $fields['last_name'] . "," . $fields['email'] . "," . $fields['password'] . "," . $fields['ssid'] .",status". ") "
+        $sql = "INSERT INTO `$table` (" . $fields['first_name'] . "," . $fields['last_name'] . "," . $fields['email'] . "," . $fields['password'] . "," . $fields['ssid'] .") "
                 . "VALUES ('" . $values['fname'] . "',"
                 . "'" . $values['lname'] . "',"
                 . "'" . $values['email'] . "',"
                 . "'" . md5($values['password']) . "',"
-                . "'" . $values['ssid'] . "',1"
+                . "'" . $values['ssid'] . "'"
                 . ")";
         $result = $this->_mysqli->query($sql);
         if ($result) {
@@ -1860,11 +1860,7 @@ class functions {
         }
         return json_encode($return);       
     }
-    
-    public function UpdateData(){
         
-    }
-    
     public function GetTeamMembers(){
         $ssid = $_GET['ssid'];
         $leagueID = $_GET['leagueid'];

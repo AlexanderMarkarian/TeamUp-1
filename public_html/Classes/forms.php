@@ -234,8 +234,6 @@ class forms {
             $input_values['lname'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['lastname']);
             $input_values['email'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['email']);
             $input_values['password'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['password']);
-            $input_values['page_name'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['page_name']);
-            $input_values['lid'] = mysqli_real_escape_string($this->_mysqli, $this->_formInputs['lid']);
 
             /*
              * RS 20160131
@@ -328,6 +326,7 @@ class forms {
                 /*
                  * IF Link ID is set Update status to One
                  */
+                /*
                 if ($input_values['lid'] != "") {
                     unset($this->_flag);
                     $table = array("0" => "temp_invite");
@@ -337,6 +336,8 @@ class forms {
                     $update = $this->_fucntions->UpdateValues($table, $field, $value, $option);
                     $this->_flag = 999; //USER COMING FROM INVITATION LINK
                 }
+                 * 
+                 */
                 $input_values["ssid"] = $helper_functions->UIDGEN($input_values['fname'] . "_");
                 $fields = array();
                 $fields['user_id'] = "user_id";
@@ -348,17 +349,17 @@ class forms {
                 $query = $helper_functions->InsertNewUser("users", $fields, $input_values);
                 $_SESSION['isLoggedin'] = $helper_functions->UIDGEN(date("Ymd"));
                 if ($query) {
+                    
                     if ($this->_flag == 999) {
                         echo "inv" . $input_values['ssid'];
                         $cmd = "invited";
                     } else {
                         echo $input_values['ssid'];
-
-
                         $cmd = "profile";
                     }
+                    
 
-                    // header("location: loader.php?cmd=" . $cmd . "&ssid=" . $input_values['ssid'] . "&lid=" . $input_valuesp['lid']);
+                    //header("location: loader.php?cmd=" . $cmd . "&ssid=" . $input_values['ssid']);
                 }
             }
         }
