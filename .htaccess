@@ -17,7 +17,7 @@ rewriterule ^$ /public_html [R,L]
 #RewriteCond %{THE_REQUEST} ^GET\ /public_html/
 #RewriteRule ^public_html/(.*) /snowman/$1 [L,R=301]
 #FOR PASSWORD PROTECTION 
-AuthType Basic
-AuthName "dev"
-AuthUserFile "/home/dynamoelectric/.htpasswds/public_html/dev.teamup/passwd"
-require valid-user
+#AuthType Basic
+#AuthName "dev"
+#AuthUserFile "/home/dynamoelectric/.htpasswds/public_html/dev.teamup/passwd"
+#require valid-user
